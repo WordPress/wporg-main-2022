@@ -1,0 +1,22 @@
+{
+	"name": "wporg-main-2022",
+	"version": "1.0.0",
+	"description": "The codebase and development environment for the main wordpress.org site.",
+	"author": "WordPress.org",
+	"license": "GPL-2.0-or-later",
+	"private": true,
+	"dependencies": {},
+	"devDependencies": {
+		"@wordpress/env": "4.9.0",
+		"@wordpress/scripts": "23.5.0"
+	},
+	"scripts": {
+		"setup:tools": "yarn && composer install && TEXTDOMAIN=wporg composer exec update-configs",
+		"setup:wp": "wp-env run cli \"bash env/setup.sh\"",
+		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
+		"wp-env": "wp-env"
+	},
+	"workspaces": [
+		"source/wp-content/themes/wporg-main-2022"
+	]
+}

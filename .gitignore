@@ -1,0 +1,26 @@
+/**/.DS_STORE
+/**/.idea
+/**/.svn
+/**/build
+/**/node_modules
+/vendor
+*.map
+wp-cli.yml
+
+# Allow local environment overrides.
+.wp-env.override.json
+
+# Configs from wporg-repo-tools.
+.eslintrc.js
+.prettierrc.js
+.stylelintrc
+phpcs.xml.dist
+
+# Ignore everything in source...
+/source/wp-content/*
+/source/wp-content/themes/*
+/source/wp-content/mu-plugins/*
+
+# ...except the actual source of this project.
+!/source/wp-content/themes
+!/source/wp-content/themes/wporg-main-2022
