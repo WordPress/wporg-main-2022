@@ -24,3 +24,5 @@ phpcs.xml.dist
 # ...except the actual source of this project.
 !/source/wp-content/themes
 !/source/wp-content/themes/wporg-main-2022
+!/source/wp-content/mu-plugins
+!/source/wp-content/mu-plugins/theme-switcher.php
