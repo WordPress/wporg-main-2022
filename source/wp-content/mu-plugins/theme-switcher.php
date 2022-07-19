@@ -15,6 +15,10 @@ namespace WordPressdotorg\MU_Plugins\Theme_Switcher;
  * Helper to check the requested page against our new page list.
  */
 function should_use_new_theme() {
+	if ( is_admin() ) {
+		return true;
+	}
+
 	$new_theme_pages = array(
 		'/',
 		'/download/',
