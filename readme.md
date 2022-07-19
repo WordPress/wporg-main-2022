@@ -1,5 +1,9 @@
 # WordPress.org Block Theme
 
+A block-based child theme for WordPress.org, plus local environment.
+
+Once set up, this environment will contain some shared plugins (Jetpack, Gutenberg, etc), some `mu-plugins` ([wporg-mu-plugins](https://github.com/WordPress/wporg-mu-plugins/), [mu-plugins/pub](https://meta.trac.wordpress.org/browser/sites/trunk/wordpress.org/public_html/wp-content/mu-plugins/pub)), and both sets of parent and child themes. The current site uses `wporg` parent and `wporg-main` child; while the new design will be done with [`wporg-parent-2021`](https://github.com/WordPress/wporg-parent-2021) and `wporg-main-2022` (this repo). The "theme-switcher" in `mu-plugins` here should control which theme is used, based on the requested page.
+
 ## Development
 
 ### Prerequisites
