@@ -15,7 +15,13 @@ namespace WordPressdotorg\MU_Plugins\Theme_Switcher;
  * Helper to check the requested page against our new page list.
  */
 function should_use_new_theme() {
-	if ( is_admin() ) {
+	// Request to resolve a template.
+	if ( isset( $_GET['_wp-find-template'] ) ) {
+		return true;
+	}
+
+	// Admin page or an API request.
+	if ( is_admin() || wp_is_json_request() ) {
 		return true;
 	}
 
