@@ -14,6 +14,3 @@ wp import "${root}/env/data.xml" --authors=create
 
 wp option update show_on_front 'page'
 wp option update page_on_front 8891
-
-npm run wp-env run cli "php env/import-content.php --url 'https://wordpress.org/main-test/wp-json/wp/v2/posts?context=wporg_export&per_page=50'"
-npm run wp-env run cli "php env/import-content.php --url 'https://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&per_page=50'"
