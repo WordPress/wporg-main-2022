@@ -1,7 +1,8 @@
 #!/usr/bin/php
 <?php
+// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
-namespace WordPress_org\Parent_2021\ImportTestContent;
+namespace WordPress_org\Main_2022\ImportTestContent;
 
 /**
  * CLI script for generating local test content, fetched from the live learn.wordpress.org site.
@@ -25,8 +26,8 @@ if ( 'local' !== wp_get_environment_type() ) {
 	die( 'Not safe to run on ' . esc_html( get_site_url() ) );
 }
 
-if ( empty( $opts[ 'url' ] ) || $opts[ 'url' ] !== esc_url_raw( $opts[ 'url' ], ['https'] ) ) {
-	die( 'Invalid url parameter ' . esc_html( $opts[ 'url' ] ) );
+if ( empty( $opts['url'] ) || esc_url_raw( $opts['url'], [ 'https' ] ) !== $opts['url'] ) {
+	die( 'Invalid url parameter ' . esc_html( $opts['url'] ) );
 }
 
 /**
@@ -64,10 +65,10 @@ function import_rest_to_posts( $rest_url ) {
 	$data = json_decode( $body );
 
 	foreach ( $data as $post ) {
-		echo esc_html( "Got {$post->type} {$post->id} {$post->slug}\n" );
+		echo "Got {$post->type} {$post->id} {$post->slug}\n";
 
 		// Surely there's a neater way to do this.
-		$newpost = array(
+		$new_post = array(
 			'import_id' => $post->id,
 			'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( $post->date ) ),
 			'post_name' => $post->slug,
@@ -81,13 +82,29 @@ function import_rest_to_posts( $rest_url ) {
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
 
-		$new_post_id = wp_insert_post( $newpost, true );
+		$existing_post = get_post( $post->id, ARRAY_A );
+
+		if ( $existing_post ) {
+			$new_post = array_merge( $existing_post, $new_post );
+			printf(
+				"Updating %s [%s]\n",
+				html_entity_decode( $post->title->rendered ),
+				$existing_post['ID']
+			);
+		} else {
+			printf(
+				"Creating %s\n",
+				html_entity_decode( $post->title->rendered )
+			);
+		}
+
+		$new_post_id = wp_insert_post( $new_post, true );
 
 		if ( is_wp_error( $new_post_id ) ) {
 			die( esc_html( $new_post_id->get_error_message() ) );
 		}
 
-		echo esc_html( "Inserted $post->type $post->id as $new_post_id\n" );
+		echo "Inserted $post->type $post->id as $new_post_id\n\n";
 	}
 }
 
