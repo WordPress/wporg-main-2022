@@ -26,9 +26,15 @@ function enqueue_assets() {
  * Make posts and pages available for export from the staging site, so the import script can
  * fetch them to a local dev environment.
  */
-add_filter( 'wporg_export_context_post_types', function( $types ) {
-    return array_merge( $types, [
-        'post',
-        'page',
-        ]);
-} );
+add_filter(
+	'wporg_export_context_post_types',
+	function( $types ) {
+		return array_merge(
+			$types,
+			[
+				'post',
+				'page',
+			]
+		);
+	}
+);
