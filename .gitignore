@@ -6,6 +6,7 @@
 /vendor
 *.map
 wp-cli.yml
+backstop_data
 
 # Allow local environment overrides.
 .wp-env.override.json
