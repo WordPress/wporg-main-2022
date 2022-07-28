@@ -47,11 +47,22 @@ function sanitize_meta_input( $meta ) {
 }
 
 /**
+ * Filter CURL requests to bypass sandboxes and always hit a production server.
+ * Docker doesn't use the proxy, so those requests will fail when wordpress.org is sandboxed.
+ */
+function filter_curl_options( &$ch ) {
+	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
+}
+
+/**
  * Import posts from a remote REST API to the local test site.
  *
  * @param string $rest_url The remote REST API endpoint URL.
  */
 function import_rest_to_posts( $rest_url ) {
+
+	add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
+
 	$response = wp_remote_get( $rest_url );
 	$status_code = wp_remote_retrieve_response_code( $response );
 
