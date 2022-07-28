@@ -50,7 +50,7 @@ function sanitize_meta_input( $meta ) {
  * Filter CURL requests to bypass sandboxes and always hit a production server.
  * Docker doesn't use the proxy, so those requests will fail when wordpress.org is sandboxed.
  */
-function filter_curl_options( &$ch ) {
+function filter_curl_options( $ch ) {
 	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
 }
 
