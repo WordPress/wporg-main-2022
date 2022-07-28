@@ -50,8 +50,8 @@ add_shortcode(
  */
 add_shortcode(
 	'download_link',
-	function( $atts = array() ) {
-		$ext = ( ! empty( $atts['type'] ) && 'tar.gz' === $atts['type'] ) ? 'tar.gz' : 'zip';
+	function( $attrs = array() ) {
+		$ext = ( ! empty( $attrs['type'] ) && 'tar.gz' === $attrs['type'] ) ? 'tar.gz' : 'zip';
 
 		$link = "https://wordpress.org/latest.{$ext}";
 
@@ -62,6 +62,6 @@ add_shortcode(
 			}
 		}
 
-		return $latest_release;
+		return $link;
 	}
 );
