@@ -40,7 +40,7 @@
     },
     {
       "label": "Downloads",
-      "url": "http://localhost:8888/downloads/",
+      "url": "http://localhost:8888/download/",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
