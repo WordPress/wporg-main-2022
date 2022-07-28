@@ -28,6 +28,40 @@ add_shortcode(
 	'latest_version',
 	function() {
 		global $wp_version;
-		return defined( 'WP_CORE_LATEST_RELEASE' ) ? WP_CORE_LATEST_RELEASE : $wp_version;
+		$latest_release = $wp_version;
+
+		if ( defined( 'WP_CORE_LATEST_RELEASE' ) ) {
+			$latest_release = WP_CORE_LATEST_RELEASE;
+		}
+
+		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
+			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
+			if ( $rosetta_release ) {
+				$latest_release = $rosetta_release['version'];
+			}
+		}
+
+		return $latest_release;
+	}
+);
+
+/**
+ * Shortcode for a link to the latest version of WordPress.
+ */
+add_shortcode(
+	'download_link',
+	function( $atts = array() ) {
+		$ext = ( ! empty( $atts['type'] ) && 'tar.gz' === $atts['type'] ) ? 'tar.gz' : 'zip';
+
+		$link = "https://wordpress.org/latest.{$ext}";
+
+		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
+			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
+			if ( $rosetta_release ) {
+				$link = home_url( 'latest-' . get_locale() . ".{$ext}" );
+			}
+		}
+
+		return $latest_release;
 	}
 );
