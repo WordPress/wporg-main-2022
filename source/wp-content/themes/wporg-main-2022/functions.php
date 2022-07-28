@@ -27,7 +27,7 @@ function enqueue_assets() {
  * Load the shortcodes available for the theme.
  */
 function register_shortcodes() {
-	include __DIR__ . '/shortcodes.php';
+	include __DIR__ . '/inc/shortcodes.php';
 }
 
 /**
