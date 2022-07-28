@@ -670,7 +670,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
-<p class="has-text-align-center has-extra-large-font-size">Use the software that powers over 43% of the web.</p>
+<p class="has-text-align-center has-extra-large-font-size">Use the software that powers over [market_share] of the web.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -709,7 +709,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/latest.zip">Download WordPress 6.0.1</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/latest.zip">Download WordPress [latest_version]</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
@@ -1340,7 +1340,7 @@ and priceless at the same time.
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">
-43% of the web uses WordPress, from hobby blogs to the biggest news sites online.
+[market_share] of the web uses WordPress, from hobby blogs to the biggest news sites online.
 </p>
 <!-- /wp:paragraph -->
 
@@ -1476,7 +1476,7 @@ Dashicons Block?
 
 <!-- wp:paragraph -->
 <p>
-Extend WordPress with over 55,000 plugins to help your website meet your needs. Add an online store,
+Extend WordPress with over [plugin_count] plugins to help your website meet your needs. Add an online store,
 galleries, mailing lists, forums, analytics, and <a href="https://wordpress.org/plugins/">much more</a>.
 </p>
 <!-- /wp:paragraph --></div>
