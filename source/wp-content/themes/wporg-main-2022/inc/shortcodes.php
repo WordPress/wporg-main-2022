@@ -22,6 +22,16 @@ add_shortcode(
 );
 
 /**
+ * Shortcode to display the recommended PHP version.
+ */
+add_shortcode(
+	'recommended_php',
+	function() {
+		return defined( 'RECOMMENDED_PHP' ) ? RECOMMENDED_PHP : substr( phpversion(), 0, 3 );
+	}
+);
+
+/**
  * Shortcode to display the latest released version of WordPress.
  */
 add_shortcode(

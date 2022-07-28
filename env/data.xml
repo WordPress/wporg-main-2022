@@ -747,7 +747,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We recommend servers running version 7.4 or greater of <a href="https://www.php.net/">PHP</a> and <a href="https://www.mysql.com/">MySQL</a> version 5.7 <em>OR</em> <a href="https://mariadb.org/">MariaDB</a> version 10.3 or greater.<br>We also recommend either <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> as the most robust options for running WordPress, but neither is required.</p>
+<p>We recommend servers running version [recommended_php] or greater of <a href="https://www.php.net/">PHP</a> and <a href="https://www.mysql.com/">MySQL</a> version 5.7 <em>OR</em> <a href="https://mariadb.org/">MariaDB</a> version 10.3 or greater.<br>We also recommend either <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> as the most robust options for running WordPress, but neither is required.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
