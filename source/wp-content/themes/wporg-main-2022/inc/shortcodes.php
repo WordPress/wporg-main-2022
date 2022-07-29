@@ -32,6 +32,26 @@ add_shortcode(
 );
 
 /**
+ * Shortcode to display the recommended MySQL version.
+ */
+add_shortcode(
+	'recommended_mysql',
+	function() {
+		return '5.7';
+	}
+);
+
+/**
+ * Shortcode to display the recommended MariaDB version.
+ */
+add_shortcode(
+	'recommended_mariadb',
+	function() {
+		return '10.3';
+	}
+);
+
+/**
  * Shortcode to display the latest released version of WordPress.
  */
 add_shortcode(
