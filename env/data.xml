@@ -670,7 +670,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
-<p class="has-text-align-center has-extra-large-font-size">Use the software that powers over 43% of the web.</p>
+<p class="has-text-align-center has-extra-large-font-size">Use the software that powers over [market_share] of the web.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -709,11 +709,11 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/latest.zip">Download WordPress 6.0.1</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="[download_link]">Download WordPress [latest_version]</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/latest.tar.gz">Download .tar.gz</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="[download_link type='tar.gz']">Download .tar.gz</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -747,7 +747,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We recommend servers running version 7.4 or greater of <a href="https://www.php.net/">PHP</a> and <a href="https://www.mysql.com/">MySQL</a> version 5.7 <em>OR</em> <a href="https://mariadb.org/">MariaDB</a> version 10.3 or greater.<br>We also recommend either <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> as the most robust options for running WordPress, but neither is required.</p>
+<p>We recommend servers running version [recommended_php] or greater of <a href="https://www.php.net/">PHP</a> and <a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] <em>OR</em> <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.<br>We also recommend either <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> as the most robust options for running WordPress, but neither is required.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -1340,7 +1340,7 @@ and priceless at the same time.
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">
-43% of the web uses WordPress, from hobby blogs to the biggest news sites online.
+[market_share] of the web uses WordPress, from hobby blogs to the biggest news sites online.
 </p>
 <!-- /wp:paragraph -->
 
@@ -1476,7 +1476,7 @@ Dashicons Block?
 
 <!-- wp:paragraph -->
 <p>
-Extend WordPress with over 55,000 plugins to help your website meet your needs. Add an online store,
+Extend WordPress with over [plugin_count] plugins to help your website meet your needs. Add an online store,
 galleries, mailing lists, forums, analytics, and <a href="https://wordpress.org/plugins/">much more</a>.
 </p>
 <!-- /wp:paragraph --></div>
