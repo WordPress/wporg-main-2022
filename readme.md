@@ -70,3 +70,19 @@ These must be run in the project's root folder, _not_ in theme/plugin subfolders
     ```bash
     yarn update:tools
     ```
+
+* Run a lighthouse test.
+
+    ```bash
+    yarn lighthouse
+    ```
+
+* Check visual diffs.
+
+Backstopjs can be manually run to create reference snapshots and then check for visual differences.
+
+    ```bash
+    yarn backstop:reference
+    # change something in the code or content
+    yarn backstop:test
+    ```

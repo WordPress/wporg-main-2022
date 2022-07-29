@@ -27,3 +27,4 @@ phpcs.xml.dist
 !/source/wp-content/themes/wporg-main-2022
 !/source/wp-content/mu-plugins
 !/source/wp-content/mu-plugins/theme-switcher.php
+lighthouse.html

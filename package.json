@@ -5,11 +5,11 @@
 	"author": "WordPress.org",
 	"license": "GPL-2.0-or-later",
 	"private": true,
-	"dependencies": {},
 	"devDependencies": {
 		"@wordpress/env": "4.9.0",
 		"@wordpress/scripts": "23.5.0",
-		"backstopjs": "^6.1.0"
+		"backstopjs": "^6.1.0",
+		"lighthouse-ci": "^1.13.1"
 	},
 	"scripts": {
 		"setup:tools": "yarn && composer install && TEXTDOMAIN=wporg composer exec update-configs",
@@ -17,8 +17,11 @@
 		"setup:refresh": "./env/refresh.sh",
 		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
 		"wp-env": "wp-env",
-		"backstop:reference": "backstop reference",
-		"backstop:test": "backstop test"
+		"backstop:reference": "npm exec backstop reference",
+		"backstop:test": "npm exec backstop test",
+		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100",
+		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
+		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"
