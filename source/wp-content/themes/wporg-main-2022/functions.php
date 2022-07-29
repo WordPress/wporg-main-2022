@@ -2,6 +2,8 @@
 
 namespace WordPressdotorg\Theme\Main_2022;
 
+require_once( __DIR__ . '/inc/page-meta-descriptions.php' );
+
 /**
  * Actions and filters.
  */
