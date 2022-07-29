@@ -19,9 +19,9 @@
 		"wp-env": "wp-env",
 		"backstop:reference": "npm exec backstop reference",
 		"backstop:test": "npm exec backstop test",
-		"lighthouse": "npm exec -- lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100",
-		"lighthouse:desktop": "npm exec -- lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
-		"lighthouse:mobile": "npm exec -- lighthouse http://localhost:8888/ --view --preset=mobile --output-path=lighthouse.html"
+		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100",
+		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
+		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"
