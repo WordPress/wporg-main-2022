@@ -53,6 +53,19 @@ These must be run in the project's root folder, _not_ in theme/plugin subfolders
     yarn wp-env start
     ```
 
+* Refresh local WordPress content with a current copy from the staging site.
+
+    ```bash
+    yarn setup:refresh
+    ```
+
+* Reset WordPress to a clean install, and reconfigure. This will nuke all local WordPress content!
+
+    ```bash
+    yarn wp-env clean all
+    yarn setup:wp
+    ```
+
 * SSH into docker container.
 
     ```bash
