@@ -7,6 +7,7 @@ namespace WordPressdotorg\Theme\Main_2022;
  */
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
+add_filter( 'the_content', __NAMESPACE__ . '\prevent_arrow_emoji' );
 
 /**
  * Enqueue scripts and styles.
@@ -46,3 +47,17 @@ add_filter(
 		);
 	}
 );
+
+/**
+ * Add the variation-selector unicode character to any arrow. This will force
+ * the twemoji script to skip these characters, leaving them as text.
+ *
+ * Can be removed once the `wp-exclude-emoji` issue is fixed.
+ * See https://core.trac.wordpress.org/ticket/52219.
+ *
+ * @param string $content Content of the current post.
+ * @return string The updated content.
+ */
+function prevent_arrow_emoji( $content ) {
+	return preg_replace( '/([←↑→↓↔↕↖↗↘↙])/u', '\1&#65038;', $content );
+}
