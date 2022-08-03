@@ -204,6 +204,8 @@ function custom_open_graph_tags( $tags = [] ) {
 	return $tags;
 }
 add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags' );
+// Enable Jetpack opengraph by default
+add_filter( 'jetpack_enable_open_graph', '__return_true' );
 
 /**
  * Renders site's attributes for the WordPress.org frontpages (including Rosetta).
