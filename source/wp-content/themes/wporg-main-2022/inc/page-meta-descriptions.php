@@ -295,6 +295,9 @@ add_filter( 'document_title_parts', __NAMESPACE__ . '\document_title_parts' );
 /**
  * Add excerpts for pages, so we can use it for opengraph descriptions.
  */
-add_action( 'init', function() {
-	add_post_type_support( 'page', 'excerpt' );
-} );
+add_action(
+	'init',
+	function() {
+		add_post_type_support( 'page', 'excerpt' );
+	}
+);
