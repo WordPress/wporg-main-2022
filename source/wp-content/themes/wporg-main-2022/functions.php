@@ -7,7 +7,7 @@ namespace WordPressdotorg\Theme\Main_2022;
  */
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
-add_filter( 'the_content', __NAMESPACE__ . '\prevent_arrow_emoji' );
+add_filter( 'the_content', __NAMESPACE__ . '\prevent_arrow_emoji', 20 );
 
 /**
  * Enqueue scripts and styles.
