@@ -6,6 +6,7 @@
  */
 
 namespace WordPressdotorg\Theme\Main_2022;
+
 use WordPressdotorg\API\Serve_Happy\RECOMMENDED_PHP;
 
 /**
@@ -21,9 +22,12 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	// Use `name=""` for description.
 	// See Jetpacks Twitter Card for where it happens for the twitter:* fields.
-	add_filter( 'jetpack_open_graph_output', function( $html ) {
-		return str_replace( '<meta property="description"', '<meta name="description"', $html );
-	} );
+	add_filter(
+		'jetpack_open_graph_output',
+		function( $html ) {
+			return str_replace( '<meta property="description"', '<meta name="description"', $html );
+		}
+	);
 
 	// Override the Front-page tags.
 	if ( is_front_page() ) {
@@ -226,6 +230,7 @@ function sites_attributes_schema() {
 	if ( ! empty( $rosetta->rosetta->glotpress_locale ) ) {
 		$locale_language = $rosetta->rosetta->glotpress_locale->slug;
 		$name            = sprintf(
+			/* translators: %s: locale native name */
 			__( 'WordPress - %s', 'wporg' ),
 			$rosetta->rosetta->glotpress_locale->native_name
 		);
@@ -275,7 +280,7 @@ function sites_attributes_schema() {
 	]
 }
 </script>
-<?php
+	<?php
 }
 add_action( 'wp_head', __NAMESPACE__ . '\sites_attributes_schema' );
 
