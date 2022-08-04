@@ -53,6 +53,19 @@ These must be run in the project's root folder, _not_ in theme/plugin subfolders
     yarn wp-env start
     ```
 
+* Build the theme's JavaScript
+
+    ```bash
+    yarn workspace wporg-main-2022-theme build
+    ```
+
+    or, automatically build on changes:
+
+    ```bash
+    yarn workspace wporg-main-2022-theme start
+    ```
+
+
 * Refresh local WordPress content with a current copy from the staging site.
 
     ```bash

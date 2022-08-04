@@ -22,6 +22,23 @@ function enqueue_assets() {
 		array( 'wporg-parent-2021-style', 'wporg-global-fonts' ),
 		filemtime( __DIR__ . '/style.css' )
 	);
+
+	$path        = __DIR__ . '/build/index.js';
+	$deps_path   = __DIR__ . '/build/index.asset.php';
+	$script_info = file_exists( $deps_path )
+		? require $deps_path
+		: array(
+			'dependencies' => array(),
+			'version'      => filemtime( $path ),
+		);
+
+	wp_enqueue_script(
+		'wporg-main-2022-script',
+		get_stylesheet_directory_uri() . '/build/index.js',
+		$script_info['dependencies'],
+		$script_info['version'],
+		false
+	);
 }
 
 /**
