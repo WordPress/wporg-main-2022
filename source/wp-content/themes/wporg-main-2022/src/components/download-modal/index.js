@@ -1,25 +1,39 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
-import { Modal } from '@wordpress/components';
+import { useEffect, useState } from '@wordpress/element';
 
-const DownloadModal = ( { onClose } ) => (
-	<Modal className="download-modal" title={ __( 'Howdy!', 'wporg' ) } onRequestClose={ onClose }>
-		<div>
-			<p>
-				You&rsquo;re an important part of the global community that has used, built, and transformed the
-				platform into what it is today. Find out more ways you can contribute and make an impact on the
-				future of the web.
-			</p>
-			<ul>
-				<li>Get involved in WordPress ↗</li>
-				<li>Join a local WordPress meetup ↗</li>
-				<li>Attend a WordCamp ↗</li>
-				<li>Support WordPress and open source education ↗</li>
-			</ul>
-		</div>
-	</Modal>
-);
+/**
+ * Internal dependencies
+ */
+import DownloadModal from './DownloadModal';
 
-export default DownloadModal;
+const DownloadModalContainer = () => {
+	const [ showModal, setShowModal ] = useState( false );
+
+	useEffect( () => {
+		const downloadButtonLink = document.querySelector( '#wporg__download-button .wp-block-button__link' );
+
+		if ( ! downloadButtonLink ) {
+			return;
+		}
+
+		downloadButtonLink.addEventListener( 'click', () => {
+			setShowModal( true );
+		} );
+
+		return () => {
+			downloadButtonLink.removeEventListener( 'click' );
+		};
+	}, [] );
+
+	return showModal ? (
+		<DownloadModal
+			onClose={ () => {
+				setShowModal( false );
+			} }
+		/>
+	) : null;
+};
+
+export default DownloadModalContainer;
