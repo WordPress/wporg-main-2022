@@ -88,6 +88,7 @@ function import_rest_to_posts( $rest_url ) {
 			'post_type' => $post->type,
 			'post_title' => $post->title->rendered,
 			'post_content' => ( $post->content_raw ?? $post->content->rendered ),
+			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
 			'post_parent' => $post->parent,
 			'comment_status' => $post->comment_status,
 			'meta_input' => sanitize_meta_input( $post->meta ),
