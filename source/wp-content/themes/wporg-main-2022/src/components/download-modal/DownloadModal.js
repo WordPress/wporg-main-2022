@@ -19,19 +19,19 @@ const DownloadModal = ( { onClose } ) => (
 				</p>
 				<ul>
 					<li>
-						<a href="https://make.wordpress.org/">{ __( 'Get involved in WordPress ↗', 'wporg' ) }</a>
+						<a href="https://make.wordpress.org/">{ __( 'Get involved in WordPress ↗︎', 'wporg' ) }</a>
 					</li>
 					<li>
 						<a href="https://www.meetup.com/pro/wordpress/">
-							{ __( 'Join a local WordPress meetup ↗', 'wporg' ) }
+							{ __( 'Join a local WordPress meetup ↗︎', 'wporg' ) }
 						</a>
 					</li>
 					<li>
-						<a href="https://central.wordcamp.org/">{ __( 'Attend a WordCamp ↗', 'wporg' ) }</a>
+						<a href="https://central.wordcamp.org/">{ __( 'Attend a WordCamp ↗︎', 'wporg' ) }</a>
 					</li>
 					<li>
 						<a href="https://wordpressfoundation.org/donate/">
-							{ __( 'Support WordPress and open source education ↗', 'wporg' ) }
+							{ __( 'Support WordPress and open source education ↗︎', 'wporg' ) }
 						</a>
 					</li>
 				</ul>
