@@ -83,9 +83,8 @@
 	fill: var(--wp--preset--color--white);
 }
 
-.components-modal__header .components-button span {
+.components-modal__header .components-button .components-tooltip {
 	color: var(--wp--preset--color--white);
-	margin-top: 20px;
 }
 
 .wporg__download-modal .components-modal__header {
