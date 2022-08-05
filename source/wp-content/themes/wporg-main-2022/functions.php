@@ -39,7 +39,7 @@ function enqueue_assets() {
 		get_stylesheet_directory_uri() . '/build/index.js',
 		$script_info['dependencies'],
 		$script_info['version'],
-		false
+		true
 	);
 }
 
