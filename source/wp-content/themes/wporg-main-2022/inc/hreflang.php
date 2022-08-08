@@ -132,9 +132,12 @@ function hreflang_link_attributes() {
 			'subdomain' => '',
 		);
 
-		uasort( $sites, function( $a, $b ) {
-			return strcasecmp( $a->hreflang, $b->hreflang );
-		} );
+		uasort(
+			$sites,
+			function( $a, $b ) {
+				return strcasecmp( $a->hreflang, $b->hreflang );
+			}
+		);
 
 		wp_cache_set( 'local-sites', $sites, 'locale-associations' );
 	}
