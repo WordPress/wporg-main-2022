@@ -116,6 +116,8 @@ function import_rest_to_posts( $rest_url ) {
 			die( esc_html( $new_post_id->get_error_message() ) );
 		}
 
+		file_put_contents( __DIR__ . '/post-data/' . $post->type . '-' . $post->id . '.json', json_encode( $new_post, JSON_PRETTY_PRINT ) );
+
 		echo "Inserted $post->type $post->id as $new_post_id\n\n";
 	}
 }
