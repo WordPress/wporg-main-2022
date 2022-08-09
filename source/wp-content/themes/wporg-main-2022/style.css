@@ -15,13 +15,135 @@
  * templates or theme.json settings.
  */
 
-/* 
+/*
+ * Override inline paddings with the spacing preset.
+ */
+
+[style*="padding-top:120px"] {
+	padding-top: var(--wp--preset--spacing--80) !important;
+}
+
+[style*="padding-bottom:120px"] {
+	padding-bottom: var(--wp--preset--spacing--80) !important;
+}
+
+[style*="padding-top:160px"] {
+	padding-top: var(--wp--preset--spacing--90) !important;
+}
+
+[style*="padding-bottom:160px"] {
+	padding-bottom: var(--wp--preset--spacing--90) !important;
+}
+
+
+/*
+ * Spacing for small screens.
+ */
+
+@media (min-width: 960px) and (max-width: 1280px) {
+
+	/* Pull the features list flush to the edge of the screen (only on mid-sized screens). */
+	#features .is-style-features {
+		margin-left: calc(-1 * var(--wp--preset--spacing--50));
+	}
+}
+
+@media (max-width: 1199px) {
+
+	/* Once we start touching content, add in some side padding. */
+	.entry-content.entry-content > .alignwide,
+	.entry-content.entry-content > .alignfull {
+		padding-left: var(--wp--preset--spacing--60) !important;
+		padding-right: var(--wp--preset--spacing--60) !important;
+	}
+
+	/* Ensure nested full-alignment items are still full-width */
+	.entry-content.entry-content > .alignfull .alignfull {
+		margin-left: calc(var(--wp--preset--spacing--60) * -1) !important;
+		margin-right: calc(var(--wp--preset--spacing--60) * -1) !important;
+	}
+
+	/* Adjust spacing & font size of feature list items */
+	#features .is-style-features > li {
+		padding-left: var(--wp--preset--spacing--30);
+		padding-right: var(--wp--preset--spacing--30);
+	}
+}
+
+@media (max-width: 1000px) {
+
+	/* Remove the spacing next to "Powerful and empowering" to prevent crunched text. */
+	#benefits h2 {
+		margin-right: 0 !important;
+	}
+}
+
+@media (max-width: 959px) {
+
+	/* Flip this section to a column early, otherwise the list items are cut off. */
+	#features .wp-block-columns {
+		flex-wrap: wrap !important;
+	}
+
+	#features .wp-block-columns > .wp-block-column {
+		flex-basis: 100% !important;
+	}
+}
+
+@media (max-width: 781px) {
+
+	/* Update the columns gap when it switches to single-column */
+	#benefits .is-layout-flex,
+	#learning .is-layout-flex,
+	#resources .is-layout-flex {
+		gap: 40px;
+	}
+
+	#get-started,
+	#features {
+		padding: 0 !important;
+	}
+
+	#get-started .wp-block-columns > .wp-block-column:first-child {
+		border-right: none;
+		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
+	}
+
+	#get-started .wp-block-columns > .wp-block-column .wp-block-group,
+	#features .wp-block-columns > .wp-block-column:last-child {
+		padding-left: var(--wp--preset--spacing--60) !important;
+		padding-right: var(--wp--preset--spacing--60) !important;
+	}
+
+	#features .wp-block-columns > .wp-block-column:first-child {
+		padding-right: 0 !important;
+	}
+}
+
+@media (max-width: 599px) {
+	#editor {
+		min-height: 0 !important;
+		padding-left: var(--wp--preset--spacing--40) !important;
+		padding-right: var(--wp--preset--spacing--40) !important;
+	}
+
+	#editor .wp-block-cover__inner-container .wp-block-group > * {
+		max-width: 22rem !important;
+	}
+
+	.wp-block-buttons .wp-block-button,
+	.wp-block-buttons .wp-block-button .wp-block-button__link {
+		width: 100% !important;
+	}
+}
+
+/*
  * Download modal
  */
+
 .components-modal__screen-overlay {
 	position: fixed;
-	/* global header z-index + 1 */
-	z-index: 251;
+	z-index: 251; /* global header z-index + 1 */
 	top: 0;
 	left: 0;
 	width: 100vw;
