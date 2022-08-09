@@ -99,17 +99,17 @@
 		gap: 40px;
 	}
 
-	#get-started,
+	#download-hosting,
 	#features {
 		padding: 0 !important;
 	}
 
-	#get-started .wp-block-columns > .wp-block-column:first-child {
+	#download-hosting .wp-block-columns > .wp-block-column:first-child {
 		border-right: none;
 		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
 	}
 
-	#get-started .wp-block-columns > .wp-block-column .wp-block-group,
+	#download-hosting .wp-block-columns > .wp-block-column .wp-block-group,
 	#features .wp-block-columns > .wp-block-column:last-child {
 		padding-left: var(--wp--preset--spacing--60) !important;
 		padding-right: var(--wp--preset--spacing--60) !important;
