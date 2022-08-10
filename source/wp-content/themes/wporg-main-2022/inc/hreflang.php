@@ -69,7 +69,9 @@ function hreflang_link_attributes() {
 	if ( false === $sites ) {
 		global $wpdb;
 
-		if ( 'local' !== wp_get_environment_type() ) {
+		if ( 'local' === wp_get_environment_type() ) {
+			$sites = array();
+		} else {
 			// phpcs:ignore WordPress.VIP.DirectDatabaseQuery.DirectQuery
 			$sites = $wpdb->get_results( 'SELECT locale, subdomain FROM wporg_locales', OBJECT_K );
 			if ( ! $sites ) {
