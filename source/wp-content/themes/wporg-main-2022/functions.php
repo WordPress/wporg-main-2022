@@ -86,6 +86,9 @@ function prevent_arrow_emoji( $content ) {
 /**
  * Prevent Jetpack from looking for a non-existent featured image.
  */
-add_filter( 'jetpack_images_pre_get_images', function() {
-	return new \WP_Error();
-} );
+add_filter(
+	'jetpack_images_pre_get_images',
+	function() {
+		return new \WP_Error();
+	}
+);
