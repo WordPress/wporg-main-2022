@@ -100,8 +100,10 @@ add_filter(
 add_action(
 	'after_setup_theme',
 	function() {
-		register_nav_menus( array(
-			'rosetta_main' => 'Rosetta',
-		) );
+		register_nav_menus(
+			array(
+				'rosetta_main' => 'Rosetta',
+			)
+		);
 	}
 );
