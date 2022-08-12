@@ -37,7 +37,7 @@
 <!-- wp:cover {"url":"https://wordpress.org/main-test/files/2022/08/editor-bg-scaled.webp","id":9215,"dimRatio":0,"minHeight":670,"minHeightUnit":"px","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"0px"}}}} -->
 <div class="wp-block-cover alignfull is-light" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:0px;min-height:670px" id="editor"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-9215" alt="" src="https://wordpress.org/main-test/files/2022/08/editor-bg-scaled.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white","layout":{"inherit":false,"contentSize":"520px"}} -->
 <div class="wp-block-group has-white-color has-text-color has-link-color"><!-- wp:heading {"textAlign":"right","textColor":"pomegrade-3","fontSize":"heading-cta"} -->
-<h2 class="has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size">Dream it, build it</h2>
+<h2 class="has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size">Dream it, build&nbsp;it</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
