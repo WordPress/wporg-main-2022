@@ -78,10 +78,6 @@ add_filter( 'jetpack_enable_open_graph', '__return_true' );
 function sites_attributes_schema() {
 	global $rosetta;
 
-	if ( ! is_front_page() ) {
-		return;
-	}
-
 	$og_tags         = custom_open_graph_tags();
 	$locale_language = 'en';
 	$name            = 'WordPress.org';
@@ -95,7 +91,7 @@ function sites_attributes_schema() {
 		);
 	}
 
-	?>
+	if ( is_front_page() ) : ?>
 <script type="application/ld+json">
 {
 	"@context":"https://schema.org",
@@ -139,7 +135,39 @@ function sites_attributes_schema() {
 	]
 }
 </script>
-	<?php
+	<?php elseif ( is_page( 'download' ) ) : ?>
+<script type="application/ld+json">
+[
+	{
+		"@context": "http://schema.org",
+		"@type": [
+			"SoftwareApplication",
+			"Product"
+		],
+		"name": "WordPress",
+		"operatingSystem": [ "Linux", "Windows", "Unix", "Apache", "NGINX" ],
+		"url": "<?php the_permalink(); ?>",
+		"description": "<?php echo esc_js( $og_tags['og:description'] ); ?>",
+		"softwareVersion": "<?php echo esc_js( do_shortcode( '[latest_version]' ) ); ?>",
+		"fileFormat": "application/zip",
+		"downloadUrl": "<?php echo esc_url( do_shortcode( '[download_link]' ) ); ?>",
+		"dateModified": "<?php echo esc_js( do_shortcode( '[latest_version_ts]' ) ); ?>",
+		"applicationCategory": "WebApplication",
+		"offers": {
+			"@type": "Offer",
+			"url": "<?php the_permalink(); ?>",
+			"price": "0.00",
+			"priceCurrency": "USD",
+			"seller": {
+				"@type": "Organization",
+				"name": "WordPress.org",
+				"url": "https://wordpress.org"
+			}
+		}
+	}
+]
+</script>
+	<?php endif;
 }
 add_action( 'wp_head', __NAMESPACE__ . '\sites_attributes_schema' );
 
