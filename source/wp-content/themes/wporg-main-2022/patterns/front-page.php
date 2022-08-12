@@ -10,7 +10,7 @@
 <div class="wp-block-group alignwide" id="intro" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"85%"} -->
 <div class="wp-block-column" style="flex-basis:85%"><!-- wp:heading {"level":1,"textColor":"charcoal-1","fontSize":"heading-cta"} -->
-<h1 class="has-charcoal-1-color has-text-color has-heading-cta-font-size">WordPress: Publish your <em><mark class="has-inline-color has-blueberry-1-color">passion</mark></em></h1>
+<h1 class="has-charcoal-1-color has-text-color has-heading-cta-font-size">WordPress: Publish your <em>passion</em></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -111,7 +111,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"backgroundColor":"charcoal-1","textColor":"white","layout":{"inherit":true}} -->
-<div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:80px"><!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
+<div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:80px"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"left","fontSize":"heading-2"} -->
 <h2 class="has-text-align-left has-heading-2-font-size">One platform, millions of possibilities</h2>
 <!-- /wp:heading -->
@@ -129,8 +129,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"30px","bottom":"30px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="margin-top:30px;margin-bottom:30px"><!-- wp:image {"id":9099,"width":105,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":9099,"width":105,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Spotify.png" alt="" class="wp-image-9099" width="105" height="33"/></figure>
 <!-- /wp:image -->
 
@@ -248,7 +248,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"66%","layout":{"inherit":false}} -->
-<div class="wp-block-column" style="flex-basis:66%"><!-- wp:wporg/multisite-latest-posts -->
+<div class="wp-block-column" style="flex-basis:66%"><!-- wp:group {"style":{"spacing":{"margin":{"top":"15px"}}}} -->
+<div class="wp-block-group" style="margin-top:15px"><!-- wp:wporg/multisite-latest-posts -->
 <div class="wp-block-wporg-multisite-latest-posts" data-endpoint="https://wordpress.org/news/wp-json/wp/v2" data-per-page="3"></div>
 <!-- /wp:wporg/multisite-latest-posts -->
 
@@ -259,11 +260,12 @@
 <!-- wp:paragraph -->
 <p><a href="https://wordpress.org/news/">View all</a></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"80px","right":"var:preset|spacing|60","bottom":"80px","left":"var:preset|spacing|60"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true}} -->
-<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:80px;padding-right:var(--wp--preset--spacing--60);padding-bottom:80px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide"} -->
+<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:80px;padding-right:var(--wp--preset--spacing--60);padding-bottom:80px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","className":"is-style-with-arrow","fontSize":"heading-cta","fontFamily":"inter"} -->
 <h2 class="alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size"><a href="https://wordpress.org/download/">Get started</a></h2>
 <!-- /wp:heading -->
@@ -278,6 +280,10 @@
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
