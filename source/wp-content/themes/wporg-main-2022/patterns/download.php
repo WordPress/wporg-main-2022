@@ -6,8 +6,8 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"0px"}}},"layout":{"inherit":true}} -->
-<div class="wp-block-group alignfull" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:0px"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-1"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"120px","left":"0px"}}},"layout":{"inherit":true}} -->
+<div class="wp-block-group alignfull" style="padding-top:80px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-1"} -->
 <h1 class="has-text-align-center has-heading-1-font-size">Get WordPress</h1>
 <!-- /wp:heading -->
 
