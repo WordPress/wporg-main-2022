@@ -97,10 +97,10 @@ add_shortcode(
 );
 
 /**
- * Shortcode for a formatted time when the latest version was published.
+ * Shortcode for a formatted date & time when the latest version was published.
  */
 add_shortcode(
-	'latest_version_ts',
+	'latest_version_date',
 	function( $attrs = array() ) {
 		$format = $attrs['format'] ?? 'Y-m-d\TH:i:s\+00:00';
 

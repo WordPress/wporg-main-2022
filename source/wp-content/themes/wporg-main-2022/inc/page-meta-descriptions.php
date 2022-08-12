@@ -151,7 +151,7 @@ function sites_attributes_schema() {
 		"softwareVersion": "<?php echo esc_js( do_shortcode( '[latest_version]' ) ); ?>",
 		"fileFormat": "application/zip",
 		"downloadUrl": "<?php echo esc_url( do_shortcode( '[download_link]' ) ); ?>",
-		"dateModified": "<?php echo esc_js( do_shortcode( '[latest_version_ts]' ) ); ?>",
+		"dateModified": "<?php echo esc_js( do_shortcode( '[latest_version_date]' ) ); ?>",
 		"applicationCategory": "WebApplication",
 		"offers": {
 			"@type": "Offer",
