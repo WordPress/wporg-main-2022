@@ -11,6 +11,7 @@ require_once( __DIR__ . '/inc/hreflang.php' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'render_block_core/pattern', __NAMESPACE__ . '\prevent_arrow_emoji', 20 );
+add_filter( 'wp_omit_loading_attr_threshold', __NAMESPACE__ . '\skip_lazyloading_on_homepage_images' );
 
 /**
  * Enqueue scripts and styles.
@@ -107,3 +108,14 @@ add_action(
 		);
 	}
 );
+
+/**
+ * Prevent lazy loading the images above the fold as this affects LCP performance.
+ */
+function skip_lazyloading_on_homepage_images( $omit_threshold ) {
+	if ( is_home() ) {
+		return 2;
+	}
+
+	return $omit_threshold;
+}
