@@ -93,3 +93,17 @@ add_filter(
 		return new \WP_Error();
 	}
 );
+
+/**
+ * Register the Rosetta header menu.
+ */
+add_action(
+	'after_setup_theme',
+	function() {
+		register_nav_menus(
+			array(
+				'rosetta_main' => 'Rosetta',
+			)
+		);
+	}
+);
