@@ -34,8 +34,8 @@
 <div class="wp-block-wporg-language-suggest alignfull"></div>
 <!-- /wp:wporg/language-suggest -->
 
-<!-- wp:cover {"url":"https://wordpress.org/main-test/files/2022/08/editor-bg-scaled.webp","id":9215,"dimRatio":0,"minHeight":670,"minHeightUnit":"px","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"0px"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:0px;min-height:670px" id="editor"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-9215" alt="" src="https://wordpress.org/main-test/files/2022/08/editor-bg-scaled.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white","layout":{"inherit":false,"contentSize":"520px"}} -->
+<!-- wp:cover {"url":"https://wordpress.org/files/2022/08/editor-bg-scaled-1.webp","id":11480,"dimRatio":0,"minHeight":670,"minHeightUnit":"px","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"0px"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:0px;min-height:670px" id="editor"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-11480" alt="" src="https://wordpress.org/files/2022/08/editor-bg-scaled-1.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white","layout":{"inherit":false,"contentSize":"520px"}} -->
 <div class="wp-block-group has-white-color has-text-color has-link-color"><!-- wp:heading {"textAlign":"right","textColor":"pomegrade-3","fontSize":"heading-cta"} -->
 <h2 class="has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size">Dream it, build&nbsp;it</h2>
 <!-- /wp:heading -->
@@ -57,8 +57,8 @@
 <h2 class="has-heading-2-font-size" style="margin-right:100px;margin-bottom:40px">Powerful and empowering</h2>
 <!-- /wp:heading -->
 
-<!-- wp:image {"id":8923,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/themes/"><img src="https://wordpress.org/main-test/files/2022/07/theme-styles.png" alt="An illustration showing a grid of different type styles and color options, with a cursor arrow making a selection." class="wp-image-8923"/></a></figure>
+<!-- wp:image {"id":11481,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://wordpress.org/themes/"><img src="https://wordpress.org/files/2022/08/theme-styles.png" alt="An illustration showing a grid of different type styles and color options, with a cursor arrow making a selection." class="wp-image-11481"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -130,28 +130,28 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":9099,"width":105,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Spotify.png" alt="Spotify logo" class="wp-image-9099" width="105" height="33"/></figure>
+<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":105,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Spotify.png" alt="Spotify logo" class="wp-image-11474" width="105" height="33"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":9100,"width":79,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Time-Magazine.png" alt="Time Magazine logo" class="wp-image-9100" width="79" height="33"/></figure>
+<!-- wp:image {"id":11475,"width":79,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="Time Magazine logo" class="wp-image-11475" width="79" height="33"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":9101,"width":118,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Vogue.png" alt="Vogue Magazine logo" class="wp-image-9101" width="118" height="33"/></figure>
+<!-- wp:image {"id":11476,"width":118,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Vogue.png" alt="Vogue Magazine logo" class="wp-image-11476" width="118" height="33"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":9098,"width":210,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Sony-Music.png" alt="Sony Music logo" class="wp-image-9098" width="210" height="33"/></figure>
+<!-- wp:image {"id":11473,"width":210,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Sony-Music.png" alt="Sony Music logo" class="wp-image-11473" width="210" height="33"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":9102,"width":97,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Wired.png" alt="Wired Magazine logo" class="wp-image-9102" width="97" height="33"/></figure>
+<!-- wp:image {"id":11479,"width":97,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Wired.png" alt="Wired Magazine logo" class="wp-image-11479" width="97" height="33"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":9097,"width":76,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2022/08/Disney.png" alt="Disney logo" class="wp-image-9097" width="76" height="33"/></figure>
+<!-- wp:image {"id":11482,"width":76,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Disney.png" alt="Disney logo" class="wp-image-11482" width="76" height="33"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -165,8 +165,8 @@
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:image {"align":"full","id":9190,"sizeSlug":"full","linkDestination":"none","style":{"color":[]}} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/main-test/files/2022/08/Showcase_2560.webp" alt="A gallery of screenshots showcasing various websites that use WordPress, and how they’ve each been uniquely designed using the platform." class="wp-image-9190"/></figure>
+<!-- wp:image {"align":"full","id":11477,"sizeSlug":"full","linkDestination":"none","style":{"color":[]}} -->
+<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2022/08/Showcase_2560.webp" alt="A gallery of screenshots showcasing various websites that use WordPress, and how they’ve each been uniquely designed using the platform." class="wp-image-11477"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -191,8 +191,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"100px"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"color":{"background":"#f6f6f6"}},"textColor":"blueberry-1","layout":{"inherit":true}} -->
-<div class="wp-block-group alignfull has-blueberry-1-color has-text-color has-background has-link-color" id="community" style="background-color:#f6f6f6;padding-bottom:100px"><!-- wp:cover {"url":"https://wordpress.org/main-test/files/2022/08/Community-Photo_2560.webp","id":9193,"dimRatio":0,"focalPoint":{"x":"0.50","y":"1.00"},"minHeight":500,"minHeightUnit":"px","isDark":false,"align":"full","style":{"color":[],"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"bottom":"60px"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="margin-bottom:60px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-9193" alt="A black and white bird’s eye view of the thousands of contributors who attended WordCamp Europe 2022. They are all standing in front of the venue with their hands up in celebration." src="https://wordpress.org/main-test/files/2022/08/Community-Photo_2560.webp" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-group alignfull has-blueberry-1-color has-text-color has-background has-link-color" id="community" style="background-color:#f6f6f6;padding-bottom:100px"><!-- wp:cover {"url":"https://wordpress.org/files/2022/08/Community-Photo_2560.webp","id":11478,"dimRatio":0,"focalPoint":{"x":"0.50","y":"1.00"},"minHeight":500,"minHeightUnit":"px","isDark":false,"align":"full","style":{"color":[],"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"bottom":"60px"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="margin-bottom:60px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-11478" alt="A black and white bird’s eye view of the thousands of contributors who attended WordCamp Europe 2022. They are all standing in front of the venue with their hands up in celebration." src="https://wordpress.org/files/2022/08/Community-Photo_2560.webp" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size"></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
