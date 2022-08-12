@@ -119,11 +119,11 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="Available in the Apple App Store" width="150" height="45"/></a></figure>
+<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="Download on the Apple App Store" width="150" height="45"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Available in the Google Play Store" width="150" height="45"/></a></figure>
+<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Get it on Google Play" width="150" height="45"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
