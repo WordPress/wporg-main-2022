@@ -41,11 +41,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text">It’s not magic, it’s the WordPress Editor. Create custom sites with intuitive editing, flexible design tools, and powerful features to manage it all.</p>
+<p class="has-text-align-left is-style-short-text">That’s the beauty of using blocks. See exactly how your site will look in real time, even as you add, edit, and rearrange your content. Create any kind of custom site with intuitive editing, flexible design tools, and powerful features to manage it all.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a rel="noreferrer noopener" href="/gutenberg" target="_blank">Explore the editor ↗</a></p>
+<p><a rel="noreferrer noopener" href="/gutenberg" target="_blank">Explore the WordPress Editor ↗</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
