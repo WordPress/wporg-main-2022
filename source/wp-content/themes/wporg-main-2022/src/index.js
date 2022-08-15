@@ -11,7 +11,7 @@ const initDownloadModal = () => {
 };
 
 const init = () => {
-	if ( document.body.classList.contains( 'page-template-page-download' ) ) {
+	if ( document.getElementById( 'wporg__download-button' ) ) {
 		initDownloadModal();
 	}
 };
