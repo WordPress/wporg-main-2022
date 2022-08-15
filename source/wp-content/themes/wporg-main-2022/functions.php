@@ -11,6 +11,7 @@ require_once( __DIR__ . '/inc/hreflang.php' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'render_block_core/pattern', __NAMESPACE__ . '\prevent_arrow_emoji', 20 );
+add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
@@ -82,6 +83,22 @@ add_filter(
  */
 function prevent_arrow_emoji( $content ) {
 	return preg_replace( '/([←↑→↓↔↕↖↗↘↙])/u', '\1&#65038;', $content );
+}
+
+/**
+ * Prevents adding loading="lazy" to the editor section's background.
+ *
+ * @param string|bool $value   The `loading` attribute value.
+ * @param string      $image   The HTML `img` tag to be filtered.
+ *
+ * @return string The filtered loading value.
+ */
+function override_lazy_loading( $value, $image ) {
+	if ( str_contains( $image, 'editor-bg' ) ) {
+		// False removes the `loading` attribute entirely.
+		return false;
+	}
+	return $value;
 }
 
 /**
