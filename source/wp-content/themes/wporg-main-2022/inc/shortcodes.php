@@ -95,3 +95,24 @@ add_shortcode(
 		return $link;
 	}
 );
+
+/**
+ * Shortcode for a formatted date & time when the latest version was published.
+ */
+add_shortcode(
+	'latest_version_date',
+	function( $attrs = array() ) {
+		$format = $attrs['format'] ?? 'Y-m-d\TH:i:s\+00:00';
+
+		$timestamp = defined( 'WPORG_WP_RELEASES_PATH' ) ? filemtime( WPORG_WP_RELEASES_PATH . 'wordpress-' . WP_CORE_LATEST_RELEASE . '.zip' ) : time();
+
+		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
+			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
+			if ( $rosetta_release ) {
+				$timestamp = $rosetta_release['builton'];
+			}
+		}
+
+		return gmdate( $format, $timestamp );
+	}
+);
