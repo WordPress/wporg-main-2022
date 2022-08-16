@@ -21,7 +21,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"right":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
 <div class="wp-block-column" style="border-right-color:var(--wp--preset--color--light-grey-1);border-right-width:1px;flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"60px","bottom":"80px","left":"0px"}}}} -->
 <div class="wp-block-group alignwide" id="download-install" style="padding-top:80px;padding-right:60px;padding-bottom:80px;padding-left:0px"><!-- wp:heading {"textAlign":"left","fontSize":"heading-4"} -->
-<h2 class="has-text-align-left has-heading-4-font-size">Download and install yourself</h2>
+<h2 class="has-text-align-left has-heading-4-font-size">Download and install it yourself</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
