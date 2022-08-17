@@ -87,12 +87,16 @@ function import_rest_to_posts( $rest_url ) {
 			'post_status' => $post->status,
 			'post_type' => $post->type,
 			'post_title' => $post->title->rendered,
-			'post_content' => ( $post->content_raw ?? $post->content->rendered ),
-			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
+			'post_content' => ( $post->content_raw ?? $post->content->rendered ?? $post->description->rendered ),
+			'post_excerpt' => ( isset( $post->excerpt ) ? wp_strip_all_tags( $post->excerpt->rendered ) : null ),
 			'post_parent' => $post->parent,
 			'comment_status' => $post->comment_status,
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
+
+		if ( 'attachment' === $post->type && intval( $post->post ) > 0 ) {
+			$new_post[ 'post_parent' ] = $post->post;
+		}
 
 		$existing_post = get_post( $post->id, ARRAY_A );
 
@@ -117,6 +121,12 @@ function import_rest_to_posts( $rest_url ) {
 		}
 
 		echo "Inserted $post->type $post->id as $new_post_id\n\n";
+
+		if ( !empty ( $post->media_details ) ) {
+			// This is probably not a perfect match of field names etc.
+			$media_details_array = json_decode( json_encode( $post->media_details ), true, 10 );
+			wp_update_attachment_metadata( $new_post_id , $media_details_array );
+		}
 	}
 }
 
