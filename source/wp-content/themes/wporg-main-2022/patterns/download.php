@@ -40,7 +40,17 @@
 
 <!-- wp:paragraph {"textColor":"charcoal-4","className":"is-style-short-text","fontSize":"small"} -->
 <p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size">Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","fontSize":"small"} -->
+<!-- wp:navigation-link {"label":"Releases","url":"https://wordpress.org/download/releases/","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Nightly","url":"https://wordpress.org/download/beta-nightly/","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Counter","url":"https://wordpress.org/download/counter/","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Source","url":"https://wordpress.org/download/source/","kind":"custom","isTopLevelLink":true} /-->
+<!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
