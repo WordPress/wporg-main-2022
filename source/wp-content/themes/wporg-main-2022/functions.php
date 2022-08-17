@@ -94,7 +94,7 @@ function prevent_arrow_emoji( $content ) {
  * @return string The filtered loading value.
  */
 function override_lazy_loading( $value, $image ) {
-	if ( str_contains( $image, 'editor-bg' ) ) {
+	if ( str_contains( $image, 'Editor.webp' ) ) {
 		// False removes the `loading` attribute entirely.
 		return false;
 	}
