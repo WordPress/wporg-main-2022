@@ -25,7 +25,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/download">Get WordPress</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/download/">Get WordPress</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -45,7 +45,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a rel="noreferrer noopener" href="/gutenberg" target="_blank">Explore the WordPress Editor ↗</a></p>
+<p><a rel="noreferrer noopener" href="/gutenberg/" target="_blank">Explore the WordPress Editor ↗</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
@@ -157,7 +157,7 @@
 
 <!-- wp:buttons {"align":"wide"} -->
 <div class="wp-block-buttons alignwide"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/showcase">Find inspiration</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/showcase/">Find inspiration</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
