@@ -42,7 +42,7 @@
 <p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size">Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","fontSize":"small"} -->
+<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","fontSize":"small","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}}} -->
 <!-- wp:navigation-link {"label":"Releases","url":"https://wordpress.org/download/releases/","kind":"custom","isTopLevelLink":true} /-->
 
 <!-- wp:navigation-link {"label":"Nightly","url":"https://wordpress.org/download/beta-nightly/","kind":"custom","isTopLevelLink":true} /-->
