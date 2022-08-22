@@ -54,6 +54,29 @@ function filter_curl_options( $ch ) {
 	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
 }
 
+function sideload_from_url( $remote_url ) {
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
+
+	$temp_file = download_url( $remote_url );
+
+	if ( is_wp_error( $temp_file ) ) {
+		die( esc_html( $temp_file->get_error_message() ) );
+	}
+
+	$file_array = array(
+		'name'     => basename( $remote_url ),
+		'tmp_name' => $temp_file,
+		'error'    => 0,
+		'size'     => filesize( $temp_file ),
+	);
+
+	$overrides = array(
+		'test_form'   => false,
+	);
+
+	return wp_handle_sideload( $file_array, $overrides );
+}
+
 /**
  * Import posts from a remote REST API to the local test site.
  *
@@ -89,13 +112,24 @@ function import_rest_to_posts( $rest_url ) {
 			'post_title' => $post->title->rendered,
 			'post_content' => ( $post->content_raw ?? $post->content->rendered ?? $post->description->rendered ),
 			'post_excerpt' => ( isset( $post->excerpt ) ? wp_strip_all_tags( $post->excerpt->rendered ) : null ),
-			'post_parent' => $post->parent,
+			'post_parent' => $post->parent ?? null,
 			'comment_status' => $post->comment_status,
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
 
-		if ( 'attachment' === $post->type && intval( $post->post ) > 0 ) {
-			$new_post[ 'post_parent' ] = $post->post;
+		if ( 'attachment' === $post->type ) {
+			if ( intval( $post->post ) > 0 ) {
+				$new_post[ 'post_parent' ] = $post->post;
+			}
+
+			// guid is the best source of the unscaled original image
+			$uploaded_file = sideload_from_url( $post->guid->rendered );
+
+			if ( is_wp_error( $uploaded_file ) ) {
+				die( esc_html( $uploaded_file->get_error_message() ) );
+			}
+
+			$new_post[ 'file' ] = $uploaded_file[ 'file' ];
 		}
 
 		$existing_post = get_post( $post->id, ARRAY_A );
