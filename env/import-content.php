@@ -54,6 +54,10 @@ function filter_curl_options( $ch ) {
 	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
 }
 
+/**
+ * Download a remote URL and sideload it into the upload directory.
+ * Doesn't create an attachment.
+ */
 function sideload_from_url( $remote_url ) {
 	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 
@@ -119,7 +123,7 @@ function import_rest_to_posts( $rest_url ) {
 
 		if ( 'attachment' === $post->type ) {
 			if ( intval( $post->post ) > 0 ) {
-				$new_post[ 'post_parent' ] = $post->post;
+				$new_post['post_parent'] = $post->post;
 			}
 
 			// guid is the best source of the unscaled original image
@@ -129,7 +133,7 @@ function import_rest_to_posts( $rest_url ) {
 				die( esc_html( $uploaded_file->get_error_message() ) );
 			}
 
-			$new_post[ 'file' ] = $uploaded_file[ 'file' ];
+			$new_post['file'] = $uploaded_file['file'];
 		}
 
 		$existing_post = get_post( $post->id, ARRAY_A );
@@ -156,10 +160,10 @@ function import_rest_to_posts( $rest_url ) {
 
 		echo "Inserted $post->type $post->id as $new_post_id\n\n";
 
-		if ( !empty ( $post->media_details ) ) {
+		if ( ! empty( $post->media_details ) ) {
 			// This is probably not a perfect match of field names etc.
 			$media_details_array = json_decode( json_encode( $post->media_details ), true, 10 );
-			wp_update_attachment_metadata( $new_post_id , $media_details_array );
+			wp_update_attachment_metadata( $new_post_id, $media_details_array );
 		}
 	}
 }
