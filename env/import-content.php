@@ -58,7 +58,7 @@ function filter_curl_options( $ch ) {
  * Download a remote URL and sideload it into the upload directory.
  * Doesn't create an attachment.
  */
-function sideload_from_url( $remote_url ) {
+function sideload_from_url( $remote_url, $time = null ) {
 	require_once( ABSPATH . 'wp-admin/includes/file.php' );
 
 	$temp_file = download_url( $remote_url );
@@ -78,7 +78,7 @@ function sideload_from_url( $remote_url ) {
 		'test_form'   => false,
 	);
 
-	return wp_handle_sideload( $file_array, $overrides );
+	return wp_handle_sideload( $file_array, $overrides, $time );
 }
 
 /**
@@ -127,7 +127,7 @@ function import_rest_to_posts( $rest_url ) {
 			}
 
 			// guid is the best source of the unscaled original image
-			$uploaded_file = sideload_from_url( $post->guid->rendered );
+			$uploaded_file = sideload_from_url( $post->guid->rendered, gmdate( 'Y/m', strtotime( $post->date ) ) );
 
 			if ( is_wp_error( $uploaded_file ) ) {
 				die( esc_html( $uploaded_file->get_error_message() ) );
