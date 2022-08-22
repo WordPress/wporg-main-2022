@@ -28,8 +28,8 @@ function enqueue_assets() {
 	);
 
 	if ( is_page( 'download' ) ) {
-		$path        = __DIR__ . '/build/index.js';
-		$deps_path   = __DIR__ . '/build/index.asset.php';
+		$path        = __DIR__ . '/build/download/index.js';
+		$deps_path   = __DIR__ . '/build/download/index.asset.php';
 		$script_info = file_exists( $deps_path )
 			? require $deps_path
 			: array(
@@ -39,7 +39,7 @@ function enqueue_assets() {
 
 		wp_enqueue_script(
 			'wporg-main-2022-script',
-			get_stylesheet_directory_uri() . '/build/index.js',
+			get_stylesheet_directory_uri() . '/build/download/index.js',
 			$script_info['dependencies'],
 			$script_info['version'],
 			true

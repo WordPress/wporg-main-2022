@@ -6,7 +6,7 @@ import { useEffect, useState } from '@wordpress/element';
 /**
  * Internal dependencies
  */
-import DownloadModal from './DownloadModal';
+import DownloadModal from './download-modal';
 
 const DownloadModalContainer = () => {
 	const [ showModal, setShowModal ] = useState( false );

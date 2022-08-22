@@ -1,4 +1,4 @@
-import DownloadModalContainer from './components/download-modal/';
+import DownloadModalContainer from '../components/download-modal/';
 
 const initDownloadModal = () => {
 	const downloadModalContainerEl = document.createElement( 'div' );
