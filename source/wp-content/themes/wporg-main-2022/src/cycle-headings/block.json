@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wporg/cycle-heading",
+	"version": "0.1.0",
+	"title": "Cycle Headings",
+	"category": "design",
+	"icon": "heading",
+	"description": "Animate through a set of headings.",
+	"textdomain": "wporg",
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js"
+}
