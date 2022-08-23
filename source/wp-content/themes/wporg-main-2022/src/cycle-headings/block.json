@@ -8,6 +8,22 @@
 	"icon": "heading",
 	"description": "Animate through a set of headings.",
 	"textdomain": "wporg",
+	"supports": {
+		"align": true,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": true,
+			"blockGap": false
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
 	"editorScript": "file:./index.js",
 	"viewScript": "file:./view.js",
 	"style": "file:./style-index.css"
