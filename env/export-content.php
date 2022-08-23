@@ -18,12 +18,15 @@ if ( 'cli' != php_sapi_name() ) {
 	die();
 }
 
-$opts = getopt( 'u:o:', array( 'url:', 'output:' ) );
+$opts = getopt( 'u:o:', array( 'url:', 'output:', 'manifest:', 'rest_url:', 'pattern_path:' ) );
 
 $url = $opts['u'] ?? $opts['url'] ?? null;
 $output = $opts['o'] ?? $opts['output'] ?? null;
+$manifest = $opts['manifest'] ?? null;
+$rest_url = $opts['rest_url'] ?? 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
+$pattern_path = $opts['pattern_path'] ?? 'source/wp-content/themes/wporg-main-2022/patterns/%s';
 
-if ( $url && $output ) {
+function generate_pattern( $url, $output_path ) {
 
 	$data = file_get_contents( $url );
 	if ( !$data ) {
@@ -49,12 +52,30 @@ if ( $url && $output ) {
 
 EOF;
 
-	$output_path = $output;
 	$bytes = file_put_contents( $output_path, $header . $post->content_raw . "\n" );
 
 	if ( false === $bytes ) {
 		die( 'Unable to write to ' . $output_path );
 	} else {
 		echo 'Wrote ' . number_format( $bytes ) . ' bytes to ' . $output_path . "\n";
+	}
+}
+
+if ( $url && $output ) {
+	generate_pattern( $url, $output );
+} elseif ( $manifest ) {
+	$manifest_data = file_get_contents( $manifest );
+	$manifest_items = json_decode( $manifest_data );
+	if ( !$manifest_data || !$manifest_items ) {
+		die( "Unable to read manifest from $manifest/n" );
+	}
+
+	foreach( $manifest_items as $item ) {
+		if ( $item->slug ) {
+			$pattern = $item->pattern ?? $item->slug . '.php';
+			$template = $item->template ?? $item->slug . '.html';
+			var_dump( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+		}
 	}
 }
