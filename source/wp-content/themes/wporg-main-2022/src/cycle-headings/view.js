@@ -4,7 +4,7 @@ const MS_DELAY_BETWEEN_ITEMS = 500;
 
 function textFragmentIterator() {
 	let currentIteration = 0;
-	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-heading p > span' ) ).map(
+	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-headings p > span' ) ).map(
 		( elem ) => elem.innerHTML
 	);
 
@@ -16,7 +16,7 @@ function textFragmentIterator() {
 
 function init() {
 	const getNextTextFragment = textFragmentIterator();
-	const targetNode = document.querySelector( '.wp-block-wporg-cycle-heading-container' );
+	const targetNode = document.querySelector( '.wp-block-wporg-cycle-headings__container' );
 
 	window.setTimeout( () => {
 		targetNode.classList.add( 'is-ready' );

@@ -10,7 +10,7 @@
 <div class="wp-block-group alignwide" id="intro" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"85%"} -->
 <div class="wp-block-column" style="flex-basis:85%">
-	<!-- wp:wporg/cycle-heading {"fontSize":"heading-cta"} /-->
+	<!-- wp:wporg/cycle-headings {"fontSize":"heading-cta"} /-->
 </div>
 <!-- /wp:column -->
 
