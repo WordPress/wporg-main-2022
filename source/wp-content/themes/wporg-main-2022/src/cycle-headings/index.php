@@ -43,9 +43,9 @@ function render( $attributes, $content, $block ) {
 	}
 
 	$headings = array(
-		'Publish your passion',
-		'Start your podcast',
-		'Do your thing',
+		'Publish your <em>passion</em>',
+		'Start your <em>podcast</em>',
+		'Do your <em>thing</em>',
 	);
 
 	$content = '<h1 class="screen-reader-text">WordPress: Publish your passion</h1>';

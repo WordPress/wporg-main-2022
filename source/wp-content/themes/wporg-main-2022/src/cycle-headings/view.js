@@ -4,8 +4,8 @@ const MS_DELAY_BETWEEN_ITEMS = 500;
 
 function textFragmentIterator() {
 	let currentIteration = 0;
-	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-heading p' ) ).map(
-		( elem ) => elem.textContent
+	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-heading p > span' ) ).map(
+		( elem ) => elem.innerHTML
 	);
 
 	return () => {
@@ -25,7 +25,7 @@ window.setInterval( () => {
 	targetNode.classList.remove( 'fade-in' );
 
 	window.setTimeout( () => {
-		targetNode.textContent = getNextTextFragment();
+		targetNode.innerHTML = getNextTextFragment();
 		targetNode.classList.add( 'fade-in' );
 	}, MS_DELAY_BETWEEN_ITEMS );
 }, MS_DURATION_PER_ITEM );
