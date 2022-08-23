@@ -9,9 +9,9 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide" id="intro" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"85%"} -->
-<div class="wp-block-column" style="flex-basis:85%"><!-- wp:heading {"level":1,"textColor":"charcoal-1","fontSize":"heading-cta"} -->
-<h1 class="has-charcoal-1-color has-text-color has-heading-cta-font-size">WordPress: Publish your <em>passion</em></h1>
-<!-- /wp:heading --></div>
+<div class="wp-block-column" style="flex-basis:85%">
+	<!-- wp:wporg/cycle-heading {"fontSize":"heading-cta"} /-->
+</div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"15%"} -->
