@@ -1,7 +1,6 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -11,5 +10,9 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function Edit() {
-	return <p { ...useBlockProps() }>{ __( '{{title}} – hello from the editor!', 'wporg' ) }</p>;
+	return (
+		<h1 { ...useBlockProps() }>
+			WordPress: Publish your <em>passion</em>
+		</h1>
+	);
 }
