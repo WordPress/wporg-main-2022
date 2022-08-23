@@ -18,13 +18,14 @@ if ( 'cli' != php_sapi_name() ) {
 	die();
 }
 
-$opts = getopt( 'u:o:', array( 'url:', 'output:', 'manifest:', 'rest_url:', 'pattern_path:' ) );
+$opts = getopt( 'u:o:', array( 'url:', 'output:', 'manifest:', 'rest_url:', 'pattern_path:', 'template_path:' ) );
 
 $url = $opts['u'] ?? $opts['url'] ?? null;
 $output = $opts['o'] ?? $opts['output'] ?? null;
 $manifest = $opts['manifest'] ?? null;
 $rest_url = $opts['rest_url'] ?? 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
 $pattern_path = $opts['pattern_path'] ?? 'source/wp-content/themes/wporg-main-2022/patterns/%s';
+$template_path = $opts['template_path'] ?? 'source/wp-content/themes/wporg-main-2022/templates/%s';
 
 function generate_pattern( $url, $output_path ) {
 
@@ -61,6 +62,30 @@ EOF;
 	}
 }
 
+function generate_template( $slug, $output_path ) {
+	$template = <<<EOF
+<!-- wp:wporg/global-header {"style":"black-on-white"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"inherit":true},"className":"entry-content","style":{"spacing":{"blockGap":"0px"}}} -->
+<main class="wp-block-group entry-content">
+	<!-- wp:pattern {"slug":"wporg-main-2022/{$slug}"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:wporg/global-footer {"style":"black-on-white"} /-->
+
+EOF;
+
+	// 'x' mode so we don't overwrite an existing file
+	if ( $fp = @fopen( $output_path, 'x' ) ) {
+		$bytes = fwrite( $fp, $template );
+		fclose( $fp );
+		echo 'Wrote ' . number_format( $bytes ) . ' bytes to ' . $output_path . "\n";
+	} else {
+		echo "Skipping $output_path\n";
+	}
+}
+
 if ( $url && $output ) {
 	generate_pattern( $url, $output );
 } elseif ( $manifest ) {
@@ -74,8 +99,9 @@ if ( $url && $output ) {
 		if ( $item->slug ) {
 			$pattern = $item->pattern ?? $item->slug . '.php';
 			$template = $item->template ?? $item->slug . '.html';
-			var_dump( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+
 			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		}
 	}
 }

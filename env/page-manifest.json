@@ -3,6 +3,7 @@
 		"slug": "front-page"
 	},
 	{
-		"slug": "download"
+		"slug": "download",
+		"template": "page-download.html"
 	}
 ]
