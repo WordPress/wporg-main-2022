@@ -1,0 +1,16 @@
+.wp-block-wporg-cycle-heading {
+	font-family: var(--wp--custom--heading--typography--font-family);
+	font-size: var(--wp--preset--font-size--heading-1);
+	font-weight: var(--wp--custom--heading--typography--font-weight);
+	line-height: var(--wp--custom--heading--level-1--typography--line-height);
+
+	span.is-ready {
+		opacity: 0;
+		transition: opacity 0.2s cubic-bezier(0.63, 0, 0.54, 0.995);
+	}
+
+	span.fade-in {
+		opacity: 1;
+		transition: opacity 0.3s cubic-bezier(0.63, 0, 0.54, 0.995);
+	}
+}

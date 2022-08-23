@@ -49,10 +49,10 @@ function render( $attributes, $content, $block ) {
 	);
 
 	$content = '<h1 class="screen-reader-text">WordPress: Publish your passion</h1>';
-	$content .= '<div class="wp-block-wporg-cycle-heading-container"></div>';
+	$content .= '<div aria-hidden="true">WordPress: <span class="wp-block-wporg-cycle-heading-container">' . $headings[0] . '</span></div>';
 
 	foreach ( $headings as $heading ) {
-		$content .= sprintf( '<p>WordPress: %s</p>', $heading );
+		$content .= sprintf( '<p class="screen-reader-text">WordPress: <span>%s</span></p>', $heading );
 	}
 
 	$wrapper_attributes = get_block_wrapper_attributes();

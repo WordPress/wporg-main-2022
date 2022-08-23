@@ -9,5 +9,6 @@
 	"description": "Animate through a set of headings.",
 	"textdomain": "wporg",
 	"editorScript": "file:./index.js",
-	"viewScript": "file:./view.js"
+	"viewScript": "file:./view.js",
+	"style": "file:./style-index.css"
 }
