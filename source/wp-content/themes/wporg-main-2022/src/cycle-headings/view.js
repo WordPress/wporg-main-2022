@@ -1,5 +1,5 @@
 // Set up the dynamic text in the hero section of the Home page.
-const MS_DURATION_PER_ITEM = 4000;
+const MS_DURATION_PER_ITEM = 5000;
 const MS_DELAY_BETWEEN_ITEMS = 500;
 
 function textFragmentIterator() {
