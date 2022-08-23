@@ -4,7 +4,7 @@ const MS_DELAY_BETWEEN_ITEMS = 500;
 
 function textFragmentIterator() {
 	let currentIteration = 0;
-	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-headings p > span' ) ).map(
+	const fragments = Array.from( document.querySelectorAll( '.wp-block-wporg-cycle-headings p' ) ).map(
 		( elem ) => elem.innerHTML
 	);
 
