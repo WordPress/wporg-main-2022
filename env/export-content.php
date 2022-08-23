@@ -55,6 +55,6 @@ EOF;
 	if ( false === $bytes ) {
 		die( 'Unable to write to ' . $output_path );
 	} else {
-		echo 'Wrote ' . number_format( $bytes ) . ' to ' . $output_path . "\n";
+		echo 'Wrote ' . number_format( $bytes ) . ' bytes to ' . $output_path . "\n";
 	}
 }
