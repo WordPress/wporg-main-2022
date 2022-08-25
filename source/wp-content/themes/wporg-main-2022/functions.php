@@ -59,6 +59,17 @@ function enqueue_assets() {
 		);
 		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
 	}
+
+	// Preload the heading font(s).
+	if ( is_callable( 'global_fonts_preload' ) ) {
+		// All headings.
+		global_fonts_preload( 'EB Garamond' );
+
+		if ( is_front_page() ) {
+			// The heading on the front-page has some italic.
+			global_fonts_preload( 'EB Garamond italic' );
+		}
+	}
 }
 
 /**
