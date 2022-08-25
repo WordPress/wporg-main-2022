@@ -1,13 +1,12 @@
 import DownloadModalContainer from '../components/download-modal/';
 
 const initDownloadModal = () => {
-	const downloadModalContainerEl = document.createElement( 'div' );
-	const downloadModalContainerId = 'wporg__download-modal-container';
+	const container = document.createElement( 'div' );
 
-	downloadModalContainerEl.setAttribute( 'id', downloadModalContainerId );
-	document.body.appendChild( downloadModalContainerEl );
+	container.setAttribute( 'id', 'wporg__download-modal-container' );
+	document.body.appendChild( container );
 
-	wp.element.render( <DownloadModalContainer />, document.getElementById( downloadModalContainerId ) );
+	wp.element.render( <DownloadModalContainer />, container );
 };
 
 const init = () => {
