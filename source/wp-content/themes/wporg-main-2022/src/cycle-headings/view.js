@@ -1,6 +1,6 @@
 // Set up the dynamic text in the hero section of the Home page.
 const MS_DURATION_PER_ITEM = 5000;
-const MS_DELAY_BETWEEN_ITEMS = 500;
+const MS_DELAY_BETWEEN_ITEMS = 500; // Should equal the sum of transition duration in CSS.
 
 function textFragmentIterator() {
 	let currentIteration = 0;
