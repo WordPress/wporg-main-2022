@@ -124,3 +124,15 @@ add_action(
 		);
 	}
 );
+
+/**
+ * Increase the "Big image" threshold so our full-size high-DPI-ready images are
+ * not scaled down.
+ */
+add_filter(
+	'big_image_size_threshold',
+	function() {
+		// 3200 = 2 × 1600px for full-width images on wide screens.
+		return 3200;
+	}
+);
