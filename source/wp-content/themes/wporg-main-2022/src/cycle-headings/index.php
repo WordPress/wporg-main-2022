@@ -43,13 +43,19 @@ function render( $attributes, $content, $block ) {
 	}
 
 	$headings = array(
-		'Publish your <em>passion</em>',
-		'Start your <em>podcast</em>',
-		'Lorem your <em>ipsum</em>',
+		__( 'Publish your <em>passion</em>', 'wporg' ),
+		__( 'Grow your <em>business</em>', 'wporg' ),
+		__( 'Flex your <em>freedom</em>', 'wporg' ),
 	);
 
-	$content = '<h1 class="screen-reader-text">WordPress: Publish your passion</h1>';
-	$content .= '<div aria-hidden="true">WordPress: <span class="wp-block-wporg-cycle-headings__container">' . $headings[0] . '</span></div>';
+	$content = '<h1 class="screen-reader-text">' . __( 'WordPress: Publish your passion', 'wporg' ) . '</h1>';
+	$content .= '<div aria-hidden="true">';
+	$content .= sprintf(
+		/* translators: %s Changing heading fragment, ex: "Publish your passion" */
+		__( 'WordPress: %s', 'wporg' ),
+		'<span class="wp-block-wporg-cycle-headings__container">' . $headings[0] . '</span>'
+	);
+	$content .= '</div>';
 
 	foreach ( $headings as $heading ) {
 		$content .= sprintf( '<p class="screen-reader-text">%s</p>', $heading );
