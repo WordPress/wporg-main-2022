@@ -68,6 +68,10 @@
 		padding-left: var(--wp--preset--spacing--30);
 		padding-right: var(--wp--preset--spacing--30);
 	}
+
+	#intro .wp-block-columns {
+		display: block;
+	}
 }
 
 @media (max-width: 1000px) {
