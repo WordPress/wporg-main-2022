@@ -43,3 +43,26 @@ if ( 'production' !== wp_get_environment_type() ) {
 		add_filter( 'stylesheet', function() { return 'wporg-main'; } );
 	}
 }
+
+// Only if the user is logged in and can edit posts:
+// Override the block template, to force loading post_content instead of the hard-coded pattern file.
+// This is so that content and design can be edited or created in-place.
+// TODO:
+// * Make this work cleanly and sensibly for posts that use the old theme;
+// * Add a better indicator of post content vs pattern content than 'THIS IS POST CONTENT'
+// * Figure out permissions etc so that preview links can be sent to reviewers
+add_action( 'init', function() {
+	if ( current_user_can( 'edit_posts' ) ) {
+		add_filter( 'template_include', function( $template ) {
+			global $_wp_current_template_content;
+
+			$_wp_current_template_content = preg_replace(
+				'#<!-- wp:pattern {"slug":"wporg-main-2022/[\w-]+"} /-->#',
+				'<p>THIS IS POST CONTENT</p><!-- wp:post-content {"layout":{"inherit":true},"style":{"spacing":{"blockGap":"0px"}}} /-->',
+				$_wp_current_template_content,
+			1 );
+
+			return $template;
+		} );
+	}
+} );
