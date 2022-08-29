@@ -1,6 +1,6 @@
 // Set up the dynamic text in the hero section of the Home page.
-const MS_DURATION_PER_ITEM = 5000;
-const MS_DELAY_BETWEEN_ITEMS = 500; // Should equal the sum of transition duration in CSS.
+const DURATION_PER_ITEM_MS = 5000;
+const DELAY_BETWEEN_ITEMS_MS = 500; // Should equal the sum of transition duration in CSS.
 
 function textFragmentIterator() {
 	let currentIteration = 0;
@@ -20,7 +20,7 @@ function init() {
 
 	window.setTimeout( () => {
 		targetNode.classList.add( 'is-ready' );
-	}, MS_DURATION_PER_ITEM - 1 );
+	}, DURATION_PER_ITEM_MS - 1 );
 
 	window.setInterval( () => {
 		targetNode.classList.remove( 'fade-in' );
@@ -28,8 +28,8 @@ function init() {
 		window.setTimeout( () => {
 			targetNode.innerHTML = getNextTextFragment();
 			targetNode.classList.add( 'fade-in' );
-		}, MS_DELAY_BETWEEN_ITEMS );
-	}, MS_DURATION_PER_ITEM );
+		}, DELAY_BETWEEN_ITEMS_MS );
+	}, DURATION_PER_ITEM_MS );
 }
 
 const wantMotionQuery = window.matchMedia( '(prefers-reduced-motion)' );
