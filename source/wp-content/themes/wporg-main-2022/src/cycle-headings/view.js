@@ -1,3 +1,6 @@
+// Code originally forked from https://wordpress.com/p2/
+// https://github.com/Automattic/p2/blob/master/themes/marketing/src/js/hero-dynamic-text.js
+
 // Set up the dynamic text in the hero section of the Home page.
 const DURATION_PER_ITEM_MS = 5000;
 const DELAY_BETWEEN_ITEMS_MS = 500; // Should equal the sum of transition duration in CSS.
