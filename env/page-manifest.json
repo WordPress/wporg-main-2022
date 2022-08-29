@@ -1,0 +1,9 @@
+[
+	{
+		"slug": "front-page"
+	},
+	{
+		"slug": "download",
+		"template": "page-download.html"
+	}
+]
