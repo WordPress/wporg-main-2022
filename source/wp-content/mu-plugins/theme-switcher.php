@@ -76,17 +76,23 @@ add_action(
 						);
 
 						if ( $count > 0 ) {
-							add_action( 'admin_bar_menu', function( $wp_admin_bar ) {
-								$text = 'Previewing post content';
+							add_action(
+								'admin_bar_menu',
+								function( $wp_admin_bar ) {
+									$text = 'Previewing post content';
 
-								$wp_admin_bar->add_node( [
-									'id'    => 'preview-indicator',
-									'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
-									'meta'  => [
-										'class' => 'preview-indicator',
-									]
-								] );
-							}, 1000 );
+									$wp_admin_bar->add_node(
+										[
+											'id'    => 'preview-indicator',
+											'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
+											'meta'  => [
+												'class' => 'preview-indicator',
+											],
+										]
+									);
+								},
+								1000
+							);
 
 						}
 					}
