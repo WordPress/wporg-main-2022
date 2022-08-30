@@ -52,10 +52,6 @@ if ( 'production' !== wp_get_environment_type() ) {
 // Only if the user is logged in and can edit posts:
 // Override the block template, to force loading post_content instead of the hard-coded pattern file.
 // This is so that content and design can be edited or created in-place.
-// TODO:
-// * Make this work cleanly and sensibly for posts that use the old theme;
-// * Add a better indicator of post content vs pattern content than 'THIS IS POST CONTENT'
-// * Figure out permissions etc so that preview links can be sent to reviewers
 add_action(
 	'init',
 	function() {
