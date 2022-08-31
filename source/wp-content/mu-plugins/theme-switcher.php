@@ -49,6 +49,9 @@ if ( 'production' !== wp_get_environment_type() ) {
 	}
 }
 
+/**
+ * Action to add text indicator to the admin bar when previewing post content (as opposed to a pattern file)
+ */
 function admin_bar_preview_indicator( $wp_admin_bar ) {
 	$text = 'Previewing post content';
 
