@@ -90,6 +90,8 @@ add_action(
 						);
 
 						if ( $count > 0 ) {
+							$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
+
 							add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
 						}
 					}
