@@ -49,6 +49,20 @@ if ( 'production' !== wp_get_environment_type() ) {
 	}
 }
 
+function admin_bar_preview_indicator( $wp_admin_bar ) {
+	$text = 'Previewing post content';
+
+	$wp_admin_bar->add_node(
+		[
+			'id'    => 'preview-indicator',
+			'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
+			'meta'  => [
+				'class' => 'preview-indicator',
+			],
+		]
+	);
+}
+
 // Only if the user is logged in and can edit posts:
 // Override the block template, to force loading post_content instead of the hard-coded pattern file.
 // This is so that content and design can be edited or created in-place.
@@ -72,24 +86,7 @@ add_action(
 						);
 
 						if ( $count > 0 ) {
-							add_action(
-								'admin_bar_menu',
-								function( $wp_admin_bar ) {
-									$text = 'Previewing post content';
-
-									$wp_admin_bar->add_node(
-										[
-											'id'    => 'preview-indicator',
-											'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
-											'meta'  => [
-												'class' => 'preview-indicator',
-											],
-										]
-									);
-								},
-								1000
-							);
-
+							add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
 						}
 					}
 
