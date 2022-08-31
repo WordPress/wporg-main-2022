@@ -33,6 +33,23 @@ Once set up, this environment will contain some shared plugins (Jetpack, Gutenbe
     yarn setup:wp
     ```
 
+1. (optional) There may be times when you want to make changes to the Parent theme and test them with the Main them. To do that:
+    1. Clone the Parent repo and follow the setup instructions in its `readme.md` file.
+    1. Create a `.wp-env.override.json` file in this repo
+    1. Copy the `themes` section from `.wp-env.json` and paste it into the override file. You must copy the entire section for it to work, because it won't be merged with `.wp-env.json`.
+    1. Update the path to the Parent theme to the Parent theme folder inside the Parent repository you cloned above.
+
+    ```json
+    {
+	    "themes": [
+		    "./source/wp-content/themes/wporg",
+		    "./source/wp-content/themes/wporg-main",
+		    "./source/wp-content/themes/wporg-main-2022",
+		    "../wporg-parent-2021/source/wp-content/themes/wporg-parent-2021"
+	    ]
+    }
+    ```
+
 1. Visit site at [localhost:8888](http://localhost:8888).
 
 1. Log in with username `admin` and password `password`.
