@@ -26,7 +26,13 @@ jobs:
               run: |
                   yarn setup:tools
 
-            # Once we have JS & CSS to lint, add that here.
+            - name: Lint CSS
+              run: |
+                  yarn workspace wporg-main-2022-theme lint:css
+
+            - name: Lint JS
+              run: |
+                  yarn workspace wporg-main-2022-theme lint:js
 
             - name: Lint PHP
               run: |

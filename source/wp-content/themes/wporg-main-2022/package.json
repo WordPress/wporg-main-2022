@@ -13,10 +13,17 @@
 	"devDependencies": {
 		"@wordpress/scripts": "23.6.0"
 	},
+	"eslintConfig": {
+		"extends": "../../../../.eslintrc.js"
+	},
+	"stylelint": {
+		"extends": "../../../../.stylelintrc"
+	},
 	"scripts": {
 		"build": "wp-scripts build",
 		"start": "wp-scripts start",
 		"lint:js": "wp-scripts lint-js src",
+		"lint:css": "wp-scripts lint-style *.css src/**/*.scss",
 		"format": "wp-scripts format src"
 	}
 }
