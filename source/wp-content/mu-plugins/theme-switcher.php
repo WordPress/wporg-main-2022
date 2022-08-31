@@ -67,6 +67,32 @@ function admin_bar_preview_indicator( $wp_admin_bar ) {
 	);
 }
 
+/**
+ * Filter the page template during preview to show the edited post_content rather than pattern file.
+ */
+function replace_template_content_for_preview( $template ) {
+	global $_wp_current_template_content;
+
+	if ( is_preview() ) {
+		$count = 0;
+		$_wp_current_template_content = preg_replace(
+			'#<!-- wp:pattern {"slug":"wporg-main-2022/[\w-]+"} /-->#',
+			'<!-- wp:post-content {"layout":{"inherit":true},"style":{"spacing":{"blockGap":"0px"}}} /-->',
+			$_wp_current_template_content,
+			1,
+			$count
+		);
+
+		if ( $count > 0 ) {
+			$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
+
+			add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
+		}
+	}
+
+	return $template;
+}
+
 // Only if the user is logged in and can edit posts:
 // Override the block template, to force loading post_content instead of the hard-coded pattern file.
 // This is so that content and design can be edited or created in-place.
@@ -74,31 +100,7 @@ add_action(
 	'init',
 	function() {
 		if ( current_user_can( 'edit_posts' ) ) {
-			add_filter(
-				'template_include',
-				function( $template ) {
-					global $_wp_current_template_content;
-
-					if ( is_preview() ) {
-						$count = 0;
-						$_wp_current_template_content = preg_replace(
-							'#<!-- wp:pattern {"slug":"wporg-main-2022/[\w-]+"} /-->#',
-							'<!-- wp:post-content {"layout":{"inherit":true},"style":{"spacing":{"blockGap":"0px"}}} /-->',
-							$_wp_current_template_content,
-							1,
-							$count
-						);
-
-						if ( $count > 0 ) {
-							$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
-
-							add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
-						}
-					}
-
-					return $template;
-				}
-			);
+			add_filter( 'template_include', __NAMESPACE__ . '\replace_template_content_for_preview' );
 		}
 	}
 );
