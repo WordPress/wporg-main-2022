@@ -56,6 +56,7 @@ function admin_bar_preview_indicator( $wp_admin_bar ) {
 		[
 			'id'    => 'preview-indicator',
 			'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
+			'href'  => get_permalink( get_queried_object_id() ),
 			'meta'  => [
 				'class' => 'preview-indicator',
 			],
