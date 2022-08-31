@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wporg/random-headings",
+	"version": "0.1.0",
+	"title": "Random Headings",
+	"category": "design",
+	"icon": "heading",
+	"description": "Display a random heading from a set.",
+	"textdomain": "wporg",
+	"supports": {
+		"align": true,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": true,
+			"blockGap": false
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
