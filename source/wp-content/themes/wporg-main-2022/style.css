@@ -238,23 +238,18 @@
  *
  * Remove this when the above issue is fixed in a stable release.
  */
-.wp-block-group[class*="wp-container-"],
-.wp-block-columns[class*="wp-container-"],
-.wp-block-group[class*="wp-container-"] > *,
-.wp-block-columns[class*="wp-container-"] > *,
-[class*="wp-container-"] .wp-block-buttons {
+body .is-layout-constrained > * {
+	max-width: var(--wp--style--global--content-size);
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
 
-.wp-block-group[class*="wp-container-"].entry-content,
-.wp-block-group[class*="wp-container-"][class*="is-content-justification-"] > * {
-	margin-left: unset !important;
-	margin-right: unset !important;
+body .is-layout-constrained > .alignwide {
+	max-width: var(--wp--style--global--wide-size);
 }
 
-#benefits .wp-block-group[class*="wp-container-"],
-#community .wp-block-group[class*="wp-container-"],
-#editor .wp-block-group[class*="wp-container-"] {
-	max-width: 520px;
+body .is-layout-constrained > .alignfull {
+	max-width: unset;
+	margin-left: unset !important;
+	margin-right: unset !important;
 }
