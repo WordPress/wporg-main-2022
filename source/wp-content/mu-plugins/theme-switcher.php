@@ -38,8 +38,10 @@ function should_use_new_theme() {
 	return isset( $_SERVER['REQUEST_URI'] ) && in_array( $_SERVER['REQUEST_URI'], $new_theme_pages );
 }
 
-// Always show admin bar.
-add_filter( 'show_admin_bar', '__return_true' );
+// Always show admin bar on local test site
+if ( 'local' === wp_get_environment_type() ) {
+	add_filter( 'show_admin_bar', '__return_true' );
+}
 
 if ( ! should_use_new_theme() ) {
 	if ( 'local' === wp_get_environment_type() ) {
