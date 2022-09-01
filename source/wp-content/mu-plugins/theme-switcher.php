@@ -102,7 +102,9 @@ function replace_template_content_for_preview( $template ) {
 
 		if ( $count > 0 ) {
 			$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
+		}
 
+		if ( false !== strpos( $_wp_current_template_content, '<!-- wp:post-content ' ) ) {
 			add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
 		}
 	}
