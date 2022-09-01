@@ -36,7 +36,7 @@ function should_use_new_theme() {
 	}
 
 	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
-	$request_uri     = explode( '?', $_SERVER['REQUEST_URI'] ?? '/' )[0];
+	$request_uri     = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 	$new_theme_pages = array(
 		'/',
 		'/download/',
