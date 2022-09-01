@@ -35,12 +35,18 @@ function should_use_new_theme() {
 		return true;
 	}
 
+	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
+	$request_uri     = explode( '?', $_SERVER['REQUEST_URI'] ?? '/' )[0];
 	$new_theme_pages = array(
 		'/',
 		'/download/',
 	);
+	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
+		return false;
+	}
 
-	return isset( $_SERVER['REQUEST_URI'] ) && in_array( $_SERVER['REQUEST_URI'], $new_theme_pages );
+	// If the new theme is the active theme, we should use it, otherwise, we should use the old theme.
+	return ( 'wporg-main-2022' === get_option( 'stylesheet' ) );
 }
 
 // Always show admin bar on local test site
