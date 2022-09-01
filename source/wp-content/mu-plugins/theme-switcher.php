@@ -15,6 +15,11 @@ namespace WordPressdotorg\MU_Plugins\Theme_Switcher;
  * Helper to check the requested page against our new page list.
  */
 function should_use_new_theme() {
+	// Front-page sites only.
+	if ( function_exists( '\get_blog_details' ) && '/' !== \get_blog_details( null, false )->path ) {
+		return false;
+	}
+
 	// Request to resolve a template.
 	if ( isset( $_GET['_wp-find-template'] ) ) {
 		return true;
