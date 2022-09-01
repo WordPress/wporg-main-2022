@@ -227,3 +227,30 @@
 	padding-left: 0;
 	margin-bottom: 0;
 }
+
+
+/*
+ * Workaround for Gutenberg CSS4 selectors on older browsers.
+ *
+ * @link https://github.com/WordPress/gutenberg/issues/43723.
+ *
+ * Reproducing gutenberg_get_layout_style() isn't practical, so this just hardcodes the needed values.
+ *
+ * Remove this when the above issue is fixed in a stable release.
+ */
+
+body .is-layout-constrained > * {
+	max-width: var(--wp--style--global--content-size);
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+body .is-layout-constrained > .alignwide {
+	max-width: var(--wp--style--global--wide-size);
+}
+
+body .is-layout-constrained > .alignfull {
+	max-width: unset;
+	margin-left: unset !important;
+	margin-right: unset !important;
+}
