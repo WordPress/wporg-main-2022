@@ -238,6 +238,7 @@
  *
  * Remove this when the above issue is fixed in a stable release.
  */
+
 body .is-layout-constrained > * {
 	max-width: var(--wp--style--global--content-size);
 	margin-left: auto !important;
