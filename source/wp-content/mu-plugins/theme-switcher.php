@@ -41,11 +41,15 @@ function should_use_new_theme() {
 // Always show admin bar.
 add_filter( 'show_admin_bar', '__return_true' );
 
-if ( 'production' !== wp_get_environment_type() ) {
-	if ( ! should_use_new_theme() ) {
+if ( ! should_use_new_theme() ) {
+	if ( 'local' === wp_get_environment_type() ) {
 		// Enable the old parent & child themes.
 		add_filter( 'template', function() { return 'wporg'; } );
 		add_filter( 'stylesheet', function() { return 'wporg-main'; } );
+	} else {
+		// Slightly different paths for old themes on sandbox/producton
+		add_filter( 'template', function() { return 'pub/wporg'; } );
+		add_filter( 'stylesheet', function() { return 'pub/wporg-main'; } );
 	}
 }
 
