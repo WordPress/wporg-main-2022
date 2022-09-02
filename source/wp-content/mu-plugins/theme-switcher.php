@@ -15,6 +15,11 @@ namespace WordPressdotorg\MU_Plugins\Theme_Switcher;
  * Helper to check the requested page against our new page list.
  */
 function should_use_new_theme() {
+	// Front-page sites only.
+	if ( function_exists( '\get_blog_details' ) && '/' !== \get_blog_details( null, false )->path ) {
+		return false;
+	}
+
 	// Request to resolve a template.
 	if ( isset( $_GET['_wp-find-template'] ) ) {
 		return true;
@@ -25,21 +30,91 @@ function should_use_new_theme() {
 		return true;
 	}
 
+	// Preview. Can't call is_preview() this early in the process.
+	if ( isset( $_GET['preview'] ) && isset( $_GET['preview_id'] ) ) {
+		return true;
+	}
+
+	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
+	$request_uri     = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 	$new_theme_pages = array(
 		'/',
 		'/download/',
 	);
+	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
+		return false;
+	}
 
-	return isset( $_SERVER['REQUEST_URI'] ) && in_array( $_SERVER['REQUEST_URI'], $new_theme_pages );
+	// If the new theme is the active theme, we should use it, otherwise, we should use the old theme.
+	return ( 'wporg-main-2022' === get_option( 'stylesheet' ) );
 }
 
-// Always show admin bar.
-add_filter( 'show_admin_bar', '__return_true' );
-
-if ( 'production' !== wp_get_environment_type() ) {
-	if ( ! should_use_new_theme() ) {
+if ( ! should_use_new_theme() ) {
+	if ( 'local' === wp_get_environment_type() ) {
 		// Enable the old parent & child themes.
 		add_filter( 'template', function() { return 'wporg'; } );
 		add_filter( 'stylesheet', function() { return 'wporg-main'; } );
+	} else {
+		// Slightly different paths for old themes on sandbox/producton
+		add_filter( 'template', function() { return 'pub/wporg'; } );
+		add_filter( 'stylesheet', function() { return 'pub/wporg-main'; } );
 	}
 }
+
+/**
+ * Action to add text indicator to the admin bar when previewing post content (as opposed to a pattern file)
+ */
+function admin_bar_preview_indicator( $wp_admin_bar ) {
+	$text = 'Previewing post content';
+
+	$wp_admin_bar->add_node(
+		[
+			'id'    => 'preview-indicator',
+			'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
+			'href'  => get_permalink( get_queried_object_id() ),
+			'meta'  => [
+				'class' => 'preview-indicator',
+			],
+		]
+	);
+}
+
+/**
+ * Filter the page template during preview to show the edited post_content rather than pattern file.
+ */
+function replace_template_content_for_preview( $template ) {
+	global $_wp_current_template_content;
+
+	if ( is_preview() ) {
+		$count = 0;
+		$_wp_current_template_content = preg_replace(
+			'#<!-- wp:pattern {"slug":"wporg-main-2022/[\w-]+"} /-->#',
+			'<!-- wp:post-content {"layout":{"inherit":true},"style":{"spacing":{"blockGap":"0px"}}} /-->',
+			$_wp_current_template_content,
+			1,
+			$count
+		);
+
+		if ( $count > 0 ) {
+			$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
+		}
+
+		if ( false !== strpos( $_wp_current_template_content, '<!-- wp:post-content ' ) ) {
+			add_action( 'admin_bar_menu', __NAMESPACE__ . '\admin_bar_preview_indicator', 1000 );
+		}
+	}
+
+	return $template;
+}
+
+// Only if the user is logged in and can edit posts:
+// Override the block template, to force loading post_content instead of the hard-coded pattern file.
+// This is so that content and design can be edited or created in-place.
+add_action(
+	'init',
+	function() {
+		if ( current_user_can( 'edit_posts' ) ) {
+			add_filter( 'template_include', __NAMESPACE__ . '\replace_template_content_for_preview' );
+		}
+	}
+);
