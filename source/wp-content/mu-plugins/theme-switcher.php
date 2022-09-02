@@ -49,11 +49,6 @@ function should_use_new_theme() {
 	return ( 'wporg-main-2022' === get_option( 'stylesheet' ) );
 }
 
-// Always show admin bar on local test site
-if ( 'local' === wp_get_environment_type() ) {
-	add_filter( 'show_admin_bar', '__return_true' );
-}
-
 if ( ! should_use_new_theme() ) {
 	if ( 'local' === wp_get_environment_type() ) {
 		// Enable the old parent & child themes.
