@@ -4,3 +4,4 @@
 
 npm run wp-env run cli "php env/import-content.php --url 'https://wordpress.org/main-test/wp-json/wp/v2/posts?context=wporg_export&per_page=50'"
 npm run wp-env run cli "php env/import-content.php --url 'https://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&per_page=50'"
+npm run wp-env run cli "php env/import-content.php --url 'https://wordpress.org/main-test/wp-json/wp/v2/media?per_page=50'"

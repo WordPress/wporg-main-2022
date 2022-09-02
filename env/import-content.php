@@ -55,6 +55,33 @@ function filter_curl_options( $ch ) {
 }
 
 /**
+ * Download a remote URL and sideload it into the upload directory.
+ * Doesn't create an attachment.
+ */
+function sideload_from_url( $remote_url, $time = null ) {
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
+
+	$temp_file = download_url( $remote_url );
+
+	if ( is_wp_error( $temp_file ) ) {
+		die( esc_html( $temp_file->get_error_message() ) );
+	}
+
+	$file_array = array(
+		'name'     => basename( $remote_url ),
+		'tmp_name' => $temp_file,
+		'error'    => 0,
+		'size'     => filesize( $temp_file ),
+	);
+
+	$overrides = array(
+		'test_form'   => false,
+	);
+
+	return wp_handle_sideload( $file_array, $overrides, $time );
+}
+
+/**
  * Import posts from a remote REST API to the local test site.
  *
  * @param string $rest_url The remote REST API endpoint URL.
@@ -87,12 +114,27 @@ function import_rest_to_posts( $rest_url ) {
 			'post_status' => $post->status,
 			'post_type' => $post->type,
 			'post_title' => $post->title->rendered,
-			'post_content' => ( $post->content_raw ?? $post->content->rendered ),
-			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
-			'post_parent' => $post->parent,
+			'post_content' => ( $post->content_raw ?? $post->content->rendered ?? $post->description->rendered ),
+			'post_excerpt' => ( isset( $post->excerpt ) ? wp_strip_all_tags( $post->excerpt->rendered ) : null ),
+			'post_parent' => $post->parent ?? null,
 			'comment_status' => $post->comment_status,
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
+
+		if ( 'attachment' === $post->type ) {
+			if ( intval( $post->post ) > 0 ) {
+				$new_post['post_parent'] = $post->post;
+			}
+
+			// guid is the best source of the unscaled original image
+			$uploaded_file = sideload_from_url( $post->guid->rendered, gmdate( 'Y/m', strtotime( $post->date ) ) );
+
+			if ( is_wp_error( $uploaded_file ) ) {
+				die( esc_html( $uploaded_file->get_error_message() ) );
+			}
+
+			$new_post['file'] = $uploaded_file['file'];
+		}
 
 		$existing_post = get_post( $post->id, ARRAY_A );
 
@@ -117,6 +159,12 @@ function import_rest_to_posts( $rest_url ) {
 		}
 
 		echo "Inserted $post->type $post->id as $new_post_id\n\n";
+
+		if ( ! empty( $post->media_details ) ) {
+			// This is probably not a perfect match of field names etc.
+			$media_details_array = json_decode( json_encode( $post->media_details ), true, 10 );
+			wp_update_attachment_metadata( $new_post_id, $media_details_array );
+		}
 	}
 }
 
