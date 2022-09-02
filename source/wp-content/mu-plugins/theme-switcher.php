@@ -49,15 +49,18 @@ function should_use_new_theme() {
 	return ( 'wporg-main-2022' === get_option( 'stylesheet' ) );
 }
 
-if ( ! should_use_new_theme() ) {
-	if ( 'local' === wp_get_environment_type() ) {
-		// Enable the old parent & child themes.
-		add_filter( 'template', function() { return 'wporg'; } );
-		add_filter( 'stylesheet', function() { return 'wporg-main'; } );
-	} else {
-		// Slightly different paths for old themes on sandbox/producton
-		add_filter( 'template', function() { return 'pub/wporg'; } );
-		add_filter( 'stylesheet', function() { return 'pub/wporg-main'; } );
+// Only on sites running the new theme, decide if we need to downgrade to the old one.
+if ( 'wporg-main-2022' === get_option( 'stylesheet' ) ) {
+	if ( ! should_use_new_theme() ) {
+		if ( 'local' === wp_get_environment_type() ) {
+			// Enable the old parent & child themes.
+			add_filter( 'template', function() { return 'wporg'; } );
+			add_filter( 'stylesheet', function() { return 'wporg-main'; } );
+		} else {
+			// Slightly different paths for old themes on sandbox/producton
+			add_filter( 'template', function() { return 'pub/wporg'; } );
+			add_filter( 'stylesheet', function() { return 'pub/wporg-main'; } );
+		}
 	}
 }
 
