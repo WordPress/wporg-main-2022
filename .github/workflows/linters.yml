@@ -38,3 +38,4 @@ jobs:
               run: |
                   composer run lint source/wp-content/themes/wporg-main-2022
                   composer run lint source/wp-content/mu-plugins/theme-switcher.php
+                  composer run lint env

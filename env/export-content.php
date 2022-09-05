@@ -10,7 +10,6 @@ namespace WordPress_org\Main_2022\ImportTestContent;
  * Intended to be run after import-content.php fetches the latest content from a remote prod/staging server.
  *
  * This is a vanilla PHP script, not a WP script.
- *
  */
 
 // This script should only be called in a CLI environment.
@@ -27,16 +26,19 @@ $rest_url = $opts['rest_url'] ?? 'http://wordpress.org/main-test/wp-json/wp/v2/p
 $pattern_path = $opts['pattern_path'] ?? 'source/wp-content/themes/wporg-main-2022/patterns/%s';
 $template_path = $opts['template_path'] ?? 'source/wp-content/themes/wporg-main-2022/templates/%s';
 
+/**
+ * Generate the pattern content from a URL.
+ */
 function generate_pattern( $url, $output_path ) {
 
 	$data = file_get_contents( $url );
-	if ( !$data ) {
+	if ( ! $data ) {
 		die( "Unable to fetch {$url}\n" );
 	}
 
 	$posts = json_decode( $data );
 	$post = $posts[0] ?? null;
-	if ( !isset( $post->content_raw ) ) {
+	if ( ! isset( $post->content_raw ) ) {
 		var_dump( $post );
 		die( "No content_raw available at {$url}\n" );
 	}
@@ -62,6 +64,9 @@ EOF;
 	}
 }
 
+/**
+ * Create a page template to use this pattern.
+ */
 function generate_template( $slug, $output_path ) {
 	$template = <<<EOF
 <!-- wp:wporg/global-header {"style":"black-on-white"} /-->
@@ -77,7 +82,7 @@ function generate_template( $slug, $output_path ) {
 EOF;
 
 	// 'x' mode so we don't overwrite an existing file
-	if ( $fp = @fopen( $output_path, 'x' ) ) {
+	if ( $fp = @fopen( $output_path, 'x' ) ) { // phpcs:ignore
 		$bytes = fwrite( $fp, $template );
 		fclose( $fp );
 		echo 'Wrote ' . number_format( $bytes ) . ' bytes to ' . $output_path . "\n";
@@ -91,11 +96,11 @@ if ( $url && $output ) {
 } elseif ( $manifest ) {
 	$manifest_data = file_get_contents( $manifest );
 	$manifest_items = json_decode( $manifest_data );
-	if ( !$manifest_data || !$manifest_items ) {
+	if ( ! $manifest_data || ! $manifest_items ) {
 		die( "Unable to read manifest from $manifest/n" );
 	}
 
-	foreach( $manifest_items as $item ) {
+	foreach ( $manifest_items as $item ) {
 		if ( $item->slug ) {
 			$pattern = $item->pattern ?? $item->slug . '.php';
 			$template = $item->template ?? $item->slug . '.html';
