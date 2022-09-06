@@ -1,6 +1,7 @@
 [
 	{
-		"slug": "front-page"
+		"slug": "home",
+		"template": "front-page.html"
 	},
 	{
 		"slug": "download",

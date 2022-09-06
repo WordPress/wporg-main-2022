@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"120px","left":"0px"}}},"layout":{"inherit":true}} -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"120px","left":"0px"}}}} -->
 <div class="wp-block-group alignfull" style="padding-top:80px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-1"} -->
 <h1 class="has-text-align-center has-heading-1-font-size">Get WordPress</h1>
 <!-- /wp:heading -->
@@ -16,7 +16,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"}}},"layout":{"inherit":true}} -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
 <div class="wp-block-group alignfull" id="download-hosting" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"right":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
 <div class="wp-block-column" style="border-right-color:var(--wp--preset--color--light-grey-1);border-right-width:1px;flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"60px","bottom":"80px","left":"0px"}}}} -->
@@ -42,7 +42,7 @@
 <p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size">Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","fontSize":"small","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}}} -->
+<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} -->
 <!-- wp:navigation-link {"label":"Releases","url":"https://wordpress.org/download/releases/","kind":"custom","isTopLevelLink":true} /-->
 
 <!-- wp:navigation-link {"label":"Nightly","url":"https://wordpress.org/download/beta-nightly/","kind":"custom","isTopLevelLink":true} /-->
@@ -74,11 +74,29 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","backgroundColor":"blueberry-4","layout":{"inherit":true}} -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","backgroundColor":"blueberry-4"} -->
 <div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="features"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"60px"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:60px;flex-basis:50%"><!-- wp:list {"className":"is-style-features"} -->
-<ul class="is-style-features"><li>Simple</li><li>Intuitive</li><li>Extendable</li><li>Free</li><li>Open</li></ul>
+<ul class="is-style-features"><!-- wp:list-item -->
+<li>Simple</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Intuitive</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Extendable</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Free</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Open</li>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
 
@@ -98,7 +116,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"160px","right":"0px","bottom":"160px","left":"0px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true}} -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"160px","right":"0px","bottom":"160px","left":"0px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white"} -->
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="resources" style="padding-top:160px;padding-right:0px;padding-bottom:160px;padding-left:0px"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"120px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"heading-2"} -->
@@ -112,7 +130,21 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
-<ul class="is-style-links-list"><li><a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a></li><li><a href="https://developer.wordpress.org/">Developer resources ↗</a></li><li><a href="https://wordpress.org/support/">WordPress support ↗</a></li><li><a href="https://wordpress.org/support/forum/installation/">User forums ↗</a></li></ul>
+<ul class="is-style-links-list"><!-- wp:list-item -->
+<li><a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://developer.wordpress.org/">Developer resources ↗</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://wordpress.org/support/">WordPress support ↗</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://wordpress.org/support/forum/installation/">User forums ↗</a></li>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -129,11 +161,11 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="Download on the Apple App Store" width="150" height="45"/></a></figure>
+<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="Download on the Apple App Store" width="150" height="45" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Get it on Google Play" width="150" height="45"/></a></figure>
+<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Get it on Google Play" width="150" height="45" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -22,7 +22,7 @@ $opts = getopt( 'u:o:', array( 'url:', 'output:', 'manifest:', 'rest_url:', 'pat
 $url = $opts['u'] ?? $opts['url'] ?? null;
 $output = $opts['o'] ?? $opts['output'] ?? null;
 $manifest = $opts['manifest'] ?? null;
-$rest_url = $opts['rest_url'] ?? 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
+$rest_url = $opts['rest_url'] ?? 'http://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
 $pattern_path = $opts['pattern_path'] ?? 'source/wp-content/themes/wporg-main-2022/patterns/%s';
 $template_path = $opts['template_path'] ?? 'source/wp-content/themes/wporg-main-2022/templates/%s';
 
