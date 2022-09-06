@@ -25,8 +25,10 @@ function should_use_new_theme() {
 		return true;
 	}
 
+	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
+
 	// Admin page or an API request.
-	if ( is_admin() || wp_is_json_request() ) {
+	if ( is_admin() || wp_is_json_request() || 0 === strpos( $request_uri, '/wp-json/wp/' ) ) {
 		return true;
 	}
 
@@ -36,7 +38,6 @@ function should_use_new_theme() {
 	}
 
 	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
-	$request_uri     = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 	$new_theme_pages = array(
 		'/',
 		'/download/',
