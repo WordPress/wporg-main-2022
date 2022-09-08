@@ -11,9 +11,15 @@ add_filter( 'map_meta_cap', __NAMESPACE__ . '\map_meta_caps', 20, 4 ); // Needs 
 add_action( 'admin_init', __NAMESPACE__ . '\add_or_update_designer_role' );
 add_filter( 'rest_request_before_callbacks', __NAMESPACE__ . '\check_caps_for_page_update', 10, 3 );
 
-
-//$response = apply_filters( 'rest_request_before_callbacks', $response, $handler, $request );
-
+/**
+ * Filter a rest api request, run fine-grained permission checks for Designer users.
+ *
+ * @param mixed           $response Result to send to the client.
+ * @param array           $handler  Route handler used for the request.
+ * @param WP_REST_Request $request  Request used to generate the response.
+ *
+ * @return mixed
+ */
 function check_caps_for_page_update( $response, $handler, $request ) {
 	// Extra permissions check for designers when changing a page.
 	// Note: this is specific to the post edit API route. It won't affect other methods of updating a page, such as other endpoints or direct PHP calls.
@@ -70,14 +76,14 @@ function check_caps_for_page_update( $response, $handler, $request ) {
  * @return mixed
  */
 function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
-	if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
+	//if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
 		// Special safety limits for Designer role when editing pages
-		if ( user_can( $user_id, 'designer' ) ) {
+		//if ( user_can( $user_id, 'designer' ) ) {
 
 			//TODO: can we intercept other page edits here? Or better to hook edit filters like with rest_request_before_callbacks above?
 			// $required_caps[] = 'do_not_allow';
-		}
-	}
+		//}
+	//}
 
 	return $required_caps;
 }
