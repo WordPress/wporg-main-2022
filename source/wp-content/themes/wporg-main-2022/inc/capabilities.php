@@ -19,34 +19,34 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 	// Note: this is specific to the post edit API route. It won't affect other methods of updating a page, such as other endpoints or direct PHP calls.
 	// It's probably sufficient for the purpose of this plugin, which is a safety measure, not a security check.
 	if ( current_user_can( 'designer' ) ) {
-		if ( 'PUT' === $request->get_method() && $request->has_param('id') && $request->get_route() == rest_get_route_for_post( $request->get_param('id') ) ) {
-			if ( 'page' === get_post_type( $request->get_param('id') ) ) {
-				$page = get_post( $request->get_param('id') );
-				if ( $request->has_param('status') && 'publish' !== $request->get_param('status') && 'publish' === get_post_status( $page->ID ) ) {
+		if ( 'PUT' === $request->get_method() && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
+			if ( 'page' === get_post_type( $request->get_param( 'id' ) ) ) {
+				$page = get_post( $request->get_param( 'id' ) );
+				if ( $request->has_param( 'status' ) && 'publish' !== $request->get_param( 'status' ) && 'publish' === get_post_status( $page->ID ) ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the post status.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
-				} elseif ( $request->has_param('password') && $request->get_param('password') !== $page->post_password ) {
+				} elseif ( $request->has_param( 'password' ) && $request->get_param( 'password' ) !== $page->post_password ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the post password.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
-				} elseif ( $request->has_param('slug') && $request->get_param('slug') !== $page->post_name ) {
+				} elseif ( $request->has_param( 'slug' ) && $request->get_param( 'slug' ) !== $page->post_name ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the post slug.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
-				} elseif ( $request->has_param('featured_media') && $request->get_param( 'featured_media' ) !== get_post_thumbnail_id( $page ) ) {
+				} elseif ( $request->has_param( 'featured_media' ) && $request->get_param( 'featured_media' ) !== get_post_thumbnail_id( $page ) ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the featured image.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
-				} elseif ( $request->has_param('template') && $request->get_param('templae') !== $page->page_template ) {
+				} elseif ( $request->has_param( 'template' ) && $request->get_param( 'templae' ) !== $page->page_template ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the featured image.', 'wporg' ),
@@ -75,7 +75,7 @@ function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
 		if ( user_can( $user_id, 'designer' ) ) {
 
 			//TODO: can we intercept other page edits here? Or better to hook edit filters like with rest_request_before_callbacks above?
-			#$required_caps[] = 'do_not_allow';
+			// $required_caps[] = 'do_not_allow';
 		}
 	}
 
