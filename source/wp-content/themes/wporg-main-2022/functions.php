@@ -4,6 +4,7 @@ namespace WordPressdotorg\Theme\Main_2022;
 
 require_once( __DIR__ . '/inc/page-meta-descriptions.php' );
 require_once( __DIR__ . '/inc/hreflang.php' );
+require_once( __DIR__ . '/inc/capabilities.php' );
 
 // Block files
 require_once( __DIR__ . '/src/random-heading/index.php' );
