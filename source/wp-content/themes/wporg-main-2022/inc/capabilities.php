@@ -58,6 +58,12 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 						__( 'Sorry, you are not allowed to change the template.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
+				} elseif ( $request->has_param( 'title' ) && $request->get_param( 'title' ) !== html_entity_decode( $page->post_title ) ) {
+					$response = new \WP_Error(
+						'rest_forbidden',
+						__( 'Sorry, you are not allowed to change the title.', 'wporg' ),
+						array( 'status' => rest_authorization_required_code() )
+					);
 				}
 			}
 		}
