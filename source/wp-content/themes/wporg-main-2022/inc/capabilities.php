@@ -52,7 +52,7 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 						__( 'Sorry, you are not allowed to change the featured image.', 'wporg' ),
 						array( 'status' => rest_authorization_required_code() )
 					);
-				} elseif ( $request->has_param( 'template' ) && $request->get_param( 'templae' ) !== $page->page_template ) {
+				} elseif ( $request->has_param( 'template' ) && $request->get_param( 'template' ) !== $page->page_template ) {
 					$response = new \WP_Error(
 						'rest_forbidden',
 						__( 'Sorry, you are not allowed to change the template.', 'wporg' ),
