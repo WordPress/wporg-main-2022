@@ -76,14 +76,36 @@ function check_caps_for_page_update( $response, $handler, $request ) {
  * @return mixed
  */
 function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
-	//if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
+	if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
 		// Special safety limits for Designer role when editing pages
-		//if ( user_can( $user_id, 'designer' ) ) {
+		if ( user_can( $user_id, 'designer' ) ) {
+			if ( 'POST' === $_SERVER['REQUEST_METHOD']
+				&& isset( $_POST['action'] ) && 'inline-save' === $_POST['action']
+				&& isset( $_POST['post_type'] ) && 'page' === $_POST['post_type'] ) {
+				$page = get_post( $_POST['post_ID'] );
 
-			//TODO: can we intercept other page edits here? Or better to hook edit filters like with rest_request_before_callbacks above?
-			// $required_caps[] = 'do_not_allow';
-		//}
-	//}
+				// The form uses 'default' to mean ''
+				if ( '' === $page->page_template ) {
+					$page->page_template = 'default';
+				}
+
+				// Effectively the same checks as check_caps_for_page_update() above.
+				if ( isset( $_POST['_status'] ) && $page->post_status !== $_POST['_status'] ) {
+					$required_caps[] = 'do_not_allow';
+				} elseif ( isset( $_POST['post_password'] ) && $page->post_password !== $_POST['post_password'] ) {
+					$required_caps[] = 'do_not_allow';
+				} elseif ( isset( $_POST['post_name'] ) && $page->post_name !== $_POST['post_name'] ) {
+					$required_caps[] = 'do_not_allow';
+				} elseif ( isset( $_POST['keep_private'] ) && 'private' === $_POST['keep_private'] ) {
+					$required_caps[] = 'do_not_allow';
+				} elseif ( isset( $_POST['page_template'] ) && $page->page_template !== $_POST['page_template'] ) {
+					$required_caps[] = 'do_not_allow';
+				} elseif ( isset( $_POST['post_title'] ) && sanitize_title( $page->post_title ) !== sanitize_title( $_POST['post_title'] ) ) {
+					$required_caps[] = 'do_not_allow';
+				}
+			}
+		}
+	}
 
 	return $required_caps;
 }
