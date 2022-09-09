@@ -84,11 +84,19 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
 	if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
 		// Special safety limits for Designer role when editing pages
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		if ( user_can( $user_id, 'designer' ) ) {
-			if ( 'POST' === $_SERVER['REQUEST_METHOD']
+			if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD']
 				&& isset( $_POST['action'] ) && 'inline-save' === $_POST['action']
 				&& isset( $_POST['post_type'] ) && 'page' === $_POST['post_type'] ) {
-				$page = get_post( $_POST['post_ID'] );
+
+				if ( isset( $_POST['post_ID'] ) ) {
+					$page = get_post( intval( wp_unslash( $_POST['post_ID'] ) ) );
+				}
+
+				if ( ! $page ) {
+					return $required_caps;
+				}
 
 				// The form uses 'default' to mean ''
 				if ( '' === $page->page_template ) {
@@ -106,7 +114,7 @@ function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
 					$required_caps[] = 'do_not_allow';
 				} elseif ( isset( $_POST['page_template'] ) && $page->page_template !== $_POST['page_template'] ) {
 					$required_caps[] = 'do_not_allow';
-				} elseif ( isset( $_POST['post_title'] ) && sanitize_title( $page->post_title ) !== sanitize_title( $_POST['post_title'] ) ) {
+				} elseif ( isset( $_POST['post_title'] ) && sanitize_title( $page->post_title ) !== sanitize_title( wp_unslash( $_POST['post_title'] ) ) ) {
 					$required_caps[] = 'do_not_allow';
 				}
 			}
