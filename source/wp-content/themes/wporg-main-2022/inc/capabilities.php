@@ -184,6 +184,5 @@ function get_designer_role_caps() {
 	$role_caps['edit_pages']           = true;
 	unset( $role_caps['delete_posts'] ); // Mainly to prevent deleting media
 
-
 	return $role_caps;
 }
