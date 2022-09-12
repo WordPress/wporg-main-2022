@@ -15,6 +15,27 @@
  * templates or theme.json settings.
  */
 
+/* stylelint-disable max-line-length */
+
+/*
+ * Temporarary fix for https://github.com/WordPress/wporg-main-2022/issues/120
+ * Spacing vars are undefined in frontend
+ * Vars copied from https://github.com/WordPress/wporg-parent-2021/blob/trunk/source/wp-content/themes/wporg-parent-2021/theme.json#L466
+ */
+
+/* stylelint-enable max-line-length */
+:root {
+	--wp--preset--spacing--10: 10px;
+	--wp--preset--spacing--20: 20px;
+	--wp--preset--spacing--30: 30px;
+	--wp--preset--spacing--40: 40px;
+	--wp--preset--spacing--50: clamp(40px, calc(100vw / 16), 60px);
+	--wp--preset--spacing--60: clamp(20px, calc(100vw / 18), 80px);
+	--wp--preset--spacing--70: 100px;
+	--wp--preset--spacing--80: clamp(80px, calc(100vw / 7), 120px);
+	--wp--preset--spacing--90: clamp(80px, calc(100vw / 7), 160px);
+}
+
 /*
  * Override inline paddings with the spacing preset.
  */
