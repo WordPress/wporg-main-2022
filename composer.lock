@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc668c35d44dec32c81c5dce68077a4",
+    "content-hash": "c9725208dd8d50a7df1c5812ba4e0bd1",
     "packages": [],
     "packages-dev": [
         {
@@ -2209,15 +2209,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "13.9.0",
+            "version": "14.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/13.9.0"
+                "reference": "tags/14.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.13.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.0.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2227,15 +2227,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "11.2",
+            "version": "11.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/11.2"
+                "reference": "tags/11.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.11.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.11.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2267,49 +2267,9 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "8ed3f3d3c62db6ca8ac749bfdcce9570487365e8"
+                "reference": "build"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/8ed3f3d3c62db6ca8ac749bfdcce9570487365e8",
-                "reference": "8ed3f3d3c62db6ca8ac749bfdcce9570487365e8",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "phpcompatibility/phpcompatibility-wp": "*",
-                "wp-coding-standards/wpcs": "2.*",
-                "wporg/wporg-repo-tools": "dev-trunk"
-            },
-            "type": "wordpress-muplugin",
-            "extra": {
-                "sync-svn": {
-                    "main-branch": "trunk",
-                    "paths": {
-                        "mu-plugins/": "https://dotorg.svn.wordpress.org/wordpress/website/wp-content/mu-plugins/pub-sync/"
-                    }
-                }
-            },
-            "scripts": {
-                "format": [
-                    "phpcbf -p"
-                ],
-                "lint": [
-                    "phpcs"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "`mu-plugins` for the WordPress.org network",
-            "support": {
-                "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
-                "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
-            },
-            "time": "2022-08-30T04:43:47+00:00"
+            "type": "wordpress-muplugin"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2317,20 +2277,9 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "bf3226fba125f9160ed667fba079ebce542c1caa"
+                "reference": "build"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/bf3226fba125f9160ed667fba079ebce542c1caa",
-                "reference": "bf3226fba125f9160ed667fba079ebce542c1caa",
-                "shasum": ""
-            },
-            "type": "wordpress-theme",
-            "support": {
-                "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
-                "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
-            },
-            "time": "2022-08-31T00:28:19+00:00"
+            "type": "wordpress-theme"
         },
         {
             "name": "wporg/wporg-repo-tools",
@@ -2338,29 +2287,9 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-repo-tools.git",
-                "reference": "154b006a03d137a52d6fffd88fe3b3ef66b9c14b"
+                "reference": "trunk"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-repo-tools/zipball/154b006a03d137a52d6fffd88fe3b3ef66b9c14b",
-                "reference": "154b006a03d137a52d6fffd88fe3b3ef66b9c14b",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "bin": [
-                "bin/update-configs"
-            ],
-            "type": "library",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Common configurations and scripts used in projects for WordPress.org Meta",
-            "homepage": "https://wordpress.org",
-            "support": {
-                "issues": "https://github.com/WordPress/wporg-repo-tools/issues",
-                "source": "https://github.com/WordPress/wporg-repo-tools/tree/trunk"
-            },
-            "time": "2022-07-21T13:46:18+00:00"
+            "type": "library"
         }
     ],
     "aliases": [],
