@@ -255,9 +255,7 @@
 
 <!-- wp:column {"width":"66%","layout":{"inherit":false}} -->
 <div class="wp-block-column" style="flex-basis:66%"><!-- wp:group {"style":{"spacing":{"margin":{"top":"15px"}}}} -->
-<div class="wp-block-group" style="margin-top:15px"><!-- wp:wporg/latest-news -->
-<div class="wp-block-wporg-latest-news" data-per-page="3"></div>
-<!-- /wp:wporg/latest-news -->
+<div class="wp-block-group" style="margin-top:15px"><!-- wp:wporg/latest-news /-->
 
 <!-- wp:spacer {"height":"20px"} -->
 <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
