@@ -26,9 +26,9 @@ function enqueue_assets() {
 	// stylesheet as a dependency.
 	wp_enqueue_style(
 		'wporg-main-2022-style',
-		get_stylesheet_uri(),
+		get_stylesheet_directory_uri() . '/build/style/style-index.css',
 		array( 'wporg-parent-2021-style', 'wporg-global-fonts' ),
-		filemtime( __DIR__ . '/style.css' )
+		filemtime( __DIR__ . '/build/style/style-index.css' )
 	);
 
 	if ( is_page( 'download' ) ) {
@@ -42,11 +42,18 @@ function enqueue_assets() {
 			);
 
 		wp_enqueue_script(
-			'wporg-main-2022-script',
+			'wporg-main-2022-download-script',
 			get_stylesheet_directory_uri() . '/build/download/index.js',
 			$script_info['dependencies'],
 			$script_info['version'],
 			true
+		);
+
+		wp_enqueue_style(
+			'wporg-main-2022-download-style',
+			get_stylesheet_directory_uri() . '/build/download/style-index.css',
+			array(),
+			$script_info['version']
 		);
 	}
 }
