@@ -30,6 +30,7 @@ function enqueue_assets() {
 		array( 'wporg-parent-2021-style', 'wporg-global-fonts' ),
 		filemtime( __DIR__ . '/build/style/style-index.css' )
 	);
+	wp_style_add_data( 'wporg-main-2022-style', 'rtl', 'replace' );
 
 	if ( is_page( 'download' ) ) {
 		$path        = __DIR__ . '/build/download/index.js';
@@ -55,6 +56,7 @@ function enqueue_assets() {
 			array(),
 			$script_info['version']
 		);
+		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
 	}
 }
 
