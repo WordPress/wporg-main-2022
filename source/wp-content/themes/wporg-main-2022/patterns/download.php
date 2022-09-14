@@ -20,12 +20,12 @@
 <div class="wp-block-group alignfull" id="download-hosting" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"right":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
 <div class="wp-block-column" style="border-right-color:var(--wp--preset--color--light-grey-1);border-right-width:1px;flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"60px","bottom":"80px","left":"0px"}}}} -->
-<div class="wp-block-group alignwide" id="download-install" style="padding-top:80px;padding-right:60px;padding-bottom:80px;padding-left:0px"><!-- wp:heading {"textAlign":"left","fontSize":"heading-4"} -->
-<h2 class="has-text-align-left has-heading-4-font-size"><?php _e( 'Download and install it yourself', 'wporg' ); ?></h2>
+<div class="wp-block-group alignwide" id="download-install" style="padding-top:80px;padding-right:60px;padding-bottom:80px;padding-left:0px"><!-- wp:heading {"fontSize":"heading-4"} -->
+<h2 class="has-heading-4-font-size"><?php _e( 'Download and install it yourself', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text"><?php _e( 'For anyone comfortable getting their own hosting and domain.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'For anyone comfortable getting their own hosting and domain.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"10px"}}} -->
@@ -56,12 +56,12 @@
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"60px"}}}} -->
-<div class="wp-block-group alignwide" id="hosting" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:60px"><!-- wp:heading {"textAlign":"left","fontSize":"heading-4"} -->
-<h2 class="has-text-align-left has-heading-4-font-size"><?php _e( 'Set up with a hosting provider', 'wporg' ); ?></h2>
+<div class="wp-block-group alignwide" id="hosting" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:60px"><!-- wp:heading {"fontSize":"heading-4"} -->
+<h2 class="has-heading-4-font-size"><?php _e( 'Set up with a hosting provider', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text"><?php _e( 'For anyone looking for the simplest way to start.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'For anyone looking for the simplest way to start.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

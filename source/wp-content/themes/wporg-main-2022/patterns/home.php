@@ -17,8 +17,8 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text"><?php _e( 'Create a place for your business, your interests, or anything else—with the open source platform that powers the web.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Create a place for your business, your interests, or anything else—with the open source platform that powers the web.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -38,8 +38,8 @@
 <h2 class="has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size"><?php _e( 'Dream it, build&nbsp;it', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text"><?php _e( 'That’s the beauty of using blocks. See exactly how your site will look in real time, even as you add, edit, and rearrange your content. Create any kind of custom site with intuitive editing, flexible design tools, and powerful features to manage it all.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'That’s the beauty of using blocks. See exactly how your site will look in real time, even as you add, edit, and rearrange your content. Create any kind of custom site with intuitive editing, flexible design tools, and powerful features to manage it all.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -110,14 +110,14 @@
 
 <!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"80px"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"backgroundColor":"charcoal-1","textColor":"white"} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:80px"><!-- wp:group {"layout":{"inherit":false},"align":"wide","style":{"spacing":{"blockGap":"30px"}}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"left","fontSize":"heading-2"} -->
-<h2 class="has-text-align-left has-heading-2-font-size"><?php _e( 'One platform, millions of possibilities', 'wporg' ); ?></h2>
+<div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-2"} -->
+<h2 class="has-heading-2-font-size"><?php _e( 'One platform, millions of possibilities', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"align":"left","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text"><?php _e( 'Global creative agencies, local businesses, and even your neighbor’s personal blog are already using WordPress.', 'wporg' ); ?></p>
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Global creative agencies, local businesses, and even your neighbor’s personal blog are already using WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -209,8 +209,8 @@
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:heading {"textAlign":"left","align":"wide","style":{"spacing":{"margin":{"bottom":"40px"}}},"fontSize":"heading-cta"} -->
-<h2 class="alignwide has-text-align-left has-heading-cta-font-size" style="margin-bottom:40px"><?php _e( '<em>Community</em> at its core', 'wporg' ); ?></h2>
+<!-- wp:heading {"align":"wide","style":{"spacing":{"margin":{"bottom":"40px"}}},"fontSize":"heading-cta"} -->
+<h2 class="alignwide has-heading-cta-font-size" style="margin-bottom:40px"><?php _e( '<em>Community</em> at its core', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
