@@ -25,6 +25,35 @@
 
 
 /*
+ * Fix border bug on RTL sites.
+ * See https://github.com/WordPress/gutenberg/issues/44169.
+ */
+
+html[dir="rtl"] :where([style*="border-left-width"]),
+html[dir="rtl"] :where([style*="border-left-color"]),
+html[dir="rtl"] :where([style*="border-right-width"]),
+html[dir="rtl"] :where([style*="border-right-color"]) {
+	border-right-style: initial;
+	border-left-style: initial;
+}
+
+/**
+ * The following styles are flipped so that when RTLCSS runs, they're correct.
+ * For some reason, `rtl:ignore` does not work.
+ */
+
+html[dir="rtl"] :where([style*="border-left-width"]),
+html[dir="rtl"] :where([style*="border-left-color"]) {
+	border-right-style: solid;
+}
+
+html[dir="rtl"] :where([style*="border-right-width"]),
+html[dir="rtl"] :where([style*="border-right-color"]) {
+	border-left-style: solid;
+}
+
+
+/*
  * Spacing for small screens.
  */
 
