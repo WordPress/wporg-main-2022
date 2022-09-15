@@ -37,37 +37,20 @@
 			"url": "https://wpackagist.org/"
 		},
 		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-repo-tools.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-mu-plugins.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:WordPress/wporg-parent-2021.git"
+		},
+		{
 			"type": "package",
 			"package": [
-				{
-					"name": "wporg/wporg-repo-tools",
-					"version": "dev-trunk",
-					"source": {
-						"type": "git",
-						"url": "https://github.com/WordPress/wporg-repo-tools.git",
-						"reference": "trunk"
-					}
-				},
-				{
-					"name": "wporg/wporg-mu-plugins",
-					"type": "wordpress-muplugin",
-					"version": "dev-build",
-					"source": {
-						"type": "git",
-						"url": "https://github.com/WordPress/wporg-mu-plugins.git",
-						"reference": "build"
-					}
-				},
-				{
-					"name": "wporg/wporg-parent-2021",
-					"type": "wordpress-theme",
-					"version": "dev-build",
-					"source": {
-						"type": "git",
-						"url": "https://github.com/WordPress/wporg-parent-2021.git",
-						"reference": "build"
-					}
-				},
 				{
 					"name": "wordpress-meta/wporg",
 					"type": "wordpress-theme",
