@@ -6,5 +6,9 @@
 	{
 		"slug": "download",
 		"template": "page-download.html"
+	},
+	{
+		"slug": "mobile",
+		"template": "page-mobile.html"
 	}
 ]
