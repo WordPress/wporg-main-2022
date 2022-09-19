@@ -1,3 +1,4 @@
+import './style.scss';
 import DownloadModalContainer from '../components/download-modal/';
 
 const initDownloadModal = () => {
