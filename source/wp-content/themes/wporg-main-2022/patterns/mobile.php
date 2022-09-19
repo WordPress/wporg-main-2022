@@ -9,11 +9,11 @@
 <!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--50);flex-basis:50%"><!-- wp:heading {"level":1,"fontSize":"heading-3"} -->
-<h1 class="has-heading-3-font-size"><?php _e( 'WordPress Mobile Apps', 'wporg' ); ?></h1>
+<h1 class="has-heading-3-font-size"><?php _e( 'WordPress mobile apps', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Inspiration strikes any time, anywhere. WordPress mobile apps put the power of publishing in your hands, making it easy to create and consume content. Write, edit, and publish posts to your site, check stats, and get inspired with great posts in the Reader. And of course, they’re open source, just like WordPress.', 'wporg' ); ?></p>
+<p><?php _e( 'Inspiration strikes any time, anywhere. WordPress mobile apps put the power of publishing in your hands. And of course, they’re open source, just like WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
@@ -27,13 +27,13 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"textColor":"charcoal-4","className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Requires a hosted website with WordPress 4.0 or higher. <a href="https://apps.wordpress.com/get/?campaign=wporg" data-type="URL" data-id="https://apps.wordpress.com/get/?campaign=wporg">Learn more</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Requires a hosted website with WordPress 4.0 or higher.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:image {"id":12081,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2022/09/mobile-illustration.png"><img src="https://i2.wp.com/wordpress.org/files/2022/09/mobile-illustration.png?fit=1148%2C614&amp;ssl=1" alt="" class="wp-image-12081" /></a></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:image {"id":12081,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://i2.wp.com/wordpress.org/files/2022/09/mobile-illustration.png?fit=1148%2C614&amp;ssl=1" alt="" class="wp-image-12081" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
