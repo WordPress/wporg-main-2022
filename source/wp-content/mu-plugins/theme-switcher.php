@@ -41,6 +41,7 @@ function should_use_new_theme() {
 	$new_theme_pages = array(
 		'/',
 		'/download/',
+		'/mobile/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;
