@@ -15,6 +15,7 @@ require_once( __DIR__ . '/src/random-heading/index.php' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'render_block_core/pattern', __NAMESPACE__ . '\prevent_arrow_emoji', 20 );
+add_filter( 'render_block_core/pattern', __NAMESPACE__ . '\convert_inline_style_to_rtl', 20 );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 
 /**
@@ -96,6 +97,48 @@ add_filter(
  */
 function prevent_arrow_emoji( $content ) {
 	return preg_replace( '/([←↑→↓↔↕↖↗↘↙])/u', '\1&#65038;', $content );
+}
+
+/**
+ * Flip inline styles and class names when using RTL display.
+ *
+ * @param string $content Content of the current post.
+ * @return string The updated content.
+ */
+function convert_inline_style_to_rtl( $content ) {
+	if ( ! is_rtl() ) {
+		return $content;
+	}
+
+	/*
+	 * Replace initial item with "temp" so that we don't immediately replace it with the original direction.
+	 *
+	 * For example, the transform works like this:
+	 * Start with border-left-color: red; border-right-color: blue;
+	 *         -> border-temp-color: red; border-right-color: blue;
+	 *         -> border-temp-color: red; border-left-color: blue;
+	 *         -> border-right-color: red; border-left-color: blue;
+	 */
+	$replacements = [
+		// Borders.
+		'border-left'  => 'border-temp',
+		'border-right' => 'border-left',
+		'border-temp'  => 'border-right',
+		// Padding
+		'padding-left'  => 'padding-temp',
+		'padding-right' => 'padding-left',
+		'padding-temp'  => 'padding-right',
+		// Margins.
+		'margin-left'  => 'margin-temp',
+		'margin-right' => 'margin-left',
+		'margin-temp'  => 'margin-right',
+		// Text alignment.
+		'has-text-align-left'  => 'has-text-align-temp',
+		'has-text-align-right' => 'has-text-align-left',
+		'has-text-align-temp'  => 'has-text-align-right',
+	];
+
+	return str_replace( array_keys( $replacements ), array_values( $replacements ), $content );
 }
 
 /**
