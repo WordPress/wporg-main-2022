@@ -2227,15 +2227,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "11.3.1",
+            "version": "11.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/11.3.1"
+                "reference": "tags/11.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.11.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.11.3.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2267,12 +2267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "3c862959240351265f6a78dac9a73dea3457df83"
+                "reference": "d1b12e97edc40411c022c20f6b6882f45f03d3a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/3c862959240351265f6a78dac9a73dea3457df83",
-                "reference": "3c862959240351265f6a78dac9a73dea3457df83",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/d1b12e97edc40411c022c20f6b6882f45f03d3a9",
+                "reference": "d1b12e97edc40411c022c20f6b6882f45f03d3a9",
                 "shasum": ""
             },
             "require": {
@@ -2309,7 +2309,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2022-09-20T05:42:27+00:00"
+            "time": "2022-09-21T16:07:10+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2377,5 +2377,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }
