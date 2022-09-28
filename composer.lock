@@ -2267,12 +2267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "d1b12e97edc40411c022c20f6b6882f45f03d3a9"
+                "reference": "80d8b8d8cc92ad436437856aa77caf0277f93bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/d1b12e97edc40411c022c20f6b6882f45f03d3a9",
-                "reference": "d1b12e97edc40411c022c20f6b6882f45f03d3a9",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/80d8b8d8cc92ad436437856aa77caf0277f93bed",
+                "reference": "80d8b8d8cc92ad436437856aa77caf0277f93bed",
                 "shasum": ""
             },
             "require": {
@@ -2309,7 +2309,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2022-09-21T16:07:10+00:00"
+            "time": "2022-09-26T20:02:36+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2377,5 +2377,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
