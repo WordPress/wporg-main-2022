@@ -52,6 +52,13 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	border-left-style: solid;
 }
 
+/**
+ * Add a background behind the Editor section's cover block, for browsers that don't support webp.
+ */
+
+#editor {
+	background-color: var(--wp--preset--color--charcoal-1);
+}
 
 /*
  * Spacing for small screens.
