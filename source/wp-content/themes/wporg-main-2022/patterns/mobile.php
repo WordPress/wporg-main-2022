@@ -2,7 +2,7 @@
 /**
  * Title: Mobile
  * Slug: wporg-main-2022/mobile
- * Categories:
+ * Inserter: no
  */
 
 ?>

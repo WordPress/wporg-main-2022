@@ -30,7 +30,7 @@ function generate_pattern( $url, $output_path ) {
 /**
  * Title: {$post->title->rendered}
  * Slug: wporg-main-2022/{$post->slug}
- * Categories:
+ * Inserter: no
  */
 
 ?>

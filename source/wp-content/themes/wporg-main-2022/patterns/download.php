@@ -2,7 +2,7 @@
 /**
  * Title: Download
  * Slug: wporg-main-2022/download
- * Categories:
+ * Inserter: no
  */
 
 ?>

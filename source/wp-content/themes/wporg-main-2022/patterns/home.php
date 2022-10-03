@@ -2,7 +2,7 @@
 /**
  * Title: Home
  * Slug: wporg-main-2022/home
- * Categories:
+ * Inserter: no
  */
 
 ?>
