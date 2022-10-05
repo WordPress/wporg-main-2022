@@ -19,8 +19,10 @@ const init = () => {
 			}
 
 			setInterval( async () => {
-				const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }` } );
-				element.innerHTML = count;
+				try {
+					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }` } );
+					element.innerHTML = count;
+				} catch ( error ) {}
 			}, 5000 );
 		} );
 	}

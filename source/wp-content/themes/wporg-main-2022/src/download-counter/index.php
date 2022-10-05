@@ -136,7 +136,6 @@ function get_download_count( $branch ) {
 			)
 		);
 	}
-	// @todo some error checking.
 
 	return esc_html( number_format_i18n( $num ) );
 }
