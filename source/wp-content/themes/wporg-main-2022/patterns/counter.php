@@ -19,7 +19,7 @@
 <!-- wp:cover {"overlayColor":"charcoal-1","minHeight":70,"minHeightUnit":"vh","contentPosition":"center center","align":"full"} -->
 <div class="wp-block-cover alignfull" style="min-height:70vh"><span aria-hidden="true" class="wp-block-cover__background has-charcoal-1-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":1,"fontSize":"heading-3"} -->
-<h1 class="has-heading-3-font-size"><em><?php _e( 'Number of WordPress [latest_branch] downloads', 'wporg' ); ?></em></h1>
+<h1 class="has-heading-3-font-size"><em><?php _e( 'Number of WordPress [stable_branch] downloads', 'wporg' ); ?></em></h1>
 <!-- /wp:heading -->
 
 <!-- wp:wporg/download-counter {"textColor":"blueberry-2"} /--></div>
