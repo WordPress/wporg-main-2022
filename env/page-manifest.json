@@ -8,6 +8,22 @@
 		"template": "page-download.html"
 	},
 	{
+		"slug": "beta-nightly",
+		"template": "page-beta-nightly.html"
+	},
+	{
+		"slug": "counter",
+		"template": "page-counter.html"
+	},
+	{
+		"slug": "releases",
+		"template": "page-releases.html"
+	},
+	{
+		"slug": "source",
+		"template": "page-source.html"
+	},
+	{
 		"slug": "mobile",
 		"template": "page-mobile.html"
 	}
