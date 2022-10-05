@@ -1,5 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
-	"settings": {}
+	"settings": {},
+	"styles": {
+		"blocks": {
+			"wporg/download-counter": {
+				"typography": {
+					"fontFamily": "monospace",
+					"fontSize": "clamp(40px, calc(100vw / 8), 120px)",
+					"lineHeight": "1"
+				}
+			}
+		}
+	}
 }
