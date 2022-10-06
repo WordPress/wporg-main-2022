@@ -21,7 +21,7 @@ const init = () => {
 			setInterval( async () => {
 				try {
 					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }` } );
-					element.innerHTML = count;
+					element.textContent = count;
 				} catch ( error ) {}
 			}, 5000 );
 		} );
