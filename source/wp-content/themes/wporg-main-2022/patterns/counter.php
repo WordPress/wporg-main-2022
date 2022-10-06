@@ -22,6 +22,6 @@
 <h1 class="has-heading-3-font-size"><em><?php _e( 'Number of WordPress [stable_branch] downloads', 'wporg' ); ?></em></h1>
 <!-- /wp:heading -->
 
-<!-- wp:wporg/download-counter {"textColor":"blueberry-2"} /--></div>
+<!-- wp:wporg/download-counter {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"textColor":"blueberry-2"} /--></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
