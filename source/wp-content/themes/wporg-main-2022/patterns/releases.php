@@ -30,6 +30,8 @@
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Curious about which jazzers we highlighted for each release? <a href="https://wordpress.org/about/history/">It’s on the History page</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:wporg/release-tables /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

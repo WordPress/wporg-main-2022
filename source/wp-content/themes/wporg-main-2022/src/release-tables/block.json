@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wporg/release-tables",
+	"version": "0.1.0",
+	"title": "Release Tables",
+	"category": "design",
+	"icon": "",
+	"description": "Display the list of releases.",
+	"textdomain": "wporg",
+	"attributes": {},
+	"supports": {
+		"align": true,
+		"html": false,
+		"multiple": false,
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": false,
+			"blockGap": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true
+		},
+		"__experimentalLayout": true
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
