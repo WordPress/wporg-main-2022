@@ -15,18 +15,8 @@
 		"multiple": false,
 		"spacing": {
 			"margin": [ "top", "bottom" ],
-			"padding": false,
-			"blockGap": true
-		},
-		"typography": {
-			"fontSize": true,
-			"lineHeight": true,
-			"__experimentalFontFamily": true,
-			"__experimentalFontStyle": true,
-			"__experimentalFontWeight": true,
-			"__experimentalLetterSpacing": true
-		},
-		"__experimentalLayout": true
+			"padding": false
+		}
 	},
 	"editorScript": "file:./index.js",
 	"style": "file:./style-index.css",
