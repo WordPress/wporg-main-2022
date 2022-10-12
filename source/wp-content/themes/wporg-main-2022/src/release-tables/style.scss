@@ -13,14 +13,6 @@
 	li {
 		display: inline-block;
 		padding: 0 calc(var(--wp--preset--spacing--10) / 2);
-
-		&:first-child {
-			padding-left: 0;
-		}
-
-		&:last-child {
-			padding-right: 0;
-		}
 	}
 
 	a {
