@@ -76,6 +76,29 @@ add_shortcode(
 );
 
 /**
+ * Shortcode to display the current stable branch of WordPress (ex, 5.7, 6.0).
+ */
+add_shortcode(
+	'stable_branch',
+	function() {
+		global $wp_version;
+		$stable_branch = '';
+
+		if ( defined( 'WP_CORE_STABLE_BRANCH' ) ) {
+			$stable_branch = WP_CORE_STABLE_BRANCH;
+		} else {
+			// Fallback if the constant is undefined. This isn't exactly correct,
+			// but displays something for testing purposes.
+			if ( preg_match( '/[0-9]+\.[0-9]/', $wp_version, $matches ) ) {
+				$stable_branch = $matches[0];
+			}
+		}
+
+		return $stable_branch;
+	}
+);
+
+/**
  * Shortcode for a link to the latest version of WordPress.
  */
 add_shortcode(
