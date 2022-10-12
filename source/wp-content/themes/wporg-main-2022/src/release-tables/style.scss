@@ -1,3 +1,10 @@
+.wp-block-wporg-release-tables .wp-block-table thead th {
+	padding: 0;
+	height: 0;
+	border-top: none;
+	border-bottom: none;
+}
+
 .wp-block-wporg-release-tables [role="tablist"] {
 	margin: var(--wp--preset--spacing--20) auto 0;
 	padding: 0;
@@ -30,4 +37,49 @@
 
 .wp-block-wporg-release-tables__section[aria-hidden="true"] {
 	display: none;
+}
+
+.wp-block-wporg-release-tables th,
+.wp-block-wporg-release-tables td {
+	box-sizing: border-box;
+}
+
+.wp-block-wporg-release-tables__cell-version {
+	width: 15%;
+
+	tbody & {
+		white-space: nowrap;
+	}
+}
+
+.wp-block-wporg-release-tables__cell-date {
+	width: 35%;
+}
+
+.wp-block-wporg-release-tables__cell-zip {
+	width: 25%;
+}
+
+.wp-block-wporg-release-tables__cell-targz {
+	width: 25%;
+}
+
+@media (max-width: 599px) {
+	.wp-block-wporg-release-tables__cell-date,
+	.wp-block-wporg-release-tables__cell-zip small,
+	.wp-block-wporg-release-tables__cell-targz small {
+		display: none;
+	}
+
+	.wp-block-wporg-release-tables__cell-version {
+		width: 40%;
+	}
+
+	.wp-block-wporg-release-tables__cell-zip {
+		width: 30%;
+	}
+
+	.wp-block-wporg-release-tables__cell-targz {
+		width: 30%;
+	}
 }

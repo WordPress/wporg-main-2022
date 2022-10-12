@@ -180,10 +180,10 @@ function render_table( $releases ) {
 	$table .= '<table>';
 	$table .= '<thead>';
 	$table .= '<tr>';
-	$table .= '<th scope="col" width="15%">' . esc_html__( 'Version', 'wporg' ) . '</th>';
-	$table .= '<th scope="col" width="35%">' . esc_html__( 'Release date', 'wporg' ) . '</th>';
-	$table .= '<th scope="col" width="25%">' . esc_html__( 'Download zip', 'wporg' ) . '</th>';
-	$table .= '<th scope="col" width="25%">' . esc_html__( 'Download tar.gz', 'wporg' ) . '</th>';
+	$table .= '<th scope="col" class="wp-block-wporg-release-tables__cell-version"><span class="screen-reader-text">' . esc_html__( 'Version', 'wporg' ) . '</span></th>';
+	$table .= '<th scope="col" class="wp-block-wporg-release-tables__cell-date"><span class="screen-reader-text">' . esc_html__( 'Release date', 'wporg' ) . '</span></th>';
+	$table .= '<th scope="col" class="wp-block-wporg-release-tables__cell-zip"><span class="screen-reader-text">' . esc_html__( 'Download zip', 'wporg' ) . '</span></th>';
+	$table .= '<th scope="col" class="wp-block-wporg-release-tables__cell-targz"><span class="screen-reader-text">' . esc_html__( 'Download tar.gz', 'wporg' ) . '</span></th>';
 	$table .= '</tr>';
 	$table .= '</thead>';
 	$table .= '<tbody>';
@@ -204,15 +204,15 @@ function render_table( $releases ) {
  */
 function render_table_row( $version ) {
 	$row = '<tr>';
-	$row .= '<th scope="row">' . esc_html( $version['version'] ) . '</th>';
-	$row .= '<td>' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
-	$row .= sprintf( '<td><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> | <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
+	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">' . esc_html( $version['version'] ) . '</th>';
+	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
+	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> | <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
 
 	// Some releases don't have tar.gz builds.
 	if ( $version['targz_url'] ) {
-		$row .= sprintf( '<td><a href="%1$s">tar.gz</a><br /><small>(<a href="%1$s.md5">md5</a> | <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ) );
+		$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-targz"><a href="%1$s">tar.gz</a><br /><small>(<a href="%1$s.md5">md5</a> | <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ) );
 	} else {
-		$row .= '<td></td>';
+		$row .= '<td class="wp-block-wporg-release-tables__cell-targz"></td>';
 	}
 	$row .= '</tr>';
 	return $row;
