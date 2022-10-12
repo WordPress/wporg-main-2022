@@ -1,8 +1,8 @@
-.wp-block-wporg-release-tables .wp-block-table thead th {
-	padding: 0;
+.wp-block-wporg-release-tables thead th {
+	padding: 0 !important;
 	height: 0;
-	border-top: none;
-	border-bottom: none;
+	border-top: none !important;
+	border-bottom: none !important;
 }
 
 .wp-block-wporg-release-tables [role="tablist"] {
