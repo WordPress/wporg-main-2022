@@ -42,11 +42,12 @@ function render( $attributes, $content, $block ) {
 		wp_script_add_data( $block->block_type->view_script, 'group', 1 );
 	}
 
-	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK ) {
-		$releases = $GLOBALS['rosetta']->rosetta->get_releases_breakdown();
-	} else {
-		$releases = \WordPressdotorg\Releases\get_breakdown();
+	if ( ! function_exists( '\WordPressdotorg\Releases\get_breakdown' ) ) {
+		return '';
 	}
+
+	// @todo Use the rosetta function when launched on rosetta sites.
+	$releases = \WordPressdotorg\Releases\get_breakdown();
 
 	if ( empty( $releases ) ) {
 		return '';
