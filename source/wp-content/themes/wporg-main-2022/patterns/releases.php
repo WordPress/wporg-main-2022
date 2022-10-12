@@ -19,7 +19,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"right":"var:preset|spacing|60"}}},"fontSize":"heading-2"} -->
-<h1 class="has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Release Archive', 'wporg' ); ?></h1>
+<h1 class="has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Releases', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -30,6 +30,8 @@
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Curious about which jazzers we highlighted for each release? <a href="https://wordpress.org/about/history/">It’s on the History page</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:wporg/release-tables /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
