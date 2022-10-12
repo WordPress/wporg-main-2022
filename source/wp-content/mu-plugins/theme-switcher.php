@@ -28,7 +28,7 @@ function should_use_new_theme() {
 	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 
 	// Admin page or an API request.
-	if ( is_admin() || wp_is_json_request() || 0 === strpos( $request_uri, '/wp-json/wp/' ) ) {
+	if ( is_admin() || wp_is_json_request() || 0 === strpos( $request_uri, '/wp-json/wp' ) ) {
 		return true;
 	}
 
