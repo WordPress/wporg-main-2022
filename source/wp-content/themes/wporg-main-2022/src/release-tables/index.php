@@ -55,8 +55,8 @@ function render( $attributes, $content, $block ) {
 	$block_content = '';
 
 	if ( isset( $releases['latest'] ) ) {
-		$block_content .= '<div class="wp-block-wporg-release-tables__section">';
-		$block_content .= render_heading( __( 'Latest release', 'wporg' ), 'latest' );
+		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
+		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
 		$block_content .= render_table( [ $releases['latest'] ] );
 		$block_content .= '</div>';
 	}
@@ -64,26 +64,54 @@ function render( $attributes, $content, $block ) {
 	if ( isset( $releases['branches'] ) ) {
 		$show_branches = array_slice( $releases['branches'], 0, 2 );
 		foreach ( $show_branches as $branch => $branch_releases ) {
-			$block_content .= '<div class="wp-block-wporg-release-tables__section">';
-			$block_content .= render_heading(
-				/* translators: Version number. */
-				sprintf( esc_html__( '%s Branch', 'wporg' ), $branch ),
+			$block_content .= sprintf(
+				'<div class="wp-block-wporg-release-tables__section" id="%s">',
 				sprintf( 'branch-%s', sanitize_key( $branch ) )
 			);
+			/* translators: Version number. */
+			$block_content .= render_heading( sprintf( esc_html__( '%s Branch', 'wporg' ), $branch ) );
 			$block_content .= render_table( $branch_releases );
 			$block_content .= '</div>';
 		}
 
 		$more_branches = array_slice( $releases['branches'], 2 );
 		if ( $more_branches ) {
-			$block_content .= render_heading( __( 'Past releases', 'wporg' ), 'past' );
+			$block_content .= render_heading( __( 'Past releases', 'wporg' ) );
+
+			$block_content .= '<ul role="tablist">';
 			foreach ( $more_branches as $branch => $branch_releases ) {
-				$block_content .= '<div class="wp-block-wporg-release-tables__section">';
+				$tab_string = '<li role="presentation"><a role="tab" href="#%1$s" aria-controls="%1$s" aria-selected="false">%2$s</a></li>';
+				$block_content .= sprintf(
+					$tab_string,
+					sprintf( 'branch-%s', sanitize_key( $branch ) ),
+					$branch
+				);
+			}
+			if ( isset( $releases['betas'] ) ) {
+				$block_content .= sprintf(
+					$tab_string,
+					'betas',
+					__( 'Beta &amp; RC releases', 'wporg' )
+				);
+			}
+			if ( isset( $releases['mu'] ) && count( $releases['mu'] ) ) {
+				$block_content .= sprintf(
+					$tab_string,
+					'mu',
+					__( 'MU releases', 'wporg' )
+				);
+			}
+			$block_content .= '</ul>';
+
+			foreach ( $more_branches as $branch => $branch_releases ) {
+				$block_content .= sprintf(
+					'<div class="wp-block-wporg-release-tables__section" id="%s" aria-hidden="true">',
+					sprintf( 'branch-%s', sanitize_key( $branch ) ),
+				);
 				$block_content .= render_heading(
 					/* translators: Version number. */
 					sprintf( esc_html__( '%s Branch', 'wporg' ), $branch ),
-					sprintf( 'branch-%s', sanitize_key( $branch ) ),
-					true
+					3
 				);
 				$block_content .= render_table( $branch_releases );
 				$block_content .= '</div>';
@@ -92,8 +120,8 @@ function render( $attributes, $content, $block ) {
 	}
 
 	if ( isset( $releases['betas'] ) ) {
-		$block_content .= '<div class="wp-block-wporg-release-tables__section">';
-		$block_content .= render_heading( __( 'Beta &amp; RC releases', 'wporg' ), 'betas', true );
+		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="betas" aria-hidden="true">';
+		$block_content .= render_heading( __( 'Beta &amp; RC releases', 'wporg' ), 3 );
 		$block_content .= '<!-- wp:paragraph --><p>';
 		$block_content .= esc_html__( 'These were testing releases and are only available here for archival purposes.', 'wporg' );
 		$block_content .= '</p><!-- /wp:paragraph -->';
@@ -102,8 +130,8 @@ function render( $attributes, $content, $block ) {
 	}
 
 	if ( isset( $releases['mu'] ) && count( $releases['mu'] ) ) {
-		$block_content .= '<div class="wp-block-wporg-release-tables__section">';
-		$block_content .= render_heading( __( 'MU releases', 'wporg' ), 'mu', true );
+		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="mu" aria-hidden="true">';
+		$block_content .= render_heading( __( 'MU releases', 'wporg' ), 3 );
 		$block_content .= '<!-- wp:paragraph --><p>';
 		$block_content .= esc_html__( 'WordPress MU releases made prior to MU being merged into WordPress 3.0.', 'wporg' );
 		$block_content .= '</p><!-- /wp:paragraph -->';
@@ -122,35 +150,21 @@ function render( $attributes, $content, $block ) {
 /**
  * Render a release heading with ID.
  *
- * @param string $text The heading text.
- * @param string $id The string to use for the HTML id attribute.
+ * @param string $text  The heading text.
+ * @param int    $level A value 1-6 to use for the heading level.
  *
  * @return string Returns the heading markup.
  */
-function render_heading( $text, $id, $subheading = false ) {
-	if ( ! $id ) {
-		$id = sanitize_key( $text );
-	}
-
-	$back_to_top = '';
-	if ( 'latest' !== $id ) {
-		$back_to_top = '<a class="wp-block-wporg-release-tables__link-top" href="#latest">' . __( 'Back to top', 'wporg' ) . '</a>';
-	}
-
-	if ( $subheading ) {
-		return sprintf(
-			'<!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"0px"}}},"fontSize":"heading-4"} --><h3 class="has-heading-4-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:0px" id="%s">%s %s</h3><!-- /wp:heading -->',
-			esc_attr( $id ),
-			esc_html( $text ),
-			$back_to_top
-		);
+function render_heading( $text, int $level = 2 ) {
+	if ( $level < 1 || $level > 6 ) {
+		$level = 2;
 	}
 
 	return sprintf(
-		'<!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"0px"}}},"fontSize":"heading-3"} --><h2 class="has-heading-3-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:0px" id="%s">%s %s</h2><!-- /wp:heading -->',
-		esc_attr( $id ),
-		esc_html( $text ),
-		$back_to_top
+		'<!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"0px"}}},"fontSize":"heading-%2$s"} --><h%1$s class="has-heading-%2$s-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:0px">%3$s</h%1$s><!-- /wp:heading -->',
+		$level,
+		$level + 1,
+		esc_html( $text )
 	);
 }
 
