@@ -63,11 +63,11 @@ function enqueue_assets() {
 	// Preload the heading font(s).
 	if ( is_callable( 'global_fonts_preload' ) ) {
 		// All headings.
-		global_fonts_preload( 'EB Garamond' );
+		global_fonts_preload( 'EB Garamond Latin' );
 
 		if ( is_front_page() ) {
 			// The heading on the front-page has some italic.
-			global_fonts_preload( 'EB Garamond italic' );
+			global_fonts_preload( 'EB Garamond Latin italic' );
 		}
 	}
 }
