@@ -2,6 +2,8 @@
 
 namespace WordPressdotorg\Theme\Main_2022;
 
+use function WordPressdotorg\MU_Plugins\Global_Header_Footer\is_rosetta_site;
+
 require_once( __DIR__ . '/inc/page-meta-descriptions.php' );
 require_once( __DIR__ . '/inc/hreflang.php' );
 require_once( __DIR__ . '/inc/capabilities.php' );
@@ -58,6 +60,20 @@ function enqueue_assets() {
 			$script_info['version']
 		);
 		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
+	}
+
+	// Preload the heading font(s).
+	if ( is_callable( 'global_fonts_preload' ) ) {
+		// TODO: Load required fonts for rosetta sites once they are supported.
+		if ( ! is_rosetta_site() ) {
+			// All headings.
+			global_fonts_preload( 'EB Garamond Latin' );
+
+			if ( is_front_page() ) {
+				// The heading on the front-page has some italic.
+				global_fonts_preload( 'EB Garamond Latin italic' );
+			}
+		}
 	}
 }
 
