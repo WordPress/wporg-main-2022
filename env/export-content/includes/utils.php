@@ -6,10 +6,29 @@ namespace WordPress_org\Main_2022\ExportToPatterns;
 require __DIR__ . '/parser.php';
 
 /**
+ * Filter CURL requests to bypass sandboxes and always hit a production server.
+ * Docker doesn't use the proxy, so those requests will fail when wordpress.org is sandboxed.
+ */
+function filter_curl_options( $ch ) {
+	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
+}
+add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
+
+/**
  * Generate the pattern content from a URL.
  */
 function generate_pattern( $url, $output_path ) {
-	$data = file_get_contents( $url );
+	$response = wp_remote_get( $url );
+
+	$status_code = wp_remote_retrieve_response_code( $response );
+
+	if ( is_wp_error( $response ) ) {
+		die( esc_html( $response->get_error_message() ) );
+	} elseif ( 200 !== wp_remote_retrieve_response_code( $response ) ) {
+		die( esc_html( "HTTP Error $status_code \n" ) );
+	}
+
+	$data = wp_remote_retrieve_body( $response );
 
 	if ( ! $data ) {
 		die( "Unable to fetch {$url}\n" );
