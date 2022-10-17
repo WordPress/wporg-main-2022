@@ -65,6 +65,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  * Update the "Dropdown on Mobile" style when the menu is inside a "Brush Stroke" group block.
  */
 
+.is-style-brush-stroke .wp-block-navigation .wp-block-navigation-item__content {
+	padding: 0;
+}
+
 .is-style-brush-stroke .wp-block-navigation.is-style-dropdown-on-mobile {
 	.wp-block-navigation__responsive-container-open {
 		position: absolute;
