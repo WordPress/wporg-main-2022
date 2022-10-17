@@ -60,39 +60,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	background-color: var(--wp--preset--color--charcoal-1);
 }
 
-
-/**
- * Update the "Dropdown on Mobile" style when the menu is inside a "Brush Stroke" group block.
- */
-
-.is-style-brush-stroke .wp-block-navigation .wp-block-navigation-item__content {
-	padding: 0;
-}
-
-.is-style-brush-stroke .wp-block-navigation.is-style-dropdown-on-mobile {
-	.wp-block-navigation__responsive-container-open {
-		position: absolute;
-		right: 0;
-		top: -12px; // half the button height.
-	}
-
-	.wp-block-navigation__responsive-container.is-menu-open {
-		margin-top: -24px; // button height.
-		margin-right: calc(-1 * var(--wp--preset--spacing--60));
-		margin-left: calc(-1 * var(--wp--preset--spacing--60));
-		width: 100vw;
-
-		.wp-block-navigation__responsive-container-content {
-			padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--60);
-		}
-
-		.wp-block-navigation__responsive-container-close {
-			right: var(--wp--preset--spacing--60);
-			top: -24px;
-		}
-	}
-}
-
 /*
  * Spacing for small screens.
  */
