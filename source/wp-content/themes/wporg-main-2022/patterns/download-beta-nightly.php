@@ -12,7 +12,7 @@
 <p class="has-normal-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Download', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"ref":11576,"backgroundColor":"blueberry-1","className":"is-style-dropdown-on-mobile","style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} /--></div>
+<!-- wp:navigation {"ref":11576,"backgroundColor":"blueberry-1","className":"is-style-dropdown-on-mobile","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
