@@ -9,7 +9,9 @@ require_once( __DIR__ . '/inc/hreflang.php' );
 require_once( __DIR__ . '/inc/capabilities.php' );
 
 // Block files
+require_once( __DIR__ . '/src/download-counter/index.php' );
 require_once( __DIR__ . '/src/random-heading/index.php' );
+require_once( __DIR__ . '/src/release-tables/index.php' );
 
 /**
  * Actions and filters.
