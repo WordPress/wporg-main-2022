@@ -2166,7 +2166,7 @@
         },
         {
             "name": "wp-phpunit/wp-phpunit",
-            "version": "5.9.4",
+            "version": "5.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-phpunit/wp-phpunit.git",
@@ -2214,15 +2214,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "14.3.0",
+            "version": "14.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/14.3.0"
+                "reference": "tags/14.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2272,12 +2272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "887f5d14ebbb5bcfa3d8cbd61c8cc6e98a861c20"
+                "reference": "c31d93570c0d18fad7bf045a3f550ccdcfedf31d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/887f5d14ebbb5bcfa3d8cbd61c8cc6e98a861c20",
-                "reference": "887f5d14ebbb5bcfa3d8cbd61c8cc6e98a861c20",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/c31d93570c0d18fad7bf045a3f550ccdcfedf31d",
+                "reference": "c31d93570c0d18fad7bf045a3f550ccdcfedf31d",
                 "shasum": ""
             },
             "require": {
@@ -2314,7 +2314,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2022-10-13T22:05:34+00:00"
+            "time": "2022-10-19T02:49:18+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
