@@ -53,7 +53,13 @@ function render( $attributes, $content, $block ) {
 		$branch = wp_unslash( $_GET['branch'] );
 	}
 
-	$wrapper_attributes = get_block_wrapper_attributes();
+	// If the block is center-aligned, the text should be centered.
+	$style = '';
+	if ( isset( $attributes['align'] ) && 'center' === $attributes['align'] ) {
+		$style = 'text-align:center;';
+	}
+
+	$wrapper_attributes = get_block_wrapper_attributes( [ 'style' => $style ] );
 	return sprintf(
 		'<div %1$s data-branch="%2$s">%3$s</div>',
 		$wrapper_attributes,
