@@ -67,19 +67,13 @@ function enqueue_assets() {
 	// Preload the heading font(s).
 	if ( is_callable( 'global_fonts_preload' ) ) {
 		/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
-		$heading_subsets = explode( ',', _x( 'latin', 'Heading font subsets, comma separated', 'wporg' ) );
+		$subsets = _x( 'latin', 'Heading font subsets, comma separated', 'wporg' );
 		// All headings.
-		foreach ( $heading_subsets as $heading_subset ) {
-			global_fonts_preload( 'EB Garamond', $heading_subset );
-		}
+		global_fonts_preload( 'EB Garamond', $subsets );
 
 		if ( is_front_page() ) {
-			/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
-			$front_page_heading_subsets = explode( ',', _x( 'latin', 'Front page heading font subsets, comma separated', 'wporg' ) );
 			// The heading on the front-page has some italic.
-			foreach ( $front_page_heading_subsets as $front_page_heading_subset ) {
-				global_fonts_preload( 'EB Garamond italic', $front_page_heading_subset );
-			}
+			global_fonts_preload( 'EB Garamond italic', $subsets );
 		}
 	}
 }
