@@ -163,9 +163,21 @@
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:image {"align":"full","id":11477,"sizeSlug":"full","linkDestination":"none","style":{"color":[]}} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2022/08/Showcase_2560.webp" alt="<?php _e( 'A gallery of screenshots showcasing various websites that use WordPress, and how they’ve each been uniquely designed using the platform.', 'wporg' ); ?>" class="wp-image-11477" /></figure>
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"charcoal-1","className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignfull is-style-default has-charcoal-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":13273,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2022/11/showcase_thumbs_a-1.png" alt="" class="wp-image-13273" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":13274,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2022/11/showcase_thumbs_b-4.png" alt="" class="wp-image-13274" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":13279,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2022/11/showcase_thumbs_c-3.png" alt="" class="wp-image-13279" /></figure>
 <!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"160px","bottom":"160px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
