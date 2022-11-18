@@ -66,15 +66,14 @@ function enqueue_assets() {
 
 	// Preload the heading font(s).
 	if ( is_callable( 'global_fonts_preload' ) ) {
-		// TODO: Load required fonts for rosetta sites once they are supported.
-		if ( ! is_rosetta_site() ) {
-			// All headings.
-			global_fonts_preload( 'EB Garamond Latin' );
+		/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
+		$subsets = _x( 'latin', 'Heading font subsets, comma separated', 'wporg' );
+		// All headings.
+		global_fonts_preload( 'EB Garamond', $subsets );
 
-			if ( is_front_page() ) {
-				// The heading on the front-page has some italic.
-				global_fonts_preload( 'EB Garamond Latin italic' );
-			}
+		if ( is_front_page() ) {
+			// The heading on the front-page has some italic.
+			global_fonts_preload( 'EB Garamond italic', $subsets );
 		}
 	}
 }
