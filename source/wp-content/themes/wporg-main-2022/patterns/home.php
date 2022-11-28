@@ -280,7 +280,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"80px","right":"var:preset|spacing|60","bottom":"80px","left":"var:preset|spacing|60"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"80px","right":"var:preset|spacing|60","bottom":"80px","left":"var:preset|spacing|60"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained","contentSize":"1160px","justifyContent":"left"}} -->
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:80px;padding-right:var(--wp--preset--spacing--60);padding-bottom:80px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"className":"is-style-with-arrow","fontSize":"heading-cta","fontFamily":"inter"} -->
 <h2 class="alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Get started</a>', 'wporg' ); ?></h2>
@@ -288,7 +288,7 @@
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"className":"is-style-short-text","fontSize":"large"} -->
 <p class="is-style-short-text"><?php _e( 'Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninety-first site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
