@@ -289,7 +289,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"className":"is-style-short-text","fontSize":"large"} -->
-<p class="is-style-short-text"><?php _e( 'Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninety-first site.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-large-font-size"><?php _e( 'Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninety-first site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
