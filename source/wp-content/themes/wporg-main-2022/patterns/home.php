@@ -6,6 +6,30 @@
  */
 
 ?>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|60","bottom":"var:preset|spacing|30","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","className":"is-style-brush-stroke","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-brush-stroke has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
+<div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"fontSize":"60px","lineHeight":1.3}},"textColor":"white","fontFamily":"eb-garamond"} -->
+<p class="has-white-color has-text-color has-eb-garamond-font-family" style="font-size:60px;line-height:1.3"><?php _e( 'The 2022 WordPress Survey is open', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( 'You can complete the survey in:', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/en-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/en-2022" target="_blank">English</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/fr-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/fr-2022" target="_blank">Français</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/de-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/de-2022" target="_blank">Deutsch</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/it-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/it-2022" target="_blank">Italiano</a><br><a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/jp-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/jp-2022" target="_blank">日本語</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/ru-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/ru-2022" target="_blank">Pусский</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/es-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/es-2022" target="_blank">Español</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( 'Share your feedback before December 31, 2022.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide" id="intro" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"80%"} -->
