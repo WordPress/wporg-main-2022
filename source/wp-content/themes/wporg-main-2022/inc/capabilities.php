@@ -86,6 +86,16 @@ function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
 		// Special safety limits for Designer role when editing pages
 		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		if ( user_can( $user_id, 'designer' ) ) {
+			// If a block template doesn't exist for this page then updates will be live, so stop designer users from editing the page.
+			// Note that this means a dev will need to create the template first before a designer can edit a page, even if it's an existing page.
+			$post = get_post( $args[0] );
+			if ( $post && 'page' === $post->post_type ) {
+				// There ought to be a way to do this using a function like `locate_block_template()`, but if there is I can't figure out how.
+				$maybe_template = get_stylesheet_directory() . '/templates/page-' . $post->post_name . '.html';
+				if ( !file_exists( $maybe_template ) ) {
+					$required_caps[] = 'do_not_allow';
+				}
+			}
 			if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD']
 				&& isset( $_POST['action'] ) && 'inline-save' === $_POST['action']
 				&& isset( $_POST['post_type'] ) && 'page' === $_POST['post_type'] ) {
