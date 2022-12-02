@@ -85,6 +85,8 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.entry-content.entry-content > .alignfull .alignfull {
 		margin-left: calc(var(--wp--preset--spacing--60) * -1) !important;
 		margin-right: calc(var(--wp--preset--spacing--60) * -1) !important;
+		display: contents;
+		width: 100%;
 	}
 
 	/* Adjust spacing & font size of feature list items */
