@@ -29,7 +29,7 @@ if ( ! isset( $args[0] ) || ! file_exists( $args[0] ) ) {
 $manifest_data = file_get_contents( $args[0] );
 $manifest_items = json_decode( $manifest_data );
 if ( ! $manifest_data || ! $manifest_items ) {
-	die( "Unable to read manifest from $manifest\n" );
+	die( "Unable to read manifest from $args[0]\n" );
 }
 
 foreach ( $manifest_items as $item ) {
