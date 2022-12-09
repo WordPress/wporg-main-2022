@@ -11,8 +11,8 @@
 <div class="wp-block-group alignfull has-background" style="background-color:#020c3a"><!-- wp:cover {"url":"https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp","dimRatio":0,"minHeight":350,"isDark":false,"align":"wide"} -->
 <div class="wp-block-cover alignwide is-light" style="min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":14646,"width":411,"height":194,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/sotw-logo-large-opt.png" alt="<?php _e( 'State of the Word 2022', 'wporg' ); ?>" class="wp-image-14646" width="411" height="194" /></figure>
+<div class="wp-block-column"><!-- wp:image {"id":14646,"width":411,"height":194,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/"><img src="https://wordpress.org/files/2022/12/sotw-logo-large-opt.png" alt="<?php _e( 'State of the Word 2022', 'wporg' ); ?>" class="wp-image-14646" width="411" height="194" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
