@@ -82,7 +82,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	}
 
 	/* Ensure nested full-alignment items are still full-width */
-	.entry-content.entry-content > .alignfull .alignfull {
+	.entry-content.entry-content > .alignfull > .alignfull {
 		margin-left: calc(var(--wp--preset--spacing--60) * -1) !important;
 		margin-right: calc(var(--wp--preset--spacing--60) * -1) !important;
 	}
