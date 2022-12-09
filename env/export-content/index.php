@@ -18,9 +18,15 @@ if ( 'cli' != php_sapi_name() ) {
 	die();
 }
 
+$theme_dir = dirname( __DIR__, 2 ) . '/wp-content/themes/wporg-main-2022'; // Docker env.
+
+if ( ! is_dir( $theme_dir ) ) {
+	$theme_dir = dirname( __DIR__, 2 ) . '/source/wp-content/themes/wporg-main-2022'; // Local env.
+}
+
 $rest_url = 'http://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
-$pattern_path = dirname( dirname( __DIR__ ) ) . '/wp-content/themes/wporg-main-2022/patterns/%s';
-$template_path = dirname( dirname( __DIR__ ) ) . '/wp-content/themes/wporg-main-2022/templates/%s';
+$pattern_path = $theme_dir . '/patterns/%s';
+$template_path = $theme_dir . '/templates/%s';
 
 if ( ! isset( $args[0] ) || ! file_exists( $args[0] ) ) {
 	die( "No manifest provided.\n" );
