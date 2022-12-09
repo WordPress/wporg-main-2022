@@ -5,11 +5,11 @@
 /**/node_modules
 /vendor
 *.map
-wp-cli.yml
 backstop_data
 
 # Allow local environment overrides.
 .wp-env.override.json
+wp-cli.local.yml
 
 # Configs from wporg-repo-tools.
 .eslintrc.js
