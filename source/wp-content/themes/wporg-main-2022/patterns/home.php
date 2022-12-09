@@ -22,7 +22,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"},"elements":{"link":{"color":{"text":"#fdac01"}}}},"fontSize":"small"} -->
-<p class="has-text-color has-link-color has-small-font-size" style="color:#fff0cc"><?php _e( '<a rel="noreferrer noopener" href="https://wordpress.org/news/2022/11/state-of-the-word-2022/" data-type="URL" data-id="https://wordpress.org/news/2022/11/state-of-the-word-2022/" target="_blank">Get the details↗︎</a><br>', 'wporg' ); ?></p>
+<p class="has-text-color has-link-color has-small-font-size" style="color:#fff0cc"><?php _e( '<a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/" data-type="URL" data-id="https://wordpress.org/news/2022/11/state-of-the-word-2022/">Get the details ↗︎</a><br>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
@@ -44,7 +44,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/en-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/en-2022" target="_blank">English</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/fr-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/fr-2022" target="_blank">Français</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/de-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/de-2022" target="_blank">Deutsch</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/it-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/it-2022" target="_blank">Italiano</a><br><a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/jp-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/jp-2022" target="_blank">日本語</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/ru-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/ru-2022" target="_blank">Pусский</a> | <a rel="noreferrer noopener" href="https://wordpressdotorg.survey.fm/es-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/es-2022" target="_blank">Español</a>', 'wporg' ); ?></p>
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<a href="https://wordpressdotorg.survey.fm/en-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/en-2022">English</a> | <a href="https://wordpressdotorg.survey.fm/fr-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/fr-2022">Français</a> | <a href="https://wordpressdotorg.survey.fm/de-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/de-2022">Deutsch</a> | <a href="https://wordpressdotorg.survey.fm/it-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/it-2022">Italiano</a><br><a href="https://wordpressdotorg.survey.fm/jp-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/jp-2022">日本語</a> | <a href="https://wordpressdotorg.survey.fm/ru-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/ru-2022">Pусский</a> | <a href="https://wordpressdotorg.survey.fm/es-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/es-2022">Español</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a rel="noreferrer noopener" href="/gutenberg/" target="_blank">Explore the WordPress Editor ↗</a>', 'wporg' ); ?></p>
+<p><?php _e( '<a href="/gutenberg/">Explore the WordPress Editor ↗</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
