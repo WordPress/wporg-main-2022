@@ -6,7 +6,7 @@
  */
 
 ?>
-<?php if ( time() < strtotime( '2022-12-22' ) ): ?>
+<?php if ( time() < strtotime( '2022-12-22' ) ) : ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#020c3a"><!-- wp:cover {"url":"https://wordpress.org/files/2022/12/sotw-drawer-background.png","id":14034,"dimRatio":0,"minHeight":350,"align":"wide"} -->
 <div class="wp-block-cover alignwide" style="min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-14034" alt="" src="https://wordpress.org/files/2022/12/sotw-drawer-background.png" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:columns -->
@@ -28,7 +28,7 @@
 <!-- /wp:columns --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
-<?php else: ?>
+<?php else : ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|60","bottom":"var:preset|spacing|30","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","className":"is-style-brush-stroke","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-brush-stroke has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
