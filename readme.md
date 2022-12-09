@@ -33,6 +33,12 @@ Once set up, this environment will contain some shared plugins (Jetpack, Gutenbe
     yarn setup:wp
     ```
 
+1. Build the theme.
+
+    ```bash
+    yarn workspaces run build
+    ```
+
 1. (optional) There may be times when you want to make changes to the Parent theme and test them with the Main them. To do that:
     1. Clone the Parent repo and follow the setup instructions in its `readme.md` file.
     1. Create a `.wp-env.override.json` file in this repo
@@ -129,3 +135,12 @@ Backstopjs can be manually run to create reference snapshots and then check for 
     # change something in the code or content
     yarn backstop:test
     ```
+
+## Building Patterns from Page Content
+
+1. Run the generator script:
+	a. If you're using the Docker environment, start Docker and run `yarn wp-env start`. Then run `yarn build:patterns`.
+	b. If you're using a local environment, `cd env` and run `wp eval-file export-content/index.php page-manifest.json` directly.
+1. Verify `git stat` and `git diff` look right
+1. `git add` and git commit`
+1. Sync to SVN and deploy like you would any other commit
