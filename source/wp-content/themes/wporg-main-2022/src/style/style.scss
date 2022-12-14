@@ -60,6 +60,20 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	background-color: var(--wp--preset--color--charcoal-1);
 }
 
+/**
+ * Enterprise page
+ */
+
+.wporg-enterprise {
+	&-intro > p {
+		max-width: 30rem;
+	}
+
+	&-logos {
+		row-gap: var(--wp--preset--spacing--40) !important;
+	}
+}
+
 /*
  * Spacing for small screens.
  */
@@ -106,6 +120,9 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 }
 
 @media (max-width: 781px) {
+	.wporg-hidden-mobile {
+		display: none;
+	}
 
 	/* Update the columns gap when it switches to single-column */
 	#benefits .is-layout-flex,
@@ -133,6 +150,12 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	#features .wp-block-columns > .wp-block-column:first-child {
 		padding-right: 0 !important;
 	}
+
+	.wporg-enterprise-features {
+		.wp-block-column {
+			border-right: none;
+		}
+	}
 }
 
 @media (max-width: 599px) {
@@ -149,6 +172,26 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wp-block-buttons .wp-block-button,
 	.wp-block-buttons .wp-block-button .wp-block-button__link {
 		width: 100% !important;
+	}
+
+	.wporg-enterprise-logos {
+		display: grid !important;
+		grid-template-rows: 1fr 1fr;
+		row-gap: var(--wp--preset--spacing--20) !important;
+		padding-top: 0 !important;
+
+		.wp-block-image {
+			&:last-child {
+				display: flex;
+				justify-content: center;
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+
+			[class^="wp-image-"] {
+				max-height: 20px;
+			}
+		}
 	}
 }
 
