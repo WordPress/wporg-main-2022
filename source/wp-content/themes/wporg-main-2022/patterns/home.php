@@ -6,7 +6,7 @@
  */
 
 ?>
-<?php if ( time() < strtotime( '2022-12-22' ) ) : ?>
+<?php if ( time() < strtotime( '2022-12-15 05:00' ) ) : /* General SotW announcement, until 12am EST */ ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#020c3a"><!-- wp:cover {"url":"https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp","dimRatio":0,"minHeight":350,"isDark":false,"align":"wide"} -->
 <div class="wp-block-cover alignwide is-light" style="min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:columns -->
@@ -28,8 +28,33 @@
 <!-- /wp:columns --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
-<?php else : ?>
 
+<?php elseif ( time() < strtotime( '2022-12-24' ) ) : /* Day-of & post SotW video embed, through Dec 23 */ ?>
+<!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|60","left":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)"><!-- wp:cover {"dimRatio":0,"minHeight":350,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://youtu.be/y_6cEoFFcdc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtu.be/y_6cEoFFcdc
+</div></figure>
+<!-- /wp:embed --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"}},"fontSize":"small"} -->
+<p class="has-text-color has-small-font-size" style="color:#fff0cc">Live from New York, it’s State of the Word! Join co-founder Matt Mullenweg and the project’s global community for the annual WordPress keynote address.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"},"elements":{"link":{"color":{"text":"#fdac01"}}}},"fontSize":"small"} -->
+<p class="has-text-color has-link-color has-small-font-size" style="color:#fff0cc"><a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/" data-type="URL" data-id="https://wordpress.org/news/2022/11/state-of-the-word-2022/">Find a local watch party ↗︎</a><br></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->
+
+<?php else : /* Survey banner after Dec 24th */ ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|60","bottom":"var:preset|spacing|30","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","className":"is-style-brush-stroke","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-brush-stroke has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
 <div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"center"} -->
