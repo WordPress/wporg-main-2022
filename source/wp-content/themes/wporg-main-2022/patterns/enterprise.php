@@ -149,8 +149,8 @@
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/11/icon-extensibility.png" alt="<?php _e( 'Extensibility icon', 'wporg' ); ?>" class="wp-image-13887" width="58" height="60" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"level":4,"className":"wp-block-heading"} -->
-<h4 class="wp-block-heading"><?php _e( 'Extensibility', 'wporg' ); ?></h4>
+<!-- wp:heading {"className":"wp-block-heading","fontSize":"heading-4"} -->
+<h2 class="wp-block-heading has-heading-4-font-size"><?php _e( 'Extensibility', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -163,8 +163,8 @@
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/11/icon-security.png" alt="<?php _e( 'Security icon', 'wporg' ); ?>" class="wp-image-13886" width="50" height="61" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"level":4,"className":"wp-block-heading"} -->
-<h4 class="wp-block-heading"><?php _e( 'Security', 'wporg' ); ?></h4>
+<!-- wp:heading {"className":"wp-block-heading","fontSize":"heading-4"} -->
+<h2 class="wp-block-heading has-heading-4-font-size"><?php _e( 'Security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -177,8 +177,8 @@
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/11/icon-open-source.png" alt="<?php _e( 'Open Source Icon', 'wporg' ); ?>" class="wp-image-13885" width="63" height="59" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"level":4,"className":"wp-block-heading"} -->
-<h4 class="wp-block-heading"><?php _e( 'Open source', 'wporg' ); ?></h4>
+<!-- wp:heading {"className":"wp-block-heading","fontSize":"heading-4"} -->
+<h2 class="wp-block-heading has-heading-4-font-size"><?php _e( 'Open source', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
