@@ -11,7 +11,7 @@
 <div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90"}}}} -->
 <div class="wp-block-columns alignfull are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--90)"><!-- wp:column {"verticalAlignment":"center","width":"55%","style":{"spacing":{"padding":{"left":"var:preset|spacing|10","right":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--10);flex-basis:55%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2022/11/wordpress-enterprise-header-1024x313.png" alt="<?php _e( 'WordPress Enterprise', 'wporg' ); ?>"/></figure>
+<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2022/12/WordPress-Enterprise.png" alt="<?php _e( 'WordPress Enterprise', 'wporg' ); ?>"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":1,"className":"screen-reader-text"} -->
@@ -29,50 +29,53 @@
 <!-- /wp:columns -->
 
 <!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:image {"align":"center","id":14621,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/NYP.png" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" class="wp-image-14621"/></figure>
+<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+
+<!-- wp:image {"align":"center","width":190,"height":24,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/NYP-1.png" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" width="190" height="24"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14622,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/Sun.png" alt="<?php _e( 'The Sun logo', 'wporg' ); ?>" class="wp-image-14622"/></figure>
+<!-- wp:image {"align":"center","width":76,"height":24,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/Sun-1.png" alt="<?php _e( 'The Sun logo', 'wporg' ); ?>" width="76" height="24"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14623,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/People.png" alt="<?php _e( 'People logo', 'wporg' ); ?>" class="wp-image-14623"/></figure>
+<!-- wp:image {"align":"center","width":81,"height":32,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/People-1.png" alt="<?php _e( 'People logo', 'wporg' ); ?>" width="81" height="32"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14624,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/RD.png" alt="<?php _e( 'Reader\'s Digest logo', 'wporg' ); ?>" class="wp-image-14624"/></figure>
+<!-- wp:image {"align":"center","width":196,"height":27,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/RD-1.png" alt="<?php _e( 'Reader\'s Digest logo', 'wporg' ); ?>" width="196" height="27"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14625,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/WWD.png" alt="<?php _e( 'WWD logo', 'wporg' ); ?>" class="wp-image-14625"/></figure>
+<!-- wp:image {"align":"center","width":88,"height":26,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/WWD-1.png" alt="<?php _e( 'WWD logo', 'wporg' ); ?>" width="88" height="26"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14626,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/Variety.png" alt="<?php _e( 'Variety logo', 'wporg' ); ?>" class="wp-image-14626"/></figure>
+<!-- wp:image {"align":"center","width":104,"height":29,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/Variety-1.png" alt="<?php _e( 'Variety logo', 'wporg' ); ?>" width="104" height="29"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14627,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/Spotify.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-14627"/></figure>
+<!-- wp:image {"align":"center","width":114,"height":36,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/Spotify-1.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" width="114" height="36"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14628,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/TED.png" alt="<?php _e( 'TED logo', 'wporg' ); ?>" class="wp-image-14628"/></figure>
+<!-- wp:image {"align":"center","width":69,"height":25,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/TED-1.png" alt="<?php _e( 'TED logo', 'wporg' ); ?>" width="69" height="25"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14629,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/facebook.png" alt="<?php _e( 'Facebook logo', 'wporg' ); ?>" class="wp-image-14629"/></figure>
+<!-- wp:image {"align":"center","width":129,"height":25,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/facebook-1.png" alt="<?php _e( 'Facebook logo', 'wporg' ); ?>" width="129" height="25"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14630,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/microsoft.png" alt="<?php _e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-14630"/></figure>
+<!-- wp:image {"width":141,"height":30,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/microsoft-1.png" alt="<?php _e( 'Microsoft Logo', 'wporg' ); ?>" width="141" height="30"/></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"align":"center","id":14631,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2022/12/CNN.png" alt="<?php _e( 'CNN logo', 'wporg' ); ?>" class="wp-image-14631"/></figure>
+<!-- wp:image {"align":"center","width":72,"height":34,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://wordpress.org/files/2022/12/CNN-1.png" alt="<?php _e( 'CNN logo', 'wporg' ); ?>" width="72" height="34"/></figure>
 <!-- /wp:image --></div>
+
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

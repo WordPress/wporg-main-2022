@@ -181,10 +181,13 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-enterprise-logos {
 		display: grid !important;
 		grid-template-rows: 1fr 1fr;
-		row-gap: var(--wp--preset--spacing--20) !important;
+		row-gap: var(--wp--preset--spacing--30) !important;
 		padding-top: 0 !important;
 
 		.wp-block-image {
+			display: flex;
+			justify-content: center;
+			
 			&:last-child {
 				display: flex;
 				justify-content: center;
@@ -192,8 +195,9 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 				grid-column-end: 3;
 			}
 
-			[class^="wp-image-"] {
+			> img {
 				max-height: 20px;
+				width: auto;
 			}
 		}
 	}
