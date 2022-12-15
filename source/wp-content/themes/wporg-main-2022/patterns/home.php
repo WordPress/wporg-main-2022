@@ -6,30 +6,7 @@
  */
 
 ?>
-<?php if ( time() < strtotime( '2022-12-15 05:00' ) ) : /* General SotW announcement, until 12am EST */ ?>
-<!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#020c3a"><!-- wp:cover {"url":"https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp","dimRatio":0,"minHeight":350,"isDark":false,"align":"wide"} -->
-<div class="wp-block-cover alignwide is-light" style="min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/sotw-drawer-background-95.webp" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":14646,"width":411,"height":194,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/"><img src="https://wordpress.org/files/2022/12/sotw-logo-large-opt.png" alt="<?php _e( 'State of the Word 2022', 'wporg' ); ?>" class="wp-image-14646" width="411" height="194" /></a></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"},"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"fontSize":"small"} -->
-<p class="has-text-color has-small-font-size" style="color:#fff0cc;padding-top:var(--wp--preset--spacing--60)"><?php _e( 'Find out what’s been happening in WordPress, and what’s next, from project co-founder Matt Mullenweg at this year’s State of the Word. Streaming live from New York City on December 15.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"},"elements":{"link":{"color":{"text":"#fdac01"}}}},"fontSize":"small"} -->
-<p class="has-text-color has-link-color has-small-font-size" style="color:#fff0cc"><?php _e( '<a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/" data-type="URL" data-id="https://wordpress.org/news/2022/11/state-of-the-word-2022/">Get the details ↗︎</a><br>', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:group -->
-
-<?php elseif ( time() < strtotime( '2022-12-24' ) ) : /* Day-of & post SotW video embed, through Dec 23 */ ?>
+<?php if ( time() < strtotime( '2022-12-24' ) ) : /* Day-of & post SotW video embed, through Dec 23 */ ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|60","left":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)"><!-- wp:cover {"dimRatio":0,"minHeight":350,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
@@ -43,11 +20,7 @@ https://youtu.be/y_6cEoFFcdc
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"}},"fontSize":"small"} -->
-<p class="has-text-color has-small-font-size" style="color:#fff0cc">Live from New York, it’s State of the Word! Join co-founder Matt Mullenweg and the project’s global community for the annual WordPress keynote address.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"},"elements":{"link":{"color":{"text":"#fdac01"}}}},"fontSize":"small"} -->
-<p class="has-text-color has-link-color has-small-font-size" style="color:#fff0cc"><a href="https://wordpress.org/news/2022/11/state-of-the-word-2022/" data-type="URL" data-id="https://wordpress.org/news/2022/11/state-of-the-word-2022/">Find a local watch party ↗︎</a><br></p>
+<p class="has-text-color has-small-font-size" style="color:#fff0cc">Watch State of the Word 2022 to find out what’s been happening in WordPress, and what’s next, from project co-founder Matt Mullenweg.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
