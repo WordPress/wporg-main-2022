@@ -6,12 +6,12 @@
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"dependencies": {
-		"@wordpress/components": "^21.3.0",
-		"@wordpress/element": "^4.18.0",
-		"@wordpress/i18n": "^4.20.0"
+		"@wordpress/components": "^23.0.0",
+		"@wordpress/element": "^5.0.0",
+		"@wordpress/i18n": "^4.23.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "24.4.0",
+		"@wordpress/scripts": "25.0.0",
 		"rtlcss-webpack-plugin": "4.0.7"
 	},
 	"eslintConfig": {

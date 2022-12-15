@@ -6,9 +6,9 @@
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "5.5.0",
-		"@wordpress/scripts": "24.4.0",
-		"backstopjs": "^6.1.3",
+		"@wordpress/env": "5.8.0",
+		"@wordpress/scripts": "25.0.0",
+		"backstopjs": "^6.1.4",
 		"lighthouse-ci": "^1.13.1"
 	},
 	"scripts": {
