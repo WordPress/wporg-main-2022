@@ -82,14 +82,16 @@
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:columns {"verticalAlignment":"top","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|60","left":"0"}}}} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-top" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:column {"width":"37%","className":"wporg-hidden-mobile"} -->
-<div class="wp-block-column wporg-hidden-mobile" style="flex-basis:37%"><!-- wp:image {"id":14095,"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2022/12/enterprise-use-cases-full.png" alt="<?php _e( 'Enterprise Use Cases Image', 'wporg' ); ?>" class="wp-image-14095"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-columns alignfull are-vertically-aligned-top" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:column {"width":"33%","className":"wporg-hidden-mobile"} -->
+<div class="wp-block-column wporg-hidden-mobile" style="flex-basis:33%">
+<!-- wp:image {"width":402,"height":588,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/Enterprise-Use-Cases.png" alt="<?php _e( 'Enterprise Use Cases Image', 'wporg' ); ?>" width="402" height="588"/></figure>
+<!-- /wp:image -->
+</div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"63%","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"0","top":"0","bottom":"0"}}}} -->
-<div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--60);flex-basis:63%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
+<!-- wp:column {"width":"67%","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"0","top":"0","bottom":"0"}}}} -->
+<div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--60);flex-basis:67%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Enterprise use cases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
