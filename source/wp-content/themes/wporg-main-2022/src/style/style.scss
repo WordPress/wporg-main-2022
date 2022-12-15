@@ -65,6 +65,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  */
 
 .wporg-enterprise {
+	&-header .wp-block-columns {
+		gap: 0;
+	}
+
 	&-intro > p {
 		max-width: 30rem;
 	}
