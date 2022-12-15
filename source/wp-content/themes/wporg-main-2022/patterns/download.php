@@ -6,8 +6,8 @@
  */
 
 ?>
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"120px","left":"0px"}}}} -->
-<div class="wp-block-group alignfull" style="padding-top:80px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-1"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","right":"var:preset|spacing|60","bottom":"120px","left":"var:preset|spacing|60"}}},"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:80px;padding-right:var(--wp--preset--spacing--60);padding-bottom:120px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-1"} -->
 <h1 class="has-text-align-center has-heading-1-font-size"><?php _e( 'Get WordPress', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
@@ -16,11 +16,11 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
-<div class="wp-block-group alignfull" id="download-hosting" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
+<!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"}},"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull" id="download-hosting" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"right":{"color":"var:preset|color|light-grey-1","width":"1px"}}}} -->
-<div class="wp-block-column" style="border-right-color:var(--wp--preset--color--light-grey-1);border-right-width:1px;flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"60px","bottom":"80px","left":"0px"}}}} -->
-<div class="wp-block-group alignwide" id="download-install" style="padding-top:80px;padding-right:60px;padding-bottom:80px;padding-left:0px"><!-- wp:heading {"fontSize":"heading-4"} -->
+<div class="wp-block-column" style="border-right-color:var(--wp--preset--color--light-grey-1);border-right-width:1px;flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"var:preset|spacing|60","bottom":"80px","left":"0px"}}}} -->
+<div class="wp-block-group alignwide" id="download-install" style="padding-top:80px;padding-right:var(--wp--preset--spacing--60);padding-bottom:80px;padding-left:0px"><!-- wp:heading {"fontSize":"heading-4"} -->
 <h2 class="has-heading-4-font-size"><?php _e( 'Download and install it yourself', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -55,8 +55,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"60px"}}}} -->
-<div class="wp-block-group alignwide" id="hosting" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:60px"><!-- wp:heading {"fontSize":"heading-4"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"80px","right":"0px","bottom":"80px","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-group alignwide" id="hosting" style="padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"fontSize":"heading-4"} -->
 <h2 class="has-heading-4-font-size"><?php _e( 'Set up with a hosting provider', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -74,10 +74,10 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","backgroundColor":"blueberry-4"} -->
-<div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="features"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"60px"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-right:60px;flex-basis:50%"><!-- wp:list {"className":"is-style-features"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"backgroundColor":"blueberry-4","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="features" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"0"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-right:0;flex-basis:50%"><!-- wp:list {"className":"is-style-features"} -->
 <ul class="is-style-features"><!-- wp:list-item -->
 <li><?php _e( 'Simple', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
@@ -100,8 +100,8 @@
 <!-- /wp:list --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"top":"60px","right":"60px","bottom":"60px","left":"60px"}}},"layout":{"inherit":false}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-top:60px;padding-right:60px;padding-bottom:60px;padding-left:60px;flex-basis:50%"><!-- wp:heading {"fontSize":"heading-4"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"top":"60px","right":"0","bottom":"60px","left":"0"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:60px;padding-right:0;padding-bottom:60px;padding-left:0;flex-basis:50%"><!-- wp:heading {"fontSize":"heading-4"} -->
 <h2 class="has-heading-4-font-size"><?php _e( 'Powerful right out of the box', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -116,8 +116,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"160px","right":"0px","bottom":"160px","left":"0px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white"} -->
-<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="resources" style="padding-top:160px;padding-right:0px;padding-bottom:160px;padding-left:0px"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"120px"}}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"160px","right":"var:preset|spacing|60","bottom":"160px","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="resources" style="padding-top:160px;padding-right:var(--wp--preset--spacing--60);padding-bottom:160px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"120px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"heading-2"} -->
 <h2 class="has-heading-2-font-size"><?php _e( 'You&#039;ve got WordPress. What&#039;s next?', 'wporg' ); ?></h2>
@@ -150,8 +150,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"}}}} -->
-<div class="wp-block-group alignwide" id="mobile" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:heading {"textAlign":"center","fontSize":"heading-2"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"120px","right":"var:preset|spacing|60","bottom":"120px","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-group alignfull" id="mobile" style="padding-top:120px;padding-right:var(--wp--preset--spacing--60);padding-bottom:120px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center","fontSize":"heading-2"} -->
 <h2 class="has-text-align-center has-heading-2-font-size"><?php _e( 'Inspiration strikes anywhere', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 

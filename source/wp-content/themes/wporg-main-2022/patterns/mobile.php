@@ -6,8 +6,9 @@
  */
 
 ?>
-<!-- wp:cover {"dimRatio":0,"overlayColor":"white","minHeight":60,"minHeightUnit":"vh","isDark":false,"align":"wide"} -->
-<div class="wp-block-cover alignwide is-light" style="min-height:60vh"><span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:cover {"dimRatio":0,"overlayColor":"white","minHeight":60,"minHeightUnit":"vh","isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:60vh"><span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--50);flex-basis:50%"><!-- wp:heading {"level":1,"fontSize":"heading-3"} -->
 <h1 class="has-heading-3-font-size"><?php _e( 'WordPress mobile apps', 'wporg' ); ?></h1>
@@ -38,4 +39,5 @@
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:cover --></div>
+<!-- /wp:group -->

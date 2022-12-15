@@ -16,7 +16,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"right":"var:preset|spacing|60"}}},"fontSize":"heading-2"} -->
 <h1 class="has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Source Code', 'wporg' ); ?></h1>
@@ -60,4 +61,5 @@
 <p><?php _e( 'The source code for any program binaries or minified external scripts that are included with WordPress can be freely obtained from our <a href="https://code.trac.wordpress.org/browser/wordpress-sources">sources repository</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
