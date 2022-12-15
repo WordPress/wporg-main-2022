@@ -189,8 +189,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 			justify-content: center;
 
 			&:last-child {
-				display: flex;
-				justify-content: center;
 				grid-column-start: 1;
 				grid-column-end: 3;
 			}
