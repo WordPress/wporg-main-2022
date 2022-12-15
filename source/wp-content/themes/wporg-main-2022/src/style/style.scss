@@ -68,7 +68,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	/* Pull the features list flush to the edge of the screen (only on mid-sized screens). */
 	#features .is-style-features {
-		margin-left: calc(-1 * var(--wp--preset--spacing--50));
+		margin-left: calc(-1 * var(--wp--preset--spacing--60));
 	}
 }
 
