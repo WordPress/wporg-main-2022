@@ -8,6 +8,11 @@
 		"template": "page-download.html"
 	},
 	{
+		"slug": "enterprise-2",
+		"pattern": "enterprise.php",
+		"template": "page-enterprise.html"
+	},
+	{
 		"slug": "beta-nightly",
 		"pattern": "download-beta-nightly.php",
 		"template": "page-beta-nightly.html"
