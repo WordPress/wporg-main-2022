@@ -68,7 +68,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	/* Pull the features list flush to the edge of the screen (only on mid-sized screens). */
 	#features .is-style-features {
-		margin-left: calc(-1 * var(--wp--preset--spacing--60));
+		margin-left: calc(-1 * var(--wp--preset--spacing--edge-space));
 	}
 }
 
@@ -126,8 +126,8 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	#download-hosting .wp-block-columns > .wp-block-column .wp-block-group,
 	#features .wp-block-columns > .wp-block-column:last-child {
-		padding-left: var(--wp--preset--spacing--60) !important;
-		padding-right: var(--wp--preset--spacing--60) !important;
+		padding-left: var(--wp--preset--spacing--edge-space) !important;
+		padding-right: var(--wp--preset--spacing--edge-space) !important;
 	}
 
 	#features .wp-block-columns > .wp-block-column:first-child {
