@@ -13,7 +13,7 @@
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://youtu.be/y_6cEoFFcdc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/y_6cEoFFcdc
+https://youtu.be/VeigCZuxnfY
 </div></figure>
 <!-- /wp:embed --></div>
 <!-- /wp:column -->
