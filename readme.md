@@ -142,5 +142,5 @@ Backstopjs can be manually run to create reference snapshots and then check for 
 	1. If you're using the Docker environment, start Docker and run `yarn wp-env start`. Then run `yarn build:patterns`.
 	1. If you're using a local environment, `cd env` and run `wp eval-file export-content/index.php page-manifest.json` directly.
 1. Verify `git stat` and `git diff` look right
-1. `git add` and git commit`
+1. `git add` and `git commit`
 1. Sync to SVN and deploy like you would any other commit
