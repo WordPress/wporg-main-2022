@@ -242,15 +242,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/443114625/c2f798174f"><?php _e( 'Drive Digital Commerce with Content Marketing', 'wporg' ); ?></a></li>
+<li class="external-link"><a href="https://vimeo.com/443114625/c2f798174f" target="_blank" rel="noreferrer noopener"><?php _e( 'Drive Digital Commerce with Content Marketing', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/374961815/040fe06be7"><?php _e( 'Gutenberg for Enterprise', 'wporg' ); ?></a></li>
+<li class="external-link"><a href="https://vimeo.com/374961815/040fe06be7" target="_blank" rel="noreferrer noopener"><?php _e( 'Gutenberg for Enterprise', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/425968597/80d24a1bf4"><?php _e( 'Lead a Successful Digital Transformation', 'wporg' ); ?></a></li>
+<li class="external-link"><a href="https://vimeo.com/425968597/80d24a1bf4" target="_blank" rel="noreferrer noopener"><?php _e( 'Lead a Successful Digital Transformation', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
