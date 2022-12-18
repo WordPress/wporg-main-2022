@@ -69,10 +69,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		gap: 0;
 	}
 
-	&-intro > p {
-		max-width: 30rem;
-	}
-
 	&-logos {
 		row-gap: var(--wp--preset--spacing--40) !important;
 	}

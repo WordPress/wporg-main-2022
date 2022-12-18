@@ -8,9 +8,9 @@
 ?>
 <!-- wp:wporg/global-header /-->
 
-<!-- wp:group {"align":"full","backgroundColor":"charcoal-2","className":"wporg-enterprise-header","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90"}}}} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--90)"><!-- wp:column {"verticalAlignment":"center","width":"55%","style":{"spacing":{"padding":{"left":"var:preset|spacing|10","right":"var:preset|spacing|20"}}}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"charcoal-2","className":"wporg-enterprise-header","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","right":"0","left":"0"}}}} -->
+<div class="wp-block-columns alignfull are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--90);padding-right:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"55%","style":{"spacing":{"padding":{"left":"var:preset|spacing|10","right":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--10);flex-basis:55%"><!-- wp:image {"sizeSlug":"large"} -->
 <figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2022/12/WordPress-Enterprise.png" alt="<?php _e( 'WordPress Enterprise', 'wporg' ); ?>" /></figure>
 <!-- /wp:image -->
@@ -20,9 +20,9 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"45%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","bottom":"var:preset|spacing|40","top":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:45%"><!-- wp:group {"className":"wporg-enterprise-intro","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group wporg-enterprise-intro"><!-- wp:paragraph {"align":"center","placeholder":"\u003c?php _e( 'Content…', 'wporg' ); ?\u003e","style":{"typography":{"lineHeight":1.7}},"textColor":"white","className":"is-style-default","fontSize":"small"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"45%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","top":"var:preset|spacing|60","right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60);flex-basis:45%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"\u003c?php _e( 'Content…', 'wporg' ); ?\u003e","style":{"typography":{"lineHeight":1.7}},"textColor":"white","className":"is-style-default","fontSize":"small"} -->
 <p class="has-text-align-center is-style-default has-white-color has-text-color has-small-font-size" style="line-height:1.7"><?php _e( 'WordPress content management system has grown to become a dominant market leader. Discover how today&#039;s biggest brands use WordPress, the features that make it so appealing and how you can make WordPress work for your enterprise.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -79,7 +79,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|60","left":"0"}}}} -->
+<div class="wp-block-group alignfull"><!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|60","left":"0"}}}} -->
 <div class="wp-block-columns alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:column {"verticalAlignment":"bottom","width":"33%","className":"wporg-hidden-mobile"} -->
 <div class="wp-block-column is-vertically-aligned-bottom wporg-hidden-mobile" style="flex-basis:33%"><!-- wp:image {"width":402,"height":588,"sizeSlug":"large"} -->
 <figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/Enterprise-Use-Cases.png" alt="<?php _e( 'Enterprise Use Cases Image', 'wporg' ); ?>" width="402" height="588" /></figure>
@@ -202,15 +202,15 @@
 
 <!-- wp:list {"className":"is-style-default","fontSize":"small"} -->
 <ul class="is-style-default has-small-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf"><?php _e( 'Abril (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf"><?php _e( 'Abril (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-kff.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf"><?php _e( 'KFF (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/case-studies-kff.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf"><?php _e( 'KFF (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf"><?php _e( 'NewsCorp Australia (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf"><?php _e( 'NewsCorp Australia (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -222,15 +222,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="has-small-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf"><?php _e( 'IDC Report (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf"><?php _e( 'IDC Report (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf"><?php _e( 'WP as a Content Hub (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf"><?php _e( 'WP as a Content Hub (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf"><?php _e( 'Personalization (PDF)↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf"><?php _e( 'Personalization (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -241,16 +241,16 @@
 <!-- /wp:heading -->
 
 <!-- wp:list {"fontSize":"small"} -->
-<ul class="has-small-font-size"><!-- wp:list-item -->
-<li><a href="https://vimeo.com/443114625/c2f798174f"><?php _e( 'Drive Digital Commerce with Content Marketing↗', 'wporg' ); ?></a></li>
+<ul class="has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
+<li class="external-link"><a href="https://vimeo.com/443114625/c2f798174f"><?php _e( 'Drive Digital Commerce with Content Marketing', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
-<!-- wp:list-item -->
-<li><a href="https://vimeo.com/374961815/040fe06be7"><?php _e( 'Gutenberg for Enterprise↗', 'wporg' ); ?></a></li>
+<!-- wp:list-item {"className":"external-link"} -->
+<li class="external-link"><a href="https://vimeo.com/374961815/040fe06be7"><?php _e( 'Gutenberg for Enterprise', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
-<!-- wp:list-item -->
-<li><a href="https://vimeo.com/425968597/80d24a1bf4"><?php _e( 'Lead a Successful Digital Transformation↗', 'wporg' ); ?></a></li>
+<!-- wp:list-item {"className":"external-link"} -->
+<li class="external-link"><a href="https://vimeo.com/425968597/80d24a1bf4"><?php _e( 'Lead a Successful Digital Transformation', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
