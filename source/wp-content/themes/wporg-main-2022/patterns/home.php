@@ -6,13 +6,12 @@
  */
 
 ?>
-<?php if ( time() < strtotime( '2022-12-24' ) ) : /* Day-of & post SotW video embed, through Dec 23 */ ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|60","left":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)"><!-- wp:cover {"dimRatio":0,"minHeight":350,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:350px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://youtu.be/y_6cEoFFcdc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://youtu.be/y_6cEoFFcdc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 https://youtu.be/VeigCZuxnfY
 </div></figure>
 <!-- /wp:embed --></div>
@@ -20,38 +19,13 @@ https://youtu.be/VeigCZuxnfY
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"}},"fontSize":"small"} -->
-<p class="has-text-color has-small-font-size" style="color:#fff0cc">Watch State of the Word 2022 to find out what’s been happening in WordPress, and what’s next, from project co-founder Matt Mullenweg.</p>
+<p class="has-text-color has-small-font-size" style="color:#fff0cc"><?php _e( 'Watch State of the Word 2022 to find out what’s been happening in WordPress, and what’s next, from project co-founder Matt Mullenweg.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
 
-<?php else : /* Survey banner after Dec 24th */ ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|60","bottom":"var:preset|spacing|30","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","className":"is-style-brush-stroke","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-brush-stroke has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
-<div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"fontSize":"60px","lineHeight":1.3}},"textColor":"white","fontFamily":"eb-garamond"} -->
-<p class="has-white-color has-text-color has-eb-garamond-font-family" style="font-size:60px;line-height:1.3"><?php _e( 'The 2022 WordPress Survey is open', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( 'You can complete the survey in:', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<a href="https://wordpressdotorg.survey.fm/en-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/en-2022">English</a> | <a href="https://wordpressdotorg.survey.fm/fr-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/fr-2022">Français</a> | <a href="https://wordpressdotorg.survey.fm/de-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/de-2022">Deutsch</a> | <a href="https://wordpressdotorg.survey.fm/it-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/it-2022">Italiano</a><br><a href="https://wordpressdotorg.survey.fm/jp-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/jp-2022">日本語</a> | <a href="https://wordpressdotorg.survey.fm/ru-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/ru-2022">Pусский</a> | <a href="https://wordpressdotorg.survey.fm/es-2022" data-type="URL" data-id="https://wordpressdotorg.survey.fm/es-2022">Español</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( 'Share your feedback before December 31, 2022.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
-<?php endif; ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide" id="intro" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
