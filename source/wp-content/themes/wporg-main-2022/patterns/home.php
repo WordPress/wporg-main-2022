@@ -83,7 +83,7 @@ https://youtu.be/VeigCZuxnfY
 <!-- wp:cover {"url":"https://wordpress.org/files/2022/08/Editor.webp","id":11558,"dimRatio":0,"minHeight":670,"minHeightUnit":"px","align":"full","style":{"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-cover alignfull" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space);min-height:670px" id="editor"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-11558" alt="" src="https://wordpress.org/files/2022/08/Editor.webp" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white","layout":{"inherit":false,"contentSize":"520px","type":"constrained"}} -->
 <div class="wp-block-group has-white-color has-text-color has-link-color"><!-- wp:heading {"textAlign":"right","textColor":"pomegrade-3","fontSize":"heading-cta"} -->
-<h2 class="has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size"><?php _e( 'Dream it, build&nbsp;it', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-right has-pomegrade-3-color has-text-color has-heading-cta-font-size"><?php _e( 'Dream it, build&nbsp;it', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -100,7 +100,7 @@ https://youtu.be/VeigCZuxnfY
 <div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="benefits" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"100px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"style":{"spacing":{"margin":{"bottom":"40px","right":"100px"}}},"fontSize":"heading-2"} -->
-<h2 class="has-heading-2-font-size" style="margin-right:100px;margin-bottom:40px"><?php _e( 'Powerful and empowering', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size" style="margin-right:100px;margin-bottom:40px"><?php _e( 'Powerful and empowering', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":11481,"sizeSlug":"full","linkDestination":"custom"} -->
@@ -160,7 +160,7 @@ https://youtu.be/VeigCZuxnfY
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:5rem"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="has-heading-2-font-size"><?php _e( 'One platform, millions of possibilities', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'One platform, millions of possibilities', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
@@ -234,7 +234,7 @@ https://youtu.be/VeigCZuxnfY
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="learning" style="padding-top:160px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:160px;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"100px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="has-heading-2-font-size"><?php _e( 'Build for yourself,<br>not by yourself', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'Build for yourself,<br>not by yourself', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -273,7 +273,7 @@ https://youtu.be/VeigCZuxnfY
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"wide","style":{"spacing":{"margin":{"bottom":"40px"}}},"fontSize":"heading-cta"} -->
-<h2 class="alignwide has-heading-cta-font-size" style="margin-bottom:40px"><?php _e( '<em>Community</em> at its core', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-heading-cta-font-size" style="margin-bottom:40px"><?php _e( '<em>Community</em> at its core', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
@@ -309,7 +309,7 @@ https://youtu.be/VeigCZuxnfY
 <div class="wp-block-columns alignwide is-style-default" style="padding-top:5rem;padding-bottom:5rem"><!-- wp:column {"verticalAlignment":"top","width":"33%","className":"is-left-column","layout":{"inherit":false}} -->
 <div class="wp-block-column is-vertically-aligned-top is-left-column" style="flex-basis:33%"><!-- wp:group {"style":{"spacing":{"padding":{"right":"80px"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="padding-right:80px"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="has-heading-2-font-size"><?php _e( 'See what&#039;s new in WordPress', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'See what&#039;s new in WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -337,7 +337,7 @@ https://youtu.be/VeigCZuxnfY
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"className":"is-style-with-arrow","fontSize":"heading-cta","fontFamily":"inter"} -->
-<h2 class="alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Get started</a>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Get started</a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
