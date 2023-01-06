@@ -65,10 +65,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  */
 
 .wporg-enterprise {
-	&-header .wp-block-columns {
-		gap: 0;
-	}
-
 	&-logos {
 		row-gap: var(--wp--preset--spacing--40) !important;
 	}
