@@ -30,49 +30,49 @@
 <!-- /wp:columns -->
 
 <!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"width":190,"height":24,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/NYP-1.png" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" width="190" height="24" /></figure>
+<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":14917,"width":190,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/NYP-1.png" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" class="wp-image-14917" width="190" height="24" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":76,"height":24,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/Sun-1.png" alt="<?php _e( 'The Sun logo', 'wporg' ); ?>" width="76" height="24" /></figure>
+<!-- wp:image {"id":14916,"width":76,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/Sun-1.png" alt="<?php _e( 'The Sun logo', 'wporg' ); ?>" class="wp-image-14916" width="76" height="24" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":81,"height":32,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/People-1.png" alt="<?php _e( 'People logo', 'wporg' ); ?>" width="81" height="32" /></figure>
+<!-- wp:image {"id":14915,"width":81,"height":32,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/People-1.png" alt="<?php _e( 'People logo', 'wporg' ); ?>" class="wp-image-14915" width="81" height="32" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":196,"height":27,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/RD-1.png" alt="<?php _e( 'Reader&#039;s Digest logo', 'wporg' ); ?>" width="196" height="27" /></figure>
+<!-- wp:image {"id":14914,"width":196,"height":27,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/RD-1.png" alt="<?php _e( 'Reader&#039;s Digest logo', 'wporg' ); ?>" class="wp-image-14914" width="196" height="27" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":88,"height":26,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/WWD-1.png" alt="<?php _e( 'WWD logo', 'wporg' ); ?>" width="88" height="26" /></figure>
+<!-- wp:image {"id":14913,"width":88,"height":26,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/WWD-1.png" alt="<?php _e( 'WWD logo', 'wporg' ); ?>" class="wp-image-14913" width="88" height="26" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":104,"height":29,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/Variety-1.png" alt="<?php _e( 'Variety logo', 'wporg' ); ?>" width="104" height="29" /></figure>
+<!-- wp:image {"id":14912,"width":104,"height":29,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/Variety-1.png" alt="<?php _e( 'Variety logo', 'wporg' ); ?>" class="wp-image-14912" width="104" height="29" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":114,"height":36,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/Spotify-1.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" width="114" height="36" /></figure>
+<!-- wp:image {"id":14911,"width":114,"height":36,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/Spotify-1.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-14911" width="114" height="36" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":69,"height":25,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/TED-1.png" alt="<?php _e( 'TED logo', 'wporg' ); ?>" width="69" height="25" /></figure>
+<!-- wp:image {"id":14918,"width":69,"height":25,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/TED-1.png" alt="<?php _e( 'TED logo', 'wporg' ); ?>" class="wp-image-14918" width="69" height="25" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":129,"height":25,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/facebook-1.png" alt="<?php _e( 'Facebook logo', 'wporg' ); ?>" width="129" height="25" /></figure>
+<!-- wp:image {"id":14909,"width":129,"height":25,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/facebook-1.png" alt="<?php _e( 'facebook logo', 'wporg' ); ?>" class="wp-image-14909" width="129" height="25" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":141,"height":30,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/microsoft-1.png" alt="<?php _e( 'Microsoft Logo', 'wporg' ); ?>" width="141" height="30" /></figure>
+<!-- wp:image {"id":14908,"width":141,"height":30,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/microsoft-1.png" alt="<?php _e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-14908" width="141" height="30" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":72,"height":34,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2022/12/CNN-1.png" alt="<?php _e( 'CNN logo', 'wporg' ); ?>" width="72" height="34" /></figure>
+<!-- wp:image {"id":14907,"width":72,"height":34,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/12/CNN-1.png" alt="<?php _e( 'CNN logo', 'wporg' ); ?>" class="wp-image-14907" width="72" height="34" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
