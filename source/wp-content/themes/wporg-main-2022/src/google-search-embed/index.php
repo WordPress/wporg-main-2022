@@ -40,6 +40,11 @@ function render( $attributes, $content, $block ) {
 		wp_enqueue_script( $block->block_type->view_script );
 		// Move to footer.
 		wp_script_add_data( $block->block_type->view_script, 'group', 1 );
+
+		// If jQuery is not enqueued, add it.
+		if ( ! wp_script_is( 'jquery', 'enqueued' ) ) {
+			wp_enqueue_script( 'jquery' );
+		}
 	}
 
 	$terms = urldecode( wp_unslash( $_GET['s'] ?? '' ) ); // phpcs:ignore
