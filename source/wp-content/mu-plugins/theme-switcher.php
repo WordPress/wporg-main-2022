@@ -37,6 +37,11 @@ function should_use_new_theme() {
 		return true;
 	}
 
+	// Use the new theme on all search results.
+	if ( str_starts_with( $request_uri, '/search/' ) ) {
+		return true;
+	}
+
 	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
 	$new_theme_pages = array(
 		'/',
