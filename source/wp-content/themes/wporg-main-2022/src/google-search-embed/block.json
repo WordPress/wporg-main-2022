@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "wporg/google-search-embed",
+	"version": "0.1.0",
+	"title": "Google Search Embed",
+	"category": "design",
+	"icon": "",
+	"description": "Display the Google Search embed for WordPress.org.",
+	"textdomain": "wporg",
+	"attributes": {},
+	"supports": {
+		"align": true,
+		"html": false,
+		"multiple": false,
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": false,
+			"blockGap": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
