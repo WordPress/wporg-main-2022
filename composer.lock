@@ -2216,15 +2216,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "14.8.4",
+            "version": "14.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/14.8.4"
+                "reference": "tags/14.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.8.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.9.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2234,15 +2234,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "11.6",
+            "version": "11.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/11.6"
+                "reference": "tags/11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.11.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.11.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2274,12 +2274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "0a36ccc25517f49dd8a9edaa8d333b6cc5b29cd4"
+                "reference": "3edc3f99f11a33ddd24552687dc27cc59f8a2bc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/0a36ccc25517f49dd8a9edaa8d333b6cc5b29cd4",
-                "reference": "0a36ccc25517f49dd8a9edaa8d333b6cc5b29cd4",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/3edc3f99f11a33ddd24552687dc27cc59f8a2bc6",
+                "reference": "3edc3f99f11a33ddd24552687dc27cc59f8a2bc6",
                 "shasum": ""
             },
             "require-dev": {
@@ -2317,7 +2317,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2022-12-22T17:30:14+00:00"
+            "time": "2023-01-09T23:35:45+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
