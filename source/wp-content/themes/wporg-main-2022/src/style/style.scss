@@ -64,6 +64,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  * Enterprise page
  */
 
+.wporg-enterprise-header {
+	--wp--preset--spacing--90: clamp(140px, calc(100vw / 7), 160px);
+}
+
 .wporg-enterprise-logos {
 	row-gap: var(--wp--preset--spacing--40) !important;
 
@@ -81,6 +85,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	max-width: 31%;
 	max-height: 85%;
 	top: unset;
+}
+
+.wporg-enterprise-features {
+	--wp--preset--spacing--60: clamp(40px, calc(100vw / 18), 80px);
 }
 
 /*
