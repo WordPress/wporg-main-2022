@@ -66,6 +66,14 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 .wporg-enterprise-logos {
 	row-gap: var(--wp--preset--spacing--40) !important;
+
+	.wp-block-image {
+		line-height: 1;
+
+		> img {
+			vertical-align: middle;
+		}
+	}
 }
 
 .wporg-enterprise-use-cases .wp-block-cover__image-background {
@@ -203,7 +211,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-enterprise-try-wordpress .wp-block-heading.is-style-with-arrow {
 		font-size: 52px !important;
 	}
-	
 }
 
 
