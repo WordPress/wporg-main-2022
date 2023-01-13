@@ -85,8 +85,8 @@
 <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:33%"></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"67%"} -->
-<div class="wp-block-column" style="flex-basis:67%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
+<!-- wp:column {"width":"67%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--30);flex-basis:67%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Enterprise use cases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -94,9 +94,9 @@
 <p style="padding-bottom:var(--wp--preset--spacing--60)"><?php _e( 'Whether as a primary or secondary content management system (CMS), you&#039;ll find WordPress being used by enterprises at scale wherever there&#039;s a requirement for flexible, cost-effective, and secure creation and distribution of content. Explore some of the platform&#039;s most popular use cases for enterprises:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0","left":"0"}}}} -->
-<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-bottom:0"><!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|60","bottom":"var:preset|spacing|50"},"blockGap":"0"}}} -->
-<div class="wp-block-column" style="padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading is-style-default","fontSize":"large","fontFamily":"inter"} -->
+<!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading is-style-default","fontSize":"large","fontFamily":"inter"} -->
 <h3 class="wp-block-heading is-style-default has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Media and publishing', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
@@ -105,8 +105,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|50","left":"0"},"blockGap":"0"}}} -->
-<div class="wp-block-column" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
+<!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
 <h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'E-commerce', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
@@ -116,24 +116,24 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","top":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0","left":"0"}}}} -->
-<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|60","top":"0","bottom":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-style:normal;font-weight:600"><?php _e( 'Content marketing', 'wporg' ); ?></h3>
+<!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","top":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Content marketing', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'WordPress will help you get your brand&#039;s story in front of your potential customers quickly and easily.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'WordPress will help you get your brand&#039;s story in front of your potential customers quickly and easily.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"blockGap":"0","padding":{"bottom":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
+<!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"wp-block-heading","fontSize":"large","fontFamily":"inter"} -->
 <h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Higher education', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","right":"0","bottom":"0","left":"0"}}},"fontSize":"small"} -->
-<p class="has-small-font-size" style="padding-top:var(--wp--preset--spacing--10);padding-right:0;padding-bottom:0;padding-left:0"><?php _e( 'Educational institutions use WordPress to power everything, from a departmental blog to an entire university system.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'Educational institutions use WordPress to power everything, from a departmental blog to an entire university system.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -176,8 +176,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}},"border":{"width":"0px","style":"none"}}} -->
-<div class="wp-block-column" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":15901,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"63px"}}} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/Open_Source.png" alt="<?php _e( 'Open Source icon', 'wporg' ); ?>" class="wp-image-15901" /></figure>
 <!-- /wp:image --></div>
