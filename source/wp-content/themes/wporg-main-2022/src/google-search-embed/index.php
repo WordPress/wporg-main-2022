@@ -49,7 +49,6 @@ function render( $attributes, $content, $block ) {
 
 	$terms = urldecode( wp_unslash( $_GET['s'] ?? '' ) ); // phpcs:ignore
 	$terms = htmlspecialchars_decode( $terms );
-	$terms = explode( '?', $terms )[0];
 	$terms = trim( $terms, "/ \r\n\t" );
 
 	$search_config = array(
