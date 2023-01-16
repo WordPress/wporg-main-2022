@@ -72,7 +72,7 @@ function render( $attributes, $content, $block ) {
 	return sprintf(
 		'<div %1$s id="gsce-search" data-config="%2$s" data-terms="%3$s"></div>',
 		$wrapper_attributes,
-		esc_js( wp_json_encode( $search_config, true ) ),
-		esc_js( wp_json_encode( $terms ) )
+		esc_attr( wp_json_encode( $search_config, true ) ),
+		esc_attr( wp_json_encode( $terms ) )
 	);
 }
