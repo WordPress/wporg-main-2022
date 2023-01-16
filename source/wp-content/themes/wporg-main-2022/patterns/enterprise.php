@@ -22,8 +22,8 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"45%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space);flex-basis:45%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"center","placeholder":"\u003c?php _e( 'Content…', 'wporg' ); ?\u003e","style":{"typography":{"lineHeight":1.7}},"textColor":"white","className":"is-style-default","fontSize":"small"} -->
-<p class="has-text-align-center is-style-default has-white-color has-text-color has-small-font-size" style="line-height:1.7"><?php _e( 'WordPress content management system has grown to become a dominant market leader. Discover how today&#039;s biggest brands use WordPress, the features that make it so appealing and how you can make WordPress work for your enterprise.', 'wporg' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"white","className":"is-style-serif","fontSize":"extra-large"} -->
+<p class="has-text-align-center is-style-serif has-white-color has-text-color has-extra-large-font-size"><?php _e( 'Discover why today’s biggest brands use&nbsp;WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
