@@ -248,7 +248,7 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/443114625/c2f798174f" target="_blank" rel="noreferrer noopener"><?php _e( 'Drive Digital Commerce with Content Marketing', 'wporg' ); ?></a></li>
+<li class="external-link"><a rel="noreferrer noopener" href="https://vimeo.com/443114625/c2f798174f" target="_blank"><?php _e( 'Drive Digital Commerce', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
