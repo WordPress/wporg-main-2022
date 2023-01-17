@@ -52,6 +52,7 @@ function should_use_new_theme() {
 		'/download/source/',
 		'/mobile/',
 		'/enterprise-2/',
+		'/about-2',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;

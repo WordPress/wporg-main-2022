@@ -8,6 +8,11 @@
 		"template": "page-download.html"
 	},
 	{
+		"slug": "about-2",
+		"pattern": "about.php",
+		"template": "page-about.html"
+	},
+	{
 		"slug": "enterprise-2",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
