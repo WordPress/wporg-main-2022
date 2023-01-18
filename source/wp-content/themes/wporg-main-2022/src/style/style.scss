@@ -100,7 +100,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  */
 
 [class*="wporg-about-section-"][style*="padding-top"] {
-	--wp--preset--spacing--60: clamp( 40px, calc( 100vw / 18 ), 80px );
+	--wp--preset--spacing--60: clamp(40px, calc(100vw / 18), 80px);
 }
 
 .wporg-about-cover-title > span,
@@ -111,14 +111,14 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 .wporg-about-cover-pretext {
 	position: relative;
 
-	&:after {
+	&::after {
 		content: "";
 		position: absolute;
 		left: -5px;
 		top: 25px;
 		width: 121px;
 		height: 6px;
-		background-image: url('../../images/about-cover-underline.svg');
+		background-image: url(../../images/about-cover-underline.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -131,7 +131,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	grid-template-rows: $text-row-height clamp(8.75rem, 5.5vw + 6.7rem, 11.25rem) $text-row-height;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
-	background-image: url('../../images/about-cover-arrow.svg');
+	background-image: url(../../images/about-cover-arrow.svg);
 	background-size: clamp(16rem, 12.8vw + 11.21rem, 21.75rem);
 	background-repeat: no-repeat;
 	background-position: 38% center;
@@ -150,7 +150,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 }
 
 .wporg-about-section-freedoms {
-	--wp--preset--spacing--50: clamp( 20px, calc( 100vw / 16 ), 70px );
+	--wp--preset--spacing--50: clamp(20px, calc(100vw / 16), 70px);
 }
 
 [class*="wporg-about-section-freedom-"] h3 {
@@ -172,7 +172,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-about-section-heading {
 		margin-block-start: -10px !important;
 	}
-	
+
 	[class*="wporg-about-section-freedom-"] {
 		margin-block-end: -30px !important;
 		position: relative;
