@@ -127,13 +127,30 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 .wporg-about-cover-title {
 	$text-row-height: clamp(3.5rem, 7.2vw + 0.8rem, 6.75rem);
 
+	position: relative;
 	display: grid;
 	grid-template-rows: $text-row-height clamp(8.75rem, 5.5vw + 6.7rem, 11.25rem) $text-row-height;
 	width: 100%;
-	background-image: url(../../images/about-cover-arrow.svg);
-	background-size: clamp(16rem, 12.8vw + 11.21rem, 21.75rem);
-	background-repeat: no-repeat;
-	background-position: 38% center;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: url(../../images/about-cover-arrow.svg);
+		background-size: clamp(16rem, 12.8vw + 11.21rem, 21.75rem);
+		background-repeat: no-repeat;
+		background-position: 38% center;
+	}
+
+	@media (max-width: 599px) {
+		grid-template-rows: $text-row-height 180px $text-row-height;
+
+		&::after {
+			background-position: 90% 58%;
+			transform: rotate(-11.07deg);
+		}
+	}
 
 	> span {
 		&:last-child {
@@ -322,10 +339,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	.wporg-enterprise-get-wordpress .wp-block-heading.is-style-with-arrow {
 		font-size: 52px !important;
-	}
-
-	.wporg-about-cover-title {
-		background-position-x: 80%;
 	}
 
 	.wporg-about-cover-intro {
