@@ -8,28 +8,28 @@
 ?>
 <!-- wp:wporg/global-header /-->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"charcoal-2","className":"wporg-enterprise-header","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","right":"0","left":"0"},"blockGap":{"left":"0"}}},"className":"wporg-enterprise-header"} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-center wporg-enterprise-header" style="padding-top:var(--wp--preset--spacing--90);padding-right:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"55%","style":{"spacing":{"padding":{"left":"var:preset|spacing|10","right":"var:preset|spacing|20"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--10);flex-basis:55%"><!-- wp:image {"id":15559,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/WordPress-Enterprise.png" alt="<?php _e( 'WordPress Enterprise', 'wporg' ); ?>" class="wp-image-15559" /></figure>
-<!-- /wp:image -->
+<!-- wp:group {"align":"full","backgroundColor":"blueberry-1","textColor":"white","className":"wporg-enterprise-cover","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wporg-enterprise-cover has-white-color has-blueberry-1-background-color has-text-color has-background"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"align":"wide","fontSize":"heading-cta"} -->
+<h1 class="wp-block-heading alignwide has-heading-cta-font-size"><?php _e( 'Enterprise', 'wporg' ); ?></h1>
+<!-- /wp:heading -->
 
-<!-- wp:heading {"level":1,"className":"wp-block-heading screen-reader-text"} -->
-<h1 class="wp-block-heading screen-reader-text"><?php _e( 'WordPress Enterprise', 'wporg' ); ?></h1>
-<!-- /wp:heading --></div>
+<!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--30)"><!-- wp:column {"width":"55%"} -->
+<div class="wp-block-column" style="flex-basis:55%"><!-- wp:paragraph -->
+<p><?php _e( 'The WordPress platform has grown to become the dominant market leader for content management. Discover how today&#039;s biggest brands use WordPress, and how WordPress can work for your enterprise.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"45%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space);flex-basis:45%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"white","className":"is-style-serif","fontSize":"extra-large"} -->
-<p class="has-text-align-center is-style-serif has-white-color has-text-color has-extra-large-font-size"><?php _e( 'Discover why today’s biggest brands use&nbsp;WordPress.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"charcoal-2","className":"wporg-enterprise-header","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":15765,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"190px"}}} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/NYP.webp" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" class="wp-image-15765" /></figure>
@@ -78,15 +78,9 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:cover {"url":"https://wordpress.org/files/2022/12/Enterprise-Use-Cases.png","id":14920,"dimRatio":0,"focalPoint":{"x":0,"y":1},"isDark":false,"align":"full","className":"wporg-enterprise-use-cases","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignfull is-light wporg-enterprise-use-cases" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-14920" alt="" src="https://wordpress.org/files/2022/12/Enterprise-Use-Cases.png" style="object-position:0% 100%" data-object-fit="cover" data-object-position="0% 100%" /><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}}} -->
-<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:column {"verticalAlignment":"bottom","width":"33%"} -->
-<div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:33%"></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"67%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30"}}}} -->
-<div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--30);flex-basis:67%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
+<!-- wp:group {"align":"full","className":"wporg-enterprise-use-cases","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull wporg-enterprise-use-cases"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"wp-block-heading","fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Enterprise use cases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -137,10 +131,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover -->
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0"}},"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;margin-top:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"bottom":"0","top":"0"},"blockGap":{"top":"0","left":"0"}},"border":{"radius":"0px","width":"0px","style":"none"}},"className":"wporg-enterprise-features"} -->
@@ -194,10 +186,10 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-1","className":"wporg-enterprise-try-wordpress","layout":{"inherit":true,"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull wporg-enterprise-try-wordpress has-charcoal-1-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px","fontSize":"99px"}},"className":"wp-block-heading is-style-with-arrow","fontFamily":"inter"} -->
-<h2 class="wp-block-heading alignfull is-style-with-arrow has-inter-font-family" style="font-size:99px;font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Try WordPress</a>', 'wporg' ); ?></h2>
+<!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-1","className":"wporg-enterprise-get-wordpress","layout":{"inherit":true,"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull wporg-enterprise-get-wordpress has-charcoal-1-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px","fontSize":"98px"}},"className":"wp-block-heading is-style-with-arrow","fontFamily":"inter"} -->
+<h2 class="wp-block-heading alignfull is-style-with-arrow has-inter-font-family" style="font-size:98px;font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Get WordPress</a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"full","style":{"border":{"radius":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
