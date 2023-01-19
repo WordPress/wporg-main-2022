@@ -100,7 +100,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
  */
 
 [class*="wporg-about-section-"][style*="padding-top"] {
-	--wp--preset--spacing--60: clamp(40px, calc(100vw / 18), 80px);
+	--wp--preset--spacing--60: clamp(60px, calc(100vw / 18), 80px);
 }
 
 .wporg-about-cover-title > span,

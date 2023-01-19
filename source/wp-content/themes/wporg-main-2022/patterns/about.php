@@ -97,8 +97,8 @@
 <h2 class="wp-block-heading alignwide has-text-align-left wporg-about-section-heading has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:0.9"><?php _e( 'the four freedoms', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50"},"margin":{"top":"0"}}},"className":"is-style-default"} -->
-<div class="wp-block-columns alignwide is-style-default" style="margin-top:0;padding-top:var(--wp--preset--spacing--50)"><!-- wp:column {"width":"40%"} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|40"},"margin":{"top":"0"}}},"className":"is-style-default"} -->
+<div class="wp-block-columns alignwide is-style-default" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"></div>
 <!-- /wp:column -->
 
