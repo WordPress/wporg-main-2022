@@ -94,8 +94,8 @@
 <h3 class="wp-block-heading is-style-default has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Media and publishing', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}}} -->
-<p style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'WordPress powers the sites people visit multiple times every day for news, information, and entertainment.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"className":"is-style-short-text"} -->
+<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'WordPress powers the sites people visit multiple times every day for news, information, and entertainment.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -104,8 +104,8 @@
 <h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'E-commerce', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}}} -->
-<p style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'Organizations around the world choose WordPress as their e-commerce solution of choice.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"className":"is-style-short-text"} -->
+<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'Organizations around the world choose WordPress as their e-commerce solution of choice.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -116,8 +116,8 @@
 <h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Content marketing', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}}} -->
-<p style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'WordPress will help you get your brand&#039;s story in front of your potential customers quickly and easily.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"className":"is-style-short-text"} -->
+<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'WordPress will help you get your brand&#039;s story in front of your potential customers quickly and easily.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -126,8 +126,8 @@
 <h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Higher education', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}}} -->
-<p style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'Educational institutions use WordPress to power everything, from a departmental blog to an entire university system.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}},"className":"is-style-short-text"} -->
+<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php _e( 'Educational institutions use WordPress to power everything, from a departmental blog to an entire university system.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
