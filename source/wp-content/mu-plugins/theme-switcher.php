@@ -51,7 +51,7 @@ function should_use_new_theme() {
 		'/download/releases/',
 		'/download/source/',
 		'/mobile/',
-		'/enterprise-2/',
+		'/enterprise/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;

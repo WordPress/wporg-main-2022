@@ -8,7 +8,7 @@
 		"template": "page-download.html"
 	},
 	{
-		"slug": "enterprise-2",
+		"slug": "enterprise",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
 	},
