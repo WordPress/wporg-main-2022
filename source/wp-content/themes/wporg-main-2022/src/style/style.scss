@@ -121,6 +121,12 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		background-image: url(../../images/about-cover-underline.svg);
 		background-repeat: no-repeat;
 		background-position: center;
+
+		[dir="rtl"] & {
+			left: unset;
+			right: -5px;
+			transform: scaleX(-1);
+		}
 	}
 }
 
@@ -152,9 +158,27 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		}
 	}
 
-	> span {
-		&:last-child {
-			grid-row: 3;
+	> span:last-child {
+		grid-row: 3;
+		text-align: left;
+	}
+
+	[dir="rtl"] & {
+		text-align: left;
+
+		&::after {
+			transform: scaleX(-1);
+		}
+
+		> span:last-child {
+			text-align: right;
+		}
+	}
+}
+
+.wporg-about-cover-intro {
+	[dir="rtl"] & {
+		p {
 			text-align: left;
 		}
 	}

@@ -93,8 +93,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"color":{"background":"#f0ede7"},"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"textColor":"charcoal-1","className":"wporg-about-section-freedoms","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull wporg-about-section-freedoms has-charcoal-1-color has-text-color has-background" style="background-color:#f0ede7;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"textAlign":"left","align":"wide","style":{"typography":{"fontSize":"90px","letterSpacing":"-0.05em","lineHeight":"0.9"}},"className":"wporg-about-section-heading","fontFamily":"inter"} -->
-<h2 class="wp-block-heading alignwide has-text-align-left wporg-about-section-heading has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:0.9"><?php _e( 'the four freedoms', 'wporg' ); ?></h2>
+<div class="wp-block-group alignfull wporg-about-section-freedoms has-charcoal-1-color has-text-color has-background" style="background-color:#f0ede7;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"wide","style":{"typography":{"fontSize":"90px","letterSpacing":"-0.05em","lineHeight":"0.9"}},"className":"wporg-about-section-heading","fontFamily":"inter"} -->
+<h2 class="wp-block-heading alignwide wporg-about-section-heading has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:0.9"><?php _e( 'the four freedoms', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|40"},"margin":{"top":"0"}}},"className":"is-style-default"} -->
