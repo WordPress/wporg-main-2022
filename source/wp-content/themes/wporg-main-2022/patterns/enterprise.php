@@ -31,9 +31,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"charcoal-2","className":"wporg-enterprise-header","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull wporg-enterprise-header has-charcoal-2-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"className":"wporg-enterprise-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
-<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":15765,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"190px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/NYP.webp" alt="<?php _e( 'New York Post logo', 'wporg' ); ?>" class="wp-image-15765" /></figure>
-<!-- /wp:image -->
+<div class="wp-block-group alignwide wporg-enterprise-logos" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 
 <!-- wp:image {"id":15777,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"76px"}}} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/Sun.webp" alt="<?php _e( 'The Sun logo', 'wporg' ); ?>" class="wp-image-15777" /></figure>
