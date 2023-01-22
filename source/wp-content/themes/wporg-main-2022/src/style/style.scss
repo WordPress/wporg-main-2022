@@ -196,17 +196,12 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	.wporg-enterprise-logos {
 		display: grid !important;
-		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		row-gap: var(--wp--preset--spacing--30) !important;
 
 		.wp-block-image {
 			display: flex;
 			justify-content: center;
-
-			&:last-child {
-				grid-column-start: 1;
-				grid-column-end: 3;
-			}
 
 			> img {
 				max-height: 20px;
