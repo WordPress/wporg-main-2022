@@ -115,9 +115,9 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		content: "";
 		position: absolute;
 		left: -5px;
-		top: 25px;
-		width: 121px;
-		height: 6px;
+		top: 26px;
+		width: 134px;
+		height: 8px;
 		background-image: url(../../images/about-cover-underline.svg);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -146,14 +146,14 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		background-image: url(../../images/about-cover-arrow.svg);
 		background-size: clamp(16rem, 12.8vw + 11.21rem, 21.75rem);
 		background-repeat: no-repeat;
-		background-position: 38% center;
+		background-position: 42% center;
 	}
 
 	@media (max-width: 599px) {
 		grid-template-rows: $text-row-height 180px $text-row-height;
 
 		&::after {
-			background-position: 90% 58%;
+			background-position: 72% 55%;
 			transform: rotate(-11.07deg);
 		}
 	}
