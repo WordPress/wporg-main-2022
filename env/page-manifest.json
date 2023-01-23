@@ -13,6 +13,36 @@
 		"template": "page-about.html"
 	},
 	{
+		"slug": "requirements-2",
+		"pattern": "requirements.php",
+		"template": "page-requirements.html"
+	},
+	{
+		"slug": "features-2",
+		"pattern": "features.php",
+		"template": "page-features.html"
+	},
+	{
+		"slug": "security-2",
+		"pattern": "security.php",
+		"template": "page-security.html"
+	},
+	{
+		"slug": "roadmap-2",
+		"pattern": "roadmap.php",
+		"template": "page-roadmap.html"
+	},
+	{
+		"slug": "history-2",
+		"pattern": "history.php",
+		"template": "page-history.html"
+	},
+	{
+		"slug": "features-2",
+		"pattern": "features.php",
+		"template": "page-features.html"
+	},
+	{
 		"slug": "enterprise",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
