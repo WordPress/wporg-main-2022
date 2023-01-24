@@ -6,8 +6,6 @@
  */
 
 ?>
-<!-- wp:wporg/global-header /-->
-
 <!-- wp:group {"align":"full","style":{"color":{"background":"#f0ede7"},"border":{"bottom":{"color":"var:preset|color|charcoal-1","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"className":"wporg-about-section-cover","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull wporg-about-section-cover has-background" style="border-bottom-color:var(--wp--preset--color--charcoal-1);border-bottom-width:1px;background-color:#f0ede7;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","className":"wporg-about-cover","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide wporg-about-cover"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"className":"wporg-about-cover-pretext","fontFamily":"monospace"} -->
@@ -273,5 +271,3 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
-
-<!-- wp:wporg/global-footer /-->
