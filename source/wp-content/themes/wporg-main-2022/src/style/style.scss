@@ -199,16 +199,24 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 @media (min-width: 1200px) {
 	.wporg-about-cover-title {
-		margin-block-end: -42px !important;
+		// move the intro text up to align with the bottom of the title
+		margin-block-end:
+			calc((
+				(
+					var(--wp--custom--body--typography--line-height) * var(--wp--preset--font-size--normal)
+				) + var(--wp--preset--spacing--10)
+			) * -1) !important // ~ -42px;
 	}
 }
 
 @media (min-width: 782px) {
 	.wporg-about-section-heading {
+		// move the section heading up to align with the top of the right column
 		margin-block-start: -10px !important;
 	}
 
 	[class*="wporg-about-section-freedom-"] {
+		// move the numbered freedom sections up to overlap the previous one
 		margin-block-end: -30px !important;
 		position: relative;
 	}
@@ -216,7 +224,11 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 @media (min-width: 600px) {
 	.wporg-about-cover-title {
-		margin-block-start: -30px !important;
+		// move the pretext down to align with the top of the title
+		margin-block-start:
+			calc((
+				var(--wp--custom--body--typography--line-height) * var(--wp--preset--font-size--normal)
+			) * -1) !important;
 	}
 }
 
@@ -312,8 +324,8 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	}
 
 	[class*="wporg-about-section-freedom-"] {
-		padding-top: 40px !important;
-		padding-bottom: 40px !important;
+		padding-top: var(--wp--preset--spacing--40) !important;
+		padding-bottom: var(--wp--preset--spacing--40) !important;
 
 		h3 {
 			font-size: 120px !important;
