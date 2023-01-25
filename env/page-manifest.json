@@ -38,11 +38,6 @@
 		"template": "page-history.html"
 	},
 	{
-		"slug": "features-2",
-		"pattern": "features.php",
-		"template": "page-features.html"
-	},
-	{
 		"slug": "enterprise",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
