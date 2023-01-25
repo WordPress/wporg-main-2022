@@ -256,7 +256,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		display: block;
 	}
 
-	.wporg-about-cover-intro > * {
+	.wporg-about-cover-intro {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
 	}

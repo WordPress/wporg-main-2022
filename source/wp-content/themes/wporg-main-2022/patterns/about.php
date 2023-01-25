@@ -16,17 +16,9 @@
 <h1 class="wp-block-heading alignfull has-text-align-right wporg-about-cover-title has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:1.2"><?php _e( '<span>democratize</span><span>publishing</span>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"0","left":"0"},"margin":{"top":"0"}}}} -->
-<div class="wp-block-columns" style="margin-top:0"><!-- wp:column {"width":"38%"} -->
-<div class="wp-block-column" style="flex-basis:38%"></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"62%","className":"wporg-about-cover-intro"} -->
-<div class="wp-block-column wporg-about-cover-intro" style="flex-basis:62%"><!-- wp:paragraph {"align":"right","fontSize":"normal","fontFamily":"monospace"} -->
-<p class="has-text-align-right has-monospace-font-family has-normal-font-size"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to share.</span>', 'wporg' ); ?></p>
+<!-- wp:paragraph {"align":"right","style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"monospace"} -->
+<p class="has-text-align-right wporg-about-cover-intro has-monospace-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to share.</span>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
