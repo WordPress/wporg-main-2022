@@ -66,7 +66,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is a free and open source content management system (CMS). It is the most widely-used CMS software in the world and it powers more than 43% of the top 10 million websites<sup id="ref1"><a href="#footnotes">1</a></sup>, giving it an estimated 62% market share of all sites using a CMS.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is a free and open source content management system (CMS). It is the most widely-used CMS software in the world and it powers more than 43% of the top 10 million websites<sup id="ref1"><a href="#footnote1">1</a></sup>, giving it an estimated 62% market share of all sites using a CMS.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -120,7 +120,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'A release cycle follows the following pattern<sup><a href="#footnotes">2</a></sup>:', 'wporg' ); ?></p>
+<p><?php _e( 'A release cycle follows the following pattern<sup id="ref2"><a href="#footnote2">2</a></sup>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
@@ -158,7 +158,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'A minor WordPress version is dictated by the third sequence. Version 3.5.1 is a minor release, as is 3.4.2<sup><a href="#footnotes">3</a></sup>. A minor release is reserved for fixing security vulnerabilities and addressing critical bugs only. Since new versions of WordPress are released so frequently — the aim is every 4-5 months for a major release, and minor releases happen as needed — there is only a need for major and minor releases.', 'wporg' ); ?></p>
+<p><?php _e( 'A minor WordPress version is dictated by the third sequence. Version 3.5.1 is a minor release, as is 3.4.2<sup id="ref3"><a href="#footnote3">3</a></sup>. A minor release is reserved for fixing security vulnerabilities and addressing critical bugs only. Since new versions of WordPress are released so frequently — the aim is every 4-5 months for a major release, and minor releases happen as needed — there is only a need for major and minor releases.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -178,11 +178,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress Security Team is made up of approximately 50 experts including lead developers and security researchers — about half are employees of Automattic (makers of WordPress.com, the earliest and largest WordPress hosting platform on the web), and a number work in the web security field. The team consults with well-known and trusted security researchers and hosting companies<sup><a href="#footnotes">3</a></sup>.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress Security Team is made up of approximately 50 experts including lead developers and security researchers — about half are employees of Automattic (makers of WordPress.com, the earliest and largest WordPress hosting platform on the web), and a number work in the web security field. The team consults with well-known and trusted security researchers and hosting companies<sup id="ref3"><a href="#footnote3">3</a></sup>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress Security Team often collaborates with other security teams to address issues in common dependencies, such as resolving the vulnerability in the PHP XML parser, used by the XML-RPC API that ships with WordPress, in WordPress 3.9.2<sup><a href="#footnotes">4</a></sup>. This vulnerability resolution was a result of a joint effort by both WordPress and Drupal security teams.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress Security Team often collaborates with other security teams to address issues in common dependencies, such as resolving the vulnerability in the PHP XML parser, used by the XML-RPC API that ships with WordPress, in WordPress 3.9.2<sup id="ref4"><a href="#footnote4">4</a></sup>. This vulnerability resolution was a result of a joint effort by both WordPress and Drupal security teams.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -190,7 +190,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress Security Team believes in Responsible Disclosure by alerting the security team immediately of any potential vulnerabilities. Potential security vulnerabilities can be signaled to the Security Team via the <a href="https://hackerone.com/wordpress">WordPress HackerOne</a><sup><a href="#footnotes">5</a></sup>. The Security Team communicates amongst itself via a private Slack channel, and works on a walled-off, private Trac for tracking, testing, and fixing bugs and security problems.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress Security Team believes in Responsible Disclosure by alerting the security team immediately of any potential vulnerabilities. Potential security vulnerabilities can be signaled to the Security Team via the&nbsp;<a href="https://hackerone.com/wordpress">WordPress HackerOne</a><sup id="ref5"><a href="#footnote5">5</a></sup>. The Security Team communicates amongst itself via a private Slack channel, and works on a walled-off, private Trac for tracking, testing, and fixing bugs and security problems.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -198,7 +198,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'For an immediate security release, an advisory is published by the Security Team to the WordPress.org News site<sup><a href="#footnotes">6</a></sup> announcing the release and detailing the changes. Credit for the responsible disclosure of a vulnerability is given in the advisory to encourage and reinforce continued responsible reporting in the future.', 'wporg' ); ?></p>
+<p><?php _e( 'For an immediate security release, an advisory is published by the Security Team to the WordPress.org News site<sup id="ref6"><a href="#footnote6">6</a></sup>&nbsp;announcing the release and detailing the changes. Credit for the responsible disclosure of a vulnerability is given in the advisory to encourage and reinforce continued responsible reporting in the future.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -210,7 +210,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Starting with version 3.7, WordPress introduced automated background updates for all minor releases<sup><a href="#footnotes">7</a></sup>, such as 3.7.1 and 3.7.2. The WordPress Security Team can identify, fix, and push out automated security enhancements for WordPress without the site owner needing to do anything on their end, and the security update will install automatically.', 'wporg' ); ?></p>
+<p><?php _e( 'Starting with version 3.7, WordPress introduced automated background updates for all minor releases<sup id="ref7"><a href="#footnote7">7</a></sup>, such as 3.7.1 and 3.7.2. The WordPress Security Team can identify, fix, and push out automated security enhancements for WordPress without the site owner needing to do anything on their end, and the security update will install automatically.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -226,7 +226,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The Open Web Application Security Project (OWASP) is an online community dedicated to web application security. The OWASP Top 10 list<sup><a href="#footnotes">8</a></sup> focuses on identifying the most serious application security risks for a broad array of organizations. The Top 10 items are selected and prioritized in combination with consensus estimates of exploitability, detectability, and impact estimates.', 'wporg' ); ?></p>
+<p><?php _e( 'The Open Web Application Security Project (OWASP) is an online community dedicated to web application security. The OWASP Top 10 list<sup id="ref8"><a href="#footnote8">8</a></sup>&nbsp;focuses on identifying the most serious application security risks for a broad array of organizations. The Top 10 items are selected and prioritized in combination with consensus estimates of exploitability, detectability, and impact estimates.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -238,7 +238,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'There is a set of functions and APIs available in WordPress to assist developers in making sure unauthorized code cannot be injected, and help them validate and sanitize data. Best practices and documentation are available<sup><a href="#footnotes">9</a></sup> on how to use these APIs to protect, validate, or sanitize input and output data in HTML, URLs, HTTP headers, and when interacting with the database and filesystem. Administrators can also further restrict the types of file which can be uploaded via filters.', 'wporg' ); ?></p>
+<p><?php _e( 'There is a set of functions and APIs available in WordPress to assist developers in making sure unauthorized code cannot be injected, and help them validate and sanitize data. Best practices and documentation are available<sup id="ref9"><a href="#footnote9">9</a></sup>&nbsp;on how to use these APIs to protect, validate, or sanitize input and output data in HTML, URLs, HTTP headers, and when interacting with the database and filesystem. Administrators can also further restrict the types of file which can be uploaded via filters.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -254,7 +254,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress provides a range of functions which can help ensure that user-supplied data is safe<sup><a href="#footnotes">10</a></sup>. Trusted users, that is administrators and editors on a single WordPress installation, and network administrators only in WordPress Multisite, can post unfiltered HTML or JavaScript as they need to, such as inside a post or page. Untrusted users and user-submitted content is filtered by default to remove dangerous entities, using the KSES library through the <code>wp_kses</code> function.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress provides a range of functions which can help ensure that user-supplied data is safe<sup id="ref10"><a href="#footnote10">10</a></sup>. Trusted users, that is administrators and editors on a single WordPress installation, and network administrators only in WordPress Multisite, can post unfiltered HTML or JavaScript as they need to, such as inside a post or page. Untrusted users and user-submitted content is filtered by default to remove dangerous entities, using the KSES library through the&nbsp;<code>wp_kses</code>&nbsp;function.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -274,7 +274,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The majority of the WordPress security configuration operations are limited to a single authorized administrator. Default settings for WordPress are continually evaluated at the core team level, and the WordPress core team provides documentation and best practices to tighten security for server configuration for running a WordPress site<sup><a href="#footnotes">11</a></sup>.', 'wporg' ); ?></p>
+<p><?php _e( 'The majority of the WordPress security configuration operations are limited to a single authorized administrator. Default settings for WordPress are continually evaluated at the core team level, and the WordPress core team provides documentation and best practices to tighten security for server configuration for running a WordPress site<sup id="ref11"><a href="#footnote11">11</a></sup>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -282,7 +282,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress user account passwords are salted and hashed based on the Portable PHP Password Hashing Framework<sup><a href="#footnotes">12</a></sup>. WordPress’ permission system is used to control access to private information such an registered users’ PII, commenters’ email addresses, privately published content, etc. In WordPress 3.7, a password strength meter was included in the core software providing additional information to users setting their passwords and hints on increasing strength. WordPress also has an optional configuration setting for requiring HTTPS.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress user account passwords are salted and hashed based on the Portable PHP Password Hashing Framework<sup id="ref12"><a href="#footnote12">12</a></sup>. WordPress’ permission system is used to control access to private information such an registered users’ PII, commenters’ email addresses, privately published content, etc. In WordPress 3.7, a password strength meter was included in the core software providing additional information to users setting their passwords and hints on increasing strength. WordPress also has an optional configuration setting for requiring HTTPS.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -298,7 +298,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress uses cryptographic tokens, called nonces<sup><a href="#footnotes">13</a></sup>, to validate intent of action requests from authorized users to protect against potential CSRF threats. WordPress provides an API for the generation of these tokens to create and verify unique and temporary tokens, and the token is limited to a specific user, a specific action, a specific object, and a specific time period, which can be added to forms and URLs as needed. Additionally, all nonces are invalidated upon logout.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress uses cryptographic tokens, called nonces<sup id="ref13"><a href="#footnote13">13</a></sup>, to validate intent of action requests from authorized users to protect against potential CSRF threats. WordPress provides an API for the generation of these tokens to create and verify unique and temporary tokens, and the token is limited to a specific user, a specific action, a specific object, and a specific time period, which can be added to forms and URLs as needed. Additionally, all nonces are invalidated upon logout.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -306,11 +306,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress core team closely monitors the few included libraries and frameworks WordPress integrates with for core functionality. In the past the core team has made contributions to several third-party components to make them more secure, such as the update to fix a cross-site vulnerability in TinyMCE in WordPress 3.5.2<sup><a href="#footnotes">14</a></sup>.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress core team closely monitors the few included libraries and frameworks WordPress integrates with for core functionality. In the past the core team has made contributions to several third-party components to make them more secure, such as the update to fix a cross-site vulnerability in TinyMCE in WordPress 3.5.2<sup id="ref14"><a href="#footnote14">14</a></sup>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'If necessary, the core team may decide to fork or replace critical external components, such as when the SWFUpload library was officially replaced by the Plupload library in 3.5.2, and a secure fork of SWFUpload was made available by the security team<sup><a href="#footnotes">15</a></sup> for those plugins who continued to use SWFUpload in the short-term.', 'wporg' ); ?></p>
+<p><?php _e( 'If necessary, the core team may decide to fork or replace critical external components, such as when the SWFUpload library was officially replaced by the Plupload library in 3.5.2, and a secure fork of SWFUpload was made available by the security team<sup id="ref15"><a href="#footnote15">15</a></sup>&nbsp;for those plugins who continued to use SWFUpload in the short-term.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -318,7 +318,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress’ internal access control and authentication system will protect against attempts to direct users to unwanted destinations or automatic redirects. This functionality is also made available to plugin developers via an API, <code>wp_safe_redirect()</code><sup><a href="#footnotes">16</a></sup>.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress’ internal access control and authentication system will protect against attempts to direct users to unwanted destinations or automatic redirects. This functionality is also made available to plugin developers via an API,&nbsp;<code>wp_safe_redirect()</code><sup id="ref16"><a href="#footnote16">16</a></sup>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -366,7 +366,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Inclusion of plugins and themes in the repository is not a guarantee that they are free from security vulnerabilities. Guidelines are provided for plugin authors to consult prior to submission for inclusion in the repository<sup><a href="#footnotes">17</a></sup>, and extensive documentation about how to do WordPress theme development<sup><a href="#footnotes">18</a></sup> is provided on the WordPress.org site.', 'wporg' ); ?></p>
+<p><?php _e( 'Inclusion of plugins and themes in the repository is not a guarantee that they are free from security vulnerabilities. Guidelines are provided for plugin authors to consult prior to submission for inclusion in the repository<sup id="ref17"><a href="#footnote17">17</a></sup>, and extensive documentation about how to do WordPress theme development<sup id="ref18"><a href="#footnote18">18</a></sup>&nbsp;is provided on the WordPress.org site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -382,7 +382,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The Theme Review Team is a group of volunteers, led by key and established members of the WordPress community, who review and approve themes submitted to be included in the official WordPress Theme directory. The Theme Review Team maintains the official Theme Review Guidelines<sup><a href="#footnotes">19</a></sup>, the Theme Unit Test Datas<sup><a href="#footnotes">20</a></sup>, and the Theme Check Plugins<sup><a href="#footnotes">21</a></sup>, and attempts to engage and educate the WordPress Theme developer community regarding development best practices. Inclusion in the group is moderated by core committers of the WordPress development team.', 'wporg' ); ?></p>
+<p><?php _e( 'The Theme Review Team is a group of volunteers, led by key and established members of the WordPress community, who review and approve themes submitted to be included in the official WordPress Theme directory. The Theme Review Team maintains the official Theme Review Guidelines<sup id="ref19"><a href="#footnote19">19</a></sup>, the Theme Unit Test Datas<sup id="ref20"><a href="#footnote20">20</a></sup>, and the Theme Check Plugins<sup id="ref21"><a href="#footnote21">21</a></sup>, and attempts to engage and educate the WordPress Theme developer community regarding development best practices. Inclusion in the group is moderated by core committers of the WordPress development team.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -398,7 +398,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress.com is the largest WordPress installation in the world, and is owned and managed by Automattic, Inc., which was founded by Matt Mullenweg, the WordPress project co-creator. WordPress.com runs on the core WordPress software, and has its own security processes, risks, and solutions<sup><a href="#footnotes">22</a></sup>. This document refers to security regarding the self-hosted, downloadable open source WordPress software available from WordPress.org and installable on any server in the world.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress.com is the largest WordPress installation in the world, and is owned and managed by Automattic, Inc., which was founded by Matt Mullenweg, the WordPress project co-creator. WordPress.com runs on the core WordPress software, and has its own security processes, risks, and solutions<sup id="ref22"><a href="#footnote22">22</a></sup>. This document refers to security regarding the self-hosted, downloadable open source WordPress software available from WordPress.org and installable on any server in the world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -410,7 +410,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress Core Application Programming Interface (API) is comprised of several individual APIs<sup><a href="#footnotes">23</a></sup>, each one covering the functions involved in, and use of, a given set of functionality. Together, these form the project interface which allows plugins and themes to interact with, alter, and extend WordPress core functionality safely and securely.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress Core Application Programming Interface (API) is comprised of several individual APIs<sup id="ref23"><a href="#footnote23">23</a></sup>, each one covering the functions involved in, and use of, a given set of functionality. Together, these form the project interface which allows plugins and themes to interact with, alter, and extend WordPress core functionality safely and securely.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -422,7 +422,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The Database API<sup><a href="#footnotes">24</a></sup>, added in WordPress 0.71, provides the correct method for accessing data as named values which are stored in the database layer.', 'wporg' ); ?></p>
+<p><?php _e( 'The Database API<sup id="ref24"><a href="#footnote24">24</a></sup>, added in WordPress 0.71, provides the correct method for accessing data as named values which are stored in the database layer.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -430,7 +430,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The Filesystem API<sup><a href="#footnotes">25</a></sup>, added in WordPress 2.6<sup><a href="#footnotes">26</a></sup>, was originally created for WordPress’ own automatic updates feature. The Filesystem API abstracts out the functionality needed for reading and writing local files to the filesystem to be done securely, on a variety of host types.', 'wporg' ); ?></p>
+<p><?php _e( 'The Filesystem API<sup id="ref25"><a href="#footnote25">25</a></sup>, added in WordPress 2.6<sup id="ref26"><a href="#footnote26">26</a></sup>, was originally created for WordPress’ own automatic updates feature. The Filesystem API abstracts out the functionality needed for reading and writing local files to the filesystem to be done securely, on a variety of host types.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -442,7 +442,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The HTTP API<sup><a href="#footnotes">27</a></sup>, added in WordPress 2.7<sup><a href="#footnotes">28</a></sup> and extended further in WordPress 2.8, standardizes the HTTP requests for WordPress. The API handles cookies, gzip encoding and decoding, chunk decoding (if HTTP 1.1), and various other HTTP protocol implementations. The API standardizes requests, tests each method prior to sending, and, based on your server configuration, uses the appropriate method to make the request.', 'wporg' ); ?></p>
+<p><?php _e( 'The HTTP API<sup id="ref27"><a href="#footnote27">27</a></sup>, added in WordPress 2.7<sup id="ref28"><a href="#footnote28">28</a></sup>&nbsp;and extended further in WordPress 2.8, standardizes the HTTP requests for WordPress. The API handles cookies, gzip encoding and decoding, chunk decoding (if HTTP 1.1), and various other HTTP protocol implementations. The API standardizes requests, tests each method prior to sending, and, based on your server configuration, uses the appropriate method to make the request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -450,7 +450,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The permissions and current user API<sup><a href="#footnotes">29</a></sup> is a set of functions which will help verify the current user’s permissions and authority to perform any task or operation being requested, and can protect further against unauthorized users accessing or performing functions beyond their permitted capabilities.', 'wporg' ); ?></p>
+<p><?php _e( 'The permissions and current user API<sup id="ref29"><a href="#footnote29">29</a></sup>&nbsp;is a set of functions which will help verify the current user’s permissions and authority to perform any task or operation being requested, and can protect further against unauthorized users accessing or performing functions beyond their permitted capabilities.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -479,7 +479,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'WordPress Developer Resources ', 'wporg' ); ?><a href="https://developer.wordpress.org/"><?php _e( 'https://developer.wordpress.org/', 'wporg' ); ?></a></li>
+<li>WordPress Developer Resources&nbsp;<a href="https://developer.wordpress.org/"><?php _e( 'https://developer.wordpress.org/', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -507,121 +507,121 @@
 <h3 class="wp-block-heading"><?php _e( 'Footnotes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul id="footnotes"><!-- wp:list-item -->
-<li><a href="#ref1"><?php _e( '[1]', 'wporg' ); ?></a><?php _e( ' ', 'wporg' ); ?><a href="https://w3techs.com/"><?php _e( 'https://w3techs.com/', 'wporg' ); ?></a><?php _e( ', as of December 2019', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div id="footnotes" class="wp-block-group"><!-- wp:paragraph -->
+<p id="footnote1"><?php _e( '<a href="#ref1">[1]</a>&nbsp;<a href="https://w3techs.com/">https://w3techs.com/</a>, as of December 2019', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref2"><?php _e( '[2]', 'wporg' ); ?></a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/"><?php _e( 'https://make.wordpress.org/core/handbook/about/release-cycle/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote2"><?php _e( '<a href="#ref2">[2]</a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/">https://make.wordpress.org/core/handbook/about/release-cycle/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref3"><?php _e( '[3]', 'wporg' ); ?></a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/"><?php _e( 'https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote3"><?php _e( '<a href="#ref3">[3]</a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/">https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref4"><?php _e( '[4]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/news/2014/08/wordpress-3-9-2/"><?php _e( 'https://wordpress.org/news/2014/08/wordpress-3-9-2/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote4"><?php _e( '<a href="#ref4">[4]</a>&nbsp;<a href="https://wordpress.org/news/2014/08/wordpress-3-9-2/">https://wordpress.org/news/2014/08/wordpress-3-9-2/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref5"><?php _e( '[5]', 'wporg' ); ?></a>&nbsp;<a href="https://hackerone.com/wordpress"><?php _e( 'https://hackerone.com/wordpress', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote5"><?php _e( '<a href="#ref5">[5]</a>&nbsp;<a href="https://hackerone.com/wordpress">https://hackerone.com/wordpress</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref6"><?php _e( '[6]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/news/"><?php _e( 'https://wordpress.org/news/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote6"><?php _e( '<a href="#ref6">[6]</a>&nbsp;<a href="https://wordpress.org/news/">https://wordpress.org/news/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref7"><?php _e( '[7]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/news/2013/10/basie/"><?php _e( 'https://wordpress.org/news/2013/10/basie/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote7"><?php _e( '<a href="#ref7">[7]</a>&nbsp;<a href="https://wordpress.org/news/2013/10/basie/">https://wordpress.org/news/2013/10/basie/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref8"><?php _e( '[8]', 'wporg' ); ?></a>&nbsp;<a href="https://www.owasp.org/index.php/Top_10_2013-Top_10"><?php _e( 'https://www.owasp.org/index.php/Top_10_2013-Top_10', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote8"><?php _e( '<a href="#ref8">[8]</a>&nbsp;<a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">https://www.owasp.org/index.php/Top_10_2013-Top_10</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref9"><?php _e( '[9]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/"><?php _e( 'https://developer.wordpress.org/plugins/security/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote9"><?php _e( '<a href="#ref9">[9]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/">https://developer.wordpress.org/plugins/security/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref10"><?php _e( '[10]', 'wporg' ); ?></a>&nbsp;<a href="https://codex.wordpress.org/Data_Validation#HTML.2FXML"><?php _e( 'https://codex.wordpress.org/Data_Validation#HTML.2FXML', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote10"><?php _e( '<a href="#ref10">[10]</a>&nbsp;<a href="https://codex.wordpress.org/Data_Validation#HTML.2FXML">https://codex.wordpress.org/Data_Validation#HTML.2FXML</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref11"><?php _e( '[11]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/support/article/hardening-wordpress/"><?php _e( 'https://wordpress.org/support/article/hardening-wordpress/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote11"><?php _e( '<a href="#ref11">[11]</a>&nbsp;<a href="https://wordpress.org/support/article/hardening-wordpress/">https://wordpress.org/support/article/hardening-wordpress/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref12"><?php _e( '[12]', 'wporg' ); ?></a>&nbsp;<a href="https://www.openwall.com/phpass/"><?php _e( 'https://www.openwall.com/phpass/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote12"><?php _e( '<a href="#ref12">[12]</a>&nbsp;<a href="https://www.openwall.com/phpass/">https://www.openwall.com/phpass/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref13"><?php _e( '[13]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/nonces/"><?php _e( 'https://developer.wordpress.org/plugins/security/nonces/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote13"><?php _e( '<a href="#ref13">[13]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/nonces/">https://developer.wordpress.org/plugins/security/nonces/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref14"><?php _e( '[14]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/news/2013/06/wordpress-3-5-2/"><?php _e( 'https://wordpress.org/news/2013/06/wordpress-3-5-2/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote14"><?php _e( '<a href="#ref14">[14]</a>&nbsp;<a href="https://wordpress.org/news/2013/06/wordpress-3-5-2/">https://wordpress.org/news/2013/06/wordpress-3-5-2/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref15"><?php _e( '[15]', 'wporg' ); ?></a>&nbsp;<a href="https://make.wordpress.org/core/2013/06/21/secure-swfupload/"><?php _e( 'https://make.wordpress.org/core/2013/06/21/secure-swfupload/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote15"><?php _e( '<a href="#ref15">[15]</a>&nbsp;<a href="https://make.wordpress.org/core/2013/06/21/secure-swfupload/">https://make.wordpress.org/core/2013/06/21/secure-swfupload/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref16"><?php _e( '[16]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/wp_safe_redirect/"><?php _e( 'https://developer.wordpress.org/reference/functions/wp_safe_redirect/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote16"><?php _e( '<a href="#ref16">[16]</a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/wp_safe_redirect/">https://developer.wordpress.org/reference/functions/wp_safe_redirect/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref17"><?php _e( '[17]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/plugins/developers/"><?php _e( 'https://wordpress.org/plugins/developers/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote17"><?php _e( '<a href="#ref17">[17]</a>&nbsp;<a href="https://wordpress.org/plugins/developers/">https://wordpress.org/plugins/developers/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref18"><?php _e( '[18]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/themes/getting-started/"><?php _e( 'https://developer.wordpress.org/themes/getting-started/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote18"><?php _e( '<a href="#ref18">[18]</a>&nbsp;<a href="https://developer.wordpress.org/themes/getting-started/">https://developer.wordpress.org/themes/getting-started/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref19"><?php _e( '[19]', 'wporg' ); ?></a>&nbsp;<a href="https://make.wordpress.org/themes/handbook/review/"><?php _e( 'https://make.wordpress.org/themes/handbook/review/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote19"><?php _e( '<a href="#ref19">[19]</a>&nbsp;<a href="https://make.wordpress.org/themes/handbook/review/">https://make.wordpress.org/themes/handbook/review/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref20"><?php _e( '[20]', 'wporg' ); ?></a>&nbsp;<a href="https://codex.wordpress.org/Theme_Unit_Test"><?php _e( 'https://codex.wordpress.org/Theme_Unit_Test', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote20"><?php _e( '<a href="#ref20">[20]</a>&nbsp;<a href="https://codex.wordpress.org/Theme_Unit_Test">https://codex.wordpress.org/Theme_Unit_Test</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref21"><?php _e( '[21]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/plugins/theme-check/"><?php _e( 'https://wordpress.org/plugins/theme-check/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote21"><?php _e( '<a href="#ref21">[21]</a>&nbsp;<a href="https://wordpress.org/plugins/theme-check/">https://wordpress.org/plugins/theme-check/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref22"><?php _e( '[22]', 'wporg' ); ?></a>&nbsp;<a href="https://automattic.com/security/"><?php _e( 'https://automattic.com/security/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote22"><?php _e( '<a href="#ref22">[22]</a>&nbsp;<a href="https://automattic.com/security/">https://automattic.com/security/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref23"><?php _e( '[23]', 'wporg' ); ?></a>&nbsp;<a href="https://codex.wordpress.org/WordPress_APIs"><?php _e( 'https://codex.wordpress.org/WordPress_APIs', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote23"><?php _e( '<a href="#ref23">[23]</a>&nbsp;<a href="https://codex.wordpress.org/WordPress_APIs">https://codex.wordpress.org/WordPress_APIs</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref24"><?php _e( '[24]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/apis/handbook/database/"><?php _e( 'https://developer.wordpress.org/apis/handbook/database/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote24"><?php _e( '<a href="#ref24">[24]</a>&nbsp;<a href="https://developer.wordpress.org/apis/handbook/database/">https://developer.wordpress.org/apis/handbook/database/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref25"><?php _e( '[25]', 'wporg' ); ?></a>&nbsp;<a href="https://codex.wordpress.org/Filesystem_API"><?php _e( 'https://codex.wordpress.org/Filesystem_API', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote25"><?php _e( '<a href="#ref25">[25]</a>&nbsp;<a href="https://codex.wordpress.org/Filesystem_API">https://codex.wordpress.org/Filesystem_API</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref26"><?php _e( '[26]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-6/"><?php _e( 'https://wordpress.org/support/wordpress-version/version-2-6/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote26"><?php _e( '<a href="#ref26">[26]</a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-6/">https://wordpress.org/support/wordpress-version/version-2-6/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref27"><?php _e( '[27]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/plugins/http-api/"><?php _e( 'https://developer.wordpress.org/plugins/http-api/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote27"><?php _e( '<a href="#ref27">[27]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/http-api/">https://developer.wordpress.org/plugins/http-api/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref28"><?php _e( '[28]', 'wporg' ); ?></a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-7/"><?php _e( 'https://wordpress.org/support/wordpress-version/version-2-7/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p id="footnote28"><?php _e( '<a href="#ref28">[28]</a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-7/">https://wordpress.org/support/wordpress-version/version-2-7/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/#ref29"><?php _e( '[29]', 'wporg' ); ?></a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/current_user_can/"><?php _e( 'https://developer.wordpress.org/reference/functions/current_user_can/', 'wporg' ); ?></a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:paragraph -->
+<p id="footnote29"><?php _e( '<a href="#ref29">[29]</a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/current_user_can/">https://developer.wordpress.org/reference/functions/current_user_can/</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
