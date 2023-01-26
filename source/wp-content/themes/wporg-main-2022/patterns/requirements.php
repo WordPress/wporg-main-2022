@@ -27,15 +27,15 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><a href="https://www.php.net/"><?php _e( 'PHP', 'wporg' ); ?></a><?php _e( ' version 7.4 or greater.', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://www.php.net/">PHP</a> version 7.4 or greater.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.mysql.com/"><?php _e( 'MySQL', 'wporg' ); ?></a><?php _e( ' version 5.7 or greater OR ', 'wporg' ); ?><a href="https://mariadb.org/"><?php _e( 'MariaDB', 'wporg' ); ?></a><?php _e( ' version 10.3 or greater.', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://www.mysql.com/">MySQL</a> version 5.7 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.3 or greater.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/news/2016/12/moving-toward-ssl/"><?php _e( 'HTTPS', 'wporg' ); ?></a><?php _e( ' support', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 

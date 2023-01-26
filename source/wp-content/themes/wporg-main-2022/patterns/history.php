@@ -22,20 +22,20 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'We’ve been working on a new book about the history of WordPress drawing on dozens of interviews with the original folks involved and extensive research. It’s not ready yet, but for the tenth anniversary of WordPress we’d like to make a chapter available, <em>On forking WordPress, forks in general, early WordPress, and the community</em>, which you can download below in the following formats:', 'wporg' ); ?></p>
+<p><?php _e( 'We’ve been working on a new book about the history of WordPress drawing on dozens of interviews with the original folks involved and extensive research. It’s not ready yet, but for the tenth anniversary of WordPress we’d like to make a chapter available, <em>On forking WordPress, forks in general, early WordPress, and the community</em>, which you can download below in the following formats:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/history/chapter3.epub"><?php _e( 'Chapter 3 – EPUB', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.epub">Chapter 3 – EPUB</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/history/chapter3.mobi"><?php _e( 'Chapter 3 – MOBI', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.mobi">Chapter 3 – MOBI</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/history/chapter3.pdf"><?php _e( 'Chapter 3 – PDF', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.pdf">Chapter 3 – PDF</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -44,7 +44,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress core developers share a love of jazz music, and all our major releases are named in honor of jazz musicians we personally admire. Here’s a list of releases and the musicians they were named for. <a href="https://www.last.fm/tag/wordpress-release-jazz">You can listen to a Last.fm station of all the musicians we named a release for</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress core developers share a love of jazz music, and all our major releases are named in honor of jazz musicians we personally admire. Here’s a list of releases and the musicians they were named for. <a href="https://www.last.fm/tag/wordpress-release-jazz">You can listen to a Last.fm station of all the musicians we named a release for</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->

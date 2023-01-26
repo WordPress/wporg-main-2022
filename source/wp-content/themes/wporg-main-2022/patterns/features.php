@@ -35,75 +35,75 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><strong><?php _e( 'Simplicity', 'wporg' ); ?></strong><br><?php _e( 'Simplicity', 'wporg' ); ?> makes it possible for you to get online and get publishing, quickly. Nothing should get in the way of you getting your website up and your content out there. WordPress is built to make that happen.</li>
+<li><?php _e( '<strong>Simplicity</strong><br>Simplicity makes it possible for you to get online and get publishing, quickly. Nothing should get in the way of you getting your website up and your content out there. WordPress is built to make that happen.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Flexibility', 'wporg' ); ?></strong><br><?php _e( 'With WordPress, you can create any type of website you want: a personal blog or website, a photoblog, a business website, a professional portfolio, a government website, a magazine or news website, an online community, even a network of websites. You can make your website beautiful with themes, and extend it with plugins. You can even build your very own application.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Flexibility</strong><br>With WordPress, you can create any type of website you want: a personal blog or website, a photoblog, a business website, a professional portfolio, a government website, a magazine or news website, an online community, even a network of websites. You can make your website beautiful with themes, and extend it with plugins. You can even build your very own application.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Publish with Ease', 'wporg' ); ?></strong><br><?php _e( 'If you’ve ever created a document, you’re already a whizz at creating content with WordPress. You can create Posts and Pages, format them easily, insert media, and with the click of a button your content is live and on the web.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Publish with Ease</strong><br>If you’ve ever created a document, you’re already a whizz at creating content with WordPress. You can create Posts and Pages, format them easily, insert media, and with the click of a button your content is live and on the web.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Publishing Tools', 'wporg' ); ?></strong><br><?php _e( 'WordPress makes it easy for you to manage your content. Create drafts, schedule publication, and look at your post revisions. Make your content public or private, and secure posts and pages with a password.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Publishing Tools</strong><br>WordPress makes it easy for you to manage your content. Create drafts, schedule publication, and look at your post revisions. Make your content public or private, and secure posts and pages with a password.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress.org/documentation/article/roles-and-capabilities/"><?php _e( 'User Management', 'wporg' ); ?></a></strong><br><?php _e( 'Not everyone requires the same access to your website. Administrators manage the site, editors work with content, authors and contributors write that content, and subscribers have a profile that they can manage. This lets you have a variety of contributors to your website, and let others simply be part of your community.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/documentation/article/roles-and-capabilities/">User Management</a></strong><br>Not everyone requires the same access to your website. Administrators manage the site, editors work with content, authors and contributors write that content, and subscribers have a profile that they can manage. This lets you have a variety of contributors to your website, and let others simply be part of your community.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress.org/documentation/article/media-library-screen/"><?php _e( 'Media Management', 'wporg' ); ?></a></strong><br><?php _e( 'They say a picture says a thousand words, which is why it’s important for you to be able to quickly and easily upload images and media to WordPress. Drag and drop your media into the uploader to add it to your website. Add alt text and captions, and insert images and galleries into your content. We’ve even added a few image editing tools you can have fun with.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/documentation/article/media-library-screen/">Media Management</a></strong><br>They say a picture says a thousand words, which is why it’s important for you to be able to quickly and easily upload images and media to WordPress. Drag and drop your media into the uploader to add it to your website. Add alt text and captions, and insert images and galleries into your content. We’ve even added a few image editing tools you can have fun with.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Full Standards Compliance', 'wporg' ); ?></strong><br><?php _e( 'Every piece of WordPress generated code is in full compliance with the standards set by the W3C. This means that your website will work in today’s browser, while maintaining forward compatibility with the next generation of browser. Your website is a beautiful thing, now and in the future.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Full Standards Compliance</strong><br>Every piece of WordPress generated code is in full compliance with the standards set by the W3C. This means that your website will work in today’s browser, while maintaining forward compatibility with the next generation of browser. Your website is a beautiful thing, now and in the future.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress.org/themes/"><?php _e( 'Easy Theme System', 'wporg' ); ?></a></strong><br><?php _e( 'WordPress comes bundled with three default themes, but if they aren’t for you there’s a theme directory with thousands of themes for you to create a beautiful website. None of those to your taste? Upload your own theme with the click of a button. It only takes a few seconds for you to give your website a complete makeover.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/themes/">Easy Theme System</a></strong><br>WordPress comes bundled with three default themes, but if they aren’t for you there’s a theme directory with thousands of themes for you to create a beautiful website. None of those to your taste? Upload your own theme with the click of a button. It only takes a few seconds for you to give your website a complete makeover.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress.org/plugins/"><?php _e( 'Extend with Plugins', 'wporg' ); ?></a></strong><br><?php _e( 'WordPress comes packed with a lot of features for every user. For every feature that’s not in WordPress core, there’s a ', 'wporg' ); ?><a href="https://wordpress.org/plugins/"><?php _e( 'plugin directory', 'wporg' ); ?></a><?php _e( ' with thousands of plugins. Add complex galleries, social networking, forums, social media widgets, spam protection, calendars, fine-tune controls for search engine optimization, and forms.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/plugins/">Extend with Plugins</a></strong><br>WordPress comes packed with a lot of features for every user. For every feature that’s not in WordPress core, there’s a <a href="https://wordpress.org/plugins/">plugin directory</a> with thousands of plugins. Add complex galleries, social networking, forums, social media widgets, spam protection, calendars, fine-tune controls for search engine optimization, and forms.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress.org/documentation/article/comments-in-wordpress/"><?php _e( 'Built-in Comments', 'wporg' ); ?></a></strong><br><?php _e( 'Your blog is your home, and comments provide a space for your friends and followers to engage with your content. WordPress’s comment tools give you everything you need to be a forum for discussion and to moderate that discussion.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/documentation/article/comments-in-wordpress/">Built-in Comments</a></strong><br>Your blog is your home, and comments provide a space for your friends and followers to engage with your content. WordPress’s comment tools give you everything you need to be a forum for discussion and to moderate that discussion.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Search Engine Optimized', 'wporg' ); ?></strong><br><?php _e( 'WordPress is optimized for search engines right out of the box. For more fine-grained SEO control, there are plenty of ', 'wporg' ); ?><a href="https://wordpress.org/plugins/search/seo/"><?php _e( 'SEO plugins', 'wporg' ); ?></a><?php _e( ' to take care of that for you.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Search Engine Optimized</strong><br>WordPress is optimized for search engines right out of the box. For more fine-grained SEO control, there are plenty of <a href="https://wordpress.org/plugins/search/seo/">SEO plugins</a> to take care of that for you.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><a href="https://wordpress<?php _e( '.', 'wporg' ); ?>org/documentation/article/installing-wordpress-in-your-language/"><?php _e( 'Use WordPress in Your Language', 'wporg' ); ?></a></strong><br><?php _e( 'WordPress is available in more than 70 languages<?php _e( '.', 'wporg' ); ?> If you or the person you’re building the website for would prefer to use WordPress in a language other than English, ', 'wporg' ); ?><a href="https://make<?php _e( '.', 'wporg' ); ?>wordpress<?php _e( '.', 'wporg' ); ?>org/polyglots/teams/"><?php _e( 'that’s easy to do', 'wporg' ); ?></a><?php _e( '.', 'wporg' ); ?></li>
+<li><?php _e( '<strong><a href="https://wordpress.org/documentation/article/installing-wordpress-in-your-language/">Use WordPress in Your Language</a></strong><br>WordPress is available in more than 70 languages. If you or the person you’re building the website for would prefer to use WordPress in a language other than English, <a href="https://make.wordpress.org/polyglots/teams/">that’s easy to do</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Easy Installation and Upgrades', 'wporg' ); ?></strong><br><?php _e( 'WordPress has always been easy to install and upgrade. Plenty of web hosts offer one-click ', 'wporg' ); ?><a href="https://wordpress.org/documentation/article/automated-installation/"><?php _e( 'WordPress installers', 'wporg' ); ?></a><?php _e( ' that let you install WordPress with, well, just one click! Or, if you’re happy using an FTP program, you can create a database, upload WordPress using FTP, and run the installer.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Easy Installation and Upgrades</strong><br>WordPress has always been easy to install and upgrade. Plenty of web hosts offer one-click <a href="https://wordpress.org/documentation/article/automated-installation/">WordPress installers</a> that let you install WordPress with, well, just one click! Or, if you’re happy using an FTP program, you can create a database, upload WordPress using FTP, and run the installer.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Importers', 'wporg' ); ?></strong><br>Using blog or website software that you aren’t happy with? Running your blog on a hosted service that’s about to shut down? WordPress comes with <?php _e( 'Importers', 'wporg' ); ?> for Blogger, LiveJournal, Movable Type, TypePad, Tumblr, and WordPress<?php _e( '.', 'wporg' ); ?> If you’re ready to make the move, <a href="https://wordpress<?php _e( '.', 'wporg' ); ?>org/support/article/importing-content/"><?php _e( 'we’ve made it easy for you', 'wporg' ); ?></a><?php _e( '.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Importers</strong><br>Using blog or website software that you aren’t happy with? Running your blog on a hosted service that’s about to shut down? WordPress comes with importers for Blogger, LiveJournal, Movable Type, TypePad, Tumblr, and WordPress. If you’re ready to make the move, <a href="https://wordpress.org/support/article/importing-content/">we’ve made it easy for you</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Own Your Data', 'wporg' ); ?></strong><br>Hosted services come and go. If you’ve ever used a service that disappeared, you know how traumatic that can be. If you’ve ever seen adverts appear on your website, you’ve probably been pretty annoyed. Using WordPress means no one has access to your content. <?php _e( 'Own Your Data', 'wporg' ); ?>, all of it — your website, your content, your data.</li>
+<li><?php _e( '<strong>Own Your Data</strong><br>Hosted services come and go. If you’ve ever used a service that disappeared, you know how traumatic that can be. If you’ve ever seen adverts appear on your website, you’ve probably been pretty annoyed. Using WordPress means no one has access to your content. Own your data, all of it — your website, your content, your data.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Freedom', 'wporg' ); ?></strong><br>WordPress is licensed under the GPL which was created to protect your <?php _e( 'Freedom', 'wporg' ); ?>s. You are free to use WordPress in any way you choose: install it, use it, modify it, distribute it. Software <?php _e( 'Freedom', 'wporg' ); ?> is the foundation that WordPress is built on.</li>
+<li><?php _e( '<strong>Freedom</strong><br>WordPress is licensed under the GPL which was created to protect your freedoms. You are free to use WordPress in any way you choose: install it, use it, modify it, distribute it. Software freedom is the foundation that WordPress is built on.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Community', 'wporg' ); ?></strong><br>As the most popular open source CMS on the web, WordPress has a vibrant and supportive <?php _e( 'Community', 'wporg' ); ?>. Ask a question on the <a href="https://wordpress.org/support/forums/"><?php _e( 'support forums', 'wporg' ); ?></a><?php _e( ' and get help from a volunteer, attend a ', 'wporg' ); ?><a href="https://central.wordcamp.org/"><?php _e( 'WordCamp', 'wporg' ); ?></a> or Meetup to learn more about WordPress, read blogs posts and tutorials about WordPress. <?php _e( 'Community', 'wporg' ); ?> is at the heart of WordPress, making it what it is today.</li>
+<li><?php _e( '<strong>Community</strong><br>As the most popular open source CMS on the web, WordPress has a vibrant and supportive community. Ask a question on the <a href="https://wordpress.org/support/forums/">support forums</a> and get help from a volunteer, attend a <a href="https://central.wordcamp.org/">WordCamp</a> or Meetup to learn more about WordPress, read blogs posts and tutorials about WordPress. Community is at the heart of WordPress, making it what it is today.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Contribute', 'wporg' ); ?></strong><br><?php _e( 'You can be WordPress too<?php _e( '!', 'wporg' ); ?> Help to build WordPress, answer questions on the support forums, write documentation, translate WordPress into your language, speak at a WordCamp, write about WordPress on your blog. Whatever your skill, ', 'wporg' ); ?><a href="https://make.wordpress.org/"><?php _e( 'we’d love to have you', 'wporg' ); ?></a><?php _e( '!', 'wporg' ); ?><br></li>
+<li><?php _e( '<strong>Contribute</strong><br>You can be WordPress too! Help to build WordPress, answer questions on the support forums, write documentation, translate WordPress into your language, speak at a WordCamp, write about WordPress on your blog. Whatever your skill, <a href="https://make.wordpress.org/">we’d love to have you</a>!<br>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -117,19 +117,19 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><strong><?php _e( 'Plugin System', 'wporg' ); ?></strong><br><?php _e( 'The ', 'wporg' ); ?><a href="https://developer.wordpress.org/"><?php _e( 'WordPress APIs', 'wporg' ); ?></a> make it possible for you to create plugins to extend WordPress. WordPress’s extensibility lies in <?php _e( 'The ', 'wporg' ); ?>thousands of hooks at your disposal. Once you’ve created your plugin, we’ve even got a <a href="https://wordpress.org/plugins/"><?php _e( 'plugin repository', 'wporg' ); ?></a><?php _e( ' for you to host it on.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Plugin System</strong><br>The <a href="https://developer.wordpress.org/">WordPress APIs</a> make it possible for you to create plugins to extend WordPress. WordPress’s extensibility lies in the thousands of hooks at your disposal. Once you’ve created your plugin, we’ve even got a <a href="https://wordpress.org/plugins/">plugin repository</a> for you to host it on.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Theme System', 'wporg' ); ?></strong><br><?php _e( 'Create WordPress themes for clients, other WordPress users, or yourself<?php _e( '.', 'wporg' ); ?> WordPress provides the extensibility to ', 'wporg' ); ?><a href="https://developer<?php _e( '.', 'wporg' ); ?>wordpress<?php _e( '.', 'wporg' ); ?>org/themes/"><?php _e( 'create themes', 'wporg' ); ?></a><?php _e( ' as simple or as complex as you wish<?php _e( '.', 'wporg' ); ?> If you want to give your theme away for free you can give it to users in the ', 'wporg' ); ?><a href="https://wordpress<?php _e( '.', 'wporg' ); ?>org/themes/"><?php _e( 'theme repository', 'wporg' ); ?></a><?php _e( '.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Theme System</strong><br>Create WordPress themes for clients, other WordPress users, or yourself. WordPress provides the extensibility to <a href="https://developer.wordpress.org/themes/">create themes</a> as simple or as complex as you wish. If you want to give your theme away for free you can give it to users in the <a href="https://wordpress.org/themes/">theme repository</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Application Framework', 'wporg' ); ?></strong><br><?php _e( 'If you want to build an application, WordPress can help with that too. WordPress provides a lot of the features under the hood that your app will need: translations, user management, HTTP requests, databases, URL routing and much, much more. You can also use our ', 'wporg' ); ?><a href="https://developer.wordpress.org/rest-api/"><?php _e( 'REST API', 'wporg' ); ?></a><?php _e( ' to interact with it.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Application Framework</strong><br>If you want to build an application, WordPress can help with that too. WordPress provides a lot of the features under the hood that your app will need: translations, user management, HTTP requests, databases, URL routing and much, much more. You can also use our <a href="https://developer.wordpress.org/rest-api/">REST API</a> to interact with it.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong><?php _e( 'Custom Content Types'<?php _e( ', ', 'wporg' ); ?>'wporg' ); ?></strong><br><?php _e( 'WordPress comes with default content types<?php _e( ', ', 'wporg' ); ?>but for more flexibility you can add a few lines of code to create your own '<?php _e( ', ', 'wporg' ); ?>'wporg' ); ?><a href="https://developer.wordpress.org/plugins/post-types/"><?php _e( 'custom post types'<?php _e( ', ', 'wporg' ); ?>'wporg' ); ?></a><?php _e( ', ', 'wporg' ); ?><a href="https://developer.wordpress.org/plugins/taxonomies/"><?php _e( 'taxonomies', 'wporg' ); ?></a><?php _e( ', ', 'wporg' ); ?>and <a href="https://developer.wordpress.org/plugins/metadata/"><?php _e( 'metadata', 'wporg' ); ?></a><?php _e( '. Take WordPress in whatever direction you wish.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Custom Content Types</strong><br>WordPress comes with default content types, but for more flexibility you can add a few lines of code to create your own <a href="https://developer.wordpress.org/plugins/post-types/">custom post types</a>, <a href="https://developer.wordpress.org/plugins/taxonomies/">taxonomies</a>, and <a href="https://developer.wordpress.org/plugins/metadata/">metadata</a>. Take WordPress in whatever direction you wish.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->

@@ -471,15 +471,15 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li>WordPress News&nbsp;<a href="https://wordpress.org/news/"><?php _e( 'https://wordpress.org/news/', 'wporg' ); ?></a></li>
+<li><?php _e( 'WordPress News&nbsp;<a href="https://wordpress.org/news/">https://wordpress.org/news/</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>WordPress Security releases&nbsp;<a href="https://wordpress.org/news/category/security/"><?php _e( 'https://wordpress.org/news/category/security/', 'wporg' ); ?></a></li>
+<li><?php _e( 'WordPress Security releases&nbsp;<a href="https://wordpress.org/news/category/security/">https://wordpress.org/news/category/security/</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>WordPress Developer Resources&nbsp;<a href="https://developer.wordpress.org/"><?php _e( 'https://developer.wordpress.org/', 'wporg' ); ?></a></li>
+<li><?php _e( 'WordPress Developer Resources&nbsp;<a href="https://developer.wordpress.org/">https://developer.wordpress.org/</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
