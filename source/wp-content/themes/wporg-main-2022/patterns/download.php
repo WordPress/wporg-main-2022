@@ -131,19 +131,19 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
 <ul class="is-style-links-list"><!-- wp:list-item -->
-<li><a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/"><?php _e( 'WordPress courses ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://developer.wordpress.org/"><?php _e( 'Developer resources ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://developer.wordpress.org/">Developer resources ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/support/"><?php _e( 'WordPress support ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/support/">WordPress support ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/support/forum/installation/"><?php _e( 'User forums ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/support/forum/installation/">User forums ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
