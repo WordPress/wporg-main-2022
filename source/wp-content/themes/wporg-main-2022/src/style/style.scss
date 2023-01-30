@@ -213,6 +213,34 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-about-section-heading {
 		// move the section heading up to align with the top of the right column
 		margin-block-start: -10px !important;
+
+		.wporg-about-section-mission & {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 87px;
+				height: 41px;
+				top: 115%;
+				left: 2%;
+				background-image: url(../../images/about-mission-swirl.svg);
+			}
+		}
+
+		.wporg-about-section-freedoms & {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 315px;
+				height: 50px;
+				top: 84%;
+				left: 10%;
+				background-image: url(../../images/about-4-freedoms-underline.svg);
+			}
+		}
 	}
 
 	[class*="wporg-about-section-freedom-"] {
