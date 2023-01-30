@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Etiquette 2
- * Slug: wporg-main-2022/etiquette-2
+ * Slug: wporg-main-2022/etiquette
  * Inserter: no
  */
 

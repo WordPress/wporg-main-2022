@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Domains 2
- * Slug: wporg-main-2022/domains-2
+ * Slug: wporg-main-2022/domains
  * Inserter: no
  */
 

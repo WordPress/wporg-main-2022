@@ -8,77 +8,77 @@
 		"template": "page-download.html"
 	},
 	{
-		"slug": "about-2",
+		"slug": "about",
 		"pattern": "about.php",
 		"template": "page-about.html"
 	},
 	{
-		"slug": "requirements-2",
+		"slug": "requirements",
 		"pattern": "requirements.php",
 		"template": "page-requirements.html"
 	},
 	{
-		"slug": "features-2",
+		"slug": "features",
 		"pattern": "features.php",
 		"template": "page-features.html"
 	},
 	{
-		"slug": "security-2",
+		"slug": "security",
 		"pattern": "security.php",
 		"template": "page-security.html"
 	},
 	{
-		"slug": "roadmap-2",
+		"slug": "roadmap",
 		"pattern": "roadmap.php",
 		"template": "page-roadmap.html"
 	},
 	{
-		"slug": "history-2",
+		"slug": "history",
 		"pattern": "history.php",
 		"template": "page-history.html"
 	},
 	{
-		"slug": "domains-2",
+		"slug": "domains",
 		"pattern": "domains.php",
 		"template": "page-domains.html"
 	},
 	{
-		"slug": "license-2",
+		"slug": "license",
 		"pattern": "license.php",
 		"template": "page-license.html"
 	},
 	{
-		"slug": "accessibility-2",
+		"slug": "accessibility",
 		"pattern": "accessibility.php",
 		"template": "page-accessibility.html"
 	},
 	{
-		"slug": "privacy-2",
+		"slug": "privacy",
 		"pattern": "privacy.php",
 		"template": "page-privacy.html"
 	},
 	{
-		"slug": "stats-2",
+		"slug": "stats",
 		"pattern": "stats.php",
 		"template": "page-stats.html"
 	},
 	{
-		"slug": "philosophy-2",
+		"slug": "philosophy",
 		"pattern": "philosophy.php",
 		"template": "page-philosophy.html"
 	},
 	{
-		"slug": "etiquette-2",
+		"slug": "etiquette",
 		"pattern": "etiquette.php",
 		"template": "page-etiquette.html"
 	},
 	{
-		"slug": "swag-2",
+		"slug": "swag",
 		"pattern": "swag.php",
 		"template": "page-swag.html"
 	},
 	{
-		"slug": "logos-2",
+		"slug": "logos",
 		"pattern": "logos.php",
 		"template": "page-logos.html"
 	},

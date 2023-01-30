@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Roadmap 2
- * Slug: wporg-main-2022/roadmap-2
+ * Slug: wporg-main-2022/roadmap
  * Inserter: no
  */
 

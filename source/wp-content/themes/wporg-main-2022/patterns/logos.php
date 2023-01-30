@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Logos 2
- * Slug: wporg-main-2022/logos-2
+ * Slug: wporg-main-2022/logos
  * Inserter: no
  */
 
