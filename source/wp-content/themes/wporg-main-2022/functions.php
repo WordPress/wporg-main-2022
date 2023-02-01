@@ -20,6 +20,7 @@ require_once __DIR__ . '/src/release-tables/index.php';
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
+add_filter( 'wp_theme_json_data_user', __NAMESPACE__ . '\inject_theme_json' );
 
 // Enable embeds in patterns.
 // See https://github.com/WordPress/gutenberg/issues/46556.
@@ -128,3 +129,40 @@ add_action(
 		);
 	}
 );
+
+/**
+ * Filter the user data for global styles & settings to inject our local settings
+ * without overriding the parent theme.json properties.
+ *
+ * See https://github.com/WordPress/gutenberg/issues/40557
+ *
+ * @param WP_Theme_JSON_Data $theme_json Class to access and update the underlying data.
+ */
+function inject_theme_json( $theme_json ) {
+	// Get the combined settings from core + the theme, avoids infinite recursion.
+	$settings = \WP_Theme_JSON_Resolver::get_merged_data( 'theme' )->get_settings();
+
+	// Pull out the existing font families, and append the new font.
+	$font_families   = $settings['typography']['fontFamilies']['theme'];
+	$font_families[] = array(
+		'fontFamily' => "'Courier Prime', serif",
+		'slug'       => 'courier prime',
+		'name'       => 'Courier Prime',
+	);
+
+	// Settings array must be formatted like valid JSON object.
+	$new_settings = array(
+		'$schema'  => 'https://schemas.wp.org/trunk/theme.json',
+		'version'  => 2,
+		'settings' => array(
+			'typography' => array(
+				'fontFamilies' => $font_families,
+			),
+		),
+	);
+
+	// Merge the settings into the user JSON.
+	$theme_json->update_with( $new_settings );
+
+	return $theme_json;
+}
