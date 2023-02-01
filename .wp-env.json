@@ -25,18 +25,17 @@
 	],
 	"mappings": {
 		"env": "./env",
-		"wp-content": "./source/wp-content",
 		"wp-content/mu-plugins": "./source/wp-content/mu-plugins",
 		"wp-content/mu-plugins/0-sandbox.php": "./env/0-sandbox.php",
-		"wp-content/tests/phpunit": "./source/wp-content/tests/phpunit",
 		"wp-cli.yml": "./wp-cli.yml"
 	},
 	"env": {
 		"tests": {
+			"config": {
+				"WP_ENVIRONMENT_TYPE": false
+			},
 			"mappings": {
-				"wp-content": "./source/wp-content",
-				"wp-content/mu-plugins/0-sandbox.php": "./env/0-sandbox.php",
-				"wp-content/tests/phpunit": "./source/wp-content/tests/phpunit",
+				"wp-content/tests": "./source/wp-content/tests",
 				"vendor": "./vendor"
 			}
 		}
