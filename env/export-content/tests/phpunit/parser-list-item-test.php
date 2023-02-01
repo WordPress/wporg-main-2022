@@ -2,7 +2,10 @@
 
 defined( 'WPINC' ) || die();
 
-require_once __DIR__ . '../../parsers/ListItem.php';
+require_once dirname( dirname( __DIR__ ) ) . '/includes/parsers/BlockParser.php';
+require_once dirname( dirname( __DIR__ ) ) . '/includes/parsers/ListItem.php';
+
+use WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class Test_Parser_List_Item extends WP_UnitTestCase {
 
@@ -10,7 +13,7 @@ class Test_Parser_List_Item extends WP_UnitTestCase {
 	 * @covers WordPress_org\Main_2022\ExportToPatterns\Parsers\ListItem\replace_strings
 	 */
 	public function test_totp_setup_returns_expected_data() : void {
-		$parser       = new ListItem();
+		$parser       = new Parsers\ListItem();
 		$block        = array(
 			'blockName'    => 'core/list-item',
 			'innerHTML'    => '<li><a href="https://learn.wordpress.org/">Learn with WordPress ↗</a></li>',
