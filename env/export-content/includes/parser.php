@@ -6,6 +6,7 @@ require_once __DIR__ . '/parsers/BlockParser.php';
 require_once __DIR__ . '/parsers/BasicText.php';
 require_once __DIR__ . '/parsers/Button.php';
 require_once __DIR__ . '/parsers/Heading.php';
+require_once __DIR__ . '/parsers/ListItem.php';
 require_once __DIR__ . '/parsers/Noop.php';
 require_once __DIR__ . '/parsers/Paragraph.php';
 
@@ -21,10 +22,11 @@ class BlockParser {
 	public function __construct() {
 		$this->parsers = [
 			// Core blocks that have custom parsers.
-			'core/paragraph' => new Parsers\Paragraph(),
-			'core/heading'   => new Parsers\Heading(),
-			'core/button'    => new Parsers\Button(),
-			'core/spacer'    => new Parsers\Noop(),
+			'core/paragraph'   => new Parsers\Paragraph(),
+			'core/list-item'   => new Parsers\ListItem(),
+			'core/heading'     => new Parsers\Heading(),
+			'core/button'      => new Parsers\Button(),
+			'core/spacer'      => new Parsers\Noop(),
 
 			// Common core blocks that use the default parser.
 			'core/buttons'     => new Parsers\BasicText(),
