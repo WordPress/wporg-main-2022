@@ -8,7 +8,7 @@
 >
 	<testsuites>
 		<testsuite name="export-content">
-			<directory suffix="-test.php">../../../../env/export-content/tests/phpunit/</directory>
+			<directory suffix="-test.php">../../../env/export-content/tests/phpunit</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>

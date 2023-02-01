@@ -4,36 +4,17 @@
  */
 
 // Require composer dependencies.
-require_once '/var/www/html/vendor/autoload.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
-// If we're running in WP's build directory, ensure that WP knows that, too.
-if ( 'build' === getenv( 'LOCAL_DIR' ) ) {
-	define( 'WP_RUN_CORE_TESTS', true );
-}
-
-// Determine the tests directory (from a WP dev checkout).
-// Try the WP_TESTS_DIR environment variable first.
-$_tests_dir = getenv( 'WP_TESTS_DIR' );
-
-// Next, try the WP_PHPUNIT composer package.
-if ( ! $_tests_dir ) {
-	$_tests_dir = getenv( 'WP_PHPUNIT__DIR' );
-}
-
-// See if we're installed inside an existing WP dev instance.
-if ( ! $_tests_dir ) {
-	$_try_tests_dir = __DIR__ . '/../../../../../tests/phpunit';
-	if ( file_exists( $_try_tests_dir . '/includes/functions.php' ) ) {
-		$_tests_dir = $_try_tests_dir;
-	}
-}
-// Fallback.
-if ( ! $_tests_dir ) {
-	$_tests_dir = '/tmp/wordpress-tests-lib';
+// Detect where to load the WordPress tests environment from.
+if ( false !== getenv( 'WP_TESTS_DIR' ) ) {
+	$_test_root = getenv( 'WP_TESTS_DIR' );
+} else {
+	$_test_root = __DIR__ . '/../../../vendor/wp-phpunit/wp-phpunit';
 }
 
 // Give access to tests_add_filter() function.
-require_once $_tests_dir . '/includes/functions.php';
+require_once $_test_root . '/includes/functions.php';
 
 /**
  * Adds a wp_die handler for use during tests.
@@ -57,7 +38,7 @@ function fail_if_died( $message ) {
 tests_add_filter( 'wp_die_handler', 'fail_if_died' );
 
 // Start up the WP testing environment.
-require $_tests_dir . '/includes/bootstrap.php';
+require_once $_test_root . '/includes/bootstrap.php';
 
 // Use existing behavior for wp_die during actual test execution.
 remove_filter( 'wp_die_handler', 'fail_if_died' );
