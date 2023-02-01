@@ -1,7 +1,32 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
-	"settings": {},
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "'Courier Prime', serif",
+					"slug": "courier prime",
+					"name": "Courier Prime"
+				},
+				{
+					"fontFamily": "'EB Garamond', serif",
+					"slug": "eb-garamond",
+					"name": "EB Garamond"
+				},
+				{
+					"fontFamily": "'Inter', sans-serif",
+					"slug": "inter",
+					"name": "Inter"
+				},
+				{
+					"fontFamily": "'IBM Plex Mono', monospace",
+					"slug": "monospace",
+					"name": "Monospace"
+				}
+			]
+		}
+	},
 	"styles": {
 		"blocks": {
 			"wporg/download-counter": {
