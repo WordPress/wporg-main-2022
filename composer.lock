@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc668c35d44dec32c81c5dce68077a4",
+    "content-hash": "652c9baa4366ca13314c13344b96f9cc",
     "packages": [],
     "packages-dev": [
         {
@@ -2274,12 +2274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "7d2ffaabca7d6c90c74190b09c23b76aa70ece58"
+                "reference": "2097028ce55d25b166ca8a234b0058359456ed7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/7d2ffaabca7d6c90c74190b09c23b76aa70ece58",
-                "reference": "7d2ffaabca7d6c90c74190b09c23b76aa70ece58",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/2097028ce55d25b166ca8a234b0058359456ed7b",
+                "reference": "2097028ce55d25b166ca8a234b0058359456ed7b",
                 "shasum": ""
             },
             "require-dev": {
@@ -2317,7 +2317,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2023-01-25T23:19:09+00:00"
+            "time": "2023-02-01T02:41:04+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2369,6 +2369,67 @@
                 "source": "https://github.com/WordPress/wporg-repo-tools/tree/trunk"
             },
             "time": "2022-11-16T17:56:26+00:00"
+        },
+        {
+            "name": "yoast/phpunit-polyfills",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/PHPUnit-Polyfills.git",
+                "reference": "3c621ff5429d2b1ff96dc5808ad6cde99d31ea4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/PHPUnit-Polyfills/zipball/3c621ff5429d2b1ff96dc5808ad6cde99d31ea4c",
+                "reference": "3c621ff5429d2b1ff96dc5808ad6cde99d31ea4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "require-dev": {
+                "yoast/yoastcs": "^2.2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev",
+                    "dev-develop": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "phpunitpolyfills-autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/Yoast/PHPUnit-Polyfills/graphs/contributors"
+                }
+            ],
+            "description": "Set of polyfills for changed PHPUnit functionality to allow for creating PHPUnit cross-version compatible tests",
+            "homepage": "https://github.com/Yoast/PHPUnit-Polyfills",
+            "keywords": [
+                "phpunit",
+                "polyfill",
+                "testing"
+            ],
+            "support": {
+                "issues": "https://github.com/Yoast/PHPUnit-Polyfills/issues",
+                "source": "https://github.com/Yoast/PHPUnit-Polyfills"
+            },
+            "time": "2022-11-16T09:07:52+00:00"
         }
     ],
     "aliases": [],
