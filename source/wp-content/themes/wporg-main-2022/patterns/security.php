@@ -25,10 +25,6 @@
 <p><?php _e( 'Learn more about WordPress core software security in this free white paper. You can also download it in&nbsp;<a href="https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true">PDF format</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"align":"center","sizeSlug":"large"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="https://s.w.org/about/images/logos/wordpress-logo-stacked-rgb.png" alt="" /></figure>
-<!-- /wp:image -->
-
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'Overview', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
@@ -123,8 +119,8 @@
 <p><?php _e( 'A release cycle follows the following pattern<sup id="ref2"><a href="#footnote2">2</a></sup>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-list-long-items"} -->
+<ul class="is-style-list-long-items"><!-- wp:list-item -->
 <li><?php _e( 'Phase 1: Planning and securing team leads. This is done in the #core chat room on Slack. The release lead discusses features for the next release of WordPress. WordPress contributors get involved with that discussion. The release lead will identify team leads for each of the features.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
