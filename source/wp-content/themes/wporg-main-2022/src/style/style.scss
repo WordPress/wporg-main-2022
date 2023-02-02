@@ -176,14 +176,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	}
 }
 
-.wporg-about-cover-intro {
-	[dir="rtl"] & {
-		p {
-			text-align: left;
-		}
-	}
-}
-
 .wporg-about-section-freedoms {
 	--wp--preset--spacing--50: clamp(20px, calc(100vw / 16), 70px);
 }
@@ -197,7 +189,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	position: relative;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
 	.wporg-about-cover-title {
 		// move the intro text up to align with the bottom of the title
 		margin-block-end:
@@ -272,6 +264,14 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	}
 }
 
+@media (max-width: 1280px) {
+	.wporg-about-cover-intro {
+		text-align: right;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
 @media (max-width: 1199px) {
 
 	/* Adjust spacing & font size of feature list items */
@@ -282,11 +282,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	#intro .wp-block-columns {
 		display: block;
-	}
-
-	.wporg-about-cover-intro {
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
 	}
 }
 
@@ -347,6 +342,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		}
 	}
 
+	.wporg-about-cover-intro {
+		margin-block-start: 20px !important;
+	}
+
 	.wporg-about-section-heading {
 		line-height: 1.1 !important;
 	}
@@ -403,10 +402,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	.wporg-enterprise-get-wordpress .wp-block-heading.is-style-with-arrow {
 		font-size: 52px !important;
-	}
-
-	.wporg-about-cover-intro {
-		margin-block-start: 20px !important;
 	}
 }
 

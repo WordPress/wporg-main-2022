@@ -16,9 +16,17 @@
 <h1 class="wp-block-heading alignfull has-text-align-right wporg-about-cover-title has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:1.2"><?php _e( '<span>democratize</span><span>publishing</span>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"right","style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"courier prime"} -->
-<p class="has-text-align-right wporg-about-cover-intro has-courier-prime-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to share.</span>', 'wporg' ); ?></p>
+<!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"margin":{"top":"0"}}}} -->
+<div class="wp-block-columns alignfull" style="margin-top:0"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"60%"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"courier prime"} -->
+<p class="wporg-about-cover-intro has-courier-prime-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to&nbsp;share.</span>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -55,8 +63,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"60%","fontFamily":"courier prime"} -->
-<div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier prime"} -->
-<h3 class="wp-block-heading is-style-serif has-courier-prime-font-family has-normal-font-size" style="line-height:1.9"><?php _e( 'WordPress is designed for everyone.', 'wporg' ); ?></h3>
+<div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9},"spacing":{"margin":{"top":"0"}}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier prime"} -->
+<h3 class="wp-block-heading is-style-serif has-courier-prime-font-family has-normal-font-size" style="margin-top:0;line-height:1.9"><?php _e( 'WordPress is designed for everyone.', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
