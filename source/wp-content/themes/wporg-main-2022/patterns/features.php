@@ -6,8 +6,8 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60","top":"16px","bottom":"16px"}}},"backgroundColor":"white","className":"is-sticky","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-sticky has-white-background-color has-background" style="padding-top:16px;padding-right:var(--wp--preset--spacing--60);padding-bottom:16px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"layout":{"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60","top":"16px","bottom":"16px"}}},"backgroundColor":"white","className":"is-sticky"} -->
+<div class="wp-block-group alignfull is-sticky has-white-background-color has-background" style="padding-top:16px;padding-right:var(--wp--preset--spacing--60);padding-bottom:16px;padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"align":"full"} -->
 <div class="wp-block-group alignfull"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="font-style:normal;font-weight:700"><?php _e( 'About', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
@@ -16,8 +16,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"fontSize":"heading-2"} -->
+<!-- wp:group {"layout":{"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"className":"wp-block-heading","fontSize":"heading-2"} -->
 <h1 class="wp-block-heading has-heading-2-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Features', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
@@ -33,8 +33,8 @@
 <p><?php _e( 'Here are some of the features that we think that you’ll love.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-list-long-items"} -->
+<ul class="is-style-list-long-items"><!-- wp:list-item -->
 <li><?php _e( '<strong>Simplicity</strong><br>Simplicity makes it possible for you to get online and get publishing, quickly. Nothing should get in the way of you getting your website up and your content out there. WordPress is built to make that happen.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -107,7 +107,7 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
-<!-- wp:heading -->
+<!-- wp:heading {"className":"wp-block-heading"} -->
 <h2 class="wp-block-heading"><?php _e( 'Developer Features', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -115,8 +115,8 @@
 <p><?php _e( 'For developers, we’ve got lots of goodies packed under the hood that you can use to extend WordPress in whatever direction takes your fancy.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-list-long-items"} -->
+<ul class="is-style-list-long-items"><!-- wp:list-item -->
 <li><?php _e( '<strong>Plugin System</strong><br>The <a href="https://developer.wordpress.org/">WordPress APIs</a> make it possible for you to create plugins to extend WordPress. WordPress’s extensibility lies in the thousands of hooks at your disposal. Once you’ve created your plugin, we’ve even got a <a href="https://wordpress.org/plugins/">plugin repository</a> for you to host it on.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
