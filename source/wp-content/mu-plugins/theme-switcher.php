@@ -53,6 +53,11 @@ function should_use_new_theme() {
 		'/mobile/',
 		'/enterprise/',
 		'/about-2/',
+		'/about-2/requirements-2/',
+		'/about-2/features-2/',
+		'/about-2/security-2/',
+		'/about-2/roadmap-2/',
+		'/about-2/history-2/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;
