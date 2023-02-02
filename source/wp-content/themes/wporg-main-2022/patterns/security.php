@@ -25,10 +25,6 @@
 <p><?php _e( 'Learn more about WordPress core software security in this free white paper. You can also download it in&nbsp;<a href="https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true">PDF format</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"align":"center","sizeSlug":"large"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="https://s.w.org/about/images/logos/wordpress-logo-stacked-rgb.png" alt="" /></figure>
-<!-- /wp:image -->
-
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'Overview', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
