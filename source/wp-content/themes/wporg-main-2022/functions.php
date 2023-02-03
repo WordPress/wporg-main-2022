@@ -68,6 +68,21 @@ function enqueue_assets() {
 		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
 	}
 
+	if ( is_page( 'stats-2' ) ) {
+		// phpcs:ignore WordPress.WP.EnqueuedResourceParameters
+		wp_enqueue_script( 'google-charts', 'https://www.gstatic.com/charts/loader.js', [], null, true );
+		wp_enqueue_script( 'wporg-page-stats', get_theme_file_uri( '/js/page-stats.js' ), [ 'jquery', 'google-charts' ], filemtime( __DIR__ . '/js/page-stats.js' ), true );
+		wp_localize_script(
+			'wporg-page-stats',
+			'wporgPageStats',
+			[
+				'trunk'       => number_format( WP_CORE_STABLE_BRANCH + 0.1, 1 ), /* trunk */
+				'viewAsChart' => __( 'View as Chart', 'wporg' ),
+				'viewAsTable' => __( 'View as Table', 'wporg' ),
+			]
+		);
+	}
+
 	// Preload the heading font(s).
 	if ( is_callable( 'global_fonts_preload' ) ) {
 		/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
