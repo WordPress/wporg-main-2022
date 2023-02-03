@@ -1,9 +1,10 @@
-/* global wporgPageStats */
+/* global jQuery */
+// eslint-disable-next-line id-length
 ( function ( $, google, i18n ) {
 	google.charts.load( '44', { packages: [ 'corechart', 'table' ] } );
 	google.charts.setOnLoadCallback( drawCharts );
 
-	var charts = {
+	const charts = {
 		wp_versions: {
 			id: 'wp_versions',
 			colName: 'Version',
@@ -13,7 +14,7 @@
 			data: false,
 			dataTransform: function ( data ) {
 				// Remove trunk from display.
-				for ( var version in data ) {
+				for ( const version in data ) {
 					if ( parseFloat( version ) >= parseFloat( i18n.trunk ) ) {
 						delete data[ version ];
 					}
@@ -54,18 +55,18 @@
 	};
 
 	function drawCharts() {
-		for ( var chartId in charts ) {
+		for ( const chartId in charts ) {
 			drawChart( charts[ chartId ] );
 		}
 	}
 
-	jQuery( document ).on( 'click', 'a.swap-table', function ( e ) {
-		e.preventDefault();
-		var $this = $( this ),
-			chartId = $this.parents( 'section' ).find( '.wporg-stats-chart' ).attr( 'id' ),
+	jQuery( document ).on( 'click', 'a.swap-table', function ( event ) {
+		event.preventDefault();
+		const $this = $( this ),
+			chartId = $this.parents( '.wporg-about-stats-section' ).find( '.wporg-stats-chart' ).attr( 'id' ),
 			chart = charts[ chartId ];
 
-		if ( 'Table' == chart.type ) {
+		if ( 'Table' === chart.type ) {
 			chart.type = chart.originalType;
 			$this.prop( 'title', i18n.viewAsTable );
 			$this.toggleClass( 'dashicons-chart-pie' );
@@ -90,19 +91,19 @@
 
 			jQuery.get( {
 				url: chart.url,
-				success: ( function ( chart ) {
+				success: ( function () {
 					return function ( data ) {
 						chart.data = data;
 						chart.loading = false;
 						drawChart( chart );
 					};
-				} )( chart ),
+				} )(),
 			} );
 			return;
 		}
 
-		data = chart.data;
-		if ( 'undefined' != typeof chart.dataTransform ) {
+		let data = chart.data;
+		if ( 'undefined' !== typeof chart.dataTransform ) {
 			data = chart.dataTransform( data );
 		}
 
@@ -110,15 +111,12 @@
 	}
 
 	function drawGraph( data, id, colName, sort, chartType ) {
-		var tableData = [],
-			others = null,
-			chart,
-			chartData,
-			chartOptions;
+		const tableData = [];
+		let others = null;
 
 		chartType = chartType || 'PieChart';
 
-		for ( var type in data ) {
+		for ( const type in data ) {
 			if ( 'Others' === type ) {
 				// Make sure "Others" is always the last element.
 				others = [ type, Number( data[ type ] ) ];
@@ -146,10 +144,10 @@
 			{ label: 'Usage', type: 'number' },
 		] );
 
-		chartData = google.visualization.arrayToDataTable( tableData );
+		const chartData = google.visualization.arrayToDataTable( tableData );
 
 		// All charts are percentages.
-		var formatter = new google.visualization.NumberFormat( {
+		const formatter = new google.visualization.NumberFormat( {
 			suffix: '%',
 			fractionDigits: 2,
 		} );
@@ -157,7 +155,7 @@
 		// Apply formatter to second column
 		formatter.format( chartData, 1 );
 
-		chartOptions = {
+		const chartOptions = {
 			colors: [
 				'#f9a87e',
 				'#00b9eb',
@@ -241,8 +239,8 @@
 			},
 		};
 
-		var $el = $( '#' + id ).removeClass( 'loading' );
-		chart = new google.visualization.ChartWrapper( {
+		const $el = $( '#' + id ).removeClass( 'loading' );
+		const chart = new google.visualization.ChartWrapper( {
 			container: $el[ 0 ],
 			dataTable: chartData,
 		} );
