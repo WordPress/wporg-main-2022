@@ -24,7 +24,7 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 	// Extra permissions check for designers when changing a page.
 	// Note: this is specific to the post edit API route. It won't affect other methods of updating a page, such as other endpoints or direct PHP calls.
 	// It's probably sufficient for the purpose of this plugin, which is a safety measure, not a security check.
-	$user = get_current_user();
+	$user = wp_get_current_user();
 	if ( $user && in_array( 'designer', $user->roles ) ) {
 		if ( 'PUT' === $request->get_method() && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
 			if ( 'page' === get_post_type( $request->get_param( 'id' ) ) ) {
