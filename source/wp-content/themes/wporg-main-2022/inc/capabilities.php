@@ -24,7 +24,8 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 	// Extra permissions check for designers when changing a page.
 	// Note: this is specific to the post edit API route. It won't affect other methods of updating a page, such as other endpoints or direct PHP calls.
 	// It's probably sufficient for the purpose of this plugin, which is a safety measure, not a security check.
-	if ( current_user_can( 'designer' ) ) {
+	$user = get_current_user();
+	if ( $user && in_array( 'designer', $user->roles ) ) {
 		if ( 'PUT' === $request->get_method() && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
 			if ( 'page' === get_post_type( $request->get_param( 'id' ) ) ) {
 				$page = get_post( $request->get_param( 'id' ) );
@@ -85,7 +86,8 @@ function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
 	if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
 		// Special safety limits for Designer role when editing pages
 		// phpcs:disable WordPress.Security.NonceVerification.Missing
-		if ( user_can( $user_id, 'designer' ) ) {
+		$user = get_user_by( 'id', $user_id );
+		if ( $user && in_array( 'designer', $user->roles ) ) {
 			if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD']
 				&& isset( $_POST['action'] ) && 'inline-save' === $_POST['action']
 				&& isset( $_POST['post_type'] ) && 'page' === $_POST['post_type'] ) {
