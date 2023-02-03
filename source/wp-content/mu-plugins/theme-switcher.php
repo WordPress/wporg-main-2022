@@ -58,6 +58,16 @@ function should_use_new_theme() {
 		'/about-2/security-2/',
 		'/about-2/roadmap-2/',
 		'/about-2/history-2/',
+		'/about-2/domains-2/',
+		'/about-2/license-2/',
+		'/about-2/accessibility-2/',
+		'/about-2/privacy-2/',
+		'/about-2/stats-2/',
+		'/about-2/philosophy-2/',
+		'/about-2/etiquette-2/',
+		'/about-2/swag-2/',
+		'/about-2/logos-2/',
+		'/about-2/testimonials-2/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;
