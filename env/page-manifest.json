@@ -83,11 +83,6 @@
 		"template": "page-logos.html"
 	},
 	{
-		"slug": "testimonials-2",
-		"pattern": "testimonials.php",
-		"template": "page-testimonials.html"
-	},
-	{
 		"slug": "enterprise",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
