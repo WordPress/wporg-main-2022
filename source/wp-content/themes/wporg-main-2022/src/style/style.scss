@@ -220,6 +220,10 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	position: relative;
 }
 
+.wporg-about-stats-section .swap-table {
+	vertical-align: unset;
+}
+
 @media (min-width: 1281px) {
 	.wporg-about-cover-title {
 		// move the intro text up to align with the bottom of the title
