@@ -42,7 +42,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress open source project has evolved in progressive ways over time — supported by skilled, enthusiastic developers, designers, scientists, bloggers, and more. WordPress provides the opportunity for anyone to create and share, from handcrafted personal anecdotes to world-changing movements.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress open source project has evolved in progressive ways over time—supported by skilled, enthusiastic developers, designers, scientists, bloggers, and more. WordPress provides the opportunity for anyone to create and share, from handcrafted personal anecdotes to world-changing movements.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -82,7 +82,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Our contributors’ passion drives the success of WordPress which, in turn, helps you reach your goals. WordPress contributors work around the globe, and have dedicated countless hours to build a tool that democratizes publishing.', 'wporg' ); ?></p>
+<p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Our contributors’ passion drives the success of WordPress which, in turn, helps you reach your goals. WordPress contributors work around the globe, and have dedicated countless hours to build a tool that offers anyone a voice.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -100,7 +100,7 @@
 
 <!-- wp:column {"width":"60%","fontFamily":"courier prime"} -->
 <div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:paragraph -->
-<p><?php _e( 'WordPress is licensed under the <a rel="noreferrer noopener" href="https://wordpress.org/about/license/" target="_blank">General Public License</a> (GPLv2 or later) which provides four core freedoms, known as the WordPress Bill of Rights:', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is licensed under the <a rel="noreferrer noopener" href="https://wordpress.org/about/license/" target="_blank">General Public License</a> (GPLv2 or later) which provides four core freedoms:', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -164,7 +164,7 @@
 
 <!-- wp:column {"verticalAlignment":"top","width":"60%","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"fontFamily":"courier prime"} -->
 <div class="wp-block-column is-vertically-aligned-top has-courier-prime-font-family" style="padding-top:var(--wp--preset--spacing--40);flex-basis:60%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|10"}},"typography":{"lineHeight":"1.6"}}} -->
-<p style="margin-top:var(--wp--preset--spacing--10);line-height:1.6"><?php _e( 'The freedom to distribute copies of your modified versions to other.', 'wporg' ); ?></p>
+<p style="margin-top:var(--wp--preset--spacing--10);line-height:1.6"><?php _e( 'The freedom to distribute copies of your modified versions to others.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -210,7 +210,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier prime"} -->
-<p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'There’s so much in the details. Stay abreast with the particulars.', 'wporg' ); ?></p>
+<p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Dive into the background details, like the GPL and other policies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"className":"is-style-links-list","fontSize":"normal"} -->
@@ -242,7 +242,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier prime"} -->
-<p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about the community and how we get along.', 'wporg' ); ?></p>
+<p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about the community, how we get along and show our pride.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"className":"is-style-links-list","fontSize":"normal"} -->
