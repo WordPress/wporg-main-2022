@@ -101,11 +101,57 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 [class*="wporg-about-section-"][style*="padding-top"] {
 	--wp--preset--spacing--60: clamp(60px, calc(100vw / 18), 80px);
+
+	&.wporg-about-section-cover {
+		--wp--preset--spacing--60: clamp(20px, calc(100vw / 18), 80px);
+	}
 }
 
 .wporg-about-cover-title > span,
 .wporg-about-section-heading {
-	font-size: clamp(3.25rem, 5.3vw + 1.3rem, 5.625rem) !important;
+	// fluid font-size based on screen width: clamp(52px below 600px, preferred value, 125px above 1920px)
+	font-size: clamp(3.25rem, 5.53vw + 1.18rem, 7.813rem) !important;
+	display: inline-block;
+}
+
+.wporg-about-section-heading {
+	position: relative;
+
+	&::after {
+		display: block;
+	}
+
+	.wporg-about-section-mission & {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 100%;
+			min-height: 31px;
+			width: 19%;
+			min-width: 66px;
+			margin-top: var(--wp--preset--spacing--10);
+			left: 2%;
+			background-image: url(../../images/about-mission-swirl.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.wporg-about-section-freedoms & {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 100%;
+			min-height: 36px;
+			width: 38.5%;
+			min-width: 227px;
+			top: 84%;
+			left: 10%;
+			background-image: url(../../images/about-4-freedoms-underline.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
 }
 
 .wporg-about-cover-pretext {
@@ -114,6 +160,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	&::after {
 		content: "";
 		position: absolute;
+		display: block;
 		left: -5px;
 		top: 26px;
 		width: 134px;
@@ -131,32 +178,16 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 }
 
 .wporg-about-cover-title {
-	$text-row-height: clamp(3.5rem, 7.2vw + 0.8rem, 6.75rem);
+	// fluid height based on screen width:
+	// clamp(122px high below 600px wide, preferred value, 242px high above 1920px wide)
+	$arrow-height: clamp(7.625rem, 9.09vw + 4.22rem, 15.125rem);
 
-	position: relative;
 	display: grid;
-	grid-template-rows: $text-row-height clamp(8.75rem, 5.5vw + 6.7rem, 11.25rem) $text-row-height;
-	width: 100%;
-
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-image: url(../../images/about-cover-arrow.svg);
-		background-size: clamp(16rem, 12.8vw + 11.21rem, 21.75rem);
-		background-repeat: no-repeat;
-		background-position: 42% center;
-	}
-
-	@media (max-width: 599px) {
-		grid-template-rows: $text-row-height 180px $text-row-height;
-
-		&::after {
-			background-position: 72% 55%;
-			transform: rotate(-11.07deg);
-		}
-	}
+	grid-template-rows: auto $arrow-height auto;
+	background-image: url(../../images/about-cover-arrow.svg);
+	background-size: auto $arrow-height;
+	background-repeat: no-repeat;
+	background-position: 42% center;
 
 	> span:last-child {
 		grid-row: 3;
@@ -205,34 +236,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-about-section-heading {
 		// move the section heading up to align with the top of the right column
 		margin-block-start: -10px !important;
-
-		.wporg-about-section-mission & {
-			position: relative;
-
-			&::after {
-				content: "";
-				position: absolute;
-				width: 87px;
-				height: 41px;
-				top: 115%;
-				left: 2%;
-				background-image: url(../../images/about-mission-swirl.svg);
-			}
-		}
-
-		.wporg-about-section-freedoms & {
-			position: relative;
-
-			&::after {
-				content: "";
-				position: absolute;
-				width: 315px;
-				height: 50px;
-				top: 84%;
-				left: 10%;
-				background-image: url(../../images/about-4-freedoms-underline.svg);
-			}
-		}
 	}
 
 	[class*="wporg-about-section-freedom-"] {
@@ -348,6 +351,13 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	.wporg-about-section-heading {
 		line-height: 1.1 !important;
+
+		.wporg-about-section-mission & {
+			&::after {
+				position: relative;
+				margin: var(--wp--preset--spacing--20) 0 var(--wp--preset--spacing--10);
+			}
+		}
 	}
 
 	[class*="wporg-about-section-freedom-"] {
@@ -356,10 +366,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 		h3 {
 			font-size: 120px !important;
-		}
-
-		p {
-			margin-top: 0 !important;
+			margin-bottom: var(--wp--preset--spacing--30);
 		}
 	}
 
@@ -403,8 +410,22 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	.wporg-enterprise-get-wordpress .wp-block-heading.is-style-with-arrow {
 		font-size: 52px !important;
 	}
+
+	.wporg-about-cover-title {
+		background-position: 95% center;
+	}
 }
 
+@media (max-width: 419px) {
+	.wporg-about-section-heading {
+		.wporg-about-section-freedoms & {
+			&::after {
+				top: 34%;
+				left: 16%;
+			}
+		}
+	}
+}
 
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
