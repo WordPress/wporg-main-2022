@@ -1,7 +1,17 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
-	"settings": {},
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "'Courier Prime', serif",
+					"slug": "courier-prime",
+					"name": "Courier Prime"
+				}
+			]
+		}
+	},
 	"styles": {
 		"blocks": {
 			"wporg/download-counter": {
