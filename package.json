@@ -25,7 +25,7 @@
 		"build:patterns": "./env/build-patterns.sh",
 		"build:theme": "yarn workspace wporg-main-2022-theme build",
 		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
-		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 && composer run lint source/wp-content/mu-plugins/theme-switcher.php && composer run lint env",
+		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
 		"start:theme": "yarn workspace wporg-main-2022-theme start"
 	},
 	"workspaces": [
