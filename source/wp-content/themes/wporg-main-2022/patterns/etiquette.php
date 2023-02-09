@@ -45,13 +45,5 @@
 <!-- wp:list-item -->
 <li><?php _e( 'The WordPress open source community cares about diversity. We strive to maintain a welcoming environment where everyone can feel included, by keeping communication free of discrimination, incitement to violence, promotion of hate, and unwelcoming behavior.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'There is a project currently underway to create a project-wide code of conduct so that we can ensure the safety of our contributors.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'Meetings are conducted in the&nbsp;<a href="https://wordpress.slack.com/messages/community-team">#community-team Slack channel</a>, and minutes published on the&nbsp;<a href="https://make.wordpress.org/community/tag/ccoc/">Make Community blog</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:list --></div>
 <!-- /wp:group -->

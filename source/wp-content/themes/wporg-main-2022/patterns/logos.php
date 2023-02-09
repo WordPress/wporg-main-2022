@@ -22,11 +22,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Official WordPress Logo', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Official WordPress logo', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'When you need the official WordPress logo for a web site or publication, please use one of the following. Please only use logos in accordance with the <a href="http://wordpressfoundation.org/trademark-policy/">WordPress trademark policy</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'When you need the official WordPress logo for a web site or publication, please use one of the following. Please only use logos in accordance with the&nbsp;<a href="http://wordpressfoundation.org/trademark-policy/">WordPress trademark&nbsp;policy</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -182,7 +182,7 @@
 <!-- /wp:columns -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Fight the Fake Logo (Fauxgo)', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Fight the fake logo (fauxgo)', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Out of the Box', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Out of the box', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -34,7 +34,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Design for the Majority', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Design for the majority', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -42,7 +42,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Decisions, not Options', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Decisions, not options', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -50,7 +50,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Clean, Lean, and Mean', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Clean, lean, and mean', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -62,7 +62,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Striving for Simplicity', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Striving for simplicity', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -78,7 +78,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Deadlines Are Not Arbitrary', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Deadlines are not arbitrary', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -98,7 +98,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'The Vocal Minority', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'The vocal minority', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -110,7 +110,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Our Bill of Rights', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Our bill of rights', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

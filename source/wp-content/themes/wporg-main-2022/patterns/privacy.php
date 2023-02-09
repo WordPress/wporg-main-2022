@@ -18,7 +18,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"fontSize":"heading-2"} -->
-<h1 class="wp-block-heading has-heading-2-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Privacy Policy', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading has-heading-2-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Privacy policy', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -26,7 +26,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Website Visitors', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Website visitors', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -38,7 +38,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Gathering of Personally-Identifying Information', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Gathering of personally-identifying information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -54,7 +54,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Protection of Certain Personally-Identifying Information', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Protection of certain personally-identifying information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -248,7 +248,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Third Party Links', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Third party links', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -256,7 +256,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Aggregated Statistics', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Aggregated statistics', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -276,7 +276,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Privacy Policy Changes', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Privacy policy changes', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

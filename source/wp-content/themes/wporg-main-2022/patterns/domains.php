@@ -38,10 +38,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>&lt;whine&gt;Other domains are using WordPress in them!&lt;/whine&gt;</strong>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'If they’re not WordPress.com, WordPress.net, WordPress.org, WordPress.tv, or WordPressFoundation.org, they’re not allowed, and you should contact the owner with a pointer to this page. We see this most frequently with spammy sites distributing plugins and themes with malware in them, which you probably don’t want to be associated with.', 'wporg' ); ?></p>
+<p><?php _e( 'If you’re seeing other domains using WordPress, and they’re not WordPress.com, WordPress.net, WordPress.org, WordPress.tv, or WordPressFoundation.org, they’re not allowed. You should contact the owner and reference this page. We see this most frequently with spammy sites distributing plugins and themes with malware in them. By calling them out, you’re helping protect the integrity of the project.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
