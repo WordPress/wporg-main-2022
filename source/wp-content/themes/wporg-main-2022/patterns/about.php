@@ -7,7 +7,7 @@
 
 ?>
 <!-- wp:group {"align":"full","style":{"color":{"background":"#f0ede7"},"border":{"bottom":{"color":"var:preset|color|charcoal-1","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"className":"wporg-about-section-cover","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull wporg-about-section-cover has-background" style="border-bottom-color:var(--wp--preset--color--charcoal-1);border-bottom-width:1px;background-color:#f0ede7;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"className":"wporg-about-cover-pretext","fontFamily":"courier prime"} -->
+<div class="wp-block-group alignfull wporg-about-section-cover has-background" style="border-bottom-color:var(--wp--preset--color--charcoal-1);border-bottom-width:1px;background-color:#f0ede7;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"className":"wporg-about-cover-pretext","fontFamily":"courier-prime"} -->
 <p class="wporg-about-cover-pretext has-courier-prime-font-family" style="font-style:normal;font-weight:700"><?php _e( 'our mission:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -21,7 +21,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"courier prime"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"courier-prime"} -->
 <p class="wporg-about-cover-intro has-courier-prime-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to&nbsp;share.</span>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -36,7 +36,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"60%","textColor":"charcoal-1","fontFamily":"courier prime"} -->
+<!-- wp:column {"width":"60%","textColor":"charcoal-1","fontFamily":"courier-prime"} -->
 <div class="wp-block-column has-charcoal-1-color has-text-color has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:paragraph -->
 <p><?php _e( 'WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of <a href="https://cafelog.com/" target="_blank" rel="noreferrer noopener">b2/cafelog</a>. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
@@ -60,8 +60,8 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"60%","fontFamily":"courier prime"} -->
-<div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9},"spacing":{"margin":{"top":"0"}}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier prime"} -->
+<!-- wp:column {"width":"60%","fontFamily":"courier-prime"} -->
+<div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9},"spacing":{"margin":{"top":"0"}}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h3 class="wp-block-heading is-style-serif has-courier-prime-font-family has-normal-font-size" style="margin-top:0;line-height:1.9"><?php _e( 'WordPress is designed for everyone.', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
@@ -69,7 +69,7 @@
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'We believe great software should work with minimum set up, emphasizing accessibility, performance, security, and ease of use. The basic WordPress software is simple and predictable, offering powerful features for growth and success.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier prime"} -->
+<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h3 class="wp-block-heading is-style-serif has-courier-prime-font-family has-normal-font-size" style="line-height:1.9"><?php _e( 'WordPress is open source software.', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
@@ -77,7 +77,7 @@
 <p style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><?php _e( 'Supporting the idea of democratizing publishing and the freedoms that come with open source, is a large community of people collaborating on and contributing to this project.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier prime"} -->
+<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":1.9}},"className":"wp-block-heading is-style-serif","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h3 class="wp-block-heading is-style-serif has-courier-prime-font-family has-normal-font-size" style="line-height:1.9"><?php _e( 'WordPress is welcoming and inclusive.', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
@@ -98,7 +98,7 @@
 <div class="wp-block-column" style="flex-basis:40%"></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"60%","fontFamily":"courier prime"} -->
+<!-- wp:column {"width":"60%","fontFamily":"courier-prime"} -->
 <div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:paragraph -->
 <p><?php _e( 'WordPress is licensed under the <a rel="noreferrer noopener" href="https://wordpress.org/about/license/" target="_blank">General Public License</a> (GPLv2 or later) which provides four core freedoms:', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
@@ -114,7 +114,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier prime"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier-prime"} -->
 <div class="wp-block-column is-vertically-aligned-center has-courier-prime-font-family" style="padding-bottom:var(--wp--preset--spacing--20);flex-basis:60%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6}}} -->
 <p style="line-height:1.6"><?php _e( 'The freedom to run the program for any purpose.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
@@ -130,7 +130,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier prime"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier-prime"} -->
 <div class="wp-block-column is-vertically-aligned-center has-courier-prime-font-family" style="padding-bottom:var(--wp--preset--spacing--20);flex-basis:60%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}}} -->
 <p style="line-height:1.6"><?php _e( 'The freedom to study how the program works and change it to make it do what you wish.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
@@ -146,7 +146,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier prime"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier-prime"} -->
 <div class="wp-block-column is-vertically-aligned-center has-courier-prime-font-family" style="padding-bottom:var(--wp--preset--spacing--20);flex-basis:60%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}}} -->
 <p style="line-height:1.6"><?php _e( 'The freedom to redistribute.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
@@ -162,7 +162,7 @@
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier prime"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"fontFamily":"courier-prime"} -->
 <div class="wp-block-column is-vertically-aligned-center has-courier-prime-font-family" style="padding-bottom:var(--wp--preset--spacing--20);flex-basis:60%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}}} -->
 <p style="line-height:1.6"><?php _e( 'The freedom to distribute copies of your modified versions to others.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
@@ -173,11 +173,11 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}},"color":{"background":"#f0ede7"},"border":{"top":{"color":"var:preset|color|charcoal-1","width":"1px"}}},"textColor":"charcoal-1","className":"wporg-about-section-software","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull wporg-about-section-software has-charcoal-1-color has-text-color has-background" style="border-top-color:var(--wp--preset--color--charcoal-1);border-top-width:1px;background-color:#f0ede7;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
-<div class="wp-block-column has-link-color" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier prime"} -->
+<div class="wp-block-column has-link-color" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h2 class="wp-block-heading has-courier-prime-font-family has-normal-font-size"><?php _e( 'the technology', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier prime"} -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier-prime"} -->
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about WordPress, where it’s been, and where it’s going.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -205,11 +205,11 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier prime"} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h2 class="wp-block-heading has-courier-prime-font-family has-normal-font-size"><?php _e( 'the details', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier prime"} -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier-prime"} -->
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Dive into the background details, like the GPL and other policies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -237,11 +237,11 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier prime"} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"className":"wp-block-heading","fontSize":"normal","fontFamily":"courier-prime"} -->
 <h2 class="wp-block-heading has-courier-prime-font-family has-normal-font-size"><?php _e( 'the people', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier prime"} -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"fontFamily":"courier-prime"} -->
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about the community, how we get along and show our pride.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
