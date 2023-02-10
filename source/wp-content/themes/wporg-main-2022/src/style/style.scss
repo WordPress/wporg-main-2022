@@ -220,8 +220,27 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	position: relative;
 }
 
-.wporg-about-stats-section .swap-table {
-	vertical-align: unset;
+.wporg-about-stats-section {
+	.wporg-stats-chart {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 450px;
+
+		&.loading::before {
+			background: url(https://s.w.org/wp-includes/images/spinner-2x.gif) no-repeat 50%;
+			background-size: 100%;
+			content: "";
+			display: block;
+			height: 20px;
+			transform: translateZ(0);
+			width: 20px;
+		}
+	}
+
+	.swap-table {
+		vertical-align: unset;
+	}
 }
 
 @media (min-width: 1281px) {
