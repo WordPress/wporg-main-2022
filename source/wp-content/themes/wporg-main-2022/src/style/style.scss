@@ -235,7 +235,9 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 @media (min-width: 782px) {
 	.wporg-about-section-heading {
 		// move the section heading up to align with the top of the right column
-		margin-block-start: -10px !important;
+		// fluid margin-block-start based on screen width, margin reduces as screen gets wider:
+		// clamp(-10px above 1920px wide, preferred value, 4px below 600px wide)
+		margin-block-start: clamp(-0.625rem, -1.06vw + 0.65rem, 0.25rem) !important;
 	}
 
 	[class*="wporg-about-section-freedom-"] {
