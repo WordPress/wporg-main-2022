@@ -22,29 +22,19 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'We’ve been working on a new book about the history of WordPress drawing on dozens of interviews with the original folks involved and extensive research. It’s not ready yet, but for the tenth anniversary of WordPress we’d like to make a chapter available, <em>On forking WordPress, forks in general, early WordPress, and the community</em>, which you can download below in the following formats:', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress has come a long way since 2003. What started as a few lines of code and a mission to build a better web has become a prevalent web platform and thriving community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.epub">Chapter 3 – EPUB</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.mobi">Chapter 3 – MOBI</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/about/history/chapter3.pdf">Chapter 3 – PDF</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p><?php _e( 'Read about the project’s journey through its first ten years in&nbsp;<a target="_blank" href="https://milestonesbook.wordpress.com/" rel="noreferrer noopener">Milestones: The Story of WordPress</a>—with a follow-up covering the latest decade available in May 2023. Just in time for the project’s 20th anniversary.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Jazzers and Release Dates', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Jazzers and release dates', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress core developers share a love of jazz music, and all our major releases are named in honor of jazz musicians we personally admire. Here’s a list of releases and the musicians they were named for. <a href="https://www.last.fm/tag/wordpress-release-jazz">You can listen to a Last.fm station of all the musicians we named a release for</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress core developers share a love of jazz music, and all our major releases are named in honor of jazz musicians we personally admire. Here’s a list of releases and the musicians they were named for:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
