@@ -38,7 +38,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Executive Summary', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Executive summary', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -58,7 +58,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'An Overview of WordPress', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'An overview of WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -88,7 +88,7 @@
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'The WordPress Core Leadership Team', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'The WordPress Core leadership team', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -108,7 +108,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'The WordPress Release Cycle', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'The WordPress release cycle', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -142,7 +142,7 @@
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'Version Numbering and Security Releases', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'Version numbering and security releases', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -158,7 +158,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'Version Backwards Compatibility', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'Version backwards compatibility', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -166,7 +166,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'WordPress and Security', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'WordPress and security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
@@ -182,7 +182,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'WordPress Security Risks, Process, and History', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'WordPress security risks, process, and history', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -202,7 +202,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'Automatic Background Updates for Security Releases', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'Automatic background updates for security releases', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -318,7 +318,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'Further Security Risks and Concerns', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'Further security risks and concerns', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
@@ -338,11 +338,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'WordPress Plugin and Theme Security', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'WordPress plugin and theme security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'The Default Theme', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'The default theme', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -354,7 +354,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'WordPress.org Theme and Plugin Repositories', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'WordPress.org theme and plugin repositories', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -382,7 +382,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'The Role of the Hosting Provider in WordPress Security', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'The role of the hosting provider in WordPress security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -390,7 +390,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'A Note about WordPress.com and WordPress security', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'A note about WordPress.com and WordPress security', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -462,7 +462,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'Additional Reading', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading"><?php _e( 'Additional reading', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -503,120 +503,120 @@
 <h3 class="wp-block-heading"><?php _e( 'Footnotes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
-<div id="footnotes" class="wp-block-group"><!-- wp:paragraph -->
+<!-- wp:group {"anchor":"footnotes","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div id="footnotes" class="wp-block-group"><!-- wp:paragraph {"anchor":"footnote1"} -->
 <p id="footnote1"><?php _e( '<a href="#ref1">[1]</a>&nbsp;<a href="https://w3techs.com/">https://w3techs.com/</a>, as of December 2019', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote2"} -->
 <p id="footnote2"><?php _e( '<a href="#ref2">[2]</a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/">https://make.wordpress.org/core/handbook/about/release-cycle/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote3"} -->
 <p id="footnote3"><?php _e( '<a href="#ref3">[3]</a>&nbsp;<a href="https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/">https://make.wordpress.org/core/handbook/about/release-cycle/version-numbering/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote4"} -->
 <p id="footnote4"><?php _e( '<a href="#ref4">[4]</a>&nbsp;<a href="https://wordpress.org/news/2014/08/wordpress-3-9-2/">https://wordpress.org/news/2014/08/wordpress-3-9-2/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote5"} -->
 <p id="footnote5"><?php _e( '<a href="#ref5">[5]</a>&nbsp;<a href="https://hackerone.com/wordpress">https://hackerone.com/wordpress</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote6"} -->
 <p id="footnote6"><?php _e( '<a href="#ref6">[6]</a>&nbsp;<a href="https://wordpress.org/news/">https://wordpress.org/news/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote7"} -->
 <p id="footnote7"><?php _e( '<a href="#ref7">[7]</a>&nbsp;<a href="https://wordpress.org/news/2013/10/basie/">https://wordpress.org/news/2013/10/basie/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote8"} -->
 <p id="footnote8"><?php _e( '<a href="#ref8">[8]</a>&nbsp;<a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">https://www.owasp.org/index.php/Top_10_2013-Top_10</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p id="footnote9"><?php _e( '<a href="#ref9">[9]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/">https://developer.wordpress.org/plugins/security/</a>', 'wporg' ); ?></p>
+<!-- wp:paragraph {"anchor":"footnote9"} -->
+<p id="footnote9"><?php _e( '<a href="#ref9">[9]</a>&nbsp;<a href="https://developer.wordpress.org/apis/security/">https://developer.wordpress.org/apis/security/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p id="footnote10"><?php _e( '<a href="#ref10">[10]</a>&nbsp;<a href="https://codex.wordpress.org/Data_Validation#HTML.2FXML">https://codex.wordpress.org/Data_Validation#HTML.2FXML</a>', 'wporg' ); ?></p>
+<!-- wp:paragraph {"anchor":"footnote10"} -->
+<p id="footnote10"><?php _e( '<a href="#ref10">[10]</a>&nbsp;<a href="https://href.li/?https://developer.wordpress.org/apis/security/data-validation/">https://developer.wordpress.org/apis/security/data-validation/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote11"} -->
 <p id="footnote11"><?php _e( '<a href="#ref11">[11]</a>&nbsp;<a href="https://wordpress.org/support/article/hardening-wordpress/">https://wordpress.org/support/article/hardening-wordpress/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote12"} -->
 <p id="footnote12"><?php _e( '<a href="#ref12">[12]</a>&nbsp;<a href="https://www.openwall.com/phpass/">https://www.openwall.com/phpass/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p id="footnote13"><?php _e( '<a href="#ref13">[13]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/security/nonces/">https://developer.wordpress.org/plugins/security/nonces/</a>', 'wporg' ); ?></p>
+<!-- wp:paragraph {"anchor":"footnote13"} -->
+<p id="footnote13"><?php _e( '<a href="#ref13">[13]</a>&nbsp;<a href="https://href.li/?https://developer.wordpress.org/apis/security/nonces/">https://developer.wordpress.org/apis/security/nonces/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote14"} -->
 <p id="footnote14"><?php _e( '<a href="#ref14">[14]</a>&nbsp;<a href="https://wordpress.org/news/2013/06/wordpress-3-5-2/">https://wordpress.org/news/2013/06/wordpress-3-5-2/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote15"} -->
 <p id="footnote15"><?php _e( '<a href="#ref15">[15]</a>&nbsp;<a href="https://make.wordpress.org/core/2013/06/21/secure-swfupload/">https://make.wordpress.org/core/2013/06/21/secure-swfupload/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote16"} -->
 <p id="footnote16"><?php _e( '<a href="#ref16">[16]</a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/wp_safe_redirect/">https://developer.wordpress.org/reference/functions/wp_safe_redirect/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote17"} -->
 <p id="footnote17"><?php _e( '<a href="#ref17">[17]</a>&nbsp;<a href="https://wordpress.org/plugins/developers/">https://wordpress.org/plugins/developers/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote18"} -->
 <p id="footnote18"><?php _e( '<a href="#ref18">[18]</a>&nbsp;<a href="https://developer.wordpress.org/themes/getting-started/">https://developer.wordpress.org/themes/getting-started/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote19"} -->
 <p id="footnote19"><?php _e( '<a href="#ref19">[19]</a>&nbsp;<a href="https://make.wordpress.org/themes/handbook/review/">https://make.wordpress.org/themes/handbook/review/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote20"} -->
 <p id="footnote20"><?php _e( '<a href="#ref20">[20]</a>&nbsp;<a href="https://codex.wordpress.org/Theme_Unit_Test">https://codex.wordpress.org/Theme_Unit_Test</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote21"} -->
 <p id="footnote21"><?php _e( '<a href="#ref21">[21]</a>&nbsp;<a href="https://wordpress.org/plugins/theme-check/">https://wordpress.org/plugins/theme-check/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote22"} -->
 <p id="footnote22"><?php _e( '<a href="#ref22">[22]</a>&nbsp;<a href="https://automattic.com/security/">https://automattic.com/security/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote23"} -->
 <p id="footnote23"><?php _e( '<a href="#ref23">[23]</a>&nbsp;<a href="https://codex.wordpress.org/WordPress_APIs">https://codex.wordpress.org/WordPress_APIs</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote24"} -->
 <p id="footnote24"><?php _e( '<a href="#ref24">[24]</a>&nbsp;<a href="https://developer.wordpress.org/apis/handbook/database/">https://developer.wordpress.org/apis/handbook/database/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote25"} -->
 <p id="footnote25"><?php _e( '<a href="#ref25">[25]</a>&nbsp;<a href="https://codex.wordpress.org/Filesystem_API">https://codex.wordpress.org/Filesystem_API</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote26"} -->
 <p id="footnote26"><?php _e( '<a href="#ref26">[26]</a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-6/">https://wordpress.org/support/wordpress-version/version-2-6/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote27"} -->
 <p id="footnote27"><?php _e( '<a href="#ref27">[27]</a>&nbsp;<a href="https://developer.wordpress.org/plugins/http-api/">https://developer.wordpress.org/plugins/http-api/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote28"} -->
 <p id="footnote28"><?php _e( '<a href="#ref28">[28]</a>&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-2-7/">https://wordpress.org/support/wordpress-version/version-2-7/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"anchor":"footnote29"} -->
 <p id="footnote29"><?php _e( '<a href="#ref29">[29]</a>&nbsp;<a href="https://developer.wordpress.org/reference/functions/current_user_can/">https://developer.wordpress.org/reference/functions/current_user_can/</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

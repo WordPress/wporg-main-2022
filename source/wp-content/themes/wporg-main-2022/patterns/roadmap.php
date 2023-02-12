@@ -22,29 +22,113 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is continually under development. Currently, work is underway on Phase 2 of the Gutenberg project. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, which is a foundation of successful modern businesses. Phase 1 was the new block editor, which was released in WordPress 5.0, you can <a href="https://wordpress.org/gutenberg/">see that in action here</a>. In 2021 we were focusing on merging full site editing (Phase 2) into WordPress which brings block editing to the entire site, not just posts and pages. For more information on full site editing, its components, and other active feature work, check out the <a href="https://make.wordpress.org/core/features/">Feature Projects Overview</a> page.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is continually under development. Currently, work is being completed on Phase 2 of the Gutenberg project and Phase 3 (collaboration) starts in early 2023. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, which is a foundation of successful modern businesses. ', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'For 2022 the project has some big picture goals, as outlined in <a href="https://make.wordpress.org/project/2022/01/21/big-picture-goals-2022/">this post</a>:', 'wporg' ); ?></p>
+<p><?php _e( 'Phase 1 was the new block editor, which was released in WordPress 5.0, you can <a href="https://wordpress.org/gutenberg/">see that in action here</a>. In 2021 and 2022 we were focusing on merging full site editing (Phase 2) into WordPress which brings block editing to the entire site, not just posts and pages. Phase 3 is collaboration, which will implement features for workflows and realtime collaboration. For more information on full site editing, its components, and other active feature work, check out the <a href="https://make.wordpress.org/core/features/">Feature Projects Overview</a> page.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li><?php _e( '<strong>Drive adoption of the new WordPress editor</strong> – Following WordPress 5.9, our focus will be driving user adoption by making full site editing (and its tools) easy to find and use.', 'wporg' ); ?></li>
+<!-- wp:paragraph -->
+<p><?php _e( 'For 2023 the project has some big picture goals, as outlined in <a href="https://make.wordpress.org/project/2023/01/18/big-picture-goals-2023/">this post</a>:', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<strong>CMS</strong>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><?php _e( 'APIs:', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<strong>Support open source alternatives for all site-building necessities</strong> – Provide access to open source elements needed to get a site up and running.', 'wporg' ); ?></li>
+<li><?php _e( 'Openverse search in Core', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<strong>Open Source stewards</strong>: Iterate on WordPress’ open source methodologies to guide and sustain long term success for WordPress as well as the overall open source community that we are part of.', 'wporg' ); ?></li>
+<li><?php _e( 'Navigation block', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<strong>Bonus</strong>: Preparations for WordPress’ 20th birthday', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ol>
+<li><?php _e( 'Media management', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Simplify the release process', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'PHP 8.2 compatibility (Core and Gutenberg)', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Block theme dev tools', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<strong>Community</strong>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><?php _e( 'Community Summit planning and coordination', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Holistic contributor onboarding', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Refinement of Polyglot tools', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<s>Maintain learning content speed to ship</s> Continue to ship learning content at the current pace', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Update content and refresh design across wordpress.org', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Establish contributor and mentor programs', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Develop a canonical plugin program', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<strong>Ecosystem</strong>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><?php _e( 'WordPress Playground', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Explore improvements to our contributor tools', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Create a WordPress brand discipline', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Simplify the release process (also in CMS)', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Refinement of Polyglot tools (also in Community)', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Develop a canonical plugin program (also in Community)', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
@@ -60,11 +144,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"hasFixedLayout":true,"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.2 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><?php _e( '2023', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.2 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><?php _e( 'March 28, 2023', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'For more information on the planned release schedule, please read the Make WordPress Core post about the <a href="https://make.wordpress.org/core/2022/01/27/proposal-2022-major-release-timing/">proposed major release timing for 2022</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'For more information on the planned release schedule, please read the Make WordPress Core post about the <a href="https://make.wordpress.org/core/2022/01/27/proposal-2022-major-release-timing/">release timing for WordPress 6.2</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -80,7 +164,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Phase 2 of Gutenberg won’t be finished when it’s merged into WordPress. The work to gather feedback and iterate based on user needs will continue after WordPress 5.8 is released. As a reminder, these are the four phases outlined in the Gutenberg project:', 'wporg' ); ?></p>
+<p><?php _e( 'As a reminder, these are the four phases outlined in the Gutenberg project:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
