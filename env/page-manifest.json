@@ -116,7 +116,7 @@
 		"template": "page-search.html"
 	},
 	{
-		"slug": "hosting-2",
+		"slug": "hosting",
 		"pattern": "hosting.php",
 		"template": "page-hosting.html"
 	}
