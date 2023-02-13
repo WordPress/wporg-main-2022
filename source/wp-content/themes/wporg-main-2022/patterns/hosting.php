@@ -2,10 +2,11 @@
 /**
  * Title: Hosting
  * Slug: wporg-main-2022/hosting
- * Inserter: no
+ * Inserter: no 
  */
 
- ?><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"},"margin":{"bottom":"0"}},"border":{"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"}}},"layout":{"type":"constrained"}} -->
+?>
+ <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"},"margin":{"bottom":"0"}},"border":{"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"}}},"layout":{"type":"constrained"}} -->
  <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:heading {"textAlign":"center","level":1,"align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"100"},"spacing":{"padding":{"bottom":"0"}}},"backgroundColor":"white","fontSize":"heading-1"} -->
  <h1 class="wp-block-heading alignfull has-text-align-center has-white-background-color has-background has-heading-1-font-size" style="padding-bottom:0;font-style:normal;font-weight:100"><?php _e( 'Hosting', 'wporg' ); ?></h1>
  <!-- /wp:heading -->
