@@ -22,15 +22,15 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is continually under development. Currently, work is being completed on Phase 2 of the Gutenberg project and Phase 3 (collaboration) starts in early 2023. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, which is a foundation of successful modern businesses. ', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is continually under development. Currently, work is being completed on Phase 2 of the Gutenberg project, and Phase 3 (Collaboration) is starting in 2023. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, a foundation of successful modern businesses.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Phase 1 was the new block editor, which was released in WordPress 5.0, you can <a href="https://wordpress.org/gutenberg/">see that in action here</a>. In 2021 and 2022 we were focusing on merging full site editing (Phase 2) into WordPress which brings block editing to the entire site, not just posts and pages. Phase 3 is collaboration, which will implement features for workflows and realtime collaboration. For more information on full site editing, its components, and other active feature work, check out the <a href="https://make.wordpress.org/core/features/">Feature Projects Overview</a> page.', 'wporg' ); ?></p>
+<p><?php _e( 'Phase 1 was the new block editor, <a href="https://wordpress.org/gutenberg/">Gutenberg</a>, released in WordPress 5.0. In 2021 and 2022, we focused on merging full site editing (Phase 2) into WordPress. This introduced the Site Editor and a suite of editing capabilities that enable leveraging blocks for use across an entire website. Phase 3 is Collaborative Editing, also known as Workflows given its implementation of features for workflows and real-time collaboration. <a href="https://make.wordpress.org/core/features/">Check out the Feature Projects Overview page</a> for more information on site editing, its components, and other active feature work.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'For 2023 the project has some big picture goals, as outlined in <a href="https://make.wordpress.org/project/2023/01/18/big-picture-goals-2023/">this post</a>:', 'wporg' ); ?></p>
+<p><?php _e( 'To support the vision set in <a href="https://wordpress.org/news/2022/12/state-of-the-word-2022-recap/">State of the Word 2022</a> and this <a href="https://wordpress.org/news/2023/01/letter-from-wordpress-executive-director-2022/">Letter from WordPress’ Executive Director</a>, the project has some big picture goals for 2023, as outlined in <a href="https://make.wordpress.org/project/2023/01/18/big-picture-goals-2023/">this post</a>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -73,7 +73,11 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'Community Summit planning and coordination', 'wporg' ); ?></li>
+<li><?php _e( 'Ongoing re-engagement of events', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://communitysummit.wordcamp.org/2023/">Community Summit</a> planning and coordination', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -85,7 +89,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<s>Maintain learning content speed to ship</s> Continue to ship learning content at the current pace', 'wporg' ); ?></li>
+<li><?php _e( 'Continue to ship learning content at the current pace', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -143,20 +147,16 @@
 <p><?php _e( 'Here are the current planned releases, and links to their respective milestones in our <a href="https://core.trac.wordpress.org/">issue tracker</a>. Any projected dates are for discussion and planning purposes, and will be firmed up as we get closer to release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table {"hasFixedLayout":true,"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.2 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><?php _e( 'March 28, 2023', 'wporg' ); ?></td></tr></tbody></table></figure>
+<!-- wp:table {"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.2 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-2/"><?php _e( 'March 28, 2023', 'wporg' ); ?></a></td></tr><tr><td><?php _e( '6.3', 'wporg' ); ?></td><td><?php _e( 'August 2023', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.4', 'wporg' ); ?></td><td><?php _e( 'November 2023', 'wporg' ); ?></td></tr></tbody></table><figcaption class="wp-element-caption"><?php _e( 'Planned', 'wporg' ); ?> WordPress releases</figcaption></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'For more information on the planned release schedule, please read the Make WordPress Core post about the <a href="https://make.wordpress.org/core/2022/01/27/proposal-2022-major-release-timing/">release timing for WordPress 6.2</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'New features are frozen a month before a release, with the focus entirely on the quality and performance of the release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The month prior to a release new features are frozen and the focus is entirely on ensuring the quality of the release by eliminating bugs and profiling the code for any performance issues.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'You can see an overview of past releases on our <a href="https://wordpress.org/about/history/">history page</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'You can see a list of past releases on our <a href="https://wordpress.org/about/history/">history page</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -177,7 +177,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Customization — Full Site editing, Block Patterns, Block Directory, Block based themes', 'wporg' ); ?></li>
+<li><?php _e( 'Customization — Full site editing, block patterns, block directory, block themes', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
