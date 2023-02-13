@@ -25,43 +25,43 @@
 <p><?php _e( 'Here are some charts showing what sorts of systems people are running WordPress on. (You’ll need JavaScript enabled to see them.)', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
 <div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'WordPress Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"wporg-stats-chart loading","layout":{"type":"constrained"}} -->
-<div id="wp_versions" class="wp-block-group wporg-stats-chart loading"></div>
+<!-- wp:group {"align":"full","anchor":"wp_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull wporg-stats-chart loading" id="wp_versions"></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
 <div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'PHP Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"wporg-stats-chart loading","layout":{"type":"constrained"}} -->
-<div id="php_versions" class="wp-block-group wporg-stats-chart loading"></div>
+<!-- wp:group {"align":"full","anchor":"php_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull wporg-stats-chart loading" id="php_versions"></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
 <div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'MySQL Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"wporg-stats-chart loading","layout":{"type":"constrained"}} -->
-<div id="mysql_versions" class="wp-block-group wporg-stats-chart loading"></div>
+<!-- wp:group {"align":"full","anchor":"mysql_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull wporg-stats-chart loading" id="mysql_versions"></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
 <div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php _e( 'Locales <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className":"wporg-stats-chart loading","layout":{"type":"constrained"}} -->
-<div id="locales" class="wp-block-group wporg-stats-chart loading"></div>
+<!-- wp:group {"align":"full","anchor":"locales","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull wporg-stats-chart loading" id="locales"></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

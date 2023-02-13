@@ -1,11 +1,10 @@
-/* global jQuery */
 // eslint-disable-next-line id-length
 ( function ( $, google, i18n ) {
 	google.charts.load( '44', { packages: [ 'corechart', 'table' ] } );
 	google.charts.setOnLoadCallback( drawCharts );
 
-	const charts = {
-		wp_versions: {
+	const charts = [
+		{
 			id: 'wp_versions',
 			colName: 'Version',
 			sort: 'versions',
@@ -23,7 +22,7 @@
 				return data;
 			},
 		},
-		php_versions: {
+		{
 			id: 'php_versions',
 			colName: 'Version',
 			sort: 'versions',
@@ -31,7 +30,7 @@
 			url: 'https://api.wordpress.org/stats/php/1.0/',
 			data: false,
 		},
-		mysql_versions: {
+		{
 			id: 'mysql_versions',
 			colName: 'Version',
 			sort: 'versions',
@@ -44,7 +43,7 @@
 				return data;
 			},
 		},
-		locales: {
+		{
 			id: 'locales',
 			colName: 'Locale',
 			sort: 'alphabeticaly',
@@ -52,19 +51,21 @@
 			url: 'https://api.wordpress.org/stats/locale/1.0/',
 			data: false,
 		},
-	};
+	];
 
 	function drawCharts() {
-		for ( const chartId in charts ) {
-			drawChart( charts[ chartId ] );
-		}
+		charts.forEach( ( chart ) => drawChart( chart ) );
 	}
 
-	jQuery( document ).on( 'click', 'a.swap-table', function ( event ) {
+	$( document ).on( 'click', 'a.swap-table', function ( event ) {
 		event.preventDefault();
 		const $this = $( this ),
 			chartId = $this.parents( '.wporg-about-stats-section' ).find( '.wporg-stats-chart' ).attr( 'id' ),
-			chart = charts[ chartId ];
+			chart = charts.find( ( { id } ) => id === chartId );
+
+		if ( ! chart ) {
+			return;
+		}
 
 		if ( 'Table' === chart.type ) {
 			chart.type = chart.originalType;
@@ -83,13 +84,19 @@
 	} );
 
 	function drawChart( chart ) {
+		const $chartContainer = $( '#' + chart.id );
+
+		if ( ! $chartContainer.length ) {
+			return;
+		}
+
 		if ( ! chart.data ) {
 			if ( chart.loading ) {
 				return;
 			}
 			chart.loading = true;
 
-			jQuery.get( {
+			$.get( {
 				url: chart.url,
 				success: ( function () {
 					return function ( data ) {
@@ -102,15 +109,12 @@
 			return;
 		}
 
-		let data = chart.data;
-		if ( 'undefined' !== typeof chart.dataTransform ) {
-			data = chart.dataTransform( data );
-		}
+		const data = 'undefined' !== typeof chart.dataTransform ? chart.dataTransform( chart.data ) : chart.data;
 
-		drawGraph( data, chart.id, chart.colName, chart.sort, chart.type );
+		drawGraph( data, $chartContainer[ 0 ], chart.colName, chart.sort, chart.type );
 	}
 
-	function drawGraph( data, id, colName, sort, chartType ) {
+	function drawGraph( data, container, colName, sort, chartType ) {
 		const tableData = [];
 		let others = null;
 
@@ -144,7 +148,7 @@
 			{ label: 'Usage', type: 'number' },
 		] );
 
-		const chartData = google.visualization.arrayToDataTable( tableData );
+		const dataTable = google.visualization.arrayToDataTable( tableData );
 
 		// All charts are percentages.
 		const formatter = new google.visualization.NumberFormat( {
@@ -153,7 +157,7 @@
 		} );
 
 		// Apply formatter to second column
-		formatter.format( chartData, 1 );
+		formatter.format( dataTable, 1 );
 
 		const chartOptions = {
 			colors: [
@@ -239,11 +243,8 @@
 			},
 		};
 
-		const $el = $( '#' + id ).removeClass( 'loading' );
-		const chart = new google.visualization.ChartWrapper( {
-			container: $el[ 0 ],
-			dataTable: chartData,
-		} );
+		$( container ).removeClass( 'loading' );
+		const chart = new google.visualization.ChartWrapper( { container, dataTable } );
 
 		chart.setChartType( chartType );
 		chart.setOptions( chartOptions );
