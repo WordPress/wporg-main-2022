@@ -119,5 +119,5 @@
 		"slug": "hosting-2",
 		"pattern": "hosting.php",
 		"template": "page-hosting.html"
-	},
+	}
 ]
