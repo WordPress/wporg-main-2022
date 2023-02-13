@@ -37,6 +37,11 @@ function should_use_new_theme() {
 		return true;
 	}
 
+	// Use the new theme on all search results.
+	if ( str_starts_with( $request_uri, '/search/' ) ) {
+		return true;
+	}
+
 	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
 	$new_theme_pages = array(
 		'/',
@@ -46,6 +51,22 @@ function should_use_new_theme() {
 		'/download/releases/',
 		'/download/source/',
 		'/mobile/',
+		'/enterprise/',
+		'/about-2/',
+		'/about-2/requirements-2/',
+		'/about-2/features-2/',
+		'/about-2/security-2/',
+		'/about-2/roadmap-2/',
+		'/about-2/history-2/',
+		'/about-2/domains-2/',
+		'/about-2/license-2/',
+		'/about-2/accessibility-2/',
+		'/about-2/privacy-2/',
+		'/about-2/stats-2/',
+		'/about-2/philosophy-2/',
+		'/about-2/etiquette-2/',
+		'/about-2/swag-2/',
+		'/about-2/logos-2/',
 		'/hosting-2/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {

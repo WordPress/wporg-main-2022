@@ -22,7 +22,11 @@
 		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100 --seo=100",
 		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
 		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html",
-		"build:patterns": "./env/build-patterns.sh"
+		"build:patterns": "./env/build-patterns.sh",
+		"build:theme": "yarn workspace wporg-main-2022-theme build",
+		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
+		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
+		"start:theme": "yarn workspace wporg-main-2022-theme start"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"

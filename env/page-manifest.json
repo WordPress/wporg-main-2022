@@ -8,6 +8,86 @@
 		"template": "page-download.html"
 	},
 	{
+		"slug": "about-2",
+		"pattern": "about.php",
+		"template": "page-about.html"
+	},
+	{
+		"slug": "requirements-2",
+		"pattern": "requirements.php",
+		"template": "page-requirements.html"
+	},
+	{
+		"slug": "features-2",
+		"pattern": "features.php",
+		"template": "page-features.html"
+	},
+	{
+		"slug": "security-2",
+		"pattern": "security.php",
+		"template": "page-security.html"
+	},
+	{
+		"slug": "roadmap-2",
+		"pattern": "roadmap.php",
+		"template": "page-roadmap.html"
+	},
+	{
+		"slug": "history-2",
+		"pattern": "history.php",
+		"template": "page-history.html"
+	},
+	{
+		"slug": "domains-2",
+		"pattern": "domains.php",
+		"template": "page-domains.html"
+	},
+	{
+		"slug": "license-2",
+		"pattern": "license.php",
+		"template": "page-license.html"
+	},
+	{
+		"slug": "accessibility-2",
+		"pattern": "accessibility.php",
+		"template": "page-accessibility.html"
+	},
+	{
+		"slug": "privacy-2",
+		"pattern": "privacy.php",
+		"template": "page-privacy.html"
+	},
+	{
+		"slug": "stats-2",
+		"pattern": "stats.php",
+		"template": "page-stats.html"
+	},
+	{
+		"slug": "philosophy-2",
+		"pattern": "philosophy.php",
+		"template": "page-philosophy.html"
+	},
+	{
+		"slug": "etiquette-2",
+		"pattern": "etiquette.php",
+		"template": "page-etiquette.html"
+	},
+	{
+		"slug": "swag-2",
+		"pattern": "swag.php",
+		"template": "page-swag.html"
+	},
+	{
+		"slug": "logos-2",
+		"pattern": "logos.php",
+		"template": "page-logos.html"
+	},
+	{
+		"slug": "enterprise",
+		"pattern": "enterprise.php",
+		"template": "page-enterprise.html"
+	},
+	{
 		"slug": "beta-nightly",
 		"pattern": "download-beta-nightly.php",
 		"template": "page-beta-nightly.html"
@@ -30,5 +110,9 @@
 	{
 		"slug": "mobile",
 		"template": "page-mobile.html"
+	},
+	{
+		"slug": "search",
+		"template": "page-search.html"
 	}
 ]
