@@ -245,6 +245,12 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 
 	.swap-table {
 		vertical-align: unset;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
 	}
 }
 
