@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Accessibility 2
- * Slug: wporg-main-2022/accessibility-2
+ * Slug: wporg-main-2022/accessibility
  * Inserter: no
  */
 

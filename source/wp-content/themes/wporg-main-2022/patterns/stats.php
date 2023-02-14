@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Stats 2
- * Slug: wporg-main-2022/stats-2
+ * Slug: wporg-main-2022/stats
  * Inserter: no
  */
 

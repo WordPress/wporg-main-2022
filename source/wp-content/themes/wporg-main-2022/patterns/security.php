@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Security 2
- * Slug: wporg-main-2022/security-2
+ * Slug: wporg-main-2022/security
  * Inserter: no
  */
 

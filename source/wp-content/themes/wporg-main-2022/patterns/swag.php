@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Swag 2
- * Slug: wporg-main-2022/swag-2
+ * Slug: wporg-main-2022/swag
  * Inserter: no
  */
 

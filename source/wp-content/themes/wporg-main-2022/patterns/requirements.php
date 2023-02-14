@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Requirements 2
- * Slug: wporg-main-2022/requirements-2
+ * Slug: wporg-main-2022/requirements
  * Inserter: no
  */
 
