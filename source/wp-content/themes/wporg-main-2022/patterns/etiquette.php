@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Etiquette 2
+ * Title: Etiquette
  * Slug: wporg-main-2022/etiquette
  * Inserter: no
  */

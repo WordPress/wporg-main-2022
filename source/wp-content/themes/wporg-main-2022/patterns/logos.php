@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Logos 2
+ * Title: Graphics &amp; Logos
  * Slug: wporg-main-2022/logos
  * Inserter: no
  */

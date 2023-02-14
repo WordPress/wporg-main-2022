@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Privacy 2
+ * Title: Privacy
  * Slug: wporg-main-2022/privacy
  * Inserter: no
  */

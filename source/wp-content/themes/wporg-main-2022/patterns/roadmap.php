@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Roadmap 2
+ * Title: Roadmap
  * Slug: wporg-main-2022/roadmap
  * Inserter: no
  */

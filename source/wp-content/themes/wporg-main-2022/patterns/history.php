@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: History 2
+ * Title: History
  * Slug: wporg-main-2022/history
  * Inserter: no
  */

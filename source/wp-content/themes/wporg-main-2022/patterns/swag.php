@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Swag 2
+ * Title: Swag
  * Slug: wporg-main-2022/swag
  * Inserter: no
  */
@@ -24,7 +24,7 @@
 <!-- wp:columns {"align":"","style":{"spacing":[]}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"80%"} -->
 <div class="wp-block-column" style="flex-basis:80%"><!-- wp:paragraph {"placeholder":"\u003c?php _e( 'Content…', 'wporg' ); ?\u003e","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><?php _e( 'Whether you’re a seasoned WordPress fanatic or just getting warmed up, wear your WordPress love with pride. The official <a href="https://mercantile.wordpress.org/">WordPress Swag Store</a> sells shirts and hoodies in a variety of designs and colors, printed on stock from socially responsible companies.', 'wporg' ); ?></p>
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><?php _e( 'Whether you’re a seasoned WordPress fanatic or just getting warmed up, wear your WordPress love with pride. The official&nbsp;<a href="https://mercantile.wordpress.org/">WordPress Swag Store</a>&nbsp;sells shirts and hoodies in a variety of designs and colors, printed on stock from socially responsible companies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

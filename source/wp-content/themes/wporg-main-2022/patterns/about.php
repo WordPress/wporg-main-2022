@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: About 2
+ * Title: About
  * Slug: wporg-main-2022/about
  * Inserter: no
  */

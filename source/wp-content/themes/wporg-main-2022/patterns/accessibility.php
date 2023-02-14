@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Accessibility 2
+ * Title: Accessibility
  * Slug: wporg-main-2022/accessibility
  * Inserter: no
  */

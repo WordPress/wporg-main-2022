@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: License 2
+ * Title: License
  * Slug: wporg-main-2022/license
  * Inserter: no
  */

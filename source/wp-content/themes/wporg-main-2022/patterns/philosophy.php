@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Philosophy 2
+ * Title: Philosophy
  * Slug: wporg-main-2022/philosophy
  * Inserter: no
  */
