@@ -12,7 +12,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"right","level":1,"align":"full","style":{"typography":{"fontSize":"90px","letterSpacing":"-0.05em","lineHeight":"1.2"}},"className":"wp-block-heading wporg-about-cover-title","fontFamily":"inter"} -->
-<h1 class="wp-block-heading alignfull has-text-align-right wporg-about-cover-title has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:1.2"><?php _e( '<span>democratize</span><span>publishing</span>', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading alignfull has-text-align-right wporg-about-cover-title has-inter-font-family" style="font-size:90px;letter-spacing:-0.05em;line-height:1.2"><?php _e( '<span>democratize</span> <span>publishing</span>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"margin":{"top":"0"}}}} -->
@@ -263,7 +263,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/news/category/community/"><?php _e( 'Testimonials ↗', 'wporg' ); ?></a></li>
+<li><a href="https://wordpress.org/news/category/community/"><?php _e( 'People of WordPress ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
