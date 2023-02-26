@@ -1,0 +1,23 @@
+// See https://www.smashingmagazine.com/2022/10/fluid-typography-clamp-sass-functions/
+
+@use "sass:math";
+@import "utilities";
+
+$default-min-bp: var(--wp--style--global--content-size);
+$default-max-bp: var(--wp--style--global--wide-size);
+
+@function fluid(
+	$min-size,
+	$max-size,
+	$min-breakpoint: $default-min-bp,
+	$max-breakpoint: $default-max-bp,
+	$unit: vw
+) {
+	$slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+	$slope-to-unit: round_to_decimals($slope * 100, 2);
+	$intercept-rem: round_to_decimals(px_to_rem($min-size - $slope * $min-breakpoint), 2);
+	$min-size-rem: round_to_decimals(px_to_rem($min-size), 2);
+	$max-size-rem: round_to_decimals(px_to_rem($max-size), 2);
+
+	@return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
+}

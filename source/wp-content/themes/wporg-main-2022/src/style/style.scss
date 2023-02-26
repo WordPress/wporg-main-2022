@@ -3,6 +3,8 @@
  * templates or theme.json settings.
  */
 
+@import "fluid";
+
 /*
  * Override inline paddings with the spacing preset.
  */
@@ -111,6 +113,9 @@ body.home .wp-block-wporg-link-wrapper {
  * About page
  */
 
+$wporg-about-breakpoint-min: 600px;
+$wporg-about-breakpoint-max: 1920px;
+
 [class*="wporg-about-section-"][style*="padding-top"] {
 	--wp--preset--spacing--60: clamp(60px, calc(100vw / 18), 80px);
 
@@ -121,8 +126,7 @@ body.home .wp-block-wporg-link-wrapper {
 
 .wporg-about-cover-title > span,
 .wporg-about-section-heading {
-	// fluid font-size based on screen width: clamp(52px below 600px, preferred value, 125px above 1920px)
-	font-size: clamp(3.25rem, 5.53vw + 1.18rem, 7.813rem) !important;
+	font-size: #{fluid(52px, 125px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	display: inline-block;
 }
 
@@ -192,9 +196,7 @@ body.home .wp-block-wporg-link-wrapper {
 }
 
 .wporg-about-cover-title {
-	// fluid height based on screen width:
-	// clamp(122px high below 600px wide, preferred value, 242px high above 1920px wide)
-	$arrow-height: clamp(7.625rem, 9.09vw + 4.22rem, 15.125rem);
+	$arrow-height: #{fluid(122px, 242px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)};
 
 	display: grid;
 	grid-template-rows: auto $arrow-height auto;
@@ -289,9 +291,8 @@ body.home .wp-block-wporg-link-wrapper {
 @media (min-width: 782px) {
 	.wporg-about-section-heading {
 		// move the section heading up to align with the top of the right column
-		// fluid margin-block-start based on screen width, margin reduces as screen gets wider:
-		// clamp(-10px above 1920px wide, preferred value, 4px below 600px wide)
-		margin-block-start: clamp(-0.625rem, -1.06vw + 0.65rem, 0.25rem) !important;
+		// breakpoint arguments reversed, as the value changes inversely proportional to screen width
+		margin-block-start: #{fluid(-10px, 4px, $wporg-about-breakpoint-max, $wporg-about-breakpoint-min)} !important;
 	}
 
 	[class*="wporg-about-section-freedom-"] {
