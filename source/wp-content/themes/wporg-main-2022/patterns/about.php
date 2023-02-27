@@ -255,7 +255,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/swag/"><?php _e( 'Swag ↗', 'wporg' ); ?></a></li>
+<li><a href="https://mercantile.wordpress.org/"><?php _e( 'Swag ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
