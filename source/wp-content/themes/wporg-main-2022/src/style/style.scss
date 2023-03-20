@@ -138,6 +138,8 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	}
 
 	.wporg-about-section-freedoms & {
+		display: block;
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -205,6 +207,12 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 			text-align: right;
 		}
 	}
+}
+
+.wporg-about-cover-intro {
+	text-align: right;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
 }
 
 .wporg-about-section-freedoms {
@@ -300,14 +308,6 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	/* Pull the features list flush to the edge of the screen (only on mid-sized screens). */
 	#features .is-style-features {
 		margin-left: calc(-1 * var(--wp--preset--spacing--edge-space));
-	}
-}
-
-@media (max-width: 1280px) {
-	.wporg-about-cover-intro {
-		text-align: right;
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
 	}
 }
 
