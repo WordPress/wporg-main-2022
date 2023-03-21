@@ -39,7 +39,23 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'APIs:', 'wporg' ); ?></li>
+<li><?php _e( 'APIs:', 'wporg' ); ?><!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><?php _e( 'All those related to Phase 3 of the Gutenberg project', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Fonts API', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Interactivity API', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Block API', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -63,7 +79,27 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Block theme dev tools', 'wporg' ); ?></li>
+<li><?php _e( 'Block theme dev tools', 'wporg' ); ?><!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><a href="https://make.wordpress.org/design/2022/11/07/design-share-oct-24-nov-4/"><?php _e( 'Custom CSS', 'wporg' ); ?></a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://github.com/WordPress/gutenberg/issues/45675"><?php _e( 'Custom CSS in theme variations', 'wporg' ); ?></a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://github.com/WordPress/gutenberg/issues/39324"><?php _e( 'Template content preservation', 'wporg' ); ?></a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Starter content in block themes', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( 'Theme preview', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
