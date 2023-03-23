@@ -35,16 +35,17 @@
 
 .components-modal__header {
 	display: flex;
+
+	.components-modal__header-heading {
+		font-size: var(--wp--preset--font-size--heading-2);
+		font-weight: var(--wp--custom--heading--typography--font-weight);
+		line-height: var(--wp--custom--heading--level-2--typography--line-height);
+		margin: 0 0 0.5em;
+	}
 }
 
 .components-modal__header-heading-container {
 	flex: 1;
-}
-
-.components-modal__header-heading {
-	font-size: var(--wp--preset--font-size--heading-2);
-	line-height: var(--wp--custom--heading--level-2--typography--line-height);
-	margin: 0 0 0.5em;
 }
 
 .components-modal__header .components-button {
@@ -72,6 +73,14 @@
 
 .wporg__download-modal .components-modal__header {
 	padding-bottom: 0;
+	position: unset;
+	height: unset;
+	align-items: unset;
+}
+
+.wporg__download-modal .components-modal__content {
+	margin-top: 0;
+	padding: 0;
 }
 
 .wporg__download-modal-sub-header {
