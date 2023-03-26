@@ -39,7 +39,7 @@ Once set up, this environment will contain some shared plugins (Jetpack, Gutenbe
     yarn workspaces run build
     ```
 
-1. (optional) There may be times when you want to make changes to the Parent theme and test them with the Main them. To do that:
+1. (Optional) There may be times when you want to make changes to the Parent theme and test them with the Main them. To do that:
     1. Clone the Parent repo and follow the setup instructions in its `readme.md` file.
     1. Create a `.wp-env.override.json` file in this repo
     1. Copy the `themes` section from `.wp-env.json` and paste it into the override file. You must copy the entire section for it to work, because it won't be merged with `.wp-env.json`.
