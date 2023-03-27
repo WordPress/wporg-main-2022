@@ -63,7 +63,7 @@ function enqueue_assets() {
 			'wporg-main-2022-download-style',
 			get_stylesheet_directory_uri() . '/build/download/style-index.css',
 			array(),
-			$script_info['version']
+			filemtime( __DIR__ . '/build/download/style-index.css' )
 		);
 		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
 	}
