@@ -801,16 +801,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5"
+                "reference": "dfc078e8af9c99210337325ff5aa152872c98714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5",
-                "reference": "1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/dfc078e8af9c99210337325ff5aa152872c98714",
+                "reference": "dfc078e8af9c99210337325ff5aa152872c98714",
                 "shasum": ""
             },
             "require": {
@@ -853,9 +853,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.0"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.1"
             },
-            "time": "2023-03-12T10:13:29+00:00"
+            "time": "2023-03-27T19:02:04+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -2309,15 +2309,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.3.1",
+            "version": "15.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.3.1"
+                "reference": "tags/15.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2367,12 +2367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "7a21c4d7f555327758f1e7f616476822e9e80fc1"
+                "reference": "a6217709c8706986582c855a121661178ff685d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/7a21c4d7f555327758f1e7f616476822e9e80fc1",
-                "reference": "7a21c4d7f555327758f1e7f616476822e9e80fc1",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/a6217709c8706986582c855a121661178ff685d0",
+                "reference": "a6217709c8706986582c855a121661178ff685d0",
                 "shasum": ""
             },
             "require-dev": {
@@ -2410,7 +2410,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2023-03-17T15:24:51+00:00"
+            "time": "2023-03-29T04:29:54+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "f301e452ce1c4dbdaf81cd857f397f4c438e3840"
+                "reference": "989b7d3664a5f968b257b8df23d29eaaf968cb1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/f301e452ce1c4dbdaf81cd857f397f4c438e3840",
-                "reference": "f301e452ce1c4dbdaf81cd857f397f4c438e3840",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/989b7d3664a5f968b257b8df23d29eaaf968cb1b",
+                "reference": "989b7d3664a5f968b257b8df23d29eaaf968cb1b",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -2431,7 +2431,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2023-03-22T20:11:12+00:00"
+            "time": "2023-03-29T18:18:43+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
