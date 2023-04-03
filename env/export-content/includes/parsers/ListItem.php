@@ -12,28 +12,41 @@ class ListItem implements BlockParser {
 
 		if ( preg_match( '/<li[^>]*>(.+)<\/li>/is', $block['innerHTML'], $matches ) ) {
 			if ( ! empty( $matches[1] ) ) {
-				$strings[] = $matches[1];
+				// If the child string is totally wrapped in `a` tags, extract the a's text.
+				if ( preg_match( '/^<a[^>]*>(.+)<\/a>$/is', $matches[1], $a_matches ) ) {
+					$strings[] = $a_matches[1];
+				} else {
+					$strings[] = $matches[1];
+				}
 			}
 		}
 
 		return $strings;
 	}
 
-	// todo: this needs a fix to properly rebuild innerContent - similar to ParagraphParserTest
-	public function replace_strings( array $block, array $replacements ) : array {
-		$this->set_attribute( 'placeholder', $block, $replacements );
-
-		$html = $block['innerHTML'];
+	public function _do_replacement( array $block, array $replacements, $html ) {
+		if ( ! $html ) {
+			return $html;
+		}
 
 		foreach ( $this->to_strings( $block ) as $original ) {
 			if ( ! empty( $original ) && isset( $replacements[ $original ] ) ) {
-				$regex = '#(<li[^>]*>)(' . preg_quote( $original, '/' ) . ')(<\/li>)#is';
-				$html  = preg_replace( $regex, '${1}' . addcslashes( $replacements[ $original ], '\\$' ) . '${3}', $html );
+				$regex = '#(<li[^>]*>)(<a[^>]*>)?(' . preg_quote( $original, '/' ) . ')(<\/a>)?(<\/li>)?#is';
+				$html  = preg_replace( $regex, '$1$2' . addcslashes( $replacements[ $original ], '\\$' ) . '$4$5', $html );
 			}
 		}
 
-		$block['innerHTML']    = $html;
-		$block['innerContent'] = [ $html ];
+		return $html;
+	}
+
+	public function replace_strings( array $block, array $replacements ) : array {
+		$this->set_attribute( 'placeholder', $block, $replacements );
+
+		foreach ( $block['innerContent'] as $i => $html ) {
+			$block['innerContent'][ $i ] = $this->_do_replacement( $block, $replacements, $html );
+		}
+
+		$block['innerHTML'] = $this->_do_replacement( $block, $replacements, $block['innerHTML'] );
 
 		return $block;
 	}

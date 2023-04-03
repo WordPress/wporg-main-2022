@@ -41,8 +41,7 @@ function generate_pattern( $url, $output_path ) {
 		die( "No content_raw available at {$url}\n" );
 	}
 
-	$parser = new BlockParser();
-	$content = $parser->replace_with_i18n( $post->content_raw );
+	$content = replace_with_i18n( $post->content_raw );
 
 	$header = <<<EOF
 <?php
