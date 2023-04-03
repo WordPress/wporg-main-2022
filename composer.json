@@ -100,7 +100,8 @@
 		"wpackagist-plugin/wordpress-importer": "*",
 		"wporg/wporg-repo-tools": "dev-trunk",
 		"wporg/wporg-mu-plugins": "dev-build",
-		"wporg/wporg-parent-2021": "dev-build"
+		"wporg/wporg-parent-2021": "dev-build",
+		"yoast/phpunit-polyfills": "^1.0"
 	},
 	"scripts": {
 		"format": "phpcbf -p",
