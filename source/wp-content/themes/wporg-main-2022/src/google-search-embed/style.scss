@@ -1,6 +1,27 @@
 .wp-block-wporg-google-search-embed {
+	.gsc-control-cse {
+		font-family: var(--wp--preset--font-family--inter) !important;
+
+		* {
+			font-family: inherit !important;
+		}
+	}
+
+	form.gsc-search-box {
+		margin-bottom: var(--wp--preset--spacing--40);
+	}
+
+	.gsc-result-info,
+	.gsc-orderby-label {
+		color: var(--wp--preset--color--charcoal-4);
+	}
+
 	.gsc-search-button-v2 {
 		padding: 13px 27px;
+
+		svg {
+			transform: scaleX(-1);
+		}
 	}
 
 	.gs-web-image-box,
