@@ -35,11 +35,11 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'Subversion: ', 'wporg' ); ?><code><?php _e( 'https://core.svn.wordpress.org/', 'wporg' ); ?></code></li>
+<li><?php _e( 'Subversion: <code>https://core.svn.wordpress.org/</code>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Git mirror: ', 'wporg' ); ?><code><?php _e( 'git://core.git.wordpress.org/', 'wporg' ); ?></code></li>
+<li><?php _e( 'Git mirror: <code>git://core.git.wordpress.org/</code>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -49,11 +49,11 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'Subversion: ', 'wporg' ); ?><code><?php _e( 'https://develop.svn.wordpress.org/', 'wporg' ); ?></code></li>
+<li><?php _e( 'Subversion: <code>https://develop.svn.wordpress.org/</code>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Git mirror: ', 'wporg' ); ?><code><?php _e( 'git://develop.git.wordpress.org/', 'wporg' ); ?></code></li>
+<li><?php _e( 'Git mirror: <code>git://develop.git.wordpress.org/</code>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 

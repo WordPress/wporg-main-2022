@@ -73,11 +73,6 @@
 		"template": "page-etiquette.html"
 	},
 	{
-		"slug": "swag",
-		"pattern": "swag.php",
-		"template": "page-swag.html"
-	},
-	{
 		"slug": "logos",
 		"pattern": "logos.php",
 		"template": "page-logos.html"

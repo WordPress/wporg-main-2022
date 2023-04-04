@@ -23,6 +23,7 @@ phpcs.xml.dist
 /source/wp-content/mu-plugins/*
 
 # ...except the actual source of this project.
+!/source/wp-content/tests
 !/source/wp-content/themes
 !/source/wp-content/themes/wporg-main-2022
 !/source/wp-content/mu-plugins

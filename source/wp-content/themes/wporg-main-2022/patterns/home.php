@@ -217,19 +217,19 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
 <ul class="is-style-links-list"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://learn.wordpress.org/">Learn with WordPress ↗</a>', 'wporg' ); ?></li>
+<li><a href="https://learn.wordpress.org/"><?php _e( 'Learn with WordPress ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/support/">Find support ↗</a>', 'wporg' ); ?></li>
+<li><a href="https://wordpress.org/support/"><?php _e( 'Find support ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://developer.wordpress.org/">Dig into the code ↗</a>', 'wporg' ); ?></li>
+<li><a href="https://developer.wordpress.org/"><?php _e( 'Dig into the code ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.meetup.com/pro/wordpress/">Meet local WordPress users ↗</a>', 'wporg' ); ?></li>
+<li><a href="https://www.meetup.com/pro/wordpress/"><?php _e( 'Meet local WordPress users ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

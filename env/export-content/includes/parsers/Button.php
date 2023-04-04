@@ -46,24 +46,7 @@ class Button implements BlockParser {
 			}
 		}
 
-		// Replace shortcodes in `href`, as these are url-encoded by `saveHTML()`.
-		// This is probably overkill since there should only be one `a` per button,
-		// but just to be safe, we loop over any `a`s found.
-		$elements = $dom->getElementsByTagName( 'a' );
-		$replacements = [];
-		foreach ( $elements as $element ) {
-			$link = $element->getAttribute( 'href' );
-			// If we find a shortcode in the URL, save it.
-			if ( $link && preg_match( '/\[.*\]/', $link ) ) {
-				$replacements[ urlencode( $link ) ] = $link;
-			}
-		}
-
-		$html = $this->removeHtml( $dom->saveHTML() );
-		if ( count( $replacements ) ) {
-			$html = str_replace( array_keys( $replacements ), array_values( $replacements ), $html );
-		}
-		$decoded_html = $this->decode_tags( $html );
+		$decoded_html = $this->decode_tags( $this->removeHtml( $dom->saveHTML() ) );
 		$block['innerHTML']    = $decoded_html;
 		$block['innerContent'] = [ $decoded_html ];
 
