@@ -25,8 +25,8 @@
 <p><?php _e( 'WordPress.org websites (collectively “WordPress.org” in this document) refer to sites hosted on the WordPress.org, WordPress.net, WordCamp.org, BuddyPress.org, bbPress.org, and other related domains and subdomains thereof. This privacy policy describes how WordPress.org uses and protects any information that you give us. We are committed to ensuring that your privacy is protected. If you provide us with personal information through WordPress.org, you can be assured that it will only be used in accordance with this privacy statement.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Website visitors', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Website visitors', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -37,8 +37,8 @@
 <p><?php _e( 'WordPress.org also collects potentially personally-identifying information like Internet Protocol (IP) addresses. WordPress.org does not use IP addresses to identify its visitors, however, and does not disclose such information, other than under the same circumstances that it uses and discloses personally-identifying information, as described below.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Gathering of personally-identifying information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Gathering of personally-identifying information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -53,8 +53,8 @@
 <p><?php _e( 'All of the information that is collected on WordPress.org will be handled in accordance with GDPR legislation.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Protection of certain personally-identifying information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Protection of certain personally-identifying information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -73,8 +73,8 @@
 <p><?php _e( 'If you send us a request (for example via a support email or via one of our feedback mechanisms), we reserve the right to publish it in order to help us clarify or respond to your request or to help us support other users. WordPress.org takes all measures reasonably necessary to protect against the unauthorized access, use, alteration, or destruction of potentially personally-identifying and personally-identifying information.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Use of personal information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Use of personal information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -93,8 +93,8 @@
 <p><?php _e( 'You have a right at any time to stop us from contacting you for marketing purposes. If you no longer wish to be contacted for marketing purposes, please click on the unsubscribe link at the bottom of the email.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Legal grounds for processing personal information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Legal grounds for processing personal information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -115,8 +115,8 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Access to data', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Access to data', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -167,8 +167,8 @@
 <p><?php _e( 'Note: If you have a WP.org account, it’s recommended you log in before submitting to associate your account with the request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Retention of personal information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Retention of personal information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -213,8 +213,8 @@
 <p><?php _e( 'Note: If you have a WP.org account, it’s recommended you log in before submitting to associate your account with the request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Rights in relation to your information', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Rights in relation to your information', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -247,24 +247,24 @@
 <p><?php _e( 'If you would like to exercise these rights or understand if these rights apply to you, please follow the instructions at the end of this Privacy statement.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Third party links', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Third party links', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Our website may contain links to other websites provided by third parties not under our control. When following a link and providing information to a 3rd-party website, please be aware that we are not responsible for the data provided to that third party. This privacy policy only applies to the websites listed at the beginning of this document, so when you visit other websites, even when you click on a link posted on WordPress.org, you should read their own privacy policies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Aggregated statistics', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Aggregated statistics', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'WordPress.org may collect statistics about the behavior of visitors to its websites. For instance, WordPress.org may reveal how many times a particular version of WordPress was downloaded or report on which plugins are the most popular, based on data gathered by&nbsp;<code>api.wordpress.org</code>, a web service used by WordPress installations to check for new versions of WordPress and plugins. However, WordPress.org does not disclose personally-identifying information other than as described in this policy.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Cookies', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Cookies', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -275,16 +275,16 @@
 <p><?php _e( 'Please see&nbsp;<a href="https://wordpress.org/about/privacy/cookies/">our cookie policy</a>&nbsp;for more information about what cookies are collected on WordPress.org.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Privacy policy changes', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Privacy policy changes', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Although most changes are likely to be minor, WordPress.org may change its Privacy Policy from time to time, and at WordPress.org’s sole discretion. WordPress.org encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Contact', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Contact', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

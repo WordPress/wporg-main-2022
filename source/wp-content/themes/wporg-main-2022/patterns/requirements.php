@@ -51,8 +51,8 @@
 <p><?php _e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP 5.6.20+ and MySQL 5.0+, but these versions have reached official End Of Life and as such <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Ask for it', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Ask for it', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -87,8 +87,8 @@
 <!-- /wp:paragraph --></blockquote>
 <!-- /wp:quote -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Not required, but recommended for better security', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Not required, but recommended for better security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

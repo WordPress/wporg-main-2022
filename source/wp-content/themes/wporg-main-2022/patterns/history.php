@@ -29,8 +29,8 @@
 <p><?php _e( 'Read about the project’s journey through its first ten years in&nbsp;<a target="_blank" href="https://milestonesbook.wordpress.com/" rel="noreferrer noopener">Milestones: The Story of WordPress</a>—with a follow-up covering the latest decade available in May 2023. Just in time for the project’s 20th anniversary.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Jazzers and release dates', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Jazzers and release dates', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

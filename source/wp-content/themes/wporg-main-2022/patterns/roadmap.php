@@ -175,8 +175,8 @@
 <p><?php _e( 'Want to get involved? Head on over to <a href="https://make.wordpress.org/">Make WordPress</a>! We can always use more people to help translate, design, document, develop, and market WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Currently planned releases', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Currently planned releases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -195,8 +195,8 @@
 <p><?php _e( 'You can see a list of past releases on our <a href="https://wordpress.org/about/history/">history page</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Long term roadmap', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Long term roadmap', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

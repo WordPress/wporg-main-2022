@@ -107,8 +107,8 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
-<!-- wp:heading {"className":"wp-block-heading"} -->
-<h2 class="wp-block-heading"><?php _e( 'Developer Features', 'wporg' ); ?></h2>
+<!-- wp:heading {"className":"wp-block-heading","style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Developer Features', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

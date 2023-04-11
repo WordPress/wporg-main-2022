@@ -37,8 +37,8 @@
 <p><?php _e( 'While the WordPress project cannot guarantee that all Themes are compliant, the&nbsp;<a href="https://wordpress.org/themes/tags/accessibility-ready/">accessibility-ready themes</a>&nbsp;have been checked by the Theme Review Team to ensure that these themes pass their&nbsp;<a href="https://make.wordpress.org/themes/handbook/review/accessibility/required/">basic accessibility requirements</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'The Accessibility Team', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'The Accessibility Team', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -53,8 +53,8 @@
 <p><?php _e( 'To report an Accessibility issue you’ve encountered in WordPress or on WordPress.org, please see the Accessibility Handbook page on&nbsp;<a href="https://make.wordpress.org/accessibility/handbook/reporting-issues/">Reporting Accessibility Issues</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'ATAG Statement', 'wporg' ); ?></h2>
+<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'ATAG Statement', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

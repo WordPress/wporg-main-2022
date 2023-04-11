@@ -26,8 +26,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'WordPress Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
+<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'WordPress Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","anchor":"wp_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -36,8 +36,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'PHP Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
+<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'PHP Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","anchor":"php_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -46,8 +46,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'MySQL Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
+<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'MySQL Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","anchor":"mysql_versions","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -56,8 +56,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"anchor":"","className":"wporg-about-stats-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Locales <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
+<div class="wp-block-group wporg-about-stats-section"><!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
+<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Locales <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","anchor":"locales","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
