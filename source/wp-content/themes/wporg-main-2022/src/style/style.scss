@@ -427,6 +427,42 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 		width: 100% !important;
 	}
 
+	#download-install .wp-block-button:nth-child(1) a {
+		padding: 0;
+		background-color: transparent;
+		color: var(--wp--custom--link--color--text);
+		font-weight: 400;
+		text-align: revert;
+		display: inline;
+
+		&:hover,
+		&:focus-visible {
+			text-decoration: underline;
+		}
+	}
+
+	#download-install .wp-block-button:nth-child(2) a {
+		--wp--custom--button--outline--color--background: var(--wp--preset--color--blueberry-1);
+		--wp--custom--button--outline--color--text: var(--wp--preset--color--white);
+		--wp--custom--button--outline--hover--color--background: var(--wp--preset--color--deep-blueberry);
+		--wp--custom--button--outline--hover--color--text: var(--wp--preset--color--white);
+		--wp--custom--button--outline--active--color--background: var(--wp--preset--color--charcoal-1);
+		--wp--custom--button--outline--active--color--text: var(--wp--preset--color--white);
+		border: none;
+		background-color: var(--wp--custom--button--outline--color--background);
+
+		&:hover,
+		&:focus {
+			background-color: var(--wp--custom--button--outline--hover--color--background);
+			color: var(--wp--custom--button--outline--hover--color--text);
+		}
+
+		&:active {
+			background-color: var(--wp--custom--button--outline--active--color--background);
+			color: var(--wp--custom--button--outline--active--color--text);
+		}
+	}
+
 	.wporg-enterprise-logos {
 		display: grid !important;
 		grid-template-columns: 1fr 1fr;
