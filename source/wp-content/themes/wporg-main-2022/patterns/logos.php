@@ -21,16 +21,16 @@
 <h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Graphics &amp; Logos', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Official WordPress logo', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Official WordPress logo', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'When you need the official WordPress logo for a web site or publication, please use one of the following. Please only use logos in accordance with the&nbsp;<a href="http://wordpressfoundation.org/trademark-policy/">WordPress trademark&nbsp;policy</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Downloads', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Downloads', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->
@@ -181,8 +181,8 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Fight the fake logo (fauxgo)', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Fight the fake logo (fauxgo)', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -21,8 +21,8 @@
 <h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Philosophy', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Out of the box', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Out of the box', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -33,24 +33,24 @@
 <p><?php _e( 'We work hard to make sure that every release is in keeping with this philosophy. We ask for as few technical details as possible during the setup process as well as providing full explanations of anything we do ask.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Design for the majority', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Design for the majority', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Many end users of WordPress are non-technically minded. They don’t know what AJAX is, nor do they care about which version of PHP they are using. The average WordPress user simply wants to be able to write without problems or interruption. These are the users that we design the software for as they are ultimately the ones who are going to spend the most time using it for what it was built for.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Decisions, not options', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Decisions, not options', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'When making decisions these are the users we consider first. A great example of this consideration is software options. Every time you give a user an option, you are asking them to make a decision. When a user doesn’t care or understand the option this ultimately leads to frustration. As developers we sometimes feel that providing options for everything is a good thing, you can never have too many choices, right? Ultimately these choices end up being technical ones, choices that the average end user has no interest in. It’s our duty as developers to make smart design decisions and avoid putting the weight of technical choices on our end users.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Clean, lean, and mean', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Clean, lean, and mean', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -61,8 +61,8 @@
 <p><?php _e( 'We are able to do this because we have a very capable theme and plugin system and a fantastic developer community. Different people have different needs, and having the sheer number of quality WordPress plugins and themes allows users to customize their installations to their taste. That should allow all users to find the remaining 20% and make all WordPress features those they appreciate and use.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Striving for simplicity', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Striving for simplicity', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -77,8 +77,8 @@
 <p><?php _e( 'We love to challenge ourselves and simplify tasks in ways that are positive for the overall WordPress user experience. Every version of WordPress should be easier and more enjoyable to use than the last.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Deadlines are not arbitrary', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Deadlines are not arbitrary', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -97,8 +97,8 @@
 <p><?php _e( 'The more frequent and regular releases are, the less important it is for any particular feature to be in this release. If it doesn’t make it for this one, it’ll just be a few months before the next one. When releases become unpredictable or few and far between, there’s more pressure to try and squeeze in that one more thing because it’s going to be so long before the next one. Delay begets delay.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'The vocal minority', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'The vocal minority', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -109,8 +109,8 @@
 <p><?php _e( 'So while we consider it really important to listen and respond to those who post feedback and voice their opinions on forums, they only represent a tiny fraction of our end users. When making decisions on how to move forward with future versions of WordPress, we look to engage more of those users who are not so vocal online. We do this by meeting and talking to users at WordCamps across the globe, this gives us a better balance of understanding and ultimately allows us to make better decisions for everyone moving forward.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Our bill of rights', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Our bill of rights', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -25,8 +25,8 @@
 <p><?php _e( 'Learn more about WordPress core software security in this free white paper. You can also download it in&nbsp;<a href="https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true">PDF format</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Overview', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Overview', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -37,8 +37,8 @@
 <p><?php _e( 'The information in this document is up-to-date for the latest stable release of the software, WordPress 4.7 at time of publication, but should be considered relevant also to the most recent versions of the software as backwards compatibility is a strong focus for the WordPress development team. Specific security measures and changes will be noted as they have been added to the core software in specific releases. It is strongly encouraged to always be running the latest stable version of WordPress to ensure the most secure experience possible.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Executive summary', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Executive summary', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -57,8 +57,8 @@
 <p><?php _e( 'Site developers and administrators should pay particular attention to the correct use of core APIs and underlying server configuration which have been the source of common vulnerabilities, as well as ensuring all users employ strong passwords to access WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'An overview of WordPress', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'An overview of WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -87,8 +87,8 @@
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'The WordPress Core leadership team', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'The WordPress Core leadership team', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -107,8 +107,8 @@
 <p><?php _e( 'The core and contributing developers primarily guide WordPress development. Every version, hundreds of developers contribute code to WordPress. These core contributors are volunteers who contribute to the core codebase in some way.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'The WordPress release cycle', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'The WordPress release cycle', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -141,8 +141,8 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Version numbering and security releases', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Version numbering and security releases', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -157,20 +157,20 @@
 <p><?php _e( 'A minor WordPress version is dictated by the third sequence. Version 3.5.1 is a minor release, as is 3.4.2<sup id="ref3"><a href="#footnote3">3</a></sup>. A minor release is reserved for fixing security vulnerabilities and addressing critical bugs only. Since new versions of WordPress are released so frequently — the aim is every 4-5 months for a major release, and minor releases happen as needed — there is only a need for major and minor releases.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Version backwards compatibility', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Version backwards compatibility', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The WordPress project has a strong commitment to backwards compatibility. This commitment means that themes, plugins, and custom code continues to function when WordPress core software is updated, encouraging site owners to keep their WordPress version updated to the latest secure release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'WordPress and security', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'WordPress and security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'The WordPress Security Team', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'The WordPress Security Team', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -181,8 +181,8 @@
 <p><?php _e( 'The WordPress Security Team often collaborates with other security teams to address issues in common dependencies, such as resolving the vulnerability in the PHP XML parser, used by the XML-RPC API that ships with WordPress, in WordPress 3.9.2<sup id="ref4"><a href="#footnote4">4</a></sup>. This vulnerability resolution was a result of a joint effort by both WordPress and Drupal security teams.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'WordPress security risks, process, and history', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'WordPress security risks, process, and history', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -201,8 +201,8 @@
 <p><?php _e( 'Administrators of the WordPress software see a notification on their site dashboard to upgrade when a new release is available, and following the manual upgrade users are redirected to the About WordPress screen which details the changes. If administrators have automatic background updates enabled, they will receive an email after an upgrade has been completed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Automatic background updates for security releases', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Automatic background updates for security releases', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -217,8 +217,8 @@
 <p><?php _e( 'Individual site owners can opt to remove automatic background updates through a simple change in their configuration file, but keeping the functionality is strongly recommended by the core team, as well as running the latest stable release of WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( '2013 OWASP Top 10', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( '2013 OWASP Top 10', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -317,8 +317,8 @@
 <p><?php _e( 'WordPress’ internal access control and authentication system will protect against attempts to direct users to unwanted destinations or automatic redirects. This functionality is also made available to plugin developers via an API,&nbsp;<code>wp_safe_redirect()</code><sup id="ref16"><a href="#footnote16">16</a></sup>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Further security risks and concerns', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Further security risks and concerns', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
@@ -337,12 +337,12 @@
 <p><?php _e( 'HTTP requests issued by WordPress are filtered to prevent access to loopback and private IP addresses. Additionally, access is only allowed to certain standard HTTP ports.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'WordPress plugin and theme security', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'WordPress plugin and theme security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'The default theme', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'The default theme', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -353,8 +353,8 @@
 <p><?php _e( 'The default theme can serve as a starting point for custom theme development, and site developers can create a child theme which includes some customization but falls back on the default theme for most functionality and security. The default theme can be easily removed by an administrator if not needed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'WordPress.org theme and plugin repositories', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'WordPress.org theme and plugin repositories', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -373,36 +373,36 @@
 <p><?php _e( 'When a plugin vulnerability is discovered by the WordPress Security Team, they contact the plugin author and work together to fix and release a secure version of the plugin. If there is a lack of response from the plugin author or if the vulnerability is severe, the plugin/theme is pulled from the public directory, and in some cases, fixed and updated directly by the Security Team.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'The Theme Review Team', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'The Theme Review Team', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The Theme Review Team is a group of volunteers, led by key and established members of the WordPress community, who review and approve themes submitted to be included in the official WordPress Theme directory. The Theme Review Team maintains the official Theme Review Guidelines<sup id="ref19"><a href="#footnote19">19</a></sup>, the Theme Unit Test Datas<sup id="ref20"><a href="#footnote20">20</a></sup>, and the Theme Check Plugins<sup id="ref21"><a href="#footnote21">21</a></sup>, and attempts to engage and educate the WordPress Theme developer community regarding development best practices. Inclusion in the group is moderated by core committers of the WordPress development team.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'The role of the hosting provider in WordPress security', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'The role of the hosting provider in WordPress security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'WordPress can be installed on a multitude of platforms. Though WordPress core software provides many provisions for operating a secure web application, which were covered in this document, the configuration of the operating system and the underlying web server hosting the software is equally important to keep the WordPress applications secure.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'A note about WordPress.com and WordPress security', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'A note about WordPress.com and WordPress security', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'WordPress.com is the largest WordPress installation in the world, and is owned and managed by Automattic, Inc., which was founded by Matt Mullenweg, the WordPress project co-creator. WordPress.com runs on the core WordPress software, and has its own security processes, risks, and solutions<sup id="ref22"><a href="#footnote22">22</a></sup>. This document refers to security regarding the self-hosted, downloadable open source WordPress software available from WordPress.org and installable on any server in the world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|40"}}} -->
-<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--40)"><?php _e( 'Appendix', 'wporg' ); ?></h2>
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php _e( 'Appendix', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Core WordPress APIs', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Core WordPress APIs', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -413,16 +413,16 @@
 <p><?php _e( 'While each WordPress API provides best practices and standardized ways to interact with and extend WordPress core software, the following WordPress APIs are the most pertinent to enforcing and hardening WordPress security:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Database API', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Database API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The Database API<sup id="ref24"><a href="#footnote24">24</a></sup>, added in WordPress 0.71, provides the correct method for accessing data as named values which are stored in the database layer.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Filesystem API', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Filesystem API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -433,24 +433,24 @@
 <p><?php _e( 'It does this through the&nbsp;<code>WP_Filesystem_Base</code>&nbsp;class, and several subclasses which implement different ways of connecting to the local filesystem, depending on individual host support. Any theme or plugin that needs to write files locally should do so using the WP_Filesystem family of classes.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'HTTP API', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'HTTP API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The HTTP API<sup id="ref27"><a href="#footnote27">27</a></sup>, added in WordPress 2.7<sup id="ref28"><a href="#footnote28">28</a></sup>&nbsp;and extended further in WordPress 2.8, standardizes the HTTP requests for WordPress. The API handles cookies, gzip encoding and decoding, chunk decoding (if HTTP 1.1), and various other HTTP protocol implementations. The API standardizes requests, tests each method prior to sending, and, based on your server configuration, uses the appropriate method to make the request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Permissions and current user API', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Permissions and current user API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The permissions and current user API<sup id="ref29"><a href="#footnote29">29</a></sup>&nbsp;is a set of functions which will help verify the current user’s permissions and authority to perform any task or operation being requested, and can protect further against unauthorized users accessing or performing functions beyond their permitted capabilities.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'White paper content License', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'White paper content License', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -461,8 +461,8 @@
 <p><?php _e( '<em>A special thank you to Drupal’s&nbsp;</em><a href="https://www.drupal.org/files/drupal-security-whitepaper-1-3_0.pdf"><em>security white paper</em></a><em>, which provided some inspiration.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Additional reading', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Additional reading', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -499,8 +499,8 @@
 <hr class="wp-block-separator has-text-color has-light-grey-1-color has-alpha-channel-opacity has-light-grey-1-background-color has-background is-style-default" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"style":{"margin":{"top":"var:preset|spacing|30"}}} -->
-<h3 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Footnotes', 'wporg' ); ?></h3>
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><?php _e( 'Footnotes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"anchor":"footnotes","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
