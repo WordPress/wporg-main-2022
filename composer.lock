@@ -2309,15 +2309,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.5.0",
+            "version": "15.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.5.0"
+                "reference": "tags/15.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.5.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2418,12 +2418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "b79bc9a9f326e8975aa91d463de5acc4fea2331d"
+                "reference": "b4f398d4739452acb0a8a9e871e2b6a3b6377756"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/b79bc9a9f326e8975aa91d463de5acc4fea2331d",
-                "reference": "b79bc9a9f326e8975aa91d463de5acc4fea2331d",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/b4f398d4739452acb0a8a9e871e2b6a3b6377756",
+                "reference": "b4f398d4739452acb0a8a9e871e2b6a3b6377756",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -2431,7 +2431,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2023-04-05T15:08:22+00:00"
+            "time": "2023-04-12T15:48:19+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
@@ -2538,5 +2538,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
