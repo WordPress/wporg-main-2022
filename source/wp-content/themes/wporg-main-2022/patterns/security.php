@@ -17,8 +17,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"fontSize":"heading-2"} -->
-<h1 class="wp-block-heading has-heading-2-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Security', 'wporg' ); ?></h1>
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Security', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -503,7 +503,7 @@
 <h3 class="wp-block-heading"><?php _e( 'Footnotes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:group {"anchor":"footnotes","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"},"anchor":"footnotes"} -->
 <div id="footnotes" class="wp-block-group"><!-- wp:paragraph {"anchor":"footnote1"} -->
 <p id="footnote1"><?php _e( '<a href="#ref1">[1]</a>&nbsp;<a href="https://w3techs.com/">https://w3techs.com/</a>, as of December 2019', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
