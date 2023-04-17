@@ -35,8 +35,8 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17151,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/allversions.png"><img src="https://wordpress.org/files/2023/02/allversions.png" alt="" class="wp-image-17151" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17151,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/allversions.png" alt="" class="wp-image-17151" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -53,8 +53,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17160,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/standard.png"><img src="https://wordpress.org/files/2023/02/standard.png" alt="" class="wp-image-17160" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17160,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/standard.png" alt="" class="wp-image-17160" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -79,8 +79,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17161,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/alternative.png"><img src="https://wordpress.org/files/2023/02/alternative.png" alt="" class="wp-image-17161" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17161,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/alternative.png" alt="" class="wp-image-17161" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -107,8 +107,8 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17166,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/wordmark.png"><img src="https://wordpress.org/files/2023/02/wordmark.png" alt="" class="wp-image-17166" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17166,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/wordmark.png" alt="" class="wp-image-17166" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -133,8 +133,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17167,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/wmark.png"><img src="https://wordpress.org/files/2023/02/wmark.png" alt="" class="wp-image-17167" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17167,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/wmark.png" alt="" class="wp-image-17167" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -159,8 +159,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":17168,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/simplified.png"><img src="https://wordpress.org/files/2023/02/simplified.png" alt="" class="wp-image-17168" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":17168,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/simplified.png" alt="" class="wp-image-17168" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -189,7 +189,7 @@
 <p><?php _e( 'Friends don’t let friends use the wrong WordPress logo. If you see one of these in the wild, please suggest a change.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":17154,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/02/logo-comparison.png"><img src="https://wordpress.org/files/2023/02/logo-comparison.png" alt="" class="wp-image-17154" /></a></figure>
+<!-- wp:image {"id":17154,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/02/logo-comparison.png" alt="" class="wp-image-17154" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
