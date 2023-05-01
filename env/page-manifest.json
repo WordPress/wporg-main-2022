@@ -4,83 +4,78 @@
 		"template": "front-page.html"
 	},
 	{
-		"slug": "download",
-		"template": "page-download.html"
-	},
-	{
 		"slug": "about",
 		"pattern": "about.php",
 		"template": "page-about.html"
 	},
 	{
 		"slug": "requirements",
-		"pattern": "requirements.php",
+		"pattern": "about-requirements.php",
 		"template": "page-requirements.html"
 	},
 	{
 		"slug": "features",
-		"pattern": "features.php",
+		"pattern": "about-features.php",
 		"template": "page-features.html"
 	},
 	{
 		"slug": "security",
-		"pattern": "security.php",
+		"pattern": "about-security.php",
 		"template": "page-security.html"
 	},
 	{
 		"slug": "roadmap",
-		"pattern": "roadmap.php",
+		"pattern": "about-roadmap.php",
 		"template": "page-roadmap.html"
 	},
 	{
 		"slug": "history",
-		"pattern": "history.php",
+		"pattern": "about-history.php",
 		"template": "page-history.html"
 	},
 	{
 		"slug": "domains",
-		"pattern": "domains.php",
+		"pattern": "about-domains.php",
 		"template": "page-domains.html"
 	},
 	{
 		"slug": "license",
-		"pattern": "license.php",
+		"pattern": "about-license.php",
 		"template": "page-license.html"
 	},
 	{
 		"slug": "accessibility",
-		"pattern": "accessibility.php",
+		"pattern": "about-accessibility.php",
 		"template": "page-accessibility.html"
 	},
 	{
 		"slug": "privacy",
-		"pattern": "privacy.php",
+		"pattern": "about-privacy.php",
 		"template": "page-privacy.html"
 	},
 	{
 		"slug": "stats",
-		"pattern": "stats.php",
+		"pattern": "about-stats.php",
 		"template": "page-stats.html"
 	},
 	{
 		"slug": "philosophy",
-		"pattern": "philosophy.php",
+		"pattern": "about-philosophy.php",
 		"template": "page-philosophy.html"
 	},
 	{
 		"slug": "etiquette",
-		"pattern": "etiquette.php",
+		"pattern": "about-etiquette.php",
 		"template": "page-etiquette.html"
 	},
 	{
 		"slug": "logos",
-		"pattern": "logos.php",
+		"pattern": "about-logos.php",
 		"template": "page-logos.html"
 	},
 	{
-		"slug": "enterprise",
-		"pattern": "enterprise.php",
-		"template": "page-enterprise.html"
+		"slug": "download",
+		"template": "page-download.html"
 	},
 	{
 		"slug": "beta-nightly",
@@ -101,6 +96,11 @@
 		"slug": "source",
 		"pattern": "download-source.php",
 		"template": "page-source.html"
+	},
+	{
+		"slug": "enterprise",
+		"pattern": "enterprise.php",
+		"template": "page-enterprise.html"
 	},
 	{
 		"slug": "mobile",
