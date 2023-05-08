@@ -221,7 +221,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Multi-lingual — Core implementation for Multi-lingual sites', 'wporg' ); ?></li>
+<li><?php _e( 'Multilingual — Core implementation for Multilingual sites', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
