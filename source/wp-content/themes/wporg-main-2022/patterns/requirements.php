@@ -27,11 +27,11 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.php.net/">PHP</a> version 7.4 or greater.', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.mysql.com/">MySQL</a> version 5.7 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.3 or greater.', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater OR <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -66,11 +66,11 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'PHP 7.4 or greater', 'wporg' ); ?></li>
+<li><?php _e( 'PHP [recommended_php] or greater', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'MySQL 5.7 or greater OR MariaDB 10.3 or greater', 'wporg' ); ?></li>
+<li><?php _e( 'MySQL [recommended_mysql] or greater OR MariaDB [recommended_mariadb] or greater', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
