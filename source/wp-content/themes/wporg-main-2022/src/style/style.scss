@@ -52,6 +52,18 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	border-left-style: solid;
 }
 
+// Images in the link banner should not shrink.
+body.home .wp-block-wporg-link-wrapper {
+
+	@media (max-width: 499px) {
+		font-size: 13px;
+	}
+
+	.is-layout-flex .wp-block-image {
+		flex-shrink: 0;
+	}
+}
+
 /**
  * Add a background behind the Editor section's cover block, for browsers that don't support webp.
  */

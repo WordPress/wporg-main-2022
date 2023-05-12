@@ -6,23 +6,19 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"blueberry-1","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-blueberry-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"https://wordpress.org/files/2023/03/confetti-eased-2-1.png","id":17922,"dimRatio":0,"overlayColor":"blueberry-1","focalPoint":{"x":0.5,"y":0.3},"minHeight":360,"contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:360px"><span aria-hidden="true" class="wp-block-cover__background has-blueberry-1-background-color has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-17922" alt="" src="https://wordpress.org/files/2023/03/confetti-eased-2-1.png" style="object-position:50% 30%" data-object-fit="cover" data-object-position="50% 30%" /><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:media-text {"mediaId":17919,"mediaLink":"https://wordpress.org/home/swag-bulk-org/","mediaType":"image","mediaWidth":41,"imageFill":false,"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:41% auto"><figure class="wp-block-media-text__media"><img src="https://wordpress.org/files/2023/03/swag-bulk-org-1024x848.png" alt="" class="wp-image-17919 size-full" /></figure><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0"><!-- wp:heading {"style":{"typography":{"lineHeight":"1"},"spacing":{"margin":{"top":"0"}}},"textColor":"white"} -->
-<h2 class="wp-block-heading has-white-color has-text-color" style="margin-top:0;line-height:1"><?php _e( 'Show your<br>#WP20 <em>Excitement</em>', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
+<!-- wp:wporg/link-wrapper {"align":"full","backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
+<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" href="http://wp20.wordpress.net/"><!-- wp:cover {"url":"https://wordpress.org/files/2023/03/confetti-eased-2-1.png","id":17922,"dimRatio":50,"overlayColor":"blueberry-1","focalPoint":{"x":0.5,"y":0.12},"minHeight":60,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"textColor":"white"} -->
+<div class="wp-block-cover alignfull is-light has-white-color has-text-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:60px"><span aria-hidden="true" class="wp-block-cover__background has-blueberry-1-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-17922" alt="" src="https://wordpress.org/files/2023/03/confetti-eased-2-1.png" style="object-position:50% 12%" data-object-fit="cover" data-object-position="50% 12%" /><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:image {"width":45,"height":29,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/05/wp20-logo-white.png" alt="" width="45" height="29" /></figure>
+<!-- /wp:image -->
 
-<!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","className":"is-style-short-text"} -->
-<p class="has-text-align-left is-style-short-text has-white-color has-text-color has-link-color"><?php _e( 'with exclusive swag available now at<br><a href="https://mercantile.wordpress.org">mercantile.wordpress.org</a>', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
+<p style="line-height:1.1"><?php _e( 'Join a celebration online or around the globe for the 20th anniversary of WordPress. ↗', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div></div>
-<!-- /wp:media-text --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:group -->
+<!-- /wp:cover --></a>
+<!-- /wp:wporg/link-wrapper -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"},"anchor":"intro"} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
