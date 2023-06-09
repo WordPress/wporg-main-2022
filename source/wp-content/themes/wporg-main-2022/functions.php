@@ -26,6 +26,9 @@ add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loadi
 global $wp_embed;
 add_filter( 'render_block_core/pattern', array( $wp_embed, 'autoembed' ) );
 
+// Render shortcodes in patterns.
+add_filter( 'render_block_core/pattern', 'do_shortcode' );
+
 /**
  * Enqueue scripts and styles.
  */

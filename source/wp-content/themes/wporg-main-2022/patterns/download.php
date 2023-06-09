@@ -30,7 +30,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"10px"}}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/latest.zip"><?php _e( 'Download WordPress 6.2.2', 'wporg' ); ?></a></div>
+<div class="wp-block-button" id="wporg__download-button"><a class="wp-block-button__link wp-element-button" href="[download_link]"><?php _e( 'Download WordPress [latest_version]', 'wporg' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
@@ -39,7 +39,7 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph {"textColor":"charcoal-4","className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Recommend PHP 7.4 or greater and MySQL 5.7 or MariaDB version 10.3 or greater.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} -->
