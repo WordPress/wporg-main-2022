@@ -8,8 +8,8 @@
 		"JETPACK_DEV_DEBUG": true,
 		"WPORG_SANDBOXED": true,
 		"WP_MARKET_SHARE": 43,
-		"WP_CORE_STABLE_BRANCH": "6.0",
-		"WP_CORE_LATEST_RELEASE": "6.0.1"
+		"WP_CORE_STABLE_BRANCH": "6.2",
+		"WP_CORE_LATEST_RELEASE": "6.2.2"
 	},
 	"core": "WordPress/WordPress#master",
 	"plugins": [
