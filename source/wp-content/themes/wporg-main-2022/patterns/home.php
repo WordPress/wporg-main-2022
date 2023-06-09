@@ -6,19 +6,25 @@
  */
 
 ?>
-<!-- wp:wporg/link-wrapper {"align":"full","backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
-<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" href="http://wp20.wordpress.net/"><!-- wp:cover {"url":"https://wordpress.org/files/2023/03/confetti-eased-2-1.png","id":17922,"dimRatio":50,"overlayColor":"blueberry-1","focalPoint":{"x":0.5,"y":0.12},"minHeight":60,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"textColor":"white"} -->
-<div class="wp-block-cover alignfull is-light has-white-color has-text-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:60px"><span aria-hidden="true" class="wp-block-cover__background has-blueberry-1-background-color has-background-dim"></span><img class="wp-block-cover__image-background wp-image-17922" alt="" src="https://wordpress.org/files/2023/03/confetti-eased-2-1.png" style="object-position:50% 12%" data-object-fit="cover" data-object-position="50% 12%" /><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:image {"width":45,"height":29,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/05/wp20-logo-white.png" alt="" width="45" height="29" /></figure>
-<!-- /wp:image -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#020c3a","text":"#fff0cc"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"#fff0cc"}}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-text-color has-background has-link-color" style="color:#fff0cc;background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=e-CwouzTGp4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><?php _e( '
+https://www.youtube.com/watch?v=e-CwouzTGp4
+', 'wporg' ); ?></div></figure>
+<!-- /wp:embed --></div>
+<!-- /wp:column -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.1"}}} -->
-<p style="line-height:1.1"><?php _e( 'Join a celebration online or around the globe for the 20th anniversary of WordPress. ↗', 'wporg' ); ?></p>
+<!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"}},"className":"is-style-short-text"} -->
+<p class="is-style-short-text has-text-color" style="color:#fff0cc"><?php _e( '<a href="https://www.youtube.com/watch?v=e-CwouzTGp4"><span style="text-decoration: underline">Watch the 2023 WordCamp Europe Keynote</span></a> featuring Matt Mullenweg, Matías Ventura, and Josepha Haden Chomphosy on June 10 at 1:00 p.m. UTC.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover --></a>
-<!-- /wp:wporg/link-wrapper -->
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"},"anchor":"intro"} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
