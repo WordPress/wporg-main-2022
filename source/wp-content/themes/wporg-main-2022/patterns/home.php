@@ -10,16 +10,16 @@
 <div class="wp-block-group alignfull has-text-color has-background has-link-color" style="color:#fff0cc;background-color:#020c3a;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=e-CwouzTGp4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://youtu.be/7Nmz3IjtPh0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=e-CwouzTGp4
+https://youtu.be/7Nmz3IjtPh0
 </div></figure>
 <!-- /wp:embed --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"color":{"text":"#fff0cc"}},"className":"is-style-short-text"} -->
-<p class="is-style-short-text has-text-color" style="color:#fff0cc"><?php _e( '<a href="https://www.youtube.com/watch?v=e-CwouzTGp4"><span style="text-decoration: underline">Watch the 2023 WordCamp Europe Keynote</span></a> featuring Matt Mullenweg, Matías Ventura, and Josepha Haden Chomphosy on June 10 at 1:00 p.m. UTC.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-text-color" style="color:#fff0cc"><?php _e( '<a href="https://youtu.be/7Nmz3IjtPh0"><span style="text-decoration: underline">Watch the 2023 WordCamp Europe Keynote</span></a> featuring Matt Mullenweg, Matías Ventura, and Josepha Haden Chomphosy on June 10 at 1:00 p.m. UTC.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
