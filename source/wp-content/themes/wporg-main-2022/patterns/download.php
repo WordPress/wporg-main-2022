@@ -74,6 +74,12 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"color":null,"style":null,"width":null,"top":{"color":"var:preset|color|light-grey-1","style":"solid","width":"1px"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"default"},"anchor":""} -->
+<div class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:paragraph {"align":"center","anchor":"external-link"} -->
+<p class="has-text-align-center" id="external-link"><?php _e( 'Still not sure? Explore the WordPress Playground, a live demo environment right from your browser. <a href="https://developer.wordpress.org/playground/">Try WordPress ↗</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-4","layout":{"inherit":true,"type":"constrained"},"anchor":"features"} -->
 <div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="features" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"0"}}}} -->
