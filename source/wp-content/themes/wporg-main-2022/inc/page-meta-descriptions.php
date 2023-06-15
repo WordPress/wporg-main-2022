@@ -41,7 +41,7 @@ function custom_open_graph_tags( $tags = [] ) {
 			'description'     => $desc,
 			'og:url'          => home_url( '/' ),
 			'og:site_name'    => $site_title,
-			'og:image'        => 'https://wordpress.org/files/2022/08/embed-image.png',
+			'og:image'        => 'https://s.w.org/images/home/wordpress-homepage-ogimage.png',
 			'og:locale'       => get_locale(),
 			'twitter:card'    => 'summary_large_image',
 			'twitter:creator' => '@WordPress',
@@ -66,7 +66,7 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	return $tags;
 }
-add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags' );
+add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags', 11 );
 // Enable Jetpack opengraph by default
 add_filter( 'jetpack_enable_open_graph', '__return_true' );
 
