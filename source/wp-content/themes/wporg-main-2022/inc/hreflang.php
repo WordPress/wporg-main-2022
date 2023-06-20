@@ -86,7 +86,7 @@ function hreflang_link_attributes() {
 
 	$sites = wp_cache_get( 'local-sites', 'locale-associations' );
 
-	// WARNING: for any changes below, check other uses of the `locale-assosciations` group as there's shared cache keys in use.
+	// WARNING: for any changes below, check other uses of the `locale-associations` group as there's shared cache keys in use.
 	if ( false === $sites ) {
 		global $wpdb;
 
