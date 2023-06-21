@@ -37,11 +37,6 @@
 			type: 'PieChart',
 			url: 'https://api.wordpress.org/stats/mysql/1.0/',
 			data: false,
-			dataTransform: function ( data ) {
-				delete data[ '12.0' ]; // Not a MySQL version.
-
-				return data;
-			},
 		},
 		{
 			id: 'locales',
