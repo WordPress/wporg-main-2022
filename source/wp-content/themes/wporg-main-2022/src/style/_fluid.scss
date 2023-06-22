@@ -1,0 +1,26 @@
+// See https://www.smashingmagazine.com/2022/10/fluid-typography-clamp-sass-functions/
+
+@use "sass:math";
+@import "utilities";
+
+// Default breakpoints based on parent theme `layout` widths
+/* stylelint-disable-next-line max-line-length */
+// https://github.com/WordPress/wporg-parent-2021/blob/trunk/source/wp-content/themes/wporg-parent-2021/theme.json#L364
+$default-min-bp: 600px;
+$default-max-bp: 1320px; // wide size + edge space * 2
+
+@function fluid(
+	$min-size,
+	$max-size,
+	$min-breakpoint: $default-min-bp,
+	$max-breakpoint: $default-max-bp,
+	$unit: vw
+) {
+	$slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+	$slope-to-unit: round_to_decimals($slope * 100, 2);
+	$intercept-rem: round_to_decimals(px_to_rem($min-size - $slope * $min-breakpoint), 2);
+	$min-size-rem: round_to_decimals(px_to_rem($min-size), 2);
+	$max-size-rem: round_to_decimals(px_to_rem($max-size), 2);
+
+	@return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
+}
