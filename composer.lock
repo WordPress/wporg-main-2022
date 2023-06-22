@@ -2430,12 +2430,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "e013f52afae8875ec870d6f292bd9110210aa735"
+                "reference": "686bee437a32443560a5bc09edefdf425c1f325b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/e013f52afae8875ec870d6f292bd9110210aa735",
-                "reference": "e013f52afae8875ec870d6f292bd9110210aa735",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/686bee437a32443560a5bc09edefdf425c1f325b",
+                "reference": "686bee437a32443560a5bc09edefdf425c1f325b",
                 "shasum": ""
             },
             "require": {
@@ -2476,7 +2476,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2023-06-21T17:13:38+00:00"
+            "time": "2023-06-22T22:12:33+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
