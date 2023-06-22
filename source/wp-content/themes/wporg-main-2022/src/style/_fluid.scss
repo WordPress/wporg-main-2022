@@ -3,8 +3,11 @@
 @use "sass:math";
 @import "utilities";
 
-$default-min-bp: var(--wp--style--global--content-size);
-$default-max-bp: var(--wp--style--global--wide-size);
+// Default breakpoints based on parent theme `layout` widths
+/* stylelint-disable-next-line max-line-length */
+// https://github.com/WordPress/wporg-parent-2021/blob/trunk/source/wp-content/themes/wporg-parent-2021/theme.json#L364
+$default-min-bp: 600px;
+$default-max-bp: 1320px; // wide size + edge space * 2
 
 @function fluid(
 	$min-size,
