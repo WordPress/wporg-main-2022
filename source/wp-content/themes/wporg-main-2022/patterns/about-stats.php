@@ -47,7 +47,7 @@
 
 <!-- wp:group {"className":"wporg-about-stats-section","layout":{"type":"constrained"},"anchor":""} -->
 <div class="wp-block-group wporg-about-stats-section"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'MySQL Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Database Version <a class="swap-table dashicons dashicons-editor-table" title="View as Table" aria-hidden="true"></a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"full","className":"wporg-stats-chart loading","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"anchor":"mysql_versions"} -->
