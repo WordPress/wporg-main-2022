@@ -2,40 +2,23 @@ name: Static Analysis (Linting)
 
 # This workflow is triggered on pushes to trunk, and any PRs.
 on:
-    push:
-        branches: [trunk]
-    pull_request:
+  push:
+    branches: [trunk]
+  pull_request:
 
 jobs:
-    check:
-        name: Lint everything
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          ref: trunk
 
-        runs-on: ubuntu-latest
+      - name: Setup
+        uses: WordPress/wporg-repo-tools/.github/actions/setup@try/reusable-workflows
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3.0.2
-
-            - name: Install NodeJS
-              uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # v3.3.0
-              with:
-                  node-version-file: '.nvmrc'
-                  cache: yarn
-
-            - name: Install dependencies & setup configs
-              run: |
-                  yarn setup:tools
-
-            - name: Lint CSS
-              run: |
-                  yarn workspace wporg-main-2022-theme lint:css
-
-            - name: Lint JS
-              run: |
-                  yarn workspace wporg-main-2022-theme lint:js
-
-            - name: Lint PHP
-              run: |
-                  composer run lint source/wp-content/themes/wporg-main-2022
-                  composer run lint source/wp-content/mu-plugins/theme-switcher.php
-                  composer run lint env
+      - name: Lint
+        uses: WordPress/wporg-repo-tools/.github/actions/lint@try/reusable-workflows

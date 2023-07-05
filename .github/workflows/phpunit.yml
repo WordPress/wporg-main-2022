@@ -2,33 +2,26 @@ name: PHP Unit Tests
 
 # This workflow is triggered on pushes to trunk, and any PRs.
 on:
-    push:
-        branches: [trunk]
-    pull_request:
+  push:
+    branches: [trunk]
+  pull_request:
 
 jobs:
-    check:
-        name: Test PHP
+  check:
+    name: Test PHP
 
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout repository
-              uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3.0.2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          ref: trunk
 
-            - name: Install NodeJS
-              uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # v3.3.0
-              with:
-                  node-version-file: '.nvmrc'
-                  cache: yarn
+      - name: Setup
+        uses: WordPress/wporg-repo-tools/.github/actions/setup@try/reusable-workflows
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-            - name: Install dependencies & setup configs
-              run: |
-                  yarn setup:tools
-
-            - name: Install WordPress
-              run: |
-                  yarn wp-env start
-
-            - name: Running PHP unit tests
-              run: yarn test:php
+      - name: Test
+        uses: WordPress/wporg-repo-tools/.github/actions/test-php@try/reusable-workflows
