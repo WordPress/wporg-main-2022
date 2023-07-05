@@ -21,14 +21,6 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 
-// Enable embeds in patterns.
-// See https://github.com/WordPress/gutenberg/issues/46556.
-global $wp_embed;
-add_filter( 'render_block_core/pattern', array( $wp_embed, 'autoembed' ) );
-
-// Render shortcodes in patterns.
-add_filter( 'render_block_core/pattern', 'do_shortcode' );
-
 /**
  * Enqueue scripts and styles.
  */
