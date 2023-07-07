@@ -76,6 +76,10 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>APIs:<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li>Fonts API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Block API</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->",
 				[ 'APIs:', 'Fonts API', 'Interactivity API', 'Block API' ],
 			],
+			[
+				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th>Cookie</th><th>Logged-in Users Only?</th></tr></thead><tbody><tr><th>welcome-{blog_id}</th><td>No</td></tr><tr><th>showComments</th><td>No</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				[ 'Cookie', 'Logged-in Users Only?', 'welcome-{blog_id}', 'No', 'showComments' ],
+			],
 		];
 	}
 
@@ -125,6 +129,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p>I'm interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p><?php _e( 'I&#039;m interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:', 'wporg' ); ?></p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
+			],
+			[
+				// Block with repeated strings.
+				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th>Cookie</th><th>Logged-in Users Only?</th></tr></thead><tbody><tr><th>welcome-{blog_id}</th><td>No</td></tr><tr><th>showComments</th><td>No</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th><?php _e( 'Cookie', 'wporg' ); ?></th><th><?php _e( 'Logged-in Users Only?', 'wporg' ); ?></th></tr></thead><tbody><tr><th><?php _e( 'welcome-{blog_id}', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr><tr><th><?php _e( 'showComments', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 			],
 		];
 	}

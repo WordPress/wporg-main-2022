@@ -40,14 +40,24 @@ class BasicText implements BlockParser {
 				$xpath = new \DOMXPath( $dom );
 
 				$text_nodes = $xpath->query( $xpath_query );
+				$strings = array();
 
-				// Only update text matches that are found outside of HTML tags.
-				// This approach does not use $dom->saveHTML because innerContent includes
-				// unclosed HTML tags, and saveHTML adds extra closed tags.
+				// Get a unique list of things to replace.
 				foreach ( $text_nodes as $text ) {
-					if ( trim( $text->nodeValue ) && isset( $replacements[ $text->nodeValue ] ) ) {
-						$regex = '#(<([^>]*)>)?' . preg_quote( $text->nodeValue, '#' ) . '(<([^>]*)>)?#s';
-						$inner_content = preg_replace( $regex, '${1}' . $replacements[ $text->nodeValue ] . '${3}', $inner_content );
+					if ( ! in_array( $text->nodeValue, $strings ) ) {
+						$strings[] = $text->nodeValue;
+					}
+				}
+
+				foreach ( $strings as $string ) {
+					if ( trim( $string ) && isset( $replacements[ $string ] ) ) {
+						// Replace only things inside HTML tags or attributes, to prevent nested replacements.
+						// For example, if we have "Jetpack" and "Use Jetpack!", this prevents the latter
+						// string from becoming `<?php _e( 'Use <?php _e( 'Jetpack', 'wporg' );!', 'wporg' ).
+						// There might be edge cases where the string is not wrapped in tags/quotes, but I
+						// haven't seen one in testing.
+						$regex = '#(<([^>]*)>|=")' . preg_quote( $string, '#' ) . '(<([^>]*)>|")#s';
+						$inner_content = preg_replace( $regex, '${1}' . $replacements[ $string ] . '${3}', $inner_content );
 					}
 				}
 			}
