@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\update_site_breadcrumbs' );
+add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
 
 /**
  * Enqueue scripts and styles.
@@ -117,7 +118,7 @@ function override_lazy_loading( $value, $image ) {
 }
 
 /**
- * In the subpages, update first breadcrumb to be the parent page, rather than site home.
+ * Use the page heirarchy to display breadcrumbs.
  */
 function update_site_breadcrumbs( $breadcrumbs ) {
 	$parent = get_post_parent();
@@ -125,21 +126,51 @@ function update_site_breadcrumbs( $breadcrumbs ) {
 		return $breadcrumbs;
 	}
 
-	if ( 'about' === $parent->post_name ) {
-		$top_level_page = array(
-			'url'   => home_url( '/about/' ),
-			'title' => __( 'About', 'wporg' ),
+	$breadcrumbs = array();
+	$breadcrumbs[] = array(
+		'url' => false,
+		'title' => get_the_title(),
+	);
+
+	while ( $parent ) {
+		$breadcrumbs[] = array(
+			'url' => get_permalink( $parent->ID ),
+			'title' => $parent->post_title,
 		);
-		$breadcrumbs[0] = $top_level_page;
-	} else if ( 'download' === $parent->post_name ) {
-		$top_level_page = array(
-			'url'   => home_url( '/download/' ),
-			'title' => __( 'Download', 'wporg' ),
-		);
-		$breadcrumbs[0] = $top_level_page;
+		$parent = get_post_parent( $parent );
 	}
 
-	return $breadcrumbs;
+	return array_reverse( $breadcrumbs );
+}
+
+/**
+ * Replace the site title & link with the parent page title.
+ *
+ * The About and Download sections are pseudo-individual sites, so when site title
+ * is used there, it should reference the parent page.
+ *
+ * @param string   $block_content The block content.
+ * @param array    $block         The full block, including name and attributes.
+ * @param WP_Block $instance      The block instance.
+ */
+function use_parent_page_title( $block_content, $block, $instance ) {
+	$parent = get_post_parent();
+	if ( ! $parent ) {
+		return $block_content;
+	}
+
+	// Loop up to the first child page, this is the section title.
+	while ( $parent ) {
+		$url = get_permalink( $parent->ID );
+		$title = $parent->post_title;
+		$parent = get_post_parent( $parent );
+	}
+
+	return str_replace(
+		array( home_url(), get_bloginfo( 'name' ) ),
+		array( $url, $title ),
+		$block_content
+	);
 }
 
 /**
