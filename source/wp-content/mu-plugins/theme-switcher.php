@@ -49,6 +49,7 @@ function should_use_new_theme() {
 		'/download/beta-nightly/',
 		'/download/counter/',
 		'/download/releases/',
+		'/download/releases/6-3/',
 		'/download/source/',
 		'/mobile/',
 		'/enterprise/',
