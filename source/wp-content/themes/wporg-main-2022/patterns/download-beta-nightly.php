@@ -10,13 +10,13 @@
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"right":"var:preset|spacing|60"}}},"fontSize":"heading-2"} -->
-<h1 class="has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Beta/Nightly', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Beta/Nightly', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="has-heading-3-font-size"><?php _e( 'Unstable Beta Versions', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Unstable Beta Versions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -32,7 +32,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"fontSize":"heading-3"} -->
-<h2 class="has-heading-3-font-size" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Nightly Builds', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Nightly Builds', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
