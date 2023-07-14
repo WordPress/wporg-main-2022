@@ -95,20 +95,6 @@ body.home .wp-block-wporg-link-wrapper {
 	--wp--preset--spacing--60: clamp(40px, calc(100vw / 18), 80px);
 }
 
-.wporg-enterprise-features {
-	[dir="rtl"] & {
-		.wp-block-column {
-			&:first-child {
-				border-right: none;
-			}
-
-			&:last-child {
-				border-right: 1px solid var(--wp--preset--color--light-grey-1);
-			}
-		}
-	}
-}
-
 /**
  * About page
  */
@@ -168,6 +154,10 @@ $wporg-about-breakpoint-max: 1920px;
 			background-image: url(../../images/about-4-freedoms-underline.svg);
 			background-size: contain;
 			background-repeat: no-repeat;
+
+			[dir="rtl"] & {
+				transform: scaleX(-1);
+			}
 		}
 	}
 }
@@ -188,8 +178,6 @@ $wporg-about-breakpoint-max: 1920px;
 		background-position: center;
 
 		[dir="rtl"] & {
-			left: unset;
-			right: -5px;
 			transform: scaleX(-1);
 		}
 	}
@@ -200,26 +188,26 @@ $wporg-about-breakpoint-max: 1920px;
 
 	display: grid;
 	grid-template-rows: auto $arrow-height auto;
-	background-image: url(../../images/about-cover-arrow.svg);
-	background-size: auto $arrow-height;
-	background-repeat: no-repeat;
-	background-position: 42% center;
+
+	&::before {
+		content: "";
+		background-image: url(../../images/about-cover-arrow.svg);
+		background-size: auto $arrow-height;
+		background-repeat: no-repeat;
+		background-position: 42% center;
+
+		[dir="rtl"] & {
+			transform: scaleX(-1);
+		}
+	}
+
+	> span:first-child {
+		grid-row: 1;
+	}
 
 	> span:last-child {
 		grid-row: 3;
 		text-align: left;
-	}
-
-	[dir="rtl"] & {
-		text-align: left;
-
-		&::after {
-			transform: scaleX(-1);
-		}
-
-		> span:last-child {
-			text-align: right;
-		}
 	}
 }
 
