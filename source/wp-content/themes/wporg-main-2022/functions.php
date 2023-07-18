@@ -22,6 +22,7 @@ add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\update_site_breadcrumbs' );
 add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
+add_filter( 'render_block_data', __NAMESPACE__ . '\update_header_template_part_class' );
 
 /**
  * Enqueue scripts and styles.
@@ -204,3 +205,23 @@ add_action(
 		);
 	}
 );
+
+/**
+ * Add the has-display-contents class to the header template so that the fixed local nav bar works.
+ *
+ * @param array $block The parsed block data.
+ *
+ * @return array
+ */
+function update_header_template_part_class( $block ) {
+	if ( ! empty( $block['blockName'] ) && 'core/template-part' === $block['blockName'] ) {
+		if ( 'header' === $block['attrs']['slug'] ) {
+			if ( isset( $block['attrs']['className'] ) ) {
+				$block['attrs']['className'] .= ' has-display-contents';
+			} else {
+				$block['attrs']['className'] = 'has-display-contents';
+			}
+		}
+	}
+	return $block;
+}
