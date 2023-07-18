@@ -154,6 +154,14 @@ function update_site_breadcrumbs( $breadcrumbs ) {
  * @param WP_Block $instance      The block instance.
  */
 function use_parent_page_title( $block_content, $block, $instance ) {
+	if ( is_home() || is_single() || is_archive() ) {
+		return str_replace(
+			array( home_url(), get_bloginfo( 'name' ) ),
+			array( home_url( '/news/' ), __( 'News', 'wporg' ) ),
+			$block_content
+		);
+	}
+
 	$parent = get_post_parent();
 	if ( ! $parent ) {
 		return $block_content;
