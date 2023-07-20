@@ -236,11 +236,25 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : st
 
 	$i18n_strings = [];
 	foreach ( $strings as $string ) {
-		$i18n_strings[ $string ] = sprintf(
-			"<?php _e( '%s', '%s' ); ?>",
-			str_replace( "'", '&#039;', $string ),
-			$textdomain
-		);
+		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $string, $matches ) ) {
+			if ( count( $matches[0] ) > 1 ) {
+				$translator_comment = sprintf( '/* translators: %s are shortcodes and should not be translated. */', implode( ', ', $matches[0] ) );
+			} else {
+				$translator_comment = sprintf( '/* translators: %s is a shortcode and should not be translated. */', implode( ', ', $matches[0] ) );
+			}
+			$i18n_strings[ $string ] = sprintf(
+				"<?php\n%s\n_e( '%s', '%s' );\n?>",
+				$translator_comment,
+				str_replace( "'", '&#039;', $string ),
+				$textdomain
+			);
+		} else {
+			$i18n_strings[ $string ] = sprintf(
+				"<?php _e( '%s', '%s' ); ?>",
+				str_replace( "'", '&#039;', $string ),
+				$textdomain
+			);
+		}
 	}
 
 	return $parser->replace_strings( $i18n_strings );
