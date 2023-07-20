@@ -39,7 +39,7 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph {"textColor":"charcoal-4","className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} -->
