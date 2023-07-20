@@ -10,5 +10,5 @@
 <!-- wp:wporg/local-navigation-bar {"className":"is-style-brush-stroke","style":{"position":{"type":"sticky"}},"fontSize":"small"} -->
 <!-- wp:site-title {"level":0,"fontSize":"small"} /-->
 
-<!-- wp:navigation {"ref":11576,"hasIcon":false,"layout":{"type":"flex","orientation":"horizontal"},"fontSize":"small"} /-->
+<!-- wp:navigation {"menuSlug":"download","hasIcon":false,"layout":{"type":"flex","orientation":"horizontal"},"fontSize":"small"} /-->
 <!-- /wp:wporg/local-navigation-bar -->
