@@ -16,7 +16,10 @@
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
-<p><?php _e( 'This is an archive of every release we’ve done that we have a record of.<br>None of these are safe to use, except the <strong>latest</strong> in the [stable_branch] series, which is actively maintained.', 'wporg' ); ?></p>
+<p><?php
+/* translators: [stable_branch] is a shortcode and should not be translated. */
+_e( 'This is an archive of every release we’ve done that we have a record of.<br>None of these are safe to use, except the <strong>latest</strong> in the [stable_branch] series, which is actively maintained.', 'wporg' );
+?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

@@ -12,7 +12,10 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress powers more than [market_share] of the web — a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.', 'wporg' ); ?></p>
+<p><?php
+/* translators: [market_share] is a shortcode and should not be translated. */
+_e( 'WordPress powers more than [market_share] of the web — a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.', 'wporg' );
+?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

@@ -147,4 +147,32 @@ class BlockParser_Test extends WP_UnitTestCase {
 		$content_with_i18n = replace_with_i18n( $block_content );
 		$this->assertSame( $expected, $content_with_i18n );
 	}
+
+	/**
+	 * Data provider for valid block content and the i18n-ized results.
+	 *
+	 * @return array
+	 */
+	public function data_block_content_i18n_with_shortcode() {
+		return [
+			[
+				"<!-- wp:paragraph -->\n<p>Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php\n/* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );\n?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				"<!-- wp:list-item -->\n<li>Recommend PHP [recommended_php] or greater.</li>\n<!-- /wp:list-item -->",
+				"<!-- wp:list-item -->\n<li><?php\n/* translators: [recommended_php] is a shortcode and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater.', 'wporg' );\n?></li>\n<!-- /wp:list-item -->",
+			],
+		];
+	}
+
+	/**
+	 * Test the i18n replacement.
+	 *
+	 * @dataProvider data_block_content_i18n_with_shortcode
+	 */
+	public function test_i18n_replacement_with_shortcode( $block_content, $expected ) {
+		$content_with_i18n = replace_with_i18n( $block_content );
+		$this->assertSame( $expected, $content_with_i18n );
+	}
 }

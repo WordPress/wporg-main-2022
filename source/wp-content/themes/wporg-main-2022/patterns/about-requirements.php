@@ -17,11 +17,17 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater.', 'wporg' ); ?></li>
+<li><?php
+/* translators: [recommended_php] is a shortcode and should not be translated. */
+_e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater.', 'wporg' );
+?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater OR <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.', 'wporg' ); ?></li>
+<li><?php
+/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
+_e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater OR <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.', 'wporg' );
+?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -56,11 +62,17 @@
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'PHP [recommended_php] or greater', 'wporg' ); ?></li>
+<li><?php
+/* translators: [recommended_php] is a shortcode and should not be translated. */
+_e( 'PHP [recommended_php] or greater', 'wporg' );
+?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'MySQL [recommended_mysql] or greater OR MariaDB [recommended_mariadb] or greater', 'wporg' ); ?></li>
+<li><?php
+/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
+_e( 'MySQL [recommended_mysql] or greater OR MariaDB [recommended_mariadb] or greater', 'wporg' );
+?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

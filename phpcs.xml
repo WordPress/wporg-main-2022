@@ -14,6 +14,14 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
+    <!-- Allow php tags to be on same line as HTML. -->
+    <rule ref="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.PHP.EmbeddedPhp.ContentAfterEnd">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+
     <!-- Don't enforce commenting on forked files. -->
     <rule ref="Squiz.Commenting.ClassComment.WrongStyle">
         <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
