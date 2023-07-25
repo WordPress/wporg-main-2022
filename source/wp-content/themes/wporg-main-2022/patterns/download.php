@@ -48,7 +48,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"menuSlug":"download","textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} /--></div>
+<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small","menuSlug":"download"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
