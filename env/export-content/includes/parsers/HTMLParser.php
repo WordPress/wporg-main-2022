@@ -26,20 +26,33 @@ class HTMLParser implements BlockParser {
 
 		foreach ( $this->attributes as $attr ) {
 			$attr = $this->escape_attr( $attr, '#' );
+			$found_strings = [];
 
 			if (
 				str_contains( $block['innerHTML'], "='" ) &&
 				preg_match_all( "#{$attr}='(?P<string>[^']+?)'#is", $block['innerHTML'], $matches )
 			) {
-				$strings = array_merge( $strings, $matches['string'] );
+				$found_strings = $matches['string'];
 			}
 
 			if (
 				str_contains( $block['innerHTML'], '="' ) &&
 				preg_match_all( "#{$attr}=\"(?P<string>[^\"]+?)\"#is", $block['innerHTML'], $matches )
 			) {
-				$strings = array_merge( $strings, $matches['string'] );
+				$found_strings = $matches['string'];
 			}
+
+			// Don't translate anchor links, they correspond to other points on the page.
+			if ( 'href' === $attr ) {
+				$found_strings = array_filter(
+					$found_strings,
+					function( $value ) {
+						return ! str_starts_with( $value, '#' );
+					}
+				);
+			}
+
+			$strings = array_merge( $strings, $found_strings );
 		}
 
 		return $strings;

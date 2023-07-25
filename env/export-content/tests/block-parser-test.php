@@ -38,8 +38,8 @@ class BlockParser_Test extends WP_UnitTestCase {
 			],
 			[
 				// Buttons.
-				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#\">Button 1</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#\">Button 2</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
-				[ 'Button 1', 'Button 2' ],
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://w.org/test/\">Button 1</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\">Button 2</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				[ 'Button 1', 'https://w.org/test/', 'Button 2' ],
 			],
 			[
 				// Column with a list, list-items.
@@ -125,6 +125,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				// List of lists
 				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>APIs:<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li>Fonts API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Block API</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->\n",
 				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li><?php _e( 'APIs:', 'wporg' ); ?><!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><?php _e( 'Fonts API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Block API', 'wporg' ); ?></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->\n",
+			],
+			[
+				// Buttons.
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://w.org/test/\">Button 1</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\">Button 2</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"<?php _e( 'https://w.org/test/', 'wporg' ); ?>\"><?php _e( 'Button 1', 'wporg' ); ?></a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\"><?php _e( 'Button 2', 'wporg' ); ?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
 			],
 			[
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p>I'm interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
