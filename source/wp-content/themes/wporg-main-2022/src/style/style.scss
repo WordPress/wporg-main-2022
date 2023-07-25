@@ -54,6 +54,48 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	border-left-style: solid;
 }
 
+.wp-block-navigation.is-vertical {
+	ul {
+		width: 100%;
+		gap: 0;
+	}
+
+	.wp-block-navigation-link {
+		width: 100%;
+		padding: 14px 0;
+		// Use the current text color, to support different text/background color combos.
+		border-bottom: 1px solid currentColor;
+		line-height: 1.125;
+
+		a {
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration-line: underline;
+				text-decoration-thickness: 1px;
+				text-underline-offset: 0.15em;
+			}
+
+			&::after {
+				content: "↗︎";
+			}
+		}
+
+		&:first-of-type {
+			border-top: 1px solid currentColor;
+		}
+	}
+
+	&:not(.has-text-color) a:not(.wp-element-button) {
+		color: var(--wp--custom--link--color--text);
+	}
+
+	&.has-background a:not(.wp-element-button) {
+		padding-block: 0;
+	}
+}
+
 // Images in the link banner should not shrink.
 body.home .wp-block-wporg-link-wrapper {
 

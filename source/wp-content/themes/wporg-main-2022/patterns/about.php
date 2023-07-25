@@ -183,27 +183,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about WordPress, where it’s been, and where it’s going.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className":"is-style-links-list","fontSize":"normal"} -->
-<ul class="is-style-links-list has-normal-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/requirements/"><?php _e( 'Requirements ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/features/"><?php _e( 'Features ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/security/"><?php _e( 'Security ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/roadmap/"><?php _e( 'Roadmap ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/history/"><?php _e( 'History ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-technology"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
@@ -215,27 +195,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Dive into the background details, like the GPL and other policies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className":"is-style-links-list","fontSize":"normal"} -->
-<ul class="is-style-links-list has-normal-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/domains/"><?php _e( 'Domains ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/license/"><?php _e( 'GNU Public License ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/accessibility/"><?php _e( 'Accessibility ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/privacy/"><?php _e( 'Privacy Policy ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/stats/"><?php _e( 'Statistics ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-details"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
@@ -247,27 +207,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about the community, how we get along and show our pride.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className":"is-style-links-list","fontSize":"normal"} -->
-<ul class="is-style-links-list has-normal-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/philosophy/"><?php _e( 'Philosophy ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/etiquette/"><?php _e( 'Etiquette ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://mercantile.wordpress.org/"><?php _e( 'Swag ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/about/logos/"><?php _e( 'Logos and Graphics ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://wordpress.org/news/category/community/"><?php _e( 'People of WordPress ↗', 'wporg' ); ?></a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-people"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->

@@ -13,6 +13,7 @@ require_once __DIR__ . '/src/download-counter/index.php';
 require_once __DIR__ . '/src/google-search-embed/index.php';
 require_once __DIR__ . '/src/random-heading/index.php';
 require_once __DIR__ . '/src/release-tables/index.php';
+require_once __DIR__ . '/src/navigation/index.php';
 
 /**
  * Actions and filters.

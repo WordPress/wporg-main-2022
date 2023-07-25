@@ -48,15 +48,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} -->
-<!-- wp:navigation-link {"label":"<?php _e( 'Releases', 'wporg' ); ?>","url":"https://wordpress.org/download/releases/","kind":"custom","isTopLevelLink":true} /-->
-
-<!-- wp:navigation-link {"label":"<?php _e( 'Nightly', 'wporg' ); ?>","url":"https://wordpress.org/download/beta-nightly/","kind":"custom","isTopLevelLink":true} /-->
-
-<!-- wp:navigation-link {"label":"<?php _e( 'Counter', 'wporg' ); ?>","url":"https://wordpress.org/download/counter/","kind":"custom","isTopLevelLink":true} /-->
-
-<!-- wp:navigation-link {"label":"<?php _e( 'Source', 'wporg' ); ?>","url":"https://wordpress.org/download/source/","kind":"custom","isTopLevelLink":true} /-->
-<!-- /wp:navigation --></div>
+<!-- wp:navigation {"menuSlug":"download","textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
