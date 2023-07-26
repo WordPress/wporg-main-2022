@@ -148,7 +148,14 @@ class BlockParser {
 			$strings = array_merge( $strings, $this->block_parser_to_strings( $block ) );
 		}
 
-		return array_unique( $strings );
+		$strings = array_unique( $strings );
+		$strings = array_filter( $strings, array( $this, 'filter_out_shortcodes' ) );
+
+		return $strings;
+	}
+
+	public function filter_out_shortcodes( string $string ) : bool {
+		return ! preg_match( '#^\[[a-z_-]{5,}\]$#', $string );
 	}
 
 	public function replace_strings_with_kses( array $replacements ) : string {

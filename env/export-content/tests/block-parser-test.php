@@ -168,6 +168,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:list-item -->\n<li>Recommend PHP [recommended_php] or greater.</li>\n<!-- /wp:list-item -->",
 				"<!-- wp:list-item -->\n<li><?php\n/* translators: [recommended_php] is a shortcode and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater.', 'wporg' );\n?></li>\n<!-- /wp:list-item -->",
 			],
+			[
+				// Buttons.
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\">Download WordPress [latest_version]</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\"><?php\n/* translators: [latest_version] is a shortcode and should not be translated. */\n_e( 'Download WordPress [latest_version]', 'wporg' );\n?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+			],
 		];
 	}
 
