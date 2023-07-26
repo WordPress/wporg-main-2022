@@ -71,15 +71,15 @@
 <!-- wp:list-item -->
 <li><?php _e( 'Block theme dev tools', 'wporg' ); ?><!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><a href="https://make.wordpress.org/design/2022/11/07/design-share-oct-24-nov-4/"><?php _e( 'Custom CSS', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://make.wordpress.org/design/2022/11/07/design-share-oct-24-nov-4/">Custom CSS</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://github.com/WordPress/gutenberg/issues/45675"><?php _e( 'Custom CSS in theme variations', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://github.com/WordPress/gutenberg/issues/45675">Custom CSS in theme variations</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://github.com/WordPress/gutenberg/issues/39324"><?php _e( 'Template content preservation', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://github.com/WordPress/gutenberg/issues/39324">Template content preservation</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

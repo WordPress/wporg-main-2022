@@ -30,7 +30,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/download/"><?php _e( 'Get WordPress', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -164,7 +164,7 @@
 
 <!-- wp:buttons {"align":"wide"} -->
 <div class="wp-block-buttons alignwide"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/showcase/"><?php _e( 'Find inspiration', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Find inspiration', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -205,19 +205,19 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
 <ul class="is-style-links-list"><!-- wp:list-item -->
-<li><a href="https://learn.wordpress.org/"><?php _e( 'Learn with WordPress ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://learn.wordpress.org/">Learn with WordPress ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/support/"><?php _e( 'Find support ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/support/">Find support ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://developer.wordpress.org/"><?php _e( 'Dig into the code ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://developer.wordpress.org/">Dig into the code ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.meetup.com/pro/wordpress/"><?php _e( 'Meet local WordPress users ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://www.meetup.com/pro/wordpress/">Meet local WordPress users ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
@@ -252,7 +252,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://make.wordpress.org/"><?php _e( 'Get involved', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/', 'wporg' ); ?>"><?php _e( 'Get involved', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
