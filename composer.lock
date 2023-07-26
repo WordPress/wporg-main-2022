@@ -2372,15 +2372,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "16.2.1",
+            "version": "16.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/16.2.1"
+                "reference": "tags/16.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.3.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2484,12 +2484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "7c423b36479f6c1f8b42e381e5acc09b01a09ebd"
+                "reference": "4a40549a7f9182c5479456d9301726278cff4885"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/7c423b36479f6c1f8b42e381e5acc09b01a09ebd",
-                "reference": "7c423b36479f6c1f8b42e381e5acc09b01a09ebd",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/4a40549a7f9182c5479456d9301726278cff4885",
+                "reference": "4a40549a7f9182c5479456d9301726278cff4885",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -2497,7 +2497,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2023-07-24T23:32:26+00:00"
+            "time": "2023-07-26T17:51:57+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
