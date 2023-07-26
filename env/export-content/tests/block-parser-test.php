@@ -69,7 +69,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// List with links
 				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><a href=\"#\">Fonts API</a></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity <a href=\"#\">Link</a> API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><a href=\"\">Block API</a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
-				[ 'Fonts API', 'Interactivity <a href="#">Link</a> API', 'Block API' ],
+				[ '<a href="#">Fonts API</a>', 'Interactivity <a href="#">Link</a> API', '<a href="">Block API</a>' ],
 			],
 			[
 				// List of lists
@@ -119,7 +119,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// List with links
 				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><a href=\"#\">Fonts API</a></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity <a href=\"#\">Link</a> API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><a href=\"\">Block API</a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
-				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><a href=\"#\"><?php _e( 'Fonts API', 'wporg' ); ?></a></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity <a href=\"#\">Link</a> API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><a href=\"\"><?php _e( 'Block API', 'wporg' ); ?></a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
+				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><?php _e( '<a href=\"#\">Fonts API</a>', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity <a href=\"#\">Link</a> API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( '<a href=\"\">Block API</a>', 'wporg' ); ?></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
 			],
 			[
 				// List of lists
