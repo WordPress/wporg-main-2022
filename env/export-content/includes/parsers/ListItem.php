@@ -12,12 +12,7 @@ class ListItem implements BlockParser {
 
 		if ( preg_match( '/<li[^>]*>(.+)<\/li>/is', $block['innerHTML'], $matches ) ) {
 			if ( ! empty( $matches[1] ) ) {
-				// If the child string is totally wrapped in `a` tags, extract the a's text.
-				if ( preg_match( '/^<a[^>]*>(.+)<\/a>$/is', $matches[1], $a_matches ) ) {
-					$strings[] = $a_matches[1];
-				} else {
-					$strings[] = $matches[1];
-				}
+				$strings[] = $matches[1];
 			}
 		}
 
@@ -31,8 +26,8 @@ class ListItem implements BlockParser {
 
 		foreach ( $this->to_strings( $block ) as $original ) {
 			if ( ! empty( $original ) && isset( $replacements[ $original ] ) ) {
-				$regex = '#(<li[^>]*>)(<a[^>]*>)?(' . preg_quote( $original, '/' ) . ')(<\/a>)?(<\/li>)?#is';
-				$html  = preg_replace( $regex, '$1$2' . addcslashes( $replacements[ $original ], '\\$' ) . '$4$5', $html );
+				$regex = '#(<li[^>]*>)(' . preg_quote( $original, '/' ) . ')(<\/li>)?#is';
+				$html  = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$3', $html );
 			}
 		}
 

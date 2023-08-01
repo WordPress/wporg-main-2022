@@ -5,7 +5,6 @@ namespace WordPress_org\Main_2022\ExportToPatterns;
 require_once __DIR__ . '/parsers/BlockParser.php';
 require_once __DIR__ . '/parsers/AttributeParser.php';
 require_once __DIR__ . '/parsers/BasicText.php';
-require_once __DIR__ . '/parsers/Button.php';
 require_once __DIR__ . '/parsers/HTMLParser.php';
 require_once __DIR__ . '/parsers/ListItem.php';
 require_once __DIR__ . '/parsers/Noop.php';
@@ -27,9 +26,7 @@ class BlockParser {
 			'core/heading'     => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
 
 			'core/list-item'   => new Parsers\ListItem(),
-			//'core/button'      => new Parsers\Button(),
-			//'core/buttons'     => new Parsers\BasicText(),
-			'core/button'      => new Parsers\HTMLParser( 'a', [ 'title' ] ),
+			'core/button'      => new Parsers\HTMLParser( 'a', [ 'title', 'href' ] ),
 
 			// Attributes handler.
 			'core/navigation-link' => new Parsers\AttributeParser( [ 'label' ] ),
@@ -151,7 +148,14 @@ class BlockParser {
 			$strings = array_merge( $strings, $this->block_parser_to_strings( $block ) );
 		}
 
-		return array_unique( $strings );
+		$strings = array_unique( $strings );
+		$strings = array_filter( $strings, array( $this, 'filter_out_shortcodes' ) );
+
+		return $strings;
+	}
+
+	public function filter_out_shortcodes( string $string ) : bool {
+		return ! preg_match( '#^\[[a-z_-]{5,}\]$#', $string );
 	}
 
 	public function replace_strings_with_kses( array $replacements ) : string {

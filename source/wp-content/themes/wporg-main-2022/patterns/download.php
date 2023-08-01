@@ -37,7 +37,7 @@ _e( 'Download WordPress [latest_version]', 'wporg' );
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="https://wordpress.org/support/article/how-to-install-wordpress/"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php _e( 'https://wordpress.org/support/article/how-to-install-wordpress/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -64,7 +64,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://wordpress.org/hosting/"><?php _e( 'See all recommended hosts', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/hosting/', 'wporg' ); ?>"><?php _e( 'See all recommended hosts', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -135,19 +135,19 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
 <ul class="is-style-links-list"><!-- wp:list-item -->
-<li><a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/"><?php _e( 'WordPress courses ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://developer.wordpress.org/"><?php _e( 'Developer resources ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://developer.wordpress.org/">Developer resources ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/support/"><?php _e( 'WordPress support ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/support/">WordPress support ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/support/forum/installation/"><?php _e( 'User forums ↗', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/support/forum/installation/">User forums ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

@@ -194,15 +194,15 @@
 
 <!-- wp:list {"className":"is-style-default","fontSize":"small"} -->
 <ul class="is-style-default has-small-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf"><?php _e( 'Abril (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf">Abril (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-kff.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf"><?php _e( 'KFF (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-kff.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf">KFF (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf"><?php _e( 'NewsCorp Australia (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf">NewsCorp Australia (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -214,15 +214,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="has-small-font-size"><!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf"><?php _e( 'IDC Report (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf">IDC Report (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf"><?php _e( 'WP as a Content Hub (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf">WP as a Content Hub (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf"><?php _e( 'Personalization (PDF)', 'wporg' ); ?></a></li>
+<li><?php _e( '<a href="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf">Personalization (PDF)</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -234,15 +234,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a rel="noreferrer noopener" href="https://vimeo.com/443114625/c2f798174f" target="_blank"><?php _e( 'Drive Digital Commerce', 'wporg' ); ?></a></li>
+<li class="external-link"><?php _e( '<a rel="noreferrer noopener" href="https://vimeo.com/443114625/c2f798174f" target="_blank">Drive Digital Commerce</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/374961815/040fe06be7" target="_blank" rel="noreferrer noopener"><?php _e( 'Gutenberg for Enterprise', 'wporg' ); ?></a></li>
+<li class="external-link"><?php _e( '<a href="https://vimeo.com/374961815/040fe06be7" target="_blank" rel="noreferrer noopener">Gutenberg for Enterprise</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><a href="https://vimeo.com/425968597/80d24a1bf4" target="_blank" rel="noreferrer noopener"><?php _e( 'Lead a Successful Digital Transformation', 'wporg' ); ?></a></li>
+<li class="external-link"><?php _e( '<a href="https://vimeo.com/425968597/80d24a1bf4" target="_blank" rel="noreferrer noopener">Lead a Successful Digital Transformation</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
