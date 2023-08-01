@@ -14,7 +14,7 @@ jobs:
           ref: trunk
 
       - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@try/reusable-workflows
+        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 

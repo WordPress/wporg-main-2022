@@ -17,9 +17,9 @@ jobs:
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
 
       - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@try/reusable-workflows
+        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test
-        uses: WordPress/wporg-repo-tools/.github/actions/test-php@try/reusable-workflows
+        uses: WordPress/wporg-repo-tools/.github/actions/test-php@trunk
