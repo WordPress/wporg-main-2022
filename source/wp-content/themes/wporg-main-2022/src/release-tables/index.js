@@ -23,6 +23,6 @@ function Edit( { attributes, name } ) {
 }
 
 registerBlockType( metadata.name, {
-	edit: Edit,	
+	edit: Edit,
 	save: () => null,
 } );
