@@ -112,6 +112,11 @@
 		"template": "page-mobile.html"
 	},
 	{
+		"slug": "remembers",
+		"pattern": "remembers.php",
+		"template": "page-remembers.html"
+	},
+	{
 		"slug": "search",
 		"template": "page-search.html"
 	}
