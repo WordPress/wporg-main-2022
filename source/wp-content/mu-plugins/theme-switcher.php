@@ -68,6 +68,7 @@ function should_use_new_theme() {
 		'/about/etiquette/',
 		'/about/swag/',
 		'/about/logos/',
+		'/remembers/',
 	);
 	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
 		return false;
