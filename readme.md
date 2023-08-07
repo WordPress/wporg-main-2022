@@ -136,11 +136,74 @@ Backstopjs can be manually run to create reference snapshots and then check for 
     yarn backstop:test
     ```
 
-## Building Patterns from Page Content
+## Publishing content on WordPress.org
 
-1. Run the generator script:
-	1. If you're using the Docker environment, start Docker and run `yarn wp-env start`. Then run `yarn build:patterns`.
-	1. If you're using a local environment, `cd env` and run `wp eval-file export-content/index.php page-manifest.json` directly.
-1. Verify `git stat` and `git diff` look right
-1. `git add` and `git commit`
-1. Sync to SVN and deploy like you would any other commit
+The pages on the WordPress.org main site use patterns to render the page content, so that any changes are tracked [in version control](https://github.com/WordPress/wporg-main-2022/commits/trunk/source/wp-content/themes/wporg-main-2022/patterns). Each pattern is built from page content, so that authors can use the editor.
+
+To add or update a page using the new redesign, you need someone with at least “editor” or “designer” access to the site, and someone from the meta team with commit access to dotorg. They don’t need to be the same person, one person can update the content, then the second can sync & deploy the change.
+
+### Adding a new page
+
+1. Write the content
+
+Ask someone with at least "editor" access to create a new draft page.
+
+Write your content, you can upload media and use blocks like any other site. Use the “Preview in new tab” to see your changes. When you're done, save the draft.
+
+2. Deploy the new page
+
+If you don't already have it, check out this repo. Follow the instructions above to set everything up.
+
+Publish the requested page, if it's not already.
+
+Add the new page to `./env/page-manifest.json`. Use the following format, where slug is the page slug, and pattern-name is a slug that also includes parent page info (for example, `download.php`, `download-releases.php`, etc). Look at the other entries in the file for examples.
+
+```json
+{
+    "slug": "[slug]",
+    "template": "page-[slug].html",
+    "pattern": "[pattern-name].php"
+},
+```
+
+Add the page URL to `$new_theme_pages` in `./source/wp-content/mu-plugins/theme-switcher.php`.
+
+Start up the local environment using `yarn wp-env start`. Create the page in your local environment.
+
+Run `yarn build:patterns`. This creates the pattern synced from the remote page content, and creates the page template which references the new pattern. View the new page, it should use the new theme & synced content.
+
+If necessary, update the header & footer style in the page template:
+
+- White on black: `<!-- wp:wporg/global-header /-->`
+- Black on white: `<!-- wp:wporg/global-header {"backgroundColor":"white","textColor":"charcoal-2"} /-->`
+- White on blue: `<!-- wp:wporg/global-header {"backgroundColor":"blueberry-1","textColor":"white"} /-->`
+
+Verify that the changes look correct, and commit the changes to github. Wait for the actions to finish.
+
+Use the sync script `bin/sync/main.sh` on your sandbox to sync the changes, and deploy wporg.
+
+The `theme-switcher.php` change will need to be synced separately, to the mu-plugins/main-network on dotorg svn. This is the step that enables the new theme on that page.
+
+The new page should be live 🎉
+
+### Updating an existing page
+
+1. Make the change in the editor
+
+Edit the page content, using the editor as on any other site.
+
+You can use the “Preview in new tab” to see your changes. Update the page to save your change. **It will not be visible on the front end yet.**
+
+2. Deploy the change to the site
+
+If you don't already have it, check out this repo. Follow the instructions above to set everything up.
+
+Start up the local environment using `yarn wp-env start`.
+
+Run `yarn build:patterns`. This updates the pattern code with the latest page content. View the new page, it should use the new content.
+
+Verify that the changes look correct, and commit the changes to github. Wait for the actions to finish.
+
+Use the sync script `bin/sync/main.sh` on your sandbox to sync the changes, and deploy wporg.
+
+The changes should be live 🎉
