@@ -126,7 +126,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
-<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Alex Mills passed away in 2019. </em><br><br><em>He was active in the WordPress community contributing to WordPress and writing plugins.</em>', 'wporg' ); ?></p>
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Alex Mills passed away in 2019. </em><br><br><em>Alex was active in the WordPress community contributing to WordPress and writing plugins.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -146,7 +146,43 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
-<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Ujwal Thapa passed away in 2021.</em><br><br><em>He started and led numerous notable initiatives for the betterment of society and people; one of them was co-founding the WordPress Nepal community.</em>', 'wporg' ); ?></p>
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Joseph Karr O’Connor passed away in 2020. </em><br><br><em>Joseph was a patient and passionate caretaker for WordPress Accessibility from 2013 to 2016. He supported accessibility through the WordPress ecosystem, leaving a legacy of compassion for all WordPress users and creators.</em>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://profiles.wordpress.org/accessiblejoe/">Joseph&#039;s Profile</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://make.wordpress.org/accessibility/2020/01/10/goodbye-joseph-karr-oconnor/">WP Accessibility team memorial</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
+<p class="has-text-align-center has-extra-large-font-size"><?php _e( '❦', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>David de Boer passed away in 2020. </em><br><br><em>David was a valued contributor from the Netherlands and loved and respected within the Dutch WordPress community. He spoke at multiple WordCamps and contributed to 2 very popular payment plugins.</em>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://profiles.wordpress.org/davdebcom/">David&#039;s Profile</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
+<p class="has-text-align-center has-extra-large-font-size"><?php _e( '❦', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Ujwal Thapa passed away in 2021.</em><br><br><em>Ujwal started and led numerous notable initiatives for the betterment of society and people; one of them was co-founding the WordPress Nepal community.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -166,7 +202,27 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
-<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>José Luis Losada passed away in 2023.</em><br><br><em>He was an exceptionally active member of the Spanish community. It was impossible to go to a WordCamp in Spain where he was not collaborating as a volunteer or organizer.</em>', 'wporg' ); ?></p>
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Puneet Sahalot passed away in 2021.</em><br><br><em>Puneet was a Core contributor, Meetup/Chapter Organizer for the Udaipur Community, where his dedicated contributions helped foster a collaborative and innovative atmosphere.</em>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://profiles.wordpress.org/puneetsahalot/">Puneet&#039;s Profile</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://ujwalthapafoundation.org/">Puneet on HeroPress</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
+<p class="has-text-align-center has-extra-large-font-size"><?php _e( '❦', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>José Luis Losada passed away in 2023.</em><br><br><em>José was an exceptionally active member of the Spanish community. It was impossible to go to a WordCamp in Spain where he was not collaborating as a volunteer or organizer.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -176,10 +232,12 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"className":"is-style-dots"} -->
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)" />
+<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-dots"} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" />
 <!-- /wp:separator -->
 
-<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|90","top":"var:preset|spacing|60"}}}} -->
-<p class="has-text-align-center has-link-color" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--90)"><?php _e( 'This memorial is volunteer maintained and managed. To add a tribute for a lost contributor please contact us: <a href="mailto:memorials@wordpress.org">memorials@wordpress.org</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","right":"var:preset|spacing|30","left":"var:preset|spacing|30"},"margin":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-bottom:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"top":"var:preset|spacing|70","right":"var:preset|spacing|default","bottom":"var:preset|spacing|default","left":"var:preset|spacing|default"}}}} -->
+<p class="has-text-align-center has-link-color" style="margin-top:var(--wp--preset--spacing--70);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--default);margin-left:var(--wp--preset--spacing--default)"><?php _e( 'This memorial is volunteer maintained and managed. To add a tribute for a lost contributor please contact us: <a href="mailto:memorials@wordpress.org">memorials@wordpress.org</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
