@@ -988,16 +988,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.23.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494"
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/a2b24135c35852b348894320d47b3902a94bc494",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
                 "shasum": ""
             },
             "require": {
@@ -1029,9 +1029,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
             },
-            "time": "2023-07-23T22:17:56+00:00"
+            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2324,7 +2324,7 @@
         },
         {
             "name": "wp-phpunit/wp-phpunit",
-            "version": "5.9.5",
+            "version": "5.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-phpunit/wp-phpunit.git",
@@ -2390,15 +2390,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "12.3",
+            "version": "12.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/12.3"
+                "reference": "tags/12.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.12.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.12.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2505,12 +2505,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-repo-tools.git",
-                "reference": "926e9776aaab7bb8ce2fa2a7feaa6a9f2169fe69"
+                "reference": "d78f1cf7dc04d96a511a14a23c4ddbe1d4d51499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-repo-tools/zipball/926e9776aaab7bb8ce2fa2a7feaa6a9f2169fe69",
-                "reference": "926e9776aaab7bb8ce2fa2a7feaa6a9f2169fe69",
+                "url": "https://api.github.com/repos/WordPress/wporg-repo-tools/zipball/d78f1cf7dc04d96a511a14a23c4ddbe1d4d51499",
+                "reference": "d78f1cf7dc04d96a511a14a23c4ddbe1d4d51499",
                 "shasum": ""
             },
             "default-branch": true,
@@ -2527,7 +2527,7 @@
                 "issues": "https://github.com/WordPress/wporg-repo-tools/issues",
                 "source": "https://github.com/WordPress/wporg-repo-tools/tree/trunk"
             },
-            "time": "2022-11-16T17:56:26+00:00"
+            "time": "2023-08-01T17:27:15+00:00"
         },
         {
             "name": "yoast/phpunit-polyfills",
