@@ -211,7 +211,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
-<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://ujwalthapafoundation.org/">Puneet on HeroPress</a>', 'wporg' ); ?></p>
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://heropress.com/essays/wordpress-my-future/">Puneet on HeroPress</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
