@@ -8,8 +8,8 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"0","left":"0","bottom":"0"},"blockGap":"0"},"color":{"background":"#151515","text":"#ffffffa6"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-text-color has-background" style="color:#ffffffa6;background-color:#151515;padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0px","padding":{"top":"var:preset|spacing|default","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|default","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0"}}},"className":"has-z-index-1","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull has-z-index-1" style="padding-top:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","bottom":"var:preset|spacing|90"},"margin":{"bottom":"0px"},"blockGap":"var:preset|spacing|30"}},"className":"has-z-index-1 6-3-hero","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0"}}},"className":"has-z-index-1","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-z-index-1" style="padding-top:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","bottom":"var:preset|spacing|90"},"margin":{"bottom":"0px"},"blockGap":"var:preset|spacing|30"},"layout":{"selfStretch":"fit","flexSize":null}},"className":"has-z-index-1 6-3-hero","layout":{"type":"default"}} -->
 <div class="wp-block-group has-z-index-1 6-3-hero" style="margin-bottom:0px;padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"120px","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="edit-everything" style="font-size:120px;font-style:normal;font-weight:400;line-height:1"><?php _e( 'Edit <em>Everything</em>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
@@ -28,7 +28,7 @@
 <!-- /wp:group -->
 
 <!-- wp:html -->
-<video autoplay muted src="https://wordpress.org/files/2023/07/6.3-Hero-Animation-v2-MP4.mp4" style="margin-top: -30%;object-fit: cover;width: 100%"></video>
+<video class="has-display-block" autoplay muted src="https://wordpress.org/files/2023/07/6.3-Hero-Animation-v2-MP4.mp4" style="margin: max(-387px, -25%) auto 0;max-width: 1280px;object-fit: cover;width: 100%"></video>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
