@@ -174,7 +174,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.3 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-3/"><?php _e( 'August 2023', 'wporg' ); ?></a></td></tr><tr><td><?php _e( '6.4', 'wporg' ); ?></td><td><?php _e( 'November 2023', 'wporg' ); ?></td></tr></tbody></table><figcaption class="wp-element-caption"><?php _e( 'Planned WordPress releases', 'wporg' ); ?></figcaption></figure>
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.4 ', 'wporg' ); ?><a href="https://core.trac.wordpress.org/tickets/major"><?php _e( 'Trac', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-4/"><?php _e( 'November 2023', 'wporg' ); ?></a></td></tr></tbody></table><figcaption class="wp-element-caption"><?php _e( 'Planned WordPress releases', 'wporg' ); ?></figcaption></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
