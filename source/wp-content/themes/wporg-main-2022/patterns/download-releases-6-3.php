@@ -9,8 +9,8 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"0","left":"0","bottom":"0"},"blockGap":"0"},"color":{"background":"#151515","text":"#ffffffa6"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-text-color has-background" style="color:#ffffffa6;background-color:#151515;padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0px","padding":{"top":"var:preset|spacing|default","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|default","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0"}}},"className":"has-z-index-1","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull has-z-index-1" style="padding-top:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","bottom":"var:preset|spacing|90"},"margin":{"bottom":"-200px"},"blockGap":"var:preset|spacing|30"}},"className":"has-z-index-1","layout":{"type":"default"}} -->
-<div class="wp-block-group has-z-index-1" style="margin-bottom:-200px;padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"120px","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"textColor":"white"} -->
+<div class="wp-block-group alignfull has-z-index-1" style="padding-top:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","bottom":"var:preset|spacing|90"},"margin":{"bottom":"0px"},"blockGap":"var:preset|spacing|30"}},"className":"has-z-index-1 6-3-hero","layout":{"type":"default"}} -->
+<div class="wp-block-group has-z-index-1 6-3-hero" style="margin-bottom:0px;padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"120px","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"textColor":"white"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="edit-everything" style="font-size:120px;font-style:normal;font-weight:400;line-height:1"><?php _e( 'Edit <em>Everything</em>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
@@ -28,7 +28,7 @@
 <!-- /wp:group -->
 
 <!-- wp:html -->
-<video autoplay muted src="https://wordpress.org/files/2023/07/6.3-Hero-Animation-v2-MP4.mp4" style="margin-top: -12%;object-fit: cover;width: 100%"></video>
+<video autoplay muted src="https://wordpress.org/files/2023/07/6.3-Hero-Animation-v2-MP4.mp4" style="margin-top: -30%;object-fit: cover;width: 100%"></video>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
@@ -64,8 +64,8 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20607,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/pages.png"><img src="https://wordpress.org/files/2023/08/pages.png" alt="" class="wp-image-20607" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20607,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/pages.png" alt="" class="wp-image-20607" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -77,13 +77,13 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Organize content layers any way you&#039;d like with the more visual, updated List View.', 'wporg' ); ?></p>
+<p><?php _e( 'View, find, and edit pages without leaving the Site Editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20610,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/Frame-183.png"><img src="https://wordpress.org/files/2023/08/Frame-183.png" alt="" class="wp-image-20610" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20610,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/Frame-183.png" alt="" class="wp-image-20610" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -102,8 +102,8 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20609,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/layout.png"><img src="https://wordpress.org/files/2023/08/layout.png" alt="" class="wp-image-20609" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20609,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/layout.png" alt="" class="wp-image-20609" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -120,8 +120,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20608,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/check.png"><img src="https://wordpress.org/files/2023/08/check.png" alt="" class="wp-image-20608" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20608,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/check.png" alt="" class="wp-image-20608" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -168,8 +168,8 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20612,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/search.png"><img src="https://wordpress.org/files/2023/08/search.png" alt="" class="wp-image-20612" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20612,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/search.png" alt="" class="wp-image-20612" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -186,8 +186,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20613,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/buttons.png"><img src="https://wordpress.org/files/2023/08/buttons.png" alt="" class="wp-image-20613" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20613,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/buttons.png" alt="" class="wp-image-20613" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -238,8 +238,8 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20614,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/category.png"><img src="https://wordpress.org/files/2023/08/category.png" alt="" class="wp-image-20614" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20614,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/category.png" alt="" class="wp-image-20614" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -256,8 +256,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20615,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/plus-circle.png"><img src="https://wordpress.org/files/2023/08/plus-circle.png" alt="" class="wp-image-20615" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20615,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/plus-circle.png" alt="" class="wp-image-20615" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -276,8 +276,8 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20616,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/copy.png"><img src="https://wordpress.org/files/2023/08/copy.png" alt="" class="wp-image-20616" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20616,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/copy.png" alt="" class="wp-image-20616" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -294,8 +294,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":20617,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/08/reusable-block.png"><img src="https://wordpress.org/files/2023/08/reusable-block.png" alt="" class="wp-image-20617" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></a></figure>
+<div class="wp-block-column"><!-- wp:image {"id":20617,"width":32,"height":32,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/reusable-block.png" alt="" class="wp-image-20617" style="object-fit:cover;width:32px;height:32px" width="32" height="32" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
@@ -479,9 +479,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20292,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text:
-
-1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear een then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear een then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
