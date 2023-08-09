@@ -222,6 +222,22 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Dan Beil passed away in 2021.</em><br><br><em>Dan was an active member of the Minneapolis WordPress community, and a dear friend to many in the larger WordPress community. Dan was frequently involved in the Minneapolis WordPress User Group, was a WordCamp Minneapolis Organizer, and was a prolific speaker at many WordCamps around the US.</em>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://profiles.wordpress.org/dan-gaia/">Dan&#039;s Profile</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
+<p class="has-text-align-center has-extra-large-font-size"><?php _e( '❦', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
 <p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>José Luis Losada passed away in 2023.</em><br><br><em>José was an exceptionally active member of the Spanish community. It was impossible to go to a WordCamp in Spain where he was not collaborating as a volunteer or organizer.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
