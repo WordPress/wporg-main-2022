@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-text-color has-background" style="color:#ffffffa6;background-color:#151515;padding-top:var(--wp--preset--spacing--80);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0px","padding":{"top":"var:preset|spacing|default","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|default","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0"}}},"className":"has-z-index-1","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-z-index-1" style="padding-top:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","bottom":"var:preset|spacing|90"},"margin":{"bottom":"0px"},"blockGap":"var:preset|spacing|30"},"layout":{"selfStretch":"fit","flexSize":null}},"className":"has-z-index-1 6-3-hero","layout":{"type":"default"}} -->
-<div class="wp-block-group has-z-index-1 6-3-hero" style="margin-bottom:0px;padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"120px","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"textColor":"white"} -->
-<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="edit-everything" style="font-size:120px;font-style:normal;font-weight:400;line-height:1"><?php _e( 'Edit <em>Everything</em>', 'wporg' ); ?></h1>
+<div class="wp-block-group has-z-index-1 6-3-hero" style="margin-bottom:0px;padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"120px","fontStyle":"normal","fontWeight":"400","lineHeight":"1"}},"textColor":"white","className":"has-heading-cta-font-size"} -->
+<h1 class="wp-block-heading has-text-align-center has-heading-cta-font-size has-white-color has-text-color" id="edit-everything" style="font-size:120px;font-style:normal;font-weight:400;line-height:1"><?php _e( 'Edit <em>Everything</em>', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -22,7 +22,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php _e( 'Watch the demo', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://www.youtube.com/watch?v=6JhJcOLySLY', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Watch the demo', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
