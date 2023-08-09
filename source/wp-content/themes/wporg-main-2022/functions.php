@@ -184,16 +184,6 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 }
 
 /**
- * Prevent Jetpack from looking for a non-existent featured image.
- */
-add_filter(
-	'jetpack_images_pre_get_images',
-	function() {
-		return new \WP_Error();
-	}
-);
-
-/**
  * Register the Rosetta header menu.
  */
 add_action(
