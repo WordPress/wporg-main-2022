@@ -28,7 +28,7 @@
 <!-- /wp:group -->
 
 <!-- wp:html -->
-<video class="has-display-block" autoplay muted src="https://wordpress.org/files/2023/07/6.3-Hero-Animation-v2-MP4.mp4" style="margin: max(-387px, -25%) auto 0;max-width: 1280px;object-fit: cover;width: 100%"></video>
+<video class="has-display-block" autoplay muted src="https://wordpress.org/files/2023/08/6.3-Hero-Animation-v2-MP4-compressed.mp4" style="margin: max(-387px, -25%) auto 0;max-width: 1280px;object-fit: cover;width: 100%"></video>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
@@ -154,15 +154,19 @@
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'The new Command Palette introduces a quick way to search your site and access common commands.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"49px","selfStretch":"fixed"}}} -->
+<div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
 <!-- /wp:group -->
 
-<!-- wp:video {"id":20824} -->
-<figure class="wp-block-video"><video controls src="https://wordpress.org/files/2023/08/command-palette-1.mp4"></video></figure>
+<!-- wp:video {"id":20904,"align":"wide"} -->
+<figure class="wp-block-video alignwide"><video controls src="https://wordpress.org/files/2023/08/command-shortcut.mp4"></video></figure>
 <!-- /wp:video -->
 
-<!-- wp:spacer {"height":"64px"} -->
-<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"48px"} -->
+<div style="height:48px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
