@@ -71,6 +71,21 @@ add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags'
 add_filter( 'jetpack_enable_open_graph', '__return_true' );
 
 /**
+ * Prevent Jetpack from looking for a non-existent featured image.
+ */
+add_filter(
+	'jetpack_images_pre_get_images',
+	function( $media, $post_id ) {
+		if ( ! $post_id || ! has_post_thumbnail( $post_id ) ) {
+			return new \WP_Error();
+		}
+		return $media;
+	},
+	10,
+	2
+);
+
+/**
  * Renders site's attributes for the WordPress.org frontpages (including Rosetta).
  *
  * @see https://developers.google.com/search/docs/guides/enhance-site
