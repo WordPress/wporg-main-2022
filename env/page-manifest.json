@@ -74,6 +74,11 @@
 		"template": "page-logos.html"
 	},
 	{
+		"slug": "blocks",
+		"pattern": "blocks.php",
+		"template": "page-blocks.html"
+	},
+	{
 		"slug": "download",
 		"template": "page-download.html"
 	},
