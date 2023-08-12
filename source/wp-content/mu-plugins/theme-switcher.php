@@ -55,7 +55,7 @@ function should_use_new_theme() {
 		'/enterprise/media/',
 		'/hosting/',
 	);
-	if ( in_array( $request_uri, $old_theme_pages ) ) {
+	if ( in_array( strtolower( $request_uri ), $old_theme_pages ) ) {
 		return false;
 	}
 
