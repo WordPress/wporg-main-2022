@@ -171,8 +171,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"align":"full","id":21021,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image alignfull size-full"><a href="https://wordpress.org/files/2023/08/patterns-for-blocks-page.png"><img src="https://wordpress.org/files/2023/08/patterns-for-blocks-page.png" alt="" class="wp-image-21021" /></a></figure>
+<!-- wp:image {"align":"full","id":21021,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2023/08/patterns-for-blocks-page.png" alt="" class="wp-image-21021" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|80","left":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-1","layout":{"type":"constrained"}} -->
