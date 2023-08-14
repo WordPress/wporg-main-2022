@@ -2,6 +2,7 @@
  * WordPress dependencies
  */
 import apiFetch from '@wordpress/api-fetch';
+import { decodeEntities } from '@wordpress/html-entities';
 
 const init = () => {
 	const containers = document.querySelectorAll( '.wp-block-wporg-download-counter' );
@@ -21,7 +22,7 @@ const init = () => {
 			setInterval( async () => {
 				try {
 					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }` } );
-					element.textContent = count;
+					element.textContent = decodeEntities( count );
 				} catch ( error ) {}
 			}, 5000 );
 		} );
