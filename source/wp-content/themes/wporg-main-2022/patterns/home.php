@@ -7,8 +7,8 @@
 
 ?>
 <!-- wp:wporg/link-wrapper {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
-<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://wordpress.org/news/2023/06/twenty-years-of-wordpress-at-wceu/"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php _e( 'Watch a recap of the 2023 WCEU Keynote, "20 Years of WordPress"', 'wporg' ); ?></p>
+<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://wordpress.org/download/releases/6-3/"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><?php _e( 'Say hello to WordPress 6.3 "Lionel"', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></a>
 <!-- /wp:wporg/link-wrapper -->
 
