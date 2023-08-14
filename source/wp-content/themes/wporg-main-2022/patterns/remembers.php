@@ -238,6 +238,22 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
+<p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>Paolo Valenti passed away in 2022.<br></em><br><em><em>Wolly was the first to translate WordPress into Italian. He helped people get involved in the Polyglots team and the International Community, generously providing direction and support. His contributions helped shape the Italian community as it is today.</em></em>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"fontSize":"small"} -->
+<p class="has-text-align-center has-link-color has-small-font-size"><?php _e( '<a href="https://profiles.wordpress.org/wolly/">Paolo&#039;s Profile</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"extra-large"} -->
+<p class="has-text-align-center has-extra-large-font-size"><?php _e( '❦', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-serif"} -->
 <p class="has-text-align-center is-style-serif has-link-color" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><?php _e( '<em>José Luis Losada passed away in 2023.</em><br><br><em>José was an exceptionally active member of the Spanish community. It was impossible to go to a WordCamp in Spain where he was not collaborating as a volunteer or organizer.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -253,7 +269,7 @@
 <!-- /wp:separator -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40","right":"var:preset|spacing|30","left":"var:preset|spacing|30"},"margin":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="margin-bottom:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"top":"var:preset|spacing|70","right":"var:preset|spacing|default","bottom":"var:preset|spacing|default","left":"var:preset|spacing|default"}}}} -->
-<p class="has-text-align-center has-link-color" style="margin-top:var(--wp--preset--spacing--70);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--default);margin-left:var(--wp--preset--spacing--default)"><?php _e( 'This memorial is volunteer maintained and managed. To add a tribute for a lost contributor please contact us: <a href="mailto:memorials@wordpress.org">memorials@wordpress.org</a>', 'wporg' ); ?></p>
+<div class="wp-block-group alignwide" style="margin-bottom:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"top":"var:preset|spacing|70","right":"var:preset|spacing|default","bottom":"var:preset|spacing|default","left":"var:preset|spacing|default"}}}} -->
+<p class="has-text-align-left has-link-color" style="margin-top:var(--wp--preset--spacing--70);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--default);margin-left:var(--wp--preset--spacing--default)"><?php _e( 'This memorial is volunteer maintained and managed. To add a tribute for a lost contributor please contact us: <a href="mailto:memorials@wordpress.org">memorials@wordpress.org</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
