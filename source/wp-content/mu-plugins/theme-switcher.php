@@ -20,27 +20,12 @@ function should_use_new_theme() {
 		return false;
 	}
 
-	// Request to resolve a template.
-	if ( isset( $_GET['_wp-find-template'] ) ) {
-		return true;
-	}
-
-	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
-
-	// Admin page or an API request.
-	if ( is_admin() || wp_is_json_request() || 0 === strpos( $request_uri, '/wp-json/wp' ) ) {
-		return true;
-	}
-
 	// Preview. Can't call is_preview() this early in the process.
 	if ( isset( $_GET['preview'] ) && isset( $_GET['preview_id'] ) ) {
 		return true;
 	}
 
-	// Use the new theme on all search results.
-	if ( str_starts_with( $request_uri, '/search/' ) ) {
-		return true;
-	}
+	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 
 	// By default, the new theme is enabled, but there are some exceptions.
 	$old_theme_pages = array(
