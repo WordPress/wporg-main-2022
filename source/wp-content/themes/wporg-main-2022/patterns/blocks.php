@@ -164,7 +164,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They&#039;re also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. ', 'wporg' ); ?></p>
+<p><?php _e( 'Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They&#039;re also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -210,12 +210,12 @@
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}},"border":{"radius":"3px"},"spacing":{"blockGap":"0"}},"backgroundColor":"white","textColor":"charcoal-2","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group alignwide has-charcoal-2-color has-white-background-color has-text-color has-background has-link-color" style="border-radius:3px"><!-- wp:code {"style":{"border":{"radius":"5px"},"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"fontSize":"small"} -->
-<pre class="wp-block-code has-small-font-size" style="border-radius:5px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><code><mark style="color:#6f42c1" class="has-inline-color">registerBlockType</mark>( 'your-first-block/hello-world', {
-    <mark style="color:#6f42c1" class="has-inline-color">edit</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
-        <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt;Hello world (from the editor)&lt;/p&gt;;
+<pre class="wp-block-code has-small-font-size" style="border-radius:5px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><code>registerBlockType( 'your-first-block/hello-world', {
+    edit: function () {
+        return &lt;p&gt;Hello world (from the editor)&lt;/p&gt;;
     },
-    <mark style="color:#6f42c1" class="has-inline-color">save</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
-        <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt;Hello world (from the frontend)&lt;/p&gt;;
+    save: function () {
+        return &lt;p&gt;Hello world (from the frontend)&lt;/p&gt;;
     },
 } );</code></pre>
 <!-- /wp:code -->
