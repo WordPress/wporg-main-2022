@@ -55,7 +55,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/patterns/', 'wporg' ); ?>"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/patterns', 'wporg' ); ?>"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -153,7 +153,7 @@
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
-<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'WordPress’ Secret Power', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'WordPress’ secret power', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -164,7 +164,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is built on blocks with the ability to create every part of your site using this visual experience. It’s also easy. Learn how to edit a block, and you learn how to use all of WordPress, without having to write code.', 'wporg' ); ?></p>
+<p><?php _e( 'Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They&#039;re also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. ', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -189,7 +189,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The WordPress editor is the default way to insert, transform, style, and move your blocks around on a visual canvas thanks to a simple drag and drop interface.', 'wporg' ); ?></p>
+<p><?php _e( 'The WordPress editor is the default way to insert, transform, style, and move your blocks around on a visual canvas thanks to a simple drag-and-drop interface.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|20","style":{"layout":[]}} -->
@@ -198,7 +198,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/gutenberg', 'wporg' ); ?>"><?php _e( 'Try it live', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/gutenberg', 'wporg' ); ?>"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -210,17 +210,14 @@
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}},"border":{"radius":"3px"},"spacing":{"blockGap":"0"}},"backgroundColor":"white","textColor":"charcoal-2","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group alignwide has-charcoal-2-color has-white-background-color has-text-color has-background has-link-color" style="border-radius:3px"><!-- wp:code {"style":{"border":{"radius":"5px"},"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}},"layout":{"selfStretch":"fixed","flexSize":"50%"}},"fontSize":"small"} -->
-<pre class="wp-block-code has-small-font-size" style="border-radius:5px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><code><mark style="color:#d73a49" class="has-inline-color">import</mark> { registerBlockType } <mark style="color:#d73a49" class="has-inline-color">from</mark> '@wordpress/blocks';
-
-<mark style="color:#6a737d" class="has-inline-color">// Register the block
-</mark><mark style="color:#6f42c1" class="has-inline-color">registerBlockType</mark>('gutenberg-examples/example-01-basic-esnext', {
-  <mark style="color:#6f42c1" class="has-inline-color">edit</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
-    <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt; Hello world (from the editor)&lt;/p&gt;;
-  },
-  <mark style="color:#6f42c1" class="has-inline-color">save</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
-    <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt; Hola mundo (from the frontend) &lt;/p&gt;;
-  },
-});</code></pre>
+<pre class="wp-block-code has-small-font-size" style="border-radius:5px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><code><mark style="color:#6f42c1" class="has-inline-color">registerBlockType</mark>( 'your-first-block/hello-world', {
+    <mark style="color:#6f42c1" class="has-inline-color">edit</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
+        <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt;Hello world (from the editor)&lt;/p&gt;;
+    },
+    <mark style="color:#6f42c1" class="has-inline-color">save</mark>: <mark style="color:#d73a49" class="has-inline-color">function</mark> () {
+        <mark style="color:#d73a49" class="has-inline-color">return</mark> &lt;p&gt;Hello world (from the frontend)&lt;/p&gt;;
+    },
+} );</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"backgroundColor":"blueberry-4","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
@@ -246,7 +243,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'View documentation', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create a block', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -269,7 +266,7 @@
 
 <!-- wp:column {"width":"66.66%","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|default","bottom":"0","left":"var:preset|spacing|default"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--default);padding-bottom:0;padding-left:var(--wp--preset--spacing--default);flex-basis:66.66%"><!-- wp:paragraph -->
-<p><?php _e( 'While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they’re easy to understand by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.', 'wporg' ); ?></p>
+<p><?php _e( 'While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they&#039;re easily understood by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|20"} -->
@@ -282,7 +279,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/patterns/">Design block patterns ↗</a>', 'wporg' ); ?></li>
+<li><?php _e( '<a href="/patterns/">Design block patterns ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
