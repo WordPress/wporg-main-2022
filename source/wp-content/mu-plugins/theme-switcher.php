@@ -20,58 +20,27 @@ function should_use_new_theme() {
 		return false;
 	}
 
-	// Request to resolve a template.
-	if ( isset( $_GET['_wp-find-template'] ) ) {
-		return true;
-	}
-
-	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
-
-	// Admin page or an API request.
-	if ( is_admin() || wp_is_json_request() || 0 === strpos( $request_uri, '/wp-json/wp' ) ) {
-		return true;
-	}
-
 	// Preview. Can't call is_preview() this early in the process.
 	if ( isset( $_GET['preview'] ) && isset( $_GET['preview_id'] ) ) {
 		return true;
 	}
 
-	// Use the new theme on all search results.
-	if ( str_starts_with( $request_uri, '/search/' ) ) {
-		return true;
-	}
+	$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? explode( '?', esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ?? '/' )[0] : '/';
 
-	// Check if the page being requested isn't supported by the new theme, it should fall-back to the old theme if so.
-	$new_theme_pages = array(
-		'/',
-		'/download/',
-		'/download/beta-nightly/',
-		'/download/counter/',
-		'/download/releases/',
-		'/download/releases/6-3/',
-		'/download/source/',
-		'/mobile/',
-		'/enterprise/',
-		'/about/',
-		'/about/requirements/',
-		'/about/features/',
-		'/about/security/',
-		'/about/roadmap/',
-		'/about/history/',
-		'/about/domains/',
-		'/about/license/',
-		'/about/accessibility/',
-		'/about/privacy/',
-		'/about/stats/',
-		'/about/philosophy/',
-		'/about/etiquette/',
-		'/about/swag/',
-		'/about/logos/',
-		'/blocks/',
-		'/remembers/',
+	// By default, the new theme is enabled, but there are some exceptions.
+	$old_theme_pages = array(
+		'/40-percent-of-web/',
+		'/about/privacy/cookies/',
+		'/about/privacy/data-erasure-request/',
+		'/about/privacy/data-export-request/',
+		'/enterprise/content-marketing/',
+		'/enterprise/ecommerce/',
+		'/enterprise/education/',
+		'/enterprise/integrations/',
+		'/enterprise/media/',
+		'/hosting/',
 	);
-	if ( ! in_array( $request_uri, $new_theme_pages ) ) {
+	if ( in_array( strtolower( $request_uri ), $old_theme_pages ) ) {
 		return false;
 	}
 
