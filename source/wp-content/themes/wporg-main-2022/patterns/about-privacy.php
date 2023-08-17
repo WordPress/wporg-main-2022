@@ -277,6 +277,26 @@
 <h2 class="wp-block-heading"><?php _e( 'Contact', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"blueberry-4","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-blueberry-4-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
+<p><?php _e( 'Please note we cannot provide help or information about other websites, including those which may run on WordPress open source software but are hosted by third parties.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( 'We suggest contacting the site owner or author directly. To find more information about the site’s host or domain&nbsp;registrar, you can use these tools:', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item -->
+<li><?php _e( '<a href="https://href.li/?https://lookup.icann.org">https://lookup.icann.org</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://href.li/?https://www.whoishostingthis.com/">https://www.whoishostingthis.com/</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
 <!-- wp:paragraph -->
 <p><?php _e( 'Please contact us if you have any questions about our privacy policy or information we hold about you by emailing dpo@wordpress.org.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
