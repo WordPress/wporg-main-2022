@@ -22,7 +22,10 @@ $livestream_url = time() > strtotime( '2023-08-26' ) ? 'https://www.youtube.com/
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<p class="has-white-color has-text-color has-link-color"><?php printf( __( '<a href="%s">Watch the 2023 WordCamp US Livestream ↗</a> including keynotes from Matt Mullenweg and Josepha Haden Chomphosy', 'wporg' ), esc_url( $livestream_url ) ); ?></p>
+<p class="has-white-color has-text-color has-link-color"><?php
+// translators: %s link to livestream on youtube.
+echo wp_kses_post( sprintf( __( '<a href="%s">Watch the 2023 WordCamp US Livestream ↗</a> including keynotes from Matt Mullenweg and Josepha Haden Chomphosy', 'wporg' ), esc_url( $livestream_url ) ) );
+?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
