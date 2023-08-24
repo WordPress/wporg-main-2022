@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "652c9baa4366ca13314c13344b96f9cc",
+    "content-hash": "7094cbd956d0c4edb539768c7a0dd30c",
     "packages": [],
     "packages-dev": [
         {
@@ -2372,15 +2372,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "16.4.0",
+            "version": "16.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/16.4.0"
+                "reference": "tags/16.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.5.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2390,15 +2390,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "12.4",
+            "version": "12.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/12.4"
+                "reference": "tags/12.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.12.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.12.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2430,12 +2430,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "22bd36cc52d800b61a6e9f103c735e3cd8b96af3"
+                "reference": "6f64e1f11713a45fe0d1cafa7866918dc383a3d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/22bd36cc52d800b61a6e9f103c735e3cd8b96af3",
-                "reference": "22bd36cc52d800b61a6e9f103c735e3cd8b96af3",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/6f64e1f11713a45fe0d1cafa7866918dc383a3d0",
+                "reference": "6f64e1f11713a45fe0d1cafa7866918dc383a3d0",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2449,7 @@
                 "wp-coding-standards/wpcs": "2.*",
                 "wp-phpunit/wp-phpunit": "~6.0",
                 "wporg/wporg-repo-tools": "dev-trunk",
-                "yoast/phpunit-polyfills": "^1.0"
+                "yoast/phpunit-polyfills": "^1.1"
             },
             "type": "wordpress-muplugin",
             "extra": {
@@ -2476,7 +2476,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2023-08-09T00:17:46+00:00"
+            "time": "2023-08-23T04:54:39+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2484,12 +2484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "e5b02d6e73198fb8ebb02acc63ce0eb609852b28"
+                "reference": "d5311dafbe40fdc6d16ca2119b17a39ac19800a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/e5b02d6e73198fb8ebb02acc63ce0eb609852b28",
-                "reference": "e5b02d6e73198fb8ebb02acc63ce0eb609852b28",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/d5311dafbe40fdc6d16ca2119b17a39ac19800a1",
+                "reference": "d5311dafbe40fdc6d16ca2119b17a39ac19800a1",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -2497,7 +2497,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2023-08-16T19:52:41+00:00"
+            "time": "2023-08-22T15:22:31+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
@@ -2531,16 +2531,16 @@
         },
         {
             "name": "yoast/phpunit-polyfills",
-            "version": "1.0.5",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/PHPUnit-Polyfills.git",
-                "reference": "3b59adeef77fb1c03ff5381dbb9d68b0aaff3171"
+                "reference": "224e4a1329c03d8bad520e3fc4ec980034a4b212"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/PHPUnit-Polyfills/zipball/3b59adeef77fb1c03ff5381dbb9d68b0aaff3171",
-                "reference": "3b59adeef77fb1c03ff5381dbb9d68b0aaff3171",
+                "url": "https://api.github.com/repos/Yoast/PHPUnit-Polyfills/zipball/224e4a1329c03d8bad520e3fc4ec980034a4b212",
+                "reference": "224e4a1329c03d8bad520e3fc4ec980034a4b212",
                 "shasum": ""
             },
             "require": {
@@ -2587,7 +2587,7 @@
                 "issues": "https://github.com/Yoast/PHPUnit-Polyfills/issues",
                 "source": "https://github.com/Yoast/PHPUnit-Polyfills"
             },
-            "time": "2023-03-30T23:39:05+00:00"
+            "time": "2023-08-19T14:25:08+00:00"
         }
     ],
     "aliases": [],
