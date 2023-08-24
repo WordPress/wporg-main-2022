@@ -18,6 +18,8 @@ Once set up, this environment will contain some shared plugins (Jetpack, Gutenbe
 1. Set up repo dependencies.
 
     ```bash
+    yarn
+    composer install
     yarn setup:tools
     ```
 

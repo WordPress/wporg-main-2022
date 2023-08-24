@@ -12,7 +12,7 @@
 		"lighthouse-ci": "^1.13.1"
 	},
 	"scripts": {
-		"setup:tools": "yarn && composer install && TEXTDOMAIN=wporg composer exec update-configs",
+		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
 		"setup:wp": "wp-env run cli \"bash env/setup.sh\" && ./env/refresh.sh",
 		"setup:refresh": "./env/refresh.sh",
 		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
