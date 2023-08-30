@@ -483,7 +483,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20292,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear een then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
