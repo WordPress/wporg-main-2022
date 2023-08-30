@@ -168,28 +168,28 @@ echo wp_kses_post( sprintf( __( '<a href="%s">Watch the 2023 WordCamp US Livestr
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":105,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Spotify.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-11474" style="width:105px;height:33px" width="105" height="33" /></figure>
+<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":"105px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Spotify.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-11474" style="width:105px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11475,"width":79,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px;height:33px" width="79" height="33" /></figure>
+<!-- wp:image {"id":11475,"width":"79px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11476,"width":118,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Vogue.png" alt="<?php _e( 'Vogue Magazine logo', 'wporg' ); ?>" class="wp-image-11476" style="width:118px;height:33px" width="118" height="33" /></figure>
+<!-- wp:image {"id":11476,"width":"118px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Vogue.png" alt="<?php _e( 'Vogue Magazine logo', 'wporg' ); ?>" class="wp-image-11476" style="width:118px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11473,"width":210,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Sony-Music.png" alt="<?php _e( 'Sony Music logo', 'wporg' ); ?>" class="wp-image-11473" style="width:210px;height:33px" width="210" height="33" /></figure>
+<!-- wp:image {"id":11473,"width":"210px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Sony-Music.png" alt="<?php _e( 'Sony Music logo', 'wporg' ); ?>" class="wp-image-11473" style="width:210px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11479,"width":97,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Wired.png" alt="<?php _e( 'Wired Magazine logo', 'wporg' ); ?>" class="wp-image-11479" style="width:97px;height:33px" width="97" height="33" /></figure>
+<!-- wp:image {"id":11479,"width":"97px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Wired.png" alt="<?php _e( 'Wired Magazine logo', 'wporg' ); ?>" class="wp-image-11479" style="width:97px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11482,"width":76,"height":33,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Disney.png" alt="<?php _e( 'Disney logo', 'wporg' ); ?>" class="wp-image-11482" style="width:76px;height:33px" width="76" height="33" /></figure>
+<!-- wp:image {"id":11482,"width":"76px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Disney.png" alt="<?php _e( 'Disney logo', 'wporg' ); ?>" class="wp-image-11482" style="width:76px;height:33px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
