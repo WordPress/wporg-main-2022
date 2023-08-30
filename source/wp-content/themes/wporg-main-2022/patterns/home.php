@@ -5,43 +5,12 @@
  * Inserter: no
  */
 
-// Load either friday or saturday's livestream URL.
-$livestream_url = time() > strtotime( '2023-08-26' ) ? 'https://www.youtube.com/watch?v=-hjQ9IRaBWY' : 'https://www.youtube.com/watch?v=LpDulftMkew';
 ?>
-<?php if ( time() > strtotime( '2023-08-25' ) ) : /* On the 25th, show livestream info. */ ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"black","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-white-color has-black-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=-hjQ9IRaBWY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<?php echo $livestream_url . "\n"; /* phpcs:ignore */ ?>
-</div></figure>
-<!-- /wp:embed --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<p class="has-white-color has-text-color has-link-color"><?php
-// translators: %s link to livestream on youtube.
-echo wp_kses_post( sprintf( __( '<a href="%s">Watch the 2023 WordCamp US Livestream ↗</a> including keynotes from Matt Mullenweg and Josepha Haden Chomphosy', 'wporg' ), esc_url( $livestream_url ) ) );
-?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<p class="has-white-color has-text-color has-link-color"><?php _e( 'Streaming starts Fri, Aug 25 (<a target="_blank" href="https://us.wordcamp.org/2023/livestream/" rel="noreferrer noopener">Full Schedule ↗</a>)', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:group -->
-<?php else : ?>
-<!-- wp:wporg/link-wrapper {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
-<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://wordpress.org/download/releases/6-3/"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php _e( 'Say hello to WordPress 6.3 "Lionel"', 'wporg' ); ?></p>
+<!-- wp:wporg/link-wrapper {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"default"}} -->
+<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://wordpress.org/news/2023/08/the-future-of-wordpress-whats-next-for-gutenberg/"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><?php _e( 'Watch the 2023 WordCamp US Keynotes from Matt Mullenweg and Josepha Haden Chomphosy ↗︎', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></a>
 <!-- /wp:wporg/link-wrapper -->
-<?php endif; ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
