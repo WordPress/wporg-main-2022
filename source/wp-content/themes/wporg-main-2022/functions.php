@@ -23,6 +23,7 @@ add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loadi
 add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\update_site_breadcrumbs' );
 add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
 add_filter( 'render_block_data', __NAMESPACE__ . '\update_header_template_part_class' );
+add_filter( 'wporg_block_navigation_menus', __NAMESPACE__ . '\add_site_navigation_menus' );
 
 /**
  * Enqueue scripts and styles.
@@ -142,6 +143,98 @@ function update_site_breadcrumbs( $breadcrumbs ) {
 	}
 
 	return array_reverse( $breadcrumbs );
+}
+
+/**
+ * Provide a list of local navigation menus.
+ */
+function add_site_navigation_menus( $menus ) {
+	return array(
+		'about-details' => array(
+			array(
+				'label' => __( 'Domains', 'wporg' ),
+				'url' => '/about/domains/',
+			),
+			array(
+				'label' => __( 'License', 'wporg' ),
+				'url' => '/about/license/',
+			),
+			array(
+				'label' => __( 'Accessibility', 'wporg' ),
+				'url' => '/about/accessibility/',
+			),
+			array(
+				'label' => __( 'Privacy Policy', 'wporg' ),
+				'url' => '/about/privacy/',
+			),
+			array(
+				'label' => __( 'Statistics', 'wporg' ),
+				'url' => '/about/stats/',
+			),
+		),
+		'about-technology' => array(
+			array(
+				'label' => __( 'Requirements', 'wporg' ),
+				'url' => '/about/requirements/',
+			),
+			array(
+				'label' => __( 'Features', 'wporg' ),
+				'url' => '/about/features/',
+			),
+			array(
+				'label' => __( 'Security', 'wporg' ),
+				'url' => '/about/security/',
+			),
+			array(
+				'label' => __( 'Roadmap', 'wporg' ),
+				'url' => '/about/roadmap/',
+			),
+			array(
+				'label' => __( 'History', 'wporg' ),
+				'url' => '/about/history/',
+			),
+		),
+		'about-people' => array(
+			array(
+				'label' => __( 'Philosophy', 'wporg' ),
+				'url' => '/about/philosophy/',
+			),
+			array(
+				'label' => __( 'Etiquette', 'wporg' ),
+				'url' => '/about/etiquette/',
+			),
+			array(
+				'label' => __( 'Swag', 'wporg' ),
+				'url' => 'https://mercantile.wordpress.org/',
+			),
+			array(
+				'label' => __( 'Logos', 'wporg' ),
+				'url' => '/about/logos/',
+			),
+			array(
+				'label' => __( 'People of WordPress', 'wporg' ),
+				'url' => 'https://wordpress.org/news/category/community/',
+			),
+		),
+		'download' => array(
+			array(
+				'label' => __( 'Releases', 'wporg' ),
+				'url' => '/download/releases/',
+			),
+			array(
+				'label' => __( 'Nightly', 'wporg' ),
+				'url' => '/download/beta-nightly/',
+			),
+			array(
+				'label' => __( 'Counter', 'wporg' ),
+				'url' => '/download/counter/',
+			),
+			array(
+				'label' => __( 'Source', 'wporg' ),
+				'url' => '/download/source/',
+			),
+		),
+	);
 }
 
 /**
