@@ -12,11 +12,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is continually under development. Currently, work is being completed on Phase 2 of the Gutenberg project, and Phase 3 (Collaboration) is starting in 2023. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, a foundation of successful modern businesses.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is continually under development. Currently, Phase 2 of the Gutenberg project formally wrapped with WordPress 6.3, and exploration of Phase 3 (Collaboration) is underway. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, a foundation of successful modern businesses.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Phase 1 was the new block editor, <a href="https://wordpress.org/gutenberg/">Gutenberg</a>, released in WordPress 5.0. In 2021 and 2022, we focused on merging full site editing (Phase 2) into WordPress. This introduced the Site Editor and a suite of editing capabilities that enable leveraging blocks for use across an entire website. Phase 3 is Collaborative Editing, also known as Workflows given its implementation of features for workflows and real-time collaboration. <a href="https://make.wordpress.org/core/features/">Check out the Feature Projects Overview page</a> for more information on site editing, its components, and other active feature work.', 'wporg' ); ?></p>
+<p><?php _e( 'Phase 1 was the new block editor, <a href="https://wordpress.org/gutenberg/">Gutenberg</a>, released in WordPress 5.0. In 2021 and 2022, we focused on merging Site Editing (Phase 2) into WordPress. This introduced the Site Editor and a suite of editing capabilities that enable leveraging blocks for use across an entire website. Phase 3 is Collaborative Editing, also known as Workflows given its implementation of features for workflows and real-time collaboration. <a href="https://make.wordpress.org/core/features/">Check out the Feature Projects Overview page</a> for more information on site editing, its components, and other active feature work.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -203,7 +203,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Customization — Full site editing, block patterns, block directory, block themes', 'wporg' ); ?></li>
+<li><?php _e( 'Customization — Site Editing, block patterns, block directory, block themes', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
