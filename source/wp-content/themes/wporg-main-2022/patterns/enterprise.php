@@ -6,6 +6,12 @@
  */
 
 ?>
+<!-- wp:wporg/link-wrapper {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-1","textColor":"white"} -->
+<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://wordpressdotorg.survey.fm/state-of-enterprise-wordpress-2023-bd98?ref23=dotOrgEnterprise"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><?php _e( 'Take part in the 2023 State of Enterprise WordPress survey&nbsp;↗︎', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></a>
+<!-- /wp:wporg/link-wrapper -->
+
 <!-- wp:group {"align":"full","backgroundColor":"blueberry-1","textColor":"white","className":"wporg-enterprise-cover","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull wporg-enterprise-cover has-white-color has-blueberry-1-background-color has-text-color has-background"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"align":"wide","fontSize":"heading-cta"} -->
@@ -311,3 +317,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:image {"align":"full","id":22532,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image alignfull size-full"><a href="https://wordpressdotorg.survey.fm/state-of-enterprise-wordpress-2023-bd98?ref23=dotOrgEnterprise"><img src="https://wordpress.org/files/2023/10/270319241-c2f85fca-c6a3-4eb4-9e02-5b02ba8212c0.png" alt="<?php _e( 'Take part in the 2023 State of Enterprise WordPress survey.', 'wporg' ); ?>" class="wp-image-22532" /></a></figure>
+<!-- /wp:image -->
