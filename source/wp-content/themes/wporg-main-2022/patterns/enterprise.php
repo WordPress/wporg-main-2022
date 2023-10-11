@@ -246,6 +246,68 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"className":"wporg-enterprise-additional-case-studies","align":"full","style":{"border":{"radius":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
+<div class="wp-block-columns alignfull has-link-color wporg-enterprise-additional-case-studies" style="border-radius:0px;padding-top:var(--wp--preset--spacing--50)"><!-- wp:column {"className":"wp-block-navigation"} -->
+<div class="wp-block-column wp-block-navigation"><!-- wp:heading {"level":3,"className":"wp-block-heading","fontSize":"heading-5"} -->
+<h3 class="wp-block-heading has-heading-5-font-size"><?php _e( 'Additional case studies', 'wporg' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"className":"is-style-default","fontSize":"small"} -->
+<ul class="is-style-default has-small-font-size"><!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Penske-Media-Corporation-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/Penske-Media-Corporation-Case-Study.pdf">Unified WordPress with PMC (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/SAP-News-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/SAP-News-Case-Study.pdf">Massive Multisite with SAP News (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/ArtsHub-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/ArtsHub-Case-Study.pdf">.NET to WordPress with ArtsHub (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"className":"wp-block-navigation"} -->
+<div class="wp-block-column wp-block-navigation"><!-- wp:heading {"level":3,"className":"wp-block-heading","fontSize":"heading-5"} -->
+<h3 class="wp-block-heading has-heading-5-font-size">&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"fontSize":"small"} -->
+<ul class="has-small-font-size"><!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Capgemini-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/Capgemini-Case-Study.pdf">Drupal to WordPress with Capgemini (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Academic-Partnerships-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/Academic-Partnerships-Case-Study.pdf">Academic Partnerships (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/News-Corp-Australia-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/News-Corp-Australia-Case-Study.pdf">Revolutioning Performance and Editorial (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"className":"wp-block-navigation"} -->
+<div class="wp-block-column wp-block-navigation"><!-- wp:heading {"level":3,"className":"wp-block-heading","fontSize":"heading-5"} -->
+<h3 class="wp-block-heading has-heading-5-font-size">&nbsp;</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list {"fontSize":"small"} -->
+<ul class="has-small-font-size"><!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Enterprise-Pharmacy-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/Enterprise-Pharmacy-Case-Study.pdf">Moving a Pharmacy Leader to WordPress (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Siemens-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/Siemens-Case-Study.pdf">AEM to WordPress with Siemens (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://wordpress.org/files/2023/10/DisneyABCPress-Case-Study.pdf" data-type="URL" data-id="https://wordpress.org/files/2023/10/DisneyABCPress-Case-Study.pdf">Ten Years of DisneyABCPress Success (PDF)</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
