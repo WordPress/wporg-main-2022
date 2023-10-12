@@ -64,7 +64,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"id":15794,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"129px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/facebook.webp" alt="<?php _e( 'facebook logo', 'wporg' ); ?>" class="wp-image-15794" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/facebook.webp" alt="<?php _e( 'Facebook logo', 'wporg' ); ?>" class="wp-image-15794" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":15796,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"141px"}}} -->
