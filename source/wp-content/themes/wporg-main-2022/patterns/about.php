@@ -189,7 +189,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about WordPress, where it’s been, and where it’s going.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-technology"} /--></div>
+<!-- wp:navigation {"ref":17028,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-technology"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
@@ -201,7 +201,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Dive into the background details, like the GPL and other policies.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-details"} /--></div>
+<!-- wp:navigation {"ref":17028,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-details"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|20"}}}} -->
@@ -213,7 +213,7 @@
 <p class="has-courier-prime-font-family" style="line-height:1.6"><?php _e( 'Learn about the community, how we get along and show our pride.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-people"} /--></div>
+<!-- wp:navigation {"ref":17028,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"menuSlug":"about-people"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
