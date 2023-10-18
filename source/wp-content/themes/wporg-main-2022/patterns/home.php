@@ -120,18 +120,18 @@
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:5rem"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'One platform, millions of possibilities', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'One platform, a universe of possibilities', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
-<div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
-<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Global creative agencies, local businesses, and even your neighbor’s personal blog are already using WordPress.', 'wporg' ); ?></p>
+<div class="wp-block-columns"><!-- wp:column {"width":"60%"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Discover a collection of website examples from around the world, curated to spotlight gorgeous design, technical innovation, and the limitless power of WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"60%"} -->
-<div class="wp-block-column" style="flex-basis:60%"></div>
+<!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
@@ -145,26 +145,26 @@
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11476,"width":"118px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Vogue.png" alt="<?php _e( 'Vogue Magazine logo', 'wporg' ); ?>" class="wp-image-11476" style="width:118px;height:33px" /></figure>
+<!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11473,"width":"210px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Sony-Music.png" alt="<?php _e( 'Sony Music logo', 'wporg' ); ?>" class="wp-image-11473" style="width:210px;height:33px" /></figure>
+<!-- wp:image {"id":22636,"width":"150px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11479,"width":"97px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Wired.png" alt="<?php _e( 'Wired Magazine logo', 'wporg' ); ?>" class="wp-image-11479" style="width:97px;height:33px" /></figure>
+<!-- wp:image {"id":22637,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="" class="wp-image-22637" style="width:64px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11482,"width":"76px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Disney.png" alt="<?php _e( 'Disney logo', 'wporg' ); ?>" class="wp-image-11482" style="width:76px;height:33px" /></figure>
+<!-- wp:image {"id":22638,"width":"160px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="" class="wp-image-22638" style="width:160px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"align":"wide"} -->
 <div class="wp-block-buttons alignwide"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Find inspiration', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -175,16 +175,16 @@
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"charcoal-1","className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignfull is-style-default has-charcoal-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/showcase_thumbs_a-75.webp" alt="" /></figure>
+<div class="wp-block-group alignfull is-style-default has-charcoal-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":22644,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-top-row-full.png" alt="" class="wp-image-22644" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/showcase_thumbs_b-50.webp" alt="" /></figure>
+<!-- wp:image {"id":22641,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-middle-row.png" alt="" class="wp-image-22641" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://s.w.org/wp-content/blogs.dir/1/files/2022/12/showcase_thumbs_c-50.webp" alt="" /></figure>
+<!-- wp:image {"id":22642,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-bottom-row.png" alt="" class="wp-image-22642" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
