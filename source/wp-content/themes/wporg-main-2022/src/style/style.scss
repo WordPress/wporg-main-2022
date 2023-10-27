@@ -108,6 +108,19 @@ body.home .wp-block-wporg-link-wrapper {
 	}
 }
 
+.wporg-home-showcase-logos {
+
+	@media (max-width: 599px) {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr;
+
+		> .wp-block-image {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
 /**
  * Add a background behind the Editor section's cover block, for browsers that don't support webp.
  */

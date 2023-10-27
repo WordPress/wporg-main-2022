@@ -136,8 +136,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":"105px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"className":"wporg-home-showcase-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":"105px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Spotify.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-11474" style="width:105px;height:33px" /></figure>
 <!-- /wp:image -->
 
