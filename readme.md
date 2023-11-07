@@ -2,7 +2,9 @@
 
 A block-based child theme for WordPress.org, plus local environment.
 
-Once set up, this environment will contain some shared plugins (Jetpack, Gutenberg, etc), some `mu-plugins` ([wporg-mu-plugins](https://github.com/WordPress/wporg-mu-plugins/), [mu-plugins/pub](https://meta.trac.wordpress.org/browser/sites/trunk/wordpress.org/public_html/wp-content/mu-plugins/pub)), and both sets of parent and child themes. The current site uses `wporg` parent and `wporg-main` child; while the new design will be done with [`wporg-parent-2021`](https://github.com/WordPress/wporg-parent-2021) and `wporg-main-2022` (this repo). The "theme-switcher" in `mu-plugins` here should control which theme is used, based on the requested page.
+Once set up, this environment will contain some shared plugins (Jetpack, Gutenberg, etc), some `mu-plugins` ([wporg-mu-plugins](https://github.com/WordPress/wporg-mu-plugins/), [mu-plugins/pub](https://meta.trac.wordpress.org/browser/sites/trunk/wordpress.org/public_html/wp-content/mu-plugins/pub)), and both sets of parent and child themes. The current site uses `wporg` parent and `wporg-main` child; while the new design will be done with [`wporg-parent-2021`](https://github.com/WordPress/wporg-parent-2021) and `wporg-main-2022` (this repo).
+
+The "theme-switcher" in `mu-plugins` here should control which theme is used, based on the requested page. It defaults to this theme, so it only needs to be used so that old pages use the old theme.
 
 ## Development
 
@@ -168,11 +170,15 @@ Add the new page to `./env/page-manifest.json`. Use the following format, where 
 },
 ```
 
-Add the page URL to `$new_theme_pages` in `./source/wp-content/mu-plugins/theme-switcher.php`.
+If you're using the Docker environment, start it with `yarn wp-env start`.
 
-Start up the local environment using `yarn wp-env start`. Create the page in your local environment.
+Create the page in your local environment.
 
-Run `yarn build:patterns`. This creates the pattern synced from the remote page content, and creates the page template which references the new pattern. View the new page, it should use the new theme & synced content.
+Run the script to sync the pattern content. This syncs from the remote page content on wordpress.org, and creates the page template which references the new pattern.
+	If you're using Docker, the command is `yarn build:patterns`.
+	In other environments the command is `wp eval-file env/export-content/index.php env/page-manifest.json`. Run that from the `public_html` directory.
+
+View the new page, it should contain the synced content.
 
 If necessary, update the header & footer style in the page template:
 
@@ -183,8 +189,6 @@ If necessary, update the header & footer style in the page template:
 Verify that the changes look correct, and commit the changes to github. Wait for the actions to finish.
 
 Use the sync script `bin/sync/main.sh` on your sandbox to sync the changes, and deploy wporg.
-
-The `theme-switcher.php` change will need to be synced separately, to the mu-plugins/main-network on dotorg svn. This is the step that enables the new theme on that page.
 
 The new page should be live 🎉
 
