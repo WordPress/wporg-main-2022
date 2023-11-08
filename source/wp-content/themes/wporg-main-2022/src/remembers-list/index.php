@@ -38,7 +38,7 @@ function init() {
 function render( $attributes, $content, $block ) {
 
 	// Replace with query
-	$profiles = [ 'Kim Parsell', 'Alex King', 'Jesse Petersen', 'Efrain Rivera', 'Todrick Moore', 'Alex Mills', 'Joseph Karr O’Connor', 'David de Boer' ];
+	$profiles = [ [ "name" => 'Kim Parsell', "link" => "https://google.com" ], [ "name" => 'Alex King', "link" => "https://google.com" ], [ "name" => 'Jesse Petersen', "link" => "https://google.com" ], [ "name" => 'Efrain Rivera', "link" => "https://google.com" ] ];
 
 	$columns = $attributes['columns'];
 	$group_count = ceil( count( $profiles ) / $columns );
@@ -52,12 +52,12 @@ function render( $attributes, $content, $block ) {
 	foreach ( $groups as $group ) {
 		$block_content .= '<!-- wp:columns --><div class="wp-block-columns">';
 
-		foreach ( $group as $name ) {
+		foreach ( $group as $profile ) {
 			$block_content .= '<!-- wp:column --><div class="wp-block-column">';
 			$block_content .= '<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","right":"var:preset|spacing|default","bottom":"var:preset|spacing|30","left":"var:preset|spacing|default"}}},"fontSize":"extra-large"} -->';
 			$block_content .= '<h2 class="wp-block-heading has-text-align-center has-extra-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--30);margin-left:var(--wp--preset--spacing--default)">';
 			$block_content .= '<em>';
-			$block_content .= '<a href="https://google.com">' . esc_html( $name ) . '</a>';
+			$block_content .= '<a href="'. esc_url( $profile["link"] ) .'">' . esc_html( $profile["name"] ) . '</a>';
 			$block_content .= '</em>';
 			$block_content .= '</h2>';
 			$block_content .= '<!-- /wp:heading -->';
