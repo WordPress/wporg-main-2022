@@ -4,6 +4,7 @@
 	text-decoration: none;
 
 	&:hover {
+		color: var(--wp--custom--link--color--text);
 		text-decoration: underline;
 	}
 }
