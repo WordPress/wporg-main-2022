@@ -195,6 +195,7 @@ function render_table( $releases ) {
 	return $table;
 }
 
+
 /**
  * Render a release row.
  *
@@ -203,8 +204,20 @@ function render_table( $releases ) {
  * @return string Returns the row markup.
  */
 function render_table_row( $version ) {
+	// Link the version number column to the microsite if it exists.
+	// Microsite URL is expected to be https://wordpress.org/download/releases/{version}/
+	$releases_with_microsites = array( '6.3', '6.4' );
+	$version_number = $version['version'];
+	$maybe_link_to_microsite = in_array( $version_number, $releases_with_microsites )
+		? sprintf(
+			'<a href="/download/releases/%1$s">%2$s</a>',
+			esc_attr( $version_number ),
+			esc_html( $version_number ),
+		)
+		: esc_html( $version_number );
+
 	$row = '<tr>';
-	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">' . esc_html( $version['version'] ) . '</th>';
+	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">' . $maybe_link_to_microsite . '</th>';
 	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
 	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
 
