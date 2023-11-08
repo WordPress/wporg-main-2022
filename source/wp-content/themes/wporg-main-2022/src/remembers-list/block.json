@@ -6,7 +6,7 @@
 	"title": "Remembers Contributor List",
 	"category": "design",
 	"icon": "list-view",
-	"description": "Remembers Contributor List",
+	"description": "Displays a list of memorialized contributors.",
 	"textdomain": "wporg",
 	"attributes": {
 		"columns": {
