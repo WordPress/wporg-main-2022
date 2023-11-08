@@ -48,7 +48,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small","menuSlug":"download"} /--></div>
+<!-- wp:navigation {"ref":17028,"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small","menuSlug":"download"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
@@ -164,12 +164,12 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="<?php _e( 'Download on the Apple App Store', 'wporg' ); ?>" style="width:150px;height:45px" width="150" height="45" /></a></figure>
+<div class="wp-block-group"><!-- wp:image {"width":"150px","height":"45px","linkDestination":"custom"} -->
+<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="<?php _e( 'Download on the Apple App Store', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php _e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" width="150" height="45" /></a></figure>
+<!-- wp:image {"width":"150px","height":"45px","linkDestination":"custom"} -->
+<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php _e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
