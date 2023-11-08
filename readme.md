@@ -180,11 +180,15 @@ Run the script to sync the pattern content. This syncs from the remote page cont
 
 View the new page, it should contain the synced content.
 
-If necessary, update the header & footer style in the page template:
+If necessary, update the header & footer style in the page template. You can pass custom styles like
+
+`<!-- wp:wporg/global-header {"style":{"border":{"bottom":{"color":"var:preset|color|light-grey-1","style":"solid","width":"1px"},"top":{},"right":{},"left":{}}},"backgroundColor":"white","textColor":"charcoal-2"} /-->`
+
+Or preset style variations:
 
 - White on black: `<!-- wp:wporg/global-header /-->`
-- Black on white: `<!-- wp:wporg/global-header {"backgroundColor":"white","textColor":"charcoal-2"} /-->`
-- White on blue: `<!-- wp:wporg/global-header {"backgroundColor":"blueberry-1","textColor":"white"} /-->`
+- Black on white: `<!-- wp:wporg/global-header {"style":"black-on-white"} /-->`
+- White on blue: `<!-- wp:wporg/global-footer {"style":"white-on-blue"} /-->`
 
 Verify that the changes look correct, and commit the changes to github. Wait for the actions to finish.
 
