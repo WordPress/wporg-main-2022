@@ -6,12 +6,6 @@
  */
 
 ?>
-<!-- wp:wporg/link-wrapper {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"default"}} -->
-<a class="wp-block-wporg-link-wrapper alignfull has-white-color has-blueberry-1-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--edge-space)" href="https://survey.alchemer.com/s3/7439442/2023-WordPress-Annual-Survey?ref23=dotOrgHome"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php _e( 'Take the 2023 Annual Survey and make your voice heard on all things WordPress&nbsp;↗︎', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></a>
-<!-- /wp:wporg/link-wrapper -->
-
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
