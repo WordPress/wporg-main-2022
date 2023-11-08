@@ -195,6 +195,31 @@ function render_table( $releases ) {
 	return $table;
 }
 
+/**
+ * Find the microsite url for a given version.
+ *
+ * @param string $version The version number to find the microsite url for.
+ *
+ * @return string|null Returns the microsite url if found, otherwise null.
+ */
+function find_microsite_url_for_version( $version ) {
+	// attempt to find the microsite url only if the version number matches the format major.minor
+	if ( ! preg_match( '/^\d+\.\d+$/', $version ) ) {
+		return null;
+	}
+
+	global $post;
+	$child_pages = get_pages( array( 'child_of' => $post->ID ) );
+	$version_hyphenated = str_replace( '.', '-', $version );
+
+	foreach ( $child_pages as $child_page ) {
+		if ( $version_hyphenated === $child_page->post_name ) {
+			return get_permalink( $child_page->ID );
+		}
+	}
+
+	return null;
+}
 
 /**
  * Render a release row.
@@ -204,20 +229,19 @@ function render_table( $releases ) {
  * @return string Returns the row markup.
  */
 function render_table_row( $version ) {
-	// Link the version number column to the microsite if it exists.
-	// Microsite URL is expected to be https://wordpress.org/download/releases/{version}/
-	$releases_with_microsites = array( '6.3', '6.4' );
 	$version_number = $version['version'];
-	$maybe_link_to_microsite = in_array( $version_number, $releases_with_microsites )
+	$microsite_url = find_microsite_url_for_version( $version_number );
+
+	$row = '<tr>';
+	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">';
+	$row .= isset( $microsite_url )
 		? sprintf(
-			'<a href="/download/releases/%1$s">%2$s</a>',
-			esc_attr( $version_number ),
+			'<a href="%1$s">%2$s</a>',
+			esc_url( $microsite_url ),
 			esc_html( $version_number ),
 		)
 		: esc_html( $version_number );
-
-	$row = '<tr>';
-	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">' . $maybe_link_to_microsite . '</th>';
+	$row .= '</th>';
 	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
 	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
 
