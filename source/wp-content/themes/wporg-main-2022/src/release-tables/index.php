@@ -209,6 +209,10 @@ function find_microsite_url_for_version( $version ) {
 	}
 
 	global $post;
+	if ( ! $post ) {
+		return null;
+	}
+
 	$child_pages = get_pages( array( 'child_of' => $post->ID ) );
 	$version_hyphenated = str_replace( '.', '-', $version );
 
