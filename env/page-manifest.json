@@ -129,5 +129,9 @@
 	{
 		"slug": "search",
 		"template": "page-search.html"
+	},
+	{
+		"slug": "state-of-the-word",
+		"template": "page-sotw.html"
 	}
 ]

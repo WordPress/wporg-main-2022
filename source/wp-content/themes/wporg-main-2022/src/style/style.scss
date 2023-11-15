@@ -555,6 +555,67 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
+
+// Styles for the State of the Word page.
+.page-template-page-sotw a {
+	color: #ff2b2b;
+}
+
+@media (max-width: 419px) {
+	.page-template-page-sotw h2 {
+		font-size: 60px !important;
+	}
+}
+
+.page-template-page-sotw .sotw-event-details-social a {
+	text-decoration: none;
+}
+
+.page-template-page-sotw .sotw-quote {
+	position: relative;
+	z-index: 1;
+}
+
+.page-template-page-sotw .sotw-quote > p::before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: -40px;
+	width: 100px;
+	height: 75px;
+	background-image: url(../../images/sotw/quote.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+@media (min-width: 960px) {
+	.page-template-page-sotw .sotw-quote > p::before {
+		top: -100px;
+		left: -140px;
+		width: 200px;
+		height: 150px;
+	}
+}
+
+.page-template-page-sotw .sotw-heading-splash {
+	position: relative;
+}
+
+.page-template-page-sotw .sotw-heading-splash::before {
+	content: "";
+	position: absolute;
+	top: -80px;
+	left: -160px;
+	width: 420px;
+	height: 430px;
+	background-image: url(../../images/sotw/heading-splash.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
  *
