@@ -156,6 +156,10 @@
 <p class="has-medium-font-size" style="margin-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--80)">If you are planning a watch party for State of the Word and have questions, please email support@wordcamp.org. A member of the WordPress community team will assist you in the best way possible.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:wporg/google-map-event-filters {"filterSlug":"sotw","startDate":"December 10, 2023","endDate":"January 12, 2024","googleMapBlockAttributes":{"id":"sotw-2023","apiKey":"WORDCAMP_DEV_GOOGLE_MAPS_API_KEY","showList":false,"showSearch":false}} /--></div>
+<!-- /wp:group -->
+
 <!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","lineHeight":"1","fontSize":"80px"},"spacing":{"padding":{"right":"40px"},"margin":{"bottom":"var:preset|spacing|40"}}},"className":"sotw-heading-splash","fontFamily":"anton"} -->
 <h2 class="wp-block-heading sotw-heading-splash has-anton-font-family" style="margin-bottom:var(--wp--preset--spacing--40);padding-right:40px;font-size:80px;line-height:1;text-transform:uppercase">Watch past State of the Word Keynotes</h2>
 <!-- /wp:heading -->
