@@ -8,6 +8,11 @@
 					"fontFamily": "'Courier Prime', serif",
 					"slug": "courier-prime",
 					"name": "Courier Prime"
+				},
+				{
+					"fontFamily": "'Anton', serif",
+					"slug": "anton",
+					"name": "Anton"
 				}
 			]
 		}
