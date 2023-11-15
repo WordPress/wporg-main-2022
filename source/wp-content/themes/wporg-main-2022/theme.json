@@ -13,6 +13,11 @@
 					"fontFamily": "'Anton', serif",
 					"slug": "anton",
 					"name": "Anton"
+				},
+				{
+					"fontFamily": "'Newsreader', serif",
+					"slug": "newsreader",
+					"name": "Newsreader"
 				}
 			]
 		}
