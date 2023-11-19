@@ -35,7 +35,7 @@ function enqueue_assets() {
 	wp_enqueue_style(
 		'wporg-main-2022-style',
 		get_stylesheet_directory_uri() . '/build/style/style-index.css',
-		array( 'wporg-parent-2021-style', 'wporg-global-fonts' ),
+		array( 'wporg-parent-2021-style', 'wporg-global-fonts', 'dashicons' ),
 		filemtime( __DIR__ . '/build/style/style-index.css' )
 	);
 	wp_style_add_data( 'wporg-main-2022-style', 'rtl', 'replace' );
