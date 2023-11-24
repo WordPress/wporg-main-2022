@@ -8,6 +8,8 @@
 
 namespace WordPressdotorg\Theme\Main_2022\Remembers_List_Block;
 
+use function WordPressdotorg\MemorialProfiles\get_memorial_profiles;
+
 add_action( 'init', __NAMESPACE__ . '\init' );
 
 /**
@@ -37,8 +39,11 @@ function init() {
  */
 function render( $attributes, $content, $block ) {
 
-	// Replace with query
-	$profiles = [ [ "name" => 'Kim Parsell', "link" => "https://google.com" ], [ "name" => 'Alex King', "link" => "https://google.com" ], [ "name" => 'Jesse Petersen', "link" => "https://google.com" ], [ "name" => 'Efrain Rivera', "link" => "https://google.com" ] ];
+	if ( ! function_exists( 'get_memorial_profiles' ) ) {
+		return __('Memorial Profiles plugin is not active.', 'wporg');
+	}
+
+	$profiles = get_memorial_profiles();
 
 	$columns = $attributes['columns'];
 	$group_count = ceil( count( $profiles ) / $columns );
@@ -57,7 +62,7 @@ function render( $attributes, $content, $block ) {
 			$block_content .= '<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","right":"var:preset|spacing|default","bottom":"var:preset|spacing|30","left":"var:preset|spacing|default"}}},"fontSize":"extra-large"} -->';
 			$block_content .= '<h2 class="wp-block-heading has-text-align-center has-extra-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--30);margin-left:var(--wp--preset--spacing--default)">';
 			$block_content .= '<em>';
-			$block_content .= '<a href="'. esc_url( $profile["link"] ) .'">' . esc_html( $profile["name"] ) . '</a>';
+			$block_content .= '<a href="https://profiles.wordpress.org/'. esc_attr( $profile->user_nicename ) .'">' . esc_html( $profile->display_name ) . '</a>';
 			$block_content .= '</em>';
 			$block_content .= '</h2>';
 			$block_content .= '<!-- /wp:heading -->';
