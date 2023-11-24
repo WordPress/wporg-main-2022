@@ -8,3 +8,9 @@
 		text-decoration: underline;
 	}
 }
+
+@media ( max-width: 500px) {
+	.wp-block-wporg-remembers-list .wp-block-columns {
+		flex-direction: column !important;
+	}
+}

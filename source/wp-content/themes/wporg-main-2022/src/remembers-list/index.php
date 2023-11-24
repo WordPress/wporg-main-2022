@@ -8,8 +8,6 @@
 
 namespace WordPressdotorg\Theme\Main_2022\Remembers_List_Block;
 
-use function WordPressdotorg\MemorialProfiles\get_memorial_profiles;
-
 add_action( 'init', __NAMESPACE__ . '\init' );
 
 /**
@@ -39,11 +37,11 @@ function init() {
  */
 function render( $attributes, $content, $block ) {
 
-	if ( ! function_exists( 'get_memorial_profiles' ) ) {
-		return __( 'Memorial Profiles plugin is not active.', 'wporg' );
+	if ( ! function_exists( '\WordPressdotorg\MemorialProfiles\get_profiles' ) ) {
+		return __( 'Memorial Profiles mu-plugin is missing.', 'wporg' );
 	}
 
-	$profiles = get_memorial_profiles();
+	$profiles = \WordPressdotorg\MemorialProfiles\get_profiles();
 
 	$columns = $attributes['columns'];
 	$group_count = ceil( count( $profiles ) / $columns );
@@ -55,7 +53,8 @@ function render( $attributes, $content, $block ) {
 
 	$block_content = '';
 	foreach ( $groups as $group ) {
-		$block_content .= '<!-- wp:columns --><div class="wp-block-columns">';
+		// Set isStackedOnMobile to false so that the columns are not stacked on mobile. We override this in CSS to stack them.
+		$block_content .= '<!-- wp:columns {"isStackedOnMobile":false} --><div class="wp-block-columns is-not-stacked-on-mobile">';
 
 		foreach ( $group as $profile ) {
 			$block_content .= '<!-- wp:column --><div class="wp-block-column">';
