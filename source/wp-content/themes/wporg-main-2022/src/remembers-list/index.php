@@ -43,10 +43,10 @@ function render( $attributes, $content, $block ) {
 
 	$profiles = \WordPressdotorg\MemorialProfiles\get_profiles();
 
-	$columns = $attributes['columns'];
+	$columns     = $attributes['columns'];
 	$group_count = ceil( count( $profiles ) / $columns );
 
-	$groups = [];
+	$groups = array();
 	for ( $i = 0; $i < $group_count; $i++ ) {
 		$groups[] = array_slice( $profiles, $i * $columns, $columns );
 	}
@@ -58,10 +58,10 @@ function render( $attributes, $content, $block ) {
 
 		foreach ( $group as $profile ) {
 			$block_content .= '<!-- wp:column --><div class="wp-block-column">';
-			$block_content .= '<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","right":"var:preset|spacing|default","bottom":"var:preset|spacing|30","left":"var:preset|spacing|default"}}},"fontSize":"extra-large"} -->';
-			$block_content .= '<h2 class="wp-block-heading has-text-align-center has-extra-large-font-size" style="margin-top:var(--wp--preset--spacing--30);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--30);margin-left:var(--wp--preset--spacing--default)">';
+			$block_content .= '<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","right":"var:preset|spacing|default","bottom":"var:preset|spacing|40","left":"var:preset|spacing|default"}}},"fontSize":"extra-large"} -->';
+			$block_content .= '<h2 class="wp-block-heading has-text-align-center has-extra-large-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--40);margin-left:var(--wp--preset--spacing--default)">';
 			$block_content .= '<em>';
-			$block_content .= '<a href="https://profiles.wordpress.org/' . esc_attr( $profile->user_nicename ) . '">' . esc_html( $profile->display_name ) . '</a>';
+			$block_content .= '<a href="' . esc_url( 'https://profiles.wordpress.org/' . $profile->user_nicename ) . '">' . esc_html( $profile->display_name ) . '</a>';
 			$block_content .= '</em>';
 			$block_content .= '</h2>';
 			$block_content .= '<!-- /wp:heading -->';
@@ -73,7 +73,7 @@ function render( $attributes, $content, $block ) {
 
 	$wrapper_attributes = get_block_wrapper_attributes();
 	return sprintf(
-		'<h1 %1$s>%2$s</h1>',
+		'<div %1$s>%2$s</div>',
 		$wrapper_attributes,
 		do_blocks( $block_content )
 	);
