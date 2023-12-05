@@ -44,7 +44,7 @@ _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or g
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php 
+<p><?php
 /* translators: [minimum_php] is a shortcode and should not be translated. */
 _e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP [minimum_php]+ and MySQL 5.0+, but these versions have reached official End Of Life and as such <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
