@@ -32,6 +32,16 @@ add_shortcode(
 );
 
 /**
+ * Shortcode to display the minimum recommended PHP version.
+ */
+add_shortcode(
+	'minimum_php',
+	function() {
+		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP: substr( phpversion(), 0, 3 );
+	}   
+);
+
+/**
  * Shortcode to display the recommended MySQL version.
  */
 add_shortcode(
