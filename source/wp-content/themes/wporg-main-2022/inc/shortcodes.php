@@ -37,8 +37,8 @@ add_shortcode(
 add_shortcode(
 	'minimum_php',
 	function() {
-		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP : '7.0' );
-	}  
+		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP : '7.0';
+	}
 );
 
 /**
