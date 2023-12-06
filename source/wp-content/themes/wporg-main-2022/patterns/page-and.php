@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Mobile
- * Slug: wporg-main-2022/and
+ * Title: Move to WP landing page
+ * Slug: wporg-main-2022/move-to-wp
  * Inserter: no
  */
 
