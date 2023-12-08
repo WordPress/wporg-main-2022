@@ -133,5 +133,9 @@
 	{
 		"slug": "state-of-the-word",
 		"template": "page-sotw.html"
+	},
+	{
+		"slug": "data-liberation",
+		"template": "page-data-liberation.html"
 	}
 ]
