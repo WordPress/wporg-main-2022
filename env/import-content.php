@@ -5,7 +5,7 @@
 namespace WordPress_org\Main_2022\ImportTestContent;
 
 /**
- * CLI script for generating local test content, fetched from the live learn.wordpress.org site.
+ * CLI script for generating local test content, fetched from the live wordpress.org site.
  *
  * This needs to be run in a wp-env, for example:
  *
