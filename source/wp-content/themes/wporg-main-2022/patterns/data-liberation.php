@@ -115,7 +115,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20","top":"var:preset|spacing|10"}}},"textColor":"charcoal-4","fontSize":"small"} -->
-<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Mix and match export, conversion, and import tools to design a personalize migration path that works for you.', 'wporg' ); ?></p>
+<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Mix and match export, conversion, and import tools to design a personalized migration path that works for you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"12px","left":"12px"}}}} -->
