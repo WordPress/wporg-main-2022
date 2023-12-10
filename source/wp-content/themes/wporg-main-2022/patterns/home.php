@@ -21,7 +21,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<strong>Get the details↗</strong>', 'wporg' ); ?></p>
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<strong><a href="https://wordpress.org/state-of-the-word/" data-type="page" data-id="23184">Get the details↗</a></strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
