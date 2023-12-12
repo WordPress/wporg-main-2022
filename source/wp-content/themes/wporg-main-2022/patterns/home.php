@@ -9,8 +9,8 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"black","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-black-background-color has-background" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":24157,"sizeSlug":"full","linkDestination":"media","className":"is-resized"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/files/2023/12/sotw-dotorg-drawer.png"><img src="https://wordpress.org/files/2023/12/sotw-dotorg-drawer.png" alt="" class="wp-image-24157" /></a></figure>
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":24157,"sizeSlug":"full","linkDestination":"custom","className":"is-resized"} -->
+<figure class="wp-block-image size-full is-resized"><a href="https://wordpress.org/state-of-the-word/"><img src="https://wordpress.org/files/2023/12/sotw-dotorg-drawer.png" alt="" class="wp-image-24157" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
