@@ -233,7 +233,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://www.meetup.com/pro/wordpress/">Meet local WordPress users ↗</a>', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://events.wordpress.org/">Meet local WordPress users ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
