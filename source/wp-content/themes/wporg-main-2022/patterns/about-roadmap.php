@@ -207,7 +207,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Collaboration — A more intuitive way to co-author content', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://make.wordpress.org/core/tag/phase-3/">Collaboration</a> — A more intuitive way to co-author content', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
