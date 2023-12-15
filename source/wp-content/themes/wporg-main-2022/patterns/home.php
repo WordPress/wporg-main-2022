@@ -153,28 +153,28 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"className":"wporg-home-showcase-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":11474,"width":"105px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Spotify.png" alt="<?php _e( 'Spotify logo', 'wporg' ); ?>" class="wp-image-11474" style="width:105px;height:33px" /></figure>
+<div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":24441,"width":"173px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php _e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:image {"id":11475,"width":"79px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px;height:33px" /></figure>
+<!-- wp:image {"id":11475,"width":"79px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php _e( 'Nasa logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22636,"width":"150px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="<?php _e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22637,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="" class="wp-image-22637" style="width:64px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php _e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22638,"width":"160px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="" class="wp-image-22638" style="width:160px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php _e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
