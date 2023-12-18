@@ -162,7 +162,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php _e( 'Nasa logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php _e( 'NASA logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22636,"width":"150px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
