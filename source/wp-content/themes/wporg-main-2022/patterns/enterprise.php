@@ -50,7 +50,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"id":24471,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"69px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/12/time-magazine.webp" alt="<?php _e( 'Time logo', 'wporg' ); ?>" class="wp-image-24471" style="object-fit:cover" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/12/time-magazine.webp" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-24471" style="object-fit:cover" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":15792,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"69px"}}} -->
