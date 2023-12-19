@@ -305,5 +305,5 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"align":"full","id":22532,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image alignfull size-full"><a href="https://soewp.com/"><img src="https://wordpress.org/files/2023/10/270319241-c2f85fca-c6a3-4eb4-9e02-5b02ba8212c0.png" alt="<?php _e( 'Take part in the 2023 State of Enterprise WordPress survey.', 'wporg' ); ?>" class="wp-image-22532" /></a></figure>
+<figure class="wp-block-image alignfull size-full"><a href="https://soewp.com/"><img src="https://wordpress.org/files/2023/10/270319241-c2f85fca-c6a3-4eb4-9e02-5b02ba8212c0.png" alt="<?php _e( 'View the 2023 State of Enterprise WordPress survey results', 'wporg' ); ?>" class="wp-image-22532" /></a></figure>
 <!-- /wp:image -->
