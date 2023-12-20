@@ -16,7 +16,7 @@
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
-<p><?php _e( 'If you’d like to browse the WordPress source and inline documentation, we have a <a href="https://developer.wordpress.org/reference/">convenient developer reference</a> and a <a href="https://core.trac.wordpress.org/browser/">code browser</a>. We also have guides for <a href="https://make.wordpress.org/core/handbook/contribute/svn/">contributing with Subversion</a> and <a href="https://make.wordpress.org/core/handbook/contribute/git/">contributing with Git</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'If you’d like to browse the WordPress source and inline documentation, there’s a <a href="https://developer.wordpress.org/reference/">convenient developer reference</a> and a <a href="https://core.trac.wordpress.org/browser/">code browser</a>. You can also find guides for <a href="https://make.wordpress.org/core/handbook/contribute/svn/">contributing with Subversion</a> and <a href="https://make.wordpress.org/core/handbook/contribute/git/">contributing with Git</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

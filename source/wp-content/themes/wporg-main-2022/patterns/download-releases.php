@@ -18,12 +18,12 @@
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
 <p><?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-_e( 'This is an archive of every release we’ve done that we have a record of.<br>None of these are safe to use, except the <strong>latest</strong> in the [stable_branch] series, which is actively maintained.', 'wporg' );
+_e( 'This is an archive of every recorded release that’s been made available for WordPress.<br><br><strong>Only the most recent in the</strong> <strong>[stable_branch] series is safe to use</strong> and actively maintained.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Curious about which jazzers we highlighted for each release? <a href="https://wordpress.org/about/history/">It’s on the History page</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'Curious about which jazzers were highlighted for each release? <a href="https://wordpress.org/about/history/">Check them out on the History page</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:wporg/release-tables /--></div>

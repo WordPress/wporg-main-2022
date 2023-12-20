@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'To run WordPress we recommend your host supports:', 'wporg' ); ?></p>
+<p><?php _e( 'To run WordPress, it’s recommended your host supports:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
@@ -36,7 +36,7 @@ _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or g
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'That’s really it. We recommend <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> as the most robust and featureful server for running WordPress, but any server that supports PHP and MySQL will do. That said, we can’t test every possible environment and <a href="https://wordpress.org/hosting/">each of the hosts on our hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
+<p><?php _e( 'That’s really it. <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> is recommended as the most robust and featureful server for running WordPress, but any server that supports PHP and MySQL will do. That said, for the smoothest experience in setting up—and running—your site, <a href="https://wordpress.org/hosting/">each host on the hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -46,20 +46,21 @@ _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or g
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [minimum_php] is a shortcode and should not be translated. */
-_e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP [minimum_php]+ and MySQL 5.5.5+, but these versions have reached official End Of Life and as such <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' ); ?></p>
+_e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP [minimum_php]+ and MySQL 5.5.5+. However, these versions have reached their official End Of Life and <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' );
+?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Ask for it', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Ask your host to run WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Here’s a letter you can send to your host; copy and paste!', 'wporg' ); ?></p>
+<p><?php _e( 'If you’re unsure whether or not your host can already run WordPress, here’s a request you can copy and paste to send them!', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote {"backgroundColor":"white","textColor":"charcoal-4","fontSize":"normal","fontFamily":"inter"} -->
 <blockquote class="wp-block-quote has-charcoal-4-color has-white-background-color has-text-color has-background has-inter-font-family has-normal-font-size"><!-- wp:paragraph -->
-<p><?php _e( 'I’m interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:', 'wporg' ); ?></p>
+<p><?php _e( 'I’m interested in running the open source WordPress &lt;https://wordpress.org/&gt; web software, and I was wondering if my account supported the following:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->

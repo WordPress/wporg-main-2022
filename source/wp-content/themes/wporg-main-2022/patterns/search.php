@@ -13,9 +13,7 @@
 <!-- /wp:wporg/local-navigation-bar -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50)">
-	<!-- wp:wporg/google-search-embed {"align":"wide"} /-->
-</div>
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:wporg/google-search-embed {"align":"wide"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"40px"} -->
