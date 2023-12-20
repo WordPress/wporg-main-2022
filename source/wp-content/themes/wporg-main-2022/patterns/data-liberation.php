@@ -12,8 +12,8 @@
 <h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php _e( 'Data Liberation', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"2.3"}},"textColor":"white"} -->
-<p class="has-white-color has-text-color" style="line-height:2.3"><?php _e( 'Your data, your move.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"}},"textColor":"white"} -->
+<p class="has-white-color has-text-color" style="line-height:1.7"><?php _e( 'Your data, your move.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
