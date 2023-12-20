@@ -80,6 +80,26 @@
 						"url": "https://meta.svn.wordpress.org/sites/",
 						"reference": "trunk/wordpress.org/public_html/wp-content/mu-plugins/pub/"
 					}
+				},
+				{
+					"name": "wordpress-meta/handbook",
+					"type": "wordpress-plugin",
+					"version": "1",
+					"source": {
+						"type": "svn",
+						"url": "https://meta.svn.wordpress.org/sites/",
+						"reference": "trunk/wordpress.org/public_html/wp-content/plugins/handbook/"
+					}
+				},
+				{
+					"name": "wordpress-meta/wporg-markdown",
+					"type": "wordpress-plugin",
+					"version": "1",
+					"source": {
+						"type": "svn",
+						"url": "https://meta.svn.wordpress.org/sites/",
+						"reference": "trunk/wordpress.org/public_html/wp-content/plugins/wporg-markdown/"
+					}
 				}
 			]
 		}
@@ -93,6 +113,8 @@
 		"wordpress-meta/pub": "1",
 		"wordpress-meta/wporg": "1",
 		"wordpress-meta/wporg-main": "1",
+		"wordpress-meta/handbook": "1",
+		"wordpress-meta/wporg-markdown": "1",
 		"wp-coding-standards/wpcs": "2.*",
 		"wp-phpunit/wp-phpunit": "^5.4",
 		"wpackagist-plugin/gutenberg": "*",
