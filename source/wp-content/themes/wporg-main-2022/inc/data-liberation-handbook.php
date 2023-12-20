@@ -19,4 +19,4 @@ function add_data_liberation_handbook( $handbooks ) {
 	];
 
 	return $handbooks;
-} );
+}
