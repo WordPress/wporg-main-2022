@@ -132,7 +132,7 @@
 	},
 	{
 		"slug": "state-of-the-word",
-		"template": "page-sotw.html"
+		"template": "page-state-of-the-word.html"
 	},
 	{
 		"slug": "data-liberation",
