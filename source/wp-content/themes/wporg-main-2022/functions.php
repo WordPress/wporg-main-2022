@@ -138,6 +138,30 @@ function override_lazy_loading( $value, $image ) {
  * Use the page heirarchy to display breadcrumbs.
  */
 function update_site_breadcrumbs( $breadcrumbs ) {
+
+	// Handle breadcrumbs for the data liberation section.
+	if ( is_post_type_archive( 'and-handbook') || is_singular( 'and-handbook' ) ) {
+		$breadcrumbs = array(
+			array(
+				'url' => home_url( '/data-liberation' ),
+				'title' => __( 'Home', 'wporg' ),
+			),
+			array(
+				'url' => home_url( '/data-liberation/and' ),
+				'title' => __( 'Guides', 'wporg' ),
+			),
+		);
+
+		if ( is_singular( 'and-handbook' ) ) {
+			$breadcrumbs[] = array(
+				'url' => false,
+				'title' => get_the_title(),
+			);
+		}
+
+		return $breadcrumbs;
+	}
+
 	$parent = get_post_parent();
 	if ( ! $parent ) {
 		return $breadcrumbs;
@@ -265,7 +289,7 @@ function add_site_navigation_menus( $menus ) {
 function use_parent_page_title( $block_content, $block, $instance ) {
 
 	// Handle the site title for data liberation.
-	if ( is_post_type_archive( 'and-handbook')  || is_singular( 'and-handbook' ) ) {
+	if ( is_post_type_archive( 'and-handbook') || is_singular( 'and-handbook' ) ) {
 		return str_replace(
 			array( home_url(), get_bloginfo( 'name' ) ),
 			array( home_url( '/data-liberation' ), __( 'Data Liberation', 'wporg' ) ),
