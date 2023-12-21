@@ -263,6 +263,16 @@ function add_site_navigation_menus( $menus ) {
  * @param WP_Block $instance      The block instance.
  */
 function use_parent_page_title( $block_content, $block, $instance ) {
+
+	// Handle the site title for data liberation.
+	if ( is_post_type_archive( 'and-handbook')  || is_singular( 'and-handbook' ) ) {
+		return str_replace(
+			array( home_url(), get_bloginfo( 'name' ) ),
+			array( home_url( '/data-liberation' ), __( 'Data Liberation', 'wporg' ) ),
+			$block_content
+		);
+	}
+
 	if ( is_home() || is_single() || is_archive() ) {
 		return str_replace(
 			array( home_url(), get_bloginfo( 'name' ) ),
