@@ -169,6 +169,8 @@ $wporg-about-breakpoint-max: 1920px;
 .wporg-about-section-heading {
 	font-size: #{fluid(52px, 125px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	display: inline-block;
+	word-break: inherit;
+	hyphens: auto;
 }
 
 .wporg-about-section-heading {
