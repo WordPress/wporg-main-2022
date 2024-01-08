@@ -140,6 +140,29 @@ Backstopjs can be manually run to create reference snapshots and then check for 
     yarn backstop:test
     ```
 
+## Working on non-English sites
+
+If you want to test how the site looks with non-English content, you can do that by manually loading the translation file. This does not fully mimic a "Rosetta" site, but it works for checking the styles.
+
+1. Create a folder `source/wp-content/languages`, with a `themes` folder inside.
+1. Go to https://translate.wordpress.org/projects/meta/wordpress-org/
+1. Select the language you want to apply to your local environment.
+1. Scroll to the bottom of the page and export the translation file as a `.mo` file.
+1. Rename the downloaded file to `wporg-{locale}.mo`
+1. Move the file into the `source/wp-content/languages/themes` folder.
+1. Create or open the file `.wp-env.override.json`
+1. Update the `mappings` to include the new languages folder:
+	```json
+	{
+	    "mappings": {
+	        "wp-content/languages": "./source/wp-content/languages"
+	    }
+	}
+	```
+1. Restart the environment `yarn wp-env start --update`
+1. Go to your site settings to update the language, if it's not set already http://localhost:8888/wp-admin/options-general.php
+1. View the frontend, it should now use the locale you've selected.
+
 ## Publishing content on WordPress.org
 
 The pages on the WordPress.org main site use patterns to render the page content, so that any changes are tracked [in version control](https://github.com/WordPress/wporg-main-2022/commits/trunk/source/wp-content/themes/wporg-main-2022/patterns). Each pattern is built from page content, so that authors can use the editor.
