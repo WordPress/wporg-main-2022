@@ -87,6 +87,10 @@ function enqueue_assets() {
 	if ( is_callable( 'global_fonts_preload' ) ) {
 		/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
 		$subsets = _x( 'latin', 'Heading font subsets, comma separated', 'wporg' );
+		if ( ! in_array( $subsets, [ 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'vietnamese', 'latin', 'latin-ext' ] ) ) {
+			$subsets = 'latin';
+		}
+
 		// All headings.
 		global_fonts_preload( 'EB Garamond', $subsets );
 
