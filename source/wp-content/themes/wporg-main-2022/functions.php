@@ -99,6 +99,15 @@ function enqueue_assets() {
 			global_fonts_preload( 'EB Garamond italic', $subsets );
 		}
 	}
+
+	if ( is_rosetta_site() ) {
+		wp_enqueue_style(
+			'wporg-main-2022-rosetta-style',
+			get_stylesheet_directory_uri() . '/build/rosetta/style-index.css',
+			array( 'wporg-main-2022-style' ),
+			filemtime( __DIR__ . '/build/rosetta/style-index.css' )
+		);
+	}
 }
 
 /**

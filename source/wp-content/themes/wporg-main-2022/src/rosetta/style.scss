@@ -1,0 +1,22 @@
+@import "../style/fluid";
+
+$wporg-about-breakpoint-min: 600px;
+$wporg-about-breakpoint-max: 1920px;
+
+[lang="de-DE"],
+[lang="ja"] {
+	.wporg-about-cover-title > span,
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}
+
+[lang="sq"] {
+	.wporg-about-cover-title > span {
+		font-size: #{fluid(40px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px,80px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}
