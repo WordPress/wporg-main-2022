@@ -13,26 +13,6 @@
 <h2 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Guides</h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"40px","bottom":"40px"}}},"className":"wporg-events__filters","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide wporg-events__filters" style="margin-top:40px;margin-bottom:40px"><!-- wp:group {"className":"wporg-events__filters__search","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group wporg-events__filters__search"><!-- wp:search {"showLabel":false,"placeholder":"Search guides...","width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"className":"is-style-secondary-search-control"} /-->
-
-<!-- wp:query {"queryId":0,"query":{"perPage":500,"pages":0,"offset":0,"postType":"and-handbook","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-<div class="wp-block-query"><!-- wp:wporg/query-total /--></div>
-<!-- /wp:query --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"className":"wporg-query-filters","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group wporg-query-filters"><!-- wp:wporg/query-filter {"key":"format_type","multiple":false} /-->
-
-<!-- wp:wporg/query-filter {"key":"event_type"} /-->
-
-<!-- wp:wporg/query-filter {"key":"month"} /-->
-
-<!-- wp:wporg/query-filter {"key":"country"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
 <!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px"><!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"and-handbook","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"blockGap":"0"}}} -->
