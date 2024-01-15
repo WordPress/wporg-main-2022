@@ -116,7 +116,7 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"left","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"small"} -->
-<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><a href="https://github.com/WordPress/move-to-wp/tree/trunk/tools">View all tools</a></p>
+<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( '<a href="https://github.com/WordPress/move-to-wp/tree/trunk/tools">View all tools</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
