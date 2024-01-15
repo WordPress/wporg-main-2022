@@ -10,7 +10,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"50px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"ibm-plex-sans"} -->
-<h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400">Data Liberation</h1>
+<h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php _e( 'Data Liberation', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"}},"textColor":"white"} -->
@@ -22,11 +22,11 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7">Guides</h2>
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Guides', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"textColor":"charcoal-4","fontSize":"small"} -->
-<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--20)">Easy to use step by step guidelines to help you move your site to WordPress.</p>
+<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Easy to use step by step guidelines to help you move your site to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"className":"is-style-cards-grid","layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
@@ -88,11 +88,11 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-bottom:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7">Toolbox</h2>
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Toolbox', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20","top":"var:preset|spacing|10"}}},"textColor":"charcoal-4","fontSize":"small"} -->
-<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">Mix and match export, conversion, and import tools to design a personalized migration path that works for you.</p>
+<p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Mix and match export, conversion, and import tools to design a personalized migration path that works for you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"className":"is-style-cards-grid","layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
@@ -108,14 +108,12 @@
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
-<!-- wp:column {"width":""} -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"width":"1px"}},"borderColor":"light-grey-1","layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group has-border-color has-light-grey-1-border-color" style="border-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<a href="https://github.com/WordPress/move-to-wp/tree/trunk/tools/classic-to-gutenberg"><strong>Classic Editor to Blocks</strong></a>', 'wporg' ); ?></h3>
-<!-- /wp:heading --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- wp:wporg/link-wrapper -->
+<a class="wp-block-wporg-link-wrapper" href="https://github.com/WordPress/move-to-wp/tree/trunk/tools/classic-to-gutenberg"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Classic Editor to Blocks</strong>', 'wporg' ); ?></h3>
+<!-- /wp:heading --></a>
+<!-- /wp:wporg/link-wrapper --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"left","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"small"} -->
 <p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><a href="https://github.com/WordPress/move-to-wp/tree/trunk/tools">View all tools</a></p>
