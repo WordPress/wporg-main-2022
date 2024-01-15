@@ -17,6 +17,6 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 
 	.wporg-about-section-heading {
-		font-size: #{fluid(40px,80px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+		font-size: #{fluid(40px, 80px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	}
 }
