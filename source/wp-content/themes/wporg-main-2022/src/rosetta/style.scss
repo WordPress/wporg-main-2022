@@ -1,0 +1,31 @@
+@import "../style/fluid";
+
+// This file contains page & section-specific overrides for Rosetta sites.
+// When adding a new locale, try to keep the lang selectors in alphabetical order.
+
+$wporg-about-breakpoint-min: 600px;
+$wporg-about-breakpoint-max: 1920px;
+
+[lang="de-DE"] {
+	.wporg-about-cover-title > span,
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px, 92px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}
+
+[lang="ja"] {
+	.wporg-about-cover-title > span,
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}
+
+[lang="sq"] {
+	.wporg-about-cover-title > span {
+		font-size: #{fluid(40px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px, 80px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}

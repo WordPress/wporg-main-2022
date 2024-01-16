@@ -87,6 +87,10 @@ function enqueue_assets() {
 	if ( is_callable( 'global_fonts_preload' ) ) {
 		/* translators: Subsets can be any of cyrillic, cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext. */
 		$subsets = _x( 'latin', 'Heading font subsets, comma separated', 'wporg' );
+		if ( ! in_array( $subsets, [ 'cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'vietnamese', 'latin', 'latin-ext' ] ) ) {
+			$subsets = 'latin';
+		}
+
 		// All headings.
 		global_fonts_preload( 'EB Garamond', $subsets );
 
@@ -94,6 +98,15 @@ function enqueue_assets() {
 			// The heading on the front-page has some italic.
 			global_fonts_preload( 'EB Garamond italic', $subsets );
 		}
+	}
+
+	if ( is_rosetta_site() ) {
+		wp_enqueue_style(
+			'wporg-main-2022-rosetta-style',
+			get_stylesheet_directory_uri() . '/build/rosetta/style-index.css',
+			array( 'wporg-main-2022-style' ),
+			filemtime( __DIR__ . '/build/rosetta/style-index.css' )
+		);
 	}
 }
 
