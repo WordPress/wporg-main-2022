@@ -1,5 +1,8 @@
 @import "../style/fluid";
 
+// This file contains page & section-specific overrides for Rosetta sites.
+// When adding a new locale, try to keep the lang selectors in alphabetical order.
+
 $wporg-about-breakpoint-min: 600px;
 $wporg-about-breakpoint-max: 1920px;
 
