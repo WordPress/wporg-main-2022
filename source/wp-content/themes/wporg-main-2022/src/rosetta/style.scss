@@ -3,7 +3,13 @@
 $wporg-about-breakpoint-min: 600px;
 $wporg-about-breakpoint-max: 1920px;
 
-[lang="de-DE"],
+[lang="de-DE"] {
+	.wporg-about-cover-title > span,
+	.wporg-about-section-heading {
+		font-size: #{fluid(40px, 92px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+	}
+}
+
 [lang="ja"] {
 	.wporg-about-cover-title > span,
 	.wporg-about-section-heading {
