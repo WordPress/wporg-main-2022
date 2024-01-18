@@ -100,7 +100,7 @@ function enqueue_assets() {
 		}
 	}
 
-	if ( is_rosetta_site() ) {
+	if ( get_locale() !== 'en_US' ) {
 		wp_enqueue_style(
 			'wporg-main-2022-rosetta-style',
 			get_stylesheet_directory_uri() . '/build/rosetta/style-index.css',
