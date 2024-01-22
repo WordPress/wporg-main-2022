@@ -15,7 +15,7 @@ function add_data_liberation_handbook( $handbooks ) {
 	$handbooks['and'] = [
 		'label'    => 'Data Liberation Guides',
 		'manifest' => 'https://raw.githubusercontent.com/WordPress/data-liberation/add/manifest/assets/manifest.json', // TODO: See https://github.com/WordPress/data-liberation/pull/46
-		'slug'     => 'and',
+		'slug'     => 'data-liberation/and',
 	];
 
 	return $handbooks;
