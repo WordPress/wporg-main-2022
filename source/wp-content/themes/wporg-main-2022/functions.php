@@ -27,7 +27,6 @@ add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_ti
 add_filter( 'render_block_data', __NAMESPACE__ . '\update_header_template_part_class' );
 add_filter( 'wporg_block_navigation_menus', __NAMESPACE__ . '\add_site_navigation_menus' );
 
-
 // Remove table of contents.
 add_filter( 'wporg_handbook_toc_should_add_toc', '__return_false' );
 
