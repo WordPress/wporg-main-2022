@@ -7,7 +7,6 @@
  */
 
 ?>
-
 <!-- wp:pattern {"slug":"wporg-main-2022/nav-data-liberation"} /-->
 
 <!-- wp:group {"className":"wporg-breadcrumbs","align":"full","style":{"spacing":{"padding":{"top":"18px","bottom":"18px","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"white","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
