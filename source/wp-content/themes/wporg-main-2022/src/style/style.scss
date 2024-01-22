@@ -559,26 +559,26 @@ $wporg-about-breakpoint-max: 1920px;
 
 
 // Styles for the State of the Word page.
-.page-template-page-sotw a {
+.page-template-page-state-of-the-word a {
 	color: #ff2b2b;
 }
 
 @media (max-width: 419px) {
-	.page-template-page-sotw h2 {
+	.page-template-page-state-of-the-word h2 {
 		font-size: 60px !important;
 	}
 }
 
-.page-template-page-sotw .sotw-event-details-social a {
+.page-template-page-state-of-the-word .sotw-event-details-social a {
 	text-decoration: none;
 }
 
-.page-template-page-sotw .sotw-quote {
+.page-template-page-state-of-the-word .sotw-quote {
 	position: relative;
 	z-index: 1;
 }
 
-.page-template-page-sotw .sotw-quote > p::before {
+.page-template-page-state-of-the-word .sotw-quote > p::before {
 	content: "";
 	position: absolute;
 	top: -50px;
@@ -592,7 +592,7 @@ $wporg-about-breakpoint-max: 1920px;
 }
 
 @media (min-width: 960px) {
-	.page-template-page-sotw .sotw-quote > p::before {
+	.page-template-page-state-of-the-word .sotw-quote > p::before {
 		top: -100px;
 		left: -140px;
 		width: 200px;
@@ -600,11 +600,11 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
-.page-template-page-sotw .sotw-heading-splash {
+.page-template-page-state-of-the-word .sotw-heading-splash {
 	position: relative;
 }
 
-.page-template-page-sotw .sotw-heading-splash::before {
+.page-template-page-state-of-the-word .sotw-heading-splash::before {
 	content: "";
 	position: absolute;
 	top: -80px;
