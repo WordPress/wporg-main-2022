@@ -147,8 +147,8 @@ function override_lazy_loading( $value, $image ) {
 function update_site_breadcrumbs( $breadcrumbs ) {
 
 	// Handle breadcrumbs for the data liberation section.
-	if ( is_post_type_archive( 'and-handbook' ) || is_singular( 'and-handbook' ) ) {
-		$breadcrumbs = array(
+	if ( is_singular( 'and-handbook' ) ) {
+		return array(
 			array(
 				'url' => home_url( '/data-liberation' ),
 				'title' => __( 'Home', 'wporg' ),
@@ -157,16 +157,11 @@ function update_site_breadcrumbs( $breadcrumbs ) {
 				'url' => home_url( '/data-liberation/and' ),
 				'title' => __( 'Guides', 'wporg' ),
 			),
-		);
-
-		if ( is_singular( 'and-handbook' ) ) {
-			$breadcrumbs[] = array(
+			array(
 				'url' => false,
 				'title' => get_the_title(),
-			);
-		}
-
-		return $breadcrumbs;
+			)
+		);
 	}
 
 	$parent = get_post_parent();
