@@ -19,6 +19,7 @@ require_once __DIR__ . '/src/remembers-list/index.php';
 /**
  * Actions and filters.
  */
+add_filter( 'document_title_parts', __NAMESPACE__ . '\document_title' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
@@ -357,4 +358,27 @@ function update_header_template_part_class( $block ) {
 		}
 	}
 	return $block;
+}
+
+/**
+ * Append an optimized site name.
+ *
+ * @param array $parts {
+ *     The document title parts.
+ *
+ *     @type string $title   Title of the viewed page.
+ *     @type string $page    Optional. Page number if paginated.
+ *     @type string $tagline Optional. Site description when on home page.
+ *     @type string $site    Optional. Site title when not on home page.
+ * }
+ * @return array Filtered title parts.
+ */
+function document_title( $parts ) {
+
+	if ( is_singular( 'and-handbook' ) ) {
+		// translators: %s: Name of the guide.
+		$parts['title'] = sprintf( __( '%s - Data Liberation', 'wporg' ), $parts['title'] );
+	}
+
+	return $parts;
 }
