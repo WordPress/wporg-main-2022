@@ -159,7 +159,7 @@ function update_site_breadcrumbs( $breadcrumbs ) {
 			array(
 				'url' => false,
 				'title' => get_the_title(),
-			)
+			),
 		);
 	}
 
