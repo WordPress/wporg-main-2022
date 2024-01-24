@@ -328,9 +328,10 @@ function update_header_template_part_class( $block ) {
 /**
  * Change document title separator
  *
- * @param string $title
+ * @param string $sep
+ *
  * @return string
  */
-function document_title_separator( $title ) {
+function document_title_separator( $sep ) {
 	return '&#124;';
 }
