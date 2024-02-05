@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:wporg/local-navigation-bar {"className":"is-style-brush-stroke","style":{"position":{"type":"sticky"}},"fontSize":"small"} -->
+<!-- wp:wporg/local-navigation-bar {"style":{"position":{"type":"sticky"}},"fontSize":"small"} -->
 	<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal"}},"fontSize":"small"} -->
 	<p class="has-small-font-size" style="font-style:normal"><?php _e( 'Search', 'wporg' ); ?></p>
 	<!-- /wp:paragraph -->
