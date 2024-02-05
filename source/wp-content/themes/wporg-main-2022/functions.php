@@ -164,73 +164,91 @@ function update_site_breadcrumbs( $breadcrumbs ) {
  * Provide a list of local navigation menus.
  */
 function add_site_navigation_menus( $menus ) {
+	$about_details = array(
+		array(
+			'label' => __( 'Domains', 'wporg' ),
+			'url' => '/about/domains/',
+		),
+		array(
+			'label' => __( 'License', 'wporg' ),
+			'url' => '/about/license/',
+		),
+		array(
+			'label' => __( 'Accessibility', 'wporg' ),
+			'url' => '/about/accessibility/',
+		),
+		array(
+			'label' => __( 'Privacy Policy', 'wporg' ),
+			'url' => '/about/privacy/',
+		),
+		array(
+			'label' => __( 'Statistics', 'wporg' ),
+			'url' => '/about/stats/',
+		),
+	);
+	$about_technology = array(
+		array(
+			'label' => __( 'Requirements', 'wporg' ),
+			'url' => '/about/requirements/',
+		),
+		array(
+			'label' => __( 'Features', 'wporg' ),
+			'url' => '/about/features/',
+		),
+		array(
+			'label' => __( 'Security', 'wporg' ),
+			'url' => '/about/security/',
+		),
+		array(
+			'label' => __( 'Roadmap', 'wporg' ),
+			'url' => '/about/roadmap/',
+		),
+		array(
+			'label' => __( 'History', 'wporg' ),
+			'url' => '/about/history/',
+		),
+	);
+	$about_people = array(
+		array(
+			'label' => __( 'Philosophy', 'wporg' ),
+			'url' => '/about/philosophy/',
+		),
+		array(
+			'label' => __( 'Etiquette', 'wporg' ),
+			'url' => '/about/etiquette/',
+		),
+		array(
+			'label' => __( 'Swag', 'wporg' ),
+			'url' => 'https://mercantile.wordpress.org/',
+		),
+		array(
+			'label' => __( 'Logos', 'wporg' ),
+			'url' => '/about/logos/',
+		),
+		array(
+			'label' => __( 'People of WordPress', 'wporg' ),
+			'url' => 'https://wordpress.org/news/category/community/',
+		),
+	);
+	$about_home = array(
+		array(
+			'label' => __( 'The technology', 'wporg' ),
+			'submenu' => $about_technology,
+		),
+		array(
+			'label' => __( 'The details', 'wporg' ),
+			'submenu' => $about_details,
+		),
+		array(
+			'label' => __( 'The people', 'wporg' ),
+			'submenu' => $about_people,
+		),
+	);
 	return array(
-		'about-details' => array(
-			array(
-				'label' => __( 'Domains', 'wporg' ),
-				'url' => '/about/domains/',
-			),
-			array(
-				'label' => __( 'License', 'wporg' ),
-				'url' => '/about/license/',
-			),
-			array(
-				'label' => __( 'Accessibility', 'wporg' ),
-				'url' => '/about/accessibility/',
-			),
-			array(
-				'label' => __( 'Privacy Policy', 'wporg' ),
-				'url' => '/about/privacy/',
-			),
-			array(
-				'label' => __( 'Statistics', 'wporg' ),
-				'url' => '/about/stats/',
-			),
-		),
-		'about-technology' => array(
-			array(
-				'label' => __( 'Requirements', 'wporg' ),
-				'url' => '/about/requirements/',
-			),
-			array(
-				'label' => __( 'Features', 'wporg' ),
-				'url' => '/about/features/',
-			),
-			array(
-				'label' => __( 'Security', 'wporg' ),
-				'url' => '/about/security/',
-			),
-			array(
-				'label' => __( 'Roadmap', 'wporg' ),
-				'url' => '/about/roadmap/',
-			),
-			array(
-				'label' => __( 'History', 'wporg' ),
-				'url' => '/about/history/',
-			),
-		),
-		'about-people' => array(
-			array(
-				'label' => __( 'Philosophy', 'wporg' ),
-				'url' => '/about/philosophy/',
-			),
-			array(
-				'label' => __( 'Etiquette', 'wporg' ),
-				'url' => '/about/etiquette/',
-			),
-			array(
-				'label' => __( 'Swag', 'wporg' ),
-				'url' => 'https://mercantile.wordpress.org/',
-			),
-			array(
-				'label' => __( 'Logos', 'wporg' ),
-				'url' => '/about/logos/',
-			),
-			array(
-				'label' => __( 'People of WordPress', 'wporg' ),
-				'url' => 'https://wordpress.org/news/category/community/',
-			),
-		),
+		'about-home' => $about_home,
+		'about-details' => $about_details,
+		'about-technology' => $about_technology,
+		'about-people' => $about_people,
 		'download' => array(
 			array(
 				'label' => __( 'Releases', 'wporg' ),
@@ -267,6 +285,14 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 		return str_replace(
 			array( home_url(), get_bloginfo( 'name' ) ),
 			array( home_url( '/news/' ), __( 'News', 'wporg' ) ),
+			$block_content
+		);
+	}
+
+	if ( is_page( 'about' ) ) {
+		return str_replace(
+			array( home_url(), get_bloginfo( 'name' ) ),
+			array( home_url( '/about/' ), __( 'About', 'wporg' ) ),
 			$block_content
 		);
 	}
