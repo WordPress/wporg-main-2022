@@ -1,8 +1,8 @@
 <?php
 // phpcs:disable WordPress.Files.FileName -- Allow underscore for pattern partial.
 /**
- * Title: Section Nav (About - Technology)
- * Slug: wporg-main-2022/nav-about-technology
+ * Title: Section Nav (About - Subpage)
+ * Slug: wporg-main-2022/nav-about-subpage
  * Inserter: no
  */
 
