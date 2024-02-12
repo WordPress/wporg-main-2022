@@ -16,4 +16,4 @@ const init = () => {
 	}
 };
 
-document.body.onload = init;
+window.addEventListener( 'load', init );
