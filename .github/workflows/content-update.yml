@@ -1,0 +1,35 @@
+name: Update existing content
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [trunk]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+        with:
+          ref: trunk
+
+      - name: Setup
+        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run the content update
+        run: |
+          yarn wp-env start
+          yarn build:patterns
+          git status
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths	: source/wp-content/themes/wporg-main-2022/**/*.php
