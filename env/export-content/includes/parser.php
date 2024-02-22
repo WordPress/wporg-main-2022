@@ -21,7 +21,7 @@ class BlockParser {
 		$this->fallback = new Parsers\BasicText();
 		$this->parsers  = [
 			// Blocks that have custom parsers.
-			'core/paragraph'   => new Parsers\HTMLParser( 'p' ),
+			'core/paragraph'   => new Parsers\HTMLParser( 'p', [], 2 /* minimum length of 2 characters. */ ),
 			'core/image'       => new Parsers\HTMLParser( 'figcaption', [ 'alt', 'title' ] ),
 			'core/heading'     => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
 
