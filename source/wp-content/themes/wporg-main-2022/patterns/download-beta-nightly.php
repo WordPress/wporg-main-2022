@@ -45,7 +45,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/nightly-builds/wordpress-latest.zip', 'wporg' ); ?>"><?php _e( 'Download the latest nightly release', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/nightly-builds/wordpress-latest.zip', 'wporg' ); ?>"><?php _e( 'Download the latest nightly release', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

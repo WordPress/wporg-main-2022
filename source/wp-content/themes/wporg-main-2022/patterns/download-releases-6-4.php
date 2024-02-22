@@ -22,7 +22,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Download WordPress 6.4', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Download WordPress 6.4', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -33,7 +33,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:image {"align":"full","id":23156,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2023/11/tt4-hero-1-scaled.jpg" alt="<?php _e( 'Cropped screenshots of the Twenty Twenty-Four theme, with the featured one showing an RSVP full-page pattern.', 'wporg' ); ?>" class="wp-image-23156" /></figure>
+<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2023/11/tt4-hero-1-scaled.jpg" alt="<?php esc_attr_e( 'Cropped screenshots of the Twenty Twenty-Four theme, with the featured one showing an RSVP full-page pattern.', 'wporg' ); ?>" class="wp-image-23156" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -53,7 +53,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/themes/twentytwentyfour/', 'wporg' ); ?>"><?php _e( 'Download theme', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/themes/twentytwentyfour/', 'wporg' ); ?>"><?php _e( 'Download theme', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -77,7 +77,7 @@
 <!-- wp:column {"verticalAlignment":"bottom","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:50%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://2024.wordpress.net/index.php/blogger-demo/', 'wporg' ); ?>"><?php _e( 'View demo', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://2024.wordpress.net/index.php/blogger-demo/', 'wporg' ); ?>"><?php _e( 'View demo', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -107,7 +107,7 @@
 <!-- wp:column {"verticalAlignment":"bottom","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:50%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'http://2024.wordpress.net/index.php/photographer-demo/', 'wporg' ); ?>"><?php _e( 'View demo', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'http://2024.wordpress.net/index.php/photographer-demo/', 'wporg' ); ?>"><?php _e( 'View demo', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -188,7 +188,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://2024.wordpress.net/index.php/patterns/', 'wporg' ); ?>"><?php _e( 'Explore patterns', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://2024.wordpress.net/index.php/patterns/', 'wporg' ); ?>"><?php _e( 'Explore patterns', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:cover -->
@@ -249,7 +249,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":23067,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/commandpalette-1.png" alt="<?php _e( 'Screenshot of the refreshed UI of the Command Palette with a decorative background image. It displays a search bar with the words &quot;Search for commands&quot; and a variety of shortcuts listed below, including &quot;Add new page,&quot; &quot;Toggle code editor,&quot; &quot;Editor preferences,&quot; and more.', 'wporg' ); ?>" class="wp-image-23067" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/commandpalette-1.png" alt="<?php esc_attr_e( 'Screenshot of the refreshed UI of the Command Palette with a decorative background image. It displays a search bar with the words &quot;Search for commands&quot; and a variety of shortcuts listed below, including &quot;Add new page,&quot; &quot;Toggle code editor,&quot; &quot;Editor preferences,&quot; and more.', 'wporg' ); ?>" class="wp-image-23067" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -296,21 +296,21 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"id":23209,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/abstract-geometric-art.webp" alt="<?php _e( 'architectural texture on a modern building', 'wporg' ); ?>" class="wp-image-23209" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/abstract-geometric-art.webp" alt="<?php esc_attr_e( 'architectural texture on a modern building', 'wporg' ); ?>" class="wp-image-23209" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":23211,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2023/11/museum-768x1024.webp" alt="<?php _e( 'modern interior ramp', 'wporg' ); ?>" class="wp-image-23211" /></figure>
+<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2023/11/museum-768x1024.webp" alt="<?php esc_attr_e( 'modern interior ramp', 'wporg' ); ?>" class="wp-image-23211" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"lightbox":{"enabled":true},"id":23210,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/tt4_portfolio_1-scaled-1.jpg" alt="<?php _e( 'interior design showing a table and chairs', 'wporg' ); ?>" class="wp-image-23210" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/tt4_portfolio_1-scaled-1.jpg" alt="<?php esc_attr_e( 'interior design showing a table and chairs', 'wporg' ); ?>" class="wp-image-23210" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":23212,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2023/11/tt4_portfolio_8-1022x1024.jpg" alt="<?php _e( 'bike in the sun', 'wporg' ); ?>" class="wp-image-23212" /></figure>
+<figure class="wp-block-image size-large"><img src="https://wordpress.org/files/2023/11/tt4_portfolio_8-1022x1024.jpg" alt="<?php esc_attr_e( 'bike in the sun', 'wporg' ); ?>" class="wp-image-23212" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -343,7 +343,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":23016,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/block-hooks.png" alt="<?php _e( 'Cropped screenshot showing a navigation menu with a shopping cart button inserted by Block Hooks.', 'wporg' ); ?>" class="wp-image-23016" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/block-hooks.png" alt="<?php esc_attr_e( 'Cropped screenshot showing a navigation menu with a shopping cart button inserted by Block Hooks.', 'wporg' ); ?>" class="wp-image-23016" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -356,7 +356,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":23143,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/i7-1.png" alt="<?php _e( 'Featured highlights of WordPress 6.4: Twenty Twenty-Four theme, enable lightbox functionality, background images in Group blocks, categorize custom patterns, enhanced Command Palette, Block Hooks, previews in List View, and more.', 'wporg' ); ?>" class="wp-image-23143" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/i7-1.png" alt="<?php esc_attr_e( 'Featured highlights of WordPress 6.4: Twenty Twenty-Four theme, enable lightbox functionality, background images in Group blocks, categorize custom patterns, enhanced Command Palette, Block Hooks, previews in List View, and more.', 'wporg' ); ?>" class="wp-image-23143" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->

@@ -46,7 +46,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( '/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -80,7 +80,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":11481,"sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/themes/"><img src="https://wordpress.org/files/2022/08/theme-styles.png" alt="<?php _e( 'An illustration showing a grid of different type styles and color options, with a cursor arrow making a selection.', 'wporg' ); ?>" class="wp-image-11481" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wordpress.org/themes/"><img src="https://wordpress.org/files/2022/08/theme-styles.png" alt="<?php esc_attr_e( 'An illustration showing a grid of different type styles and color options, with a cursor arrow making a selection.', 'wporg' ); ?>" class="wp-image-11481" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -154,33 +154,33 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"className":"wporg-home-showcase-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":24441,"width":"173px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php _e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php esc_attr_e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":11475,"width":"79px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php esc_attr_e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php _e( 'NASA logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php esc_attr_e( 'NASA logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22636,"width":"150px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="<?php _e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="<?php esc_attr_e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22637,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php _e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php esc_attr_e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22638,"width":"160px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php _e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php esc_attr_e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"align":"wide"} -->
 <div class="wp-block-buttons alignwide"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -241,7 +241,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"100px","right":"0","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"backgroundColor":"light-grey-2","textColor":"blueberry-1","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-blueberry-1-color has-light-grey-2-background-color has-text-color has-background has-link-color" id="community" style="padding-right:0;padding-bottom:100px;padding-left:0"><!-- wp:cover {"url":"https://wordpress.org/files/2022/10/community-photo-2-q50-unscaled.webp","id":12467,"dimRatio":0,"focalPoint":{"x":0.5,"y":1},"minHeight":500,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"color":[],"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"bottom":"60px"}}}} -->
+<div class="wp-block-group alignfull has-blueberry-1-color has-light-grey-2-background-color has-text-color has-background has-link-color" id="community" style="padding-right:0;padding-bottom:100px;padding-left:0"><!-- wp:cover {"url":"https://wordpress.org/files/2022/10/community-photo-2-q50-unscaled.webp","id":12467,"alt":"A black and white bird’s eye view of the thousands of contributors who attended WordCamp Europe 2022. They are all standing in front of the venue with their hands up in celebration.","dimRatio":0,"focalPoint":{"x":0.5,"y":1},"minHeight":500,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"full","style":{"color":[],"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"bottom":"60px"}}}} -->
 <div class="wp-block-cover alignfull is-light" style="margin-bottom:60px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-12467" alt="<?php _e( 'A black and white bird’s eye view of the thousands of contributors who attended WordCamp Europe 2022. They are all standing in front of the venue with their hands up in celebration.', 'wporg' ); ?>" src="https://wordpress.org/files/2022/10/community-photo-2-q50-unscaled.webp" style="object-position:50% 100%" data-object-fit="cover" data-object-position="50% 100%" /><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size"></p>
 <!-- /wp:paragraph --></div></div>
@@ -268,7 +268,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/', 'wporg' ); ?>"><?php _e( 'Get involved', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://make.wordpress.org/', 'wporg' ); ?>"><?php _e( 'Get involved', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

@@ -69,9 +69,17 @@ class HTMLParser implements BlockParser {
 				continue;
 			}
 
-			// TODO: Potentially this should be more specific for tags/attribute replacements as needed.
-			$regex = '#([>"\'])\s*' . preg_quote( $original, '#' ) . '\s*([\'"<])#s';
-			$html  = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $html );
+			// Replace content in HTML attributes with appropriate escaping.
+			$replacement = $replacements[ $original ];
+			$replacement = str_replace( ' _e(', ' esc_attr_e(', $replacement );
+			$regex       = '#(["\'])\s*' . preg_quote( $original, '#' ) . '\s*\\1#s';
+			$html        = preg_replace( $regex, '$1' . addcslashes( $replacement, '\\$' ) . '$1', $html );
+
+			// Replace content in HTML tags.
+			$replacement = $replacements[ $original ];
+			$regex       = '#(>)\s*' . preg_quote( $original, '#' ) . '\s*(<)#s';
+			$html        = preg_replace( $regex, '$1' . addcslashes( $replacement, '\\$' ) . '$2', $html );
+
 		}
 
 		$block['innerHTML']    = $html;
