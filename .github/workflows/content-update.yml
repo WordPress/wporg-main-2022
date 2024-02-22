@@ -34,8 +34,8 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: source/wp-content/themes/wporg-main-2022/**/*.php
-          title: 'Content updates from Site Editor'
-          commit-message: '[automated] Sync content from Site Editor.'
+          title: 'Content updates from Page Editor'
+          commit-message: '[automated] Sync content from Page Editor.'
           body: |
-            The content has changed in the Site Editor.
+            The content has changed in the Page Editor.
             Please review, merge, and deploy.
