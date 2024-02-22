@@ -302,6 +302,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"linkDestination":"custom"} -->
-<figure class="wp-block-image"><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://s.w.org/images/home/ccbysa40.png" alt="<?php _e( 'Creative Commons License', 'wporg' ); ?>" /></a></figure>
+<figure class="wp-block-image"><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://s.w.org/images/home/ccbysa40.png" alt="<?php esc_attr_e( 'Creative Commons License', 'wporg' ); ?>" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->

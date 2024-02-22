@@ -128,7 +128,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"has-custom-width is-style-outline-on-dark"} -->
-<div class="wp-block-button has-custom-width is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://github.com/WordPress/move-to-wp/tree/trunk#how-to-contribute', 'wporg' ); ?>"><?php _e( 'Get Started', 'wporg' ); ?></a></div>
+<div class="wp-block-button has-custom-width is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://github.com/WordPress/move-to-wp/tree/trunk#how-to-contribute', 'wporg' ); ?>"><?php _e( 'Get Started', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

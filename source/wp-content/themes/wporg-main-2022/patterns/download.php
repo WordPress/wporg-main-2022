@@ -37,7 +37,7 @@ _e( 'Download WordPress [latest_version]', 'wporg' );
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php _e( 'https://wordpress.org/support/article/how-to-install-wordpress/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/support/article/how-to-install-wordpress/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -64,7 +64,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/hosting/', 'wporg' ); ?>"><?php _e( 'See all recommended hosts', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/hosting/', 'wporg' ); ?>"><?php _e( 'See all recommended hosts', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -165,11 +165,11 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"150px","height":"45px","linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="<?php _e( 'Download on the Apple App Store', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
+<figure class="wp-block-image is-resized"><a href="https://itunes.apple.com/app/apple-store/id335703880?pt=299112&amp;ct=wordpress.org&amp;mt=8"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-apple.png" alt="<?php esc_attr_e( 'Download on the Apple App Store', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"150px","height":"45px","linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php _e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
+<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php esc_attr_e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

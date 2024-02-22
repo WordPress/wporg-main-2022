@@ -22,7 +22,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:image {"align":"wide","id":20995,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="https://wordpress.org/files/2023/08/blocks-header-image.png" alt="<?php _e( 'WordPress editor view showing the outline of three blocks with an inserter icon.', 'wporg' ); ?>" class="wp-image-20995" /></figure>
+<figure class="wp-block-image alignwide size-full"><img src="https://wordpress.org/files/2023/08/blocks-header-image.png" alt="<?php esc_attr_e( 'WordPress editor view showing the outline of three blocks with an inserter icon.', 'wporg' ); ?>" class="wp-image-20995" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -51,11 +51,11 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create blocks', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create blocks', 'wporg' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/patterns', 'wporg' ); ?>"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( '/patterns', 'wporg' ); ?>"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -173,7 +173,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -208,7 +208,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/gutenberg', 'wporg' ); ?>"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( '/gutenberg', 'wporg' ); ?>"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -253,7 +253,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create a block', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create a block', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

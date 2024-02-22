@@ -22,7 +22,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://www.youtube.com/watch?v=6JhJcOLySLY', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Watch the demo', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php esc_attr_e( 'https://www.youtube.com/watch?v=6JhJcOLySLY', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Watch the demo', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -401,7 +401,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20581,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php _e( 'Screenshot of the block editor, with the text, &quot;Hello, WordPress&quot;, and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php esc_attr_e( 'Screenshot of the block editor, with the text, &quot;Hello, WordPress&quot;, and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -439,7 +439,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20626,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://wordpress.org/files/2023/08/image-12.png"><img src="https://wordpress.org/files/2023/08/image-12-1024x576.png" alt="<?php _e( 'Abstract image showing square boxes denoting aspect ratios, 16;9, 4:3, and 1:1.', 'wporg' ); ?>" class="wp-image-20626" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wordpress.org/files/2023/08/image-12.png"><img src="https://wordpress.org/files/2023/08/image-12-1024x576.png" alt="<?php esc_attr_e( 'Abstract image showing square boxes denoting aspect ratios, 16;9, 4:3, and 1:1.', 'wporg' ); ?>" class="wp-image-20626" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -449,7 +449,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":157,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://sixthree.mystagingwebsite.com/wp-content/uploads/2023/07/image-8.png" alt="<?php _e( 'Screenshot showing abstracted menu management with a drag and drop action underway.', 'wporg' ); ?>" class="wp-image-157" /></figure>
+<figure class="wp-block-image size-full"><img src="https://sixthree.mystagingwebsite.com/wp-content/uploads/2023/07/image-8.png" alt="<?php esc_attr_e( 'Screenshot showing abstracted menu management with a drag and drop action underway.', 'wporg' ); ?>" class="wp-image-157" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -461,7 +461,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20252,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/07/Frame-327.png" alt="<?php _e( 'Cropped screenshot of the block editor, showing a revision history for visual styles.', 'wporg' ); ?>" class="wp-image-20252" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/07/Frame-327.png" alt="<?php esc_attr_e( 'Cropped screenshot of the block editor, showing a revision history for visual styles.', 'wporg' ); ?>" class="wp-image-20252" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -471,7 +471,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20622,"width":"135px","height":"37px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php _e( 'Screenshot of a &quot;Start typing...&quot; prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php esc_attr_e( 'Screenshot of a &quot;Start typing...&quot; prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -483,7 +483,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20292,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php esc_attr_e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -493,7 +493,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20629,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php _e( 'Cropped screenshot of a a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php esc_attr_e( 'Cropped screenshot of a a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
