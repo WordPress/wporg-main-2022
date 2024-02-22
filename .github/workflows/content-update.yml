@@ -25,6 +25,7 @@ jobs:
 
       - name: Run the content update
         run: |
+          sed -i -e "s/image: 'mariadb'/image: 'mariadb:lts'/g" node_modules/@wordpress/env/lib/build-docker-compose-config.js
           yarn wp-env start
           yarn build:patterns
           git status
