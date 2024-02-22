@@ -43,8 +43,9 @@ class BlockParser {
 			'core/list'        => new Parsers\Noop(),
 			'core/quote'       => new Parsers\Noop(),
 
-			// Don't translate code content.
-			'core/code' => new Parsers\Noop(),
+			// Don't translate content.
+			'core/code'  => new Parsers\Noop(),
+			'core/embed' => new Parsers\Noop(),
 
 			// Common core blocks that use the default parser.
 			'core/media-text'  => new Parsers\BasicText(),
