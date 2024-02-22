@@ -29,9 +29,13 @@ jobs:
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
           yarn wp-env start
           yarn build:patterns
-          git status
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: source/wp-content/themes/wporg-main-2022/**/*.php
+          title: 'Content updates from Site Editor'
+          commit-message: '[automated] Sync content from Site Editor.'
+          body: |
+            The content has changed in the Site Editor.
+            Please review, merge, and deploy.
