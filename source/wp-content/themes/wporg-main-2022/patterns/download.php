@@ -37,7 +37,7 @@ _e( 'Download WordPress [latest_version]', 'wporg' );
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php _e( 'https://wordpress.org/support/article/how-to-install-wordpress/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php _e( 'https://developer.wordpress.org/advanced-administration/before-install/howto-install/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -48,7 +48,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small","menuSlug":"download"} /--></div>
+<!-- wp:navigation {"ref":17028,"textColor":"blueberry-1","overlayMenu":"never","className":"is-style-dots","style":{"spacing":{"blockGap":"0px"}},"fontSize":"small","menuSlug":"download"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
