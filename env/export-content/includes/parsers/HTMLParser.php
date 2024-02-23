@@ -7,10 +7,12 @@ class HTMLParser implements BlockParser {
 
 	public $tags = [];
 	public $attributes = [];
+	public $min_string_length = 0;
 
-	public function __construct( $tags = array(), $attributes = array() ) {
-		$this->tags       = (array) $tags;
-		$this->attributes = (array) $attributes;
+	public function __construct( $tags = array(), $attributes = array(), $min_string_length = 0 ) {
+		$this->tags              = (array) $tags;
+		$this->attributes        = (array) $attributes;
+		$this->min_string_length = (int) $min_string_length;
 	}
 
 	public function to_strings( array $block ) : array {
@@ -72,6 +74,19 @@ class HTMLParser implements BlockParser {
 			}
 
 			$strings = array_merge( $strings, $found_strings );
+		}
+
+		if ( $this->min_string_length ) {
+			$strings = array_filter(
+				$strings,
+				function( $string ) {
+					if ( function_exists( 'mb_strlen' ) ) {
+						return mb_strlen( $string ) >= $this->min_string_length;
+					}
+
+					return strlen( $string ) >= $this->min_string_length;
+				}
+			);
 		}
 
 		return $strings;
