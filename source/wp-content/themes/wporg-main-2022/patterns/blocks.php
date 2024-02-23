@@ -55,7 +55,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/patterns', 'wporg' ); ?>"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="/patterns"><?php _e( 'Browse block patterns', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -208,7 +208,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php _e( '/gutenberg', 'wporg' ); ?>"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="/gutenberg"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

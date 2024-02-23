@@ -42,12 +42,31 @@ class HTMLParser implements BlockParser {
 				$found_strings = $matches['string'];
 			}
 
-			// Don't translate anchor links, they correspond to other points on the page.
+			// Don't translate certain types of links, they correspond to other points on the page.
 			if ( 'href' === $attr ) {
 				$found_strings = array_filter(
 					$found_strings,
 					function( $value ) {
-						return ! str_starts_with( $value, '#' );
+						// Anchors.
+						if ( str_starts_with( $value, '#' ) ) {
+							return false;
+						}
+
+						// root relative URLs, which are not protocol-relative.
+						if ( str_starts_with( $value, '/' ) && ! str_starts_with( $value, '//' ) ) {
+							return false;
+						}
+
+						// relative to current page urls.
+						if (
+							! str_starts_with( $value, 'https://' ) &&
+							! str_starts_with( $value, 'http://' ) &&
+							! str_starts_with( $value, '//' )
+						) {
+							return false;
+						}
+
+						return true;
 					}
 				);
 			}
