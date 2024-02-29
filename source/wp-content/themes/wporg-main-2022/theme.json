@@ -20,6 +20,15 @@
 					"name": "Newsreader"
 				}
 			]
+		},
+		"custom": {
+			"wporg-sidebar-container": {
+				"spacing": {
+					"margin": {
+						"top": "150px"
+					}
+				}
+			}
 		}
 	},
 	"styles": {
