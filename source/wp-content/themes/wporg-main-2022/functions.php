@@ -21,6 +21,7 @@ require_once __DIR__ . '/src/remembers-list/index.php';
  */
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
+add_filter( 'document_title_separator', __NAMESPACE__ . '\document_title_separator' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
 add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\update_site_breadcrumbs' );
 add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
@@ -348,4 +349,15 @@ function update_header_template_part_class( $block ) {
 		}
 	}
 	return $block;
+}
+
+/**
+ * Change document title separator
+ *
+ * @param string $sep
+ *
+ * @return string
+ */
+function document_title_separator( $sep ) {
+	return '&#124;';
 }
