@@ -6,6 +6,7 @@
 /vendor
 *.map
 backstop_data
+.phpunit.result.cache
 
 # Allow local environment overrides.
 .wp-env.override.json
