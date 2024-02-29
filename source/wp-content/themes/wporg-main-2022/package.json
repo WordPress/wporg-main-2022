@@ -5,11 +5,6 @@
 	"author": "WordPress.org",
 	"license": "GPL-2.0-or-later",
 	"private": true,
-	"dependencies": {
-		"@wordpress/components": "^23.0.0",
-		"@wordpress/element": "^5.0.0",
-		"@wordpress/i18n": "^4.23.0"
-	},
 	"devDependencies": {
 		"@wordpress/scripts": "27.9.0"
 	},

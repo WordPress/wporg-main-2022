@@ -10,7 +10,8 @@
 		"@wordpress/eslint-plugin": "18.1.0",
 		"@wordpress/scripts": "27.9.0",
 		"backstopjs": "^6.1.4",
-		"lighthouse-ci": "^1.13.1"
+		"lighthouse-ci": "^1.13.1",
+		"puppeteer": "^22.6.1"
 	},
 	"scripts": {
 		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
