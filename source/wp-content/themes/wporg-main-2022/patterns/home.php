@@ -6,6 +6,28 @@
  */
 
 ?>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"black","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-black-background-color has-background" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":39081,"sizeSlug":"full","linkDestination":"custom","className":"is-resized"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/wcasia-white-rectangle.png" alt="<?php _e( 'WordCamp Asia 2024', 'wporg' ); ?>" class="wp-image-39081" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"16px","padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
+<p class="has-white-color has-text-color has-link-color has-small-font-size" style="line-height:1.6"><?php _e( 'Stream the Q&amp;A session with the WordPress project&#039;s co-founder, Matt Mullenweg, live from WordCamp Asia 2024. <br>March 9 at 7:30 a.m. UTC. <a href="https://wordpress.org/news/2024/03/wordcamp-asia-2024-qa-with-matt-mullenweg/">More details</a>.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
+<p class="has-white-color has-text-color has-link-color has-small-font-size"><?php _e( '<a href="https://www.youtube.com/wordpress" data-type="page" data-id="23184"><strong>Watch now ↗</strong></a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"120px","right":"0px","bottom":"120px","left":"0px"},"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide" style="padding-top:120px;padding-right:0px;padding-bottom:120px;padding-left:0px"><!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
