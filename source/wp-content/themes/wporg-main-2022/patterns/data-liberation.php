@@ -20,7 +20,23 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Want to get involved with Data Liberation?', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><?php _e( 'Join the discussion in <a href="https://wordpress.slack.com/archives/C069AKUBPHB">#data-liberation on Making Slack</a>, or in the <a href="https://github.com/WordPress/data-liberation">Data Liberation GitHub repository</a>.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( 'The Data Liberation project imagines a more open web where users can seamlessly switch between platforms of their choosing, eradicating the concept of being locked into a system and keeping openness at the forefront. Moving to and within WordPress should be a one-click easy process as much as possible whether moving from social networks, moving from a page builder to core blocks, or shifting from the classic editor to the block editor.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<p style="margin-bottom:var(--wp--preset--spacing--40)"><?php _e( 'As web hosts, agencies, and individual contributors - <a href="https://github.com/WordPress/data-liberation?tab=readme-ov-file#how-to-contribute">we can work to make Data Liberation a reality</a>.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
 <h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Guides', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -87,7 +103,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-bottom:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"var:preset|spacing|10"}}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Toolbox', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--10);font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Tools', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20","top":"var:preset|spacing|10"}}},"textColor":"charcoal-4","fontSize":"small"} -->
