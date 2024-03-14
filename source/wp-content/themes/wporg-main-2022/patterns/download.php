@@ -173,7 +173,3 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
