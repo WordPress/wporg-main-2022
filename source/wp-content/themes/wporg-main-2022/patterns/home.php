@@ -17,7 +17,7 @@
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"16px","padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"style":{"typography":{"lineHeight":1.6},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-link-color has-small-font-size" style="line-height:1.6"><?php _e( 'Watch the Q&amp;A session with the WordPress project&#039;s co-founder, Matt Mullenweg, recorded live from WordCamp Asia 2024. <br><a href="https://wordpress.org/news/2024/03/highlights-from-wordcamp-asia-2024/">Read the event highlights</a>.', 'wporg' ); ?></p>
+<p class="has-white-color has-text-color has-link-color has-small-font-size" style="line-height:1.6"><?php _e( 'Watch the Q&amp;A session with the WordPress project&#039;s cofounder, Matt Mullenweg, recorded live from WordCamp Asia 2024. <br><a href="https://wordpress.org/news/2024/03/highlights-from-wordcamp-asia-2024/">Read the event highlights</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"small"} -->
