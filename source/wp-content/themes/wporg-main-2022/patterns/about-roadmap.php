@@ -20,165 +20,41 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'To support the vision set in <a href="https://wordpress.org/news/2022/12/state-of-the-word-2022-recap/">State of the Word 2022</a> and this <a href="https://wordpress.org/news/2023/01/letter-from-wordpress-executive-director-2022/">Letter from WordPress’ Executive Director</a>, the project has some big picture goals for 2023, as outlined in <a href="https://make.wordpress.org/project/2023/01/18/big-picture-goals-2023/">this post</a>:', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<strong>CMS</strong>', 'wporg' ); ?></p>
+<p><?php _e( 'To support the vision set in the latest <a href="https://wordpress.org/news/2023/12/state-of-the-word-2023-recap/">State of the Word</a>, the project has the following <a href="https://make.wordpress.org/project/2024/01/19/big-picture-goals-2024/">big picture goals for 2024</a>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'APIs:', 'wporg' ); ?><!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><?php _e( 'All those related to Phase 3 of the Gutenberg project', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://make.wordpress.org/core/">Test, iterate, and ship</a> Phase 3 of the Gutenberg project.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Fonts API', 'wporg' ); ?></li>
+<li><?php _e( 'Continue to support the community through <a href="https://learn.wordpress.org/">learning</a>, <a href="https://events.wordpress.org/">events</a>, and <a href="https://make.wordpress.org/community/tag/mentorship-program/">mentorship</a> of current and future contributors.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Interactivity API', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Block API', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Openverse search in Core', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Navigation block', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Media management', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Simplify the release process', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'PHP 8.2 compatibility (Core and Gutenberg)', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Block theme dev tools', 'wporg' ); ?><!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><?php _e( '<a href="https://make.wordpress.org/design/2022/11/07/design-share-oct-24-nov-4/">Custom CSS</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://github.com/WordPress/gutenberg/issues/45675">Custom CSS in theme variations</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://github.com/WordPress/gutenberg/issues/39324">Template content preservation</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Starter content in block themes', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Theme preview', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+<li><?php _e( 'Address the difficulty in moving platforms through the <a href="https://wordpress.org/news/2024/01/data-liberation-in-2024/">Data Liberation project</a>, as well as streamline existing review processes across project repositories.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>Community</strong>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><?php _e( 'Ongoing re-engagement of events', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://communitysummit.wordcamp.org/2023/">Community Summit</a> planning and coordination', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Holistic contributor onboarding', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Refinement of Polyglot tools', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Continue to ship learning content at the current pace', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Update content and refresh design across wordpress.org', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Establish contributor and mentor programs', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Develop a canonical plugin program', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<strong>Ecosystem</strong>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><?php _e( 'WordPress Playground', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Explore improvements to our contributor tools', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Create a WordPress brand discipline', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Simplify the release process (also in CMS)', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Refinement of Polyglot tools (also in Community)', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( 'Develop a canonical plugin program (also in Community)', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'Want to get involved? Head on over to <a href="https://make.wordpress.org/">Make WordPress</a>! We can always use more people to help translate, design, document, develop, and market WordPress.', 'wporg' ); ?></p>
+<p><?php _e( 'Want to get involved? Head on over to <a href="https://make.wordpress.org/">Make WordPress</a> and meet the people developing, designing, documenting, translating, and marketing WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Currently planned releases', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( '2024 releases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Here are the current planned releases, and links to their respective milestones in our <a href="https://core.trac.wordpress.org/">issue tracker</a>. Any projected dates are for discussion and planning purposes, and will be firmed up as we get closer to release.', 'wporg' ); ?></p>
+<p><?php _e( 'Here are the planned releases for 2024 and links to their respective milestones in our <a href="https://core.trac.wordpress.org/">issue tracker</a>. Any projected dates are for discussion and planning purposes only and will be firmed up as we get closer to release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.5', 'wporg' ); ?></td><td><?php _e( 'March 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.6', 'wporg' ); ?></td><td><?php _e( 'July 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.7', 'wporg' ); ?></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table><figcaption class="wp-element-caption"><?php _e( 'Planned WordPress releases', 'wporg' ); ?></figcaption></figure>
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://core.trac.wordpress.org/milestone/6.5"><?php _e( '6.5', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-5/"><?php _e( 'March 2024', 'wporg' ); ?></a></td></tr><tr><td><a href="https://core.trac.wordpress.org/milestone/6.6"><?php _e( '6.6', 'wporg' ); ?></a></td><td><?php _e( 'July 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.7', 'wporg' ); ?></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'New features are frozen a month before a release, with the focus entirely on the quality and performance of the release.', 'wporg' ); ?></p>
+<p><?php _e( 'New features are frozen a month before a release, with the focus shifting entirely to the quality and performance of the release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -191,10 +67,6 @@
 
 <!-- wp:paragraph -->
 <p><?php _e( 'As a reminder, these are the four phases outlined in the Gutenberg project:', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'The Four Phases of Gutenberg', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
