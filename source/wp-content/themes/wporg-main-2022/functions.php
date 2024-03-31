@@ -19,6 +19,7 @@ require_once __DIR__ . '/src/remembers-list/index.php';
 /**
  * Actions and filters.
  */
+add_filter( 'document_title_parts', __NAMESPACE__ . '\document_title' );
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 add_action( 'init', __NAMESPACE__ . '\register_shortcodes' );
 add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loading', 10, 2 );
@@ -26,6 +27,12 @@ add_filter( 'wporg_block_site_breadcrumbs', __NAMESPACE__ . '\update_site_breadc
 add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
 add_filter( 'render_block_data', __NAMESPACE__ . '\update_header_template_part_class' );
 add_filter( 'wporg_block_navigation_menus', __NAMESPACE__ . '\add_site_navigation_menus' );
+
+// Remove table of contents.
+add_filter( 'wporg_handbook_toc_should_add_toc', '__return_false' );
+
+// Remove the edit link from handbook titles.
+add_filter( 'wporg_markdown_should_filter_title', '__return_false' );
 
 /**
  * Enqueue scripts and styles.
@@ -138,6 +145,25 @@ function override_lazy_loading( $value, $image ) {
  * Use the page heirarchy to display breadcrumbs.
  */
 function update_site_breadcrumbs( $breadcrumbs ) {
+
+	// Handle breadcrumbs for the data liberation section.
+	if ( is_singular( 'and-handbook' ) ) {
+		return array(
+			array(
+				'url' => home_url( '/data-liberation' ),
+				'title' => __( 'Home', 'wporg' ),
+			),
+			array(
+				'url' => home_url( '/data-liberation/and' ),
+				'title' => __( 'Guides', 'wporg' ),
+			),
+			array(
+				'url' => false,
+				'title' => get_the_title(),
+			),
+		);
+	}
+
 	$parent = get_post_parent();
 	if ( ! $parent ) {
 		return $breadcrumbs;
@@ -281,6 +307,16 @@ function add_site_navigation_menus( $menus ) {
  * @param WP_Block $instance      The block instance.
  */
 function use_parent_page_title( $block_content, $block, $instance ) {
+
+	// Handle the site title for data liberation.
+	if ( is_post_type_archive( 'and-handbook' ) || is_singular( 'and-handbook' ) ) {
+		return str_replace(
+			array( home_url(), get_bloginfo( 'name' ) ),
+			array( home_url( '/data-liberation' ), __( 'Data Liberation', 'wporg' ) ),
+			$block_content
+		);
+	}
+
 	if ( is_home() || is_single() || is_archive() ) {
 		return str_replace(
 			array( home_url(), get_bloginfo( 'name' ) ),
@@ -348,4 +384,27 @@ function update_header_template_part_class( $block ) {
 		}
 	}
 	return $block;
+}
+
+/**
+ * Append an optimized site name.
+ *
+ * @param array $parts {
+ *     The document title parts.
+ *
+ *     @type string $title   Title of the viewed page.
+ *     @type string $page    Optional. Page number if paginated.
+ *     @type string $tagline Optional. Site description when on home page.
+ *     @type string $site    Optional. Site title when not on home page.
+ * }
+ * @return array Filtered title parts.
+ */
+function document_title( $parts ) {
+
+	if ( is_singular( 'and-handbook' ) ) {
+		// translators: %s: Name of the guide.
+		$parts['title'] = sprintf( __( '%s - Data Liberation', 'wporg' ), $parts['title'] );
+	}
+
+	return $parts;
 }

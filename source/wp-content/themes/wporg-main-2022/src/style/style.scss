@@ -621,6 +621,10 @@ $wporg-about-breakpoint-max: 1920px;
 	text-decoration: none;
 }
 
+.single-and-handbook img {
+	width: 100%;
+}
+
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
  *
