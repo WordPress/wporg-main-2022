@@ -349,3 +349,23 @@ function update_header_template_part_class( $block ) {
 	}
 	return $block;
 }
+
+/**
+ * Prevent easy access to the Site Editor.
+ *
+ * See https://github.com/WordPress/wporg-main-2022/issues/390.
+ */
+add_action(
+	'admin_menu',
+	function() {
+		remove_submenu_page( 'themes.php', 'site-editor.php' );
+	}
+);
+
+add_action(
+	'admin_bar_menu',
+	function ( $wp_admin_bar ) {
+		$wp_admin_bar->remove_node( 'site-editor' );
+	},
+	499 // Before the wporg-mu-plugins action.
+);
