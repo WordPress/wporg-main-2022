@@ -50,7 +50,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://core.trac.wordpress.org/milestone/6.5"><?php _e( '6.5', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-5/"><?php _e( 'March 2024', 'wporg' ); ?></a></td></tr><tr><td><a href="https://core.trac.wordpress.org/milestone/6.6"><?php _e( '6.6', 'wporg' ); ?></a></td><td><?php _e( 'July 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.7', 'wporg' ); ?></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://core.trac.wordpress.org/milestone/6.5"><?php _e( '6.5', 'wporg' ); ?></a></td><td><a href="https://make.wordpress.org/core/6-5/"><?php _e( 'April 2024', 'wporg' ); ?></a></td></tr><tr><td><a href="https://core.trac.wordpress.org/milestone/6.6"><?php _e( '6.6', 'wporg' ); ?></a></td><td><?php _e( 'July 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.7', 'wporg' ); ?></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
