@@ -280,35 +280,23 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" id="news" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem"},"blockGap":"0px"}},"className":"is-style-default"} -->
-<div class="wp-block-columns alignwide is-style-default" style="padding-top:5rem;padding-bottom:5rem"><!-- wp:column {"verticalAlignment":"top","width":"33%","className":"is-left-column","layout":{"inherit":false}} -->
-<div class="wp-block-column is-vertically-aligned-top is-left-column" style="flex-basis:33%"><!-- wp:group {"style":{"spacing":{"padding":{"right":"80px"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="padding-right:80px"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"heading-2"} -->
-<h2 class="wp-block-heading has-heading-2-font-size" style="margin-top:0"><?php _e( 'See what&#039;s new in WordPress', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"66%","layout":{"inherit":false}} -->
-<div class="wp-block-column" style="flex-basis:66%"><!-- wp:group {"style":{"spacing":{"margin":{"top":"15px"}}}} -->
-<div class="wp-block-group" style="margin-top:15px"><!-- wp:wporg/latest-news {"blogId":8} /-->
-
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/news/">View all</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" id="news" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+    <div class="wp-block-group"><!-- wp:heading {"fontSize":"heading-2"} -->
+    <h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'See what&#039;s new in WordPress', 'wporg' ); ?></h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph -->
+    <p><?php _e( '<a href="https://wordpress.org/news/">View all</a>', 'wporg' ); ?></p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
+    <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--40)"><!-- wp:wporg/latest-news {"blogId":8} /--></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
