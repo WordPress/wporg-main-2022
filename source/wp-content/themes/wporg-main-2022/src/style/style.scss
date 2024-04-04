@@ -376,18 +376,6 @@ $wporg-about-breakpoint-max: 1920px;
 		padding-left: var(--wp--preset--spacing--30);
 		padding-right: var(--wp--preset--spacing--30);
 	}
-
-	#intro .wp-block-columns {
-		display: block;
-	}
-}
-
-@media (max-width: 1000px) {
-
-	/* Remove the spacing next to "Powerful and empowering" to prevent crunched text. */
-	#benefits h2 {
-		margin-right: 0 !important;
-	}
 }
 
 @media (max-width: 959px) {
@@ -404,9 +392,12 @@ $wporg-about-breakpoint-max: 1920px;
 
 @media (max-width: 781px) {
 
+	/* Hide the second column on small screens (prevents brush from wrapping). */
+	#intro .wp-block-column:last-child {
+		display: none;
+	}
+
 	/* Update the columns gap when it switches to single-column */
-	#benefits .is-layout-flex,
-	#learning .is-layout-flex,
 	#resources .is-layout-flex {
 		gap: 40px;
 	}
@@ -470,16 +461,6 @@ $wporg-about-breakpoint-max: 1920px;
 }
 
 @media (max-width: 599px) {
-	#editor {
-		min-height: 0 !important;
-		padding-left: var(--wp--preset--spacing--40) !important;
-		padding-right: var(--wp--preset--spacing--40) !important;
-	}
-
-	#editor .wp-block-cover__inner-container .wp-block-group > * {
-		max-width: 22rem !important;
-	}
-
 	.wp-block-buttons .wp-block-button,
 	.wp-block-buttons .wp-block-button .wp-block-button__link {
 		width: 100% !important;
