@@ -214,7 +214,7 @@
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":39810,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/photo-community-1.png" alt="<?php _e( 'A black and white photograph of excited, applauding attendees in the audience at a WordPress event. ', 'wporg' ); ?>" class="wp-image-39810" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/photo-community-1.png" alt="<?php _e( 'A black and white photograph of excited, applauding attendees in the audience at a WordPress event.', 'wporg' ); ?>" class="wp-image-39810" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
