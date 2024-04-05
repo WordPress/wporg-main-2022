@@ -9,12 +9,12 @@
 <!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"70px"}}} -->
-<h2 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h2>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
+<h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -37,12 +37,12 @@
 <figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/04/feature-style.png" alt="<?php _e( 'Illustration of various blocks, Paragraph and Cover.', 'wporg' ); ?>" class="has-border-color has-light-grey-1-border-color wp-image-39764" style="border-width:1px;border-radius:4px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
-<p style="font-size:18px"><?php _e( '<strong>Design</strong>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Design</strong>', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'Create any website with flexible design tools and the power of <a href="https://wordpress.org/blocks/" data-type="page" data-id="20359">blocks</a>. Start with a blank canvas or choose a <a href="https://wordpress.org/themes/" data-type="link" data-id="https://wordpress.org/themes/">theme</a>. Customize every detail—no code needed.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Create any website with flexible design tools and the power of <a href="https://wordpress.org/blocks/" data-type="page" data-id="20359">blocks</a>. Start with a blank canvas or choose a <a href="https://wordpress.org/themes/" data-type="link" data-id="https://wordpress.org/themes/">theme</a>. Customize every detail—no code needed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -51,16 +51,16 @@
 <figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/04/feature-build.png" alt="<?php _e( 'Illustration of an Image block with a block toolbar.', 'wporg' ); ?>" class="has-border-color has-light-grey-1-border-color wp-image-39766" style="border-width:1px;border-radius:4px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
-<p style="font-size:18px"><?php _e( '<strong>Build</strong>', 'wporg' ); ?></p>
+<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build</strong>', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"}}} -->
-<p style="font-size:14px"><?php _e( '<a href="https://wordpress.org/gutenberg/">Try the Block Editor</a>', 'wporg' ); ?></p>
+<!-- wp:paragraph -->
+<p><?php _e( '<a href="https://wordpress.org/gutenberg/">Try the Block Editor</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -69,12 +69,12 @@
 <figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/04/feature-publish.png" alt="<?php _e( 'Screenshot of the Twenty Twenty-Four theme.', 'wporg' ); ?>" class="has-border-color has-light-grey-1-border-color wp-image-39765" style="border-width:1px;border-radius:4px" /></figure>
 <!-- /wp:image -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
-<p style="font-size:18px"><?php _e( '<strong>Extend</strong>', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Extend</strong>', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'Make your site do whatever you need it to. Add a store, analytics, newsletter, social media integration; you’re in control with an extensive library of <a href="https://wordpress.org/plugins/" data-type="link" data-id="https://wordpress.org/plugins/">plugins</a>.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Make your site do whatever you need it to. Add a store, analytics, newsletter, social media integration; you’re in control with an extensive library of <a href="https://wordpress.org/plugins/" data-type="link" data-id="https://wordpress.org/plugins/">plugins</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -85,12 +85,12 @@
 <div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><?php _e( 'See what&#039;s new', 'wporg' ); ?></h3>
+<!-- wp:heading {"fontSize":"heading-3"} -->
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'See what&#039;s new', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'Elevate your site-building experience with WordPress 6.5. This release includes a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Elevate your site-building experience with WordPress 6.5. This release includes a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -183,33 +183,29 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Community"},"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"5rem","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull" id="community" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"metadata":{"name":"Separator"},"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:40px;padding-right:0;padding-bottom:40px;padding-left:0"><!-- wp:cover {"url":"https://wordpress.org/files/2023/10/image-5.png","id":22690,"dimRatio":0,"focalPoint":{"x":0,"y":0.5},"minHeight":61,"isDark":false,"align":"wide"} -->
-<div class="wp-block-cover alignwide is-light" style="min-height:61px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-22690" alt="" src="https://wordpress.org/files/2023/10/image-5.png" style="object-position:0% 50%" data-object-fit="cover" data-object-position="0% 50%" /><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size"></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:cover --></div>
+<div class="wp-block-group alignfull" id="community" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"metadata":{"name":"Separator"},"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:spacer {"height":"60px","className":"is-style-dots-background","style":{"spacing":{"margin":{"top":"40px","bottom":"40px"}}}} -->
+<div style="margin-top:40px;margin-bottom:40px;height:60px" aria-hidden="true" class="wp-block-spacer is-style-dots-background"></div>
+<!-- /wp:spacer --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|70"},"padding":{"top":"40px","bottom":"40px"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:column {"width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
 <div class="wp-block-column has-charcoal-0-color has-text-color has-link-color" style="flex-basis:50%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0"><?php _e( 'Meet the WordPress community', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php _e( 'We’re united by the spirit of open source, and the freedom to build, transform, and share without barriers. Everyone is welcome.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'We’re united by the spirit of open source, and the freedom to build, transform, and share without barriers. Everyone is welcome.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"style":{"spacing":{"margin":{"top":"40px"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"light-grey-1","className":"is-style-links-list"} -->
-<ul style="margin-top:40px" class="is-style-links-list has-light-grey-1-color has-text-color has-link-color"><!-- wp:list-item {"fontSize":"small"} -->
-<li class="has-small-font-size"><?php _e( '<a href="https://events.wordpress.org/">Find an event near you</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"spacing":{"margin":{"top":"30px"}}}} -->
+<p class="has-link-color" style="margin-top:30px"><?php _e( '<a href="https://events.wordpress.org/">Find an event near you</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
@@ -221,31 +217,31 @@
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|edge-space","left":"80px"},"margin":{"top":"5rem"}}}} -->
 <div class="wp-block-columns alignwide" style="margin-top:5rem"><!-- wp:column {"width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<div class="wp-block-column has-charcoal-0-color has-text-color has-link-color" style="flex-basis:50%"><!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
-<p style="font-size:18px"><?php _e( '<strong>Build for yourself, not by yourself</strong>', 'wporg' ); ?></p>
+<div class="wp-block-column has-charcoal-0-color has-text-color has-link-color" style="flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build for yourself, not by yourself</strong>', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'Whether you’re an entrepreneur, professional developer, or first-time blogger, there’s a library of resources and learning tools ready for you. Plus, you have the whole WordPress community in your corner.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'Whether you’re an entrepreneur, professional developer, or first-time blogger, there’s a library of resources and learning tools ready for you. Plus, you have the whole WordPress community in your corner.', 'wporg' ); ?></p>
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:30px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
+<p class="has-link-color"><?php _e( '<a href="https://learn.wordpress.org/" data-type="link" data-id="https://learn.wordpress.org/">Learn how to use WordPress</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"style":{"spacing":{"margin":{"top":"40px"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"light-grey-1","className":"is-style-links-list"} -->
-<ul style="margin-top:40px" class="is-style-links-list has-light-grey-1-color has-text-color has-link-color"><!-- wp:list-item {"fontSize":"small"} -->
-<li class="has-small-font-size"><?php _e( '<a href="https://learn.wordpress.org/" data-type="link" data-id="https://learn.wordpress.org/">Learn how to use WordPress</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
+<p class="has-link-color"><?php _e( '<a href="https://wordpress.org/playground/" data-type="link" data-id="https://wordpress.org/playground/">Test WordPress out in your browser</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item {"fontSize":"small"} -->
-<li class="has-small-font-size"><?php _e( '<a href="https://wordpress.org/playground/" data-type="link" data-id="https://wordpress.org/playground/">Test WordPress out in your browser</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
+<p class="has-link-color"><?php _e( '<a href="https://wordpress.org/documentation/" data-type="link" data-id="https://wordpress.org/documentation/">Search documentation</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item {"fontSize":"small"} -->
-<li class="has-small-font-size"><?php _e( '<a href="https://wordpress.org/documentation/" data-type="link" data-id="https://wordpress.org/documentation/">Search documentation</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item {"fontSize":"small"} -->
-<li class="has-small-font-size"><?php _e( '<a href="https://developer.wordpress.org">Dig into the code</a>', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
+<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org">Dig into the code</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
@@ -258,7 +254,7 @@
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" id="news" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'What&#039;s happening around WordPress', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Latest WordPress news', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
