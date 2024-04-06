@@ -168,15 +168,15 @@
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"charcoal-1","className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull is-style-default has-charcoal-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":22644,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-top-row-full.png" alt="<?php _e( 'Screenshots of three websites featured in the WordPress Showcase.', 'wporg' ); ?>" class="wp-image-22644" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-top-row-full.png" alt="" class="wp-image-22644" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22641,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-middle-row.png" alt="<?php _e( 'Screenshots of four more websites featured in the WordPress Showcase.', 'wporg' ); ?>" class="wp-image-22641" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-middle-row.png" alt="" class="wp-image-22641" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22642,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-bottom-row.png" alt="<?php _e( 'Screenshots of three more websites featured in the WordPress Showcase.', 'wporg' ); ?>" class="wp-image-22642" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-bottom-row.png" alt="" class="wp-image-22642" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

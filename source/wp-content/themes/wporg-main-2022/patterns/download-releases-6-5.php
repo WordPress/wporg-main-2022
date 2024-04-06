@@ -33,7 +33,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:image {"id":39362,"sizeSlug":"full","linkDestination":"none","align":"full"} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2024/03/hero-image.png" alt="<?php _e( 'Cropped screenshots of a single pattern design in multiple different visual styles.', 'wporg' ); ?>" class="wp-image-39362" /></figure>
+<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2024/03/hero-image.png" alt="" class="wp-image-39362" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -205,7 +205,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":39388,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-performance.png" alt="<?php _e( 'Icon showing a speed dial.', 'wporg' ); ?>" class="wp-image-39388" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-performance.png" alt="" class="wp-image-39388" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -229,7 +229,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":39390,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-accessibility.png" alt="<?php _e( 'Icon showing person with arms stretched out, an accessibility symbol.', 'wporg' ); ?>" class="wp-image-39390" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-accessibility.png" alt="" class="wp-image-39390" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -262,7 +262,7 @@
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"0","right":"0"},"blockGap":{"left":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0"><!-- wp:column {"verticalAlignment":"top","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:image {"id":39398,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/03/6-5-feature-aspect.png" alt="<?php _e( 'Screenshot of a tall windowframe, and an overlaid aspect ratio control set to 9:16.', 'wporg' ); ?>" class="wp-image-39398" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/03/6-5-feature-aspect.png" alt="" class="wp-image-39398" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
@@ -277,7 +277,7 @@
 <!-- wp:column {"verticalAlignment":"top","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":39397,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/03/6-5-feature-drag-drop.png" alt="<?php _e( 'Screenshot of the block editor list view, with a drag and drop interaction in progress.', 'wporg' ); ?>" class="wp-image-39397" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/03/6-5-feature-drag-drop.png" alt="" class="wp-image-39397" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -306,7 +306,7 @@
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":39407,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-fullscreen.png" alt="<?php _e( 'Icon of &quot;fullscreen&quot;.', 'wporg' ); ?>" class="wp-image-39407" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-fullscreen.png" alt="" class="wp-image-39407" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
@@ -320,7 +320,7 @@
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":39409,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-synced.png" alt="<?php _e( 'Icon of arrows in a circle, denoting &quot;synced&quot;.', 'wporg' ); ?>" class="wp-image-39409" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-synced.png" alt="" class="wp-image-39409" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
@@ -342,7 +342,7 @@
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":39406,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-settings.png" alt="<?php _e( 'Icon of settings toggles.', 'wporg' ); ?>" class="wp-image-39406" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-settings.png" alt="" class="wp-image-39406" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
@@ -356,7 +356,7 @@
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:image {"id":39408,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-plugin.png" alt="<?php _e( 'Icon of a power plug for &quot;plugins&quot;.', 'wporg' ); ?>" class="wp-image-39408" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/icon-plugin.png" alt="" class="wp-image-39408" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
