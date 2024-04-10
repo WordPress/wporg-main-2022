@@ -6,6 +6,19 @@
 $wporg-about-breakpoint-min: 600px;
 $wporg-about-breakpoint-max: 1920px;
 
+[lang="zh-CN"],
+[lang="ja"] {
+	// Any line height < 1.
+	[class*="wp-block"][style*="line-height:0."] {
+		line-height: 1.2 !important;
+	}
+
+	// Any negative letterspacing.
+	[class*="wp-block"][style*="letter-spacing:-"] {
+		letter-spacing: normal !important;
+	}
+}
+
 [lang="de-DE"] {
 	.wporg-about-cover-title > span,
 	.wporg-about-section-heading {
