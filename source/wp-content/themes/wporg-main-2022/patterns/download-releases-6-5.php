@@ -371,7 +371,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","right":"0","bottom":"var:preset|spacing|90","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Contributors"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","right":"0","bottom":"var:preset|spacing|90","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--90);padding-right:0;padding-bottom:var(--wp--preset--spacing--90);padding-left:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group alignwide" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"fontSize":"heading-1"} -->
 <h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <br><em><mark class="has-inline-color has-light-grey-2-color">700 contributors</mark></em> who made this release', 'wporg' ); ?></h2>
@@ -397,7 +397,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|60","right":"0","bottom":"var:preset|spacing|60","left":"0"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Get started"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|60","right":"0","bottom":"var:preset|spacing|60","left":"0"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--60);padding-right:0;padding-bottom:var(--wp--preset--spacing--60);padding-left:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-group alignwide" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-6px"}},"className":"is-style-with-arrow","fontSize":"heading-cta","fontFamily":"inter"} -->
 <h2 class="wp-block-heading alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-6px"><?php _e( '<a href="https://wordpress.org/download/">Get started</a>', 'wporg' ); ?></h2>
