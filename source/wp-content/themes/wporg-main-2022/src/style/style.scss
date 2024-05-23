@@ -167,11 +167,15 @@ $wporg-about-breakpoint-max: 1920px;
 
 .wporg-about-cover-title > span,
 .wporg-about-section-heading {
-	font-size: #{fluid(52px, 125px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	display: inline-block;
 }
 
+.wporg-about-cover-title > span {
+	font-size: #{fluid(52px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+}
+
 .wporg-about-section-heading {
+	font-size: #{fluid(52px, 90px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	position: relative;
 
 	&::after {
