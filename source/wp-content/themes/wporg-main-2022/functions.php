@@ -191,10 +191,6 @@ function add_site_navigation_menus( $menus ) {
 			'url' => '/about/etiquette/',
 		),
 		array(
-			'label' => __( 'Swag', 'wporg' ),
-			'url' => 'https://mercantile.wordpress.org/',
-		),
-		array(
 			'label' => __( 'Logos', 'wporg' ),
 			'url' => '/about/logos/',
 		),
