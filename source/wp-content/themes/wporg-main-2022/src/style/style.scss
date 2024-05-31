@@ -78,7 +78,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 			}
 
 			&::after {
-				content: "↗︎";
+				content: "\2197";
 			}
 		}
 
