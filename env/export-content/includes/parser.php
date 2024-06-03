@@ -35,7 +35,6 @@ class BlockParser {
 			// Generic shortcode handler.
 			'core/shortcode'   => new Parsers\ShortcodeBlock(),
 
-			'core/spacer'      => new Parsers\Noop(),
 			// These contain other blocks to be parsed.
 			'core/column'      => new Parsers\Noop(),
 			'core/columns'     => new Parsers\Noop(),
@@ -47,8 +46,14 @@ class BlockParser {
 			'core/code'  => new Parsers\Noop(),
 			'core/embed' => new Parsers\Noop(),
 
+			// No content.
+			'core/spacer' => new Parsers\Noop(),
+
 			// Common core blocks that use the default parser.
 			'core/media-text'  => new Parsers\BasicText(),
+
+			// Shared custom blocks.
+			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', [ 'href' ] ),
 		];
 	}
 

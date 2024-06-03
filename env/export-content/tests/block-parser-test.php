@@ -140,6 +140,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th>Cookie</th><th>Logged-in Users Only?</th></tr></thead><tbody><tr><th>welcome-{blog_id}</th><td>No</td></tr><tr><th>showComments</th><td>No</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th><?php _e( 'Cookie', 'wporg' ); ?></th><th><?php _e( 'Logged-in Users Only?', 'wporg' ); ?></th></tr></thead><tbody><tr><th><?php _e( 'welcome-{blog_id}', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr><tr><th><?php _e( 'showComments', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 			],
+			[
+				// Link Wrapper block with child content.
+				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/"><!-- wp:paragraph --><p>Matt Mullenweg at WordCamp Europe—streaming live June 15</p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php _e( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ); ?>"><!-- wp:paragraph --><p><?php _e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+			],
 		];
 	}
 
