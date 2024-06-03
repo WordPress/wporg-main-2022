@@ -97,6 +97,7 @@ class HTMLParser implements BlockParser {
 		$this->set_attribute( 'placeholder', $block, $replacements );
 
 		$html = $block['innerHTML'];
+		$content = $block['innerContent'];
 
 		foreach ( $this->to_strings( $block ) as $original ) {
 			if ( empty( $original ) || ! isset( $replacements[ $original ] ) ) {
@@ -106,10 +107,16 @@ class HTMLParser implements BlockParser {
 			// TODO: Potentially this should be more specific for tags/attribute replacements as needed.
 			$regex = '#([>"\'])\s*' . preg_quote( $original, '#' ) . '\s*([\'"<])#s';
 			$html  = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $html );
+
+			foreach ( $content as $i => $chunk ) {
+				if ( ! empty( $chunk ) ) {
+					$content[ $i ] = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $chunk );
+				}
+			}
 		}
 
 		$block['innerHTML']    = $html;
-		$block['innerContent'] = [ $html ];
+		$block['innerContent'] = $content;
 
 		return $block;
 	}
