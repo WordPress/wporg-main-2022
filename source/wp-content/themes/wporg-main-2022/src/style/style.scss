@@ -101,10 +101,10 @@ body.home .wp-block-wporg-link-wrapper {
 
 	@media (max-width: 499px) {
 		font-size: 13px;
-	}
 
-	.is-layout-flex .wp-block-image {
-		flex-shrink: 0;
+		> .wp-block-group {
+			justify-content: space-between;
+		}
 	}
 }
 
