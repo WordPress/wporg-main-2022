@@ -59,6 +59,11 @@
 		"template": "page-stats.html"
 	},
 	{
+		"slug": "swag",
+		"pattern": "about-swag.php",
+		"template": "page-swag.html"
+	},
+	{
 		"slug": "philosophy",
 		"pattern": "about-philosophy.php",
 		"template": "page-philosophy.html"
