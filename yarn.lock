@@ -3728,7 +3728,7 @@
   dependencies:
     "@babel/runtime" "^7.16.0"
 
-"@wordpress/eslint-plugin@^18.1.0":
+"@wordpress/eslint-plugin@18.1.0", "@wordpress/eslint-plugin@^18.1.0":
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/@wordpress/eslint-plugin/-/eslint-plugin-18.1.0.tgz#bcf3e4b5256b4a05b6f5d579c00346448f92c60c"
   integrity sha512-5eGpXEwaZsKbEh9040nVr4ggmrpPmltP+Ie4iGruWvCme6ZIFYw70CyWEV8S102IkqjH/BaH6d+CWg8tN7sc/g==
