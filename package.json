@@ -6,14 +6,15 @@
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "5.8.0",
-		"@wordpress/scripts": "25.0.0",
+		"@wordpress/env": "10.0.0",
+		"@wordpress/eslint-plugin": "18.1.0",
+		"@wordpress/scripts": "27.9.0",
 		"backstopjs": "^6.1.4",
 		"lighthouse-ci": "^1.13.1"
 	},
 	"scripts": {
 		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
-		"setup:wp": "wp-env run cli \"bash env/setup.sh\" && ./env/refresh.sh",
+		"setup:wp": "wp-env run cli bash env/setup.sh && ./env/refresh.sh",
 		"setup:refresh": "./env/refresh.sh",
 		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
 		"wp-env": "wp-env",
@@ -27,7 +28,7 @@
 		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
 		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
 		"start:theme": "yarn workspace wporg-main-2022-theme start",
-		"test:php": "wp-env run phpunit 'WP_MULTISITE=1 phpunit -c /var/www/html/wp-content/tests/phpunit/phpunit.xml --verbose'"
+		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"

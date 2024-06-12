@@ -10,7 +10,7 @@ wp rewrite flush --hard
 wp option update blogname "WordPress.org"
 wp option update blogdescription "Blog Tool, Publishing Platform, and CMS"
 
-wp import "${root}/env/data.xml" --authors=create
+# wp import "${root}/env/data.xml" --authors=create
 
 wp option update show_on_front 'page'
 wp option update page_on_front 8891
