@@ -29,3 +29,4 @@ phpcs.xml.dist
 !/source/wp-content/mu-plugins
 !/source/wp-content/mu-plugins/theme-switcher.php
 lighthouse.html
+source/wp-content/tests/phpunit/.phpunit.result.cache

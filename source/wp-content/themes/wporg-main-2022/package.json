@@ -11,8 +11,7 @@
 		"@wordpress/i18n": "^4.23.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "25.0.0",
-		"rtlcss-webpack-plugin": "4.0.7"
+		"@wordpress/scripts": "27.9.0"
 	},
 	"eslintConfig": {
 		"extends": "../../../../.eslintrc.js"
