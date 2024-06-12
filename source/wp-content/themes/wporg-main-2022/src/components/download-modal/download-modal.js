@@ -19,7 +19,9 @@ const DownloadModal = ( { onClose } ) => (
 				</p>
 				<ul>
 					<li>
-						<a href="https://make.wordpress.org/">{ __( 'Get involved in WordPress ↗︎', 'wporg' ) }</a>
+						<a href="https://make.wordpress.org/">
+							{ __( 'Get involved in WordPress ↗︎', 'wporg' ) }
+						</a>
 					</li>
 					<li>
 						<a href="https://www.meetup.com/pro/wordpress/">
