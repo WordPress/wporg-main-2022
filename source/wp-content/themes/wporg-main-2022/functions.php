@@ -25,6 +25,8 @@ add_filter( 'wp_img_tag_add_loading_attr', __NAMESPACE__ . '\override_lazy_loadi
 add_filter( 'render_block_core/site-title', __NAMESPACE__ . '\use_parent_page_title', 10, 3 );
 add_filter( 'render_block_data', __NAMESPACE__ . '\update_header_template_part_class' );
 add_filter( 'wporg_block_navigation_menus', __NAMESPACE__ . '\add_site_navigation_menus' );
+add_filter( 'the_title', __NAMESPACE__ . '\translate_the_title', 1, 2 );
+add_filter( 'single_post_title', __NAMESPACE__ . '\translate_the_title', 1, 2 );
 
 /**
  * Enqueue scripts and styles.
@@ -274,7 +276,7 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 	// Loop up to the first child page, this is the section title.
 	while ( $parent ) {
 		$url = get_permalink( $parent->ID );
-		$title = $parent->post_title;
+		$title = get_the_title( $parent );
 		$parent = get_post_parent( $parent );
 	}
 
@@ -317,6 +319,27 @@ function update_header_template_part_class( $block ) {
 		}
 	}
 	return $block;
+}
+
+/**
+ * Replace the title with the translated page title.
+ *
+ * @param string $title   The current title, ignored.
+ * @param int    $post_id The post_id of the page.
+ *
+ * @return string
+ */
+function translate_the_title( $title, $post_id = null ) {
+	if ( is_admin() ) {
+		return $title;
+	}
+
+	$post = get_post( $post_id );
+	if ( $post && 'page' === $post->post_type ) {
+		$title = translate( $post->post_title, 'wporg' ); // phpcs:ignore
+	}
+
+	return $title;
 }
 
 /**
