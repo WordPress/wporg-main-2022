@@ -1,0 +1,24 @@
+/**
+ * This file is for any temporary CSS for announcement banners.
+ */
+
+/* Homepage banner for WCEU 2024 */
+.is-home-intro-banner {
+	.wp-block-column:last-child > .wp-block-group {
+		padding-left: clamp(80px, calc(3.7vw + 50px), 100px) !important;
+	}
+
+	@media (max-width: 889px) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		.wp-block-column:first-child {
+			padding-left: var(--wp--preset--spacing--edge-space);
+			padding-right: var(--wp--preset--spacing--edge-space);
+		}
+
+		.wp-block-column:last-child > .wp-block-group {
+			padding-left: clamp(70px, calc(5.25vw + 60px), 100px) !important;
+		}
+	}
+}
