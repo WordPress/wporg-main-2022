@@ -22,7 +22,7 @@
 <div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/06/wceu-bg-2.png","id":40702,"source":"file","title":"wceu-bg-2"},"backgroundPosition":"0% 0%"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"84px","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:2rem;padding-right:var(--wp--preset--spacing--20);padding-bottom:2rem;padding-left:84px"><!-- wp:group {"style":{"typography":{"lineHeight":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="line-height:0"><!-- wp:html -->
-<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/lhQDdSvt3IY?si=VHI6JePjpP9wp1ul" title="<?php _e( 'YouTube video player', 'wporg' ); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/ELW4Jdvujbc?si=sE2V6C7oFHugIquT" title="<?php _e( 'YouTube video player', 'wporg' ); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( '<a href="https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/">More event details</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( '<a href="https://wordpress.org/news/2024/06/highlights-from-wordcamp-europe-2024/">Read the event recap</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
