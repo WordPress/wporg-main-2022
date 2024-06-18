@@ -27,6 +27,8 @@ $wporg-about-breakpoint-max: 1920px;
 }
 
 [lang="ja"] {
+	--wp--custom--heading--typography--font-family: var(--wp--preset--font-family--noto-serif-jp);
+
 	.wp-block-wporg-random-heading > strong {
 		display: inline-block;
 	}
