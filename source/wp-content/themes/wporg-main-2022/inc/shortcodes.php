@@ -57,7 +57,7 @@ add_shortcode(
 add_shortcode(
 	'recommended_mariadb',
 	function() {
-		return '10.4';
+		return '10.5';
 	}
 );
 
