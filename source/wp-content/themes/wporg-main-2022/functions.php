@@ -93,12 +93,16 @@ function enqueue_assets() {
 			$subsets = 'latin';
 		}
 
-		// All headings.
-		global_fonts_preload( 'EB Garamond', $subsets );
+		if ( 'ja' === get_locale() ) {
+			global_fonts_preload( 'Noto Serif JP', 'cjk' );
+		} else {
+			// All headings.
+			global_fonts_preload( 'EB Garamond', $subsets );
 
-		if ( is_front_page() ) {
-			// The heading on the front-page has some italic.
-			global_fonts_preload( 'EB Garamond italic', $subsets );
+			if ( is_front_page() ) {
+				// The heading on the front-page has some italic.
+				global_fonts_preload( 'EB Garamond italic', $subsets );
+			}
 		}
 	}
 
