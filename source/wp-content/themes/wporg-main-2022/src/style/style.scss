@@ -123,14 +123,6 @@ body.home .wp-block-wporg-link-wrapper {
 }
 
 /**
- * Add a background behind the Editor section's cover block, for browsers that don't support webp.
- */
-
-#editor {
-	background-color: var(--wp--preset--color--charcoal-1);
-}
-
-/**
  * Enterprise page
  */
 
@@ -601,9 +593,30 @@ $wporg-about-breakpoint-max: 1920px;
 	z-index: -1;
 }
 
+/* Used on SotW template. */
+.wp-block-cover .wp-block-embed.no-min-sizing {
+	min-width: unset;
+	min-height: unset;
+}
+
 .page-template-page-data-liberation h3 a {
 	text-decoration: none;
 }
+
+/**
+ * Release page: 6.6
+ */
+
+.has-mixed-heading-font span {
+	font-family: Inter, sans-serif;
+	font-weight: 300;
+}
+
+.has-mixed-heading-font em {
+	font-size: 125%;
+	line-height: 0.7;
+}
+
 
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
