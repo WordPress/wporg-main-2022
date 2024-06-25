@@ -9,6 +9,7 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
+__( 'WordPress 6.6', 'wporg' );
 __( 'Swag', 'wporg' );
 __( 'WordPress 6.5', 'wporg' );
 __( 'Data Liberation', 'wporg' );
