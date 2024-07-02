@@ -630,6 +630,11 @@ $wporg-about-breakpoint-max: 1920px;
 	line-height: 0.7;
 }
 
+@media only screen and ( min-width: 782px ) {
+	.hide-on-desktop {
+		display: none;
+	}
+}
 
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
