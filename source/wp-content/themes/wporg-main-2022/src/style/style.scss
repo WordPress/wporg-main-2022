@@ -636,6 +636,17 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
+/**
+ * Page in progress styles
+ */
+
+.wporg-page-in-progress {
+	// Override the workaround below.
+	.is-content-justification-left > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+		margin-left: 0 !important;
+	}
+}
+
 /*
  * Workaround for Gutenberg CSS4 selectors on older browsers.
  *
