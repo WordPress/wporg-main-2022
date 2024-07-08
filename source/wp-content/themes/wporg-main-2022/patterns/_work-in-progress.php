@@ -14,25 +14,25 @@
 	<!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"level":1,"style":{"typography":{"fontStyle":"italic","fontWeight":"400"}}} -->
-		<h1 class="wp-block-heading" style="font-style:italic;font-weight:400">You&#8217;re looking for what&#8217;s new in WordPress</h1>
+		<h1 class="wp-block-heading" style="font-style:italic;font-weight:400"><?php _e( 'You&#8217;re looking for what&#8217;s new in WordPress', 'wporg' ); ?></h1>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph -->
-		<p>Go right to the source:</p>
+		<p><?php _e( 'Go right to the source:', 'wporg' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:list -->
 		<ul class="wp-block-list">
 			<!-- wp:list-item -->
-			<li><a href="https://events.wordpress.org/upcoming-events/">Upcoming WordPress events</a></li>
+			<li><a href="<?php echo esc_url( __( 'https://wordpress.org/news/', 'wporg' ) ); ?>"><?php _e( 'WordPress News', 'wporg' ); ?></a></li>
 			<!-- /wp:list-item -->
 
 			<!-- wp:list-item -->
-			<li><a href="https://wordpress.org/news/">WordPress News</a></li>
+			<li><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/news/', 'wporg' ) ); ?>"><?php _e( 'Developer Blog', 'wporg' ); ?></a></li>
 			<!-- /wp:list-item -->
 
 			<!-- wp:list-item -->
-			<li><a href="https://developer.wordpress.org/news/">Developer Blog</a></li>
+			<li><a href="<?php echo esc_url( __( 'https://events.wordpress.org/upcoming-events/', 'wporg' ) ); ?>"><?php _e( 'Upcoming WordPress events', 'wporg' ); ?></a></li>
 			<!-- /wp:list-item -->
 		</ul>
 		<!-- /wp:list -->
