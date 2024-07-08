@@ -12,10 +12,22 @@ const puppeteer = require( 'puppeteer' );
 const manifest = require( './page-manifest.json' );
 
 const IMAGE_PATH = path.resolve( process.env.GITHUB_WORKSPACE || '.', 'artifacts' );
-console.log( 'Saving images to ' + IMAGE_PATH );
 
 // node ./env/screenshot-changes.js [...files]
 const [ , , ...files ] = process.argv;
+
+async function getPageDetails( slug ) {
+	const apiUrl = `https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=${ slug }`;
+	let post = false;
+	try {
+		const response = await fetch( apiUrl );
+		[ post ] = await response.json();
+		post.localLink = post.link.replace( 'https://wordpress.org/', 'http://localhost:8888/' );
+	} catch ( error ) {
+		console.error( error.message );
+	}
+	return post;
+}
 
 ( async () => {
 	const browser = await puppeteer.launch( { headless: true } );
@@ -33,13 +45,10 @@ const [ , , ...files ] = process.argv;
 			( entry ) => entry.pattern === path.basename( file ) || `${ entry.slug }.php` === path.basename( file )
 		);
 		if ( found ) {
-			let url = `http://localhost:8888/?pagename=${ found.slug }`;
-			if ( 'home' === found.slug ) {
-				url = 'http://localhost:8888/';
-			}
-			console.log( `Capturing ${ url }` );
+			const post = await getPageDetails( found.slug );
+			console.log( `${ post.title.rendered } [${ post.link }]` );
 
-			await page.goto( url, { waitUntil: 'networkidle0' } );
+			await page.goto( post.localLink, { waitUntil: 'networkidle0' } );
 			await page.evaluate( async () => {
 				// eslint-disable-next-line no-undef
 				const images = document.querySelectorAll( 'img[class*=wp-image]' );
