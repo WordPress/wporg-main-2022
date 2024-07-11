@@ -25,10 +25,23 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run the content update
+        id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
           yarn wp-env start
+          yarn setup:wp
           yarn build:patterns
+          mkdir "$GITHUB_WORKSPACE/artifacts/"
+          git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php
+          changelist=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php | xargs yarn --silent screenshot-changes)
+          echo "changelist=$changelist" >> "$GITHUB_OUTPUT"
+
+      - name: Upload screenshots
+        id: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot-artifacts
+          path: "${{ github.workspace }}/artifacts/"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -39,5 +52,10 @@ jobs:
           title: 'Content updates from Page Editor'
           commit-message: '[automated] Sync content from Page Editor.'
           body: |
-            The content has changed in the Page Editor.
+            The following pages have been updated in the Page Editor.
+            ```
+            ${{ steps.build-patterns.outputs.changelist }}
+            ```
+            Screenshots: ${{ steps.upload-artifact.outputs.artifact-url }}
+            
             Please review, merge, and deploy.

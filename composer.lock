@@ -422,16 +422,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.0.2",
+            "version": "v5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "139676794dc1e9231bf7bcd123cfc0c99182cb13"
+                "reference": "683130c2ff8c2739f4822ff7ac5c873ec529abd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/139676794dc1e9231bf7bcd123cfc0c99182cb13",
-                "reference": "139676794dc1e9231bf7bcd123cfc0c99182cb13",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/683130c2ff8c2739f4822ff7ac5c873ec529abd1",
+                "reference": "683130c2ff8c2739f4822ff7ac5c873ec529abd1",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +442,7 @@
             },
             "require-dev": {
                 "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+                "phpunit/phpunit": "^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -474,9 +474,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.2"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.1.0"
             },
-            "time": "2024-03-05T20:51:40+00:00"
+            "time": "2024-07-01T20:03:41+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2478,7 +2478,7 @@
         },
         {
             "name": "wp-phpunit/wp-phpunit",
-            "version": "6.5.4",
+            "version": "6.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-phpunit/wp-phpunit.git",
@@ -2526,15 +2526,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "18.6.1",
+            "version": "18.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/18.6.1"
+                "reference": "tags/18.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.18.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.18.7.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2544,15 +2544,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "13.5",
+            "version": "13.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/13.5"
+                "reference": "tags/13.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.13.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.13.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2584,12 +2584,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "7078b00d24f480d1189bb37a90a93169640a827c"
+                "reference": "fcb0b6bef51062478aa6afbb64047746b80f822c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/7078b00d24f480d1189bb37a90a93169640a827c",
-                "reference": "7078b00d24f480d1189bb37a90a93169640a827c",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/fcb0b6bef51062478aa6afbb64047746b80f822c",
+                "reference": "fcb0b6bef51062478aa6afbb64047746b80f822c",
                 "shasum": ""
             },
             "require": {
@@ -2630,7 +2630,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2024-06-24T19:28:05+00:00"
+            "time": "2024-07-08T04:16:42+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
