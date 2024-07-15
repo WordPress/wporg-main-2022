@@ -376,7 +376,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Save time with <kbd>⌘G</kbd> for Mac or <kbd>ctrl</kbd> + <kbd>G</kbd> for windows to group selected blocks and tab to indent list items.', 'wporg' ); ?></p>
+<p><?php _e( 'Save time with <kbd>⌘G</kbd> for Mac or <kbd>ctrl</kbd> + <kbd>G</kbd> for Windows to group selected blocks and tab to indent list items.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
