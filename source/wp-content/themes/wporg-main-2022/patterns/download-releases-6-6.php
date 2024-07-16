@@ -402,7 +402,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);flex-basis:70%"><!-- wp:group {"align":"wide","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-1"} -->
-<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>570 contributors</em> who made this release', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>630 contributors</em> who made this release', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"16px","selfStretch":"fixed"}}} -->
