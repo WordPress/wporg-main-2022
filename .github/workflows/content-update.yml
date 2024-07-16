@@ -34,7 +34,7 @@ jobs:
           mkdir "$GITHUB_WORKSPACE/artifacts/"
           git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php
           changelist=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php | xargs yarn --silent screenshot-changes)
-          echo "changelist=$changelist" >> "$GITHUB_OUTPUT"
+          echo "changelist='$changelist'" >> "$GITHUB_OUTPUT"
 
       - name: Upload screenshots
         id: upload-artifact
