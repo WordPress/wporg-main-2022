@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0rem","bottom":"0rem"}}},"className":"is-home-intro-banner","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","className":"is-home-intro-banner","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0rem","bottom":"0rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-home-intro-banner" style="padding-top:0rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
@@ -22,7 +22,7 @@
 <div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/06/wceu-bg-2.png","id":40702,"source":"file","title":"wceu-bg-2"},"backgroundPosition":"0% 0%"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"84px","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:2rem;padding-right:var(--wp--preset--spacing--20);padding-bottom:2rem;padding-left:84px"><!-- wp:group {"style":{"typography":{"lineHeight":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="line-height:0"><!-- wp:html -->
-<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/ELW4Jdvujbc?si=sE2V6C7oFHugIquT" title="<?php _e( 'YouTube video player', 'wporg' ); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
@@ -104,19 +104,19 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Elevate your site-building experience with WordPress 6.5. This release includes a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'Bring style and finesse to your site-building experience with WordPress 6.6. This release includes more design options for Block themes, a new layout for quick page previews in the Site Editor, and rollbacks for plugin auto-updates.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-5/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.5', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-6/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.6', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":39769,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px","width":"1px"}},"borderColor":"light-grey-1"} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/04/feature-whatsnew.png" alt="<?php _e( 'Mural illustration features new to WordPress 6.5, including: the aspect ratio feature, the Interactivity API, and the new Fonts Library.', 'wporg' ); ?>" class="has-border-color has-light-grey-1-border-color wp-image-39769" style="border-width:1px;border-radius:4px" /></figure>
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":41377,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px","width":"1px"}},"borderColor":"light-grey-1"} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/07/6-6-whats-new-i1.png" alt="" class="has-border-color has-light-grey-1-border-color wp-image-41377" style="border-width:1px;border-radius:4px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -142,7 +142,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"className":"wporg-home-showcase-logos","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"wide","className":"wporg-home-showcase-logos","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":24441,"width":"173px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php _e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
 <!-- /wp:image -->
@@ -180,7 +180,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"charcoal-1","className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","className":"is-style-default","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"charcoal-1","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull is-style-default has-charcoal-1-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:image {"id":22644,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/10/showcase-top-row-full.png" alt="" class="wp-image-22644" /></figure>
 <!-- /wp:image -->
@@ -284,7 +284,7 @@
 
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"className":"is-style-with-arrow","fontSize":"heading-cta","fontFamily":"inter"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","className":"is-style-with-arrow","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"fontSize":"heading-cta","fontFamily":"inter"} -->
 <h2 class="wp-block-heading alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="/download/">Get started</a>', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
