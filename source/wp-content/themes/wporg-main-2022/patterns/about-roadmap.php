@@ -24,7 +24,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( '<a href="https://make.wordpress.org/core/">Test, iterate, and ship</a> Phase 3 of the Gutenberg project.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -49,8 +49,8 @@
 <p><?php _e( 'Here are the planned releases for 2024 and links to their respective milestones in our <a href="https://core.trac.wordpress.org/">issue tracker</a>. Any projected dates are for discussion and planning purposes only and will be firmed up as we get closer to release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://core.trac.wordpress.org/milestone/6.6"><?php _e( '6.6', 'wporg' ); ?></a></td><td><?php _e( 'July 2024', 'wporg' ); ?></td></tr><tr><td><?php _e( '6.7', 'wporg' ); ?></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table></figure>
+<!-- wp:table {"hasFixedLayout":false,"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://core.trac.wordpress.org/milestone/6.7"><?php _e( '6.7', 'wporg' ); ?></a></td><td><?php _e( 'November 2024', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
@@ -70,7 +70,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
+<ol class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'Easier Editing — Already available in WordPress, with ongoing improvements', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
