@@ -142,7 +142,7 @@
 <!-- wp:group {"metadata":{"name":"Secret power"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"charcoal-1","textColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
-<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'WordPress’ secret power', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'WordPress’s secret power', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -266,23 +266,26 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Elevate your site-building experience with WordPress 6.5. This release includes a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'The latest major WordPress version includes updates that can improve the blocks you use and enhance your overall site-building experience. Get more details about what features are available in the current release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"10px","style":{"layout":[]}} -->
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-5/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.5', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php
+/* translators: [stable_branch] is a shortcode and should not be translated. */
+_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
+?>"><?php _e( 'Discover the latest WordPress release', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":39769,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px","width":"1px"}},"borderColor":"light-grey-1"} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/04/feature-whatsnew.png" alt="<?php _e( 'Mural illustration features new to WordPress 6.5, including: the aspect ratio feature, the Interactivity API, and the new Fonts Library.', 'wporg' ); ?>" class="has-border-color has-light-grey-1-border-color wp-image-39769" style="border-width:1px;border-radius:4px" /></figure>
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":41377,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px","width":"1px"}},"borderColor":"light-grey-1"} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2024/07/6-6-whats-new-i1.png" alt="" class="has-border-color has-light-grey-1-border-color wp-image-41377" style="border-width:1px;border-radius:4px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
