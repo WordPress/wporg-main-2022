@@ -40,8 +40,8 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|30"}},"typography":{"lineHeight":1.4}},"className":"entry-content has-newsreader-font-family","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull entry-content has-newsreader-font-family" style="margin-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);line-height:1.4"><!-- wp:group {"layout":{"type":"constrained"},"fontFamily":"eb-garamond"} -->
+<!-- wp:group {"align":"full","className":"entry-content has-newsreader-font-family","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|30"}},"typography":{"lineHeight":1.4}},"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignfull entry-content has-newsreader-font-family" style="margin-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);line-height:1.4"><!-- wp:group {"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family"><!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php _e( 'State of the Word is the annual keynote address delivered by the WordPress project’s co-founder, <a href="https://ma.tt/">Matt Mullenweg</a>, celebrating the progress of the open source project and offering a glimpse into its future.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
@@ -112,7 +112,7 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Stream the event via WordPress social accounts or join a&nbsp;<a href="https://make.wordpress.org/community/handbook/meetup-organizer/state-of-the-word-watch-parties/">local watch party</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}},"className":"is-style-logos-only"} -->
+<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}}} -->
 <ul class="wp-block-social-links has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:0px"><!-- wp:social-link {"url":"https://www.youtube.com/watch?v=1MwT9EEkguE","service":"youtube"} /-->
 
 <!-- wp:social-link {"url":"https://www.linkedin.com/events/7137524538958848001/","service":"linkedin"} /-->
@@ -131,12 +131,12 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <p class="has-eb-garamond-font-family has-medium-font-size"><?php _e( 'Join Matt as he provides a retrospective of 2023, demos the latest in WordPress tech, and comments on the future of the WordPress open source project.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}}},"className":"sotw-quote ","layout":{"type":"constrained"},"fontFamily":"eb-garamond"} -->
-<div class="wp-block-group sotw-quote has-eb-garamond-font-family" style="margin-top:var(--wp--preset--spacing--90);margin-bottom:var(--wp--preset--spacing--90)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"58px","lineHeight":"1.1","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"charcoal-1","className":"is-style-serif"} -->
+<!-- wp:group {"className":"sotw-quote ","style":{"spacing":{"margin":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
+<div class="wp-block-group sotw-quote has-eb-garamond-font-family" style="margin-top:var(--wp--preset--spacing--90);margin-bottom:var(--wp--preset--spacing--90)"><!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"fontSize":"58px","lineHeight":"1.1","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"charcoal-1"} -->
 <p class="is-style-serif has-charcoal-1-color has-text-color has-link-color" style="margin-bottom:var(--wp--preset--spacing--30);font-size:58px;font-style:italic;font-weight:400;line-height:1.1"><?php _e( '<em>WordPress belongs to all of us, but really we’re taking care of it for the next generation.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"typography":{"fontSize":"30px"}},"textColor":"charcoal-1","className":"is-style-serif","fontFamily":"newsreader"} -->
+<!-- wp:paragraph {"className":"is-style-serif","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"typography":{"fontSize":"30px"}},"textColor":"charcoal-1","fontFamily":"newsreader"} -->
 <p class="is-style-serif has-charcoal-1-color has-text-color has-link-color has-newsreader-font-family" style="font-size:30px"><?php _e( '<em>— Matt Mullenweg</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -146,7 +146,7 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <h2 class="wp-block-heading has-anton-font-family" id="join-a-state-of-the-word-watch-party-near-you" style="font-size:80px;line-height:1;text-transform:uppercase"><?php _e( 'Join a State of the Word Watch Party near You', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"},"fontFamily":"eb-garamond"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family"><!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php _e( 'Can’t make it to Madrid? No problem, organize or join a watch party in your community in person or online. Like last year, the Community team has resources available to help! Check out&nbsp;<a href="https://make.wordpress.org/community/handbook/meetup-organizer/state-of-the-word-watch-parties/">this handbook page</a>, which includes event templates and information on requesting a Zoom account.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
@@ -176,7 +176,7 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <h3 class="wp-block-heading has-anton-font-family" style="text-transform:uppercase"><?php _e( 'Have a question for Matt?', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:group {"style":{"typography":{"lineHeight":1.4},"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"},"fontSize":"large","fontFamily":"eb-garamond"} -->
+<!-- wp:group {"style":{"typography":{"lineHeight":1.4},"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"large","fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family has-large-font-size" style="line-height:1.4"><!-- wp:paragraph -->
 <p><?php _e( 'State of the Word will include a Q&amp;A session. If you want to participate, you can send your question to&nbsp;<a target="_blank" href="mailto:ask-matt@wordcamp.org" rel="noreferrer noopener">ask-matt@wordcamp.org</a>&nbsp;or ask during the event via the Q&amp;A app Slido. A QR code for your submission will be provided during the event live stream.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
@@ -188,7 +188,7 @@ https://www.youtube.com/watch?v=c7M4mBVgP3Y
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"32px","margin":{"top":"192px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:192px"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase","lineHeight":"1","fontSize":"80px"},"spacing":{"padding":{"right":"40px"},"margin":{"bottom":"var:preset|spacing|40"}}},"className":"sotw-heading-splash","fontFamily":"anton"} -->
+<div class="wp-block-group" style="margin-top:192px"><!-- wp:heading {"className":"sotw-heading-splash","style":{"typography":{"textTransform":"uppercase","lineHeight":"1","fontSize":"80px"},"spacing":{"padding":{"right":"40px"},"margin":{"bottom":"var:preset|spacing|40"}}},"fontFamily":"anton"} -->
 <h2 class="wp-block-heading sotw-heading-splash has-anton-font-family" style="margin-bottom:var(--wp--preset--spacing--40);padding-right:40px;font-size:80px;line-height:1;text-transform:uppercase"><?php _e( 'Watch past State of the Word Keynotes', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -233,13 +233,13 @@ https://www.youtube.com/watch?v=QI3qCoiuG3w
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"80px"},"blockGap":"30px","margin":{"bottom":"100px"}}},"layout":{"type":"constrained"},"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"80px"},"blockGap":"30px","margin":{"bottom":"100px"}}},"fontSize":"extra-large","fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family has-extra-large-font-size" style="margin-bottom:100px;padding-top:80px;padding-bottom:80px"><!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center"><?php _e( 'See you <em>December 11!</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"color":{"text":"#ff2b2b"},"elements":{"link":{"color":{"text":"#ff2b2b"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-text-color has-link-color" style="color:#ff2b2b"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"color":{"text":"#ee0000"},"elements":{"link":{"color":{"text":"#ee0000"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#ee0000"><!-- wp:paragraph -->
 <p><?php _e( '#sotw', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
