@@ -549,7 +549,7 @@ $wporg-about-breakpoint-max: 1920px;
 
 // Styles for the State of the Word page.
 .page-template-page-state-of-the-word a {
-	color: #ff2b2b;
+	color: #ee0000;
 }
 
 @media (max-width: 419px) {
@@ -610,10 +610,6 @@ $wporg-about-breakpoint-max: 1920px;
 .wp-block-cover .wp-block-embed.no-min-sizing {
 	min-width: unset;
 	min-height: unset;
-}
-
-.page-template-page-data-liberation h3 a {
-	text-decoration: none;
 }
 
 /**
