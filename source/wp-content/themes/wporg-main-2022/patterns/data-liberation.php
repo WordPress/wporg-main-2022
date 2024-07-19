@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"50px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"ibm-plex-sans"} -->
 <h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php _e( 'Data Liberation', 'wporg' ); ?></h1>
@@ -44,16 +44,16 @@
 <p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Easy to use step by step guidelines to help you move your site to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"className":"is-style-cards-grid","layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
+<!-- wp:group {"className":"is-style-cards-grid","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
 <div class="wp-block-group is-style-cards-grid"><!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/blob/trunk/guides/squarespace-to-wordpress.md', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Squarespace to WordPress</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Squarespace to WordPress', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
 <!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/blob/trunk/guides/tumblr-to-wordpress.md', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Tumblr to WordPress</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Tumblr to WordPress', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
@@ -71,13 +71,13 @@
 
 <!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/blob/trunk/guides/wix-to-wordpress.md', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Wix to WordPress</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Wix to WordPress', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
 <!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/blob/trunk/guides/drupal-to-wordpress.md', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Drupal to WordPress</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Drupal to WordPress', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
@@ -110,22 +110,22 @@
 <p class="has-charcoal-4-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( 'Mix and match export, conversion, and import tools to design a personalized migration path that works for you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"className":"is-style-cards-grid","layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
+<!-- wp:group {"className":"is-style-cards-grid","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"grid","minimumColumnWidth":"32%"}} -->
 <div class="wp-block-group is-style-cards-grid"><!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/tree/trunk/tools/figma-to-blocks', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Figma to Blocks</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Figma to Blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
 <!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/tree/trunk/tools/divi-to-gutenberg', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Divi to Blocks</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Divi to Blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper -->
 
 <!-- wp:wporg/link-wrapper -->
 <a class="wp-block-wporg-link-wrapper" href="<?php _e( 'https://github.com/WordPress/move-to-wp/tree/trunk/tools/classic-to-gutenberg', 'wporg' ); ?>"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( '<strong>Classic Editor to Blocks</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-small-font-size" style="margin-top:0;margin-bottom:0;font-style:normal;font-weight:700"><?php _e( 'Classic Editor to Blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading --></a>
 <!-- /wp:wporg/link-wrapper --></div>
 <!-- /wp:group -->
@@ -142,7 +142,7 @@
 <p class="has-white-color has-text-color has-link-color has-eb-garamond-font-family has-heading-4-font-size"><?php _e( 'Have a workflow, tool, or time to contribute? We’d love help to make the web more open.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
+<!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"has-custom-width is-style-outline-on-dark"} -->
 <div class="wp-block-button has-custom-width is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://github.com/WordPress/move-to-wp/tree/trunk#how-to-contribute', 'wporg' ); ?>"><?php _e( 'Get Started', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
