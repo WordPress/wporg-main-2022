@@ -84,6 +84,11 @@
 		"template": "page-blocks.html"
 	},
 	{
+		"slug": "creator-connections",
+		"pattern": "creator-connections.php",
+		"template": "page-creator-connections.html"
+	},
+	{
 		"slug": "download",
 		"template": "page-download.html"
 	},
