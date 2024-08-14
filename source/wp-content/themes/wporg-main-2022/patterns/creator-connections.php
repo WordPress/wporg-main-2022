@@ -96,7 +96,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://refer.wordpress.com/affiliate-network/faq/', 'wporg' ); ?>"><?php _e( 'WordPress.com affiliate program↗', 'wporg' ); ?></a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://automattic.com/affiliates/', 'wporg' ); ?>"><?php _e( 'WordPress.com affiliate program↗', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
