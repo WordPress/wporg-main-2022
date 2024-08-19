@@ -263,7 +263,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white"} -->
-<li class="has-white-color has-text-color has-link-color"><?php _e( 'Connect with WordPress across social media platforms:&nbsp;<a href="https://www.tumblr.com/wordpress">Tumblr</a>,&nbsp;<a href="https://twitter.com/WordPress/">Twitter</a>,&nbsp;<a href="https://www.facebook.com/WordPress/">Facebook</a>,&nbsp;<a href="https://www.instagram.com/wordpress/">Instagram</a>,&nbsp;<a href="https://www.linkedin.com/company/wordpress/">Linkedin</a>, and&nbsp;<a href="https://www.youtube.com/wordpress">YouTube</a>.', 'wporg' ); ?></li>
+<li class="has-white-color has-text-color has-link-color"><?php _e( 'Connect with WordPress across social media platforms: <a href="https://www.tumblr.com/wordpress">Tumblr</a>, <a href="https://x.com/wordpress">X/Twitter</a>, <a href="https://www.facebook.com/WordPress/">Facebook</a>, <a href="https://www.instagram.com/wordpress/">Instagram</a>, <a href="https://www.linkedin.com/company/wordpress/">Linkedin</a>, and <a href="https://www.youtube.com/wordpress">YouTube</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white"} -->
