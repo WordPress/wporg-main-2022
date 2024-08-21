@@ -19,11 +19,9 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}},"backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:image {"id":41862,"sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:image {"id":41862,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/08/tokyo-ai-bg-1.png" alt="<?php _e( 'State of the Word 2024 - Tokyo Graphic', 'wporg' ); ?>" class="wp-image-41862" /></figure>
 <!-- /wp:image --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
