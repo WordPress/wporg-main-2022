@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress aims to make the WordPress Admin and bundled themes fully WCAG 2.0 AA compliant where possible.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress aims to make the WordPress Admin and bundled themes fully WCAG 2.1 AA compliant where possible.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
