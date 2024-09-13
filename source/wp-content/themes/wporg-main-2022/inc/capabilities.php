@@ -182,6 +182,10 @@ function get_designer_role_caps() {
 
 	$role_caps['edit_published_pages'] = true;
 	$role_caps['edit_others_pages']    = true;
+	$role_caps['read_private_pages']   = true;
+	$role_caps['read_private_posts']   = true;
+	$role_caps['edit_private_pages']   = true;
+	$role_caps['edit_private_posts']   = true;
 	$role_caps['publish_pages']        = true;
 	$role_caps['edit_pages']           = true;
 	unset( $role_caps['delete_posts'] ); // Mainly to prevent deleting media
