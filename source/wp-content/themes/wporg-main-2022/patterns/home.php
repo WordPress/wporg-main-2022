@@ -25,12 +25,12 @@
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
 <div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/09/wcus-topography.png","id":42406,"source":"file","title":"wcus-topography"},"backgroundPosition":"50% 0"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|70"}},"border":{"top":{"width":"0px","style":"none"},"right":{"color":"#ff4832","width":"16px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"#ff4832","width":"16px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-style:none;border-top-width:0px;border-right-color:#ff4832;border-right-width:16px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#ff4832;border-left-width:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:shortcode -->
-[youtube-nocookie]https://www.youtube-nocookie.com/embed/videoseries?si=29ITdLkSrGq3FDDe&amp;list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx[/youtube-nocookie]
-<!-- /wp:shortcode -->
+<div class="wp-block-group" style="border-top-style:none;border-top-width:0px;border-right-color:#ff4832;border-right-width:16px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#ff4832;border-left-width:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":42393,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/09/wcus-logo.png" alt="<?php _e( 'WCUS 2024', 'wporg' ); ?>" class="wp-image-42393" style="object-fit:cover" /></figure>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Watch the <a href="https://us.wordcamp.org/2024/livestream/">live stream of WordCamp US 2024</a> to stay on top of all the keynotes and presentations.', 'wporg' ); ?></p>
+<p><?php _e( 'Read the <a href="https://wordpress.org/news/2024/09/pdx-wcus-2024-a-recap/" data-type="link" data-id="https://wordpress.org/news/2024/09/pdx-wcus-2024-a-recap/">recap of this year&#039;s highlights</a>, then catch up on all the presentations on the <a href="https://youtube.com/playlist?list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx&amp;feature=shared" data-type="link" data-id="https://youtube.com/playlist?list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx&amp;feature=shared">WordPress YouTube channel</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

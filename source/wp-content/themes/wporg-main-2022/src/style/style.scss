@@ -468,6 +468,14 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
+@media (max-width: 600px) {
+
+	/* Remove the spacer on Creator Connections page. */
+	.page-template-page-creator-connections #intro + .wp-block-spacer {
+		height: 0 !important;
+	}
+}
+
 @media (max-width: 599px) {
 	.wp-block-buttons .wp-block-button,
 	.wp-block-buttons .wp-block-button .wp-block-button__link {
