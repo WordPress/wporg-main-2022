@@ -9,21 +9,21 @@
 <!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"0","left":"var:preset|spacing|edge-space","top":"0rem","bottom":"0rem"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" id="intro" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;border-left-style:none;border-left-width:0px;padding-top:0rem;padding-right:0;padding-bottom:0rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"},"padding":{"right":"0"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-right:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"fontSize":"heading-2"} -->
-<h1 class="wp-block-heading has-heading-2-font-size"><?php _e( 'WordPress<br>Creator Connections', 'wporg' ); ?></h1>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"fontSize":"heading-2"} -->
+<h1 class="wp-block-heading has-heading-2-font-size" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><?php _e( 'WordPress<br>Creator Connections', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":41706,"width":"556px","height":"auto","aspectRatio":"2.1733333333333333","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/08/creator-connections-her-graphics-2.png" alt="" class="wp-image-41706" style="aspect-ratio:2.1733333333333333;object-fit:cover;width:556px;height:auto" /></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":41706,"width":"auto","height":"270px","aspectRatio":"16/9","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/08/creator-connections-her-graphics-2.png" alt="" class="wp-image-41706" style="aspect-ratio:16/9;object-fit:cover;width:auto;height:270px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"var:preset|spacing|70"} -->
+<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"align":"wide","mediaId":41597,"mediaLink":"https://wordpress.org/?attachment_id=41597","mediaType":"image","mediaWidth":47} -->
@@ -139,8 +139,8 @@
 <div style="height:160px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"align":"wide","className":"is-style-two-column-display","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|80"}}}} -->
-<div class="wp-block-columns alignwide is-style-two-column-display" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column -->
+<!-- wp:columns {"align":"wide","className":"is-style-two-column-display","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|80"}}}} -->
+<div class="wp-block-columns alignwide is-style-two-column-display" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'How to get started', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
@@ -172,8 +172,8 @@
 <!-- /wp:spacer --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"bottom":"0"},"blockGap":"0","padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:spacer {"height":"80px","width":"0px","style":{"layout":[]}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"bottom":"0"},"blockGap":"0","padding":{"top":"0","bottom":"0","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="margin-bottom:0;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:spacer {"height":"80px","width":"0px","style":{"layout":[]}} -->
 <div style="height:80px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -236,8 +236,8 @@
 <!-- /wp:spacer --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"bottom":"0"},"blockGap":"0","padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-charcoal-2-background-color has-background" style="margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:spacer {"height":"80px","width":"0px","style":{"layout":[]}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"bottom":"0"},"blockGap":"0","padding":{"top":"0","bottom":"0","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-charcoal-2-background-color has-background" style="margin-bottom:0;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:spacer {"height":"80px","width":"0px","style":{"layout":[]}} -->
 <div style="height:80px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -263,7 +263,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white"} -->
-<li class="has-white-color has-text-color has-link-color"><?php _e( 'Connect with WordPress across social media platforms: <a href="https://www.tumblr.com/wordpress">Tumblr</a>, <a href="https://x.com/wordpress">X/Twitter</a>, <a href="https://www.facebook.com/WordPress/">Facebook</a>, <a href="https://www.instagram.com/wordpress/">Instagram</a>, <a href="https://www.linkedin.com/company/wordpress/">Linkedin</a>, and <a href="https://www.youtube.com/wordpress">YouTube</a>.', 'wporg' ); ?></li>
+<li class="has-white-color has-text-color has-link-color"><?php _e( 'Connect with WordPress across social media platforms: <a href="https://www.tumblr.com/wordpress">Tumblr</a>, <a href="https://x.com/wordpress">X/Twitter</a>, <a href="https://www.facebook.com/WordPress/">Facebook</a>, <a href="https://www.instagram.com/wordpress/">Instagram</a>, <a href="https://www.linkedin.com/company/wordpress/">Linkedin</a>, and <a href="https://www.youtube.com/wordpress">YouTube</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-2"}}}},"textColor":"white"} -->
