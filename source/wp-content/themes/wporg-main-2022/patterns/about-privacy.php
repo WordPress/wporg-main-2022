@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'our legitimate interests in the effective delivery of information and services to you;', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -122,7 +122,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
+<ol class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'Visit&nbsp;<a href="https://login.wordpress.org/">https://login.wordpress.org/</a>, and enter your username and password.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -140,7 +140,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
+<ol class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'Visit&nbsp;<a href="https://wordpress.org/about/privacy/data-export-request/">https://wordpress.org/about/privacy/data-export-request/</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -186,7 +186,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
+<ol class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'Visit&nbsp;<a href="https://wordpress.org/about/privacy/data-erasure-request/">https://wordpress.org/about/privacy/data-erasure-request/</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -212,7 +212,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'request a copy of personal information we hold about you;', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -287,7 +287,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( '<a href="https://href.li/?https://lookup.icann.org">https://lookup.icann.org</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -298,7 +298,7 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Please contact us if you have any questions about our privacy policy or information we hold about you by emailing dpo@wordpress.org.', 'wporg' ); ?></p>
+<p><?php _e( 'Please contact us if you have any questions about our privacy policy or information we hold about you by emailing <a href="mailto:dpo@wordpress.org?subject=Privacy%20Policy">dpo@wordpress.org</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"linkDestination":"custom"} -->

@@ -6,34 +6,22 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0rem","bottom":"0rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:0rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
 <h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
 <p class="is-style-short-text"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":"2.5em"} -->
-<div style="height:2.5em" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
+<!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
-<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/09/wcus-topography.png","id":42406,"source":"file","title":"wcus-topography"},"backgroundPosition":"50% 0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|70"}},"border":{"top":{"width":"0px","style":"none"},"right":{"color":"#ff4832","width":"16px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"#ff4832","width":"16px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-style:none;border-top-width:0px;border-right-color:#ff4832;border-right-width:16px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#ff4832;border-left-width:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":42393,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/09/wcus-logo.png" alt="<?php _e( 'WCUS 2024', 'wporg' ); ?>" class="wp-image-42393" style="object-fit:cover" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'Read the <a href="https://wordpress.org/news/2024/09/pdx-wcus-2024-a-recap/" data-type="link" data-id="https://wordpress.org/news/2024/09/pdx-wcus-2024-a-recap/">recap of this year&#039;s highlights</a>, then catch up on all the presentations on the <a href="https://youtube.com/playlist?list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx&amp;feature=shared" data-type="link" data-id="https://youtube.com/playlist?list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx&amp;feature=shared">WordPress YouTube channel</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":39758,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/brush.png" alt="" class="wp-image-39758" /></figure>
+<!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
