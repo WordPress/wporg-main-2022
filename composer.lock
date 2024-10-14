@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf4c7407d455cde344598abda0aff1b4",
+    "content-hash": "e273e6d3af8df73e1f66cc92952350b4",
     "packages": [],
     "packages-dev": [
         {
@@ -422,16 +422,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.3.0",
+            "version": "v5.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a"
+                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3abf7425cd284141dc5d8d14a9ee444de3345d1a",
-                "reference": "3abf7425cd284141dc5d8d14a9ee444de3345d1a",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8eea230464783aa9671db8eea6f8c6ac5285794b",
+                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b",
                 "shasum": ""
             },
             "require": {
@@ -474,9 +474,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.1"
             },
-            "time": "2024-09-29T13:56:26+00:00"
+            "time": "2024-10-08T18:51:32+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2525,16 +2525,34 @@
             "time": "2024-07-17T01:13:44+00:00"
         },
         {
-            "name": "wpackagist-plugin/gutenberg",
-            "version": "19.3.0",
+            "name": "wpackagist-plugin/block-visibility",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/19.3.0"
+                "url": "https://plugins.svn.wordpress.org/block-visibility/",
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/block-visibility/"
+        },
+        {
+            "name": "wpackagist-plugin/gutenberg",
+            "version": "19.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gutenberg/",
+                "reference": "tags/19.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2544,15 +2562,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "13.8.1",
+            "version": "13.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/13.8.1"
+                "reference": "tags/13.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.13.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.13.9.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2584,12 +2602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "207512b72370caea1b15b4d443bf8c4b71073d14"
+                "reference": "3d851403522f1c9bf7d9c0fc9eb6e7d6075fc091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/207512b72370caea1b15b4d443bf8c4b71073d14",
-                "reference": "207512b72370caea1b15b4d443bf8c4b71073d14",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/3d851403522f1c9bf7d9c0fc9eb6e7d6075fc091",
+                "reference": "3d851403522f1c9bf7d9c0fc9eb6e7d6075fc091",
                 "shasum": ""
             },
             "require": {
@@ -2630,7 +2648,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2024-09-26T18:25:32+00:00"
+            "time": "2024-10-14T19:12:30+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",

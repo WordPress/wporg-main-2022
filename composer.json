@@ -117,6 +117,7 @@
 		"wordpress-meta/wporg-markdown": "1",
 		"wp-coding-standards/wpcs": "2.*",
 		"wp-phpunit/wp-phpunit": "6.*",
+		"wpackagist-plugin/block-visibility": "*",
 		"wpackagist-plugin/gutenberg": "*",
 		"wpackagist-plugin/jetpack": "*",
 		"wpackagist-plugin/wordpress-importer": "*",
