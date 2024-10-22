@@ -1,38 +1,24 @@
 {
-	"name": "wporg-main-2022",
+	"name": "wporg-main-2022-theme",
 	"version": "1.0.0",
-	"description": "The codebase and development environment for the main wordpress.org site.",
+	"description": "",
 	"author": "WordPress.org",
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "10.0.0",
-		"@wordpress/eslint-plugin": "18.1.0",
-		"@wordpress/scripts": "27.9.0",
-		"backstopjs": "^6.1.4",
-		"lighthouse-ci": "^1.13.1",
-		"puppeteer": "^22.6.1"
+		"@wordpress/scripts": "27.9.0"
+	},
+	"eslintConfig": {
+		"extends": "../../../../.eslintrc.js"
+	},
+	"stylelint": {
+		"extends": "../../../../.stylelintrc"
 	},
 	"scripts": {
-		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
-		"setup:wp": "wp-env run cli bash env/setup.sh && ./env/refresh.sh",
-		"setup:refresh": "./env/refresh.sh",
-		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
-		"wp-env": "wp-env",
-		"backstop:reference": "npm exec backstop reference",
-		"backstop:test": "npm exec backstop test",
-		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100 --seo=100",
-		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
-		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html",
-		"build:patterns": "./env/build-patterns.sh",
-		"screenshot-changes": "node ./env/screenshot-changes.js",
-		"build:theme": "yarn workspace wporg-main-2022-theme build",
-		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
-		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
-		"start:theme": "yarn workspace wporg-main-2022-theme start",
-		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
-	},
-	"workspaces": [
-		"source/wp-content/themes/wporg-main-2022"
-	]
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js src",
+		"lint:css": "wp-scripts lint-style *.css src/**/*.scss",
+		"format": "wp-scripts format src"
+	}
 }
