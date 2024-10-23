@@ -9,6 +9,7 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
+__( 'WordPress 6.7', 'wporg' );
 __( 'WordPress 6.6', 'wporg' );
 __( 'Swag', 'wporg' );
 __( 'WordPress 6.5', 'wporg' );
