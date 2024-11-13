@@ -52,6 +52,11 @@ function custom_open_graph_tags( $tags = [] ) {
 		return $tags;
 	}
 
+	// Prevent content from "leaking" in embeds on pages in progress.
+	if ( 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+		return [];
+	}
+
 	// These values are not correct for our page templates.
 	unset( $tags['article:published_time'], $tags['article:modified_time'] );
 
@@ -210,5 +215,21 @@ add_action(
 	'init',
 	function() {
 		add_post_type_support( 'page', 'excerpt' );
+	}
+);
+
+/**
+ * Fake the `blog_public` option to prevent search engines from indexing pages in progress.
+ *
+ * This setting is used by the `wp_robots_*` functions to add noindex, nofollow meta tags.
+ */
+add_filter(
+	'pre_option_blog_public',
+	function( $pre ) {
+		global $post;
+		if ( $post && 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+			return 0;
+		}
+		return $pre;
 	}
 );
