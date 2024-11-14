@@ -3316,10 +3316,10 @@
     mime "^3.0.0"
     web-vitals "^3.5.0"
 
-"@wordpress/env@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.0.0.tgz#afb43ba7a0272c1410ebdccb9c81c5faf3dd5de1"
-  integrity sha512-GpbYT7P61U6PWOqpyPmTBGLswBoyOCUtGF2/0qCsbN7vC8oekm+iNpYT2JS0ETSC1/8esxxKlYVvLxXwTF9MPg==
+"@wordpress/env@10.11.0":
+  version "10.11.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/env/-/env-10.11.0.tgz#e3797d1768c4e0e206921878400d5dd6b0e3998e"
+  integrity sha512-Sd31oiYxy9/pNMfYw7XgtCBoD4PpvcK1UQ/FVFP+DsTTuo55Ma4UAHMKfg2NhnZWqhJTgPC6XXzicGpr/lK4RQ==
   dependencies:
     chalk "^4.0.0"
     copy-dir "^1.3.0"
