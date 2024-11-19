@@ -25,7 +25,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
-<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"82px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/11/mons-small.jpg","id":44030,"source":"file","title":"mons-small"},"backgroundSize":"cover","backgroundPosition":"0% 50%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"82px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/11/mons-hero-w-org-sotw.png","id":44259,"source":"file","title":"mons-hero-w-org-sotw"},"backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"50% 50%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
 <div class="wp-block-group" style="min-height:82px"></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
