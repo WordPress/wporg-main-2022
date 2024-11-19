@@ -6,8 +6,8 @@
  */
 
 ?>
-<!-- wp:cover {"url":"https://wordpress.org/files/2024/11/cover-hero-sotw-2024-landing.png","id":44233,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.45},"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-44233 size-full" alt="" src="https://wordpress.org/files/2024/11/cover-hero-sotw-2024-landing.png" style="object-position:50% 45%" data-object-fit="cover" data-object-position="50% 45%" /><div class="wp-block-cover__inner-container"><!-- wp:image {"id":44227,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<!-- wp:cover {"url":"https://wordpress.org/files/2024/11/sotw-2024-landing-hero.png","id":44264,"dimRatio":0,"isUserOverlayColor":true,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-44264 size-full" alt="" src="https://wordpress.org/files/2024/11/sotw-2024-landing-hero.png" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:image {"id":44227,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2024/11/sotw-logo-2024-tokyo@3x.png" alt="" class="wp-image-44227" /></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
@@ -216,8 +216,8 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <p class="has-text-align-center"><?php _e( 'See you <em>December 16!</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"color":{"text":"#ee0000"},"elements":{"link":{"color":{"text":"#ee0000"}}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-text-color has-link-color" style="color:#ee0000"><!-- wp:paragraph -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
 <p><?php _e( '#StateOfTheWord', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -227,7 +227,3 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
