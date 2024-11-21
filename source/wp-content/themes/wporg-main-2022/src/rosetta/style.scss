@@ -7,6 +7,7 @@ $wporg-about-breakpoint-min: 600px;
 $wporg-about-breakpoint-max: 1920px;
 
 [lang="zh-CN"],
+[lang="zh-Hans"],
 [lang="ja"] {
 	// Any line height < 1.
 	[class*="wp-block"][style*="line-height:0."] {
