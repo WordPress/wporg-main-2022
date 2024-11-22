@@ -6,26 +6,26 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"SOTW Tokyo 2024"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-2","width":"1px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
-<div class="wp-block-group alignfull" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-2);border-bottom-width:1px;border-left-style:none;border-left-width:0px;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
+<!-- wp:group {"metadata":{"name":"SOTW Tokyo 2024"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
+<div class="wp-block-group alignfull" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;border-left-style:none;border-left-width:0px;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|10","left":"40px"},"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"center","width":"150px"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><!-- wp:image {"id":44021,"width":"150px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/sotw-logo.png" alt="<?php _e( 'SOTW logo', 'wporg' ); ?>" class="wp-image-44021" style="width:150px" /></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><!-- wp:image {"id":44021,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2024/11/sotw-logo.png" alt="<?php _e( 'SOTW logo', 'wporg' ); ?>" class="wp-image-44021" style="width:150px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":""} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"}}} -->
-<p style="line-height:1.2"><?php _e( '<a href="https://wordpress.org/state-of-the-word/">State of the Word, Tokyo | December 16, 2024</a>', 'wporg' ); ?></p>
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2"}}} -->
+<p class="has-text-align-center" style="line-height:1.2"><?php _e( '<a href="https://wordpress.org/state-of-the-word/">State of the Word, Tokyo | December 16, 2024</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
-<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"82px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/11/mons-hero-w-org-sotw.png","id":44259,"source":"file","title":"mons-hero-w-org-sotw"},"backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"50% 50%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"82px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/11/mons-hero-w-org-sotw.png","id":44259,"source":"file","title":"mons-hero-w-org-sotw"},"backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"50% 50%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group" style="min-height:82px"></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
