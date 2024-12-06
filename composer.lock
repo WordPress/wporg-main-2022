@@ -1121,16 +1121,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.21",
+            "version": "9.6.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "de6abf3b6f8dd955fac3caad3af7a9504e8c2ffa"
+                "reference": "f80235cb4d3caa59ae09be3adf1ded27521d1a9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/de6abf3b6f8dd955fac3caad3af7a9504e8c2ffa",
-                "reference": "de6abf3b6f8dd955fac3caad3af7a9504e8c2ffa",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f80235cb4d3caa59ae09be3adf1ded27521d1a9c",
+                "reference": "f80235cb4d3caa59ae09be3adf1ded27521d1a9c",
                 "shasum": ""
             },
             "require": {
@@ -1141,7 +1141,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.12.0",
+                "myclabs/deep-copy": "^1.12.1",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=7.3",
@@ -1204,7 +1204,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.21"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.22"
             },
             "funding": [
                 {
@@ -1220,7 +1220,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-19T10:50:18+00:00"
+            "time": "2024-12-05T13:48:26+00:00"
         },
         {
             "name": "rmccue/requests",
@@ -2247,16 +2247,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.11.0",
+            "version": "3.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "70c08f8d20c0eb4fe56f26644dd94dae76a7f450"
+                "reference": "19473c30efe4f7b3cd42522d0b2e6e7f243c6f87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/70c08f8d20c0eb4fe56f26644dd94dae76a7f450",
-                "reference": "70c08f8d20c0eb4fe56f26644dd94dae76a7f450",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/19473c30efe4f7b3cd42522d0b2e6e7f243c6f87",
+                "reference": "19473c30efe4f7b3cd42522d0b2e6e7f243c6f87",
                 "shasum": ""
             },
             "require": {
@@ -2323,7 +2323,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-11-12T09:53:29+00:00"
+            "time": "2024-11-16T12:02:36+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -2478,16 +2478,16 @@
         },
         {
             "name": "wp-phpunit/wp-phpunit",
-            "version": "6.7.0",
+            "version": "6.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-phpunit/wp-phpunit.git",
-                "reference": "2ed55b450c10f6850c44531bed7d86aceba2f842"
+                "reference": "e63eb1c0980839853c569d3f04ff70263b7795e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-phpunit/wp-phpunit/zipball/2ed55b450c10f6850c44531bed7d86aceba2f842",
-                "reference": "2ed55b450c10f6850c44531bed7d86aceba2f842",
+                "url": "https://api.github.com/repos/wp-phpunit/wp-phpunit/zipball/e63eb1c0980839853c569d3f04ff70263b7795e3",
+                "reference": "e63eb1c0980839853c569d3f04ff70263b7795e3",
                 "shasum": ""
             },
             "type": "library",
@@ -2522,7 +2522,7 @@
                 "issues": "https://github.com/wp-phpunit/issues",
                 "source": "https://github.com/wp-phpunit/wp-phpunit"
             },
-            "time": "2024-11-13T01:22:47+00:00"
+            "time": "2024-11-22T01:27:46+00:00"
         },
         {
             "name": "wpackagist-plugin/block-visibility",
@@ -2544,15 +2544,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "19.6.2",
+            "version": "19.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/19.6.2"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.zip?timestamp=1733318035"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2562,15 +2562,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "14.0",
+            "version": "14.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/14.0"
+                "reference": "tags/14.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.14.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/jetpack.14.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2602,12 +2602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "a79757142e75d5339bffb82de45f5746d5dbe390"
+                "reference": "dcda0f15aab3c5447f14d2a0ceb92a794f8e506a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/a79757142e75d5339bffb82de45f5746d5dbe390",
-                "reference": "a79757142e75d5339bffb82de45f5746d5dbe390",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/dcda0f15aab3c5447f14d2a0ceb92a794f8e506a",
+                "reference": "dcda0f15aab3c5447f14d2a0ceb92a794f8e506a",
                 "shasum": ""
             },
             "require": {
@@ -2648,7 +2648,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2024-11-13T04:16:01+00:00"
+            "time": "2024-12-04T20:41:46+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2656,12 +2656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-parent-2021.git",
-                "reference": "b92fde685fd7edd37bdcf2842c15a45ebc06c269"
+                "reference": "8c3be7ed856a01a293ec3c7a381d8004b5c7ef51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/b92fde685fd7edd37bdcf2842c15a45ebc06c269",
-                "reference": "b92fde685fd7edd37bdcf2842c15a45ebc06c269",
+                "url": "https://api.github.com/repos/WordPress/wporg-parent-2021/zipball/8c3be7ed856a01a293ec3c7a381d8004b5c7ef51",
+                "reference": "8c3be7ed856a01a293ec3c7a381d8004b5c7ef51",
                 "shasum": ""
             },
             "type": "wordpress-theme",
@@ -2669,7 +2669,7 @@
                 "source": "https://github.com/WordPress/wporg-parent-2021/tree/build",
                 "issues": "https://github.com/WordPress/wporg-parent-2021/issues"
             },
-            "time": "2024-11-13T04:15:50+00:00"
+            "time": "2024-12-05T16:07:39+00:00"
         },
         {
             "name": "wporg/wporg-repo-tools",
