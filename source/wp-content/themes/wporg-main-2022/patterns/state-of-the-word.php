@@ -7,13 +7,23 @@
 
 ?>
 <!-- wp:cover {"url":"https://wordpress.org/files/2024/11/sotw-2024-landing-hero.png","id":44264,"dimRatio":0,"isUserOverlayColor":true,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-44264 size-full" alt="" src="https://wordpress.org/files/2024/11/sotw-2024-landing-hero.png" data-object-fit="cover" /><div class="wp-block-cover__inner-container"><!-- wp:image {"id":44227,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<div class="wp-block-cover alignfull is-light"><img class="wp-block-cover__image-background wp-image-44264 size-full" alt="" src="https://wordpress.org/files/2024/11/sotw-2024-landing-hero.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":44227,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.org/files/2024/11/sotw-logo-2024-tokyo@3x.png" alt="" class="wp-image-44227" /></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:group {"align":"full","className":"entry-content has-newsreader-font-family","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|30"}},"typography":{"lineHeight":1.4}},"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull entry-content has-newsreader-font-family" style="margin-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);line-height:1.4"><!-- wp:group {"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull entry-content has-newsreader-font-family" style="margin-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);line-height:1.4"><!-- wp:group {"style":{"border":{"top":{"width":"1px"}},"spacing":{"padding":{"top":"40px"}}},"fontFamily":"eb-garamond","layout":{"type":"constrained"},"blockVisibility":{"hideBlock":true}} -->
+<div class="wp-block-group has-eb-garamond-font-family" style="border-top-width:1px;padding-top:40px"><!-- wp:shortcode -->
+[youtube-nocookie]https://www.youtube-nocookie.com/embed/videoseries?si=29ITdLkSrGq3FDDe&amp;list=PL1pJFUVKQ7EQixhsOkTHpy9-VIF3hxqsx[/youtube-nocookie]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php _e( 'Watch State of the Word, the annual keynote address live from Tokyo.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family"><!-- wp:heading {"style":{"border":{"top":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontFamily":"eb-garamond"} -->
 <h2 class="wp-block-heading has-eb-garamond-font-family" style="border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><?php _e( 'State of the Word Tokyo 2024 | Dec 16, 2024', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
@@ -47,7 +57,7 @@
 <!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}}} -->
 <div class="wp-block-columns is-not-stacked-on-mobile" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"80px"} -->
 <div class="wp-block-column" style="flex-basis:80px"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( '<strong>When</strong>&nbsp;', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( '<strong>When</strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -75,7 +85,7 @@
 <!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}}} -->
 <div class="wp-block-columns is-not-stacked-on-mobile" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"80px"} -->
 <div class="wp-block-column" style="flex-basis:80px"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( '<strong>How</strong>&nbsp;', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( '<strong>How</strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -144,26 +154,22 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php _e( 'Can’t make it to Tokyo? No problem, organize or join a watch party in your community in person or online. Like last year, the Community team has resources available to help! Check out&nbsp;<a href="https://make.wordpress.org/community/handbook/meetup-organizer/state-of-the-word-watch-parties/">this handbook page</a>, which includes event templates and information on requesting a Zoom account.', 'wporg' ); ?></p>
+<p class="has-medium-font-size"><?php _e( 'Can’t make it to Tokyo but don’t want to miss out on the latest or the chance to check in with the speakers? Why not organize or join an in-person or online watch party? You can find a list of local watch parties <a target="_blank" href="https://events.wordpress.org/?s=State+of+the+word" rel="noreferrer noopener">here</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php _e( 'Gather together to look back on the project&#039;s achievements this past year and what is ahead for 2025. Stay up-to-date on the latest happenings in the WordPress world and collaborate together on any questions you might have for Matt!', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php _e( 'If you are planning a watch party for State of the Word and have questions, please email <a href="mailto:support@wordcamp.org">support@wordcamp.org</a>. A member of the WordPress community team will assist you in the best way possible.', 'wporg' ); ?></p>
+<p class="has-medium-font-size"><?php _e( 'If you are planning a watch party for State of the Word and have questions—check out <a href="https://make.wordpress.org/community/handbook/meetup-organizer/state-of-the-word-watch-parties/" target="_blank" rel="noreferrer noopener">this handbook page</a> for event templates and everything you need to get set up with a Zoom account or email <a href="mailto:support@wordcamp.org" target="_blank" rel="noreferrer noopener">support@wordcamp.org</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"default"},"blockVisibility":{"hideBlock":true}} -->
+<!-- wp:group {"layout":{"type":"default"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontFamily":"eb-garamond","blockVisibility":{"hideBlock":false}} -->
 <h2 class="wp-block-heading has-eb-garamond-font-family"><?php _e( 'Watch parties already planned', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"border":{"color":"#e8e8e8","width":"1px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-border-color" style="border-color:#e8e8e8;border-width:1px"><!-- wp:wporg/google-map {"id":"sotw-2023","apiKey":"WORDCAMP_DEV_GOOGLE_MAPS_API_KEY","filterSlug":"sotw","startDate":"December 10, 2023","endDate":"January 12, 2024","showList":false,"showSearch":false,"className":"is-style-sotw-2023","blockVisibility":{"hideBlock":false}} /--></div>
+<div class="wp-block-group has-border-color" style="border-color:#e8e8e8;border-width:1px"><!-- wp:wporg/google-map {"id":"sotw-2023","apiKey":"WORDCAMP_DEV_GOOGLE_MAPS_API_KEY","filterSlug":"sotw","startDate":"December 10, 2024","endDate":"January 12, 2025","showList":false,"showSearch":false,"className":"is-style-sotw-2023","blockVisibility":{"hideBlock":false}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
