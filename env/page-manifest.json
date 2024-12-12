@@ -157,5 +157,10 @@
 	{
 		"slug": "data-liberation",
 		"template": "page-data-liberation.html"
+	},
+	{
+		"slug": "guides",
+		"pattern": "data-liberation-guides.php",
+		"template": "page-data-liberation-guides.html"
 	}
 ]
