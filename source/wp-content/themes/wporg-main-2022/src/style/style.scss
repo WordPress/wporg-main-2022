@@ -710,10 +710,15 @@ body.page-template-page-6-7 {
  * Page in progress styles
  */
 
-.wporg-page-in-progress {
+.wporg-page-in-progress,
+.page-template-page-data-liberation {
 	// Override the workaround below.
 	.is-content-justification-left > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
 		margin-left: 0 !important;
+	}
+
+	.is-content-justification-right > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+		margin-right: 0 !important;
 	}
 }
 
