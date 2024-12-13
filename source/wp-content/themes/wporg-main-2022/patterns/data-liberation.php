@@ -6,9 +6,9 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"Header"},"align":"full","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"50px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"ibm-plex-sans"} -->
+<!-- wp:group {"metadata":{"name":"Header"},"align":"full","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}},"border":{"top":{"color":"var:preset|color|charcoal-3","width":"1px"},"right":[],"bottom":[],"left":[]}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="border-top-color:var(--wp--preset--color--charcoal-3);border-top-width:1px;padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"50px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"ibm-plex-sans"} -->
 <h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php _e( 'Data Liberation', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
@@ -18,29 +18,30 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Body"},"align":"full","style":{"spacing":{"padding":{"left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"extra-large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-extra-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'What is Data Liberation?', 'wporg' ); ?></h2>
+<!-- wp:group {"metadata":{"name":"What is"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'What is Data Liberation?', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'The Data Liberation project envisions a web where your data is truly yours, not locked in closed platforms. Through five development phases, WordPress will give you powerful tools to reclaim, manage, and move your content anywhere on the web—no hosting accounts needed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Locked vs. Liberated Data', 'wporg' ); ?></h3>
+<!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Locked vs. Liberated Data', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Many people don&#039;t realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it&#039;s hard to get out. <a href="https://github.com/WordPress/data-liberation/discussions/82" data-type="page" data-id="24221" target="_blank" rel="noreferrer noopener">Read more</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"extra-large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-extra-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Data Liberation Roadmap', 'wporg' ); ?></h3>
+<!-- wp:group {"metadata":{"name":"Road map"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7"}}} -->
+<h2 class="wp-block-heading" style="line-height:1.7"><?php _e( 'Roadmap', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -63,8 +64,8 @@
 <p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/77">Learn more about Phase 1</a>, and read <a href="/data-liberation/guides">the migration guides</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"style":{"layout":[]}} -->
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -87,8 +88,8 @@
 <p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/78">Learn more about Phase 2</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"style":{"layout":[]}} -->
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -111,8 +112,8 @@
 <p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/79">Learn more about Phase 3</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"style":{"layout":[]}} -->
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -135,13 +136,13 @@
 <p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/80">Learn more about Phase 4</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"style":{"layout":[]}} -->
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Phase 5: Content Creation Powerhouse', 'wporg' ); ?></h2>
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Phase 5: Content Creation Powerhouse', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -152,23 +153,30 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<br>WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/81">Learn more about Phase 5</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"style":{"layout":[]}} -->
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"metadata":{"name":"Separator"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:image {"id":22690,"sizeSlug":"full","linkDestination":"none","align":"wide"} -->
+<figure class="wp-block-image alignwide size-full"><img src="https://wordpress.org/files/2023/10/image-5.png" alt="" class="wp-image-22690" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-4","fontFamily":"eb-garamond"} -->
-<p class="has-white-color has-text-color has-link-color has-eb-garamond-font-family has-heading-4-font-size"><?php _e( 'Get involved!', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-4"} -->
+<h2 class="wp-block-heading has-white-color has-text-color has-link-color has-heading-4-font-size"><?php _e( 'Get involved!', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'Have a workflow, tool, or some time to contribute? Your help is essential in making the web more open! Join the discussion in the <a href="https://wordpress.slack.com/archives/C069AKUBPHB">#data-liberation on Making Slack</a> and participate in the <a href="https://github.com/WordPress/data-liberation">Data Liberation GitHub repository</a>.', 'wporg' ); ?></p>
