@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"SOTW Tokyo 2024"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
+<!-- wp:group {"metadata":{"name":"SOTW Tokyo 2024"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-1","width":"1px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2024-12-16T05:00:00","end":""}],"hideOnSchedules":true}}}]}} -->
 <div class="wp-block-group alignfull" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;border-left-style:none;border-left-width:0px;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|10","left":"40px"},"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
@@ -32,8 +32,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}}} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2024-12-16T05:00:00","end":""}],"hideOnSchedules":true}}}]}} -->
+<div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
 <h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
@@ -48,6 +48,36 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":39758,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/brush.png" alt="" class="wp-image-39758" /></figure>
 <!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Hero (SotW)"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2024-12-16T05:00:00","end":""}]}}}]}} -->
+<div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"var:preset|spacing|40"},"padding":{"top":"0","bottom":"0"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
+<h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"2.5em"} -->
+<div style="height:2.5em" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
+<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|80"}},"border":{"left":{"color":"var:preset|color|charcoal-0","width":"1px"},"right":{"width":"1px"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/12/mons-bg-home-5.png","id":44543,"source":"file","title":"mons-bg-home-5"},"backgroundSize":"cover","backgroundPosition":"45% 50%"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-right-width:1px;border-left-color:var(--wp--preset--color--charcoal-0);border-left-width:1px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:shortcode -->
+[youtube-nocookie]https://www.youtube-nocookie.com/embed/ySolP8YjODU?si=P_LZBMrf7z2YJ1Iq[/youtube-nocookie]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"},":hover":{"color":{"text":"var:preset|color|blueberry-1"}}}}}} -->
+<p class="has-link-color"><?php _e( 'Watch State of the Word, the annual keynote address live from Tokyo.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
