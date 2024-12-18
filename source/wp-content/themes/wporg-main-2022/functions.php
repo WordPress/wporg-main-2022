@@ -44,33 +44,6 @@ function enqueue_assets() {
 	);
 	wp_style_add_data( 'wporg-main-2022-style', 'rtl', 'replace' );
 
-	if ( is_page( 'download' ) ) {
-		$path        = __DIR__ . '/build/download/index.js';
-		$deps_path   = __DIR__ . '/build/download/index.asset.php';
-		$script_info = file_exists( $deps_path )
-			? require $deps_path
-			: array(
-				'dependencies' => array(),
-				'version'      => filemtime( $path ),
-			);
-
-		wp_enqueue_script(
-			'wporg-main-2022-download-script',
-			get_stylesheet_directory_uri() . '/build/download/index.js',
-			$script_info['dependencies'],
-			$script_info['version'],
-			true
-		);
-
-		wp_enqueue_style(
-			'wporg-main-2022-download-style',
-			get_stylesheet_directory_uri() . '/build/download/style-index.css',
-			array(),
-			filemtime( __DIR__ . '/build/download/style-index.css' )
-		);
-		wp_style_add_data( 'wporg-main-2022-download-style', 'rtl', 'replace' );
-	}
-
 	if ( is_page( 'stats' ) ) {
 		// phpcs:ignore WordPress.WP.EnqueuedResourceParameters
 		wp_enqueue_script( 'google-charts', 'https://www.gstatic.com/charts/loader.js', [], null, true );
