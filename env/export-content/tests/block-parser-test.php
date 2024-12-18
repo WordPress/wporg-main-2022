@@ -80,6 +80,10 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th>Cookie</th><th>Logged-in Users Only?</th></tr></thead><tbody><tr><th>welcome-{blog_id}</th><td>No</td></tr><tr><th>showComments</th><td>No</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 				[ 'Cookie', 'Logged-in Users Only?', 'welcome-{blog_id}', 'No', 'showComments' ],
 			],
+			[
+				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"Download WordPress [latest_version]\"} -->\n<!-- wp:group {\"style\":{\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|white\"}}},\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"},\"blockGap\":\"var:preset|spacing|10\"}},\"backgroundColor\":\"blueberry-1\",\"textColor\":\"white\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color\" style=\"padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\">Howdy!</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
+				[ 'Download WordPress [latest_version]', 'Howdy!' ],
+			],
 		];
 	}
 
@@ -177,6 +181,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				// Buttons.
 				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\">Download WordPress [latest_version]</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
 				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\"><?php\n/* translators: [latest_version] is a shortcode and should not be translated. */\n_e( 'Download WordPress [latest_version]', 'wporg' );\n?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+			],
+			[
+				// Modal, with shortcode in the label (shortcode in attribute).
+				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"Download WordPress [latest_version]\"} -->\n<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\">Howdy!</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
+				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ _e( 'Download WordPress [latest_version]', 'wporg' ); ?>\"} -->\n<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\"><?php _e( 'Howdy!', 'wporg' ); ?></h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
 			],
 		];
 	}

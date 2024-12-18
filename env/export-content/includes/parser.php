@@ -54,6 +54,7 @@ class BlockParser {
 
 			// Shared custom blocks.
 			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', [ 'href' ] ),
+			'wporg/modal' => new Parsers\AttributeParser( [ 'label' ] ),
 		];
 	}
 
