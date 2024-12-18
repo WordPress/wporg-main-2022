@@ -61,7 +61,9 @@ trait GetSetAttribute {
 	private function set_attribute( string $attribute_name, array &$block, array $replacements ) {
 		if ( isset( $block['attrs'][ $attribute_name ] ) && is_string( $block['attrs'][ $attribute_name ] ) ) {
 			if ( isset( $replacements[ $block['attrs'][ $attribute_name ] ] ) ) {
-				$block['attrs'][ $attribute_name ] = $replacements[ $block['attrs'][ $attribute_name ] ];
+				$replace = $replacements[ $block['attrs'][ $attribute_name ] ];
+				$replace = str_replace( "\n", ' ', $replace );
+				$block['attrs'][ $attribute_name ] = $replace;
 			}
 		}
 	}
