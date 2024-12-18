@@ -18,7 +18,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":""} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2"}}} -->
-<p class="has-text-align-center" style="line-height:1.2"><?php _e( '<a href="https://wordpress.org/state-of-the-word/">State of the Word, Tokyo | Watch now</a>', 'wporg' ); ?></p>
+<p class="has-text-align-center" style="line-height:1.2"><?php _e( '<a href="https://wordpress.org/news/2024/12/state-of-the-word-2024-legacy-innovation-and-community/">State of the Word, Tokyo | Watch now</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
