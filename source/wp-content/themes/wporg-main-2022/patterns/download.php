@@ -28,20 +28,51 @@
 <p class="is-style-short-text"><?php _e( 'For anyone comfortable getting their own hosting and domain.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"10px"}}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button" id="wporg__download-button"><a class="wp-block-button__link wp-element-button" href="[download_link]"><?php
-/* translators: [latest_version] is a shortcode and should not be translated. */
-_e( 'Download WordPress [latest_version]', 'wporg' );
-?></a></div>
-<!-- /wp:button -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:wporg/modal {"closeButtonColor":"white","customCloseButtonColor":"#ffffff","href":"[download_link]","label":"Download WordPress [latest_version]"} -->
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|10"}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
+<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'Howdy!', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
 
-<!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
+<!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( 'Thanks for downloading WordPress', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"className":"is-style-default"} -->
+<p class="is-style-default"><?php _e( 'You&#039;re an important part of the global community that has used, built, and transformed the platform into what it is today. Find out more ways you can contribute and make an impact on the future of the web.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"is-style-default","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group is-style-default"><!-- wp:paragraph -->
+<p><?php _e( '<a href="https://make.wordpress.org/">Get involved in WordPress ↗︎</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<a href="https://www.meetup.com/pro/wordpress/">Join a local WordPress meetup ↗︎</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<a href="https://central.wordcamp.org/">Attend a WordCamp ↗︎</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<a href="https://wordpressfoundation.org/donate/">Support WordPress and open source education ↗︎</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:wporg/modal -->
+
+<!-- wp:buttons {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"blue-1","className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-blue-1-color has-text-color wp-element-button" href="<?php _e( 'https://developer.wordpress.org/advanced-administration/before-install/howto-install/', 'wporg' ); ?>"><?php _e( 'Installation guide', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
 
-<!-- wp:paragraph {"textColor":"charcoal-4","className":"is-style-short-text","fontSize":"small"} -->
+<!-- wp:paragraph {"className":"is-style-short-text","textColor":"charcoal-4","fontSize":"small"} -->
 <p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php
 /* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
 _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );
@@ -82,7 +113,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <div class="wp-block-group alignfull has-blueberry-4-background-color has-background" id="features" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"0"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:0;flex-basis:50%"><!-- wp:list {"className":"is-style-features"} -->
-<ul class="is-style-features"><!-- wp:list-item -->
+<ul class="wp-block-list is-style-features"><!-- wp:list-item -->
 <li><?php _e( 'Simple', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -134,7 +165,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
-<ul class="is-style-links-list"><!-- wp:list-item -->
+<ul class="wp-block-list is-style-links-list"><!-- wp:list-item -->
 <li><?php _e( '<a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
