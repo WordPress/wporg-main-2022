@@ -20,7 +20,13 @@
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php _e( 'Watch State of the Word, the annual keynote address live from Tokyo.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--40)"><!-- wp:button {"fontFamily":"inter"} -->
+<div class="wp-block-button has-inter-font-family"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/news/2024/12/state-of-the-word-2024-legacy-innovation-and-community/', 'wporg' ); ?>"><?php _e( 'Read the recap', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
@@ -109,22 +115,6 @@
 <!-- /wp:columns --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontFamily":"eb-garamond"} -->
-<h3 class="wp-block-heading has-eb-garamond-font-family"><?php _e( 'Request a ticket to join us live in Tokyo', 'wporg' ); ?></h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"fontSize":"medium","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-medium-font-size"><?php _e( 'Join Matt as he provides a retrospective of 2024, demos the latest in WordPress tech, and comments on the future of the WordPress open source project.<br><br>Request a ticket to be one of the 300 members attending in person.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","fontSize":"normal","fontFamily":"inter"} -->
-<div class="wp-block-button has-custom-font-size is-style-fill has-inter-font-family has-normal-font-size"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordcampcentral.survey.fm/2024-sotw-ticket-request', 'wporg' ); ?>"><?php _e( 'Request a ticket', 'wporg' ); ?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:cover {"dimRatio":0,"overlayColor":"white","isUserOverlayColor":true,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"sizeSlug":"full","align":"wide","style":{"color":{"duotone":"unset"},"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|10"}}} -->
