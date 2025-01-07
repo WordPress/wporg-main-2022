@@ -422,7 +422,7 @@ $wporg-about-breakpoint-max: 1920px;
 		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
 	}
 
-	#download-hosting .wp-block-columns > .wp-block-column .wp-block-group,
+	#download-hosting .wp-block-columns > .wp-block-column > .wp-block-group,
 	#features .wp-block-columns > .wp-block-column:last-child {
 		padding-left: var(--wp--preset--spacing--edge-space) !important;
 		padding-right: var(--wp--preset--spacing--edge-space) !important;
@@ -484,8 +484,12 @@ $wporg-about-breakpoint-max: 1920px;
 		width: 100% !important;
 	}
 
-	#download-install .wp-block-button:nth-child(1) a {
-		padding: 0;
+	#download-install > .wp-block-group {
+		flex-direction: column;
+	}
+
+	#download-install .wp-block-button__link.wporg-modal__toggle {
+		padding: 0.25em;
 		background-color: transparent;
 		color: var(--wp--custom--link--color--text);
 		font-weight: 400;
@@ -498,7 +502,7 @@ $wporg-about-breakpoint-max: 1920px;
 		}
 	}
 
-	#download-install .wp-block-button:nth-child(2) a {
+	#download-install .is-style-outline .wp-block-button__link {
 		--wp--custom--button--outline--color--background: var(--wp--preset--color--blueberry-1);
 		--wp--custom--button--outline--color--text: var(--wp--preset--color--white);
 		--wp--custom--button--outline--hover--color--background: var(--wp--preset--color--deep-blueberry);
@@ -512,6 +516,14 @@ $wporg-about-breakpoint-max: 1920px;
 		&:focus {
 			background-color: var(--wp--custom--button--outline--hover--color--background);
 			color: var(--wp--custom--button--outline--hover--color--text);
+		}
+
+		&:focus {
+			// Prevent the extra space for the border, which does not exist anymore.
+			padding-top: var(--wp--custom--button--spacing--padding--top);
+			padding-bottom: var(--wp--custom--button--spacing--padding--bottom);
+			padding-left: var(--wp--custom--button--spacing--padding--left);
+			padding-right: var(--wp--custom--button--spacing--padding--right);
 		}
 
 		&:active {
