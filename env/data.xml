@@ -18,11 +18,11 @@
 
 <!-- generator="WordPress/6.1-alpha-53717" created="2022-07-19 14:44" -->
 <rss version="2.0"
-	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:excerpt="https://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:wfw="https://wellformedweb.org/CommentAPI/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:wp="http://wordpress.org/export/1.2/"
+	xmlns:wp="https://wordpress.org/export/1.2/"
 >
 
 <channel>
