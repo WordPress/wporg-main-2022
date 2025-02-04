@@ -159,7 +159,7 @@ function sites_attributes_schema() {
 <script type="application/ld+json">
 [
 	{
-		"@context": "http://schema.org",
+		"@context": "https://schema.org",
 		"@type": [
 			"SoftwareApplication",
 			"Product"
