@@ -80,7 +80,7 @@ _e( 'WordPress powers more than [market_share] of the web — a figure that rise
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<strong>Importers</strong><br>Using blog or website software that you aren’t happy with? Running your blog on a hosted service that’s about to shut down? WordPress comes with importers for Blogger, LiveJournal, Movable Type, TypePad, Tumblr, and WordPress. If you’re ready to make the move, <a href="https://wordpress.org/support/article/importing-content/">we’ve made it easy for you</a>.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Importers</strong><br>Using blog or website software that you aren’t happy with? Running your blog on a hosted service that’s about to shut down? WordPress comes with importers for Blogger, LiveJournal, Movable Type, TypePad, Tumblr, and WordPress. If you’re ready to make the move, <a href="https://developer.wordpress.org/advanced-administration/wordpress/import/">we’ve made it easy for you</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
