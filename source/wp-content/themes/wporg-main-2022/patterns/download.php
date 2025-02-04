@@ -200,7 +200,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"150px","height":"45px","linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php _e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
+<figure class="wp-block-image is-resized"><a href="https://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="<?php _e( 'Get it on Google Play', 'wporg' ); ?>" style="width:150px;height:45px" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
