@@ -16,7 +16,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'When you need the official WordPress logo for a web site or publication, please use one of the following. Please only use logos in accordance with the&nbsp;<a href="http://wordpressfoundation.org/trademark-policy/">WordPress trademark&nbsp;policy</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'When you need the official WordPress logo for a web site or publication, please use one of the following. Please only use logos in accordance with the&nbsp;<a href="https://wordpressfoundation.org/trademark-policy/">WordPress trademark&nbsp;policy</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
