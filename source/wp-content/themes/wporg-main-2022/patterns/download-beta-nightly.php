@@ -24,7 +24,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'By their nature these releases are unstable and should not be used any place where your data is important. Please <a href="https://wordpress.org/support/article/backing-up-your-database/">backup your database</a> before upgrading to a beta release. To hear about the latest beta releases your best bet is to watch <a href="https://make.wordpress.org/core/">the development blog</a> and <a href="https://wordpress.org/support/forum/alphabeta/">the beta forum</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'By their nature these releases are unstable and should not be used any place where your data is important. Please <a href="https://developer.wordpress.org/advanced-administration/security/backup/database/">backup your database</a> before upgrading to a beta release. To hear about the latest beta releases your best bet is to watch <a href="https://make.wordpress.org/core/">the development blog</a> and <a href="https://wordpress.org/support/forum/alphabeta/">the beta forum</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
