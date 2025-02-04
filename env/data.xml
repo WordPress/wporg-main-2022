@@ -725,7 +725,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>With our famous 5-minute installation, setting up WordPress for the first time is simple. We’ve created a <a href="https://wordpress.org/support/article/how-to-install-wordpress/">handy guide</a> to see you through the installation process.</p>
+<p>With our famous 5-minute installation, setting up WordPress for the first time is simple. We’ve created a <a href="https://developer.wordpress.org/advanced-administration/before-install/howto-install/">handy guide</a> to see you through the installation process.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -777,7 +777,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"width":150,"height":45,"linkDestination":"custom"} -->
-<figure class="wp-block-image is-resized"><a href="http://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Available in the Google Play Store" width="150" height="45"/></a></figure>
+<figure class="wp-block-image is-resized"><a href="https://play.google.com/store/apps/details?id=org.wordpress.android"><img src="https://wordpress.org/wp-content/themes/pub/wporg-main/images/badge-google-play.png" alt="Available in the Google Play Store" width="150" height="45"/></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
