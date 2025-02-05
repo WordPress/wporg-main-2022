@@ -174,7 +174,7 @@ _e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_m
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/support/">WordPress support ↗</a>', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://wordpress.org/documentation/">WordPress documentation ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
