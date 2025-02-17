@@ -19,13 +19,13 @@ jobs:
         with:
           ref: try/disable-apparmor
 
+      - name: Disable AppArmor
+        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+
       - name: Setup
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Disable AppArmor
-        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
       - name: Run the content update
         id: build-patterns
