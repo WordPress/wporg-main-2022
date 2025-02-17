@@ -32,7 +32,7 @@ async function getPageDetails( slug ) {
 ( async () => {
 	const browser = await puppeteer.launch( {
 		headless: true,
-		args: [ '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage' ],
+		args: [ '--no-sandbox', '--disable-setuid-sandbox' ],
 	} );
 	const page = await browser.newPage();
 
