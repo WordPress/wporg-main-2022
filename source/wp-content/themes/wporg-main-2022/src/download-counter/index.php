@@ -77,6 +77,7 @@ function render( $attributes, $content, $block ) {
  */
 function validate_branch( $branch ) {
 	return (
+		is_string( $branch ) &&
 		preg_match( '/^[0-9]+\.[0-9]$/', $branch ) &&
 		version_compare( WP_CORE_STABLE_BRANCH, $branch, '>=' )
 	);
