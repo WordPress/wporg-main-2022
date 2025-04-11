@@ -47,7 +47,7 @@
 
 <!-- wp:column {"verticalAlignment":"bottom","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:50%"><!-- wp:image {"id":46095,"width":"367px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-011.png" alt="<?php _e( 'An image of the Stylebook showing red colors', 'wporg' ); ?>" class="wp-image-46095" style="width:367px;height:auto" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-011.png" alt="" class="wp-image-46095" style="width:367px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -59,7 +59,7 @@
 <div class="wp-block-group alignwide has-black-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#f2fff0;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":46087,"width":"219px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-04.png" alt="<?php _e( 'Three icons representing filtering and the query block', 'wporg' ); ?>" class="wp-image-46087" style="width:219px;height:auto" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-04.png" alt="" class="wp-image-46087" style="width:219px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -99,7 +99,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":46089,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/03/feature-03-1.png" alt="<?php _e( 'A transparent image is shown behind another to show it loading', 'wporg' ); ?>" class="wp-image-46089" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/03/feature-03-1.png" alt="" class="wp-image-46089" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -111,7 +111,7 @@
 <div class="wp-block-group alignwide has-charcoal-1-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#fff3ea;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":46091,"width":"250px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"right"} -->
-<figure class="wp-block-image alignright size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-tt5.png" alt="<?php _e( 'An icon representation of a password input using asterisks', 'wporg' ); ?>" class="wp-image-46091" style="width:250px;height:auto" /></figure>
+<figure class="wp-block-image alignright size-full is-resized"><img src="https://wordpress.org/files/2025/03/feature-tt5.png" alt="" class="wp-image-46091" style="width:250px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -140,7 +140,7 @@
 <div class="wp-block-column is-vertically-aligned-stretch has-background" style="border-radius:16px;background-color:#f0ede9;padding-top:50px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:80px;padding-left:var(--wp--preset--spacing--edge-space);flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":43812,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-perf-48.png" alt="<?php _e( 'Performance icon', 'wporg' ); ?>" class="wp-image-43812" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-perf-48.png" alt="" class="wp-image-43812" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
@@ -158,7 +158,7 @@
 <div class="wp-block-column is-vertically-aligned-stretch has-background" style="border-radius:16px;background-color:#f0ede9;padding-top:50px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:80px;padding-left:var(--wp--preset--spacing--edge-space);flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":43811,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-a11y-48.png" alt="<?php _e( 'Accessibility icon', 'wporg' ); ?>" class="wp-image-43811" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-a11y-48.png" alt="" class="wp-image-43811" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
@@ -180,7 +180,7 @@
 <div class="wp-block-column is-vertically-aligned-stretch has-background" style="border-radius:16px;background-color:#f0ede9;padding-top:50px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:80px;padding-left:var(--wp--preset--spacing--edge-space);flex-basis:100%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":43812,"width":"48px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-perf-48.png" alt="<?php _e( 'Performance icon', 'wporg' ); ?>" class="wp-image-43812" style="width:48px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/11/icon-perf-48.png" alt="" class="wp-image-43812" style="width:48px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
