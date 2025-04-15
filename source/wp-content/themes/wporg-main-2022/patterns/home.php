@@ -104,12 +104,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Enhance your site-building with WordPress 6.7, featuring the new Twenty Twenty-Five theme. This release brings a ‘Zoom Out’ mode for high-level editing, enhanced media support, new design tools, and improved developer APIs.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'And let the newly structured Style Book help you get the best view. Easier to use in Block themes, it’s also a great way to see what you’re building in certain Classic themes. Do It all faster with improvements under the hood, and more securely than ever with stronger password hashing.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-7/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.7', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-8/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.8', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

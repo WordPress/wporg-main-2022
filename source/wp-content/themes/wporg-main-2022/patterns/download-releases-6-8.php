@@ -69,7 +69,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>Smoother building with Data Views, the Query Loop and everything you touch</em>', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>Smoother building with Data Views, the Query Loop, and everything you touch</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -203,7 +203,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:group {"align":"wide","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-1"} -->
-<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>750 contributors</em> who made this release', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>900 contributors</em> who made this release', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"16px","selfStretch":"fixed"}}} -->
