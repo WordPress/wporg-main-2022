@@ -46,7 +46,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'There are <a href="https://www.google.com/url?q=https://make.wordpress.org/core/2025/04/04/dotorg-core-committers-check-in/&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw0WpYSzWxnjlruHCiYmS4Gh" target="_blank" rel="noreferrer noopener">no additional major versions</a> planned for the 2025 calendar year. The project currently plans for the release of one major version per year. Follow changes in progress for the next major version in our <a href="https://www.google.com/url?q=https://core.trac.wordpress.org/&amp;sa=D&amp;source=calendar&amp;usd=2&amp;usg=AOvVaw0xzNxyF3kWes8LYUcb0mLf" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
+<p><?php _e( 'There are <a href="https://make.wordpress.org/core/2025/04/04/dotorg-core-committers-check-in/" target="_blank" rel="noreferrer noopener">no additional major versions</a> planned for the 2025 calendar year. The project currently plans for the release of one major version per year. Follow changes in progress for the next major version in our <a href="https://core.trac.wordpress.org/" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
