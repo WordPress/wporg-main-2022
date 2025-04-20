@@ -21,7 +21,7 @@ const init = () => {
 
 			setInterval( async () => {
 				try {
-					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }` } );
+					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }?_locale=site` } );
 					element.textContent = decodeEntities( count );
 				} catch ( error ) {}
 			}, 5000 );
