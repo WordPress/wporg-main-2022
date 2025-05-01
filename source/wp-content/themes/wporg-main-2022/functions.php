@@ -59,24 +59,6 @@ function enqueue_assets() {
 		);
 	}
 
-	// Preload the heading font(s).
-	if ( is_callable( 'global_fonts_preload' ) ) {
-		if ( 'ja' === get_locale() ) {
-			global_fonts_preload( 'Noto Serif JP', 'cjk' );
-		} else if ( 'ckb' === get_locale() ) {
-			global_fonts_preload( 'Noto Kufi', 'arabic' );
-		} else {
-			/*
-			 * translators: Font subset for your locale. Can be any of cyrillic,
-			 * cyrillic-ext, greek, greek-ext, vietnamese, latin, latin-ext.
-			 * Do not translate into your own language.
-			 */
-			$subsets = _x( 'latin', 'EB Garamond subsets, comma separated', 'wporg' );
-			// All headings.
-			global_fonts_preload( 'EB Garamond', $subsets );
-		}
-	}
-
 	if ( get_locale() !== 'en_US' ) {
 		wp_enqueue_style(
 			'wporg-main-2022-rosetta-style',
