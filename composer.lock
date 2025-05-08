@@ -2602,12 +2602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wporg-mu-plugins.git",
-                "reference": "26965c7a8d10c5d7ad59efa174fddf3671788d75"
+                "reference": "a92b5bd495dd16c2f3d66534ff57579d715bd3a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/26965c7a8d10c5d7ad59efa174fddf3671788d75",
-                "reference": "26965c7a8d10c5d7ad59efa174fddf3671788d75",
+                "url": "https://api.github.com/repos/WordPress/wporg-mu-plugins/zipball/a92b5bd495dd16c2f3d66534ff57579d715bd3a9",
+                "reference": "a92b5bd495dd16c2f3d66534ff57579d715bd3a9",
                 "shasum": ""
             },
             "require": {
@@ -2648,7 +2648,7 @@
                 "source": "https://github.com/WordPress/wporg-mu-plugins/tree/build",
                 "issues": "https://github.com/WordPress/wporg-mu-plugins/issues"
             },
-            "time": "2025-01-10T17:34:42+00:00"
+            "time": "2025-05-05T21:41:23+00:00"
         },
         {
             "name": "wporg/wporg-parent-2021",
@@ -2771,14 +2771,14 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "wporg/wporg-repo-tools": 20,
         "wporg/wporg-mu-plugins": 20,
-        "wporg/wporg-parent-2021": 20,
-        "wporg/wporg-repo-tools": 20
+        "wporg/wporg-parent-2021": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "7.4"
     },
