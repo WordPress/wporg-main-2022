@@ -18,6 +18,10 @@ wp-cli.local.yml
 .stylelintrc
 phpcs.xml.dist
 
+# Ignore lock files
+/yarn.lock
+/composer.lock
+
 # Ignore everything in source...
 /source/wp-content/*
 /source/wp-content/themes/*
