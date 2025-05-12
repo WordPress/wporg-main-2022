@@ -19,7 +19,6 @@ wp-cli.local.yml
 phpcs.xml.dist
 
 # Ignore lock files
-/yarn.lock
 /composer.lock
 
 # Ignore everything in source...
