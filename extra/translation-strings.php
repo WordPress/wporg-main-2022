@@ -13,7 +13,6 @@ __( 'WordPress 6.8', 'wporg' );
 __( 'Guides', 'wporg' );
 __( 'WordPress 6.7', 'wporg' );
 __( 'WordPress 6.6', 'wporg' );
-__( 'Swag', 'wporg' );
 __( 'WordPress 6.5', 'wporg' );
 __( 'Data Liberation', 'wporg' );
 __( 'State of the Word', 'wporg' );
