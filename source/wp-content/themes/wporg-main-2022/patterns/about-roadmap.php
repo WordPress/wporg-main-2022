@@ -20,7 +20,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'To support the vision set in the latest <a href="https://wordpress.org/news/2023/12/state-of-the-word-2023-recap/">State of the Word</a>, the project has the following <a href="https://make.wordpress.org/project/2024/01/19/big-picture-goals-2024/">big picture goals for 2024</a>:', 'wporg' ); ?></p>
+<p><?php _e( 'To support the vision set in the latest <a href="https://wordpress.org/news/2023/12/state-of-the-word-2023-recap/">State of the Word</a>, the project has the following <a href="https://make.wordpress.org/project/2024/01/19/big-picture-goals-2024/">big picture goals</a>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
