@@ -46,11 +46,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'There are <a href="https://make.wordpress.org/core/2025/04/04/dotorg-core-committers-check-in/" target="_blank" rel="noreferrer noopener">no additional major versions</a> planned for the 2025 calendar year. The project currently plans for the release of one major version per year. Follow changes in progress for the next major version in our <a href="https://core.trac.wordpress.org/" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
+<p><?php _e( 'Release 6.9 is scheduled to proceed in 2025. Plans for future releases will be timely communicated. Follow changes in progress for the next major version in our <a href="https://core.trac.wordpress.org/" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '6.9', 'wporg' ); ?></td><td><?php _e( 'Tentatively 2026', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.0', 'wporg' ); ?></td><td><?php _e( 'Tentatively 2027', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><a href="https://make.wordpress.org/core/2025/07/11/wordpress-6-9-planning-proposal-and-call-for-volunteers/"><?php _e( '6.9', 'wporg' ); ?></a></td><td><?php _e( 'December 2, 2025', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.0', 'wporg' ); ?></td><td><?php _e( 'Tentatively 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
