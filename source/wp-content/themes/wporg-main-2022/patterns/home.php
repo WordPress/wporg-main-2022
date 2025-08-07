@@ -13,8 +13,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"typography":{"lineHeight":"1"},"spacing":{"padding":{"top":"3px","bottom":"3px","left":"4px","right":"4px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:3px;padding-right:4px;padding-bottom:3px;padding-left:4px;line-height:1"><!-- wp:image {"id":40598,"width":"24px","height":"24px","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"24px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/06/chevron-right-small.png" alt="" class="wp-image-40598" style="object-fit:cover;width:24px;height:24px" /></figure>
+<div class="wp-block-group" style="padding-top:3px;padding-right:4px;padding-bottom:3px;padding-left:4px;line-height:1"><!-- wp:image {"id":47353,"width":"24px","height":"24px","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"24px"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/08/chevron-right-small-white-1.png" alt="" class="wp-image-47353" style="object-fit:cover;width:24px;height:24px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></a>
