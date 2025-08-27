@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-08-27T00:00:00","end":""}]}}}]}} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-08-27T00:00:00","end":"2025-08-28T12:00:00"}]}}}]}} -->
 <div class="wp-block-group alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
@@ -34,6 +34,40 @@
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"},":hover":{"color":{"text":"var:preset|color|blueberry-1"}}}}}} -->
 <p class="has-link-color"><?php _e( 'Don’t miss a moment! Watch all the WordCamp US 2025 sessions live right here. Starting August 27 with Showcase Day. 🎬', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-08-28T12:00:00","end":""}]}}}]}} -->
+<div class="wp-block-group alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
+<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
+<h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"is-style-short-text"} -->
+<p class="is-style-short-text"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
+<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);flex-basis:50%"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:shortcode -->
+[youtube-nocookie]https://www.youtube-nocookie.com/embed/videoseries?si=4m_nw5iWhTn7NUzl&amp;list=PL1pJFUVKQ7ERiUTP1Mt_yhRDOzESEoodI[/youtube-nocookie]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"},":hover":{"color":{"text":"var:preset|color|blueberry-1"}}}}}} -->
+<p class="has-link-color"><?php _e( 'Don’t miss a moment! Watch all the WordCamp US 2025 live presentations here — starting August 27 and continuing through August 29. 🎬', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
