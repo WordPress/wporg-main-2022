@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Read about the project’s journey through its first ten years in&nbsp;<a target="_blank" href="https://milestonesbook.wordpress.com/" rel="noreferrer noopener">Milestones: The Story of WordPress</a>—with a follow-up covering the latest decade available in May 2023. Just in time for the project’s 20th anniversary.', 'wporg' ); ?></p>
+<p><?php _e( 'Read about the project’s journey through its first ten years in <a href="https://wordpress.org/book/" target="_blank" rel="noreferrer noopener">Milestones: The Story of WordPress</a>—with a follow-up covering the latest decade available in May 2023. Just in time for the project’s 20th anniversary.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
