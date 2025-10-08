@@ -39,12 +39,27 @@ if ( ! $manifest_data || ! $manifest_items ) {
 	throw new Exception( "Unable to read manifest from $args[0]\n" );
 }
 
+$encountered_problems = false;
+
 foreach ( $manifest_items as $item ) {
 	if ( $item->slug ) {
 		$pattern = $item->pattern ?? $item->slug . '.php';
 		$template = $item->template ?? $item->slug . '.html';
 
-		generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
-		generate_template( $item->slug, sprintf( $template_path, $template ) );
+		try {
+			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+			generate_template( $item->slug, sprintf( $template_path, $template ) );
+		} catch ( Exception $e ) {
+			echo '!! Error: ' . $e->getMessage() . "\n";
+			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";
+			$encountered_problems = true;
+		}
 	}
+}
+
+if ( $encountered_problems ) {
+	echo "\nOne or more errors encountered.\n";
+
+	// Signal that this process kinda failed.
+	exit( 1 );
 }
