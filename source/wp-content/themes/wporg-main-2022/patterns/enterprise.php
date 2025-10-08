@@ -301,9 +301,7 @@
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"lightbox":{"enabled":false},"id":41142,"sizeSlug":"full","linkDestination":"custom","align":"full"} -->
-<figure class="wp-block-image alignfull size-full"><a href="https://soewp.com/"><img src="https://wordpress.org/files/2024/07/soewp-2024.png" alt="<?php _e( 'State of Enterprise WordPress 2024 Report', 'wporg' ); ?>" class="wp-image-41142" /></a></figure>
-<!-- /wp:image -->
+</div>
+<!-- /wp:group -->
