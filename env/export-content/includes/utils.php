@@ -3,6 +3,8 @@
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
 
+use Exception;
+
 require __DIR__ . '/parser.php';
 
 /**
@@ -16,6 +18,11 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 
 /**
  * Generate the pattern content from a URL.
+ *
+ * @throws Exception If the request fails or writing the file fails.
+ *
+ * @param string $url The REST API endpoint URL for the post.
+ * @param string $output_path The local file path to write the pattern to.
  */
 function generate_pattern( $url, $output_path ) {
 	$response = wp_remote_get( $url );
@@ -23,22 +30,22 @@ function generate_pattern( $url, $output_path ) {
 	$status_code = wp_remote_retrieve_response_code( $response );
 
 	if ( is_wp_error( $response ) ) {
-		die( esc_html( $response->get_error_message() ) );
+		throw new Exception( esc_html( $response->get_error_message() ) );
 	} elseif ( 200 !== wp_remote_retrieve_response_code( $response ) ) {
-		die( esc_html( "HTTP Error $status_code \n" ) );
+		throw new Exception( esc_html( "HTTP Error $status_code \n" ) );
 	}
 
 	$data = wp_remote_retrieve_body( $response );
 
 	if ( ! $data ) {
-		die( "Unable to fetch {$url}\n" );
+		throw new Exception( "Unable to fetch {$url}\n" );
 	}
 
 	$posts = json_decode( $data );
 	$post = $posts[0] ?? null;
 	if ( ! isset( $post->content_raw ) ) {
 		var_dump( $post );
-		die( "No content_raw available at {$url}\n" );
+		throw new Exception( "No content_raw available at {$url}\n" );
 	}
 
 	$content = replace_with_i18n( $post->content_raw );
@@ -58,7 +65,7 @@ EOF;
 	$bytes = file_put_contents( $output_path, $header . $content . "\n" );
 
 	if ( false === $bytes ) {
-		die( 'Unable to write to ' . $output_path );
+		throw new Exception( 'Unable to write to ' . $output_path );
 	} else {
 		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
 	}
@@ -66,6 +73,9 @@ EOF;
 
 /**
  * Create a page template to use this pattern.
+ *
+ * @param string $slug The slug of the pattern to include.
+ * @param string $output_path The local file path to write the template to.
  */
 function generate_template( $slug, $output_path ) {
 	$template = <<<EOF
