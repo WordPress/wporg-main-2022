@@ -3,6 +3,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ImportTestContent;
+
 use Exception;
 
 /**
@@ -57,6 +58,8 @@ function filter_curl_options( $ch ) {
 
 /**
  * Import posts from a remote REST API to the local test site.
+ *
+ * @throws Exception If the request fails or inserting a post fails.
  *
  * @param string $rest_url The remote REST API endpoint URL.
  */

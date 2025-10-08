@@ -3,6 +3,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
+
 use Exception;
 
 require __DIR__ . '/includes/utils.php';

@@ -2,6 +2,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
+
 use Exception;
 
 require __DIR__ . '/parser.php';
@@ -17,6 +18,11 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 
 /**
  * Generate the pattern content from a URL.
+ *
+ * @throws Exception If the request fails or writing the file fails.
+ *
+ * @param string $url The REST API endpoint URL for the post.
+ * @param string $output_path The local file path to write the pattern to.
  */
 function generate_pattern( $url, $output_path ) {
 	$response = wp_remote_get( $url );
@@ -67,6 +73,9 @@ EOF;
 
 /**
  * Create a page template to use this pattern.
+ *
+ * @param string $slug The slug of the pattern to include.
+ * @param string $output_path The local file path to write the template to.
  */
 function generate_template( $slug, $output_path ) {
 	$template = <<<EOF
