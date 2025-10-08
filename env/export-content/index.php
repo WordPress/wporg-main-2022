@@ -3,6 +3,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
+use Exception;
 
 require __DIR__ . '/includes/utils.php';
 
@@ -29,13 +30,13 @@ $pattern_path = $theme_dir . '/patterns/%s';
 $template_path = $theme_dir . '/templates/%s';
 
 if ( ! isset( $args[0] ) || ! file_exists( $args[0] ) ) {
-	die( "No manifest provided.\n" );
+	throw new Exception( "No manifest provided.\n" );
 }
 
 $manifest_data = file_get_contents( $args[0] );
 $manifest_items = json_decode( $manifest_data );
 if ( ! $manifest_data || ! $manifest_items ) {
-	die( "Unable to read manifest from $args[0]\n" );
+	throw new Exception( "Unable to read manifest from $args[0]\n" );
 }
 
 foreach ( $manifest_items as $item ) {

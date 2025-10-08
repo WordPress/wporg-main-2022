@@ -3,6 +3,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ImportTestContent;
+use Exception;
 
 /**
  * CLI script for generating local test content, fetched from the live wordpress.org site.
@@ -23,11 +24,11 @@ $opts = getopt( '', array( 'url:' ) );
 require dirname( dirname( __FILE__ ) ) . '/wp-load.php';
 
 if ( 'local' !== wp_get_environment_type() ) {
-	die( 'Not safe to run on ' . esc_html( get_site_url() ) );
+	throw new Exception( 'Not safe to run on ' . esc_html( get_site_url() ) );
 }
 
 if ( empty( $opts['url'] ) || esc_url_raw( $opts['url'], [ 'https' ] ) !== $opts['url'] ) {
-	die( 'Invalid url parameter ' . esc_html( $opts['url'] ) );
+	throw new Exception( 'Invalid url parameter ' . esc_html( $opts['url'] ) );
 }
 
 /**
@@ -67,9 +68,9 @@ function import_rest_to_posts( $rest_url ) {
 	$status_code = wp_remote_retrieve_response_code( $response );
 
 	if ( is_wp_error( $response ) ) {
-		die( esc_html( $response->get_error_message() ) );
+		throw new Exception( esc_html( $response->get_error_message() ) );
 	} elseif ( 200 !== wp_remote_retrieve_response_code( $response ) ) {
-		die( esc_html( "HTTP Error $status_code \n" ) );
+		throw new Exception( esc_html( "HTTP Error $status_code \n" ) );
 	}
 
 	$body = wp_remote_retrieve_body( $response );
@@ -113,7 +114,7 @@ function import_rest_to_posts( $rest_url ) {
 		$new_post_id = wp_insert_post( $new_post, true );
 
 		if ( is_wp_error( $new_post_id ) ) {
-			die( esc_html( $new_post_id->get_error_message() ) );
+			throw new Exception( esc_html( $new_post_id->get_error_message() ) );
 		}
 
 		echo "Inserted $post->type $post->id as $new_post_id\n\n";

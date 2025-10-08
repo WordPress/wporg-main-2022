@@ -2,6 +2,7 @@
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
+use Exception;
 
 require __DIR__ . '/parser.php';
 
@@ -23,22 +24,22 @@ function generate_pattern( $url, $output_path ) {
 	$status_code = wp_remote_retrieve_response_code( $response );
 
 	if ( is_wp_error( $response ) ) {
-		die( esc_html( $response->get_error_message() ) );
+		throw new Exception( esc_html( $response->get_error_message() ) );
 	} elseif ( 200 !== wp_remote_retrieve_response_code( $response ) ) {
-		die( esc_html( "HTTP Error $status_code \n" ) );
+		throw new Exception( esc_html( "HTTP Error $status_code \n" ) );
 	}
 
 	$data = wp_remote_retrieve_body( $response );
 
 	if ( ! $data ) {
-		die( "Unable to fetch {$url}\n" );
+		throw new Exception( "Unable to fetch {$url}\n" );
 	}
 
 	$posts = json_decode( $data );
 	$post = $posts[0] ?? null;
 	if ( ! isset( $post->content_raw ) ) {
 		var_dump( $post );
-		die( "No content_raw available at {$url}\n" );
+		throw new Exception( "No content_raw available at {$url}\n" );
 	}
 
 	$content = replace_with_i18n( $post->content_raw );
@@ -58,7 +59,7 @@ EOF;
 	$bytes = file_put_contents( $output_path, $header . $content . "\n" );
 
 	if ( false === $bytes ) {
-		die( 'Unable to write to ' . $output_path );
+		throw new Exception( 'Unable to write to ' . $output_path );
 	} else {
 		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
 	}
