@@ -99,13 +99,15 @@
 <!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}}} -->
 <ul class="wp-block-social-links has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:0px"><!-- wp:social-link {"url":"https://www.youtube.com/wordpress","service":"youtube"} /-->
 
-<!-- wp:social-link {"url":"https://www.linkedin.com/company/wordpress","service":"linkedin"} /-->
-
 <!-- wp:social-link {"url":"https://twitter.com/WordPress","service":"x"} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com/WordPress/","service":"facebook"} /-->
+
+<!-- wp:social-link {"url":"https://www.linkedin.com/company/wordpress","service":"linkedin"} /-->
 
 <!-- wp:social-link {"url":"https://www.instagram.com/wordpress/","service":"instagram"} /-->
 
-<!-- wp:social-link {"url":"https://www.facebook.com/WordPress/","service":"facebook"} /--></ul>
+<!-- wp:social-link {"url":"https://www.tiktok.com/@wordpress","service":"tiktok"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
