@@ -1,13 +1,20 @@
-
-/**
- * Release page: 6.7
+/*
+ * 6.7 Releases page doesn't use `.has-custom-controls` & `.has-1-1-aspect-ratio` yet
+ * which is why it's targeted specifically here.
  */
 
-body.page-template-page-6-7 {
-	video {
-		border-radius: 16px;
-	}
+body.page-template-page-6-7 video,
+.has-1-1-aspect-ratio video {
+	aspect-ratio: 1/1 !important;
+}
 
+body.page-template-page-6-7 video,
+.has-16px-radius video {
+	border-radius: 16px;
+}
+
+body.page-template-page-6-7,
+.has-custom-controls {
 	video::-webkit-media-controls-panel {
 		background: transparent;
 		color: var(--wp--preset--color--white);
