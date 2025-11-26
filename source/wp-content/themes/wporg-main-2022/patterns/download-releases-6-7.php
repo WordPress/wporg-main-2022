@@ -47,8 +47,8 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:video {"id":43924,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-tt5.png","className":"has-1-1-aspect-ratio","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-video has-1-1-aspect-ratio"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-tt5.png" src="https://wordpress.org/files/2024/11/6-7-tt5-i3-colored-nointro-comp.mp4"></video></figure>
+<div class="wp-block-group"><!-- wp:video {"id":43924,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-tt5.png","className":"has-1-1-aspect-ratio has-16px-radius has-custom-controls","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-tt5.png" src="https://wordpress.org/files/2024/11/6-7-tt5-i3-colored-nointro-comp.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -61,8 +61,8 @@
 <div class="wp-block-group alignwide has-white-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#cb4d2a;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:video {"id":43925,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-zoom.png","className":"has-1-1-aspect-ratio","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-video has-1-1-aspect-ratio"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-zoom.png" src="https://wordpress.org/files/2024/11/6-7-zoom-out-i2-colored-nointro-comp.mp4"></video></figure>
+<div class="wp-block-group"><!-- wp:video {"id":43925,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-zoom.png","className":"has-1-1-aspect-ratio has-16px-radius has-custom-controls","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-zoom.png" src="https://wordpress.org/files/2024/11/6-7-zoom-out-i2-colored-nointro-comp.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -103,8 +103,8 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:video {"id":43953,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-bindings.png","className":"has-1-1-aspect-ratio","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-video has-1-1-aspect-ratio"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-bindings.png" src="https://wordpress.org/files/2024/11/6-7-bindings-i0-colored-nointro-comp.mp4"></video></figure>
+<div class="wp-block-group"><!-- wp:video {"id":43953,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-bindings.png","className":"has-1-1-aspect-ratio has-16px-radius has-custom-controls","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-bindings.png" src="https://wordpress.org/files/2024/11/6-7-bindings-i0-colored-nointro-comp.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -117,8 +117,8 @@
 <div class="wp-block-group alignwide has-charcoal-1-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#edbb9f;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:video {"id":43926,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-font-presets.png","className":"has-1-1-aspect-ratio","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-video has-1-1-aspect-ratio"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-font-presets.png" src="https://wordpress.org/files/2024/11/6-7-font-styles-i3-colored-nointro-comp.mp4"></video></figure>
+<div class="wp-block-group"><!-- wp:video {"id":43926,"muted":true,"poster":"https://wordpress.org/files/2024/11/6-7-thumb-font-presets.png","className":"has-1-1-aspect-ratio has-16px-radius has-custom-controls","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2024/11/6-7-thumb-font-presets.png" src="https://wordpress.org/files/2024/11/6-7-font-styles-i3-colored-nointro-comp.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
