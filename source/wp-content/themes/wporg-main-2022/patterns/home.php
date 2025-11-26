@@ -6,19 +6,31 @@
  */
 
 ?>
-<!-- wp:wporg/link-wrapper {"align":"full","style":{"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"width":"1px","color":"var:preset|color|light-grey-1"},"left":{"width":"0px","style":"none"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"textColor":"charcoal-0","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-10-10T00:00:00"}]}}}]}} -->
-<a class="wp-block-wporg-link-wrapper alignfull has-charcoal-0-color has-text-color has-link-color" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;border-left-style:none;border-left-width:0px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--edge-space)" href="<?php _e( 'https://wordpress.org/news/2025/08/portland-welcomes-wcus-2025/', 'wporg' ); ?>"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"8px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Relive the highlights from WCUS 2025! Explore photos, memorable moments, and key takeaways in our event recap.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"style":{"typography":{"lineHeight":"1"},"spacing":{"padding":{"top":"3px","bottom":"3px","left":"4px","right":"4px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:3px;padding-right:4px;padding-bottom:3px;padding-left:4px;line-height:1"><!-- wp:image {"id":40598,"width":"24px","height":"24px","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"24px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/06/chevron-right-small.png" alt="" class="wp-image-40598" style="object-fit:cover;width:24px;height:24px" /></figure>
+<!-- wp:group {"metadata":{"name":"SOTW San Francisco 2025"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-2","width":"1px"},"left":{"width":"0px","style":"none"}},"color":{"background":"#1382f8"}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-12-01T00:00:00"}]}}}]}} -->
+<div class="wp-block-group alignfull has-background" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-2);border-bottom-width:1px;border-left-style:none;border-left-width:0px;background-color:#1382f8;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|10","left":"40px"},"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"center","width":"150px"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><!-- wp:image {"id":48679,"width":"150px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/SOTW_logo-white_simpler.png" alt="" class="wp-image-48679" style="width:150px" /></figure>
 <!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":""} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<p class="has-white-color has-text-color has-link-color" style="line-height:1.2"><?php _e( 'San Francisco Dec 2, 2025 | <a href="https://wordpress.org/state-of-the-word/">Learn more</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
+<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"82px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/11/graphics_drawer-colorful.png","id":48685,"source":"file","title":"graphics_drawer-colorful"},"backgroundSize":"cover","backgroundPosition":"0% 50%"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group" style="min-height:82px"></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></a>
-<!-- /wp:wporg/link-wrapper -->
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":false,"start":"","end":""}]}}}]}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
