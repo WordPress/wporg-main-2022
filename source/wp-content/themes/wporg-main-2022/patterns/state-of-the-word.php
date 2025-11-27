@@ -12,8 +12,8 @@
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:image {"id":48624,"sizeSlug":"full","linkDestination":"none","align":"full"} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2025/11/sotw_2025_banner-landing-scaled.png" alt="" class="wp-image-48624" /></figure>
+<!-- wp:image {"id":48645,"sizeSlug":"full","linkDestination":"none","align":"full"} -->
+<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2025/11/sotw_2025_banner-landing_finalone-scaled.png" alt="" class="wp-image-48645" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"align":"full","className":"entry-content has-newsreader-font-family","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|30"}},"typography":{"lineHeight":1.4}},"layout":{"inherit":true,"type":"constrained"}} -->
@@ -360,12 +360,14 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:cover {"url":"https://wordpress.org/files/2025/11/landing_bottom-graphics-latest.png","id":48637,"dimRatio":0,"isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0},"minHeight":750,"minHeightUnit":"px","sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="min-height:750px"><img class="wp-block-cover__image-background wp-image-48637 size-full" alt="" src="https://wordpress.org/files/2025/11/landing_bottom-graphics-latest.png" style="object-position:50% 0%" data-object-fit="cover" data-object-position="50% 0%" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"255px"} -->
-<div style="height:255px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"24px"}},"fontFamily":"eb-garamond"} -->
+<p class="has-text-align-center has-eb-garamond-font-family" style="font-size:24px"><?php _e( 'See you <em>December 2!</em><br>#StateOfTheWord', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
+<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:paragraph {"align":"center","placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"large"} -->
-<p class="has-text-align-center has-charcoal-0-color has-text-color has-link-color has-large-font-size"><?php _e( '*<br>See you <em>December 2!</em><br>#StateOfTheWord', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:cover -->
+<!-- wp:image {"id":48635,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/landing-sotw_bottom-graphic-1.png" alt="" class="wp-image-48635" /></figure>
+<!-- /wp:image -->
