@@ -124,12 +124,12 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":""}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"fontSize":"extra-large"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"fontSize":"extra-large"} -->
 <h2 class="wp-block-heading has-extra-large-font-size"><?php _e( 'See what’s happening across initiatives', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:rss {"columns":3,"blockLayout":"grid","feedURL":"https://make.wordpress.org/community/feed","itemsToShow":3,"displayExcerpt":true,"displayDate":true,"excerptLength":20} /--></div>
+<!-- wp:rss {"columns":3,"blockLayout":"grid","feedURL":"https://make.wordpress.org/community/feed","itemsToShow":3,"displayExcerpt":true,"displayDate":true,"excerptLength":20,"align":"wide"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
