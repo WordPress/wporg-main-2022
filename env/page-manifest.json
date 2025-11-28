@@ -133,6 +133,26 @@
 		"template": "page-source.html"
 	},
 	{
+		"slug": "education",
+		"pattern": "education.php",
+		"template": "page-education.html"
+	},
+	{
+		"slug": "student-clubs",
+		"pattern": "education-student-clubs.php",
+		"template": "page-education-student-clubs.html"
+	},
+	{
+		"slug": "campus-connect",
+		"pattern": "education-campus-connect.php",
+		"template": "page-education-campus-connect.html"
+	},
+	{
+		"slug": "wp-credits",
+		"pattern": "education-wp-credits.php",
+		"template": "page-education-wp-credits.html"
+	},
+	{
 		"slug": "enterprise",
 		"pattern": "enterprise.php",
 		"template": "page-enterprise.html"
