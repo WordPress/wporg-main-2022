@@ -148,9 +148,9 @@
 		"template": "page-education-campus-connect.html"
 	},
 	{
-		"slug": "wp-credits",
-		"pattern": "education-wp-credits.php",
-		"template": "page-education-wp-credits.html"
+		"slug": "credits",
+		"pattern": "education-credits.php",
+		"template": "page-education-credits.html"
 	},
 	{
 		"slug": "enterprise",
