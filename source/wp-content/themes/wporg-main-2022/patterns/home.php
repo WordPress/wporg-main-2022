@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"SOTW San Francisco 2025"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-2","width":"1px"},"left":{"width":"0px","style":"none"}},"color":{"background":"#1382f8"}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-12-01T00:00:00"}]}}}]}} -->
+<!-- wp:group {"metadata":{"name":"SOTW San Francisco 2025"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-2","width":"1px"},"left":{"width":"0px","style":"none"}},"color":{"background":"#1382f8"}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-12-01T00:00:00"}],"hideOnSchedules":false}}}]}} -->
 <div class="wp-block-group alignfull has-background" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-2);border-bottom-width:1px;border-left-style:none;border-left-width:0px;background-color:#1382f8;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|10","left":"40px"},"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
@@ -30,6 +30,50 @@
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#1382f8"},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/11/SotW-_-blank-_-backdrop-_-1-scaled.png","id":48720,"source":"file","title":"SotW _ blank _ backdrop _ 1"},"backgroundSize":"cover"}},"textColor":"white","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-12-01T00:00:00","end":"2025-12-03T12:00:00"}],"hideOnSchedules":false}}}]}} -->
+<div class="wp-block-group alignfull has-white-color has-text-color has-background has-link-color" style="background-color:#1382f8;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=NqQICC3WlpQ?si=BSSIomvyuYkqEaYY&amp;w=560&amp;h=315]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":48679,"width":"120px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2025/11/SOTW_logo-white_simpler-1024x216.png" alt="" class="wp-image-48679" style="width:120px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"className":"is-style-short-text","textColor":"white"} -->
+<p class="is-style-short-text has-white-color has-text-color"><?php _e( 'Watch State of the Word, the annual keynote address live from San Francisco.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"SotW 2025 post-event banner","blockVisibility":false},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/11/SotW-_-blank-_-backdrop-_-2b-scaled.png","id":48723,"source":"file","title":"SotW _ blank _ backdrop _ 2b"},"backgroundSize":"cover"}},"backgroundColor":"white","textColor":"charcoal-0","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-charcoal-0-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:shortcode -->
+[youtube https://www.youtube.com/watch?v=NqQICC3WlpQ?si=BSSIomvyuYkqEaYY&amp;w=560&amp;h=315]
+<!-- /wp:shortcode --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":48659,"width":"120px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/Logo-_-for-small-scale.png" alt="" class="wp-image-48659" style="width:120px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|blueberry-1"}},"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Catch up on all the news about WordPress from State of the Word 2025, San Francisco. <a href="https://wordpress.org/12760a81-5f9e-47fe-9a35-8ced9ca9db2c#">Read the event recap</a>.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":false,"start":"","end":""}]}}}]}} -->
