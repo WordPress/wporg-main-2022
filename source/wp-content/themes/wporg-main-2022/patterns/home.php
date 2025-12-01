@@ -47,7 +47,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","textColor":"white"} -->
-<p class="is-style-short-text has-white-color has-text-color"><?php _e( 'Watch State of the Word, the annual keynote address live from San Francisco.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-white-color has-text-color"><?php _e( 'Watch State of the Word, the annual keynote address live from San Francisco. December 2nd at 8PM UTC.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>

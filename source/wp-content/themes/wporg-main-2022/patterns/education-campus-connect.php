@@ -138,14 +138,14 @@
 <!-- wp:list-item -->
 <li><?php _e( 'Connect your institution to the global WordPress ecosystem', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
-<!-- /wp:group -->
+<!-- /wp:list -->
 
-<!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php _e( 'Become an Organizer', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://events.wordpress.org/campusconnect/organize/', 'wporg' ); ?>"><?php _e( 'Become an Organizer', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"rowSpan":0,"columnSpan":0},"spacing":{"padding":{"top":"0","left":"0","right":"0","bottom":"var:preset|spacing|20"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
