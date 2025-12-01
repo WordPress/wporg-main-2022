@@ -9,6 +9,10 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
+__( 'WordPress Credits', 'wporg' );
+__( 'WordPress Campus Connect', 'wporg' );
+__( 'Student Clubs', 'wporg' );
+__( 'Education', 'wporg' );
 __( 'WordPress 6.8', 'wporg' );
 __( 'Guides', 'wporg' );
 __( 'WordPress 6.7', 'wporg' );
