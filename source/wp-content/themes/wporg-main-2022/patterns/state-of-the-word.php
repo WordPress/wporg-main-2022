@@ -87,7 +87,7 @@
 
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the <a href="https://www.youtube.com/watch?v=YhXgMk0BjkU" data-type="link" data-id="https://www.youtube.com/watch?v=YhXgMk0BjkU" target="_blank" rel="noreferrer noopener">WordPress YouTube channel</a> or be part of a local watch party. Limited in-person tickets are available by request.', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the <a href="https://www.youtube.com/live/NqQICC3WlpQ" target="_blank" rel="noreferrer noopener">WordPress YouTube channel</a> or be part of a local watch party. Limited in-person tickets are available by request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","openInNewTab":true,"className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}}} -->
