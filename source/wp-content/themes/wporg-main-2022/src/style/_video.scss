@@ -1,5 +1,6 @@
 .has-1-1-aspect-ratio video {
 	aspect-ratio: 1/1 !important;
+	object-fit: contain !important;
 }
 
 .has-16px-radius video {
