@@ -172,6 +172,7 @@ function add_site_navigation_menus( $menus ) {
 			'submenu' => $about_people,
 		),
 	);
+
 	return array(
 		'about-home' => $about_home,
 		'about-details' => $about_details,
@@ -195,6 +196,24 @@ function add_site_navigation_menus( $menus ) {
 				'url' => '/download/source/',
 			),
 		),
+		'education' => array(
+			array(
+				'label' => __( 'Campus Connect', 'wporg' ),
+				'url' => '/education/campus-connect/',
+			),
+			array(
+				'label' => __( 'Credits', 'wporg' ),
+				'url' => '/education/credits/',
+			),
+			array(
+				'label' => __( 'Student Clubs', 'wporg' ),
+				'url' => '/education/student-clubs/',
+			),
+			array(
+				'label' => __( 'Education Handbook', 'wporg' ),
+				'url' => 'https://make.wordpress.org/community/handbook/education/',
+			),
+		)
 	);
 }
 
