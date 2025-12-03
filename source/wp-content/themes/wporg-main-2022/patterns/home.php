@@ -54,12 +54,12 @@
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"SotW 2025 post-event banner","blockVisibility":false},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/11/SotW-_-blank-_-backdrop-_-2b-scaled.png","id":48723,"source":"file","title":"SotW _ blank _ backdrop _ 2b"},"backgroundSize":"cover"}},"backgroundColor":"white","textColor":"charcoal-0","layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
+<!-- wp:group {"metadata":{"name":"SotW 2025 post-event banner"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"blockGap":"var:preset|spacing|60"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/11/SotW-_-blank-_-backdrop-_-2b-scaled.png","id":48723,"source":"file","title":"SotW _ blank _ backdrop _ 2b"},"backgroundSize":"cover"}},"backgroundColor":"white","textColor":"charcoal-0","layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group alignfull has-charcoal-0-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:cover {"dimRatio":0,"minHeight":50,"isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
 <div class="wp-block-cover alignwide is-light" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:shortcode -->
-[youtube-nocookie]https://www.youtube-nocookie.com/embed/NqQICC3WlpQ?si=Sop4uH1_2LmSemGG[/youtube-nocookie]
+[youtube-nocookie]https://www.youtube-nocookie.com/embed/U_DF4-23C8Q?si=Uc-A9rYnNgF8JpFd[/youtube-nocookie]
 <!-- /wp:shortcode --></div>
 <!-- /wp:column -->
 
@@ -69,7 +69,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|blueberry-1"}},"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Catch up on all the news about WordPress from State of the Word 2025, San Francisco. <a href="https://wordpress.org/12760a81-5f9e-47fe-9a35-8ced9ca9db2c#">Read the event recap</a>.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Catch up on all the news about WordPress from State of the Word 2025, San Francisco.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
