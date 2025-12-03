@@ -204,7 +204,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'The Abillities API', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'The Abilities API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
