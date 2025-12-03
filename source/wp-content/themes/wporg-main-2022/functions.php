@@ -213,7 +213,7 @@ function add_site_navigation_menus( $menus ) {
 				'label' => __( 'Education Handbook', 'wporg' ),
 				'url' => 'https://make.wordpress.org/community/handbook/education/',
 			),
-		)
+		),
 	);
 }
 
