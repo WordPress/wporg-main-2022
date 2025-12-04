@@ -551,8 +551,8 @@
 <!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|black-opacity-15","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--black-opacity-15);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px"><!-- wp:columns {"align":"wide","className":"is-style-default","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":{"top":"0px","left":"0px"}},"border":{"width":"0px","style":"none"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
 <div class="wp-block-columns alignwide is-style-default has-charcoal-0-color has-text-color has-link-color" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"border":{"width":"0px","style":"none"}}} -->
-<div class="wp-block-column" style="border-style:none;border-width:0px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"fontSize":"heading-6"} -->
+<div class="wp-block-column" style="border-style:none;border-width:0px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70","right":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"fontSize":"heading-6"} -->
 <p class="has-heading-6-font-size"><?php _e( '<strong>Join as a student</strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -599,8 +599,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"border":{"top":{"style":"none","width":"0px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|black-opacity-15","width":"1px"}},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-column" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--black-opacity-15);border-left-width:1px;padding-top:0;padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:paragraph {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"heading-6"} -->
+<div class="wp-block-column" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--black-opacity-15);border-left-width:1px;padding-top:0;padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"heading-6"} -->
 <p class="has-heading-6-font-size"><?php _e( '<strong>Become a Mentor</strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
