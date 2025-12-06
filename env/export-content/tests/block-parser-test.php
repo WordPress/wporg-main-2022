@@ -170,8 +170,8 @@ class BlockParser_Test extends WP_UnitTestCase {
 	public function data_block_content_i18n_with_shortcode() {
 		return [
 			[
-				"<!-- wp:paragraph -->\n<p>Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><?php\n/* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );\n?></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p>Recommend PHP [recommended_php] or greater and MariaDB version [recommended_mariadb] or greater.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php\n/* translators: [recommended_php], [recommended_mariadb] are shortcodes and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater and MariaDB version [recommended_mariadb] or greater.', 'wporg' );\n?></p>\n<!-- /wp:paragraph -->",
 			],
 			[
 				"<!-- wp:list-item -->\n<li>Recommend PHP [recommended_php] or greater.</li>\n<!-- /wp:list-item -->",

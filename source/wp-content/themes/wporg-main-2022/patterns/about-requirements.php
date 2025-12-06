@@ -25,8 +25,8 @@ _e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater
 
 <!-- wp:list-item -->
 <li><?php
-/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
-_e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater OR <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.', 'wporg' );
+/* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
+_e( '<a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater OR <a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] (version 8.4 or newer are not compatible).', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 
@@ -36,7 +36,7 @@ _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or g
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'That’s really it. <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> is recommended as the most robust and featureful server for running WordPress, but any server that supports PHP and MySQL will do. That said, for the smoothest experience in setting up—and running—your site, <a href="https://wordpress.org/hosting/">each host on the hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
+<p><?php _e( 'That’s really it. <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> is recommended as the most robust and featureful server for running WordPress, but any server that supports PHP and MariaDB will do. That said, for the smoothest experience in setting up—and running—your site, <a href="https://wordpress.org/hosting/">each host on the hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -46,7 +46,7 @@ _e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or g
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [minimum_php] is a shortcode and should not be translated. */
-_e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP [minimum_php]+ and MySQL 5.5.5+. However, these versions have reached their official End Of Life and <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' );
+_e( 'Note: If you are in a legacy environment where you only have older PHP or MariaDB/MySQL versions, WordPress also works with PHP [minimum_php]+ and MariaDB/MySQL 5.5.5+. However, these versions have reached their official End Of Life and <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
@@ -73,8 +73,8 @@ _e( 'PHP [recommended_php] or greater', 'wporg' );
 
 <!-- wp:list-item -->
 <li><?php
-/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
-_e( 'MySQL [recommended_mysql] or greater OR MariaDB [recommended_mariadb] or greater', 'wporg' );
+/* translators: [recommended_mariadb] are shortcodes and should not be translated. */
+_e( 'MariaDB [recommended_mariadb] or greater', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 

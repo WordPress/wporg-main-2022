@@ -74,8 +74,8 @@
 
 <!-- wp:paragraph {"className":"is-style-short-text","textColor":"charcoal-4","fontSize":"small"} -->
 <p class="is-style-short-text has-charcoal-4-color has-text-color has-small-font-size"><?php
-/* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
-_e( 'Recommend PHP [recommended_php] or greater and MySQL version [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );
+/* translators: [recommended_php], [recommended_mariadb] are shortcodes and should not be translated. */
+_e( 'Recommend PHP [recommended_php] or greater and MariaDB version [recommended_mariadb] or greater.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
