@@ -22,9 +22,11 @@
 [youtube-nocookie]https://www.youtube-nocookie.com/embed/U_DF4-23C8Q?si=Uc-A9rYnNgF8JpFd[/youtube-nocookie]
 <!-- /wp:shortcode -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php _e( 'Watch State of the Word, the annual keynote address live from San Francisco.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:buttons {"blockVisibility":{"hideBlock":true}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","fontSize":"normal","fontFamily":"inter"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-inter-font-family has-normal-font-size has-custom-font-size wp-element-button" href="<?php _e( 'https://wordpress.org/news/2025/12/sotw-2025/', 'wporg' ); ?>"><?php _e( 'Read the Recap', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -81,7 +83,7 @@
 
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the <a href="https://www.youtube.com/watch?v=YhXgMk0BjkU" data-type="link" data-id="https://www.youtube.com/watch?v=YhXgMk0BjkU" target="_blank" rel="noreferrer noopener">WordPress YouTube channel</a> or be part of a local watch party. Limited in-person tickets are available by request.', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the WordPress YouTube channel or be part of a local watch party. Limited in-person tickets are available by request.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","openInNewTab":true,"className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}}} -->
@@ -150,7 +152,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","fontSize":"normal","fontFamily":"inter"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-inter-font-family has-normal-font-size has-custom-font-size wp-element-button" href="<?php _e( 'https://luma.com/t4rh03zo', 'wporg' ); ?>"><?php _e( 'Request A Ticket', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-inter-font-family has-normal-font-size has-custom-font-size wp-element-button" href="<?php _e( 'https://luma.com/t4rh03zo', 'wporg' ); ?>"><?php _e( 'Request a Ticket', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -265,7 +267,7 @@
 
 <!-- wp:buttons {"blockVisibility":{"hideBlock":true}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill","fontSize":"normal","fontFamily":"inter"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-inter-font-family has-normal-font-size has-custom-font-size wp-element-button" href="<?php _e( 'https://luma.com/t4rh03zo', 'wporg' ); ?>"><?php _e( 'Request A Ticket', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-inter-font-family has-normal-font-size has-custom-font-size wp-element-button" href="<?php _e( 'https://luma.com/t4rh03zo', 'wporg' ); ?>"><?php _e( 'Request a Ticket', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
