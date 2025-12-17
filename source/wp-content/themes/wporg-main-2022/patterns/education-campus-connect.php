@@ -16,7 +16,7 @@
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"align":"left","className":"is-style-short-text","textColor":"light-grey-1"} -->
-<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Hands-on learning that connects campuses with the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Hands-on learning that connects campuses with the WordPress ecosystem', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -31,7 +31,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}}},"textColor":"charcoal-2"} -->
-<p class="has-charcoal-2-color has-text-color has-link-color"><?php _e( 'Wordpress Campus Connect is a global learning initiative that brings hands-on WordPress experience directly to campuses and community spaces. The program offers a simple, flexible format where students work on real projects, learn essential WordPress skills, and explore future career paths with the support of mentors and contributors.', 'wporg' ); ?></p>
+<p class="has-charcoal-2-color has-text-color has-link-color"><?php _e( 'WordPress Campus Connect is a global learning initiative that brings hands-on WordPress experience directly to campuses and community spaces. The program offers a simple, flexible format where students work on real projects, learn essential WordPress skills, and explore future career paths with the support of mentors and contributors.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -285,7 +285,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2"} -->
-<p class="has-light-grey-2-color has-text-color has-link-color"><?php _e( 'Discover some of the projects built by students as part of their learning journey. Get Involved', 'wporg' ); ?></p>
+<p class="has-light-grey-2-color has-text-color has-link-color"><?php _e( 'Discover some of the projects built by students as part of their learning journey.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
