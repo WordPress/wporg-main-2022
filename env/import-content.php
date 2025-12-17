@@ -67,7 +67,7 @@ function import_rest_to_posts( $rest_url ) {
 
 	add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 
-	$response = wp_remote_get( $rest_url );
+	$response = wp_remote_get( $rest_url, array( 'timeout' => 30 ) );
 	$status_code = wp_remote_retrieve_response_code( $response );
 
 	if ( is_wp_error( $response ) ) {
