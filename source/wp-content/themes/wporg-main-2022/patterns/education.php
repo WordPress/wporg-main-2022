@@ -32,7 +32,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Our mission is to create clear, accessible pathways into the open-source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.<br>Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Creating clear, accessible pathways into the open-source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
+<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
@@ -57,11 +61,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'Our mission is to create clear, accessible pathways into the open-source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'We aim to bring WordPress education directly to students on campus, empowering them to discover the platform&#039;s potential for their studies and future careers. We strive to bridge the gap between the classroom and the global WordPress community, fostering connections that inspire growth and opportunity.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
