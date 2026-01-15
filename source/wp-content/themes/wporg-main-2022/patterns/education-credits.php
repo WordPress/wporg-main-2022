@@ -15,7 +15,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"align":"left","className":"is-style-short-text","textColor":"light-grey-1"} -->
+<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
 <p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Guiding the next generation of contributors through hands-on learning', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -229,7 +229,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre', 'wporg' ); ?>"><?php _e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>"><?php _e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -263,7 +263,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrKDkjeUdw8Fof34', 'wporg' ); ?>"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -404,7 +404,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'San José, Costa Rica', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -424,7 +424,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Riga, Latvia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -444,7 +444,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Santa Cruz &amp; Cochabamba, Bolivia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -464,7 +464,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Pisa, Italy', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -484,7 +484,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Dhaka, Bangladesh', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -504,7 +504,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -524,7 +524,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -614,7 +614,7 @@
 <div class="wp-block-group alignfull has-blueberry-1-background-color has-background" style="border-top-color:var(--wp--preset--color--white-opacity-15);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","className":"is-style-default","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":{"top":"0px","left":"0px"}},"border":{"width":"0px","style":"none"}}} -->
 <div class="wp-block-columns alignwide is-style-default" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"border":{"width":"0px","style":"none"},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
 <p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'WordPress.com offers domain plus 1 year of free hosting plus 50% off renewal', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -628,7 +628,7 @@
 
 <!-- wp:column {"style":{"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|white-opacity-15","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--white-opacity-15);border-left-width:1px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
 <p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'Weglot offers one year of Weglot’s Business Plan for free to translate your website', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -680,7 +680,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrnGtYh2MFPgPOPm', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Participate', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Participate', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -698,7 +698,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrFUiCzMP8zwrouL', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -720,7 +720,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Partner', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Partner', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -738,7 +738,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrKDkjeUdw8Fof34', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
