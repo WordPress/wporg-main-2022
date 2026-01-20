@@ -16,7 +16,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"align":"left","className":"is-style-short-text","textColor":"light-grey-1"} -->
+<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
 <p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Empowering students to build on-campus WordPress communities', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -65,7 +65,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/community-deputy/other-event-formats/wordpress-campus-connect/#request-the-creation-of-a-wordpress-student-club', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -111,7 +111,7 @@
 <!-- /wp:group -->
 
 <!-- wp:cover {"url":"https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png","id":48875,"dimRatio":0,"customOverlayColor":"#959595","isUserOverlayColor":false,"minHeight":361,"minHeightUnit":"px","isDark":false,"sizeSlug":"large","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light" style="min-height:361px"><img class="wp-block-cover__image-background wp-image-48875 size-large" alt="" src="https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#959595"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","fontSize":"large"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:361px"><img class="wp-block-cover__image-background wp-image-48875 size-large" alt="" src="https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#959595"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size"></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
@@ -155,7 +155,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/community-deputy/other-event-formats/wordpress-campus-connect/#request-the-creation-of-a-wordpress-student-club', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
