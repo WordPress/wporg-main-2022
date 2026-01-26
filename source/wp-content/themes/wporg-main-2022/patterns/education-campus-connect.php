@@ -15,14 +15,14 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"align":"left","className":"is-style-short-text","textColor":"light-grey-1"} -->
+<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
 <p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Hands-on learning that connects campuses with the WordPress ecosystem', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|30","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|30","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"anchor":"about"} -->
 <div class="wp-block-group alignfull" id="about" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"right":"0","left":"0"}}},"backgroundColor":"white","textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-right:0;padding-left:0"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
@@ -71,11 +71,11 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top","width":"45%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:45%"><!-- wp:paragraph {"align":"left","fontSize":"large"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:45%"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"}},"fontSize":"large"} -->
 <p class="has-text-align-left has-large-font-size"><?php _e( '<strong>Who can become an organizer</strong>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}}},"textColor":"charcoal-2"} -->
+<!-- wp:paragraph {"className":"has-charcoal-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}},"typography":{"textAlign":"left"}},"textColor":"charcoal-2"} -->
 <p class="has-text-align-left has-charcoal-2-color has-text-color has-link-color"><?php _e( 'Anyone connected to an educational institution can host a Campus Connect event, no prior experience is needed. If you want to help students learn practical WordPress skills, you’re welcome to join in.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -83,7 +83,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px","textAlign":"center"}},"textColor":"charcoal-0"} -->
 <h2 class="wp-block-heading has-text-align-center has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Participating Institutions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -155,7 +155,7 @@
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between"},"anchor":"cta"} -->
 <div class="wp-block-buttons" id="cta"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://events.wordpress.org/campusconnect/organize', 'wporg' ); ?>"><?php _e( 'Become an Organizer', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
@@ -184,7 +184,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Connect with a welcoming global open-source community', 'wporg' ); ?></li>
+<li><?php _e( 'Connect with a welcoming global open source community', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group --></div>
@@ -200,7 +200,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"><!-- wp:cover {"url":"https://wordpress.org/main-test/files/2025/12/stories-highlights-campus-connect.png","id":10041,"dimRatio":0,"isUserOverlayColor":true,"minHeight":416,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"color":{"duotone":"var:preset|duotone|grayscale"}},"layout":{"type":"default"}} -->
-<div class="wp-block-cover alignfull is-light" style="min-height:416px"><img class="wp-block-cover__image-background wp-image-10041 size-full" alt="" src="https://wordpress.org/main-test/files/2025/12/stories-highlights-campus-connect.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","fontSize":"large"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:416px"><img class="wp-block-cover__image-background wp-image-10041 size-full" alt="" src="https://wordpress.org/main-test/files/2025/12/stories-highlights-campus-connect.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size"></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
@@ -322,7 +322,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"border":{"top":{"style":"none","width":"0px"},"right":{"style":"none","width":"0px"},"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"left":{"style":"none","width":"0px"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<!-- wp:group {"align":"full","style":{"border":{"top":{"style":"none","width":"0px"},"right":{"style":"none","width":"0px"},"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"left":{"style":"none","width":"0px"}}},"layout":{"type":"constrained","justifyContent":"left"},"anchor":"get-involved"} -->
 <div class="wp-block-group alignfull" id="get-involved" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;border-left-style:none;border-left-width:0px"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"fontSize":"35px"}}} -->
@@ -344,7 +344,7 @@
 <p><?php _e( 'Make a real impact in your educational community by hosting a WordPress Campus Connect event at your institution. It’s a great way to help students develop practical skills, explore career opportunities, and connect with the global WordPress community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"space-between"},"anchor":"cta"} -->
 <div class="wp-block-buttons" id="cta"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://events.wordpress.org/campusconnect/organize', 'wporg' ); ?>"><?php _e( 'Become an Organizer', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
@@ -378,7 +378,7 @@
 <p><?php _e( 'Help shape the future of WordPress by supporting Campus Connect. Your contribution gives students access to workshops, mentorship, and networking opportunities, helping them build practical skills and grow within the WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
+<!-- wp:buttons {"anchor":"cta"} -->
 <div class="wp-block-buttons" id="cta"><!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://events.wordpress.org/campusconnect/sponsor/', 'wporg' ); ?>"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>

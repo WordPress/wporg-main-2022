@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress Student Clubs is an initiative created to empower students to bring the open-source spirit of WordPress to their campuses, building local communities that learn, share, and grow together.  Student Clubs allow students to sustain on-campus WordPress activities year-round, creating space for ongoing learning.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress Student Clubs is an initiative created to empower students to bring the open source spirit of WordPress to their campuses, building local communities that learn, share, and grow together.  Student Clubs allow students to sustain on-campus WordPress activities year-round, creating space for ongoing learning.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -117,7 +117,7 @@
 <!-- /wp:cover -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"textAlign":"center","fontSize":"heading-3"} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"style":{"typography":{"textAlign":"center"}},"fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-text-align-center has-heading-3-font-size"><?php _e( 'Participating Institutions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
