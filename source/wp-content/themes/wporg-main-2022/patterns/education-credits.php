@@ -30,7 +30,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open-source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students receive training on WordPress tools, community culture, and open-source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students receive training on WordPress tools, community culture, and open source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -152,7 +152,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Connect with a global open-source community', 'wporg' ); ?></li>
+<li><?php _e( 'Connect with a global open source community', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
@@ -210,7 +210,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Ability to integrate real-world open-source experience directly into the curriculum', 'wporg' ); ?></li>
+<li><?php _e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -222,7 +222,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open-source collaboration', 'wporg' ); ?></li>
+<li><?php _e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
@@ -380,7 +380,7 @@
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open-source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"charcoal-1"} -->
@@ -540,7 +540,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open-source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -556,7 +556,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"backgroundColor":"blueberry-1","textColor":"light-grey-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-light-grey-2-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"35px"}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"35px","textAlign":"center"}},"textColor":"light-grey-2"} -->
 <h2 class="wp-block-heading has-text-align-center has-light-grey-2-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Our Sponsors', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -675,7 +675,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open-source community.', 'wporg' ); ?></p>
+<p><?php _e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open source community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -693,7 +693,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-<p><?php _e( 'Share your experience and help guide students through real-world open-source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
+<p><?php _e( 'Share your experience and help guide students through real-world open source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -733,7 +733,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"typography":{"textDecoration":"none"}}} -->
-<p class="has-link-color" style="text-decoration:none"><?php _e( 'Strengthen the open-source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
+<p class="has-link-color" style="text-decoration:none"><?php _e( 'Strengthen the open source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
