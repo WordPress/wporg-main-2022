@@ -12,28 +12,28 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress is continually under development. Currently, Phase 2 of the Gutenberg project formally wrapped with WordPress 6.3, and exploration of Phase 3 (Collaboration) is underway. The Gutenberg project is a reimagination of the way we manage content on the web. Its goal is to broaden access to web presence, a foundation of successful modern businesses.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is continually evolving through the Gutenberg project, a long-term reimagining of how content is created and managed on the web, with the goal of broadening access to a strong web presence for individuals, creators, and modern businesses. Phase 1 introduced the Block Editor in WordPress 5.0, while Phase 2 focused on Site Editing, culminating in WordPress 6.3 with the launch of the Site Editor and powerful Block-based tools that extend across an entire site. Today, Phase 3 is underway, centered on collaborative editing and workflows, bringing real-time collaboration and smoother publishing processes to WordPress. For deeper detail on Site Editing, its components, and other active feature work, explore the <a href="https://make.wordpress.org/core/features/">Feature Projects Overview</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Phase 1 was the new block editor, <a href="https://wordpress.org/gutenberg/">Gutenberg</a>, released in WordPress 5.0. In 2021 and 2022, we focused on merging Site Editing (Phase 2) into WordPress. This introduced the Site Editor and a suite of editing capabilities that enable leveraging blocks for use across an entire website. Phase 3 is Collaborative Editing, also known as Workflows given its implementation of features for workflows and real-time collaboration. <a href="https://make.wordpress.org/core/features/">Check out the Feature Projects Overview page</a> for more information on site editing, its components, and other active feature work.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'To support the vision set in the latest <a href="https://wordpress.org/news/2023/12/state-of-the-word-2023-recap/">State of the Word</a>, the project has the following <a href="https://make.wordpress.org/project/2024/01/19/big-picture-goals-2024/">big picture goals</a>:', 'wporg' ); ?></p>
+<p><?php _e( 'The project has the following <a href="https://make.wordpress.org/project/2026/01/23/big-picture-goals-for-2026/">big picture goals for 2026</a>:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://make.wordpress.org/core/">Test, iterate, and ship</a> Phase 3 of the Gutenberg project.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Core Development &amp; WordPress 7.0</strong> — Deliver <a href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/">three major releases in 2026</a> with WordPress 7.0 advancing <a href="https://make.wordpress.org/core/tag/phase-3/">Phase 3</a> collaboration features, client-side media handling, responsive styling controls, and expanded block tools to boost creativity and performance.&nbsp;', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Continue to support the community through <a href="https://learn.wordpress.org/">learning</a>, <a href="https://events.wordpress.org/">events</a>, and <a href="https://make.wordpress.org/community/tag/mentorship-program/">mentorship</a> of current and future contributors.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>AI Everywhere, With Clear Guardrails and Benchmarks</strong> — Intentionally embed AI across the WordPress experience to simplify creation, workflows, and contribution — while establishing project-wide guidelines that uphold transparency, user control, and WordPress values.&nbsp;', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Address the difficulty in moving platforms through the <a href="https://wordpress.org/news/2024/01/data-liberation-in-2024/">Data Liberation project</a>, as well as streamline existing review processes across project repositories.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Revamping Meetups</strong> — Strengthen local <a href="https://events.wordpress.org/">meetups</a> as active, hands-on community hubs that help newcomers learn together, build confidence, and transition into meaningful contributor roles.&nbsp;', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<strong>Community, Education, and the Contributor Pipeline</strong> — Scale <a href="https://wordpress.org/education/">education programs</a> and clarify contribution pathways so new contributors can easily onboard, connect with teams, and grow into ongoing project roles.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -46,11 +46,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Plans for future releases will be timely communicated. Follow changes in progress for the next major version in our <a href="https://core.trac.wordpress.org/" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
+<p><?php _e( 'Follow progress on the next major version in our <a href="https://core.trac.wordpress.org/" target="_blank" rel="noreferrer noopener">issue tracker</a>. Projected dates below are for rough planning purposes only.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '7.0', 'wporg' ); ?></td><td><?php _e( 'Tentatively 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '7.0', 'wporg' ); ?></td><td><?php _e( 'April 9, 2026', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.1', 'wporg' ); ?></td><td><?php _e( 'August 19, 2026', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.2', 'wporg' ); ?></td><td><?php _e( 'December 10, 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
