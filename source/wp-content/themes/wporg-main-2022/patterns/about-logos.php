@@ -140,7 +140,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.png?0">PNG (BaseGray/transparent)</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
