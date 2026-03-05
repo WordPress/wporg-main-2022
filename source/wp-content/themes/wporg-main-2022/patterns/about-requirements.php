@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php
 /* translators: [recommended_php] is a shortcode and should not be translated. */
 _e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater.', 'wporg' );
@@ -25,13 +25,13 @@ _e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater
 
 <!-- wp:list-item -->
 <li><?php
-/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
-_e( '<a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater OR <a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater.', 'wporg' );
+/* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
+_e( '<a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater OR <a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater.', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support', 'wporg' ); ?></li>
+<li><?php _e( '<a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -64,7 +64,7 @@ _e( 'Note: If you are in a legacy environment where you only have older PHP or M
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php
 /* translators: [recommended_php] is a shortcode and should not be translated. */
 _e( 'PHP [recommended_php] or greater', 'wporg' );
@@ -73,8 +73,8 @@ _e( 'PHP [recommended_php] or greater', 'wporg' );
 
 <!-- wp:list-item -->
 <li><?php
-/* translators: [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */
-_e( 'MySQL [recommended_mysql] or greater OR MariaDB [recommended_mariadb] or greater', 'wporg' );
+/* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
+_e( 'MariaDB version [recommended_mariadb] or greater OR MySQL version [recommended_mysql] or greater', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 

@@ -15,7 +15,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"align":"left","className":"is-style-short-text","textColor":"light-grey-1"} -->
+<div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
 <p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Guiding the next generation of contributors through hands-on learning', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -30,7 +30,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open-source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students receive training on WordPress tools, community culture, and open-source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students receive training on WordPress tools, community culture, and open source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -152,7 +152,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Connect with a global open-source community', 'wporg' ); ?></li>
+<li><?php _e( 'Connect with a global open source community', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
@@ -210,7 +210,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Ability to integrate real-world open-source experience directly into the curriculum', 'wporg' ); ?></li>
+<li><?php _e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -222,14 +222,14 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open-source collaboration', 'wporg' ); ?></li>
+<li><?php _e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre', 'wporg' ); ?>"><?php _e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>"><?php _e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -263,7 +263,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrKDkjeUdw8Fof34', 'wporg' ); ?>"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -380,7 +380,7 @@
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open-source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"charcoal-1"} -->
@@ -404,7 +404,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'San José, Costa Rica', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -424,7 +424,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Riga, Latvia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -444,7 +444,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Santa Cruz &amp; Cochabamba, Bolivia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -464,7 +464,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Pisa, Italy', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -484,8 +484,48 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"align":"right","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Dhaka, Bangladesh', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":49242,"width":"150px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2025/12/krakow-university-of-economics-modified-1024x474.jpg" alt="" class="wp-image-49242" style="width:150px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow University of Economics', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":49243,"width":"170px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cracow-University-of-Technology-modified.png" alt="" class="wp-image-49243" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Cracow University of Technology', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -500,7 +540,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open-source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -516,7 +556,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"backgroundColor":"blueberry-1","textColor":"light-grey-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-light-grey-2-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"35px"}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"35px","textAlign":"center"}},"textColor":"light-grey-2"} -->
 <h2 class="wp-block-heading has-text-align-center has-light-grey-2-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Our Sponsors', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -544,6 +584,28 @@
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/Elementor-Logo-2.png" alt="" class="wp-image-10090" style="aspect-ratio:4.9471410708195975;object-fit:cover;width:160px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":49214,"width":"160px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cloud86-Logo-wit.png" alt="" class="wp-image-49214" style="width:160px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="min-height:0px"><!-- wp:image {"id":49215,"width":"250px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"},"layout":{"selfStretch":"fixed","flexSize":"100px"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/wpb-logo-wordcamp-white.png" alt="" class="wp-image-49215" style="width:250px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="min-height:0px"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="min-height:0px"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -552,7 +614,7 @@
 <div class="wp-block-group alignfull has-blueberry-1-background-color has-background" style="border-top-color:var(--wp--preset--color--white-opacity-15);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","className":"is-style-default","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":{"top":"0px","left":"0px"}},"border":{"width":"0px","style":"none"}}} -->
 <div class="wp-block-columns alignwide is-style-default" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"border":{"width":"0px","style":"none"},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
 <p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'WordPress.com offers domain plus 1 year of free hosting plus 50% off renewal', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -566,7 +628,7 @@
 
 <!-- wp:column {"style":{"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|white-opacity-15","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--white-opacity-15);border-left-width:1px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2"} -->
+<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
 <p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'Weglot offers one year of Weglot’s Business Plan for free to translate your website', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -613,12 +675,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open-source community.', 'wporg' ); ?></p>
+<p><?php _e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open source community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrnGtYh2MFPgPOPm', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Participate', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Participate', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -631,12 +693,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-<p><?php _e( 'Share your experience and help guide students through real-world open-source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
+<p><?php _e( 'Share your experience and help guide students through real-world open source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrFUiCzMP8zwrouL', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -658,7 +720,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Partner', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Partner', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -671,12 +733,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"typography":{"textDecoration":"none"}}} -->
-<p class="has-link-color" style="text-decoration:none"><?php _e( 'Strengthen the open-source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
+<p class="has-link-color" style="text-decoration:none"><?php _e( 'Strengthen the open source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://airtable.com/appIzQKfwTn5dyPVp/shrKDkjeUdw8Fof34', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

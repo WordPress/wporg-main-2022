@@ -2,6 +2,8 @@ name: Update existing content
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'  # Runs daily at 3:17 AM UTC
   push:
     branches: [trunk]
 

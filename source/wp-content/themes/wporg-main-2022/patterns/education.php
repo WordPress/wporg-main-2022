@@ -32,16 +32,20 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Our mission is to create clear, accessible pathways into the open-source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.<br>Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Creating clear, accessible pathways into the open source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Across campuses and communities worldwide, participants gain practical experience, publish real projects, and build confidence as contributors to a global culture of open-source creation.', 'wporg' ); ?></p>
+<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1"} -->
+<p class="has-light-grey-1-color has-text-color has-link-color"><?php _e( 'Across campuses and communities worldwide, participants gain practical experience, publish real projects, and build confidence as contributors to a global culture of open source creation.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"570px"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:570px"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"padding":{"right":"var:preset|spacing|70","left":"174px"}}},"textColor":"light-grey-2","fontSize":"heading-2","fontFamily":"eb-garamond"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:570px"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"padding":{"right":"var:preset|spacing|70","left":"174px"}},"typography":{"textAlign":"left"}},"textColor":"light-grey-2","fontSize":"heading-2"} -->
 <p class="has-text-align-left has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--70);padding-left:174px"><?php _e( 'Learn.<br>Build.<br>Connect.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
@@ -57,11 +61,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'Our mission is to create clear, accessible pathways into the open-source ecosystem. We help learners turn their knowledge into practice, discover their strengths, and understand how their contributions can make a real impact.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'Through hands-on programs and supportive communities, we empower people to grow new skills and take their first steps as contributors to the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'We aim to bring WordPress education directly to students on campus, empowering them to discover the platform&#039;s potential for their studies and future careers. We strive to bridge the gap between the classroom and the global WordPress community, fostering connections that inspire growth and opportunity.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -84,7 +84,7 @@
 
 <!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'WordPress Education offers three core initiatives, each one provides practical ways for learners to develop skills, connect with the community, and contribute to open-source projects.', 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php _e( 'WordPress Education offers three core initiatives, each one provides practical ways for learners to develop skills, connect with the community, and contribute to open source projects.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -99,7 +99,7 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="is-style-short-text has-charcoal-3-color has-text-color has-link-color"><?php _e( 'The initiative brings WordPress to universities through hands-on events that connect students with professionals and introduce them to open-source collaboration.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-3-color has-text-color has-link-color"><?php _e( 'The initiative brings WordPress to universities through hands-on events that connect students with professionals and introduce them to open source collaboration.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/campus-connect"><img src="https://wordpress.org/files/2025/12/education-right-2-1.png" alt="" class="wp-image-48862 size-full" style="object-position:50% 50%" /></a></figure></div>
 <!-- /wp:media-text -->
@@ -157,7 +157,7 @@
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|80","top":"var:preset|spacing|80","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}},"border":{"bottom":{"color":"var:preset|color|white-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"backgroundColor":"charcoal-2","textColor":"charcoal-3","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-charcoal-3-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="border-bottom-color:var(--wp--preset--color--white-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top has-charcoal-3-color has-text-color has-link-color"><!-- wp:column {"verticalAlignment":"top","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"textColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"textColor":"white","layout":{"type":"default"},"anchor":"get-started"} -->
 <div class="wp-block-group alignfull has-white-color has-text-color has-link-color" id="get-started" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-3"} -->
 <h2 class="wp-block-heading has-white-color has-text-color has-link-color has-heading-3-font-size"><?php _e( 'Join the Movement!', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
