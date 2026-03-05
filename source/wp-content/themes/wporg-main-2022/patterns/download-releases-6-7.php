@@ -15,12 +15,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php _e( 'WordPress 6.7 debuts the modern Twenty Twenty-Five theme, unlocking fresh design options. The new ‘Zoom out’ mode simplifies high-level editing, while media support and design tools offer more control and flexibility.', 'wporg' ); ?></p>
+<p class="has-text-align-center"><?php esc_html_e( 'WordPress 6.7 debuts the modern Twenty Twenty-Five theme, unlocking fresh design options. The new ‘Zoom out’ mode simplifies high-level editing, while media support and design tools offer more control and flexibility.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress 6.7', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get WordPress 6.7', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -37,11 +37,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"24px","fontStyle":"italic","fontWeight":"400","lineHeight":"1.2"}},"fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php _e( 'Endless possibility without complexity.', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php esc_html_e( 'Endless possibility without complexity.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Twenty Twenty-Five offers a flexible, design-focused theme that lets you build stunning sites with ease. Tailor your aesthetic with an array of style options, block patterns, and color palettes. Pared down to the essentials, this is a theme that can truly grow with you.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Twenty Twenty-Five offers a flexible, design-focused theme that lets you build stunning sites with ease. Tailor your aesthetic with an array of style options, block patterns, and color palettes. Pared down to the essentials, this is a theme that can truly grow with you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -69,15 +69,15 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php _e( 'Get the big picture with Zoom Out', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Get the big picture with Zoom Out', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"24px","fontStyle":"italic","fontWeight":"400","lineHeight":"1.2"}},"fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php _e( 'Explore your content from a new perspective.', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php esc_html_e( 'Explore your content from a new perspective.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Edit and arrange entire sections of your content like never before. A broader view of your site lets you add, edit, shuffle, or remove patterns to your liking. Embrace your inner architect.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Edit and arrange entire sections of your content like never before. A broader view of your site lets you add, edit, shuffle, or remove patterns to your liking. Embrace your inner architect.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -89,15 +89,15 @@
 <div class="wp-block-group alignwide has-charcoal-1-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#e2aebe;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"className":"has-mixed-heading-font","style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php _e( 'Connect blocks and custom fields with no hassle (or code)', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Connect blocks and custom fields with no hassle (or code)', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"24px","fontStyle":"italic","fontWeight":"400","lineHeight":"1.2"}},"fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php _e( 'A streamlined way to create dynamic content.', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php esc_html_e( 'A streamlined way to create dynamic content.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'This feature introduces a new UI for connecting blocks to custom fields, putting control of dynamic content directly in the editor. Link blocks with fields in just a few clicks, enhancing flexibility and efficiency when building. Your clients will love you—as if they didn’t already.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'This feature introduces a new UI for connecting blocks to custom fields, putting control of dynamic content directly in the editor. Link blocks with fields in just a few clicks, enhancing flexibility and efficiency when building. Your clients will love you—as if they didn’t already.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -125,15 +125,15 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php _e( 'Embrace your inner font nerd', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Embrace your inner font nerd', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"24px","fontStyle":"italic","fontWeight":"400","lineHeight":"1.2"}},"fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php _e( 'New style section, new possibilities.', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family" style="font-size:24px;font-style:italic;font-weight:400;line-height:1.2"><?php esc_html_e( 'New style section, new possibilities.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Create, edit, remove, and apply font size presets&nbsp;with the next addition to the Styles interface. Override theme defaults or create your own custom font size, complete with fluid typography for responsive font scaling. Get into the details!', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create, edit, remove, and apply font size presets&nbsp;with the next addition to the Styles interface. Override theme defaults or create your own custom font size, complete with fluid typography for responsive font scaling. Get into the details!', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -152,11 +152,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php _e( 'Performance', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php esc_html_e( 'Performance', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress 6.7 delivers important performance updates, including faster pattern loading, optimized previews in the data views component, improved PHP 8+ support and removal of deprecated code, auto sizes for lazy-loaded images, and more efficient tag processing in the HTML API.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'WordPress 6.7 delivers important performance updates, including faster pattern loading, optimized previews in the data views component, improved PHP 8+ support and removal of deprecated code, auto sizes for lazy-loaded images, and more efficient tag processing in the HTML API.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -170,11 +170,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php _e( 'Accessibility', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php esc_html_e( 'Accessibility', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '65+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, from improving user interface components and keyboard navigation in the Editor, to an accessible heading on WordPress login screens and clearer labeling throughout.', 'wporg' ); ?></p>
+<p><?php esc_html_e( '65+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, from improving user interface components and keyboard navigation in the Editor, to an accessible heading on WordPress login screens and clearer labeling throughout.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -191,7 +191,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"italic","fontWeight":"400"}}} -->
-<h2 class="wp-block-heading has-text-align-center" style="font-style:italic;font-weight:400"><?php _e( 'And much more', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center" style="font-style:italic;font-weight:400"><?php esc_html_e( 'And much more', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
@@ -201,11 +201,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Support for HEIC images', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Support for HEIC images', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'HEIC image support improves media management by allowing high-quality, space-efficient images across all blocks.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'HEIC image support improves media management by allowing high-quality, space-efficient images across all blocks.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -216,12 +216,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Streamlined Query Loop block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Streamlined Query Loop block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'Improvements to the Query Loop block enhance usability by automating default settings and consolidating key options for easier customization.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Improvements to the Query Loop block enhance usability by automating default settings and consolidating key options for easier customization.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -235,11 +235,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Extend the preview dropdown', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Extend the preview dropdown', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Enhancements to the Preview Options enable plugins and themes to add custom items to the dropdown menu, enriching how content is previewed.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Enhancements to the Preview Options enable plugins and themes to add custom items to the dropdown menu, enriching how content is previewed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -250,12 +250,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Customize site background', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Customize site background', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'Improved background tools enhance block customization and allow for global settings, ensuring consistency across the site while simplifying design efforts.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Improved background tools enhance block customization and allow for global settings, ensuring consistency across the site while simplifying design efforts.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -269,11 +269,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Refined pages view in site editor', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Refined pages view in site editor', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Streamline editing with enhanced page views that offer customizable filtering options. Toggle filter displays to access refined views like Published and Drafts without clutter.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Streamline editing with enhanced page views that offer customizable filtering options. Toggle filter displays to access refined views like Published and Drafts without clutter.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -284,12 +284,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Template registration API', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Template registration API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'This new API simplifies custom template registration for plugins, allowing theme overrides and custom category templates for greater flexibility.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'This new API simplifies custom template registration for plugins, allowing theme overrides and custom category templates for greater flexibility.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -311,11 +311,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Expanded design tools', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Expanded design tools', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Support for design tools expands to more blocks, adding shadows, borders, and more, for greater customization.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Support for design tools expands to more blocks, adding shadows, borders, and more, for greater customization.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -325,11 +325,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Improved Interactivity API', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Improved Interactivity API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Enhancements to the Interactivity API include bug fixes and new APIs for better state management.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Enhancements to the Interactivity API include bug fixes and new APIs for better state management.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -359,7 +359,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-large-font-size"><summary><?php _e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-large-font-size"><summary><?php esc_html_e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.7 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>

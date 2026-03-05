@@ -7,16 +7,16 @@
 
 ?>
 <!-- wp:heading {"textAlign":"center","level":1,"align":"full","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50","top":"var:preset|spacing|80"}}},"backgroundColor":"white","fontSize":"heading-2"} -->
-<h1 class="wp-block-heading alignfull has-text-align-center has-white-background-color has-background has-heading-2-font-size" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)"><?php _e( 'WordPress Remembers', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading alignfull has-text-align-center has-white-background-color has-background has-heading-2-font-size" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e( 'WordPress Remembers', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|30","right":"var:preset|spacing|30","left":"var:preset|spacing|30"},"margin":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-bottom:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph -->
-<p><?php _e( 'WordPress dedicates this page to the memory of those we’ve lost. They’ve shaped our project and enriched our community. As we remember their passion and commitment to WordPress and open source software, we celebrate their spirit.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'WordPress dedicates this page to the memory of those we’ve lost. They’ve shaped our project and enriched our community. As we remember their passion and commitment to WordPress and open source software, we celebrate their spirit.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Forever in our hearts, their legacy endures through every line of code and every user they&#039;ve impacted.', 'wporg' ); ?></p>
+<p><?php esc_html_e( "Forever in our hearts, their legacy endures through every line of code and every user they've impacted.", 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

@@ -8,7 +8,7 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Etiquette', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Etiquette', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -17,15 +17,15 @@
 
 <!-- wp:list {"className":"is-style-list-long-items"} -->
 <ul class="is-style-list-long-items"><!-- wp:list-item -->
-<li><?php _e( 'Contributions to the WordPress open source project are for the benefit of the WordPress community as a whole, not specific businesses or individuals. All actions taken as a contributor should be made with the best interests of the community in mind.', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'Contributions to the WordPress open source project are for the benefit of the WordPress community as a whole, not specific businesses or individuals. All actions taken as a contributor should be made with the best interests of the community in mind.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Participation in the WordPress open source project is open to all who wish to join, regardless of ability, skill, financial status, or any other criteria.', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'Participation in the WordPress open source project is open to all who wish to join, regardless of ability, skill, financial status, or any other criteria.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'The WordPress open source project is a volunteer-run community. Even in cases where contributors are sponsored by companies, that time is donated for the benefit of the entire open source community.', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'The WordPress open source project is a volunteer-run community. Even in cases where contributors are sponsored by companies, that time is donated for the benefit of the entire open source community.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -33,7 +33,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'The WordPress open source community cares about diversity. We strive to maintain a welcoming environment where everyone can feel included, by keeping communication free of discrimination, incitement to violence, promotion of hate, and unwelcoming behavior.', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'The WordPress open source community cares about diversity. We strive to maintain a welcoming environment where everyone can feel included, by keeping communication free of discrimination, incitement to violence, promotion of hate, and unwelcoming behavior.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
