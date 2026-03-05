@@ -133,7 +133,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// Buttons.
 				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://w.org/test/\">Button 1</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\">Button 2</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
-				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"<?php esc_attr_e( 'https://w.org/test/', 'wporg' ); ?>\"><?php _e( 'Button 1', 'wporg' ); ?></a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\"><?php _e( 'Button 2', 'wporg' ); ?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"<?php echo esc_url( __( 'https://w.org/test/', 'wporg' ) ); ?>\"><?php _e( 'Button 1', 'wporg' ); ?></a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\"><?php _e( 'Button 2', 'wporg' ); ?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
 			],
 			[
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p>I'm interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
@@ -147,7 +147,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// Link Wrapper block with child content.
 				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/"><!-- wp:paragraph --><p>Matt Mullenweg at WordCamp Europe—streaming live June 15</p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
-				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php esc_attr_e( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ); ?>"><!-- wp:paragraph --><p><?php _e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php echo esc_url( __( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ) ); ?>"><!-- wp:paragraph --><p><?php _e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
 			],
 		];
 	}

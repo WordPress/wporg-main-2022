@@ -90,6 +90,28 @@ class HTMLParser implements BlockParser {
 		return $strings;
 	}
 
+	/**
+	 * URL attributes that should use esc_url( __() ) instead of esc_attr_e().
+	 */
+	private $url_attributes = [ 'href', 'src', 'action' ];
+
+	/**
+	 * Convert a _e() replacement to use esc_attr_e() for attribute contexts.
+	 */
+	private function escape_for_attribute( string $replacement ) : string {
+		return str_replace( ' _e(', ' esc_attr_e(', $replacement );
+	}
+
+	/**
+	 * Convert a _e() replacement to use echo esc_url( __() ) for URL attribute contexts.
+	 */
+	private function escape_for_url_attribute( string $replacement ) : string {
+		$replacement = str_replace( ' _e(', ' echo esc_url( __(', $replacement );
+		$replacement = str_replace( '); ?>', ') ); ?>', $replacement );
+
+		return $replacement;
+	}
+
 	// todo: this needs a fix to properly rebuild innerContent - see ParagraphParserTest
 	public function replace_strings( array $block, array $replacements ) : array {
 
@@ -101,10 +123,21 @@ class HTMLParser implements BlockParser {
 				continue;
 			}
 
-			// Replace content in HTML attributes with appropriate escaping.
-			$attr_replacement = str_replace( ' _e(', ' esc_attr_e(', $replacements[ $original ] );
-			$attr_regex       = '#(["\'])\s*' . preg_quote( $original, '#' ) . '\s*\\1#s';
-			$html             = preg_replace( $attr_regex, '$1' . addcslashes( $attr_replacement, '\\$' ) . '$1', $html );
+			// Replace content in specific HTML attributes with appropriate escaping.
+			foreach ( $this->attributes as $attr ) {
+				$is_url    = in_array( $attr, $this->url_attributes, true );
+				$escaped   = $is_url ? $this->escape_for_url_attribute( $replacements[ $original ] ) : $this->escape_for_attribute( $replacements[ $original ] );
+				$esc_attr  = $this->escape_attr( $attr, '#' );
+				$attr_regex = '#(' . $esc_attr . '=["\'])\s*' . preg_quote( $original, '#' ) . '\s*(["\'])#s';
+
+				$html = preg_replace( $attr_regex, '$1' . addcslashes( $escaped, '\\$' ) . '$2', $html );
+
+				foreach ( $content as $i => $chunk ) {
+					if ( ! empty( $chunk ) ) {
+						$content[ $i ] = preg_replace( $attr_regex, '$1' . addcslashes( $escaped, '\\$' ) . '$2', $content[ $i ] );
+					}
+				}
+			}
 
 			// Replace content in HTML tags.
 			$tag_regex = '#(>)\s*' . preg_quote( $original, '#' ) . '\s*(<)#s';
@@ -112,7 +145,6 @@ class HTMLParser implements BlockParser {
 
 			foreach ( $content as $i => $chunk ) {
 				if ( ! empty( $chunk ) ) {
-					$content[ $i ] = preg_replace( $attr_regex, '$1' . addcslashes( $attr_replacement, '\\$' ) . '$1', $chunk );
 					$content[ $i ] = preg_replace( $tag_regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $content[ $i ] );
 				}
 			}
