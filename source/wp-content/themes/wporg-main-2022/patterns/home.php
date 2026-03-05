@@ -47,7 +47,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","textColor":"white"} -->
-<p class="is-style-short-text has-white-color has-text-color"><?php _e( 'Watch State of the Word, the annual keynote address live from San Francisco. December 2nd at 8PM UTC.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-white-color has-text-color"><?php esc_html_e( 'Watch State of the Word, the annual keynote address live from San Francisco. December 2nd at 8PM UTC.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
@@ -69,7 +69,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|blueberry-1"}},"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Catch up on all the news about WordPress from State of the Word, San Francisco.', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Catch up on all the news about WordPress from State of the Word, San Francisco.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div>
@@ -80,11 +80,11 @@
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
-<h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Meet WordPress', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="font-size:70px"><?php esc_html_e( 'Meet WordPress', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -126,7 +126,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -156,21 +156,21 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'See what&#039;s new', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'With WordPress 6.9 you can work together, create faster, and build with more control. Leave notes right on your blocks, drag and drop with ease, and use the command palette anywhere, including the admin, to stay in flow. From stretchy text that fits perfectly to new blocks like Accordion, MathML, and Time to Read, every detail is built to make collaboration and creation smoother.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'With WordPress 6.9 you can work together, create faster, and build with more control. Leave notes right on your blocks, drag and drop with ease, and use the command palette anywhere, including the admin, to stay in flow. From stretchy text that fits perfectly to new blocks like Accordion, MathML, and Time to Read, every detail is built to make collaboration and creation smoother.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' );
+esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' );
 ?>"><?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-_e( 'Discover WordPress [stable_branch]', 'wporg' );
+esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -188,7 +188,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":43512,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/design-visual-6-7.png" alt="<?php _e( 'Illustration of various blocks, Paragraph and Cover.', 'wporg' ); ?>" class="wp-image-43512" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/design-visual-6-7.png" alt="<?php esc_attr_e( 'Illustration of various blocks, Paragraph and Cover.', 'wporg' ); ?>" class="wp-image-43512" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -202,7 +202,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":43510,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/build-visual-6-7.png" alt="<?php _e( 'Illustration of an Image block with a block toolbar.', 'wporg' ); ?>" class="wp-image-43510" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/build-visual-6-7.png" alt="<?php esc_attr_e( 'Illustration of an Image block with a block toolbar.', 'wporg' ); ?>" class="wp-image-43510" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -210,7 +210,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -220,7 +220,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":43516,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/extend-visual-6-7.png" alt="<?php _e( 'Screenshot of the Twenty Twenty-Five theme.', 'wporg' ); ?>" class="wp-image-43516" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/extend-visual-6-7.png" alt="<?php esc_attr_e( 'Screenshot of the Twenty Twenty-Five theme.', 'wporg' ); ?>" class="wp-image-43516" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -240,16 +240,16 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'See what&#039;s new', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'And let the newly structured Style Book help you get the best view. Easier to use in Block themes, it’s also a great way to see what you’re building in certain Classic themes. Do It all faster with improvements under the hood, and more securely than ever with stronger password hashing.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'And let the newly structured Style Book help you get the best view. Easier to use in Block themes, it’s also a great way to see what you’re building in certain Classic themes. Do It all faster with improvements under the hood, and more securely than ever with stronger password hashing.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/releases/6-8/', 'wporg' ); ?>"><?php _e( 'Discover WordPress 6.8', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/releases/6-8/', 'wporg' ) ); ?>"><?php esc_html_e( 'Discover WordPress 6.8', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -266,13 +266,13 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" id="showcase" style="padding-top:5rem"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"30px"}},"layout":{"inherit":false}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="wp-block-heading has-heading-2-font-size"><?php _e( 'One platform, a universe of possibilities', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php esc_html_e( 'One platform, a universe of possibilities', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns"><!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Discover a collection of website examples from around the world, curated to spotlight gorgeous design, technical innovation, and the limitless power of WordPress.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Discover a collection of website examples from around the world, curated to spotlight gorgeous design, technical innovation, and the limitless power of WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -284,33 +284,33 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:group {"align":"wide","className":"wporg-home-showcase-logos","style":{"spacing":{"margin":{"top":"50px","bottom":"50px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide wporg-home-showcase-logos" style="margin-top:50px;margin-bottom:50px"><!-- wp:image {"id":24441,"width":"173px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php _e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/12/rolling-stone.png" alt="<?php esc_attr_e( 'Rolling Stone logo', 'wporg' ); ?>" class="wp-image-24441" style="object-fit:contain;width:173px;height:33px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":11475,"width":"79px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php _e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php esc_attr_e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php _e( 'NASA logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/NASA-1.png" alt="<?php esc_attr_e( 'NASA logo', 'wporg' ); ?>" class="wp-image-22635" style="object-fit:contain;width:96px;height:96px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22636,"width":"150px","height":"33px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="<?php _e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Microsoft.png" alt="<?php esc_attr_e( 'Microsoft logo', 'wporg' ); ?>" class="wp-image-22636" style="object-fit:contain;width:150px;height:33px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22637,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php _e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php esc_attr_e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22638,"width":"160px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php _e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php esc_attr_e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"align":"wide"} -->
 <div class="wp-block-buttons alignwide"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/showcase/', 'wporg' ) ); ?>"><?php esc_html_e( 'Explore the Showcase', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -346,15 +346,15 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|70"},"padding":{"top":"40px","bottom":"40px"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:column {"width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
 <div class="wp-block-column has-charcoal-0-color has-text-color has-link-color" style="flex-basis:50%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0"><?php _e( 'Meet the WordPress community', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:0"><?php esc_html_e( 'Meet the WordPress community', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'We’re united by the spirit of open source, and the freedom to build, transform, and share without barriers. Everyone is welcome.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'We’re united by the spirit of open source, and the freedom to build, transform, and share without barriers. Everyone is welcome.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"spacing":{"margin":{"top":"30px"}}}} -->
@@ -364,7 +364,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":39810,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/photo-community-1.png" alt="<?php _e( 'A black and white photograph of excited, applauding attendees in the audience at a WordPress event.', 'wporg' ); ?>" class="wp-image-39810" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/04/photo-community-1.png" alt="<?php esc_attr_e( 'A black and white photograph of excited, applauding attendees in the audience at a WordPress event.', 'wporg' ); ?>" class="wp-image-39810" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -376,7 +376,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Whether you’re an entrepreneur, professional developer, or first-time blogger, there’s a library of resources and learning tools ready for you. Plus, you have the whole WordPress community in your corner.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Whether you’re an entrepreneur, professional developer, or first-time blogger, there’s a library of resources and learning tools ready for you. Plus, you have the whole WordPress community in your corner.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
@@ -408,7 +408,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" id="news" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Latest WordPress news', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Latest WordPress news', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -431,7 +431,7 @@ _e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninety-first site.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninety-first site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
