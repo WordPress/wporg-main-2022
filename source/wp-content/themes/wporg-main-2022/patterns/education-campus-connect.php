@@ -294,6 +294,28 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php _e( '"A truly valuable experience focused on real-world skills, building confidence and delivering practical knowledge that makes a real impact."', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50089,"width":"50px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-rounded","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/files/2026/03/Shipon-Karmokar-1.jpg" alt="" class="wp-image-50089" style="aspect-ratio:1;object-fit:cover;width:50px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
+<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php _e( 'Shipon Karmakar', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
+<p class="has-extra-small-font-size"><?php _e( 'Organizer, WPCC Brahmanbaria', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
