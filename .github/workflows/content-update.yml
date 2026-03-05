@@ -35,14 +35,35 @@ jobs:
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
           yarn wp-env start
           yarn setup:wp
+          mkdir -p "$GITHUB_WORKSPACE/artifacts/"
+          yarn --silent screenshot-changes --before
           yarn build:patterns
-          mkdir "$GITHUB_WORKSPACE/artifacts/"
           git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php
           {
             echo 'changelist<<EOF'
             git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php | xargs yarn --silent screenshot-changes
             echo EOF
           } >> "$GITHUB_OUTPUT"
+
+      - name: Push screenshots to storage branch
+        run: |
+          cd /tmp
+          mkdir -p screenshots-repo && cd screenshots-repo
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          cp -r "$GITHUB_WORKSPACE/artifacts/before" . 2>/dev/null || true
+          cp -r "$GITHUB_WORKSPACE/artifacts/after" . 2>/dev/null || true
+          cp -r "$GITHUB_WORKSPACE/artifacts/diff" . 2>/dev/null || true
+
+          git add -A
+          git commit -m "Screenshots for content update" --allow-empty
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/content-update-screenshots
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Upload screenshots
         id: upload-artifact
@@ -52,6 +73,7 @@ jobs:
           path: "${{ github.workspace }}/artifacts/"
 
       - name: Create Pull Request
+        id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
           branch: automated/content-update
@@ -65,6 +87,14 @@ jobs:
             ```
             ${{ steps.build-patterns.outputs.changelist }}
             ```
-            Screenshots: ${{ steps.upload-artifact.outputs.artifact-url }}
-            
+
             Please review, merge, and deploy.
+
+      - name: Post screenshot comment
+        if: steps.create-pr.outputs.pull-request-number
+        run: |
+          if [ -f "$GITHUB_WORKSPACE/artifacts/screenshots.md" ] && [ -s "$GITHUB_WORKSPACE/artifacts/screenshots.md" ]; then
+            gh pr comment "${{ steps.create-pr.outputs.pull-request-number }}" --body-file "$GITHUB_WORKSPACE/artifacts/screenshots.md"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
