@@ -73,7 +73,6 @@ function import_rest_to_posts( $rest_url ) {
 			'timeout' => 60,
 		)
 	);
-
 	$status_code = wp_remote_retrieve_response_code( $response );
 
 	if ( is_wp_error( $response ) ) {
