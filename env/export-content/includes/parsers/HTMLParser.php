@@ -3,8 +3,6 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class HTMLParser implements BlockParser {
-	use GetSetAttribute;
-
 	public $tags = [];
 	public $attributes = [];
 	public $min_string_length = 0;
@@ -16,7 +14,7 @@ class HTMLParser implements BlockParser {
 	}
 
 	public function to_strings( array $block ) : array {
-		$strings = $this->get_attribute( 'placeholder', $block );
+		$strings = [];
 
 		foreach ( $this->tags as $tag ) {
 			$tag = $this->escape_tag( $tag, '#' );
@@ -94,7 +92,6 @@ class HTMLParser implements BlockParser {
 
 	// todo: this needs a fix to properly rebuild innerContent - see ParagraphParserTest
 	public function replace_strings( array $block, array $replacements ) : array {
-		$this->set_attribute( 'placeholder', $block, $replacements );
 
 		$html = $block['innerHTML'];
 		$content = $block['innerContent'];
