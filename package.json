@@ -6,12 +6,12 @@
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "10.11.0",
+		"@wordpress/env": "11.1.0",
 		"@wordpress/eslint-plugin": "24.3.0",
 		"@wordpress/scripts": "31.6.0",
 		"backstopjs": "^6.1.4",
 		"lighthouse-ci": "^1.13.1",
-		"puppeteer": "^22.6.1"
+		"puppeteer": "^24.38.0"
 	},
 	"scripts": {
 		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
