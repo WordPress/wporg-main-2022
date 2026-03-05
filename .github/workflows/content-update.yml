@@ -50,10 +50,19 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Push screenshots to storage branch
+        id: push-screenshots
         run: |
+          REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          BRANCH="content-update-screenshots"
+
           cd /tmp
-          mkdir -p screenshots-repo && cd screenshots-repo
-          git init
+          git clone --depth=1 "$REPO_URL" --branch "$BRANCH" screenshots-repo 2>/dev/null || {
+            mkdir -p screenshots-repo && cd screenshots-repo && git init
+            git remote add origin "$REPO_URL"
+            git checkout --orphan "$BRANCH"
+          }
+          cd /tmp/screenshots-repo
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -63,11 +72,21 @@ jobs:
 
           git add -A
           git commit -m "Screenshots for content update" --allow-empty
-          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/content-update-screenshots
+          git push origin HEAD:refs/heads/$BRANCH
+
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+
+      - name: Resolve screenshot URLs
+        run: |
+          if [ -f "$GITHUB_WORKSPACE/artifacts/screenshots.md" ]; then
+            sed -i "s|/${{ env.SCREENSHOTS_PLACEHOLDER }}/|/${{ steps.push-screenshots.outputs.sha }}/|g" "$GITHUB_WORKSPACE/artifacts/screenshots.md"
+          fi
+        env:
+          SCREENSHOTS_PLACEHOLDER: content-update-screenshots
 
       - name: Upload screenshots
         id: upload-artifact

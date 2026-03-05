@@ -17,7 +17,7 @@ const manifest = require( './page-manifest.json' );
 
 const ARTIFACTS_PATH = path.resolve( process.env.GITHUB_WORKSPACE || '.', 'artifacts' );
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || 'WordPress/wporg-main-2022';
-const SCREENSHOTS_BRANCH = 'content-update-screenshots';
+const SCREENSHOTS_COMMIT = process.env.SCREENSHOTS_COMMIT || 'content-update-screenshots';
 
 // node ./env/screenshot-changes.js [...files]
 const [ , , ...files ] = process.argv;
@@ -173,8 +173,8 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		fs.rmSync( tmpDir, { recursive: true } );
 	}
 
-	// Step 4: Generate diffs and write markdown.
-	const baseUrl = `https://raw.githubusercontent.com/${ GITHUB_REPOSITORY }/${ SCREENSHOTS_BRANCH }`;
+	// Step 4: Generate diffs and write markdown with side-by-side table.
+	const baseUrl = `https://raw.githubusercontent.com/${ GITHUB_REPOSITORY }/${ SCREENSHOTS_COMMIT }`;
 	let markdown = '';
 
 	for ( const entry of entries ) {
@@ -202,9 +202,11 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		}
 
 		markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (${ diffPixels.toLocaleString() } pixels changed)</summary>\n\n`;
-		markdown += `#### Diff\n![Diff](${ baseUrl }/diff/${ entry.slug }.png)\n\n`;
-		markdown += `#### Before\n![Before](${ baseUrl }/before/${ entry.slug }.png)\n\n`;
-		markdown += `#### After\n![After](${ baseUrl }/after/${ entry.slug }.png)\n\n`;
+		markdown += `| Before | Changes | After |\n`;
+		markdown += `| --- | --- | --- |\n`;
+		markdown += `| ![Before](${ baseUrl }/before/${ entry.slug }.png) `;
+		markdown += `| ![Changes](${ baseUrl }/diff/${ entry.slug }.png) `;
+		markdown += `| ![After](${ baseUrl }/after/${ entry.slug }.png) |\n\n`;
 		markdown += `</details>\n`;
 	}
 
