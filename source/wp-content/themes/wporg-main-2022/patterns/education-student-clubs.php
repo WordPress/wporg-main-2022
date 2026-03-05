@@ -11,13 +11,13 @@
 <div class="wp-block-group alignwide is-style-default"><!-- wp:group {"align":"wide","className":"is-style-two-column-display","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group alignwide is-style-two-column-display" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull"><!-- wp:heading {"level":1,"className":"is-style-default","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"heading-2"} -->
-<h1 class="wp-block-heading is-style-default has-light-grey-2-color has-text-color has-link-color has-heading-2-font-size"><?php _e( 'WordPress Student Clubs', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading is-style-default has-light-grey-2-color has-text-color has-link-color has-heading-2-font-size"><?php esc_html_e( 'WordPress Student Clubs', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
-<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Empowering students to build on-campus WordPress communities', 'wporg' ); ?></p>
+<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php esc_html_e( 'Empowering students to build on-campus WordPress communities', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -28,11 +28,11 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"backgroundColor":"white","textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'About Student Clubs', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'About Student Clubs', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'WordPress Student Clubs is an initiative created to empower students to bring the open source spirit of WordPress to their campuses, building local communities that learn, share, and grow together.  Student Clubs allow students to sustain on-campus WordPress activities year-round, creating space for ongoing learning.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'WordPress Student Clubs is an initiative created to empower students to bring the open source spirit of WordPress to their campuses, building local communities that learn, share, and grow together.  Student Clubs allow students to sustain on-campus WordPress activities year-round, creating space for ongoing learning.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -56,16 +56,16 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-text-color has-link-color"><!-- wp:column {"verticalAlignment":"top","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color has-heading-3-font-size"><?php _e( 'Why join the initiative', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color has-heading-3-font-size"><?php esc_html_e( 'Why join the initiative', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Being part of a WordPress Student Club opens up meaningful opportunities to learn, connect, and take the lead within the WordPress community. Use the button below to find a Student Club near you.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Being part of a WordPress Student Club opens up meaningful opportunities to learn, connect, and take the lead within the WordPress community. Use the button below to find a Student Club near you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Start a Student Club', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -82,7 +82,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Gain hands-on experience with WordPress through workshops, study groups, and real-world projects, even if you missed an initial Campus Connect event.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Gain hands-on experience with WordPress through workshops, study groups, and real-world projects, even if you missed an initial Campus Connect event.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Take initiative as a student organizer, develop leadership skills, and help grow your local on-campus WordPress community.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Take initiative as a student organizer, develop leadership skills, and help grow your local on-campus WordPress community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -102,7 +102,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Host regular events such as monthly meetups, collaborative sessions, and recurring WordPress Campus Connect activities that keep your community active and inspired.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Host regular events such as monthly meetups, collaborative sessions, and recurring WordPress Campus Connect activities that keep your community active and inspired.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -111,14 +111,14 @@
 <!-- /wp:group -->
 
 <!-- wp:cover {"url":"https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png","id":48875,"dimRatio":0,"customOverlayColor":"#959595","isUserOverlayColor":false,"minHeight":361,"minHeightUnit":"px","isDark":false,"sizeSlug":"large","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light" style="min-height:361px"><img class="wp-block-cover__image-background wp-image-48875 size-large" alt="" src="https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#959595"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"placeholder":"<?php _e( 'Write title…', 'wporg' ); ?>","style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:361px"><img class="wp-block-cover__image-background wp-image-48875 size-large" alt="" src="https://wordpress.org/files/2025/12/education-student-club-photos-1024x310.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#959595"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"placeholder":"Write title…","style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size"></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"style":{"typography":{"textAlign":"center"}},"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-text-align-center has-heading-3-font-size"><?php _e( 'Participating Institutions', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-heading-3-font-size"><?php esc_html_e( 'Participating Institutions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -140,7 +140,7 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"backgroundColor":"white"} -->
 <div class="wp-block-columns alignwide has-white-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}}},"textColor":"charcoal-2","fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-charcoal-2-color has-text-color has-link-color has-heading-3-font-size"><?php _e( 'How to Get Involved', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-2-color has-text-color has-link-color has-heading-3-font-size"><?php esc_html_e( 'How to Get Involved', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -150,12 +150,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-2"}}}},"textColor":"charcoal-2"} -->
-<p class="has-charcoal-2-color has-text-color has-link-color"><?php _e( 'Before applying, check here to see if your campus already has a club or has participated in a Campus Connect event. If you’re ready to start your own, you can submit a new club request using the button below. You’ll only need one faculty member and two student co-leads to get things started.', 'wporg' ); ?></p>
+<p class="has-charcoal-2-color has-text-color has-link-color"><?php esc_html_e( 'Before applying, check here to see if your campus already has a club or has participated in a Campus Connect event. If you’re ready to start your own, you can submit a new club request using the button below. You’ll only need one faculty member and two student co-leads to get things started.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Start a Student Club', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/student-clubs/request-the-creation-of-a-wordpress-student-club/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Start a Student Club', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
