@@ -15,8 +15,7 @@ wp option update blogdescription "Blog Tool, Publishing Platform, and CMS"
 wp option update show_on_front 'page'
 
 # Import content from WordPress.org
-php env/import-content.php --url 'https://wordpress.org/wp-json/wp/v2/posts?context=wporg_export&per_page=50'
-php env/import-content.php --url 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&per_page=50'
+./refresh.sh
 
 # Set front page after content is imported
 HOME_PAGE_ID=$(wp post list --post_type=page --name=home --posts_per_page=1 --field=ID --format=ids)
