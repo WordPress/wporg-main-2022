@@ -130,6 +130,43 @@ add_shortcode(
 );
 
 /**
+ * Shortcode for a link to the latest version of WordPress for locales with variants.
+ */
+add_shortcode(
+	'download_link_variant',
+	function( $attrs = array() ) {
+		$ext = ( ! empty( $attrs['type'] ) && 'tar.gz' === $attrs['type'] ) ? 'tar.gz' : 'zip';
+
+		$link = "https://wordpress.org/latest.{$ext}";
+
+		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
+			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
+			
+			if ( $rosetta_release ) {
+				$locale = get_locale();
+				
+				// Map locales to the variants
+				$variant_map = array(
+					'de_DE' => 'de_DE_formal',
+					'nl_NL' => 'nl_NL_formal',
+					'de_CH' => 'de_CH_informal',
+					'pt_PT' => 'pt_PT_ao90',
+				);
+
+				// Check for variant
+				if ( array_key_exists( $locale, $variant_map ) ) {
+					$locale = $variant_map[ $locale ];
+				}
+
+				$link = home_url( 'latest-' . $locale . ".{$ext}" );
+			}
+		}
+
+		return $link;
+	}
+);
+
+/**
  * Shortcode for a formatted date & time when the latest version was published.
  */
 add_shortcode(
