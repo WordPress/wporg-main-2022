@@ -192,7 +192,7 @@ function add_site_navigation_menus( $menus ) {
 				'url' => '/download/counter/',
 			),
 			array(
-				'label' => __( 'Source', 'wporg' ),
+				'label' => _x( 'Source', 'source code', 'wporg' ),
 				'url' => '/download/source/',
 			),
 		),
