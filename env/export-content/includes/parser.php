@@ -267,7 +267,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : st
 		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );
 
 		// Determine if the string contains HTML tags.
-		$has_html = $decoded !== strip_tags( $decoded );
+		$has_html = strip_tags( $decoded ) !== $decoded;
 
 		// Phase 2: For strings without HTML, also decode &amp; &lt; &gt; (esc_html_e will re-encode them).
 		// For strings with HTML, also decode &amp; (browsers handle bare & fine), but keep &lt; &gt;.
