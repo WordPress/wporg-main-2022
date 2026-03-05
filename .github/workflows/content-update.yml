@@ -40,12 +40,12 @@ jobs:
           yarn wp-env start
           yarn setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
-          yarn --silent screenshot-changes --before
           yarn build:patterns
-          git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php
+          CHANGED_FILES=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php)
+          echo "$CHANGED_FILES"
           {
             echo 'changelist<<EOF'
-            git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php | xargs yarn --silent screenshot-changes
+            echo "$CHANGED_FILES" | xargs yarn --silent screenshot-changes
             echo EOF
           } >> "$GITHUB_OUTPUT"
 
