@@ -8,7 +8,7 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><?php _e( 'Roadmap', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading"><?php esc_html_e( 'Roadmap', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -21,7 +21,7 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php _e( '<strong>Core Development &amp; WordPress 7.0</strong> — Deliver <a href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/">three major releases in 2026</a> with WordPress 7.0 advancing <a href="https://make.wordpress.org/core/tag/phase-3/">Phase 3</a> collaboration features, client-side media handling, responsive styling controls, and expanded block tools to boost creativity and performance.&nbsp;', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Core Development & WordPress 7.0</strong> — Deliver <a href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/">three major releases in 2026</a> with WordPress 7.0 advancing <a href="https://make.wordpress.org/core/tag/phase-3/">Phase 3</a> collaboration features, client-side media handling, responsive styling controls, and expanded block tools to boost creativity and performance.&nbsp;', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -42,7 +42,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Future releases', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Future releases', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -50,11 +50,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php _e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php _e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php _e( '7.0', 'wporg' ); ?></td><td><?php _e( 'April 9, 2026', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.1', 'wporg' ); ?></td><td><?php _e( 'August 19, 2026', 'wporg' ); ?></td></tr><tr><td><?php _e( '7.2', 'wporg' ); ?></td><td><?php _e( 'December 10, 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php esc_html_e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php esc_html_e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php esc_html_e( '7.0', 'wporg' ); ?></td><td><?php esc_html_e( 'April 9, 2026', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.1', 'wporg' ); ?></td><td><?php esc_html_e( 'August 19, 2026', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.2', 'wporg' ); ?></td><td><?php esc_html_e( 'December 10, 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'New features are frozen a month before a release, with the focus shifting entirely to the quality and performance of the release.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'New features are frozen a month before a release, with the focus shifting entirely to the quality and performance of the release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -62,20 +62,20 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Long term roadmap', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Long term roadmap', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'As a reminder, these are the four phases outlined in the Gutenberg project:', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'As a reminder, these are the four phases outlined in the Gutenberg project:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><?php _e( 'Easier Editing — Already available in WordPress, with ongoing improvements', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'Easier Editing — Already available in WordPress, with ongoing improvements', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Customization — Site Editing, block patterns, block directory, block themes', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'Customization — Site Editing, block patterns, block directory, block themes', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -83,7 +83,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( 'Multilingual — Core implementation for Multilingual sites', 'wporg' ); ?></li>
+<li><?php esc_html_e( 'Multilingual — Core implementation for Multilingual sites', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list --></div>
 <!-- /wp:group -->

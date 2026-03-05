@@ -16,13 +16,13 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"},"color":{"text":"#c0c0c0"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-text-color has-large-font-size" style="color:#c0c0c0;line-height:1.4"><?php _e( '6.3 puts your templates, content, and patterns all into one place. Now you can go from site creation to completion without ever leaving the Site Editor.', 'wporg' ); ?></p>
+<p class="has-text-align-center has-text-color has-large-font-size" style="color:#c0c0c0;line-height:1.4"><?php esc_html_e( '6.3 puts your templates, content, and patterns all into one place. Now you can go from site creation to completion without ever leaving the Site Editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://www.youtube.com/watch?v=6JhJcOLySLY', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Watch the demo', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://www.youtube.com/watch?v=6JhJcOLySLY', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Watch the demo', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -36,16 +36,16 @@
 <div class="wp-block-group alignwide" style="padding-top:0;padding-bottom:clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"color":{"background":"#ffffff1c"},"spacing":{"padding":{"left":"clamp(1.5rem, 5vw, 2rem)","right":"clamp(1.5rem, 5vw, 2rem)","top":"12px","bottom":"12px"}},"border":{"radius":"999px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:999px;background-color:#ffffff1c;padding-top:12px;padding-right:clamp(1.5rem, 5vw, 2rem);padding-bottom:12px;padding-left:clamp(1.5rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"fontSize":"extra-small"} -->
-<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Content', 'wporg' ); ?></p>
+<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Content', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400","letterSpacing":"-1px"}},"textColor":"white"} -->
-<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="your-and-template-together" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php _e( 'Your page and template, together', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="your-and-template-together" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php esc_html_e( 'Your page and template, together', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'Create, browse, and edit pages directly from within the Site Editor with your template in view.', 'wporg' ); ?></p>
+<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php esc_html_e( 'Create, browse, and edit pages directly from within the Site Editor with your template in view.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -73,11 +73,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="browse-pages"><?php _e( 'Browse pages', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="browse-pages"><?php esc_html_e( 'Browse pages', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'View, find, and edit pages without leaving the Site Editor.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'View, find, and edit pages without leaving the Site Editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -91,11 +91,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="page-snapshot"><?php _e( 'Get a page snapshot', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="page-snapshot"><?php esc_html_e( 'Get a page snapshot', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'View high-level page information, settings, and more.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'View high-level page information, settings, and more.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -111,11 +111,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="edit-page-and-template-together"><?php _e( 'Switch seamlessly', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="edit-page-and-template-together"><?php esc_html_e( 'Switch seamlessly', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Now edit your content and template in the Editor, easily switching between them.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Now edit your content and template in the Editor, easily switching between them.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -129,11 +129,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="publish"><?php _e( 'Publish faster', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="publish"><?php esc_html_e( 'Publish faster', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'You can now publish one or many pages directly from within the Site Editor.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'You can now publish one or many pages directly from within the Site Editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -144,16 +144,16 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:group {"style":{"color":{"background":"#ffffff1c"},"spacing":{"padding":{"left":"clamp(1.5rem, 5vw, 2rem)","right":"clamp(1.5rem, 5vw, 2rem)","top":"12px","bottom":"12px"},"margin":{"top":"0","bottom":"0"}},"border":{"radius":"999px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:999px;background-color:#ffffff1c;margin-top:0;margin-bottom:0;padding-top:12px;padding-right:clamp(1.5rem, 5vw, 2rem);padding-bottom:12px;padding-left:clamp(1.5rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"fontSize":"extra-small"} -->
-<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'new feature', 'wporg' ); ?></p>
+<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'new feature', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400","letterSpacing":"-1px"}},"textColor":"white"} -->
-<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="meet-the-command-palette" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php _e( 'Meet the Command Palette', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="meet-the-command-palette" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php esc_html_e( 'Meet the Command Palette', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'The new Command Palette introduces a quick way to search your site and access common commands.', 'wporg' ); ?></p>
+<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php esc_html_e( 'The new Command Palette introduces a quick way to search your site and access common commands.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"49px","selfStretch":"fixed"}}} -->
@@ -181,11 +181,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="find-anything"><?php _e( 'Find anything', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="find-anything"><?php esc_html_e( 'Find anything', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'The new Command Palette is a fast new way to search your editor preferences and access common commands.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'The new Command Palette is a fast new way to search your editor preferences and access common commands.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -199,11 +199,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="switch-tasks-fast"><?php _e( 'Switch tasks fast', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="switch-tasks-fast"><?php esc_html_e( 'Switch tasks fast', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Make switching between editing pages, posts, templates, or patterns more efficient than ever.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Make switching between editing pages, posts, templates, or patterns more efficient than ever.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -214,16 +214,16 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"color":{"background":"#ffffff1c"},"spacing":{"padding":{"left":"clamp(1.5rem, 5vw, 2rem)","right":"clamp(1.5rem, 5vw, 2rem)","top":"12px","bottom":"12px"},"margin":{"top":"0","bottom":"0"}},"border":{"radius":"999px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:999px;background-color:#ffffff1c;margin-top:0;margin-bottom:0;padding-top:12px;padding-right:clamp(1.5rem, 5vw, 2rem);padding-bottom:12px;padding-left:clamp(1.5rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"fontSize":"extra-small"} -->
-<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Patterns', 'wporg' ); ?></p>
+<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Patterns', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"400","letterSpacing":"-1px"},"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"textColor":"white"} -->
-<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="all-your-patterns-in-one-place" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php _e( 'All your patterns in one place', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="all-your-patterns-in-one-place" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php esc_html_e( 'All your patterns in one place', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'The new patterns page is where you can manage all your patterns, including template parts and synced patterns.*', 'wporg' ); ?></p>
+<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php esc_html_e( 'The new patterns page is where you can manage all your patterns, including template parts and synced patterns.*', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"24px","style":{"layout":{"flexSize":"24px","selfStretch":"fixed"}}} -->
@@ -251,11 +251,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="browse"><?php _e( 'Browse', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="browse"><?php esc_html_e( 'Browse', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Get a sense of how all your site&#039;s patterns feel together.', 'wporg' ); ?></p>
+<p><?php esc_html_e( "Get a sense of how all your site's patterns feel together.", 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -269,11 +269,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="create"><?php _e( 'Create', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="create"><?php esc_html_e( 'Create', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Create new patterns in isolation before adding them to a page.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create new patterns in isolation before adding them to a page.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -289,11 +289,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="manage"><?php _e( 'Manage', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="manage"><?php esc_html_e( 'Manage', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Remove unused patterns or duplicate existing ones before editing.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Remove unused patterns or duplicate existing ones before editing.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -307,11 +307,11 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="sync"><?php _e( 'Sync', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="sync"><?php esc_html_e( 'Sync', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Use synced patterns* so that one change applies to all parts of your site.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Use synced patterns* so that one change applies to all parts of your site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -322,16 +322,16 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--80)"><!-- wp:group {"style":{"color":{"background":"#ffffff1c"},"spacing":{"padding":{"left":"clamp(1.5rem, 5vw, 2rem)","right":"clamp(1.5rem, 5vw, 2rem)","top":"12px","bottom":"12px"},"margin":{"top":"0","bottom":"0"}},"border":{"radius":"999px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:999px;background-color:#ffffff1c;margin-top:0;margin-bottom:0;padding-top:12px;padding-right:clamp(1.5rem, 5vw, 2rem);padding-bottom:12px;padding-left:clamp(1.5rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"fontSize":"extra-small"} -->
-<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Performance', 'wporg' ); ?></p>
+<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Performance', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400","letterSpacing":"-1px"}},"textColor":"white"} -->
-<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="lightning-speed" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php _e( 'Lightning speed', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-white-color has-text-color" id="lightning-speed" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-style:normal;font-weight:400;letter-spacing:-1px"><?php esc_html_e( 'Lightning speed', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'Efficient utilization of server resources makes for a faster site and better visitor experience.', 'wporg' ); ?></p>
+<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php esc_html_e( 'Efficient utilization of server resources makes for a faster site and better visitor experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -351,21 +351,21 @@
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="170-updates"><?php _e( '170+ performance updates', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="170-updates"><?php esc_html_e( '170+ performance updates', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '6.3 adds support for the Scripts API and fetchpriority support for images.', 'wporg' ); ?></p>
+<p><?php esc_html_e( '6.3 adds support for the Scripts API and fetchpriority support for images.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-column"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="improved-load-times"><?php _e( 'Improved load times', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="improved-load-times"><?php esc_html_e( 'Improved load times', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Block template resolution, image lazy-loading, and the emoji loader all get faster.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Block template resolution, image lazy-loading, and the emoji loader all get faster.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -376,7 +376,7 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"color":{"background":"#ffffff1c"},"spacing":{"padding":{"left":"clamp(1.5rem, 5vw, 2rem)","right":"clamp(1.5rem, 5vw, 2rem)","top":"12px","bottom":"12px"},"margin":{"top":"0","bottom":"0"}},"border":{"radius":"999px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:999px;background-color:#ffffff1c;margin-top:0;margin-bottom:0;padding-top:12px;padding-right:clamp(1.5rem, 5vw, 2rem);padding-bottom:12px;padding-left:clamp(1.5rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"fontSize":"extra-small"} -->
-<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Much more', 'wporg' ); ?></p>
+<p class="has-text-align-center has-extra-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Much more', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -385,7 +385,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.4"}},"fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php _e( 'With over 500 new features and enhancements and more than 400 bug fixes, this release is packed with improvements to the WordPress experience.', 'wporg' ); ?></p>
+<p class="has-text-align-center has-large-font-size" style="line-height:1.4"><?php esc_html_e( 'With over 500 new features and enhancements and more than 400 bug fixes, this release is packed with improvements to the WordPress experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -397,35 +397,35 @@
 <div class="wp-block-group alignwide"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"8px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0px","left":"var:preset|spacing|40","right":"0"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:0;padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="rediscover-the-top-toolbar"><?php _e( 'Rediscover the top toolbar', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="rediscover-the-top-toolbar"><?php esc_html_e( 'Rediscover the top toolbar', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20581,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php _e( 'Screenshot of the block editor, with the text, &quot;Hello, WordPress&quot;, and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php esc_attr_e( 'Screenshot of the block editor, with the text, "Hello, WordPress", and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0px","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:var(--wp--preset--spacing--40);padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="details-block"><?php _e( 'Show or hide content with the Details Block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="details-block"><?php esc_html_e( 'Show or hide content with the Details Block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:details {"showContent":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"margin":{"top":"var:preset|spacing|default","right":"var:preset|spacing|default","bottom":"var:preset|spacing|10","left":"var:preset|spacing|default"},"padding":{"top":"var:preset|spacing|10","right":"var:preset|spacing|20","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20"}},"color":{"background":"#f7f7f70d"}},"textColor":"light-grey-2"} -->
-<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)" open><summary><?php _e( 'Try me', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"<?php _e( 'Type / to add a hidden block', 'wporg' ); ?>","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php _e( 'Perfect for hiding extended information until a user needs it.', 'wporg' ); ?></p>
+<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)" open><summary><?php esc_html_e( 'Try me', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
+<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Perfect for hiding extended information until a user needs it.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"margin":{"top":"var:preset|spacing|default","right":"var:preset|spacing|default","bottom":"var:preset|spacing|10","left":"var:preset|spacing|default"},"padding":{"top":"var:preset|spacing|10","right":"var:preset|spacing|20","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20"}},"color":{"background":"#f7f7f70d"}},"textColor":"light-grey-2"} -->
-<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><summary><?php _e( 'Easy to use', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"<?php _e( 'Type / to add a hidden block', 'wporg' ); ?>","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php _e( 'Insert the Details block, add a summary, then add what content you want to reveal.', 'wporg' ); ?></p>
+<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><summary><?php esc_html_e( 'Easy to use', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
+<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Insert the Details block, add a summary, then add what content you want to reveal.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"margin":{"top":"var:preset|spacing|default","right":"var:preset|spacing|default","bottom":"var:preset|spacing|10","left":"var:preset|spacing|default"},"padding":{"top":"var:preset|spacing|10","right":"var:preset|spacing|20","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20"}},"color":{"background":"#f7f7f70d"}},"textColor":"light-grey-2"} -->
-<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><summary><?php _e( 'Accessible', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"<?php _e( 'Type / to add a hidden block', 'wporg' ); ?>","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
-<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php _e( 'Built using the details and summary html elements', 'wporg' ); ?></p>
+<details class="wp-block-details has-light-grey-2-color has-text-color has-background has-link-color" style="background-color:#f7f7f70d;margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--default);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--default);padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)"><summary><?php esc_html_e( 'Accessible', 'wporg' ); ?></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-1"}}}},"textColor":"light-grey-1","fontSize":"small"} -->
+<p class="has-light-grey-1-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Built using the details and summary html elements', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
 <!-- /wp:group --></div>
@@ -435,21 +435,21 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"8px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0","left":"0","right":"0"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:0;padding-bottom:0;padding-left:0;flex-basis:50%"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"var:preset|spacing|default","right":"var:preset|spacing|40","bottom":"var:preset|spacing|default","left":"var:preset|spacing|40"}}},"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="aspect-ratio-tools" style="margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--default);margin-left:var(--wp--preset--spacing--40)"><?php _e( 'Set aspect ratios on images', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="aspect-ratio-tools" style="margin-top:var(--wp--preset--spacing--default);margin-right:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--default);margin-left:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Set aspect ratios on images', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20626,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://wordpress.org/files/2023/08/image-12.png"><img src="https://wordpress.org/files/2023/08/image-12-1024x576.png" alt="<?php _e( 'Abstract image showing square boxes denoting aspect ratios, 16;9, 4:3, and 1:1.', 'wporg' ); ?>" class="wp-image-20626" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://wordpress.org/files/2023/08/image-12.png"><img src="https://wordpress.org/files/2023/08/image-12-1024x576.png" alt="<?php esc_attr_e( 'Abstract image showing square boxes denoting aspect ratios, 16;9, 4:3, and 1:1.', 'wporg' ); ?>" class="wp-image-20626" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0px","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:var(--wp--preset--spacing--40);padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="manage-navigation"><?php _e( 'Manage menus more easily in the Site Editor', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="manage-navigation"><?php esc_html_e( 'Manage menus more easily in the Site Editor', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":157,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://sixthree.mystagingwebsite.com/wp-content/uploads/2023/07/image-8.png" alt="<?php _e( 'Screenshot showing abstracted menu management with a drag and drop action underway.', 'wporg' ); ?>" class="wp-image-157" /></figure>
+<figure class="wp-block-image size-full"><img src="https://sixthree.mystagingwebsite.com/wp-content/uploads/2023/07/image-8.png" alt="<?php esc_attr_e( 'Screenshot showing abstracted menu management with a drag and drop action underway.', 'wporg' ); ?>" class="wp-image-157" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -457,21 +457,21 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"8px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","left":"0","right":"var:preset|spacing|40","bottom":"0px"},"blockGap":"var:preset|spacing|40"},"color":{"background":"#f8f8f80f"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:var(--wp--preset--spacing--40);padding-bottom:0px;padding-left:0;flex-basis:50%"><!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|default","right":"var:preset|spacing|default","bottom":"var:preset|spacing|default","left":"var:preset|spacing|40"}}},"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="style-revisions" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--default);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--40)"><?php _e( 'Track and revert style revisions', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="style-revisions" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--default);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Track and revert style revisions', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20252,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/07/Frame-327.png" alt="<?php _e( 'Cropped screenshot of the block editor, showing a revision history for visual styles.', 'wporg' ); ?>" class="wp-image-20252" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/07/Frame-327.png" alt="<?php esc_attr_e( 'Cropped screenshot of the block editor, showing a revision history for visual styles.', 'wporg' ); ?>" class="wp-image-20252" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","left":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"0px"},"blockGap":"var:preset|spacing|40"},"color":{"background":"#f8f8f80f"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:var(--wp--preset--spacing--40);padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="distraction-free"><?php _e( 'Build your site distraction-free', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="distraction-free"><?php esc_html_e( 'Build your site distraction-free', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20622,"width":"135px","height":"37px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php _e( 'Screenshot of a &quot;Start typing...&quot; prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php esc_attr_e( 'Screenshot of a "Start typing..." prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -479,21 +479,21 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"8px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0px","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:var(--wp--preset--spacing--40);padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="footnotes"><?php _e( 'Annotate content with the Footnotes Block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="footnotes"><?php esc_html_e( 'Annotate content with the Footnotes Block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20292,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php _e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image.png" alt="<?php esc_attr_e( 'A screenshot of a footnotes block showing the text: 1. WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MySQL, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?>" class="wp-image-20292" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%","style":{"color":{"background":"#f8f8f80f"},"spacing":{"padding":{"top":"clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)","bottom":"0px","left":"var:preset|spacing|40","right":"0"},"blockGap":"var:preset|spacing|40"}},"className":"overflow-hidden"} -->
 <div class="wp-block-column overflow-hidden has-background" style="background-color:#f8f8f80f;padding-top:clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);padding-right:0;padding-bottom:0px;padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"level":3,"style":{"spacing":{"padding":{"top":"var:preset|spacing|default","right":"var:preset|spacing|40","bottom":"var:preset|spacing|default","left":"var:preset|spacing|default"}}},"textColor":"white","fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="preview-block-themes" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--default)"><?php _e( 'Preview block themes before activating', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-white-color has-text-color has-inter-font-family has-large-font-size" id="preview-block-themes" style="padding-top:var(--wp--preset--spacing--default);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--default);padding-left:var(--wp--preset--spacing--default)"><?php esc_html_e( 'Preview block themes before activating', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20629,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php _e( 'Cropped screenshot of a a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php esc_attr_e( 'Cropped screenshot of a a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -528,7 +528,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-blueberry-1-color has-text-color has-link-color has-large-font-size"><summary><?php _e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-blueberry-1-color has-text-color has-link-color has-large-font-size"><summary><?php esc_html_e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.3 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>

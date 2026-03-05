@@ -21,12 +21,12 @@
 
 <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p><?php _e( 'Create and deploy beautiful and coherent design elements across your sites with WordPress 6.6. A new rollback option for auto-updating plugins gives you control, flexibility, and peace of mind.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create and deploy beautiful and coherent design elements across your sites with WordPress 6.6. A new rollback option for auto-updating plugins gives you control, flexibility, and peace of mind.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Download WordPress 6.6', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Download WordPress 6.6', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -47,7 +47,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Color palettes &amp; font sets', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Color palettes & font sets', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -89,7 +89,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Quick previews for pages', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Quick previews for pages', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -115,11 +115,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Rollbacks for plugin auto-updates', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Rollbacks for plugin auto-updates', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>Auto-update your plugins with peace of mind.</strong><br>Enjoy the ease of plugin auto-updates with the safety of rollbacks if anything goes wrong, improving your site&#039;s security while minimizing potential downtime.', 'wporg' ); ?></p>
+<p><?php _e( "<strong>Auto-update your plugins with peace of mind.</strong><br>Enjoy the ease of plugin auto-updates with the safety of rollbacks if anything goes wrong, improving your site's security while minimizing potential downtime.", 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -155,7 +155,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Overrides', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Overrides', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -177,7 +177,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Performance updates', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Performance updates', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -195,11 +195,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Accessibility improvements', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Accessibility improvements', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '55+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, particularly the data views component powering the new site editing experience and areas like the Inserter that provide a key way of interacting with blocks and patterns.', 'wporg' ); ?></p>
+<p><?php esc_html_e( '55+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, particularly the data views component powering the new site editing experience and areas like the Inserter that provide a key way of interacting with blocks and patterns.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -210,7 +210,7 @@
 <!-- wp:group {"metadata":{"name":"And more"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|90"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-3","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--90)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'And much more', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'And much more', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":41152,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"10px"}}} -->
@@ -224,11 +224,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Negative margins', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Negative margins', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Create overlapping designs thanks to the ability to manually input negative values into margin controls. This is automatically available for all blocks that include margin support.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create overlapping designs thanks to the ability to manually input negative values into margin controls. This is automatically available for all blocks that include margin support.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -239,12 +239,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Refined publish flow', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Refined publish flow', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'A new design highlights key information when publishing, no matter where you’re writing, and a standardized inspector displays essential information for everything you edit.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'A new design highlights key information when publishing, no matter where you’re writing, and a standardized inspector displays essential information for everything you edit.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -258,11 +258,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Modern pattern management for Classic themes', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Modern pattern management for Classic themes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Classic themes now have access to the patterns experience provided in the Site Editor, which offers a more feature-rich and modern way to manage and create patterns.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Classic themes now have access to the patterns experience provided in the Site Editor, which offers a more feature-rich and modern way to manage and create patterns.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -273,12 +273,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Set styles for groups of blocks', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Set styles for groups of blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'Theme authors can pre-package styling options for sections of blocks, adding options for users to apply them as they’d like for a beautiful, consistent design and added flexibility.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Theme authors can pre-package styling options for sections of blocks, adding options for users to apply them as they’d like for a beautiful, consistent design and added flexibility.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -292,11 +292,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Custom shadows', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Custom shadows', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Create and edit shadows to your liking directly in the Styles section of the Site Editor. This gives you the power to create the exact shadow you’d like.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create and edit shadows to your liking directly in the Styles section of the Site Editor. This gives you the power to create the exact shadow you’d like.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -307,12 +307,12 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'New grid block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'New grid block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p><?php _e( 'Display blocks in a grid with visual sizing controls to change the row and column span of items to your liking. Auto and manual controls provide even more flexibility.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Display blocks in a grid with visual sizing controls to change the row and column span of items to your liking. Auto and manual controls provide even more flexibility.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -336,11 +336,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Aspect ratio presets', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Aspect ratio presets', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Customize the available presets for aspect ratios for Image, Featured Image, and Cover blocks.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Customize the available presets for aspect ratios for Image, Featured Image, and Cover blocks.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -350,11 +350,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Edit custom fields from connected blocks', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Edit custom fields from connected blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Create a connected block with custom fields using the block bindings API and edit the custom field later directly in the editor.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Create a connected block with custom fields using the block bindings API and edit the custom field later directly in the editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -372,7 +372,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Shortcuts for editing', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Shortcuts for editing', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -386,7 +386,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Unified extensibility APIs', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Unified extensibility APIs', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -418,7 +418,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-large-font-size"><summary><?php _e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-large-font-size"><summary><?php esc_html_e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.6 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>
