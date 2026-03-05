@@ -10,13 +10,13 @@
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"right":"var:preset|spacing|60"}}},"fontSize":"heading-2"} -->
-<h1 class="wp-block-heading has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php esc_html_e( 'Beta/Nightly', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Beta/Nightly', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Unstable Beta Versions', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Unstable Beta Versions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -32,11 +32,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Nightly Builds', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size" style="margin-top:var(--wp--preset--spacing--30)"><?php _e( 'Nightly Builds', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Development of WordPress moves fairly quickly and day-to-day things break as often as they are fixed. This high churn is part of our development process that aims to produce the most stable releases possible.', 'wporg' ); ?></p>
+<p><?php _e( 'Development of WordPress moves fairly quickly and day-to-day things break as often as they are fixed. This high churn is part of our development process that aims to produce the most stable releases possible.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -45,7 +45,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/nightly-builds/wordpress-latest.zip', 'wporg' ) ); ?>"><?php esc_html_e( 'Download the latest nightly release', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/nightly-builds/wordpress-latest.zip', 'wporg' ); ?>"><?php _e( 'Download the latest nightly release', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

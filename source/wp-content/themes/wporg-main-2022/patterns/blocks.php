@@ -11,11 +11,11 @@
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
-<h1 class="wp-block-heading" style="font-size:70px"><?php esc_html_e( 'Blocks', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="font-size:70px"><?php _e( 'Blocks', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'Block components. No code. Just click and insert content.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'Block components. No code. Just click and insert content.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -30,7 +30,7 @@
 <!-- wp:group {"metadata":{"name":"Without limits"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|80","left":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"charcoal-1","textColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
-<h2 class="wp-block-heading" style="margin-top:0"><?php esc_html_e( 'Build without limits', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'Build without limits', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -38,7 +38,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'The technology that powers much of the web has never been easier to learn. Blocks allow you to visually interact with any piece of content, with or without code—fueling rich layouts, interactive onboarding, and endless extensibility. As powerful for design as they are for development, but still intuitive enough for newcomers.', 'wporg' ); ?></p>
+<p><?php _e( 'The technology that powers much of the web has never been easier to learn. Blocks allow you to visually interact with any piece of content, with or without code—fueling rich layouts, interactive onboarding, and endless extensibility. As powerful for design as they are for development, but still intuitive enough for newcomers.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -47,11 +47,11 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ) ); ?>"><?php esc_html_e( 'Create blocks', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ); ?>"><?php _e( 'Create blocks', 'wporg' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/plugins/browse/block/', 'wporg' ) ); ?>"><?php esc_html_e( 'Browse the block directory', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/plugins/browse/block/', 'wporg' ); ?>"><?php _e( 'Browse the block directory', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -64,7 +64,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Paragraph', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Paragraph', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -74,7 +74,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Heading', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Heading', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -84,7 +84,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Media', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Media', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -94,7 +94,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Image', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Image', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -104,7 +104,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Video', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Video', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -114,7 +114,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Audio', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Audio', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -124,7 +124,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Columns', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'Columns', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -134,7 +134,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'File', 'wporg' ); ?></p>
+<p class="has-extra-small-font-size"><?php _e( 'File', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -142,7 +142,7 @@
 <!-- wp:group {"metadata":{"name":"Secret power"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"charcoal-1","textColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
-<h2 class="wp-block-heading" style="margin-top:0"><?php esc_html_e( 'WordPress’s secret power', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading" style="margin-top:0"><?php _e( 'WordPress’s secret power', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -150,7 +150,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They're also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. For inspiration, check out what others have done with WordPress in the Showcase.", 'wporg' ); ?></p>
+<p><?php _e( 'Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They&#039;re also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. For inspiration, check out what others have done with WordPress in the Showcase.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -159,7 +159,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/showcase/', 'wporg' ) ); ?>"><?php esc_html_e( 'Explore the Showcase', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/showcase/', 'wporg' ); ?>"><?php _e( 'Explore the Showcase', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -173,7 +173,7 @@
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Complete creative control', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Complete creative control', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -181,7 +181,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'The WordPress editor is the default way to insert, transform, style, and move your blocks around on a visual canvas thanks to a simple drag-and-drop interface.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'The WordPress editor is the default way to insert, transform, style, and move your blocks around on a visual canvas thanks to a simple drag-and-drop interface.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -190,7 +190,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="/gutenberg"><?php esc_html_e( 'Try blocks live', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="/gutenberg"><?php _e( 'Try blocks live', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -218,7 +218,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"spacing":{"padding":{"top":"var:preset|spacing|20","right":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"5px","bottomRight":"5px"}}},"backgroundColor":"light-grey-2","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group has-light-grey-2-background-color has-background" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1","fontSize":"extra-large"} -->
-<p class="has-blueberry-1-color has-text-color has-link-color has-extra-large-font-size"><?php esc_html_e( 'Hello world (from the editor)', 'wporg' ); ?></p>
+<p class="has-blueberry-1-color has-text-color has-link-color has-extra-large-font-size"><?php _e( 'Hello world (from the editor)', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -226,7 +226,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Create your own', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Create your own', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -234,7 +234,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( "If you can't find a block that suits your needs, create your own. Creating a block is as simple as building a React component. Use the &nbsp;<code>@wordpress/create-block</code>&nbsp;package&nbsp;to jumpstart your creation.", 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'If you can&#039;t find a block that suits your needs, create your own. Creating a block is as simple as building a React component. Use the &nbsp;<code>@wordpress/create-block</code>&nbsp;package&nbsp;to jumpstart your creation.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -243,7 +243,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.org/block-editor/getting-started/tutorial/', 'wporg' ) ); ?>"><?php esc_html_e( 'Create a block', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://developer.wordpress.org/block-editor/getting-started/tutorial/', 'wporg' ); ?>"><?php _e( 'Create a block', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -258,7 +258,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new with blocks", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'See what&#039;s new with blocks', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -266,7 +266,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'The latest major WordPress version includes updates that can improve the blocks you use and enhance your overall site-building experience. Get more details about what features are available in the current release.', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'The latest major WordPress version includes updates that can improve the blocks you use and enhance your overall site-building experience. Get more details about what features are available in the current release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"10px","style":{"layout":[]}} -->
@@ -277,8 +277,8 @@
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-esc_html_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
-?>"><?php esc_html_e( 'Discover the latest WordPress release', 'wporg' ); ?></a></div>
+_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
+?>"><?php _e( 'Discover the latest WordPress release', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -305,7 +305,7 @@ esc_html_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|default","bottom":"0","left":"var:preset|spacing|default"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--default);padding-bottom:0;padding-left:var(--wp--preset--spacing--default);flex-basis:66.66%"><!-- wp:heading {"align":"wide","fontSize":"heading-3"} -->
-<h2 class="wp-block-heading alignwide has-heading-3-font-size"><?php esc_html_e( 'Only the beginning', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-heading-3-font-size"><?php _e( 'Only the beginning', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -313,7 +313,7 @@ esc_html_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they're easily understood by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.", 'wporg' ); ?></p>
+<p><?php _e( 'While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they&#039;re easily understood by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->

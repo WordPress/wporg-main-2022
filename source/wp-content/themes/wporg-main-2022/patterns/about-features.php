@@ -8,22 +8,22 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"className":"wp-block-heading"} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Features', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Features', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [market_share] is a shortcode and should not be translated. */
-esc_html_e( 'WordPress powers more than [market_share] of the web — a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.', 'wporg' );
+_e( 'WordPress powers more than [market_share] of the web — a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress combines simplicity for users and publishers with under-the-hood complexity for developers. This makes it flexible while still being easy-to-use. The following is a list of some of the features that come as standard with WordPress; however, there are literally thousands of plugins that extend what WordPress does, so the actual functionality is nearly limitless. You are also free to do whatever you like with the WordPress code, extend it or modify in any way or use it for commercial projects without any licensing fees. That is the beauty of free software, free refers not only to price but also the freedom to have complete control over it.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress combines simplicity for users and publishers with under-the-hood complexity for developers. This makes it flexible while still being easy-to-use. The following is a list of some of the features that come as standard with WordPress; however, there are literally thousands of plugins that extend what WordPress does, so the actual functionality is nearly limitless. You are also free to do whatever you like with the WordPress code, extend it or modify in any way or use it for commercial projects without any licensing fees. That is the beauty of free software, free refers not only to price but also the freedom to have complete control over it.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Here are some of the features that we think that you’ll love.', 'wporg' ); ?></p>
+<p><?php _e( 'Here are some of the features that we think that you’ll love.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"className":"is-style-list-long-items"} -->
@@ -101,11 +101,11 @@ esc_html_e( 'WordPress powers more than [market_share] of the web — a figure t
 <!-- /wp:list -->
 
 <!-- wp:heading {"className":"wp-block-heading"} -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Developer Features', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Developer Features', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'For developers, we’ve got lots of goodies packed under the hood that you can use to extend WordPress in whatever direction takes your fancy.', 'wporg' ); ?></p>
+<p><?php _e( 'For developers, we’ve got lots of goodies packed under the hood that you can use to extend WordPress in whatever direction takes your fancy.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"className":"is-style-list-long-items"} -->

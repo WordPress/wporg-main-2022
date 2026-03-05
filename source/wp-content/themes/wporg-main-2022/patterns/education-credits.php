@@ -10,13 +10,13 @@
 <div class="wp-block-group alignfull is-style-default has-charcoal-2-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group alignwide is-style-default"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull"><!-- wp:heading {"level":1,"className":"is-style-default","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"49px"}},"textColor":"light-grey-2"} -->
-<h1 class="wp-block-heading is-style-default has-light-grey-2-color has-text-color has-link-color" style="font-size:49px"><?php esc_html_e( 'WordPress Credits', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading is-style-default has-light-grey-2-color has-text-color has-link-color" style="font-size:49px"><?php _e( 'WordPress Credits', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"is-style-four-columns","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignfull is-style-four-columns"><!-- wp:paragraph {"className":"is-style-short-text has-light-grey-1-color has-text-color","style":{"typography":{"textAlign":"left"}},"textColor":"light-grey-1"} -->
-<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php esc_html_e( 'Guiding the next generation of contributors through hands-on learning', 'wporg' ); ?></p>
+<p class="has-text-align-left is-style-short-text has-light-grey-1-color has-text-color"><?php _e( 'Guiding the next generation of contributors through hands-on learning', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -26,15 +26,15 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"white","textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"padding":{"right":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--40)"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'About the Program', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'About the Program', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'WordPress Credits is a contribution-based program by the WordPress Foundation that connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Launched with the University of Pisa and announced at WordCamp Europe 2025, the program continues to grow, fostering collaboration between students, universities, and companies across the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Launched with the University of Pisa and announced at WordCamp Europe 2025, the program continues to grow, fostering collaboration between students, universities, and companies across the WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -54,29 +54,29 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-text-color has-link-color"><!-- wp:column {"verticalAlignment":"top","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'How it Works', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'How it Works', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'The program typically runs for an academic semester and follows three main phases:', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'The program typically runs for an academic semester and follows three main phases:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Onboarding', 'wporg' ); ?></li>
+<li><?php _e( 'Onboarding', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<li class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Project Work (contributions)', 'wporg' ); ?></li>
+<li class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Project Work (contributions)', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Wrap-Up', 'wporg' ); ?></li>
+<li><?php _e( 'Wrap-Up', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Through the program, students collaborate with volunteers and professionals from companies in the WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Through the program, students collaborate with volunteers and professionals from companies in the WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Students receive training on WordPress tools, community culture, and open source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students receive training on WordPress tools, community culture, and open source collaboration while connecting with mentors and local teams.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -102,7 +102,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Students develop a personal contribution project in their area of interest, such as translation, content creation, event organization, development, or design.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students develop a personal contribution project in their area of interest, such as translation, content creation, event organization, development, or design.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -112,7 +112,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Students present their work, share reflections, and help improve the program for future participants.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Students present their work, share reflections, and help improve the program for future participants.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -124,7 +124,7 @@
 <div class="wp-block-group alignfull has-charcoal-0-color has-white-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"textColor":"charcoal-0"} -->
 <div class="wp-block-columns alignwide has-charcoal-0-color has-text-color has-link-color" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"padding":{"left":"0","right":"0","bottom":"var:preset|spacing|30"},"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Why Participate in WordPress Credits', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Why Participate in WordPress Credits', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -140,26 +140,26 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Build real WordPress projects and develop practical skills', 'wporg' ); ?></li>
+<li><?php _e( 'Build real WordPress projects and develop practical skills', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Learn from experienced mentors', 'wporg' ); ?></li>
+<li><?php _e( 'Learn from experienced mentors', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Gain confidence through hands-on experience', 'wporg' ); ?></li>
+<li><?php _e( 'Gain confidence through hands-on experience', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Connect with a global open source community', 'wporg' ); ?></li>
+<li><?php _e( 'Connect with a global open source community', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ) ); ?>"><?php esc_html_e( 'Join as a Student', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ); ?>"><?php _e( 'Join as a Student', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -174,22 +174,22 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Bring meaningful learning experiences to students', 'wporg' ); ?></li>
+<li><?php _e( 'Bring meaningful learning experiences to students', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Share knowledge while strengthening your own leadership skills', 'wporg' ); ?></li>
+<li><?php _e( 'Share knowledge while strengthening your own leadership skills', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Connect your institution or community with the global WordPress ecosystem', 'wporg' ); ?></li>
+<li><?php _e( 'Connect your institution or community with the global WordPress ecosystem', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/call-for-mentors/', 'wporg' ) ); ?>"><?php esc_html_e( 'Apply as a Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/call-for-mentors/', 'wporg' ); ?>"><?php _e( 'Apply as a Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -206,30 +206,30 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Access to a complete, ready-to-implement educational program at no cost', 'wporg' ); ?></li>
+<li><?php _e( 'Access to a complete, ready-to-implement educational program at no cost', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
+<li><?php _e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Increased student engagement through practical project work', 'wporg' ); ?></li>
+<li><?php _e( 'Increased student engagement through practical project work', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Opportunity for teachers to be trained as future mentors, strengthening internal capabilities', 'wporg' ); ?></li>
+<li><?php _e( 'Opportunity for teachers to be trained as future mentors, strengthening internal capabilities', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
+<li><?php _e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ) ); ?>"><?php esc_html_e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>"><?php _e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -244,26 +244,26 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Increased visibility as a company that supports open source education and emerging WordPress professionals', 'wporg' ); ?></li>
+<li><?php _e( 'Increased visibility as a company that supports open source education and emerging WordPress professionals', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Direct connection with motivated students gaining real experience through guided projects', 'wporg' ); ?></li>
+<li><?php _e( 'Direct connection with motivated students gaining real experience through guided projects', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Strengthened reputation in the WordPress ecosystem as a supporter of impactful community initiatives', 'wporg' ); ?></li>
+<li><?php _e( 'Strengthened reputation in the WordPress ecosystem as a supporter of impactful community initiatives', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Opportunities to collaborate with mentors, institutions, and contributors for long term mutual benefit', 'wporg' ); ?></li>
+<li><?php _e( 'Opportunities to collaborate with mentors, institutions, and contributors for long term mutual benefit', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Become a Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Become a Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -274,7 +274,7 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|20"}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-text-color has-link-color" style="padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"padding":{"left":"0","right":"0"},"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="padding-right:0;padding-left:0"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Success Stories', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Success Stories', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -291,12 +291,12 @@
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Nazareth', 'wporg' ); ?></p>
+<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php _e( 'Nazareth', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"placeholder":"Content…","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Universidad Fidélitas', 'wporg' ); ?></p>
+<!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
+<p class="has-extra-small-font-size"><?php _e( 'Universidad Fidélitas', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -313,12 +313,12 @@
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Leonardo', 'wporg' ); ?></p>
+<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php _e( 'Leonardo', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"placeholder":"Content…","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Università di Pisa', 'wporg' ); ?></p>
+<!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
+<p class="has-extra-small-font-size"><?php _e( 'Università di Pisa', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -335,12 +335,12 @@
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Arianna', 'wporg' ); ?></p>
+<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php _e( 'Arianna', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"placeholder":"Content…","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Università di Pisa', 'wporg' ); ?></p>
+<!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
+<p class="has-extra-small-font-size"><?php _e( 'Università di Pisa', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -357,12 +357,12 @@
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Giulia', 'wporg' ); ?></p>
+<div class="wp-block-group is-style-two-column-display" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
+<p class="is-style-default has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:normal;font-weight:500"><?php _e( 'Giulia', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"placeholder":"Content…","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
-<p class="has-extra-small-font-size"><?php esc_html_e( 'Università di Pisa', 'wporg' ); ?></p>
+<!-- wp:paragraph {"placeholder":"<?php _e( 'Content…', 'wporg' ); ?>","style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"extra-small"} -->
+<p class="has-extra-small-font-size"><?php _e( 'Università di Pisa', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -374,13 +374,13 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-text-color has-link-color" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"padding":{"left":"0","right":"0"},"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="padding-right:0;padding-left:0"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Participating Institutions', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Participating Institutions', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php esc_html_e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'Check the institutions currently participating in WordPress Credits. Together, they’re advancing open source education by connecting students, educators, and contributors around the world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"charcoal-1"} -->
@@ -399,13 +399,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Universidad Fidélitas', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Universidad Fidélitas', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'San José, Costa Rica', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'San José, Costa Rica', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -419,13 +419,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Riga Nordic University', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Riga Nordic University', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Riga, Latvia', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Riga, Latvia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -439,13 +439,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Universidad Privada Franz Tamayo', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Universidad Privada Franz Tamayo', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Santa Cruz & Cochabamba, Bolivia', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Santa Cruz &amp; Cochabamba, Bolivia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -459,13 +459,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Università di Pisa', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Università di Pisa', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Pisa, Italy', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Pisa, Italy', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -479,13 +479,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( "Ahmad's Education", 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Ahmad&#039;s Education', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Dhaka, Bangladesh', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Dhaka, Bangladesh', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -499,13 +499,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Krakow University of Economics', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow University of Economics', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Krakow, Poland', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -519,13 +519,13 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Cracow University of Technology', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Cracow University of Technology', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Krakow, Poland', 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Krakow, Poland', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -536,11 +536,11 @@
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide has-charcoal-3-color has-text-color has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Meet our Mentors and Admins', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Meet our Mentors and Admins', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color"><?php esc_html_e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color"><?php _e( 'Our mentors and program administrators form the backbone of WordPress Credits. Mentors guide students through their first steps in open source contribution, helping them define meaningful projects, build confidence, and develop real-world skills through hands-on collaboration with WordPress teams. Program admins ensure that every step of the student journey runs smoothly, from onboarding and project coordination to academic partnerships and community integration. Together, they create a supportive learning environment that empowers students to contribute with purpose, unlock new opportunities, and become active participants in the global WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -557,7 +557,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"backgroundColor":"blueberry-1","textColor":"light-grey-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-light-grey-2-color has-blueberry-1-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"fontSize":"35px","textAlign":"center"}},"textColor":"light-grey-2"} -->
-<h2 class="wp-block-heading has-text-align-center has-light-grey-2-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Our Sponsors', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-light-grey-2-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'Our Sponsors', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
@@ -615,7 +615,7 @@
 <div class="wp-block-columns alignwide is-style-default" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"border":{"width":"0px","style":"none"},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
-<p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php esc_html_e( 'WordPress.com offers domain plus 1 year of free hosting plus 50% off renewal', 'wporg' ); ?></p>
+<p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'WordPress.com offers domain plus 1 year of free hosting plus 50% off renewal', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -629,7 +629,7 @@
 <!-- wp:column {"style":{"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|white-opacity-15","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}}} -->
 <div class="wp-block-column" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--white-opacity-15);border-left-width:1px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"typography":{"textAlign":"center"}},"textColor":"light-grey-2"} -->
-<p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php esc_html_e( 'Weglot offers one year of Weglot’s Business Plan for free to translate your website', 'wporg' ); ?></p>
+<p class="has-text-align-center has-light-grey-2-color has-text-color has-link-color"><?php _e( 'Weglot offers one year of Weglot’s Business Plan for free to translate your website', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":10088,"width":"88px","aspectRatio":"2.567901234567901","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
@@ -646,7 +646,7 @@
 <div class="wp-block-columns alignfull is-style-default has-charcoal-0-color has-text-color has-link-color" style="border-style:none;border-width:0px"><!-- wp:column {"verticalAlignment":"center","style":{"border":{"width":"0px","style":"none"},"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'How to Get Involved', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'How to Get Involved', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -660,7 +660,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:heading {"style":{"layout":{"selfStretch":"fit","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'How to Get Involved', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php _e( 'How to Get Involved', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -675,12 +675,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open source community.', 'wporg' ); ?></p>
+<p><?php _e( 'Gain real-world experience, collaborate with mentors, contribute to WordPress projects, and build skills that can boost your future career as part of a global open source community.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Participate', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Participate', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -693,12 +693,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-<p><?php esc_html_e( 'Share your experience and help guide students through real-world open source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
+<p><?php _e( 'Share your experience and help guide students through real-world open source projects, offering feedback, support, and direction as they learn and grow.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -715,12 +715,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Become a partner and offer students a meaningful way to gain real experience while contributing to a global open source project. Joining the program allows you to bring innovative and practice based learning opportunities directly into your curriculum', 'wporg' ); ?></p>
+<p><?php _e( 'Become a partner and offer students a meaningful way to gain real experience while contributing to a global open source project. Joining the program allows you to bring innovative and practice based learning opportunities directly into your curriculum', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Partner', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Partner', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -733,12 +733,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"typography":{"textDecoration":"none"}}} -->
-<p class="has-link-color" style="text-decoration:none"><?php esc_html_e( 'Strengthen the open source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
+<p class="has-link-color" style="text-decoration:none"><?php _e( 'Strengthen the open source community by supporting students through mentor sponsorships, useful tools and resources, or other contributions that enhance the program experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ); ?>" target="_blank" rel="noreferrer noopener"><?php _e( 'Apply to Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -751,7 +751,7 @@
 <div class="wp-block-columns alignfull is-style-default has-charcoal-0-color has-text-color has-link-color" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"border":{"width":"0px","style":"none"},"spacing":{"padding":{"left":"var:preset|spacing|edge-space","top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-column" style="border-style:none;border-width:0px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"heading-3"} -->
-<h3 class="wp-block-heading has-light-grey-2-color has-text-color has-link-color has-heading-3-font-size"><?php esc_html_e( 'Join the community', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-light-grey-2-color has-text-color has-link-color has-heading-3-font-size"><?php _e( 'Join the community', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

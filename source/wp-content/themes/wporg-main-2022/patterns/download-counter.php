@@ -11,7 +11,7 @@
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"italic"}},"fontSize":"heading-5"} -->
 <h1 class="wp-block-heading has-text-align-center has-heading-5-font-size" style="font-style:italic"><?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-esc_html_e( 'Number of WordPress [stable_branch] downloads', 'wporg' );
+_e( 'Number of WordPress [stable_branch] downloads', 'wporg' );
 ?></h1>
 <!-- /wp:heading -->
 

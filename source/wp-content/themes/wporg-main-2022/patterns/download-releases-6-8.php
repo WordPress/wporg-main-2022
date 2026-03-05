@@ -15,12 +15,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php esc_html_e( 'WordPress 6.8 polishes and refines the tools you use every day, making your site faster, more secure, and easier to manage.', 'wporg' ); ?></p>
+<p class="has-text-align-center"><?php _e( 'WordPress 6.8 polishes and refines the tools you use every day, making your site faster, more secure, and easier to manage.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get WordPress 6.8', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress 6.8', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -33,7 +33,7 @@
 <div class="wp-block-group has-charcoal-1-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#ffd3d9;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"className":"has-mixed-heading-font","style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter","blockVisibility":{"hideBlock":false}} -->
-<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'The Style Book gets a cleaner look—and a few new tricks', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php _e( 'The Style Book gets a cleaner look—and a few new tricks', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
@@ -41,7 +41,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"normal"} -->
-<p class="has-normal-font-size"><?php esc_html_e( 'The Style Book has a new, structured layout and clearer labels, to make it even easier to edit colors, typography—almost all your site styles—in one place. Plus, now you can see it in Classic themes that have editor-styles or a theme.json file. Find the Style Book under Appearance > Design and use it to preview your theme’s evolution, as you edit CSS or make changes in the Customizer.', 'wporg' ); ?></p>
+<p class="has-normal-font-size"><?php _e( 'The Style Book has a new, structured layout and clearer labels, to make it even easier to edit colors, typography—almost all your site styles—in one place. Plus, now you can see it in Classic themes that have editor-styles or a theme.json file. Find the Style Book under Appearance &gt; Design and use it to preview your theme’s evolution, as you edit CSS or make changes in the Customizer.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -65,7 +65,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Editor improvements', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php _e( 'Editor improvements', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
@@ -73,7 +73,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Easier ways to see your options in Data Views, and you can exclude sticky posts from the Query Loop. Plus, you’ll find lots of little improvements in the editor that smooth your way through everything you build.', 'wporg' ); ?></p>
+<p><?php _e( 'Easier ways to see your options in Data Views, and you can exclude sticky posts from the Query Loop. Plus, you’ll find lots of little improvements in the editor that smooth your way through everything you build.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -85,7 +85,7 @@
 <div class="wp-block-group alignwide has-charcoal-1-color has-text-color has-background has-link-color" style="border-radius:16px;background-color:#fffcdf;padding-top:0;padding-bottom:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"className":"has-mixed-heading-font","style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Near-instant page loads, thanks to Speculative Loading', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-mixed-heading-font has-inter-font-family" style="font-size:42px"><?php _e( 'Near-instant page loads, thanks to Speculative Loading', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
@@ -93,7 +93,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'In WordPress 6.8, pages load faster than ever. When you or your user hovers over or clicks a link, WordPress may preload the next page, for a smoother, near-instant experience. The system balances speed and efficiency, and you can control how it works, with a plugin or your own code. This feature only works in modern browsers—older ones will simply ignore it without any impact.', 'wporg' ); ?></p>
+<p><?php _e( 'In WordPress 6.8, pages load faster than ever. When you or your user hovers over or clicks a link, WordPress may preload the next page, for a smoother, near-instant experience. The system balances speed and efficiency, and you can control how it works, with a plugin or your own code. This feature only works in modern browsers—older ones will simply ignore it without any impact.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -117,7 +117,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"42px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php esc_html_e( 'Stronger password security with bcrypt', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:42px"><?php _e( 'Stronger password security with bcrypt', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
@@ -125,7 +125,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Now passwords are harder to crack with bcrypt hashing, which takes a lot more computing power to break. This strengthens overall security, as do other encryption improvements across WordPress. You don’t need to do anything—everything updates automatically.', 'wporg' ); ?></p>
+<p><?php _e( 'Now passwords are harder to crack with bcrypt hashing, which takes a lot more computing power to break. This strengthens overall security, as do other encryption improvements across WordPress. You don’t need to do anything—everything updates automatically.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -144,11 +144,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php esc_html_e( 'Performance', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php _e( 'Performance', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress 6.8 packs a wide range of performance fixes and enhancements to speed up everything from editing to browsing. Beyond speculative loading, WordPress 6.8 pays special attention to the block editor, block type registration, and query caching. Plus, imagine never waiting longer than 50 milliseconds—for any interaction. In WordPress 6.8, the Interactivity API takes a first step toward that goal.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress 6.8 packs a wide range of performance fixes and enhancements to speed up everything from editing to browsing. Beyond speculative loading, WordPress 6.8 pays special attention to the block editor, block type registration, and query caching. Plus, imagine never waiting longer than 50 milliseconds—for any interaction. In WordPress 6.8, the Interactivity API takes a first step toward that goal.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -162,11 +162,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php esc_html_e( 'Accessibility', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php _e( 'Accessibility', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( '100+ accessibility fixes and enhancements touch a broad spectrum of the WordPress experience. This release includes fixes to every bundled theme, improvements to the navigation menu management, the customizer, and simplified labeling. The Block Editor has over 70 improvements to blocks, DataViews, and to its overall user experience.', 'wporg' ); ?></p>
+<p><?php _e( '100+ accessibility fixes and enhancements touch a broad spectrum of the WordPress experience. This release includes fixes to every bundled theme, improvements to the navigation menu management, the customizer, and simplified labeling. The Block Editor has over 70 improvements to blocks, DataViews, and to its overall user experience.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -184,7 +184,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-4","fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php esc_html_e( 'Take a load off the database', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family has-heading-4-font-size"><?php _e( 'Take a load off the database', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -219,7 +219,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-large-font-size"><summary><?php esc_html_e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-large-font-size"><summary><?php _e( 'View All Contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.8 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>

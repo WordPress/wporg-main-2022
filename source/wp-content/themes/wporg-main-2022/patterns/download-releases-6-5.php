@@ -17,12 +17,12 @@
 
 <!-- wp:column {"verticalAlignment":"bottom"} -->
 <div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph -->
-<p><?php esc_html_e( 'Elevate your site-building experience with WordPress 6.5. Explore more avenues to make it your own with new features and enhancements that transform how you create with WordPress.', 'wporg' ); ?></p>
+<p><?php _e( 'Elevate your site-building experience with WordPress 6.5. Explore more avenues to make it your own with new features and enhancements that transform how you create with WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Download WordPress 6.5', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Download WordPress 6.5', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -43,15 +43,15 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":39364,"width":"94px","height":"94px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/font-library-feature-illustration.png" alt="<?php esc_attr_e( 'Icon showing Aa in two fonts.', 'wporg' ); ?>" class="wp-image-39364" style="object-fit:cover;width:94px;height:94px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2024/03/font-library-feature-illustration.png" alt="<?php _e( 'Icon showing Aa in two fonts.', 'wporg' ); ?>" class="wp-image-39364" style="object-fit:cover;width:94px;height:94px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Meet the Font Library', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Meet the Font Library', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Stay in control of an essential piece of your site’s design—typography—without coding or extra steps.', 'wporg' ); ?></p>
+<p><?php _e( 'Stay in control of an essential piece of your site’s design—typography—without coding or extra steps.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -81,7 +81,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Effortlessly install, remove, and activate local and Google&nbsp;Fonts across your site for any Block theme. The ability to include custom typography collections gives site creators and publishers even more choice.', 'wporg' ); ?></p>
+<p><?php _e( 'Effortlessly install, remove, and activate local and Google&nbsp;Fonts across your site for any Block theme. The ability to include custom typography collections gives site creators and publishers even more choice.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -101,11 +101,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Enhanced background and shadow tools', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Enhanced background and shadow tools', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Explore more ways to add visual interest to layouts using updated design tools. Control size, repeat, and focal point options on your background images to make them blend in or stand out. Add shadow supports to more blocks to bring visual depth to your designs or to inject a little personality.', 'wporg' ); ?></p>
+<p><?php _e( 'Explore more ways to add visual interest to layouts using updated design tools. Control size, repeat, and focal point options on your background images to make them blend in or stand out. Add shadow supports to more blocks to bring visual depth to your designs or to inject a little personality.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -131,11 +131,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Get more details from your style revisions', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Get more details from your style revisions', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Work through creative projects with a more comprehensive picture of what’s been done—and what you can fall back on. Get details like time stamps, quick summaries, and a paginated list of all revisions. View revisions from the Style&nbsp;Book to see changes outside of what you’re working on. Revisions are also now available for templates and template parts.', 'wporg' ); ?></p>
+<p><?php _e( 'Work through creative projects with a more comprehensive picture of what’s been done—and what you can fall back on. Get details like time stamps, quick summaries, and a paginated list of all revisions. View revisions from the Style&nbsp;Book to see changes outside of what you’re working on. Revisions are also now available for templates and template parts.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -149,11 +149,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Improved link controls', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'Improved link controls', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Create and manage links easily with a more intuitive link-building experience, like a streamlined UI and a shortcut for copying links.', 'wporg' ); ?></p>
+<p><?php _e( 'Create and manage links easily with a more intuitive link-building experience, like a streamlined UI and a shortcut for copying links.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -183,7 +183,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Every piece of your site comes with a library of information and data—now, you can find what you need quickly and organize it however you like. Data views for pages, templates, patterns, and template parts let you see data in a table or grid view, with the option to toggle fields and make bulk changes.', 'wporg' ); ?></p>
+<p><?php _e( 'Every piece of your site comes with a library of information and data—now, you can find what you need quickly and organize it however you like. Data views for pages, templates, patterns, and template parts let you see data in a table or grid view, with the option to toggle fields and make bulk changes.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -209,11 +209,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Performance updates', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Performance updates', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'This release includes 110+ performance updates, with an impressive increase in speed and efficiency across the Post Editor and Site Editor. Loading is over two times faster than in 6.4, with input processing speed up to five times faster than the previous release. Translated sites see up to 25% improvement in load time for this release.', 'wporg' ); ?></p>
+<p><?php _e( 'This release includes 110+ performance updates, with an impressive increase in speed and efficiency across the Post Editor and Site Editor. Loading is over two times faster than in 6.4, with input processing speed up to five times faster than the previous release. Translated sites see up to 25% improvement in load time for this release.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -233,11 +233,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Accessibility improvements', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Accessibility improvements', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'This release includes more than 65 accessibility improvements across the platform, making it more accessible than ever. It contains an important fix that unblocks access to the admin submenus for screen reader users and others who navigate by keyboard. This release also adds fixes to color contrast in admin focus states, positioning of elements, and cursor focus, among many others, that help improve the WordPress experience for everyone.', 'wporg' ); ?></p>
+<p><?php _e( 'This release includes more than 65 accessibility improvements across the platform, making it more accessible than ever. It contains an important fix that unblocks access to the admin submenus for screen reader users and others who navigate by keyboard. This release also adds fixes to color contrast in admin focus states, positioning of elements, and cursor focus, among many others, that help improve the WordPress experience for everyone.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -252,7 +252,7 @@
 <!-- wp:group {"metadata":{"name":"And more"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|90"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-3","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-charcoal-3-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--90)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'And much more', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-charcoal-0-color has-text-color has-link-color"><?php _e( 'And much more', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":39702,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"16px"}}} -->
@@ -266,11 +266,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Get more control over images in Cover blocks', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Get more control over images in Cover blocks', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Set aspect ratios for Cover block images and easily add color overlays that automatically source color from your chosen image.', 'wporg' ); ?></p>
+<p><?php _e( 'Set aspect ratios for Cover block images and easily add color overlays that automatically source color from your chosen image.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -282,11 +282,11 @@
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Smoother drag-and-drop', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Smoother drag-and-drop', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Feel the difference when you move things around, with helpful visual cues like displaced items in List View or frictionless dragging to anywhere in your workspace—from beginning to end.', 'wporg' ); ?></p>
+<p><?php _e( 'Feel the difference when you move things around, with helpful visual cues like displaced items in List View or frictionless dragging to anywhere in your workspace—from beginning to end.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -310,11 +310,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Bring interactions to blocks with the Interactivity API', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Bring interactions to blocks with the Interactivity API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'The Interactivity API offers developers a standardized method for building interactive front-end experiences with blocks. It simplifies the process, with fewer dependencies on external tooling, while maintaining optimal performance. Use it to create memorable user experiences, like fetching search results instantly or letting visitors interact with content in real time.', 'wporg' ); ?></p>
+<p><?php _e( 'The Interactivity API offers developers a standardized method for building interactive front-end experiences with blocks. It simplifies the process, with fewer dependencies on external tooling, while maintaining optimal performance. Use it to create memorable user experiences, like fetching search results instantly or letting visitors interact with content in real time.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -324,11 +324,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Connect blocks to custom fields or other dynamic content', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Connect blocks to custom fields or other dynamic content', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Link core block attributes to custom fields and use the value of custom fields without creating custom blocks. Powered by the Block Bindings API, developers can extend this capability further to connect blocks to any dynamic content—even beyond custom fields. If there’s data stored elsewhere, easily point blocks to that new source with only a few lines of code.', 'wporg' ); ?></p>
+<p><?php _e( 'Link core block attributes to custom fields and use the value of custom fields without creating custom blocks. Powered by the Block Bindings API, developers can extend this capability further to connect blocks to any dynamic content—even beyond custom fields. If there’s data stored elsewhere, easily point blocks to that new source with only a few lines of code.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -346,11 +346,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Add appearance tools to Classic themes', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Add appearance tools to Classic themes', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Give designers and creators using Classic themes access to an upgraded design experience. Opt in to support for spacing, border, typography, and color options, even without using theme.json. Once support is enabled, more tools will be automatically added as they become available.', 'wporg' ); ?></p>
+<p><?php _e( 'Give designers and creators using Classic themes access to an upgraded design experience. Opt in to support for spacing, border, typography, and color options, even without using theme.json. Once support is enabled, more tools will be automatically added as they become available.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -360,11 +360,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Explore improvements to the plugin experience', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:700"><?php _e( 'Explore improvements to the plugin experience', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "There's now an easier way to manage plugin dependencies. Plugin authors can supply a new <code>Requires Plugins</code> header with a comma-separated list of required plugin slugs, presenting users with links to install and activate those plugins first.", 'wporg' ); ?></p>
+<p><?php _e( 'There&#039;s now an easier way to manage plugin dependencies. Plugin authors can supply a new <code>Requires Plugins</code> header with a comma-separated list of required plugin slugs, presenting users with links to install and activate those plugins first.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -390,7 +390,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-white-color has-text-color has-link-color has-large-font-size"><summary><?php esc_html_e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-white-color has-text-color has-link-color has-large-font-size"><summary><?php _e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.5 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>

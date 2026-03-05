@@ -8,11 +8,11 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Requirements', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Requirements', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'To run WordPress, it’s recommended your host supports:', 'wporg' ); ?></p>
+<p><?php _e( 'To run WordPress, it’s recommended your host supports:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
@@ -51,52 +51,52 @@ _e( 'Note: If you are in a legacy environment where you only have older PHP or M
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Ask your host to run WordPress', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Ask your host to run WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you’re unsure whether or not your host can already run WordPress, here’s a request you can copy and paste to send them!', 'wporg' ); ?></p>
+<p><?php _e( 'If you’re unsure whether or not your host can already run WordPress, here’s a request you can copy and paste to send them!', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote {"backgroundColor":"white","textColor":"charcoal-4","fontSize":"normal","fontFamily":"inter"} -->
 <blockquote class="wp-block-quote has-charcoal-4-color has-white-background-color has-text-color has-background has-inter-font-family has-normal-font-size"><!-- wp:paragraph -->
-<p><?php esc_html_e( 'I’m interested in running the open source WordPress <https://wordpress.org/> web software, and I was wondering if my account supported the following:', 'wporg' ); ?></p>
+<p><?php _e( 'I’m interested in running the open source WordPress &lt;https://wordpress.org/&gt; web software, and I was wondering if my account supported the following:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php
 /* translators: [recommended_php] is a shortcode and should not be translated. */
-esc_html_e( 'PHP [recommended_php] or greater', 'wporg' );
+_e( 'PHP [recommended_php] or greater', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
 <li><?php
 /* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
-esc_html_e( 'MariaDB version [recommended_mariadb] or greater OR MySQL version [recommended_mysql] or greater', 'wporg' );
+_e( 'MariaDB version [recommended_mariadb] or greater OR MySQL version [recommended_mysql] or greater', 'wporg' );
 ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Nginx or Apache with mod_rewrite module', 'wporg' ); ?></li>
+<li><?php _e( 'Nginx or Apache with mod_rewrite module', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'HTTPS support', 'wporg' ); ?></li>
+<li><?php _e( 'HTTPS support', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Thanks!', 'wporg' ); ?></p>
+<p><?php _e( 'Thanks!', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Not required, but recommended for better security', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Not required, but recommended for better security', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Hosting is more secure when PHP applications, like WordPress, are run using your account’s username instead of the server’s default shared username. Ask your potential host what steps they take to ensure the security of your account.', 'wporg' ); ?></p>
+<p><?php _e( 'Hosting is more secure when PHP applications, like WordPress, are run using your account’s username instead of the server’s default shared username. Ask your potential host what steps they take to ensure the security of your account.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

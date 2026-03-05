@@ -8,7 +8,7 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Domains', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Domains', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you already have a domain with “WordPress” in it, redirecting it to the “wp” equivalent is fine, just as long as the main one users see and you promote doesn’t contain “WordPress” and in the long term you should consider transferring the old one to the Foundation.', 'wporg' ); ?></p>
+<p><?php _e( 'If you already have a domain with “WordPress” in it, redirecting it to the “wp” equivalent is fine, just as long as the main one users see and you promote doesn’t contain “WordPress” and in the long term you should consider transferring the old one to the Foundation.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -24,10 +24,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'We’ve told this to anyone who has ever asked us, we just wanted to make it public so more people could be aware of this policy.', 'wporg' ); ?></p>
+<p><?php _e( 'We’ve told this to anyone who has ever asked us, we just wanted to make it public so more people could be aware of this policy.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you’re seeing other domains using WordPress, and they’re not WordPress.com, WordPress.net, WordPress.org, WordPress.tv, or WordPressFoundation.org, they’re not allowed. You should contact the owner and reference this page. We see this most frequently with spammy sites distributing plugins and themes with malware in them. By calling them out, you’re helping protect the integrity of the project.', 'wporg' ); ?></p>
+<p><?php _e( 'If you’re seeing other domains using WordPress, and they’re not WordPress.com, WordPress.net, WordPress.org, WordPress.tv, or WordPressFoundation.org, they’re not allowed. You should contact the owner and reference this page. We see this most frequently with spammy sites distributing plugins and themes with malware in them. By calling them out, you’re helping protect the integrity of the project.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

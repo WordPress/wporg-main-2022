@@ -9,11 +9,11 @@
 <!-- wp:group {"metadata":{"name":"Header"},"align":"full","className":"has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}},"border":{"top":{"color":"var:preset|color|charcoal-3","width":"1px"},"right":[],"bottom":[],"left":[]}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" style="border-top-color:var(--wp--preset--color--charcoal-3);border-top-width:1px;padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"50px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"ibm-plex-sans"} -->
-<h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php esc_html_e( 'Data Liberation', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading has-ibm-plex-sans-font-family" style="font-size:50px;font-style:normal;font-weight:400"><?php _e( 'Data Liberation', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"}},"textColor":"white"} -->
-<p class="has-white-color has-text-color" style="line-height:1.7"><?php esc_html_e( 'Your data, your move.', 'wporg' ); ?></p>
+<p class="has-white-color has-text-color" style="line-height:1.7"><?php _e( 'Your data, your move.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -22,21 +22,21 @@
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php esc_html_e( 'What is Data Liberation?', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'What is Data Liberation?', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'The Data Liberation project envisions a web where your data is truly yours, not locked in closed platforms. Through five development phases, WordPress will give you powerful tools to reclaim, manage, and move your content anywhere on the web—no hosting accounts needed.', 'wporg' ); ?></p>
+<p><?php _e( 'The Data Liberation project envisions a web where your data is truly yours, not locked in closed platforms. Through five development phases, WordPress will give you powerful tools to reclaim, manage, and move your content anywhere on the web—no hosting accounts needed.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php esc_html_e( 'Locked vs. Liberated Data', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Locked vs. Liberated Data', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Many people don't realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it's hard to get out. <a href=\"https://github.com/WordPress/data-liberation/discussions/82\" data-type=\"page\" data-id=\"24221\" target=\"_blank\" rel=\"noreferrer noopener\">Read more</a>.", 'wporg' ); ?></p>
+<p><?php _e( 'Many people don&#039;t realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it&#039;s hard to get out. <a href="https://github.com/WordPress/data-liberation/discussions/82" data-type="page" data-id="24221" target="_blank" rel="noreferrer noopener">Read more</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -45,7 +45,7 @@
 <!-- wp:group {"metadata":{"name":"Road map"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"lineHeight":"1.7"}}} -->
-<h2 class="wp-block-heading" style="line-height:1.7"><?php esc_html_e( 'Roadmap', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading" style="line-height:1.7"><?php _e( 'Roadmap', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
@@ -66,7 +66,7 @@
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"6px","right":"6px"}},"border":{"radius":"2px"}},"backgroundColor":"blueberry-1","textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Ongoing', 'wporg' ); ?></p>
+<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Ongoing', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -87,7 +87,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Phase 2 solves the largest data migration problems: updating links, copying media, recovering from errors, and supporting for large sites. It is built for developers to extend and support any content format.', 'wporg' ); ?></p>
+<p><?php _e( 'Phase 2 solves the largest data migration problems: updating links, copying media, recovering from errors, and supporting for large sites. It is built for developers to extend and support any content format.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -98,7 +98,7 @@
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"6px","right":"6px"}},"border":{"radius":"2px"}},"backgroundColor":"blueberry-1","textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Ongoing', 'wporg' ); ?></p>
+<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Ongoing', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -119,7 +119,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Phase 3 is a <a href=\"https://github.com/WordPress/try-wordpress/\" target=\"_blank\" rel=\"noreferrer noopener\">browser extension</a> that liberates your data from any website, including social media, closed page builders, and design tools like Figma. It's extendable by developers and can even double as a personal web scratchboard.", 'wporg' ); ?></p>
+<p><?php _e( 'Phase 3 is a <a href="https://github.com/WordPress/try-wordpress/" target="_blank" rel="noreferrer noopener">browser extension</a> that liberates your data from any website, including social media, closed page builders, and design tools like Figma. It&#039;s extendable by developers and can even double as a personal web scratchboard.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -130,7 +130,7 @@
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"6px","right":"6px"}},"border":{"radius":"2px"}},"backgroundColor":"blueberry-1","textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Started', 'wporg' ); ?></p>
+<p class="has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Started', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -162,7 +162,7 @@
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"6px","right":"6px"}},"border":{"radius":"2px"}},"backgroundColor":"charcoal-0","textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-charcoal-0-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Future', 'wporg' ); ?></p>
+<p class="has-white-color has-charcoal-0-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Future', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -179,11 +179,11 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php esc_html_e( 'Phase 5: Content Creation Powerhouse', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( 'Phase 5: Content Creation Powerhouse', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -194,7 +194,7 @@
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Status Chip"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"0","bottom":"0","left":"6px","right":"6px"}},"border":{"radius":"2px"}},"backgroundColor":"charcoal-0","textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-charcoal-0-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Future', 'wporg' ); ?></p>
+<p class="has-white-color has-charcoal-0-background-color has-text-color has-background has-link-color has-small-font-size" style="border-radius:2px;padding-top:0;padding-right:6px;padding-bottom:0;padding-left:6px;font-style:normal;font-weight:500;text-transform:uppercase"><?php _e( 'Future', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -216,7 +216,7 @@
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-4"} -->
-<h2 class="wp-block-heading has-white-color has-text-color has-link-color has-heading-4-font-size"><?php esc_html_e( 'Get involved!', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-white-color has-text-color has-link-color has-heading-4-font-size"><?php _e( 'Get involved!', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -224,7 +224,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'As web hosts, agencies, and individual contributors - we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
+<p><?php _e( 'As web hosts, agencies, and individual contributors - we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

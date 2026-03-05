@@ -8,18 +8,18 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Security', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Security', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [market_share] is a shortcode and should not be translated. */
-_e( "We take the security of the WordPress project and the ecosystem seriously. With <a href=\"https://wordpress.org/about/history/\">over 20 years of history</a> and powering more than [market_share] of the web, we're committed to ensuring security for all, from solo bloggers to enterprise organizations.", 'wporg' );
+_e( 'We take the security of the WordPress project and the ecosystem seriously. With <a href="https://wordpress.org/about/history/">over 20 years of history</a> and powering more than [market_share] of the web, we&#039;re committed to ensuring security for all, from solo bloggers to enterprise organizations.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress encourages responsible disclosure of vulnerabilities in WordPress core, in plugins and themes available on WordPress.org, or in the wider WordPress ecosystem.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress encourages responsible disclosure of vulnerabilities in WordPress core, in plugins and themes available on WordPress.org, or in the wider WordPress ecosystem.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"pomegrade-3","layout":{"type":"constrained"}} -->
@@ -28,7 +28,7 @@ _e( "We take the security of the WordPress project and the ecosystem seriously. 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you believe you have found a vulnerability in a WordPress plugin or theme available on WordPress.org, please keep it confidential.', 'wporg' ); ?></p>
+<p><?php _e( 'If you believe you have found a vulnerability in a WordPress plugin or theme available on WordPress.org, please keep it confidential.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
@@ -43,7 +43,7 @@ _e( "We take the security of the WordPress project and the ecosystem seriously. 
 <!-- /wp:group -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Our process', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Our process', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -66,17 +66,17 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'The Security Team also works directly with significant web hosting operators and security ecosystem providers to detect and mitigate threats to WordPress-based sites, including coordinating release rollouts and developing web application firewall (WAF) mitigations.', 'wporg' ); ?></p>
+<p><?php _e( 'The Security Team also works directly with significant web hosting operators and security ecosystem providers to detect and mitigate threats to WordPress-based sites, including coordinating release rollouts and developing web application firewall (WAF) mitigations.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"blueberry-4"} -->
-<p class="has-blueberry-4-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><?php _e( "Learn more about the <a href=\"https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true\">WordPress project's security stance in our whitepaper</a>.", 'wporg' ); ?></p>
+<p class="has-blueberry-4-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><?php _e( 'Learn more about the <a href="https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true">WordPress project&#039;s security stance in our whitepaper</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Plugin Developers', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Plugin Developers', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -84,7 +84,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "If you believe you've identified a security problem in your own plugin, the WordPress plugins team is here to support you.", 'wporg' ); ?></p>
+<p><?php _e( 'If you believe you&#039;ve identified a security problem in your own plugin, the WordPress plugins team is here to support you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -94,7 +94,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Theme Developers', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Theme Developers', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-default"} -->
@@ -102,7 +102,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "If you believe you've identified a security problem in your own theme, the WordPress theme review team is here to support you.", 'wporg' ); ?></p>
+<p><?php _e( 'If you believe you&#039;ve identified a security problem in your own theme, the WordPress theme review team is here to support you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -114,7 +114,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"100%","layout":{"type":"default"}} -->
 <div class="wp-block-column" style="flex-basis:100%"><!-- wp:heading {"textAlign":"left"} -->
-<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Web Hosts', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-left"><?php _e( 'Web Hosts', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left"} -->

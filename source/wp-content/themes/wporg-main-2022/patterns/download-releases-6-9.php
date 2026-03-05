@@ -14,7 +14,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:420px"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"dimensions":{"minHeight":"720px"}},"textColor":"charcoal-1","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group has-charcoal-1-color has-text-color has-link-color" style="min-height:720px"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":""}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":48522,"width":"88px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/6-9-logo-1.png" alt="<?php esc_attr_e( 'WordPress 6.9 logo', 'wporg' ); ?>" class="wp-image-48522" style="width:88px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/6-9-logo-1.png" alt="<?php _e( 'WordPress 6.9 logo', 'wporg' ); ?>" class="wp-image-48522" style="width:88px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"left","level":1,"className":"has-mixed-heading-font","style":{"typography":{"lineHeight":"0.8","letterSpacing":"-2px","fontSize":"96px","fontStyle":"normal","fontWeight":"400"}},"fontFamily":"eb-garamond"} -->
@@ -22,12 +22,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}}} -->
-<p class="has-text-align-left" style="padding-top:var(--wp--preset--spacing--20)"><?php esc_html_e( 'WordPress 6.9 introduces a more intuitive way to create content, together. Every detail is designed to fit your creative flow, from Notes that let you collaborate directly in the editor to a powerful Command Palette that helps you reach every part of your site.', 'wporg' ); ?></p>
+<p class="has-text-align-left" style="padding-top:var(--wp--preset--spacing--20)"><?php _e( 'WordPress 6.9 introduces a more intuitive way to create content, together. Every detail is designed to fit your creative flow, from Notes that let you collaborate directly in the editor to a powerful Command Palette that helps you reach every part of your site.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get WordPress 6.9', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" href="<?php _e( 'https://wordpress.org/download/', 'wporg' ); ?>"><?php _e( 'Get WordPress 6.9', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -36,7 +36,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":""} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":48526,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/6-9-hero-spot.png" alt="<?php esc_attr_e( 'Collage of images, one being lifted off the page with a hand cursor. A commenter notes, "I love how this gallery looks like".', 'wporg' ); ?>" class="wp-image-48526" style="object-fit:cover" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/6-9-hero-spot.png" alt="<?php _e( 'Collage of images, one being lifted off the page with a hand cursor. A commenter notes, &quot;I love how this gallery looks like&quot;.', 'wporg' ); ?>" class="wp-image-48526" style="object-fit:cover" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -50,11 +50,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Notes', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Notes', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Leave feedback right where you're working.</strong><br>With notes attached directly to blocks, your team can stay aligned, track changes, and turn feedback into action all in one place. Whether you're working on copy or refining design, collaboration happens seamlessly on the canvas itself.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Leave feedback right where you&#039;re working.</strong><br>With notes attached directly to blocks, your team can stay aligned, track changes, and turn feedback into action all in one place. Whether you&#039;re working on copy or refining design, collaboration happens seamlessly on the canvas itself.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -84,11 +84,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Visual drag and drop', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Visual drag and drop', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Design flows naturally.</strong><br>Building layouts is now more intuitive and flexible with clear drag handles and a live preview that shows exactly what you're moving—a faster way to build pages.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Design flows naturally.</strong><br>Building layouts is now more intuitive and flexible with clear drag handles and a live preview that shows exactly what you&#039;re moving—a faster way to build pages.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -102,11 +102,11 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Command Palette, everywhere', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Command Palette, everywhere', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Your tools, always at hand.</strong><br>Access the Command Palette from any part of your site, whether you're writing your latest post, deep in design in the Site Editor, or browsing your plugins. Everything you need, just a few keystrokes away.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Your tools, always at hand.</strong><br>Access the Command Palette from any part of your site, whether you&#039;re writing your latest post, deep in design in the Site Editor, or browsing your plugins. Everything you need, just a few keystrokes away.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -136,7 +136,7 @@
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Fit text to container', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php _e( 'Fit text to container', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -159,11 +159,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Performance', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Performance', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress 6.9 includes a broad set of performance enhancements. A better LCP (Largest Contentful Paint) metric is achieved through improved loading of conditional and inlined stylesheets, script loading with fetchpriority support, and additional core optimizations. Editor advances include fixes for layout shifts caused by the Video block and faster loading of the terms selector.', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress 6.9 includes a broad set of performance enhancements. A better LCP (Largest Contentful Paint) metric is achieved through improved loading of conditional and inlined stylesheets, script loading with fetchpriority support, and additional core optimizations. Editor advances include fixes for layout shifts caused by the Video block and faster loading of the terms selector.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -175,11 +175,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Accessibility', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php _e( 'Accessibility', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( '70+ accessibility fixes and enhancements focus on central areas of the WordPress experience. From globally hiding CSS-generated content from assistive technology and improvements to screen reader announcements and user experience, to fixing cursor position and keeping typing focus when clicking on an autocomplete suggestion item.', 'wporg' ); ?></p>
+<p><?php _e( '70+ accessibility fixes and enhancements focus on central areas of the WordPress experience. From globally hiding CSS-generated content from assistive technology and improvements to screen reader announcements and user experience, to fixing cursor position and keeping typing focus when clicking on an autocomplete suggestion item.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -204,11 +204,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'The Abilities API', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'The Abilities API', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'This new unified system lets developers register and run actions consistently across PHP, REST, and AI contexts, enabling more flexible and connected site interactions.', 'wporg' ); ?></p>
+<p><?php _e( 'This new unified system lets developers register and run actions consistently across PHP, REST, and AI contexts, enabling more flexible and connected site interactions.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -218,11 +218,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Aspect ratio in gallery', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Aspect ratio in gallery', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'You can now set a fixed aspect ratio for images in gallery blocks. This helps your galleries look more consistent and aligned without any extra effort or adjustments.', 'wporg' ); ?></p>
+<p><?php _e( 'You can now set a fixed aspect ratio for images in gallery blocks. This helps your galleries look more consistent and aligned without any extra effort or adjustments.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -232,11 +232,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Maintain settings in DataViews', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Maintain settings in DataViews', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'DataViews now remember your last filters and display settings. When you come back, everything stays just how you left it, so you can jump right in.', 'wporg' ); ?></p>
+<p><?php _e( 'DataViews now remember your last filters and display settings. When you come back, everything stays just how you left it, so you can jump right in.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -248,11 +248,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Accordion block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Accordion block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Add collapsible sections to any page with the new accordion block. It’s great for FAQs, menus, or long content you want to keep neat and easy to explore.', 'wporg' ); ?></p>
+<p><?php _e( 'Add collapsible sections to any page with the new accordion block. It’s great for FAQs, menus, or long content you want to keep neat and easy to explore.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -262,11 +262,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Time to read block', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Time to read block', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Show how long a post takes to read with an automatic time estimate. This helps readers know what to expect before they start reading your content.', 'wporg' ); ?></p>
+<p><?php _e( 'Show how long a post takes to read with an automatic time estimate. This helps readers know what to expect before they start reading your content.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -278,11 +278,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Math block & format', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Math block &amp; format', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'You can now add math formulas using the new MathML block. It’s made for clear, accessible display of complex math directly in the editor window.', 'wporg' ); ?></p>
+<p><?php _e( 'You can now add math formulas using the new MathML block. It’s made for clear, accessible display of complex math directly in the editor window.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -292,11 +292,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php esc_html_e( 'Bind controls to external sources', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-inter-font-family has-large-font-size" style="font-style:normal;font-weight:600"><?php _e( 'Bind controls to external sources', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Enhance the integration of external services by granting third-party developers the ability to extend the block bindings user interface with their own sources.', 'wporg' ); ?></p>
+<p><?php _e( 'Enhance the integration of external services by granting third-party developers the ability to extend the block bindings user interface with their own sources.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -325,7 +325,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:details {"align":"wide","fontSize":"large"} -->
-<details class="wp-block-details alignwide has-large-font-size"><summary><?php esc_html_e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
+<details class="wp-block-details alignwide has-large-font-size"><summary><?php _e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
 [wpcredits 6.9 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>
