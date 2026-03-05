@@ -4,6 +4,8 @@
 
 namespace WordPress_org\Main_2022\ExportToPatterns;
 
+use Exception;
+
 require __DIR__ . '/includes/utils.php';
 
 /**
@@ -24,26 +26,41 @@ if ( ! is_dir( $theme_dir ) ) {
 	$theme_dir = dirname( __DIR__, 2 ) . '/source/wp-content/themes/wporg-main-2022'; // Local env.
 }
 
-$rest_url = 'http://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
+$rest_url = 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
 $pattern_path = $theme_dir . '/patterns/%s';
 $template_path = $theme_dir . '/templates/%s';
 
 if ( ! isset( $args[0] ) || ! file_exists( $args[0] ) ) {
-	die( "No manifest provided.\n" );
+	throw new Exception( "No manifest provided.\n" );
 }
 
 $manifest_data = file_get_contents( $args[0] );
 $manifest_items = json_decode( $manifest_data );
 if ( ! $manifest_data || ! $manifest_items ) {
-	die( "Unable to read manifest from $args[0]\n" );
+	throw new Exception( "Unable to read manifest from $args[0]\n" );
 }
+
+$encountered_problems = false;
 
 foreach ( $manifest_items as $item ) {
 	if ( $item->slug ) {
 		$pattern = $item->pattern ?? $item->slug . '.php';
 		$template = $item->template ?? $item->slug . '.html';
 
-		generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
-		generate_template( $item->slug, sprintf( $template_path, $template ) );
+		try {
+			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+			generate_template( $item->slug, sprintf( $template_path, $template ) );
+		} catch ( Exception $e ) {
+			echo '!! Error: ' . $e->getMessage() . "\n";
+			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";
+			$encountered_problems = true;
+		}
 	}
+}
+
+if ( $encountered_problems ) {
+	echo "\nOne or more errors encountered.\n";
+
+	// Signal that this process kinda failed.
+	exit( 1 );
 }

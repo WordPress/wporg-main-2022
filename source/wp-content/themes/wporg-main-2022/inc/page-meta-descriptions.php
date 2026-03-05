@@ -33,7 +33,7 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	// Override the Front-page tags.
 	if ( is_front_page() ) {
-		$desc = $post->post_excerpt ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
+		$desc = ! empty( $post->post_excerpt ) ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
 		return array(
 			'og:type'         => 'website',
 			'og:title'        => __( 'Blog Tool, Publishing Platform, and CMS', 'wporg' ) . " - {$site_title}",
@@ -41,7 +41,7 @@ function custom_open_graph_tags( $tags = [] ) {
 			'description'     => $desc,
 			'og:url'          => home_url( '/' ),
 			'og:site_name'    => $site_title,
-			'og:image'        => 'https://s.w.org/images/home/wordpress-homepage-ogimage.png',
+			'og:image'        => 'https://wordpress.org/files/2024/04/wordpress-homepage-ogimage-202404.png',
 			'og:locale'       => get_locale(),
 			'twitter:card'    => 'summary_large_image',
 			'twitter:creator' => '@WordPress',
@@ -50,6 +50,11 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	if ( ! $post || 'page' !== $post->post_type ) {
 		return $tags;
+	}
+
+	// Prevent content from "leaking" in embeds on pages in progress.
+	if ( 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+		return [];
 	}
 
 	// These values are not correct for our page templates.
@@ -210,5 +215,21 @@ add_action(
 	'init',
 	function() {
 		add_post_type_support( 'page', 'excerpt' );
+	}
+);
+
+/**
+ * Fake the `blog_public` option to prevent search engines from indexing pages in progress.
+ *
+ * This setting is used by the `wp_robots_*` functions to add noindex, nofollow meta tags.
+ */
+add_filter(
+	'pre_option_blog_public',
+	function( $pre ) {
+		global $post;
+		if ( $post && 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+			return 0;
+		}
+		return $pre;
 	}
 );

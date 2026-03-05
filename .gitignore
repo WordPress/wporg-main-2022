@@ -6,6 +6,7 @@
 /vendor
 *.map
 backstop_data
+artifacts
 .phpunit.result.cache
 
 # Allow local environment overrides.
@@ -17,6 +18,9 @@ wp-cli.local.yml
 .prettierrc.js
 .stylelintrc
 phpcs.xml.dist
+
+# Ignore lock files
+/composer.lock
 
 # Ignore everything in source...
 /source/wp-content/*
@@ -30,3 +34,4 @@ phpcs.xml.dist
 !/source/wp-content/mu-plugins
 !/source/wp-content/mu-plugins/theme-switcher.php
 lighthouse.html
+source/wp-content/tests/phpunit/.phpunit.result.cache

@@ -10,7 +10,7 @@
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"spacing":{"padding":{"right":"var:preset|spacing|60"}}},"fontSize":"heading-2"} -->
-<h1 class="wp-block-heading has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php _e( 'Releases', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--60)"><?php esc_html_e( 'Releases', 'wporg' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
@@ -18,12 +18,12 @@
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
 <p><?php
 /* translators: [stable_branch] is a shortcode and should not be translated. */
-_e( 'This is an archive of every release we’ve done that we have a record of.<br>None of these are safe to use, except the <strong>latest</strong> in the [stable_branch] series, which is actively maintained.', 'wporg' );
+_e( 'This is an archive of every recorded release that’s been made available for WordPress.<br><br><strong>Only the most recent in the</strong> <strong>[stable_branch] series is safe to use</strong> and actively maintained.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Curious about which jazzers we highlighted for each release? <a href="https://wordpress.org/about/history/">It’s on the History page</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'Curious about which jazzers were highlighted for each release? <a href="https://wordpress.org/about/history/">Check them out on the History page</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:wporg/release-tables /--></div>

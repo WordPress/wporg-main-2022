@@ -37,7 +37,12 @@
 // The search results table is appended to the end of the page, and uses a
 // generated class name.
 body > table[class*="gssb"] {
-	// The page's offset top (for the fixed header) pulls up the autocomplete
+	// The page's offset padding pushed down autocomplete
 	// dropdown. Adding some margin fixes that.
-	margin-top: var(--wp-global-header-offset, 0);
+	margin-top: var(--wp--preset--spacing--50);
+
+	@media ( min-width: 889px ) {
+		margin-top: 30px;
+	}
+
 }

@@ -4,6 +4,10 @@
  */
 
 @import "fluid";
+@import "banners";
+@import "print";
+@import "page-podcast";
+@import "video";
 
 /*
  * Override inline paddings with the spacing preset.
@@ -54,6 +58,19 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 	border-left-style: solid;
 }
 
+/* Both blocks are in the local header, but only one should be shown at any given time. */
+body.blog .wp-block-wporg-local-navigation-bar .wp-block-post-title,
+body.archive .wp-block-wporg-local-navigation-bar .wp-block-post-title,
+body.search .wp-block-wporg-local-navigation-bar .wp-block-post-title {
+	display: none;
+}
+
+body.blog .wp-block-wporg-local-navigation-bar .wp-block-query-title,
+body.single .wp-block-wporg-local-navigation-bar .wp-block-query-title,
+body.page .wp-block-wporg-local-navigation-bar .wp-block-query-title {
+	display: none;
+}
+
 .wp-block-navigation.is-vertical {
 	ul {
 		width: 100%;
@@ -78,7 +95,7 @@ html[dir="rtl"] :where([style*="border-right-color"]) {
 			}
 
 			&::after {
-				content: "↗︎";
+				content: "\2197";
 			}
 		}
 
@@ -101,10 +118,10 @@ body.home .wp-block-wporg-link-wrapper {
 
 	@media (max-width: 499px) {
 		font-size: 13px;
-	}
 
-	.is-layout-flex .wp-block-image {
-		flex-shrink: 0;
+		> .wp-block-group {
+			justify-content: space-between;
+		}
 	}
 }
 
@@ -119,14 +136,6 @@ body.home .wp-block-wporg-link-wrapper {
 			justify-content: center;
 		}
 	}
-}
-
-/**
- * Add a background behind the Editor section's cover block, for browsers that don't support webp.
- */
-
-#editor {
-	background-color: var(--wp--preset--color--charcoal-1);
 }
 
 /**
@@ -167,11 +176,15 @@ $wporg-about-breakpoint-max: 1920px;
 
 .wporg-about-cover-title > span,
 .wporg-about-section-heading {
-	font-size: #{fluid(52px, 125px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	display: inline-block;
 }
 
+.wporg-about-cover-title > span {
+	font-size: #{fluid(52px, 96px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
+}
+
 .wporg-about-section-heading {
+	font-size: #{fluid(52px, 90px, $wporg-about-breakpoint-min, $wporg-about-breakpoint-max)} !important;
 	position: relative;
 
 	&::after {
@@ -374,18 +387,6 @@ $wporg-about-breakpoint-max: 1920px;
 		padding-left: var(--wp--preset--spacing--30);
 		padding-right: var(--wp--preset--spacing--30);
 	}
-
-	#intro .wp-block-columns {
-		display: block;
-	}
-}
-
-@media (max-width: 1000px) {
-
-	/* Remove the spacing next to "Powerful and empowering" to prevent crunched text. */
-	#benefits h2 {
-		margin-right: 0 !important;
-	}
 }
 
 @media (max-width: 959px) {
@@ -402,9 +403,12 @@ $wporg-about-breakpoint-max: 1920px;
 
 @media (max-width: 781px) {
 
+	/* Hide the second column on small screens (prevents brush from wrapping). */
+	#intro .wp-block-column:last-child {
+		display: none;
+	}
+
 	/* Update the columns gap when it switches to single-column */
-	#benefits .is-layout-flex,
-	#learning .is-layout-flex,
 	#resources .is-layout-flex {
 		gap: 40px;
 	}
@@ -419,7 +423,7 @@ $wporg-about-breakpoint-max: 1920px;
 		border-bottom: 1px solid var(--wp--preset--color--light-grey-1);
 	}
 
-	#download-hosting .wp-block-columns > .wp-block-column .wp-block-group,
+	#download-hosting .wp-block-columns > .wp-block-column > .wp-block-group,
 	#features .wp-block-columns > .wp-block-column:last-child {
 		padding-left: var(--wp--preset--spacing--edge-space) !important;
 		padding-right: var(--wp--preset--spacing--edge-space) !important;
@@ -467,24 +471,26 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
+@media (max-width: 600px) {
+
+	/* Remove the spacer on Creator Connections page. */
+	.page-template-page-creator-connections #intro + .wp-block-spacer {
+		height: 0 !important;
+	}
+}
+
 @media (max-width: 599px) {
-	#editor {
-		min-height: 0 !important;
-		padding-left: var(--wp--preset--spacing--40) !important;
-		padding-right: var(--wp--preset--spacing--40) !important;
-	}
-
-	#editor .wp-block-cover__inner-container .wp-block-group > * {
-		max-width: 22rem !important;
-	}
-
 	.wp-block-buttons .wp-block-button,
 	.wp-block-buttons .wp-block-button .wp-block-button__link {
 		width: 100% !important;
 	}
 
-	#download-install .wp-block-button:nth-child(1) a {
-		padding: 0;
+	#download-install > .wp-block-group {
+		flex-direction: column;
+	}
+
+	#download-install .wp-block-button__link.wporg-modal__toggle {
+		padding: 0.25em;
 		background-color: transparent;
 		color: var(--wp--custom--link--color--text);
 		font-weight: 400;
@@ -497,7 +503,7 @@ $wporg-about-breakpoint-max: 1920px;
 		}
 	}
 
-	#download-install .wp-block-button:nth-child(2) a {
+	#download-install .is-style-outline .wp-block-button__link {
 		--wp--custom--button--outline--color--background: var(--wp--preset--color--blueberry-1);
 		--wp--custom--button--outline--color--text: var(--wp--preset--color--white);
 		--wp--custom--button--outline--hover--color--background: var(--wp--preset--color--deep-blueberry);
@@ -511,6 +517,14 @@ $wporg-about-breakpoint-max: 1920px;
 		&:focus {
 			background-color: var(--wp--custom--button--outline--hover--color--background);
 			color: var(--wp--custom--button--outline--hover--color--text);
+		}
+
+		&:focus {
+			// Prevent the extra space for the border, which does not exist anymore.
+			padding-top: var(--wp--custom--button--spacing--padding--top);
+			padding-bottom: var(--wp--custom--button--spacing--padding--bottom);
+			padding-left: var(--wp--custom--button--spacing--padding--left);
+			padding-right: var(--wp--custom--button--spacing--padding--right);
 		}
 
 		&:active {
@@ -555,28 +569,23 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
-
 // Styles for the State of the Word page.
-.page-template-page-sotw a {
-	color: #ff2b2b;
-}
-
 @media (max-width: 419px) {
-	.page-template-page-sotw h2 {
+	.page-template-page-state-of-the-word h2 {
 		font-size: 60px !important;
 	}
 }
 
-.page-template-page-sotw .sotw-event-details-social a {
+.page-template-page-state-of-the-word .sotw-event-details-social a {
 	text-decoration: none;
 }
 
-.page-template-page-sotw .sotw-quote {
+.page-template-page-state-of-the-word .sotw-quote {
 	position: relative;
 	z-index: 1;
 }
 
-.page-template-page-sotw .sotw-quote > p::before {
+.page-template-page-state-of-the-word .sotw-quote > p::before {
 	content: "";
 	position: absolute;
 	top: -50px;
@@ -590,7 +599,7 @@ $wporg-about-breakpoint-max: 1920px;
 }
 
 @media (min-width: 960px) {
-	.page-template-page-sotw .sotw-quote > p::before {
+	.page-template-page-state-of-the-word .sotw-quote > p::before {
 		top: -100px;
 		left: -140px;
 		width: 200px;
@@ -598,11 +607,11 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
-.page-template-page-sotw .sotw-heading-splash {
+.page-template-page-state-of-the-word .sotw-heading-splash {
 	position: relative;
 }
 
-.page-template-page-sotw .sotw-heading-splash::before {
+.page-template-page-state-of-the-word .sotw-heading-splash::before {
 	content: "";
 	position: absolute;
 	top: -80px;
@@ -615,8 +624,46 @@ $wporg-about-breakpoint-max: 1920px;
 	z-index: -1;
 }
 
-.page-template-page-data-liberation h3 a {
-	text-decoration: none;
+/* Used on SotW template. */
+.wp-block-cover .wp-block-embed.no-min-sizing {
+	min-width: unset;
+	min-height: unset;
+}
+
+/**
+ * Release page: 6.6
+ */
+
+.has-mixed-heading-font span {
+	font-family: Inter, sans-serif;
+	font-weight: 300;
+}
+
+.has-mixed-heading-font em {
+	font-size: 125%;
+	line-height: 0.7;
+}
+
+@media only screen and ( min-width: 782px ) {
+	.hide-on-desktop {
+		display: none;
+	}
+}
+
+/**
+ * Page in progress styles
+ */
+
+.wporg-page-in-progress,
+.page-template-page-data-liberation {
+	// Override the workaround below.
+	.is-content-justification-left > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+		margin-left: 0 !important;
+	}
+
+	.is-content-justification-right > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+		margin-right: 0 !important;
+	}
 }
 
 /*

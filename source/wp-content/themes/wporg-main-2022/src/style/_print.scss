@@ -1,0 +1,45 @@
+@media print {
+	body.home {
+
+		/* Adjust image sizes on homepage. */
+		.wp-block-image img {
+			max-width: 100%;
+
+			&[src*="wcus-logo.png"] {
+				max-width: 200px;
+			}
+
+			&.wp-image-39764,
+			&.wp-image-39766,
+			&.wp-image-39765 {
+				max-width: 300px;
+			}
+		}
+	}
+
+	/* About page: Put title all on one line. */
+	.wporg-about-cover-title {
+		display: block !important;
+	}
+
+	/* About page: Adjust freedom font sizes and number alignment. */
+	.wp-block-group[class*="wporg-about-section-freedom-"] {
+		break-inside: avoid;
+
+		.wp-block-columns {
+			flex-wrap: nowrap !important;
+
+			> :first-child {
+				flex-basis: min-content !important;
+			}
+
+			> :last-child {
+				padding-bottom: 0 !important;
+			}
+		}
+
+		h3 {
+			font-size: var(--wp--preset--font-size--heading-cta) !important;
+		}
+	}
+}

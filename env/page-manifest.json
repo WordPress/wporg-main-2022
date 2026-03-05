@@ -108,9 +108,54 @@
 		"template": "page-6-4.html"
 	},
 	{
+		"slug": "6-5",
+		"pattern": "download-releases-6-5.php",
+		"template": "page-6-5.html"
+	},
+	{
+		"slug": "6-6",
+		"pattern": "download-releases-6-6.php",
+		"template": "page-6-6.html"
+	},
+	{
+		"slug": "6-7",
+		"pattern": "download-releases-6-7.php",
+		"template": "page-6-7.html"
+	},
+	{
+		"slug": "6-8",
+		"pattern": "download-releases-6-8.php",
+		"template": "page-6-8.html"
+	},
+	{
+		"slug": "6-9",
+		"pattern": "download-releases-6-9.php",
+		"template": "page-6-9.html"
+	},
+	{
 		"slug": "source",
 		"pattern": "download-source.php",
 		"template": "page-source.html"
+	},
+	{
+		"slug": "education",
+		"pattern": "education.php",
+		"template": "page-education.html"
+	},
+	{
+		"slug": "student-clubs",
+		"pattern": "education-student-clubs.php",
+		"template": "page-education-student-clubs.html"
+	},
+	{
+		"slug": "campus-connect",
+		"pattern": "education-campus-connect.php",
+		"template": "page-education-campus-connect.html"
+	},
+	{
+		"slug": "credits",
+		"pattern": "education-credits.php",
+		"template": "page-education-credits.html"
 	},
 	{
 		"slug": "enterprise",
@@ -132,10 +177,15 @@
 	},
 	{
 		"slug": "state-of-the-word",
-		"template": "page-sotw.html"
+		"template": "page-state-of-the-word.html"
 	},
 	{
 		"slug": "data-liberation",
 		"template": "page-data-liberation.html"
+	},
+	{
+		"slug": "guides",
+		"pattern": "data-liberation-guides.php",
+		"template": "page-data-liberation-guides.html"
 	}
 ]

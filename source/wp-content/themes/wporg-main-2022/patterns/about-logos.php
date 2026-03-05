@@ -8,11 +8,11 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php _e( 'Graphics &amp; Logos', 'wporg' ); ?></h1>
+<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Graphics & Logos', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Official WordPress logo', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Official WordPress logo', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -20,7 +20,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Downloads', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Downloads', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->
@@ -34,7 +34,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'All versions', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'All versions', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -52,7 +52,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'Standard', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'Standard', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -78,7 +78,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'Alternative, vertical arrangement', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'Alternative, vertical arrangement', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -106,7 +106,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'Word Mark', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'Word Mark', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -132,7 +132,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'W Mark', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'W Mark', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -140,7 +140,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.png?0">PNG (BaseGray/transparent)</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -158,7 +158,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( 'Simplified', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><?php esc_html_e( 'Simplified', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -172,11 +172,11 @@
 <!-- /wp:columns -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php _e( 'Fight the fake logo (fauxgo)', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Fight the fake logo (fauxgo)', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Friends don’t let friends use the wrong WordPress logo. If you see one of these in the wild, please suggest a change.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Friends don’t let friends use the wrong WordPress logo. If you see one of these in the wild, please suggest a change.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":17154,"sizeSlug":"full","linkDestination":"none"} -->

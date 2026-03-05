@@ -21,7 +21,7 @@ class BlockParser {
 		$this->fallback = new Parsers\BasicText();
 		$this->parsers  = [
 			// Blocks that have custom parsers.
-			'core/paragraph'   => new Parsers\HTMLParser( 'p' ),
+			'core/paragraph'   => new Parsers\HTMLParser( 'p', [], 2 /* minimum length of 2 characters. */ ),
 			'core/image'       => new Parsers\HTMLParser( 'figcaption', [ 'alt', 'title' ] ),
 			'core/heading'     => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
 
@@ -35,7 +35,6 @@ class BlockParser {
 			// Generic shortcode handler.
 			'core/shortcode'   => new Parsers\ShortcodeBlock(),
 
-			'core/spacer'      => new Parsers\Noop(),
 			// These contain other blocks to be parsed.
 			'core/column'      => new Parsers\Noop(),
 			'core/columns'     => new Parsers\Noop(),
@@ -43,11 +42,19 @@ class BlockParser {
 			'core/list'        => new Parsers\Noop(),
 			'core/quote'       => new Parsers\Noop(),
 
-			// Don't translate code content.
-			'core/code' => new Parsers\Noop(),
+			// Don't translate content.
+			'core/code'  => new Parsers\Noop(),
+			'core/embed' => new Parsers\Noop(),
+
+			// No content.
+			'core/spacer' => new Parsers\Noop(),
 
 			// Common core blocks that use the default parser.
 			'core/media-text'  => new Parsers\BasicText(),
+
+			// Shared custom blocks.
+			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', [ 'href' ] ),
+			'wporg/modal' => new Parsers\AttributeParser( [ 'label' ] ),
 		];
 	}
 
@@ -238,11 +245,45 @@ class BlockParser {
  * Helper function to replace all strings in content with i18n-wrapped strings.
  */
 function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : string {
-	$parser = new BlockParser( $content );
+	$parser  = new BlockParser( $content );
 	$strings = $parser->to_strings();
+
+	// Entities that are always safe to decode regardless of HTML context.
+	$safe_entities = [
+		'&#039;' => "'",
+		'&quot;' => '"',
+	];
+
+	// Entities that are only safe to decode when using esc_html_e() (which re-encodes them).
+	$html_entities = [
+		'&amp;' => '&',
+		'&lt;'  => '<',
+		'&gt;'  => '>',
+	];
 
 	$i18n_strings = [];
 	foreach ( $strings as $string ) {
+		// Phase 1: Decode entities that are safe in any context.
+		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );
+
+		// Determine if the string contains HTML tags.
+		$has_html = strip_tags( $decoded ) !== $decoded;
+
+		// Phase 2: For strings without HTML, also decode &amp; &lt; &gt; (esc_html_e will re-encode them).
+		// For strings with HTML, also decode &amp; (browsers handle bare & fine), but keep &lt; &gt;.
+		if ( $has_html ) {
+			$decoded = str_replace( '&amp;', '&', $decoded );
+		} else {
+			$decoded = str_replace( array_keys( $html_entities ), array_values( $html_entities ), $decoded );
+		}
+
+		$func = $has_html ? '_e' : 'esc_html_e';
+
+		// Use double quotes when the string contains apostrophes, single quotes otherwise.
+		$has_apostrophe = str_contains( $decoded, "'" );
+		$quote          = $has_apostrophe ? '"' : "'";
+		$escaped        = $has_apostrophe ? addcslashes( $decoded, '"\\' ) : $decoded;
+
 		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $string, $matches ) ) {
 			if ( count( $matches[0] ) > 1 ) {
 				$translator_comment = sprintf( '/* translators: %s are shortcodes and should not be translated. */', implode( ', ', $matches[0] ) );
@@ -250,15 +291,21 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : st
 				$translator_comment = sprintf( '/* translators: %s is a shortcode and should not be translated. */', implode( ', ', $matches[0] ) );
 			}
 			$i18n_strings[ $string ] = sprintf(
-				"<?php\n%s\n_e( '%s', '%s' );\n?>",
+				"<?php\n%s\n%s( %s%s%s, '%s' );\n?>",
 				$translator_comment,
-				str_replace( "'", '&#039;', $string ),
+				$func,
+				$quote,
+				$escaped,
+				$quote,
 				$textdomain
 			);
 		} else {
 			$i18n_strings[ $string ] = sprintf(
-				"<?php _e( '%s', '%s' ); ?>",
-				str_replace( "'", '&#039;', $string ),
+				"<?php %s( %s%s%s, '%s' ); ?>",
+				$func,
+				$quote,
+				$escaped,
+				$quote,
 				$textdomain
 			);
 		}

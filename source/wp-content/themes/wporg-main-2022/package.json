@@ -5,14 +5,9 @@
 	"author": "WordPress.org",
 	"license": "GPL-2.0-or-later",
 	"private": true,
-	"dependencies": {
-		"@wordpress/components": "^23.0.0",
-		"@wordpress/element": "^5.0.0",
-		"@wordpress/i18n": "^4.23.0"
-	},
 	"devDependencies": {
-		"@wordpress/scripts": "25.0.0",
-		"rtlcss-webpack-plugin": "4.0.7"
+		"@wordpress/element": "^6.41.0",
+		"@wordpress/scripts": "31.6.0"
 	},
 	"eslintConfig": {
 		"extends": "../../../../.eslintrc.js"

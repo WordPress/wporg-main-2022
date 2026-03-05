@@ -37,7 +37,7 @@ add_shortcode(
 add_shortcode(
 	'minimum_php',
 	function() {
-		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP : '7.0';
+		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP : '7.2.24';
 	}
 );
 
@@ -47,7 +47,7 @@ add_shortcode(
 add_shortcode(
 	'recommended_mysql',
 	function() {
-		return '5.7';
+		return '8.0';
 	}
 );
 
@@ -57,7 +57,7 @@ add_shortcode(
 add_shortcode(
 	'recommended_mariadb',
 	function() {
-		return '10.4';
+		return '10.6';
 	}
 );
 
