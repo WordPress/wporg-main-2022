@@ -61,6 +61,12 @@ async function takeScreenshot( page, url, outputPath ) {
 		);
 	} );
 	await page.evaluate( async () => {
+		// Pause all videos to prevent non-deterministic frames in screenshots.
+		// eslint-disable-next-line no-undef
+		document.querySelectorAll( 'video' ).forEach( ( v ) => {
+			v.pause();
+			v.currentTime = 0;
+		} );
 		// eslint-disable-next-line no-undef
 		document.body.scrollIntoView( true );
 	} );
