@@ -99,13 +99,17 @@ class HTMLParser implements BlockParser {
 	 * Convert a _e() replacement to use esc_attr_e() for attribute contexts.
 	 */
 	private function escape_for_attribute( string $replacement ) : string {
-		return str_replace( ' _e(', ' esc_attr_e(', $replacement );
+		$replacement = str_replace( ' esc_html_e(', ' esc_attr_e(', $replacement );
+		$replacement = str_replace( ' _e(', ' esc_attr_e(', $replacement );
+
+		return $replacement;
 	}
 
 	/**
-	 * Convert a _e() replacement to use echo esc_url( __() ) for URL attribute contexts.
+	 * Convert a _e() / esc_html_e() replacement to use echo esc_url( __() ) for URL attribute contexts.
 	 */
 	private function escape_for_url_attribute( string $replacement ) : string {
+		$replacement = str_replace( ' esc_html_e(', ' echo esc_url( __(', $replacement );
 		$replacement = str_replace( ' _e(', ' echo esc_url( __(', $replacement );
 		$replacement = str_replace( '); ?>', ') ); ?>', $replacement );
 
