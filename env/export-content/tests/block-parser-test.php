@@ -84,6 +84,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"Download WordPress [latest_version]\"} -->\n<!-- wp:group {\"style\":{\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|white\"}}},\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"},\"blockGap\":\"var:preset|spacing|10\"}},\"backgroundColor\":\"blueberry-1\",\"textColor\":\"white\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color\" style=\"padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\">Howdy!</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
 				[ 'Download WordPress [latest_version]', 'Howdy!' ],
 			],
+			[
+				// Paragraph with a placeholder attribute — placeholder should not be extracted.
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p>Hello World</p>\n<!-- /wp:paragraph -->",
+				[ 'Hello World' ],
+			],
 		];
 	}
 
@@ -148,6 +153,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				// Link Wrapper block with child content.
 				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/"><!-- wp:paragraph --><p>Matt Mullenweg at WordCamp Europe—streaming live June 15</p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
 				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php echo esc_url( __( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ) ); ?>"><!-- wp:paragraph --><p><?php _e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+			],
+			[
+				// Paragraph with a placeholder attribute — placeholder should not be translated.
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p>Hello World</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p><?php _e( 'Hello World', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			],
 		];
 	}
