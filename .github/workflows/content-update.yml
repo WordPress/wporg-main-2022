@@ -6,6 +6,10 @@ on:
     - cron: '17 3 * * *'  # Runs daily at 3:17 AM UTC
   push:
     branches: [trunk]
+  pull_request:
+    paths:
+      - '.github/workflows/content-update.yml'
+      - 'env/screenshot-changes.js'
 
 permissions:
   contents: write
@@ -19,7 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
-          ref: trunk
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'trunk' }}
 
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
