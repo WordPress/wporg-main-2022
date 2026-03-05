@@ -84,6 +84,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"Download WordPress [latest_version]\"} -->\n<!-- wp:group {\"style\":{\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|white\"}}},\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|40\",\"bottom\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|40\",\"right\":\"var:preset|spacing|40\"},\"blockGap\":\"var:preset|spacing|10\"}},\"backgroundColor\":\"blueberry-1\",\"textColor\":\"white\",\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color\" style=\"padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\">Howdy!</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
 				[ 'Download WordPress [latest_version]', 'Howdy!' ],
 			],
+			[
+				// Paragraph with a placeholder attribute — placeholder should not be extracted.
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p>Hello World</p>\n<!-- /wp:paragraph -->",
+				[ 'Hello World' ],
+			],
 		];
 	}
 
@@ -108,17 +113,17 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// Two plain paragraphs.
 				"<!-- wp:paragraph -->\n<p>One.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Two.</p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><?php _e( 'One.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><?php _e( 'Two.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( 'One.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><?php esc_html_e( 'Two.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			],
 			[
 				// Image block with an alt.
 				"<!-- wp:image {\"width\":150,\"height\":45,\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image is-resized\"><a href=\"#\"><img src=\"./badge-apple.png\" alt=\"Download on the Apple App Store\" width=\"150\" height=\"45\" /></a></figure>\n<!-- /wp:image -->",
-				"<!-- wp:image {\"width\":150,\"height\":45,\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image is-resized\"><a href=\"#\"><img src=\"./badge-apple.png\" alt=\"<?php _e( 'Download on the Apple App Store', 'wporg' ); ?>\" width=\"150\" height=\"45\" /></a></figure>\n<!-- /wp:image -->",
+				"<!-- wp:image {\"width\":150,\"height\":45,\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image is-resized\"><a href=\"#\"><img src=\"./badge-apple.png\" alt=\"<?php esc_attr_e( 'Download on the Apple App Store', 'wporg' ); ?>\" width=\"150\" height=\"45\" /></a></figure>\n<!-- /wp:image -->",
 			],
 			[
 				// Navigation with custom navigation links.
 				"<!-- wp:navigation {\"textColor\":\"blueberry-1\",\"overlayMenu\":\"never\",\"className\":\"is-style-dots\",\"style\":{\"spacing\":{\"blockGap\":\"0px\"}},\"fontSize\":\"small\"} -->\n<!-- wp:navigation-link {\"label\":\"Releases\",\"url\":\"#\",\"kind\":\"custom\",\"isTopLevelLink\":true} /-->\n<!-- /wp:navigation -->",
-				"<!-- wp:navigation {\"textColor\":\"blueberry-1\",\"overlayMenu\":\"never\",\"className\":\"is-style-dots\",\"style\":{\"spacing\":{\"blockGap\":\"0px\"}},\"fontSize\":\"small\"} -->\n<!-- wp:navigation-link {\"label\":\"<?php _e( 'Releases', 'wporg' ); ?>\",\"url\":\"#\",\"kind\":\"custom\",\"isTopLevelLink\":true} /-->\n<!-- /wp:navigation -->",
+				"<!-- wp:navigation {\"textColor\":\"blueberry-1\",\"overlayMenu\":\"never\",\"className\":\"is-style-dots\",\"style\":{\"spacing\":{\"blockGap\":\"0px\"}},\"fontSize\":\"small\"} -->\n<!-- wp:navigation-link {\"label\":\"<?php esc_html_e( 'Releases', 'wporg' ); ?>\",\"url\":\"#\",\"kind\":\"custom\",\"isTopLevelLink\":true} /-->\n<!-- /wp:navigation -->",
 			],
 			[
 				// List with links
@@ -128,26 +133,46 @@ class BlockParser_Test extends WP_UnitTestCase {
 			[
 				// List of lists
 				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li>APIs:<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li>Fonts API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Block API</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->\n",
-				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li><?php _e( 'APIs:', 'wporg' ); ?><!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><?php _e( 'Fonts API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Block API', 'wporg' ); ?></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->\n",
+				"<!-- wp:list -->\n<ul><!-- wp:list-item -->\n<li><?php esc_html_e( 'APIs:', 'wporg' ); ?><!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><?php esc_html_e( 'Fonts API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php esc_html_e( 'Interactivity API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php esc_html_e( 'Block API', 'wporg' ); ?></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list --></li>\n<!-- /wp:list-item -->\n</ul>\n<!-- /wp:list -->\n",
 			],
 			[
 				// Buttons.
 				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://w.org/test/\">Button 1</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\">Button 2</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
-				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"<?php _e( 'https://w.org/test/', 'wporg' ); ?>\"><?php _e( 'Button 1', 'wporg' ); ?></a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\"><?php _e( 'Button 2', 'wporg' ); ?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"<?php echo esc_url( __( 'https://w.org/test/', 'wporg' ) ); ?>\"><?php esc_html_e( 'Button 1', 'wporg' ); ?></a></div>\n<!-- /wp:button -->\n\n<!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#anchor\"><?php esc_html_e( 'Button 2', 'wporg' ); ?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
 			],
 			[
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p>I'm interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
-				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p><?php _e( 'I&#039;m interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:', 'wporg' ); ?></p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
+				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p><?php esc_html_e( \"I'm interested in running the open-source WordPress <https://wordpress.org/> web software and I was wondering if my account supported the following:\", 'wporg' ); ?></p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
 			],
 			[
 				// Block with repeated strings.
 				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th>Cookie</th><th>Logged-in Users Only?</th></tr></thead><tbody><tr><th>welcome-{blog_id}</th><td>No</td></tr><tr><th>showComments</th><td>No</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
-				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th><?php _e( 'Cookie', 'wporg' ); ?></th><th><?php _e( 'Logged-in Users Only?', 'wporg' ); ?></th></tr></thead><tbody><tr><th><?php _e( 'welcome-{blog_id}', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr><tr><th><?php _e( 'showComments', 'wporg' ); ?></th><td><?php _e( 'No', 'wporg' ); ?></td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				"<!-- wp:table -->\n<figure class=\"wp-block-table\"><table><thead><tr><th><?php esc_html_e( 'Cookie', 'wporg' ); ?></th><th><?php esc_html_e( 'Logged-in Users Only?', 'wporg' ); ?></th></tr></thead><tbody><tr><th><?php esc_html_e( 'welcome-{blog_id}', 'wporg' ); ?></th><td><?php esc_html_e( 'No', 'wporg' ); ?></td></tr><tr><th><?php esc_html_e( 'showComments', 'wporg' ); ?></th><td><?php esc_html_e( 'No', 'wporg' ); ?></td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 			],
 			[
 				// Link Wrapper block with child content.
 				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/"><!-- wp:paragraph --><p>Matt Mullenweg at WordCamp Europe—streaming live June 15</p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
-				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php _e( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ); ?>"><!-- wp:paragraph --><p><?php _e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+				'<!-- wp:wporg/link-wrapper {"align":"full"} --><a class="wp-block-wporg-link-wrapper alignfull" href="<?php echo esc_url( __( \'https://wordpress.org/news/2024/05/wordcamp-europe-2024-mid-year-update-and-qa-with-matt-mullenweg/\', \'wporg\' ) ); ?>"><!-- wp:paragraph --><p><?php esc_html_e( \'Matt Mullenweg at WordCamp Europe—streaming live June 15\', \'wporg\' ); ?></p><!-- /wp:paragraph --></a><!-- /wp:wporg/link-wrapper -->',
+			],
+			[
+				// Paragraph with a placeholder attribute — placeholder should not be translated.
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p>Hello World</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p><?php esc_html_e( 'Hello World', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Heading with &amp; entity — decoded to literal & with esc_html_e.
+				"<!-- wp:heading -->\n<h1>Graphics &amp; Logos</h1>\n<!-- /wp:heading -->",
+				"<!-- wp:heading -->\n<h1><?php esc_html_e( 'Graphics & Logos', 'wporg' ); ?></h1>\n<!-- /wp:heading -->",
+			],
+			[
+				// Paragraph with &#039; entity — decoded to apostrophe, uses double-quoted string.
+				"<!-- wp:paragraph -->\n<p>It&#039;s easy to get started.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( \"It's easy to get started.\", 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Paragraph with HTML and &amp; — _e with decoded ampersand.
+				"<!-- wp:paragraph -->\n<p>Read the <a href=\"https://example.com\">Terms &amp; Conditions</a>.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( 'Read the <a href=\"https://example.com\">Terms & Conditions</a>.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			],
 		];
 	}
@@ -171,21 +196,21 @@ class BlockParser_Test extends WP_UnitTestCase {
 		return [
 			[
 				"<!-- wp:paragraph -->\n<p>Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.</p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><?php\n/* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );\n?></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php\n/* translators: [recommended_php], [recommended_mysql], [recommended_mariadb] are shortcodes and should not be translated. */\nesc_html_e( 'Recommend PHP [recommended_php] or greater and MySQL [recommended_mysql] or MariaDB version [recommended_mariadb] or greater.', 'wporg' );\n?></p>\n<!-- /wp:paragraph -->",
 			],
 			[
 				"<!-- wp:list-item -->\n<li>Recommend PHP [recommended_php] or greater.</li>\n<!-- /wp:list-item -->",
-				"<!-- wp:list-item -->\n<li><?php\n/* translators: [recommended_php] is a shortcode and should not be translated. */\n_e( 'Recommend PHP [recommended_php] or greater.', 'wporg' );\n?></li>\n<!-- /wp:list-item -->",
+				"<!-- wp:list-item -->\n<li><?php\n/* translators: [recommended_php] is a shortcode and should not be translated. */\nesc_html_e( 'Recommend PHP [recommended_php] or greater.', 'wporg' );\n?></li>\n<!-- /wp:list-item -->",
 			],
 			[
 				// Buttons.
 				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\">Download WordPress [latest_version]</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
-				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\"><?php\n/* translators: [latest_version] is a shortcode and should not be translated. */\n_e( 'Download WordPress [latest_version]', 'wporg' );\n?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
+				"<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"[download_link]\"><?php\n/* translators: [latest_version] is a shortcode and should not be translated. */\nesc_html_e( 'Download WordPress [latest_version]', 'wporg' );\n?></a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->",
 			],
 			[
 				// Modal, with shortcode in the label (shortcode in attribute).
 				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"Download WordPress [latest_version]\"} -->\n<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\">Howdy!</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
-				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ _e( 'Download WordPress [latest_version]', 'wporg' ); ?>\"} -->\n<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\"><?php _e( 'Howdy!', 'wporg' ); ?></h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
+				"<!-- wp:wporg/modal {\"closeButtonColor\":\"white\",\"customCloseButtonColor\":\"#ffffff\",\"href\":\"[download_link]\",\"label\":\"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ esc_html_e( 'Download WordPress [latest_version]', 'wporg' ); ?>\"} -->\n<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\"}}}} -->\n<h2 class=\"wp-block-heading\" style=\"margin-top:0\"><?php esc_html_e( 'Howdy!', 'wporg' ); ?></h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->\n<!-- /wp:wporg/modal -->",
 			],
 		];
 	}

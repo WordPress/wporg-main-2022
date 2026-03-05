@@ -3,8 +3,6 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class HTMLParser implements BlockParser {
-	use GetSetAttribute;
-
 	public $tags = [];
 	public $attributes = [];
 	public $min_string_length = 0;
@@ -16,7 +14,7 @@ class HTMLParser implements BlockParser {
 	}
 
 	public function to_strings( array $block ) : array {
-		$strings = $this->get_attribute( 'placeholder', $block );
+		$strings = [];
 
 		foreach ( $this->tags as $tag ) {
 			$tag = $this->escape_tag( $tag, '#' );
@@ -92,9 +90,34 @@ class HTMLParser implements BlockParser {
 		return $strings;
 	}
 
+	/**
+	 * URL attributes that should use esc_url( __() ) instead of esc_attr_e().
+	 */
+	private $url_attributes = [ 'href', 'src', 'action' ];
+
+	/**
+	 * Convert a _e() replacement to use esc_attr_e() for attribute contexts.
+	 */
+	private function escape_for_attribute( string $replacement ) : string {
+		$replacement = str_replace( ' esc_html_e(', ' esc_attr_e(', $replacement );
+		$replacement = str_replace( ' _e(', ' esc_attr_e(', $replacement );
+
+		return $replacement;
+	}
+
+	/**
+	 * Convert a _e() / esc_html_e() replacement to use echo esc_url( __() ) for URL attribute contexts.
+	 */
+	private function escape_for_url_attribute( string $replacement ) : string {
+		$replacement = str_replace( ' esc_html_e(', ' echo esc_url( __(', $replacement );
+		$replacement = str_replace( ' _e(', ' echo esc_url( __(', $replacement );
+		$replacement = str_replace( '); ?>', ') ); ?>', $replacement );
+
+		return $replacement;
+	}
+
 	// todo: this needs a fix to properly rebuild innerContent - see ParagraphParserTest
 	public function replace_strings( array $block, array $replacements ) : array {
-		$this->set_attribute( 'placeholder', $block, $replacements );
 
 		$html = $block['innerHTML'];
 		$content = $block['innerContent'];
@@ -104,13 +127,29 @@ class HTMLParser implements BlockParser {
 				continue;
 			}
 
-			// TODO: Potentially this should be more specific for tags/attribute replacements as needed.
-			$regex = '#([>"\'])\s*' . preg_quote( $original, '#' ) . '\s*([\'"<])#s';
-			$html  = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $html );
+			// Replace content in specific HTML attributes with appropriate escaping.
+			foreach ( $this->attributes as $attr ) {
+				$is_url    = in_array( $attr, $this->url_attributes, true );
+				$escaped   = $is_url ? $this->escape_for_url_attribute( $replacements[ $original ] ) : $this->escape_for_attribute( $replacements[ $original ] );
+				$esc_attr  = $this->escape_attr( $attr, '#' );
+				$attr_regex = '#(' . $esc_attr . '=["\'])\s*' . preg_quote( $original, '#' ) . '\s*(["\'])#s';
+
+				$html = preg_replace( $attr_regex, '$1' . addcslashes( $escaped, '\\$' ) . '$2', $html );
+
+				foreach ( $content as $i => $chunk ) {
+					if ( ! empty( $chunk ) ) {
+						$content[ $i ] = preg_replace( $attr_regex, '$1' . addcslashes( $escaped, '\\$' ) . '$2', $content[ $i ] );
+					}
+				}
+			}
+
+			// Replace content in HTML tags.
+			$tag_regex = '#(>)\s*' . preg_quote( $original, '#' ) . '\s*(<)#s';
+			$html      = preg_replace( $tag_regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $html );
 
 			foreach ( $content as $i => $chunk ) {
 				if ( ! empty( $chunk ) ) {
-					$content[ $i ] = preg_replace( $regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $chunk );
+					$content[ $i ] = preg_replace( $tag_regex, '$1' . addcslashes( $replacements[ $original ], '\\$' ) . '$2', $content[ $i ] );
 				}
 			}
 		}

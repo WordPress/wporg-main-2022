@@ -3,10 +3,8 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class ListItem implements BlockParser {
-	use GetSetAttribute;
-
 	public function to_strings( array $block ) : array {
-		$strings = $this->get_attribute( 'placeholder', $block );
+		$strings = [];
 
 		$matches = [];
 
@@ -35,7 +33,6 @@ class ListItem implements BlockParser {
 	}
 
 	public function replace_strings( array $block, array $replacements ) : array {
-		$this->set_attribute( 'placeholder', $block, $replacements );
 
 		foreach ( $block['innerContent'] as $i => $html ) {
 			$block['innerContent'][ $i ] = $this->_do_replacement( $block, $replacements, $html );
