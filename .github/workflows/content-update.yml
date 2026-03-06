@@ -11,6 +11,10 @@ on:
       - '.github/workflows/content-update.yml'
       - 'env/screenshot-changes.js'
 
+concurrency:
+  group: content-update
+  cancel-in-progress: true
+
 permissions:
   contents: write
   pull-requests: write
