@@ -55,6 +55,6 @@ __( 'Source Code', 'wporg' );
 __( 'Beta/Nightly', 'wporg' );
 __( 'Release Archive', 'wporg' );
 __( 'Download', 'wporg' );
-__( 'Erase Personal Data', 'wporg' );
-__( 'Export Personal Data', 'wporg' );
+__( 'Data Erasure Request', 'wporg' );
+__( 'Data Export Request', 'wporg' );
 __( 'Cookie Policy', 'wporg' );
