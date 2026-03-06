@@ -4,7 +4,7 @@
 		"SCRIPT_DEBUG": true,
 		"WP_DEBUG_LOG": "/tmp/wp-errors.log",
 		"FS_METHOD": "direct",
-		"WP_ENVIRONMENT_TYPE": "local",
+		"WP_ENVIRONMENT_TYPE": false,
 		"JETPACK_DEV_DEBUG": true,
 		"WPORG_SANDBOXED": true,
 		"WP_MARKET_SHARE": 43,
@@ -12,6 +12,7 @@
 		"WP_CORE_LATEST_RELEASE": "6.6"
 	},
 	"testsEnvironment": false,
+	"port": 8889,
 	"core": "WordPress/WordPress#master",
 	"plugins": [
 		"./source/wp-content/plugins/block-visibility",
@@ -31,6 +32,8 @@
 		"env": "./env",
 		"wp-content/mu-plugins": "./source/wp-content/mu-plugins",
 		"wp-content/mu-plugins/0-sandbox.php": "./env/0-sandbox.php",
-		"wp-cli.yml": "./wp-cli.yml"
+		"wp-cli.yml": "./wp-cli.yml",
+		"wp-content/tests": "./source/wp-content/tests",
+		"vendor": "./vendor"
 	}
 }

@@ -23,3 +23,5 @@ jobs:
 
       - name: Test
         uses: WordPress/wporg-repo-tools/.github/actions/test-php@trunk
+        with:
+          wp-env-config: .wp-env.test.json

@@ -30,7 +30,7 @@
 		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
 		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
 		"start:theme": "yarn workspace wporg-main-2022-theme start",
-		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
+		"test:php": "wp-env --config .wp-env.test.json run cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"
