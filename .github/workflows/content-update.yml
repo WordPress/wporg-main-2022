@@ -34,9 +34,6 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'trunk' }}
 
-      - name: Disable AppArmor
-        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
-
       - name: Setup
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
@@ -47,7 +44,7 @@ jobs:
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
-          yarn wp-env start
+          yarn wp-env --config .wp-env.playground.json start --runtime=playground
           yarn setup:wp
           yarn build:patterns
           CHANGED_FILES=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php)
