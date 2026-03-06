@@ -37,6 +37,9 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           skip-build: true
 
+      - name: Disable tests environment
+        run: echo '{ "testsEnvironment": false }' > .wp-env.override.json
+
       - name: Run the content update
         id: build-patterns
         run: |
