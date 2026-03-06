@@ -1,8 +1,49 @@
 #!/bin/bash
 
-# Refresh pattern files from the staging site
+# Refresh pattern files from the live wordpress.org site via REST API.
 
-#php env/export-content.php --url 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=front-page' --output 'source/wp-content/themes/wporg-main-2022/patterns/front-page.php'
-#php env/export-content.php --url 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=download' --output 'source/wp-content/themes/wporg-main-2022/patterns/download.php'
+THEME_DIR="source/wp-content/themes/wporg-main-2022"
+MANIFEST="env/page-manifest.json"
+WP_URL="${WP_ENV_URL:-http://localhost:8888}"
 
-yarn wp-env run cli wp eval-file ./env/export-content/index.php ./env/page-manifest.json
+echo "Exporting patterns via REST API ($WP_URL)..."
+RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+	-H "Content-Type: application/json" \
+	-d @"$MANIFEST" \
+	"$WP_URL/?rest_route=/wporg-env/v1/export-patterns")
+HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+BODY=$(echo "$RESPONSE" | sed '$d')
+
+if [ "$HTTP_CODE" != "200" ] && [ "$HTTP_CODE" != "207" ]; then
+	echo "Error: Export endpoint returned HTTP $HTTP_CODE"
+	echo "$BODY"
+	exit 1
+fi
+
+# Write each file from the JSON response.
+echo "$BODY" | python3 -c "
+import sys, json, os
+
+data = json.load(sys.stdin)
+
+for f in data.get('files', []):
+    path = '$THEME_DIR/' + f['path']
+    content = f['content']
+    file_type = f['type']
+
+    # For templates, only write if file does not exist (same as original behavior).
+    if file_type == 'template' and os.path.exists(path):
+        print(f'Skipping {path}')
+        continue
+
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w') as fh:
+        fh.write(content)
+    print(f'Wrote {len(content)} bytes to {path}')
+
+for err in data.get('errors', []):
+    print(f'!! Error: {err}')
+
+if data.get('errors'):
+    sys.exit(1)
+"
