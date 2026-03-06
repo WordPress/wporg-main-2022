@@ -8,6 +8,8 @@ require_once __DIR__ . '/inc/page-meta-descriptions.php';
 require_once __DIR__ . '/inc/hreflang.php';
 require_once __DIR__ . '/inc/capabilities.php';
 require_once __DIR__ . '/inc/data-liberation-handbook.php';
+require_once __DIR__ . '/inc/recaptcha.php';
+require_once __DIR__ . '/inc/privacy-functions.php';
 
 // Block files
 require_once __DIR__ . '/src/download-counter/index.php';
@@ -15,6 +17,7 @@ require_once __DIR__ . '/src/google-search-embed/index.php';
 require_once __DIR__ . '/src/random-heading/index.php';
 require_once __DIR__ . '/src/release-tables/index.php';
 require_once __DIR__ . '/src/remembers-list/index.php';
+require_once __DIR__ . '/src/privacy-request-form/index.php';
 
 /**
  * Actions and filters.
@@ -178,6 +181,24 @@ function add_site_navigation_menus( $menus ) {
 		'about-details' => $about_details,
 		'about-technology' => $about_technology,
 		'about-people' => $about_people,
+		'privacy' => array(
+			array(
+				'label' => __( 'Privacy Policy', 'wporg' ),
+				'url' => '/about/privacy/',
+			),
+			array(
+				'label' => __( 'Cookie Policy', 'wporg' ),
+				'url' => '/about/privacy/cookies/',
+			),
+			array(
+				'label' => __( 'Data Export Request', 'wporg' ),
+				'url' => '/about/privacy/data-export-request/',
+			),
+			array(
+				'label' => __( 'Data Erasure Request', 'wporg' ),
+				'url' => '/about/privacy/data-erasure-request/',
+			),
+		),
 		'download' => array(
 			array(
 				'label' => __( 'Releases', 'wporg' ),
@@ -249,12 +270,8 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 		return $block_content;
 	}
 
-	// Loop up to the first child page, this is the section title.
-	while ( $parent ) {
-		$url = get_permalink( $parent->ID );
-		$title = get_the_title( $parent );
-		$parent = get_post_parent( $parent );
-	}
+	$url = get_permalink( $parent->ID );
+	$title = get_the_title( $parent );
 
 	return str_replace(
 		array( home_url(), get_bloginfo( 'name' ) ),
