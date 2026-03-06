@@ -44,7 +44,7 @@ function privacy_process_request( $type ) {
 		$error_message = esc_html__( 'Your form session has expired. Please try again.', 'wporg' );
 	} elseif (
 		is_user_logged_in() &&
-		! wp_verify_nonce( isset( $_POST['_wpnonce'] ) ? wp_unslash( $_POST['_wpnonce'] ) : '', $nonce_action ) // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		! wp_verify_nonce( wp_unslash( $_POST['_wpnonce'] ?? '' ), $nonce_action ) // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 	) {
 		$error_message = esc_html__( 'Your form session has expired. Please try again.', 'wporg' );
 	} elseif (
