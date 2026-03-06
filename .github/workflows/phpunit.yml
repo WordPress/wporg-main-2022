@@ -14,6 +14,7 @@ jobs:
 
     env:
       PUPPETEER_SKIP_DOWNLOAD: true
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
 
     steps:
       - name: Checkout repository
