@@ -31,8 +31,6 @@ function should_use_new_theme() {
 	$old_theme_pages = array(
 		'/40-percent-of-web/',
 		'/about/privacy/cookies/',
-		'/about/privacy/data-erasure-request/',
-		'/about/privacy/data-export-request/',
 		'/enterprise/content-marketing/',
 		'/enterprise/ecommerce/',
 		'/enterprise/education/',

@@ -54,6 +54,16 @@
 		"template": "page-privacy.html"
 	},
 	{
+		"slug": "data-export-request",
+		"pattern": "about-privacy-data-export-request.php",
+		"template": "page-data-export-request.html"
+	},
+	{
+		"slug": "data-erasure-request",
+		"pattern": "about-privacy-data-erasure-request.php",
+		"template": "page-data-erasure-request.html"
+	},
+	{
 		"slug": "stats",
 		"pattern": "about-stats.php",
 		"template": "page-stats.html"

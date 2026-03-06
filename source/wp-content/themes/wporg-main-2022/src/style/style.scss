@@ -691,3 +691,20 @@ body .is-layout-constrained > .alignfull {
 	margin-left: unset !important;
 	margin-right: unset !important;
 }
+
+/**
+ * Privacy request forms (data export & erasure).
+ */
+
+.privacy-request-form {
+	label {
+		display: block;
+		color: var(--wp--preset--color--charcoal-4);
+		font-size: var(--wp--preset--font-size--small);
+		margin-bottom: var(--wp--preset--spacing--10);
+	}
+
+	input[type="email"] {
+		width: 100%;
+	}
+}
