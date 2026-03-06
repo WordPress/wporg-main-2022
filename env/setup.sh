@@ -7,7 +7,10 @@ COOKIE_JAR=$(mktemp)
 
 echo "Running setup via REST API ($WP_URL)..."
 
-RESPONSE=$(curl -s -w "\n%{http_code}" -L -b "$COOKIE_JAR" -c "$COOKIE_JAR" -X POST "$WP_URL/?rest_route=/wporg-env/v1/setup")
+# Pre-flight request to handle Playground auto-login redirect.
+curl -s -o /dev/null -L -b "$COOKIE_JAR" -c "$COOKIE_JAR" "$WP_URL/?rest_route=/"
+
+RESPONSE=$(curl -s -w "\n%{http_code}" -b "$COOKIE_JAR" -X POST "$WP_URL/?rest_route=/wporg-env/v1/setup")
 HTTP_CODE=$(echo "$RESPONSE" | tail -1)
 BODY=$(echo "$RESPONSE" | sed '$d')
 

@@ -5,18 +5,20 @@
 THEME_DIR="source/wp-content/themes/wporg-main-2022"
 MANIFEST="env/page-manifest.json"
 WP_URL="${WP_ENV_URL:-http://localhost:8888}"
-
 COOKIE_JAR=$(mktemp)
 
+# Pre-flight request to handle Playground auto-login redirect.
+curl -s -o /dev/null -L -b "$COOKIE_JAR" -c "$COOKIE_JAR" "$WP_URL/?rest_route=/"
+
 echo "Exporting patterns via REST API ($WP_URL)..."
-RESPONSE=$(curl -s -w "\n%{http_code}" -L -b "$COOKIE_JAR" -c "$COOKIE_JAR" -X POST \
+RESPONSE=$(curl -s -w "\n%{http_code}" -b "$COOKIE_JAR" -X POST \
 	-H "Content-Type: application/json" \
 	-d @"$MANIFEST" \
 	"$WP_URL/?rest_route=/wporg-env/v1/export-patterns")
-
-rm -f "$COOKIE_JAR"
 HTTP_CODE=$(echo "$RESPONSE" | tail -1)
 BODY=$(echo "$RESPONSE" | sed '$d')
+
+rm -f "$COOKIE_JAR"
 
 if [ "$HTTP_CODE" != "200" ] && [ "$HTTP_CODE" != "207" ]; then
 	echo "Error: Export endpoint returned HTTP $HTTP_CODE"
