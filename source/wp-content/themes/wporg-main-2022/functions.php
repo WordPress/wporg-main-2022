@@ -270,8 +270,21 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 		return $block_content;
 	}
 
-	$url = get_permalink( $parent->ID );
-	$title = get_the_title( $parent );
+	// For deeply nested pages (e.g., About > Privacy > Data Export Request),
+	// use the direct parent as the section title ("Privacy"), not the root ("About").
+	// For two-level pages, the direct parent IS the root, so behavior is unchanged.
+	$grandparent = get_post_parent( $parent );
+	if ( $grandparent ) {
+		$url   = get_permalink( $parent->ID );
+		$title = get_the_title( $parent );
+	} else {
+		// Loop up to the first child page, this is the section title.
+		while ( $parent ) {
+			$url   = get_permalink( $parent->ID );
+			$title = get_the_title( $parent );
+			$parent = get_post_parent( $parent );
+		}
+	}
 
 	return str_replace(
 		array( home_url(), get_bloginfo( 'name' ) ),

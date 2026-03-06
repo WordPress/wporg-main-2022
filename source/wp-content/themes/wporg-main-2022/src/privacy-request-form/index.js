@@ -22,7 +22,9 @@ function Edit( { attributes, setAttributes } ) {
 				] }
 				onChange={ ( type ) => setAttributes( { type } ) }
 			/>
-			<p><em>Privacy request form will render here.</em></p>
+			<p>
+				<em>Privacy request form will render here.</em>
+			</p>
 		</div>
 	);
 }
