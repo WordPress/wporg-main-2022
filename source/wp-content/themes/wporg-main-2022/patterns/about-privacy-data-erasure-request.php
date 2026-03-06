@@ -25,13 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php
-printf(
-	/* translators: List of sites that use WordPress.org account. */
-	wp_kses_post( __( 'This will request permanent deletion of your <strong>WordPress.org</strong> account, and relevant personal or private data stored on <strong>%s</strong>, and other related domains and sites.', 'wporg' ) ),
-	'WordPress.org, WordPress.net, WordCamp.org, BuddyPress.org, bbPress.org'
-);
-?></p>
+<p><?php _e( 'This will request permanent deletion of your <strong>WordPress.org</strong> account, and relevant personal or private data stored on <strong>WordPress.org, WordPress.net, WordCamp.org, BuddyPress.org, bbPress.org</strong>, and other related domains and sites.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -39,13 +33,7 @@ printf(
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php
-printf(
-	/* translators: link to privacy policy. */
-	wp_kses_post( __( 'Not all data can be erased, please review the <a href="%s">Privacy Policy</a> for details.', 'wporg' ) ),
-	esc_url( home_url( '/about/privacy/' ) )
-);
-?></p>
+<p><?php _e( 'Not all data can be erased, please review the <a href="/about/privacy/">Privacy Policy</a> for details.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
