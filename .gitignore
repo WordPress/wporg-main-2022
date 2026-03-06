@@ -11,7 +11,6 @@ artifacts
 
 # Allow local environment overrides.
 .wp-env.override.json
-.wp-env.test.override.json
 wp-cli.local.yml
 
 # Configs from wporg-repo-tools.

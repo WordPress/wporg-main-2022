@@ -11,7 +11,6 @@
 		"WP_CORE_STABLE_BRANCH": "6.6",
 		"WP_CORE_LATEST_RELEASE": "6.6"
 	},
-	"testsEnvironment": false,
 	"core": "WordPress/WordPress#master",
 	"plugins": [
 		"./source/wp-content/plugins/block-visibility",
@@ -32,5 +31,16 @@
 		"wp-content/mu-plugins": "./source/wp-content/mu-plugins",
 		"wp-content/mu-plugins/0-sandbox.php": "./env/0-sandbox.php",
 		"wp-cli.yml": "./wp-cli.yml"
+	},
+	"env": {
+		"tests": {
+			"config": {
+				"WP_ENVIRONMENT_TYPE": false
+			},
+			"mappings": {
+				"wp-content/tests": "./source/wp-content/tests",
+				"vendor": "./vendor"
+			}
+		}
 	}
 }
