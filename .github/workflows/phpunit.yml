@@ -22,6 +22,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test
-        uses: WordPress/wporg-repo-tools/.github/actions/test-php@add/claude/wp-env-config-param # TODO: change to @trunk after wporg-repo-tools#38 merges
+        uses: WordPress/wporg-repo-tools/.github/actions/test-php@trunk
         with:
           wp-env-config: .wp-env.test.json
