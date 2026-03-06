@@ -38,7 +38,8 @@ jobs:
           skip-build: true
 
       - name: Disable tests environment
-        run: echo '{ "testsEnvironment": false }' > .wp-env.override.json
+        run: |
+          echo '{ "testsEnvironment": false }' > .wp-env.override.json
 
       - name: Run the content update
         id: build-patterns
@@ -50,6 +51,7 @@ jobs:
           yarn build:patterns
           CHANGED_FILES=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php)
           echo "$CHANGED_FILES"
+          echo "has_changes=$( [ -n "$CHANGED_FILES" ] && echo true || echo false )" >> "$GITHUB_OUTPUT"
           {
             echo 'changelist<<EOF'
             echo "$CHANGED_FILES" | xargs yarn --silent screenshot-changes
@@ -57,6 +59,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Push screenshots to storage branch
+        if: steps.build-patterns.outputs.has_changes == 'true'
         id: push-screenshots
         run: |
           REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
@@ -88,6 +91,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Resolve screenshot URLs
+        if: steps.build-patterns.outputs.has_changes == 'true'
         run: |
           if [ -f "$GITHUB_WORKSPACE/artifacts/screenshots.md" ]; then
             sed -i "s|/${{ env.SCREENSHOTS_PLACEHOLDER }}/|/${{ steps.push-screenshots.outputs.sha }}/|g" "$GITHUB_WORKSPACE/artifacts/screenshots.md"
@@ -96,6 +100,7 @@ jobs:
           SCREENSHOTS_PLACEHOLDER: content-update-screenshots
 
       - name: Upload screenshots
+        if: steps.build-patterns.outputs.has_changes == 'true'
         id: upload-artifact
         uses: actions/upload-artifact@v4
         with:
