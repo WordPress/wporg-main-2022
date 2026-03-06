@@ -5,7 +5,9 @@ on:
   schedule:
     - cron: '17 3 * * *'  # Runs daily at 3:17 AM UTC
   push:
-    branches: [trunk]
+    branches:
+      - trunk
+      - add/claude/playground-runtime-content-update
   pull_request:
     paths:
       - '.github/workflows/content-update.yml'
