@@ -54,6 +54,11 @@
 		"template": "page-privacy.html"
 	},
 	{
+		"slug": "cookies",
+		"pattern": "about-privacy-cookies.php",
+		"template": "page-cookies.html"
+	},
+	{
 		"slug": "data-export-request",
 		"pattern": "about-privacy-data-export-request.php",
 		"template": "page-data-export-request.html"
