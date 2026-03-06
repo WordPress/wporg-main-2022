@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:wporg/local-navigation-bar {"style":{"position":{"type":"sticky"}},"fontSize":"small"} -->
 	<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal"}},"fontSize":"small"} -->
 	<p class="has-small-font-size" style="font-style:normal"><?php esc_html_e( 'Search', 'wporg' ); ?></p>

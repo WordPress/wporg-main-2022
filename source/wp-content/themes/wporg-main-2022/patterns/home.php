@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:group {"metadata":{"name":"SOTW San Francisco 2025"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}},"border":{"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{"color":"var:preset|color|light-grey-2","width":"1px"},"left":{"width":"0px","style":"none"}},"color":{"background":"#1382f8"}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-12-01T00:00:00"}],"hideOnSchedules":false}}}]}} -->
 <div class="wp-block-group alignfull has-background" style="border-top-style:none;border-top-width:0px;border-right-style:none;border-right-width:0px;border-bottom-color:var(--wp--preset--color--light-grey-2);border-bottom-width:1px;border-left-style:none;border-left-width:0px;background-color:#1382f8;padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0px","left":"0px"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->

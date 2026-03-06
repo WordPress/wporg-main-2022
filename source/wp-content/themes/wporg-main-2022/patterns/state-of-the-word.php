@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:cover {"url":"https://wordpress.org/files/2025/10/Main-Banner-_-temporary-1.png","id":48127,"dimRatio":0,"isUserOverlayColor":true,"minHeight":430,"minHeightUnit":"px","sizeSlug":"full","metadata":{"blockVisibility":false},"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull" style="min-height:430px"><img class="wp-block-cover__image-background wp-image-48127 size-full" alt="" src="https://wordpress.org/files/2025/10/Main-Banner-_-temporary-1.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":48121,"width":"300px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/10/logo-outline.png" alt="" class="wp-image-48121" style="width:300px" /></figure>

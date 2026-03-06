@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"120px","left":"var:preset|spacing|edge-space"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:120px;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"typography":{"textAlign":"center"}},"fontSize":"heading-1"} -->
 <h1 class="wp-block-heading has-text-align-center has-heading-1-font-size"><?php esc_html_e( 'Get WordPress', 'wporg' ); ?></h1>

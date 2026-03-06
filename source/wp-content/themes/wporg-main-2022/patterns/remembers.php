@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:heading {"textAlign":"center","level":1,"align":"full","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50","top":"var:preset|spacing|80"}}},"backgroundColor":"white","fontSize":"heading-2"} -->
 <h1 class="wp-block-heading alignfull has-text-align-center has-white-background-color has-background has-heading-2-font-size" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e( 'WordPress Remembers', 'wporg' ); ?></h1>
 <!-- /wp:heading -->

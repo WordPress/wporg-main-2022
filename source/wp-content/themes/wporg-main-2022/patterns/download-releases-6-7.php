@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:group {"metadata":{"name":"Page"},"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"bottom":"0","left":"0","right":"0"},"blockGap":"40px"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull" style="padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"dimensions":{"minHeight":"720px"},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2024/11/6-7-hero.png","id":43808,"source":"file","title":"6-7-hero"},"backgroundSize":"1384px","backgroundPosition":"50% 0%","backgroundRepeat":"no-repeat"},"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"white","textColor":"charcoal-1","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->

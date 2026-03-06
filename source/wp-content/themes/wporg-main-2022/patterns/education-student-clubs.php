@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <!-- wp:group {"align":"full","className":"is-style-default","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/12/education-student-club-logo-1.png","id":48873,"source":"file","title":"education-student-club-logo-1"},"backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"100% 100%"}},"backgroundColor":"charcoal-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-default has-charcoal-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","className":"is-style-default","layout":{"type":"flex","flexWrap":"wrap","orientation":"horizontal"}} -->
 <div class="wp-block-group alignwide is-style-default"><!-- wp:group {"align":"wide","className":"is-style-two-column-display","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
