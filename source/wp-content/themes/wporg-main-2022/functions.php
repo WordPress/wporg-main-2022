@@ -270,11 +270,8 @@ function use_parent_page_title( $block_content, $block, $instance ) {
 		return $block_content;
 	}
 
-	// For deeply nested pages (e.g., About > Privacy > Data Export Request),
-	// use the direct parent as the section title ("Privacy"), not the root ("About").
-	// For two-level pages, the direct parent IS the root, so behavior is unchanged.
-	$grandparent = get_post_parent( $parent );
-	if ( $grandparent ) {
+	// Privacy subpages (About > Privacy > Page) should show "Privacy" as section title.
+	if ( 'privacy' === $parent->post_name ) {
 		$url   = get_permalink( $parent->ID );
 		$title = get_the_title( $parent );
 	} else {
