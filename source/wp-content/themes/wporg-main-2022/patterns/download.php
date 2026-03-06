@@ -30,13 +30,13 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:wporg/modal {"closeButtonColor":"white","customCloseButtonColor":"#ffffff","href":"[download_link]","label":"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ esc_html_e( 'Download WordPress [latest_version]', 'wporg' ); ?>"} -->
-	<?php get_template_part( 'templates/template-parts/modal', 'download' ); ?>
+<?php get_template_part( 'templates/template-parts/modal', 'download' ); ?>
 <!-- /wp:wporg/modal -->
 
 <?php if ( do_shortcode( '[download_link]' ) !== do_shortcode( '[download_link_variant]' ) ) : ?>
-	<!-- wp:wporg/modal {"closeButtonColor":"white","customCloseButtonColor":"#ffffff","href":"[download_link_variant]","label":"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ esc_html_e( 'Download WordPress [latest_version] non-default', 'wporg' ); ?>"} -->
-		<?php get_template_part( 'templates/template-parts/modal', 'download' ); ?>
-	<!-- /wp:wporg/modal -->
+<!-- wp:wporg/modal {"closeButtonColor":"white","customCloseButtonColor":"#ffffff","href":"[download_link_variant]","label":"<?php /* translators: [latest_version] is a shortcode and should not be translated. */ esc_html_e( 'Download WordPress [latest_version] non-default', 'wporg' ); ?>"} -->
+<?php get_template_part( 'templates/template-parts/modal', 'download' ); ?>
+<!-- /wp:wporg/modal -->
 <?php endif; ?>
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","justifyContent":"left"}} -->
