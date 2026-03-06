@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 6,18 * * *'
 
+concurrency:
+  group: i18n
+  cancel-in-progress: true
+
 jobs:
   translation-strings:
     runs-on: ubuntu-latest
