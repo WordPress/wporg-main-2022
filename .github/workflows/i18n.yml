@@ -7,6 +7,7 @@ on:
 
 concurrency:
   group: i18n
+  cancel-in-progress: true
 
 jobs:
   translation-strings:
