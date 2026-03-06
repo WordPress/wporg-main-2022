@@ -67,12 +67,14 @@ function render( $attributes, $content, $block ) {
 
 	if ( $error_message ) {
 		printf(
-			'<div class="notice notice-error notice-alt"><p>%s</p></div>',
+			'<div class="wp-block-group has-background" style="background-color:#fcf0f1;border-left:4px solid #d63638;padding:%1$s">%2$s</div>',
+			'var(--wp--preset--spacing--20)',
 			wp_kses_post( $error_message )
 		);
 	} elseif ( $success ) {
 		printf(
-			'<div class="notice notice-success notice-alt"><p>%s</p></div>',
+			'<div class="wp-block-group has-background" style="background-color:#edfaef;border-left:4px solid #00a32a;padding:%s"><p>%s</p></div>',
+			'var(--wp--preset--spacing--20)',
 			esc_html__( 'Please check your email for a confirmation link, and follow the instructions to authenticate your request.', 'wporg' )
 		);
 	}

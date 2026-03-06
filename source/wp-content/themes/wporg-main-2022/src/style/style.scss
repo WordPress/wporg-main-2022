@@ -707,20 +707,4 @@ body .is-layout-constrained > .alignfull {
 	input[type="email"] {
 		width: 100%;
 	}
-
-	.notice {
-		padding: var(--wp--preset--spacing--20);
-		margin-bottom: var(--wp--preset--spacing--20);
-		border-left: 4px solid;
-	}
-
-	.notice-error {
-		background-color: #fcf0f1;
-		border-left-color: #d63638;
-	}
-
-	.notice-success {
-		background-color: #edfaef;
-		border-left-color: #00a32a;
-	}
 }
