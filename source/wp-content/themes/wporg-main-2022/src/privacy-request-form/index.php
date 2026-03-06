@@ -82,10 +82,6 @@ function render( $attributes, $content, $block ) {
 			? __( 'Accept Declaration and Request Export', 'wporg' )
 			: __( 'Accept Declaration and Request Permanent Account Deletion', 'wporg' );
 
-		$declaration = ( 'export' === $type )
-			? __( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true.', 'wporg' )
-			: __( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true. You also declare that it is your intention for accounts associated with that email address to be permanently deleted.', 'wporg' );
-
 		printf(
 			'<form id="%s" class="privacy-request-form" method="POST" action="#">',
 			esc_attr( $form_id )
@@ -100,7 +96,12 @@ function render( $attributes, $content, $block ) {
 			esc_attr__( 'you@example.com', 'wporg' ),
 			esc_attr( $email )
 		);
-		printf( '<p>%s</p>', esc_html( $declaration ) );
+
+		if ( 'export' === $type ) {
+			printf( '<p>%s</p>', esc_html__( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true.', 'wporg' ) );
+		} else {
+			printf( '<p>%s</p>', esc_html__( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true. You also declare that it is your intention for accounts associated with that email address to be permanently deleted.', 'wporg' ) );
+		}
 
 		display_submit_button( $submit_text, 'wp-block-button__link wp-element-button' );
 
