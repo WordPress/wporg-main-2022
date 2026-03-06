@@ -165,7 +165,7 @@ function wporg_env_generate_pattern_content( $url ) {
 
 	$content = WordPress_org\Main_2022\ExportToPatterns\replace_with_i18n( $post->content_raw );
 
-	$header = "<?php\n/**\n * Title: {$post->title->rendered}\n * Slug: wporg-main-2022/{$post->slug}\n * Inserter: no\n */\n\n?>\n\n";
+	$header = "<?php\n/**\n * Title: {$post->title->rendered}\n * Slug: wporg-main-2022/{$post->slug}\n * Inserter: no\n */\n\n?>\n";
 
 	return $header . $content . "\n";
 }
