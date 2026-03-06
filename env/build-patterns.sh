@@ -6,11 +6,15 @@ THEME_DIR="source/wp-content/themes/wporg-main-2022"
 MANIFEST="env/page-manifest.json"
 WP_URL="${WP_ENV_URL:-http://localhost:8888}"
 
+COOKIE_JAR=$(mktemp)
+
 echo "Exporting patterns via REST API ($WP_URL)..."
-RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+RESPONSE=$(curl -s -w "\n%{http_code}" -L -b "$COOKIE_JAR" -c "$COOKIE_JAR" -X POST \
 	-H "Content-Type: application/json" \
 	-d @"$MANIFEST" \
 	"$WP_URL/?rest_route=/wporg-env/v1/export-patterns")
+
+rm -f "$COOKIE_JAR"
 HTTP_CODE=$(echo "$RESPONSE" | tail -1)
 BODY=$(echo "$RESPONSE" | sed '$d')
 
