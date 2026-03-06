@@ -32,10 +32,24 @@ jobs:
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
-      - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
+      - name: Install NodeJS
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version-file: ".nvmrc"
+          cache: yarn
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@44454db4f0199b8b9685a5d763dc37cbf79108e1 # v2.36.0
+        with:
+          php-version: "8.1"
+        env:
+          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies (skip build)
+        run: |
+          composer install || composer update wporg/*
+          yarn
+          yarn setup:tools
 
       - name: Run the content update
         id: build-patterns
