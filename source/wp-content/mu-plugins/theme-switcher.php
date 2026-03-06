@@ -30,7 +30,6 @@ function should_use_new_theme() {
 	// By default, the new theme is enabled, but there are some exceptions.
 	$old_theme_pages = array(
 		'/40-percent-of-web/',
-		'/about/privacy/cookies/',
 		'/enterprise/content-marketing/',
 		'/enterprise/ecommerce/',
 		'/enterprise/education/',
