@@ -6,7 +6,6 @@ on:
 
 concurrency:
   group: build
-  cancel-in-progress: true
 
 jobs:
   build:
