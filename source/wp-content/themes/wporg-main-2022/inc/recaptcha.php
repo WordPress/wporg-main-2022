@@ -57,7 +57,7 @@ function check_status() {
 
 	$verify = array(
 		'secret'   => RECAPTCHA_INVIS_PRIVKEY,
-		'remoteip' => wp_unslash( $_SERVER['REMOTE_ADDR'] ), // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		'remoteip' => isset( $_SERVER['REMOTE_ADDR'] ) ? wp_unslash( $_SERVER['REMOTE_ADDR'] ) : '', // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 		'response' => wp_unslash( $_POST['g-recaptcha-response'] ), // phpcs:ignore WordPress.Security.NonceVerification.Missing, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 	);
 

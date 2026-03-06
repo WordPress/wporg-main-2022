@@ -100,7 +100,7 @@ function render( $attributes, $content, $block ) {
 			esc_attr__( 'you@example.com', 'wporg' ),
 			esc_attr( $email )
 		);
-		printf( '<p>%s</p>', $declaration );
+		printf( '<p>%s</p>', esc_html( $declaration ) );
 
 		display_submit_button( $submit_text, 'wp-block-button__link wp-element-button' );
 
