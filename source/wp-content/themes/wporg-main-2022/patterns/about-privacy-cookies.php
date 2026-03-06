@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Our <a href="http://localhost:8888/about/privacy/">Privacy Policy</a> explains our principles when it comes to the collection, processing, and storage of your information. The Cookie Policy specifically explains how we, our partners, and users of our services deploy cookies, as well as the options you have to control them.', 'wporg' ); ?></p>
+<p><?php _e( 'Our <a href="/about/privacy/">Privacy Policy</a> explains our principles when it comes to the collection, processing, and storage of your information. The Cookie Policy specifically explains how we, our partners, and users of our services deploy cookies, as well as the options you have to control them.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
