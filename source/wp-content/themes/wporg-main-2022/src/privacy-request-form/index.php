@@ -83,8 +83,8 @@ function render( $attributes, $content, $block ) {
 			: __( 'Accept Declaration and Request Permanent Account Deletion', 'wporg' );
 
 		$declaration = ( 'export' === $type )
-			? esc_html__( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true.', 'wporg' )
-			: esc_html__( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true. You also declare that it is your intention for accounts associated with that email address to be permanently deleted.', 'wporg' );
+			? __( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true.', 'wporg' )
+			: __( 'By submitting this form, you declare that you are the individual owner of the specified email address and its associated accounts; and that all submitted information including any supplemental details necessary to verify your identity are true. You also declare that it is your intention for accounts associated with that email address to be permanently deleted.', 'wporg' );
 
 		printf(
 			'<form id="%s" class="privacy-request-form" method="POST" action="#">',
