@@ -34,6 +34,9 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'trunk' }}
 
+      - name: Disable AppArmor
+        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+
       - name: Setup
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
