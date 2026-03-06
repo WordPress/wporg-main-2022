@@ -13,7 +13,7 @@
 	],
 	"mappings": {
 		"env": "./env",
-		"wp-content/mu-plugins": "./source/wp-content/mu-plugins"
+		"wp-content/mu-plugins": "./env/playground-mu-plugins"
 	},
 	"testsEnvironment": false
 }
