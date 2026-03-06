@@ -5,6 +5,15 @@
 WP_URL="${WP_ENV_URL:-http://localhost:8888}"
 
 echo "Running setup via REST API ($WP_URL)..."
+
+# Wait for WordPress to be ready (Playground may need a moment).
+for i in $(seq 1 10); do
+	STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$WP_URL/?rest_route=/")
+	[ "$STATUS" = "200" ] && break
+	echo "Waiting for WordPress to be ready (attempt $i, status $STATUS)..."
+	sleep 2
+done
+
 RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "$WP_URL/?rest_route=/wporg-env/v1/setup")
 HTTP_CODE=$(echo "$RESPONSE" | tail -1)
 BODY=$(echo "$RESPONSE" | sed '$d')
