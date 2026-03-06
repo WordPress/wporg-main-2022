@@ -11,7 +11,6 @@
 		"WP_CORE_STABLE_BRANCH": "6.6",
 		"WP_CORE_LATEST_RELEASE": "6.6"
 	},
-	"testsEnvironment": false,
 	"core": "WordPress/WordPress#master",
 	"plugins": [
 		"./source/wp-content/plugins/block-visibility",
