@@ -131,6 +131,7 @@ add_shortcode(
 
 /**
  * Shortcode for a link to the latest version of WordPress for locales with variants.
+ * If no variant is defined, the same link as for the shortcode download_link is returned.
  */
 add_shortcode(
 	'download_link_variant',
