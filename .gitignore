@@ -21,7 +21,7 @@ wp-cli.local.yml
 phpcs.xml.dist
 
 # Ignore lock files
-/composer.lock
+# composer.lock is committed for reproducible installs and CI caching
 
 # Ignore everything in source...
 /source/wp-content/*
