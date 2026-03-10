@@ -47,7 +47,11 @@ function render( $attributes, $content, $block ) {
 		}
 	}
 
-	$terms = urldecode( wp_unslash( $_GET['s'] ?? '' ) ); // phpcs:ignore
+	$terms = wp_unslash( $_GET['s'] ?? '' ); // phpcs:ignore
+	if ( ! is_string( $terms ) ) {
+		$terms = '';
+	}
+	$terms = urldecode( $terms );
 	$terms = htmlspecialchars_decode( $terms );
 	$terms = trim( $terms, "/ \r\n\t" );
 
