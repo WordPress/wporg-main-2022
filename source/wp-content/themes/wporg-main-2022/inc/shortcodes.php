@@ -142,10 +142,10 @@ add_shortcode(
 
 		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
 			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
-			
+
 			if ( $rosetta_release ) {
 				$locale = get_locale();
-				
+
 				// Map locales to the variants
 				$variant_map = array(
 					'de_DE' => 'de_DE_formal',
