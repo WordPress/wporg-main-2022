@@ -2,6 +2,7 @@
 /**
  * Template part for displaying the download modal content.
  */
+
 ?>
 <!-- wp:group 
 {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|10"}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"type":"constrained"}} -->
