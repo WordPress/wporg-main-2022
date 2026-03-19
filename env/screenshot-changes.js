@@ -90,10 +90,18 @@ function findInsertionOffset( beforeImg, afterImg ) {
 		return 0;
 	}
 
+	// Sampling density for alignment scoring (columns × rows per offset check).
+	const HORIZONTAL_SAMPLES = 20;
+	const VERTICAL_SAMPLES = 50;
+	// Number of evenly-spaced offsets to evaluate in the initial coarse scan.
+	const COARSE_SCAN_DIVISIONS = 100;
+	// The offset must reduce the alignment score by at least this factor to be accepted.
+	const ALIGNMENT_IMPROVEMENT_THRESHOLD = 0.5;
+
 	const width = Math.min( beforeImg.width, afterImg.width );
-	const xStep = Math.max( 1, Math.floor( width / 20 ) );
+	const xStep = Math.max( 1, Math.floor( width / HORIZONTAL_SAMPLES ) );
 	const compareHeight = beforeImg.height;
-	const yStep = Math.max( 1, Math.floor( compareHeight / 50 ) );
+	const yStep = Math.max( 1, Math.floor( compareHeight / VERTICAL_SAMPLES ) );
 
 	function scoreAtOffset( offset ) {
 		let score = 0;
@@ -115,7 +123,7 @@ function findInsertionOffset( beforeImg, afterImg ) {
 	let bestScore = scoreAt0;
 
 	// Scan candidate offsets with adaptive step size, then refine.
-	const coarseStep = Math.max( 1, Math.floor( heightDiff / 100 ) );
+	const coarseStep = Math.max( 1, Math.floor( heightDiff / COARSE_SCAN_DIVISIONS ) );
 	for ( let offset = coarseStep; offset <= heightDiff; offset += coarseStep ) {
 		const score = scoreAtOffset( offset );
 		if ( score < bestScore ) {
@@ -138,7 +146,7 @@ function findInsertionOffset( beforeImg, afterImg ) {
 	}
 
 	// Only accept the offset if it significantly improves alignment.
-	if ( bestOffset > 0 && bestScore < scoreAt0 * 0.5 ) {
+	if ( bestOffset > 0 && bestScore < scoreAt0 * ALIGNMENT_IMPROVEMENT_THRESHOLD ) {
 		return bestOffset;
 	}
 
