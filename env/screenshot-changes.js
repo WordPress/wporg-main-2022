@@ -121,6 +121,7 @@ function computeChunkHashes( imgData, width, height, chunkHeight ) {
 function findLCS( seqA, seqB ) {
 	const m = seqA.length;
 	const n = seqB.length;
+	// Uint16Array is safe here because MAX_CHUNKS_PER_IMAGE (2000) < 65 535.
 	const dp = Array.from( { length: m + 1 }, () => new Uint16Array( n + 1 ) );
 
 	for ( let i = 1; i <= m; i++ ) {
@@ -186,14 +187,14 @@ function alignImages( beforeImg, afterImg ) {
 	let ai = 0;
 
 	function pushGap( gapBefore, gapAfter ) {
-		const pairs = Math.min( gapBefore.length, gapAfter.length );
-		for ( let p = 0; p < pairs; p++ ) {
+		const pairCount = Math.min( gapBefore.length, gapAfter.length );
+		for ( let p = 0; p < pairCount; p++ ) {
 			alignment.push( { before: gapBefore[ p ], after: gapAfter[ p ] } );
 		}
-		for ( let p = pairs; p < gapBefore.length; p++ ) {
+		for ( let p = pairCount; p < gapBefore.length; p++ ) {
 			alignment.push( { before: gapBefore[ p ], after: null } );
 		}
-		for ( let p = pairs; p < gapAfter.length; p++ ) {
+		for ( let p = pairCount; p < gapAfter.length; p++ ) {
 			alignment.push( { before: null, after: gapAfter[ p ] } );
 		}
 	}
