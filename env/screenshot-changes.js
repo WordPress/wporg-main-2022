@@ -80,30 +80,208 @@ async function takeScreenshot( page, url, outputPath ) {
 }
 
 /**
- * Pad an image to a target size, filling extra space with white.
+ * Row-based image alignment using chunk hashing and Longest Common Subsequence.
+ *
+ * Divides both images into horizontal strips ("chunks"), hashes each strip,
+ * and uses LCS to find matching regions. This correctly handles content
+ * insertions and removals at any position in the page — not just the top.
  */
-function padImageData( img, targetWidth, targetHeight ) {
-	if ( img.width === targetWidth && img.height === targetHeight ) {
-		return img.data;
+
+// Minimum number of pixel rows per chunk.
+const MIN_CHUNK_HEIGHT = 8;
+// Maximum chunks per image, keeps the LCS O(m×n) table manageable.
+const MAX_CHUNKS_PER_IMAGE = 2000;
+
+/**
+ * Compute a hash for each horizontal chunk of an image.
+ */
+function computeChunkHashes( imgData, width, height, chunkHeight ) {
+	const chunks = [];
+	for ( let y = 0; y < height; y += chunkHeight ) {
+		const endY = Math.min( y + chunkHeight, height );
+		let hash = 5381;
+		for ( let row = y; row < endY; row++ ) {
+			for ( let x = 0; x < width; x++ ) {
+				const idx = ( row * width + x ) * 4;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx ] ) >>> 0;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx + 1 ] ) >>> 0;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx + 2 ] ) >>> 0;
+			}
+		}
+		chunks.push( { hash, y, height: endY - y } );
 	}
-	const padded = Buffer.alloc( targetWidth * targetHeight * 4, 255 );
-	for ( let y = 0; y < img.height; y++ ) {
-		const srcOffset = y * img.width * 4;
-		const dstOffset = y * targetWidth * 4;
-		img.data.copy( padded, dstOffset, srcOffset, srcOffset + img.width * 4 );
+	return chunks;
+}
+
+/**
+ * Find the Longest Common Subsequence of two chunk-hash sequences.
+ *
+ * @return {Array<{a: number, b: number}>} Pairs of matching indices.
+ */
+function findLCS( seqA, seqB ) {
+	const m = seqA.length;
+	const n = seqB.length;
+	// Uint16Array is safe here because MAX_CHUNKS_PER_IMAGE (2000) < 65 535.
+	const dp = Array.from( { length: m + 1 }, () => new Uint16Array( n + 1 ) );
+
+	for ( let i = 1; i <= m; i++ ) {
+		for ( let j = 1; j <= n; j++ ) {
+			if ( seqA[ i - 1 ].hash === seqB[ j - 1 ].hash ) {
+				dp[ i ][ j ] = dp[ i - 1 ][ j - 1 ] + 1;
+			} else {
+				dp[ i ][ j ] = Math.max( dp[ i - 1 ][ j ], dp[ i ][ j - 1 ] );
+			}
+		}
 	}
-	return padded;
+
+	const matches = [];
+	let i = m;
+	let j = n;
+	while ( i > 0 && j > 0 ) {
+		if ( seqA[ i - 1 ].hash === seqB[ j - 1 ].hash ) {
+			matches.unshift( { a: i - 1, b: j - 1 } );
+			i--;
+			j--;
+		} else if ( dp[ i - 1 ][ j ] > dp[ i ][ j - 1 ] ) {
+			i--;
+		} else {
+			j--;
+		}
+	}
+	return matches;
+}
+
+/**
+ * Copy a chunk of pixel rows from a source image into a destination buffer.
+ */
+function copyChunkData( srcImg, chunk, destBuffer, destWidth, destY ) {
+	for ( let row = 0; row < chunk.height; row++ ) {
+		const srcOffset = ( chunk.y + row ) * srcImg.width * 4;
+		const dstOffset = ( destY + row ) * destWidth * 4;
+		srcImg.data.copy( destBuffer, dstOffset, srcOffset, srcOffset + srcImg.width * 4 );
+	}
+}
+
+/**
+ * Align two images using row-based chunk hashing and LCS.
+ *
+ * Produces two same-height image buffers where matching content sits at
+ * the same vertical position, with white padding for insertions/removals.
+ */
+function alignImages( beforeImg, afterImg ) {
+	const width = Math.max( beforeImg.width, afterImg.width );
+	const maxHeight = Math.max( beforeImg.height, afterImg.height );
+	const chunkHeight = Math.max( MIN_CHUNK_HEIGHT, Math.ceil( maxHeight / MAX_CHUNKS_PER_IMAGE ) );
+
+	const beforeChunks = computeChunkHashes( beforeImg.data, beforeImg.width, beforeImg.height, chunkHeight );
+	const afterChunks = computeChunkHashes( afterImg.data, afterImg.width, afterImg.height, chunkHeight );
+
+	const matches = findLCS( beforeChunks, afterChunks );
+
+	// Build alignment: each slot pairs a before and/or after chunk index.
+	// Between LCS matches, pair up unmatched before/after chunks so that
+	// in-place modifications show as overlaid pixel diffs rather than
+	// separate deletion + insertion regions.
+	const alignment = [];
+	let bi = 0;
+	let ai = 0;
+
+	function pushGap( gapBefore, gapAfter ) {
+		const pairCount = Math.min( gapBefore.length, gapAfter.length );
+		for ( let p = 0; p < pairCount; p++ ) {
+			alignment.push( { before: gapBefore[ p ], after: gapAfter[ p ] } );
+		}
+		for ( let p = pairCount; p < gapBefore.length; p++ ) {
+			alignment.push( { before: gapBefore[ p ], after: null } );
+		}
+		for ( let p = pairCount; p < gapAfter.length; p++ ) {
+			alignment.push( { before: null, after: gapAfter[ p ] } );
+		}
+	}
+
+	for ( const match of matches ) {
+		const gapBefore = [];
+		const gapAfter = [];
+		while ( bi < match.a ) {
+			gapBefore.push( bi++ );
+		}
+		while ( ai < match.b ) {
+			gapAfter.push( ai++ );
+		}
+		pushGap( gapBefore, gapAfter );
+
+		// Matched pair — unchanged region.
+		alignment.push( { before: bi, after: ai } );
+		bi++;
+		ai++;
+	}
+
+	// Remaining unmatched tails.
+	{
+		const gapBefore = [];
+		const gapAfter = [];
+		while ( bi < beforeChunks.length ) {
+			gapBefore.push( bi++ );
+		}
+		while ( ai < afterChunks.length ) {
+			gapAfter.push( ai++ );
+		}
+		pushGap( gapBefore, gapAfter );
+	}
+
+	// Calculate total aligned height.
+	let totalHeight = 0;
+	for ( const slot of alignment ) {
+		if ( slot.before !== null && slot.after !== null ) {
+			totalHeight += Math.max(
+				beforeChunks[ slot.before ].height,
+				afterChunks[ slot.after ].height
+			);
+		} else if ( slot.before !== null ) {
+			totalHeight += beforeChunks[ slot.before ].height;
+		} else {
+			totalHeight += afterChunks[ slot.after ].height;
+		}
+	}
+
+	// Fill aligned buffers (white by default).
+	const beforeData = Buffer.alloc( width * totalHeight * 4, 255 );
+	const afterData = Buffer.alloc( width * totalHeight * 4, 255 );
+
+	let outY = 0;
+	for ( const slot of alignment ) {
+		let h;
+		if ( slot.before !== null && slot.after !== null ) {
+			h = Math.max(
+				beforeChunks[ slot.before ].height,
+				afterChunks[ slot.after ].height
+			);
+		} else if ( slot.before !== null ) {
+			h = beforeChunks[ slot.before ].height;
+		} else {
+			h = afterChunks[ slot.after ].height;
+		}
+
+		if ( slot.before !== null ) {
+			copyChunkData( beforeImg, beforeChunks[ slot.before ], beforeData, width, outY );
+		}
+		if ( slot.after !== null ) {
+			copyChunkData( afterImg, afterChunks[ slot.after ], afterData, width, outY );
+		}
+
+		outY += h;
+	}
+
+	return { beforeData, afterData, width, height: totalHeight };
 }
 
 function generateDiff( beforePath, afterPath, diffPath ) {
 	const beforeImg = PNG.sync.read( fs.readFileSync( beforePath ) );
 	const afterImg = PNG.sync.read( fs.readFileSync( afterPath ) );
 
-	const width = Math.max( beforeImg.width, afterImg.width );
-	const height = Math.max( beforeImg.height, afterImg.height );
-
-	const beforeData = padImageData( beforeImg, width, height );
-	const afterData = padImageData( afterImg, width, height );
+	// Align images using row-based chunk matching so that insertions and
+	// removals at any position are handled, not just a single top offset.
+	const { beforeData, afterData, width, height } = alignImages( beforeImg, afterImg );
 
 	const diff = new PNG( { width, height } );
 	const numDiffPixels = pixelmatch( beforeData, afterData, diff.data, width, height, {
