@@ -80,114 +80,207 @@ async function takeScreenshot( page, url, outputPath ) {
 }
 
 /**
- * Find the vertical offset that best aligns the before image within the taller
- * after image. Detects content insertion (e.g., new content added at the top).
- * Returns 0 if no insertion is detected or the images are the same height.
+ * Row-based image alignment using chunk hashing and Longest Common Subsequence.
+ *
+ * Divides both images into horizontal strips ("chunks"), hashes each strip,
+ * and uses LCS to find matching regions. This correctly handles content
+ * insertions and removals at any position in the page — not just the top.
  */
-function findInsertionOffset( beforeImg, afterImg ) {
-	const heightDiff = afterImg.height - beforeImg.height;
-	if ( heightDiff <= 0 ) {
-		return 0;
-	}
 
-	// Sampling density for alignment scoring (columns × rows per offset check).
-	const HORIZONTAL_SAMPLES = 20;
-	const VERTICAL_SAMPLES = 50;
-	// Number of evenly-spaced offsets to evaluate in the initial coarse scan.
-	const COARSE_SCAN_DIVISIONS = 100;
-	// The offset must reduce the alignment score by at least this factor to be accepted.
-	const ALIGNMENT_IMPROVEMENT_THRESHOLD = 0.5;
+// Minimum number of pixel rows per chunk.
+const MIN_CHUNK_HEIGHT = 8;
+// Maximum chunks per image, keeps the LCS O(m×n) table manageable.
+const MAX_CHUNKS_PER_IMAGE = 2000;
 
-	const width = Math.min( beforeImg.width, afterImg.width );
-	const xStep = Math.max( 1, Math.floor( width / HORIZONTAL_SAMPLES ) );
-	const compareHeight = beforeImg.height;
-	const yStep = Math.max( 1, Math.floor( compareHeight / VERTICAL_SAMPLES ) );
-
-	function scoreAtOffset( offset ) {
-		let score = 0;
-		for ( let y = 0; y < compareHeight; y += yStep ) {
-			for ( let x = 0; x < width; x += xStep ) {
-				const bIdx = ( y * beforeImg.width + x ) * 4;
-				const aIdx = ( ( y + offset ) * afterImg.width + x ) * 4;
-				score +=
-					Math.abs( beforeImg.data[ bIdx ] - afterImg.data[ aIdx ] ) +
-					Math.abs( beforeImg.data[ bIdx + 1 ] - afterImg.data[ aIdx + 1 ] ) +
-					Math.abs( beforeImg.data[ bIdx + 2 ] - afterImg.data[ aIdx + 2 ] );
+/**
+ * Compute a hash for each horizontal chunk of an image.
+ */
+function computeChunkHashes( imgData, width, height, chunkHeight ) {
+	const chunks = [];
+	for ( let y = 0; y < height; y += chunkHeight ) {
+		const endY = Math.min( y + chunkHeight, height );
+		let hash = 5381;
+		for ( let row = y; row < endY; row++ ) {
+			for ( let x = 0; x < width; x++ ) {
+				const idx = ( row * width + x ) * 4;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx ] ) >>> 0;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx + 1 ] ) >>> 0;
+				hash = ( ( hash << 5 ) + hash + imgData[ idx + 2 ] ) >>> 0;
 			}
 		}
-		return score;
+		chunks.push( { hash, y, height: endY - y } );
 	}
-
-	const scoreAt0 = scoreAtOffset( 0 );
-	let bestOffset = 0;
-	let bestScore = scoreAt0;
-
-	// Scan candidate offsets with adaptive step size, then refine.
-	const coarseStep = Math.max( 1, Math.floor( heightDiff / COARSE_SCAN_DIVISIONS ) );
-	for ( let offset = coarseStep; offset <= heightDiff; offset += coarseStep ) {
-		const score = scoreAtOffset( offset );
-		if ( score < bestScore ) {
-			bestScore = score;
-			bestOffset = offset;
-		}
-	}
-
-	// Refine around the best offset found.
-	if ( coarseStep > 1 && bestOffset > 0 ) {
-		const lo = Math.max( 1, bestOffset - coarseStep );
-		const hi = Math.min( heightDiff, bestOffset + coarseStep );
-		for ( let offset = lo; offset <= hi; offset++ ) {
-			const score = scoreAtOffset( offset );
-			if ( score < bestScore ) {
-				bestScore = score;
-				bestOffset = offset;
-			}
-		}
-	}
-
-	// Only accept the offset if it significantly improves alignment.
-	if ( bestOffset > 0 && bestScore < scoreAt0 * ALIGNMENT_IMPROVEMENT_THRESHOLD ) {
-		return bestOffset;
-	}
-
-	return 0;
+	return chunks;
 }
 
 /**
- * Pad an image to a target size, filling extra space with white.
- * An optional topOffset shifts the image content down, adding white rows at the top.
+ * Find the Longest Common Subsequence of two chunk-hash sequences.
+ *
+ * @return {Array<{a: number, b: number}>} Pairs of matching indices.
  */
-function padImageData( img, targetWidth, targetHeight, topOffset = 0 ) {
-	if ( img.width === targetWidth && img.height === targetHeight && topOffset === 0 ) {
-		return img.data;
-	}
-	const padded = Buffer.alloc( targetWidth * targetHeight * 4, 255 );
-	for ( let y = 0; y < img.height; y++ ) {
-		const destY = y + topOffset;
-		if ( destY >= targetHeight ) {
-			break;
+function findLCS( seqA, seqB ) {
+	const m = seqA.length;
+	const n = seqB.length;
+	const dp = Array.from( { length: m + 1 }, () => new Uint16Array( n + 1 ) );
+
+	for ( let i = 1; i <= m; i++ ) {
+		for ( let j = 1; j <= n; j++ ) {
+			if ( seqA[ i - 1 ].hash === seqB[ j - 1 ].hash ) {
+				dp[ i ][ j ] = dp[ i - 1 ][ j - 1 ] + 1;
+			} else {
+				dp[ i ][ j ] = Math.max( dp[ i - 1 ][ j ], dp[ i ][ j - 1 ] );
+			}
 		}
-		const srcOffset = y * img.width * 4;
-		const dstOffset = destY * targetWidth * 4;
-		img.data.copy( padded, dstOffset, srcOffset, srcOffset + img.width * 4 );
 	}
-	return padded;
+
+	const matches = [];
+	let i = m;
+	let j = n;
+	while ( i > 0 && j > 0 ) {
+		if ( seqA[ i - 1 ].hash === seqB[ j - 1 ].hash ) {
+			matches.unshift( { a: i - 1, b: j - 1 } );
+			i--;
+			j--;
+		} else if ( dp[ i - 1 ][ j ] > dp[ i ][ j - 1 ] ) {
+			i--;
+		} else {
+			j--;
+		}
+	}
+	return matches;
+}
+
+/**
+ * Copy a chunk of pixel rows from a source image into a destination buffer.
+ */
+function copyChunkData( srcImg, chunk, destBuffer, destWidth, destY ) {
+	for ( let row = 0; row < chunk.height; row++ ) {
+		const srcOffset = ( chunk.y + row ) * srcImg.width * 4;
+		const dstOffset = ( destY + row ) * destWidth * 4;
+		srcImg.data.copy( destBuffer, dstOffset, srcOffset, srcOffset + srcImg.width * 4 );
+	}
+}
+
+/**
+ * Align two images using row-based chunk hashing and LCS.
+ *
+ * Produces two same-height image buffers where matching content sits at
+ * the same vertical position, with white padding for insertions/removals.
+ */
+function alignImages( beforeImg, afterImg ) {
+	const width = Math.max( beforeImg.width, afterImg.width );
+	const maxHeight = Math.max( beforeImg.height, afterImg.height );
+	const chunkHeight = Math.max( MIN_CHUNK_HEIGHT, Math.ceil( maxHeight / MAX_CHUNKS_PER_IMAGE ) );
+
+	const beforeChunks = computeChunkHashes( beforeImg.data, beforeImg.width, beforeImg.height, chunkHeight );
+	const afterChunks = computeChunkHashes( afterImg.data, afterImg.width, afterImg.height, chunkHeight );
+
+	const matches = findLCS( beforeChunks, afterChunks );
+
+	// Build alignment: each slot pairs a before and/or after chunk index.
+	// Between LCS matches, pair up unmatched before/after chunks so that
+	// in-place modifications show as overlaid pixel diffs rather than
+	// separate deletion + insertion regions.
+	const alignment = [];
+	let bi = 0;
+	let ai = 0;
+
+	function pushGap( gapBefore, gapAfter ) {
+		const pairs = Math.min( gapBefore.length, gapAfter.length );
+		for ( let p = 0; p < pairs; p++ ) {
+			alignment.push( { before: gapBefore[ p ], after: gapAfter[ p ] } );
+		}
+		for ( let p = pairs; p < gapBefore.length; p++ ) {
+			alignment.push( { before: gapBefore[ p ], after: null } );
+		}
+		for ( let p = pairs; p < gapAfter.length; p++ ) {
+			alignment.push( { before: null, after: gapAfter[ p ] } );
+		}
+	}
+
+	for ( const match of matches ) {
+		const gapBefore = [];
+		const gapAfter = [];
+		while ( bi < match.a ) {
+			gapBefore.push( bi++ );
+		}
+		while ( ai < match.b ) {
+			gapAfter.push( ai++ );
+		}
+		pushGap( gapBefore, gapAfter );
+
+		// Matched pair — unchanged region.
+		alignment.push( { before: bi, after: ai } );
+		bi++;
+		ai++;
+	}
+
+	// Remaining unmatched tails.
+	{
+		const gapBefore = [];
+		const gapAfter = [];
+		while ( bi < beforeChunks.length ) {
+			gapBefore.push( bi++ );
+		}
+		while ( ai < afterChunks.length ) {
+			gapAfter.push( ai++ );
+		}
+		pushGap( gapBefore, gapAfter );
+	}
+
+	// Calculate total aligned height.
+	let totalHeight = 0;
+	for ( const slot of alignment ) {
+		if ( slot.before !== null && slot.after !== null ) {
+			totalHeight += Math.max(
+				beforeChunks[ slot.before ].height,
+				afterChunks[ slot.after ].height
+			);
+		} else if ( slot.before !== null ) {
+			totalHeight += beforeChunks[ slot.before ].height;
+		} else {
+			totalHeight += afterChunks[ slot.after ].height;
+		}
+	}
+
+	// Fill aligned buffers (white by default).
+	const beforeData = Buffer.alloc( width * totalHeight * 4, 255 );
+	const afterData = Buffer.alloc( width * totalHeight * 4, 255 );
+
+	let outY = 0;
+	for ( const slot of alignment ) {
+		let h;
+		if ( slot.before !== null && slot.after !== null ) {
+			h = Math.max(
+				beforeChunks[ slot.before ].height,
+				afterChunks[ slot.after ].height
+			);
+		} else if ( slot.before !== null ) {
+			h = beforeChunks[ slot.before ].height;
+		} else {
+			h = afterChunks[ slot.after ].height;
+		}
+
+		if ( slot.before !== null ) {
+			copyChunkData( beforeImg, beforeChunks[ slot.before ], beforeData, width, outY );
+		}
+		if ( slot.after !== null ) {
+			copyChunkData( afterImg, afterChunks[ slot.after ], afterData, width, outY );
+		}
+
+		outY += h;
+	}
+
+	return { beforeData, afterData, width, height: totalHeight };
 }
 
 function generateDiff( beforePath, afterPath, diffPath ) {
 	const beforeImg = PNG.sync.read( fs.readFileSync( beforePath ) );
 	const afterImg = PNG.sync.read( fs.readFileSync( afterPath ) );
 
-	const width = Math.max( beforeImg.width, afterImg.width );
-	const height = Math.max( beforeImg.height, afterImg.height );
-
-	// Detect content insertion by finding the best vertical alignment.
-	const insertionOffset = findInsertionOffset( beforeImg, afterImg );
-
-	// Pad the before image, shifting it down by the insertion offset so that
-	// existing content aligns and only the truly new region shows as changed.
-	const beforeData = padImageData( beforeImg, width, height, insertionOffset );
-	const afterData = padImageData( afterImg, width, height );
+	// Align images using row-based chunk matching so that insertions and
+	// removals at any position are handled, not just a single top offset.
+	const { beforeData, afterData, width, height } = alignImages( beforeImg, afterImg );
 
 	const diff = new PNG( { width, height } );
 	const numDiffPixels = pixelmatch( beforeData, afterData, diff.data, width, height, {
