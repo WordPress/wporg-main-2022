@@ -80,16 +80,87 @@ async function takeScreenshot( page, url, outputPath ) {
 }
 
 /**
- * Pad an image to a target size, filling extra space with white.
+ * Find the vertical offset that best aligns the before image within the taller
+ * after image. Detects content insertion (e.g., new content added at the top).
+ * Returns 0 if no insertion is detected or the images are the same height.
  */
-function padImageData( img, targetWidth, targetHeight ) {
-	if ( img.width === targetWidth && img.height === targetHeight ) {
+function findInsertionOffset( beforeImg, afterImg ) {
+	const heightDiff = afterImg.height - beforeImg.height;
+	if ( heightDiff <= 0 ) {
+		return 0;
+	}
+
+	const width = Math.min( beforeImg.width, afterImg.width );
+	const xStep = Math.max( 1, Math.floor( width / 20 ) );
+	const compareHeight = beforeImg.height;
+	const yStep = Math.max( 1, Math.floor( compareHeight / 50 ) );
+
+	function scoreAtOffset( offset ) {
+		let score = 0;
+		for ( let y = 0; y < compareHeight; y += yStep ) {
+			for ( let x = 0; x < width; x += xStep ) {
+				const bIdx = ( y * beforeImg.width + x ) * 4;
+				const aIdx = ( ( y + offset ) * afterImg.width + x ) * 4;
+				score +=
+					Math.abs( beforeImg.data[ bIdx ] - afterImg.data[ aIdx ] ) +
+					Math.abs( beforeImg.data[ bIdx + 1 ] - afterImg.data[ aIdx + 1 ] ) +
+					Math.abs( beforeImg.data[ bIdx + 2 ] - afterImg.data[ aIdx + 2 ] );
+			}
+		}
+		return score;
+	}
+
+	const scoreAt0 = scoreAtOffset( 0 );
+	let bestOffset = 0;
+	let bestScore = scoreAt0;
+
+	// Scan candidate offsets with adaptive step size, then refine.
+	const coarseStep = Math.max( 1, Math.floor( heightDiff / 100 ) );
+	for ( let offset = coarseStep; offset <= heightDiff; offset += coarseStep ) {
+		const score = scoreAtOffset( offset );
+		if ( score < bestScore ) {
+			bestScore = score;
+			bestOffset = offset;
+		}
+	}
+
+	// Refine around the best offset found.
+	if ( coarseStep > 1 && bestOffset > 0 ) {
+		const lo = Math.max( 1, bestOffset - coarseStep );
+		const hi = Math.min( heightDiff, bestOffset + coarseStep );
+		for ( let offset = lo; offset <= hi; offset++ ) {
+			const score = scoreAtOffset( offset );
+			if ( score < bestScore ) {
+				bestScore = score;
+				bestOffset = offset;
+			}
+		}
+	}
+
+	// Only accept the offset if it significantly improves alignment.
+	if ( bestOffset > 0 && bestScore < scoreAt0 * 0.5 ) {
+		return bestOffset;
+	}
+
+	return 0;
+}
+
+/**
+ * Pad an image to a target size, filling extra space with white.
+ * An optional topOffset shifts the image content down, adding white rows at the top.
+ */
+function padImageData( img, targetWidth, targetHeight, topOffset = 0 ) {
+	if ( img.width === targetWidth && img.height === targetHeight && topOffset === 0 ) {
 		return img.data;
 	}
 	const padded = Buffer.alloc( targetWidth * targetHeight * 4, 255 );
 	for ( let y = 0; y < img.height; y++ ) {
+		const destY = y + topOffset;
+		if ( destY >= targetHeight ) {
+			break;
+		}
 		const srcOffset = y * img.width * 4;
-		const dstOffset = y * targetWidth * 4;
+		const dstOffset = destY * targetWidth * 4;
 		img.data.copy( padded, dstOffset, srcOffset, srcOffset + img.width * 4 );
 	}
 	return padded;
@@ -102,7 +173,12 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 	const width = Math.max( beforeImg.width, afterImg.width );
 	const height = Math.max( beforeImg.height, afterImg.height );
 
-	const beforeData = padImageData( beforeImg, width, height );
+	// Detect content insertion by finding the best vertical alignment.
+	const insertionOffset = findInsertionOffset( beforeImg, afterImg );
+
+	// Pad the before image, shifting it down by the insertion offset so that
+	// existing content aligns and only the truly new region shows as changed.
+	const beforeData = padImageData( beforeImg, width, height, insertionOffset );
 	const afterData = padImageData( afterImg, width, height );
 
 	const diff = new PNG( { width, height } );
