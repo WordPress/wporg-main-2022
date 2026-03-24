@@ -512,8 +512,8 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":49243,"width":"170px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cracow-University-of-Technology-modified.png" alt="" class="wp-image-49243" style="width:170px" /></figure>
+<div class="wp-block-group"><!-- wp:image {"id":49243,"width":"150px","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cracow-University-of-Technology-modified.png" alt="" class="wp-image-49243" style="width:150px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -526,6 +526,166 @@
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Krakow, Poland', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50314,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/logoiesfseif.jpg" alt="" class="wp-image-50314" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'IES Azarquiel', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Toledo, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50315,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ue_creative_campus_logo_rgb_positive.original.png" alt="" class="wp-image-50315" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Creative Campus - Universidad Europea', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Madrid, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50323,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/images.png" alt="" class="wp-image-50323" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Central New Mexico Community College', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Albuquerque, USA', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50316,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/drew.png" alt="" class="wp-image-50316" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Drew University', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Madison, USA', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50317,"width":"115px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/cropped-logoEAThorizontal-2.png" alt="" class="wp-image-50317" style="width:115px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Escuela de Arte Toledo', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Toledo, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50318,"width":"170px","sizeSlug":"full","linkDestination":"none","className":"is-style-default","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.org/files/2026/03/Screenshot-2026-03-23-at-20.33.26.png" alt="" class="wp-image-50318" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Escuela de Arte de Huesca', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Huesca, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50319,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ERAP.png" alt="" class="wp-image-50319" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'ERAP Research and Learning LLP', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Kolkata, India', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50320,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/default_en.png" alt="" class="wp-image-50320" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Juraj Dobrila University of Pula', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Pula, Croatia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
