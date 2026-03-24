@@ -100,6 +100,7 @@ function import_rest_to_posts( $rest_url ) {
 			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
 			'post_parent' => $post->parent,
 			'comment_status' => $post->comment_status,
+			'page_template' => $post->template ?? '',
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
 
