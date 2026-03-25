@@ -6,7 +6,7 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"charcoal-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group has-charcoal-2-background-color has-background" style="min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"small"} -->
 <p class="has-light-grey-2-color has-text-color has-link-color has-small-font-size"><?php _e( 'WCAsia 2026 + WordPress 7.0, Apr 9 – 11 | <a href="https://asia.wordcamp.org/2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noreferrer noopener">Learn more</a>↗', 'wporg' ); ?></p>
