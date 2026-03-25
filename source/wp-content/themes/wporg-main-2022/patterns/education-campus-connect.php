@@ -54,6 +54,52 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"0","bottom":"0"}},"color":{"background":"#f6f7f7"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#f6f7f7;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontSize":"35px"}},"textColor":"charcoal-0"} -->
+<h2 class="wp-block-heading is-style-default has-charcoal-0-color has-text-color has-link-color" style="font-size:35px"><?php esc_html_e( 'Program Impact', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}}} -->
+<p class="alignwide" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e( "WordPress Campus Connect is growing — here's a snapshot of what's been achieved so far.", 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns alignfull are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
+<p class="has-text-align-center is-style-serif" style="font-size:3rem"><?php esc_html_e( '29', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
+<p class="has-text-align-center" style="margin-top:0;margin-bottom:0;font-size:0.9rem"><?php esc_html_e( 'Completed events', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
+<p class="has-text-align-center is-style-serif" style="font-size:3rem"><?php esc_html_e( '61', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
+<p class="has-text-align-center" style="margin-top:0;margin-bottom:0;font-size:0.9rem"><?php esc_html_e( 'Participating institutions', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
+<p class="has-text-align-center is-style-serif" style="font-size:3rem"><?php esc_html_e( '5,243+', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
+<p class="has-text-align-center" style="margin-top:0;margin-bottom:0;font-size:0.9rem"><?php esc_html_e( 'Students reached', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","className":"is-style-default","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide is-style-default" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
