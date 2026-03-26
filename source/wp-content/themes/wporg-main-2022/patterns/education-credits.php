@@ -688,6 +688,66 @@
 <p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Pula, Croatia', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50371,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/escuela_arte_zaragoza_logo.jpg" alt="" class="wp-image-50371" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Escuela de Arte de Zaragoza', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Zaragoza, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50370,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/IES-Venancio-Blanco.png" alt="" class="wp-image-50370" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'IES Venancio Blanco', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Salamanca, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":50369,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/Zaragoza-dinamica.jpeg" alt="" class="wp-image-50369" style="width:170px" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Zaragoza Dinámica', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Zaragoza, Spain', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
