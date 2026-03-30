@@ -122,6 +122,17 @@ function import_rest_to_posts( $rest_url ) {
 
 		$new_post_id = wp_insert_post( $new_post, true );
 
+		// If this theme doesn't support the template, wp_insert_post() will throw an error.
+		if ( is_wp_error( $new_post_id ) && 'invalid_page_template' === $new_post_id->get_error_code() ) {
+			unset( $new_post['page_template'] );
+			$new_post_id = wp_insert_post( $new_post, true );
+
+			// But we've probably got support through the older 'wporg-main' theme dynamically applied, so set it directly.
+			if ( ! is_wp_error( $new_post_id ) ) {
+				update_post_meta( $new_post_id, '_wp_page_template', $post->template ?? '' );
+			}
+		}
+		
 		if ( is_wp_error( $new_post_id ) ) {
 			throw new Exception( esc_html( $new_post_id->get_error_message() ) );
 		}
