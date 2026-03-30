@@ -9,19 +9,13 @@
 <!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
 <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"charcoal-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group has-charcoal-2-background-color has-background" style="min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"small"} -->
-<p class="has-light-grey-2-color has-text-color has-link-color has-small-font-size"><?php _e( 'WCAsia 2026 + WordPress 7.0, Apr 9 – 11 | <a href="https://asia.wordcamp.org/2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noreferrer noopener">Learn more</a>↗', 'wporg' ); ?></p>
+<p class="has-light-grey-2-color has-text-color has-link-color has-small-font-size"><?php _e( 'WCAsia 2026 is almost here, Apr 9 – 11 | <a href="https://asia.wordcamp.org/2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noreferrer noopener">Learn more</a>↗', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"color":{"background":"#856ec3"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group has-background" style="background-color:#856ec3;min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"lightbox":{"enabled":false},"id":50259,"width":"52px","height":"auto","aspectRatio":"1.0307178551974043","sizeSlug":"full","linkDestination":"custom"} -->
 <figure class="wp-block-image size-full is-resized"><a href="https://asia.wordcamp.org/2026/"><img src="https://wordpress.org/files/2026/03/WCA26-Icon-Purple-White.png" alt="" class="wp-image-50259" style="aspect-ratio:1.0307178551974043;width:52px;height:auto" /></a></figure>
-<!-- /wp:image --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"color":{"background":"#fe5d42"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-background" style="background-color:#fe5d42;min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"lightbox":{"enabled":false},"id":50244,"width":"106px","height":"auto","aspectRatio":"3.0464299648849007","sizeSlug":"full","linkDestination":"custom"} -->
-<figure class="wp-block-image size-full is-resized"><a href="https://asia.wordcamp.org/2026/wordpress-7-0-release-on-contributor-day/"><img src="https://wordpress.org/files/2026/03/7.0-logo.png" alt="" class="wp-image-50244" style="aspect-ratio:3.0464299648849007;width:106px;height:auto" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -300,7 +294,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth. ', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
