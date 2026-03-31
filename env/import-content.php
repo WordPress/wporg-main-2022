@@ -132,7 +132,7 @@ function import_rest_to_posts( $rest_url ) {
 				update_post_meta( $new_post_id, '_wp_page_template', $post->template ?? '' );
 			}
 		}
-		
+
 		if ( is_wp_error( $new_post_id ) ) {
 			throw new Exception( esc_html( $new_post_id->get_error_message() ) );
 		}
