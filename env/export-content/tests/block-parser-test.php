@@ -89,6 +89,26 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:paragraph {\"placeholder\":\"Type / to add a block\"} -->\n<p>Hello World</p>\n<!-- /wp:paragraph -->",
 				[ 'Hello World' ],
 			],
+			[
+				// Paragraph with notranslate class — strings should not be extracted.
+				"<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
+				[],
+			],
+			[
+				// Block with notranslate among other classes — strings should not be extracted.
+				"<!-- wp:paragraph {\"className\":\"is-style-serif notranslate\"} -->\n<p>5,425+</p>\n<!-- /wp:paragraph -->",
+				[],
+			],
+			[
+				// Table with notranslate class — all strings should be skipped.
+				"<!-- wp:table {\"className\":\"notranslate\"} -->\n<figure class=\"wp-block-table notranslate\"><table><thead><tr><th>Cookie</th></tr></thead><tbody><tr><th>devicePixelRatio</th></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				[],
+			],
+			[
+				// Group with notranslate class — inner blocks should also be skipped.
+				"<!-- wp:group {\"className\":\"notranslate\"} -->\n<div class=\"wp-block-group notranslate\"><!-- wp:paragraph -->\n<p>Not translated</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->",
+				[],
+			],
 		];
 	}
 
@@ -173,6 +193,16 @@ class BlockParser_Test extends WP_UnitTestCase {
 				// Paragraph with HTML and &amp; — _e with decoded ampersand.
 				"<!-- wp:paragraph -->\n<p>Read the <a href=\"https://example.com\">Terms &amp; Conditions</a>.</p>\n<!-- /wp:paragraph -->",
 				"<!-- wp:paragraph -->\n<p><?php _e( 'Read the <a href=\"https://example.com\">Terms & Conditions</a>.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Paragraph with notranslate class — content stays as plain HTML.
+				"<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Mixed: one paragraph translatable, one notranslate.
+				"<!-- wp:paragraph -->\n<p>Completed events</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( 'Completed events', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
 			],
 		];
 	}
