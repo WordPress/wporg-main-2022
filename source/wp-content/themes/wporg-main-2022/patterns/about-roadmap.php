@@ -50,7 +50,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php esc_html_e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php esc_html_e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php esc_html_e( '7.0', 'wporg' ); ?></td><td><?php esc_html_e( 'April 9, 2026', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.1', 'wporg' ); ?></td><td><?php esc_html_e( 'August 19, 2026', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.2', 'wporg' ); ?></td><td><?php esc_html_e( 'December 10, 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong><?php esc_html_e( 'Version', 'wporg' ); ?></strong></th><th><strong><?php esc_html_e( 'Planned', 'wporg' ); ?></strong></th></tr></thead><tbody><tr><td><?php esc_html_e( '7.0', 'wporg' ); ?></td><td><s><?php esc_html_e( 'April 9, 2026', 'wporg' ); ?></s><?php esc_html_e( ' Delayed', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.1', 'wporg' ); ?></td><td><?php esc_html_e( 'August 19, 2026', 'wporg' ); ?></td></tr><tr><td><?php esc_html_e( '7.2', 'wporg' ); ?></td><td><?php esc_html_e( 'December 10, 2026', 'wporg' ); ?></td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
