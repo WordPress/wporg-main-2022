@@ -48,16 +48,24 @@ function enqueue_assets() {
 	wp_style_add_data( 'wporg-main-2022-style', 'rtl', 'replace' );
 
 	if ( is_page( 'stats' ) ) {
-		// phpcs:ignore WordPress.WP.EnqueuedResourceParameters
-		wp_enqueue_script( 'google-charts', 'https://www.gstatic.com/charts/loader.js', [], null, true );
-		wp_enqueue_script( 'wporg-page-stats', get_theme_file_uri( '/js/page-stats.js' ), [ 'jquery', 'google-charts' ], filemtime( __DIR__ . '/js/page-stats.js' ), true );
+		wp_enqueue_script(
+			'chartjs',
+			get_theme_file_uri( '/js/vendor/chart.umd.min.js' ),
+			[],
+			'4.4.1',
+			true
+		);
+		wp_enqueue_script( 'wporg-page-stats', get_theme_file_uri( '/js/page-stats.js' ), [ 'jquery', 'chartjs' ], filemtime( __DIR__ . '/js/page-stats.js' ), true );
 		wp_localize_script(
 			'wporg-page-stats',
 			'wporgPageStats',
 			[
-				'trunk'       => number_format( WP_CORE_STABLE_BRANCH + 0.1, 1 ), /* trunk */
-				'viewAsChart' => __( 'View as Chart', 'wporg' ),
-				'viewAsTable' => __( 'View as Table', 'wporg' ),
+				'viewAsTable' => __( 'View as table', 'wporg' ),
+				'hideTable'   => __( 'Hide table', 'wporg' ),
+				'version'     => __( 'Version', 'wporg' ),
+				'locale'      => __( 'Locale', 'wporg' ),
+				'usage'       => __( 'Usage', 'wporg' ),
+				'older'       => __( 'Older', 'wporg' ),
 			]
 		);
 	}

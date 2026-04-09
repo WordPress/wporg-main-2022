@@ -298,36 +298,257 @@ $wporg-about-breakpoint-max: 1920px;
 	position: relative;
 }
 
-.wporg-about-stats-section {
+// Override the global `.is-layout-constrained > *` 680px cap for all
+// direct children of the stats page container so the h1, intro
+// paragraph, and chart wrappers all use the full 1200px width.
+.wporg-about-stats-page.wp-block-group > * {
+	max-width: 1200px;
+}
+
+// Outer wrapper holds the heading (above the card border) and the card.
+// Bump specificity so we beat the global `.is-layout-constrained > *`
+// max-width: 680px rule that ships with WordPress core's layout system.
+.wp-block-group.wporg-about-stats-wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin-block-end: var(--wp--preset--spacing--40, 32px);
+
+	> h2 {
+		max-width: none;
+		margin-inline-start: 0;
+		margin-block-start: 0;
+		margin-block-end: var(--wp--preset--spacing--20, 16px);
+	}
+}
+
+// The card itself sits inside the wrapper, below the heading.
+.wp-block-group.wporg-about-stats-section {
+	max-width: none;
+	width: 100%;
+
+	border: 1px solid var(--wp--preset--color--light-grey-1, #d9d9d9);
+	border-radius: 4px;
+	padding: var(--wp--preset--spacing--30, 24px) var(--wp--preset--spacing--40, 32px);
+
 	.wporg-stats-chart {
-		height: 450px;
+		display: block;
+		min-height: 360px;
 
 		&.loading::before {
 			content: "";
 			display: block;
 			height: 20px;
 			width: 20px;
+			margin: 160px auto;
 			transform: translateZ(0);
 			background: url(https://s.w.org/wp-includes/images/spinner-2x.gif) no-repeat 50%;
 			background-size: 100%;
 		}
+	}
 
-		.google-visualization-table {
-			flex: 1;
+	// Side-by-side layout: doughnut on the left, scrolling legend on the right.
+	.wporg-stats-chart__body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--wp--preset--spacing--40, 32px);
+	}
 
-			table {
-				width: 100%;
-			}
+	.wporg-stats-chart__canvas-wrap {
+		position: relative;
+		flex: 0 0 auto;
+		width: min(360px, 100%);
+		aspect-ratio: 1 / 1;
+
+		canvas {
+			display: block;
+			width: 100% !important;
+			height: 100% !important;
 		}
 	}
 
+	// Center hover overlay (white circle inside the donut surfacing details).
+	.wporg-stats-chart__center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		text-align: center;
+		color: var(--wp--preset--color--charcoal-1, #1e1e1e);
+		font-size: 14px;
+		line-height: 1.3;
+		max-width: 60%;
+
+		.wporg-stats-chart__center-value {
+			display: block;
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		.wporg-stats-chart__center-label {
+			display: block;
+			font-size: 13px;
+			color: var(--wp--preset--color--charcoal-4, #656a71);
+			word-break: break-word;
+		}
+	}
+
+	.wporg-stats-chart__legend {
+		flex: 1 1 320px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		// CSS multi-column layout flows top-to-bottom within each column
+		// before wrapping to the next, which is what the design calls for
+		// (1, 2 in column 1; 3, 4 in column 2; etc.). Capped at 3 columns
+		// so charts with many entries (database, locales) grow taller
+		// instead of bleeding into a 4th/5th column.
+		column-count: 3;
+		column-width: 180px;
+		column-gap: 20px;
+		font-size: 13px;
+	}
+
+	.wporg-stats-chart__legend-item {
+		display: grid;
+		grid-template-columns: 14px 1fr auto;
+		align-items: center;
+		gap: 8px;
+		padding: 4px 6px;
+		border-radius: 3px;
+		transition: background-color 0.15s ease;
+		// Stop a row from being split across columns.
+		break-inside: avoid;
+		page-break-inside: avoid;
+
+		&.is-active {
+			background-color: var(--wp--preset--color--light-grey-2, #f6f6f6);
+		}
+	}
+
+	.wporg-stats-chart__legend-swatch {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		border-radius: 2px;
+		border: 1px solid rgba(0, 0, 0, 0.08);
+	}
+
+	.wporg-stats-chart__legend-label {
+		color: var(--wp--preset--color--charcoal-1, #1e1e1e);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.wporg-stats-chart__legend-percent {
+		color: var(--wp--preset--color--charcoal-4, #656a71);
+		font-variant-numeric: tabular-nums;
+	}
+
+	// Accordion table panel — expands beneath the chart inside the same card.
+	.wporg-stats-chart__table {
+		margin-block-start: var(--wp--preset--spacing--30, 24px);
+		border-top: 1px solid var(--wp--preset--color--light-grey-1, #d9d9d9);
+		padding-block-start: var(--wp--preset--spacing--30, 24px);
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 14px;
+		}
+
+		thead th {
+			text-align: start;
+			font-weight: 600;
+			padding: 8px 12px;
+			border-bottom: 1px solid var(--wp--preset--color--light-grey-1, #d9d9d9);
+			color: var(--wp--preset--color--charcoal-3, #40464d);
+			cursor: pointer;
+			user-select: none;
+			white-space: nowrap;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 0;
+				height: 0;
+				margin-inline-start: 6px;
+				vertical-align: middle;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 5px solid transparent;
+			}
+
+			&[aria-sort="ascending"]::after {
+				border-top: 0;
+				border-bottom: 5px solid currentColor;
+			}
+
+			&[aria-sort="descending"]::after {
+				border-top: 5px solid currentColor;
+			}
+		}
+
+		tbody th,
+		tbody td {
+			padding: 8px 12px;
+			border-bottom: 1px solid var(--wp--preset--color--light-grey-2, #f6f6f6);
+			font-weight: 400;
+			text-align: start;
+		}
+
+		tbody tr:nth-child(even) {
+			background-color: var(--wp--preset--color--light-grey-2, #f6f6f6);
+		}
+
+		.is-numeric {
+			text-align: end;
+			font-variant-numeric: tabular-nums;
+			color: var(--wp--preset--color--charcoal-3, #40464d);
+		}
+
+		.wporg-stats-chart__table-swatch-cell {
+			width: 24px;
+			padding-inline-end: 0;
+		}
+	}
+
+	// Accordion-style toggle for the table reveal.
 	.swap-table {
-		vertical-align: unset;
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		background: transparent;
+		border: 0;
+		padding: 8px 0;
+		margin-block-start: var(--wp--preset--spacing--20, 16px);
+		color: var(--wp--preset--color--blueberry-1, #3858e9);
+		font: inherit;
+		cursor: pointer;
 		text-decoration: none;
 
 		&:hover,
 		&:focus {
 			text-decoration: underline;
+		}
+
+		.swap-table__icon::after {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-right: 2px solid currentColor;
+			border-bottom: 2px solid currentColor;
+			transform: rotate(45deg);
+			transition: transform 0.2s ease;
+			margin-block-end: 3px;
+		}
+
+		&[aria-expanded="true"] .swap-table__icon::after {
+			transform: rotate(-135deg);
+			margin-block-end: -3px;
 		}
 	}
 }
