@@ -298,13 +298,6 @@ $wporg-about-breakpoint-max: 1920px;
 	position: relative;
 }
 
-// Override the global `.is-layout-constrained > *` 680px cap for all
-// direct children of the stats page container so the h1, intro
-// paragraph, and chart wrappers all use the full 1200px width.
-.wporg-about-stats-page.wp-block-group > * {
-	max-width: 1200px;
-}
-
 // Outer wrapper holds the heading (above the card border) and the card.
 // Bump specificity so we beat the global `.is-layout-constrained > *`
 // max-width: 680px rule that ships with WordPress core's layout system.
