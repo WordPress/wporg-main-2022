@@ -109,6 +109,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:group {\"className\":\"notranslate\"} -->\n<div class=\"wp-block-group notranslate\"><!-- wp:paragraph -->\n<p>Not translated</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->",
 				[],
 			],
+			[
+				// Table with notranslate on inner HTML elements (not block attributes) — those strings should be skipped.
+				"<!-- wp:table {\"align\":\"wide\",\"className\":\"is-style-stripes\"} -->\n<figure class=\"wp-block-table alignwide is-style-stripes\"><table><thead><tr><th>Cookie</th><th>Duration</th></tr></thead><tbody><tr><th class=\"notranslate\">devicePixelRatio</th><td>Browser default</td></tr><tr><th class=\"notranslate\">_ga</th><td>2 years</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				[ 'Cookie', 'Duration', 'Browser default', '2 years' ],
+			],
 		];
 	}
 
@@ -203,6 +208,11 @@ class BlockParser_Test extends WP_UnitTestCase {
 				// Mixed: one paragraph translatable, one notranslate.
 				"<!-- wp:paragraph -->\n<p>Completed events</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
 				"<!-- wp:paragraph -->\n<p><?php esc_html_e( 'Completed events', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Table with notranslate on inner HTML elements — cookie names stay as plain text.
+				"<!-- wp:table {\"align\":\"wide\"} -->\n<figure class=\"wp-block-table alignwide\"><table><thead><tr><th>Cookie</th><th>Duration</th></tr></thead><tbody><tr><th class=\"notranslate\">devicePixelRatio</th><td>Browser default</td></tr></tbody></table></figure>\n<!-- /wp:table -->",
+				"<!-- wp:table {\"align\":\"wide\"} -->\n<figure class=\"wp-block-table alignwide\"><table><thead><tr><th><?php esc_html_e( 'Cookie', 'wporg' ); ?></th><th><?php esc_html_e( 'Duration', 'wporg' ); ?></th></tr></thead><tbody><tr><th class=\"notranslate\">devicePixelRatio</th><td><?php esc_html_e( 'Browser default', 'wporg' ); ?></td></tr></tbody></table></figure>\n<!-- /wp:table -->",
 			],
 		];
 	}

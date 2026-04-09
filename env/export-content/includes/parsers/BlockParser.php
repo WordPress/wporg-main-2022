@@ -105,7 +105,15 @@ trait TextNodesXPath {
 		'//*/@title', // title="" text.
 	];
 
+	/**
+	 * XPath predicate to exclude nodes inside elements with the 'notranslate' class.
+	 */
+	private $notranslate_exclude = '[not(ancestor-or-self::*[contains(concat(" ", @class, " "), " notranslate ")])]';
+
 	protected function text_nodes_xpath_query() {
-		return implode( ' | ', $this->xpaths );
+		return implode( ' | ', array_map(
+			fn( $xpath ) => $xpath . $this->notranslate_exclude,
+			$this->xpaths
+		) );
 	}
 }
