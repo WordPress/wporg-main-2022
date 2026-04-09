@@ -127,6 +127,11 @@ class BlockParser {
 	}
 
 	public function block_parser_to_strings( array $block ) : array {
+		// Skip blocks marked with 'notranslate' class — their content stays as plain HTML.
+		if ( ! empty( $block['attrs']['className'] ) && preg_match( '/\bnotranslate\b/', $block['attrs']['className'] ) ) {
+			return [];
+		}
+
 		$parser = $this->parsers[ $block['blockName'] ] ?? $this->fallback;
 
 		$strings = $parser->to_strings( $block );
