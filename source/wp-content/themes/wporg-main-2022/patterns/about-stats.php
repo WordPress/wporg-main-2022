@@ -1,13 +1,13 @@
 <?php
 /**
- * Title: Stats
+ * Title: Statistics
  * Slug: wporg-main-2022/stats
  * Inserter: no
  */
 
 ?>
-<!-- wp:group {"className":"alignfull"} -->
-<div class="wp-block-group alignfull"><!-- wp:heading {"level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+<!-- wp:group {"className":"alignwide"} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":1,"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
 <h1 class="wp-block-heading alignwide" style="margin-bottom:var(--wp--preset--spacing--30)"><?php esc_html_e( 'Statistics', 'wporg' ); ?></h1>
 <!-- /wp:heading -->
 
