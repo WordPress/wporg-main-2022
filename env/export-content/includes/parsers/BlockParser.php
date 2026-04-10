@@ -111,9 +111,11 @@ trait TextNodesXPath {
 	private $notranslate_exclude = '[not(ancestor-or-self::*[contains(concat(" ", @class, " "), " notranslate ")])]';
 
 	protected function text_nodes_xpath_query() {
-		return implode( ' | ', array_map(
+		$xpaths = array_map(
 			fn( $xpath ) => $xpath . $this->notranslate_exclude,
 			$this->xpaths
-		) );
+		);
+
+		return implode( ' | ', $xpaths );
 	}
 }
