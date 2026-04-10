@@ -18,11 +18,7 @@
 	/*
 	 * The api.wordpress.org/stats/* endpoints are responsible for filtering
 	 * long-EOL versions out and rolling them into an "Others" bucket — the
-	 * client just sorts and renders whatever the API returns. Recommended
-	 * server-side cutoffs (so this page only shows currently-supported runtimes):
-	 *   - /stats/wordpress/1.0/ : drop versions below 4.0
-	 *   - /stats/php/1.0/       : drop versions below 7.0
-	 *   - /stats/mysql/1.0/     : drop MySQL < 5.6 and MariaDB < 10.4
+	 * client just sorts and renders whatever the API returns.
 	 */
 	const charts = [
 		{
@@ -30,7 +26,7 @@
 			colName: i18n.version,
 			palette: palettes.blueberry,
 			sort: 'version-desc',
-			url: 'https://api.wordpress.org/stats/wordpress/1.0/',
+			url: 'https://api.wordpress.org/stats/wordpress/1.1/',
 			data: false,
 		},
 		{
@@ -38,7 +34,7 @@
 			colName: i18n.version,
 			palette: palettes.pomegrade,
 			sort: 'version-desc',
-			url: 'https://api.wordpress.org/stats/php/1.0/',
+			url: 'https://api.wordpress.org/stats/php/1.1/',
 			data: false,
 		},
 		{
@@ -46,7 +42,7 @@
 			colName: i18n.version,
 			palette: palettes.acidGreen,
 			sort: 'version-desc',
-			url: 'https://api.wordpress.org/stats/mysql/1.0/',
+			url: 'https://api.wordpress.org/stats/mysql/1.1/',
 			data: false,
 		},
 		{
