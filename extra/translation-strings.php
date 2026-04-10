@@ -28,7 +28,7 @@ __( 'Remembers', 'wporg' );
 __( 'Graphics &amp; Logos', 'wporg' );
 __( 'Etiquette', 'wporg' );
 __( 'Philosophy', 'wporg' );
-__( 'Stats', 'wporg' );
+__( 'Statistics', 'wporg' );
 __( 'Privacy', 'wporg' );
 __( 'Accessibility', 'wporg' );
 __( 'License', 'wporg' );
