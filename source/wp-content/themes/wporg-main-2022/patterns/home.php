@@ -6,41 +6,21 @@
  */
 
 ?>
-<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
-<h1 class="wp-block-heading" style="font-size:70px"><?php esc_html_e( 'Meet WordPress', 'wporg' ); ?></h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":"2.5em"} -->
-<div style="height:2.5em" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}}} -->
-<div class="wp-block-column is-vertically-aligned-center has-link-color" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|70"}},"border":{"top":{"width":"0px","style":"none"},"right":{"color":"#d862ff","width":"16px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"#d862ff","width":"16px"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/04/wc_asia-during-pattern.png","id":50545,"source":"file","title":"wc_asia-during-pattern"},"backgroundSize":"cover"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-style:none;border-top-width:0px;border-right-color:#d862ff;border-right-width:16px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#d862ff;border-left-width:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:shortcode -->
-<!-- wp:embed {"url":"https://www.youtube.com/playlist?list=PL1pJFUVKQ7ER52veMr5wJiv7xiLRMpx1l","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/playlist?list=PL1pJFUVKQ7ER52veMr5wJiv7xiLRMpx1l
-</div></figure>
-<!-- /wp:embed -->
-<!-- /wp:shortcode -->
-
-<!-- wp:paragraph -->
-<p><?php esc_html_e( 'Watch the WordCamp Asia 2026 sessions live right here. Starting April 9-11.', 'wporg' ); ?></p>
+<!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"flex","flexWrap":"nowrap"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2026-05-03T22:00:00"}],"hideOnSchedules":false}}}]}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"charcoal-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group has-charcoal-2-background-color has-background" style="min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"small"} -->
+<p class="has-light-grey-2-color has-text-color has-link-color has-small-font-size"><?php _e( 'Relive WordCamp Asia 2026 — <a href="https://wordpress.org/news/2026/04/celebrating-wcasia-2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noreferrer noopener">Read the recap</a> ↗', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":false,"start":"","end":""}]}}}],"hideBlock":true}} -->
+<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"color":{"background":"#856ec3"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group has-background" style="background-color:#856ec3;min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":50259,"width":"52px","height":"auto","aspectRatio":"1.0307178551974043","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/WCA26-Icon-Purple-White.png" alt="" class="wp-image-50259" style="aspect-ratio:1.0307178551974043;width:52px;height:auto" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":false,"start":"","end":""}]}}}],"hideBlock":false}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
