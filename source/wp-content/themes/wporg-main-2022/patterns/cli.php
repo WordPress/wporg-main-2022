@@ -20,7 +20,7 @@
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.org/cli/commands/cli/', 'wporg' ) ); ?>"><?php esc_html_e( 'Install WP-CLI', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/cli/handbook/guides/installing/', 'wporg' ) ); ?>"><?php esc_html_e( 'Install WP-CLI', 'wporg' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
@@ -57,11 +57,11 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.org/cli/commands/cli/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get started with WP-CLI', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/cli/handbook/guides/quick-start/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get started with WP-CLI', 'wporg' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline-on-dark"} -->
-<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.org/cli/commands/', 'wporg' ) ); ?>"><?php esc_html_e( 'Read the handbook', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline-on-dark"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/cli/handbook/', 'wporg' ) ); ?>"><?php esc_html_e( 'Read the handbook', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
