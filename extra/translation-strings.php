@@ -9,6 +9,7 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
+__( 'WP-CLI', 'wporg' );
 __( 'WordPress 6.9', 'wporg' );
 __( 'WordPress Credits', 'wporg' );
 __( 'WordPress Campus Connect', 'wporg' );
