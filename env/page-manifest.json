@@ -204,8 +204,8 @@
 		"template": "page-data-liberation-guides.html"
 	},
 	{
-		"slug": "wp-cli",
-		"pattern": "wp-cli.php",
-		"template": "page-wp-cli.html"
+		"slug": "cli",
+		"pattern": "cli.php",
+		"template": "page-cli.html"
 	}
 ]

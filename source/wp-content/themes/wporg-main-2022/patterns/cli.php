@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: WP-CLI
- * Slug: wporg-main-2022/wp-cli
+ * Slug: wporg-main-2022/cli
  * Inserter: no
  */
 
