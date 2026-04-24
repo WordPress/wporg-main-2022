@@ -36,7 +36,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'They can be formed by campuses that are completely new to WordPress initiatives, as well as by those that have already hosted a <a href="https://wordpress.org/education/campusconnect/" target="_blank" rel="noreferrer noopener">WordPress Campus Connect</a> event or participated in WordPress Credits.', 'wporg' ); ?></p>
+<p><?php _e( 'They can be formed by campuses that are completely new to WordPress initiatives, as well as by those that have already hosted a <a href="https://wordpress.org/education/campus-connect/" target="_blank" rel="noreferrer noopener">WordPress Campus Connect</a> event or participated in <a href="https://wordpress.org/education/credits/" target="_blank" rel="noreferrer noopener">WordPress Credits</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
