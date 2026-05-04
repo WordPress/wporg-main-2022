@@ -12,50 +12,86 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'To run WordPress, it’s recommended your host supports:', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'To run WordPress, we recommend your host supports the following — a safe, modern baseline for performance and security.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php
-/* translators: [recommended_php] is a shortcode and should not be translated. */
-_e( '<a href="https://www.php.net/">PHP</a> version [recommended_php] or greater.', 'wporg' );
-?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php
-/* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
-_e( '<a href="https://mariadb.org/">MariaDB</a> version [recommended_mariadb] or greater OR <a href="https://www.mysql.com/">MySQL</a> version [recommended_mysql] or greater.', 'wporg' );
-?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">HTTPS</a> support.', 'wporg' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:columns {"verticalAlignment":"stretch","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":{"left":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-stretch" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"verticalAlignment":"stretch","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"8px","top":{"color":"var:preset|color|blueberry-1","width":"3px"}}},"backgroundColor":"light-grey-2","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-light-grey-2-background-color has-background" style="border-radius:8px;border-top-color:var(--wp--preset--color--blueberry-1);border-top-width:3px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+<h3 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'PHP', 'wporg' ); ?></h3>
+<!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'That’s really it. <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> is recommended as the most robust and featureful server for running WordPress, but any server that supports PHP and MySQL will do. That said, for the smoothest experience in setting up—and running—your site, <a href="https://wordpress.org/hosting/">each host on the hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
+<p><?php
+/* translators: [recommended_php] is a shortcode and should not be translated. */
+esc_html_e( 'Version [recommended_php] or greater.', 'wporg' );
+?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><?php _e( 'Powers WordPress on your server. <a href="https://www.php.net/">Learn more →</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"8px","top":{"color":"var:preset|color|blueberry-1","width":"3px"}}},"backgroundColor":"light-grey-2","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-light-grey-2-background-color has-background" style="border-radius:8px;border-top-color:var(--wp--preset--color--blueberry-1);border-top-width:3px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+<h3 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Database', 'wporg' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><?php
+/* translators: [recommended_mariadb], [recommended_mysql] are shortcodes and should not be translated. */
+esc_html_e( 'MariaDB [recommended_mariadb]+ or MySQL [recommended_mysql]+.', 'wporg' );
+?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><?php _e( 'Stores your content and settings. <a href="https://mariadb.org/">MariaDB</a> · <a href="https://www.mysql.com/">MySQL</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"}},"border":{"radius":"8px","top":{"color":"var:preset|color|blueberry-1","width":"3px"}}},"backgroundColor":"light-grey-2","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-light-grey-2-background-color has-background" style="border-radius:8px;border-top-color:var(--wp--preset--color--blueberry-1);border-top-width:3px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+<h3 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'HTTPS', 'wporg' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Required for every install.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><?php _e( 'Encrypts your site’s connection. <a href="https://wordpress.org/news/2016/12/moving-toward-ssl/">Why HTTPS matters →</a>', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:paragraph -->
+<p><?php _e( 'That’s really it. <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">Nginx</a> is recommended as the most robust and featureful server for running WordPress, but any server that supports PHP and MySQL will do. For the smoothest experience setting up — and running — your site, <a href="https://wordpress.org/hosting/">each host on the hosting page</a> supports the above and more with no problems.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php _e( 'For detailed PHP extension recommendations, see the <a href="https://make.wordpress.org/hosting/handbook/handbook/server-environment/">Hosting Handbook</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|40","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40"},"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"radius":"8px"}},"backgroundColor":"lemon-3","textColor":"charcoal-1","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-charcoal-1-color has-lemon-3-background-color has-text-color has-background" style="border-radius:8px;margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"level":4,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+<h4 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Running on legacy versions?', 'wporg' ); ?></h4>
+<!-- /wp:heading -->
+
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [minimum_php] is a shortcode and should not be translated. */
-_e( 'Note: If you are in a legacy environment where you only have older PHP or MySQL versions, WordPress also works with PHP [minimum_php]+ and MySQL 5.5.5+. However, these versions have reached their official End Of Life and <strong>may expose your site to security vulnerabilities</strong>.', 'wporg' );
+_e( 'WordPress will still run on PHP [minimum_php]+ and MySQL 5.5.5+, but those versions have reached official End Of Life and <strong>may expose your site to security vulnerabilities</strong>. Upgrading is strongly recommended.', 'wporg' );
 ?></p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php esc_html_e( 'Ask your host to run WordPress', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'If you’re unsure whether or not your host can already run WordPress, here’s a request you can copy and paste to send them!', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'If you’re unsure whether your host can already run WordPress, here’s a request you can copy and send them:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote {"backgroundColor":"white","textColor":"charcoal-4","fontSize":"normal","fontFamily":"inter"} -->
@@ -98,5 +134,15 @@ esc_html_e( 'MariaDB version [recommended_mariadb] or greater OR MySQL version [
 
 <!-- wp:paragraph -->
 <p><?php esc_html_e( 'Hosting is more secure when PHP applications, like WordPress, are run using your account’s username instead of the server’s default shared username. Ask your potential host what steps they take to ensure the security of your account.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--40)"><!-- wp:button {"backgroundColor":"blueberry-1","textColor":"white"} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-blueberry-1-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Download WordPress', 'wporg' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/hosting/', 'wporg' ) ); ?>"><?php esc_html_e( 'Browse recommended hosts', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
