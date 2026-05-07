@@ -179,6 +179,10 @@ esc_html_e( 'Recommend PHP [recommended_php] or greater and MySQL version [recom
 
 <!-- wp:list-item -->
 <li><?php _e( '<a href="https://wordpress.org/support/forum/installation/">User forums ↗</a>', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php _e( '<a href="https://events.wordpress.org/">Local community ↗</a>', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
