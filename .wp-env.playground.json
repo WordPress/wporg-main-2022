@@ -1,0 +1,19 @@
+{
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": "/tmp/wp-errors.log",
+		"WP_ENVIRONMENT_TYPE": "local",
+		"WPORG_SANDBOXED": true,
+		"WP_MARKET_SHARE": 43,
+		"WP_CORE_STABLE_BRANCH": "6.6",
+		"WP_CORE_LATEST_RELEASE": "6.6"
+	},
+	"themes": [
+		"./source/wp-content/themes/wporg-main-2022"
+	],
+	"mappings": {
+		"env": "./env",
+		"wp-content/mu-plugins": "./env/playground-mu-plugins"
+	},
+	"testsEnvironment": false
+}
