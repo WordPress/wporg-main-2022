@@ -69,7 +69,7 @@
 <div class="wp-block-group alignfull"><!-- wp:columns {"verticalAlignment":"center","align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-columns alignfull are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif notranslate","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
-<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">31</p>
+<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">42</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
@@ -79,7 +79,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif notranslate","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
-<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">62</p>
+<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">71</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
@@ -89,7 +89,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"className":"is-style-serif notranslate","style":{"typography":{"textAlign":"center","fontSize":"3rem"}}} -->
-<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">5,425+</p>
+<p class="has-text-align-center is-style-serif notranslate" style="font-size:3rem">5,586+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"0.9rem","textAlign":"center"}}} -->
