@@ -17,6 +17,7 @@ jobs:
   translation-strings:
     if: github.repository_owner == 'WordPress'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write # Required to clone the repo and push to trunk.
     steps:

@@ -23,6 +23,7 @@ jobs:
   content-update:
     if: github.repository_owner == 'WordPress'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write      # Required to clone the repo and push the branches.
       pull-requests: write # Required to create a PR and comment on it.
