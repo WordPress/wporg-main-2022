@@ -6,16 +6,16 @@
  */
 
 ?>
-<!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"flex","flexWrap":"nowrap"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2026-05-03T22:00:00"}],"hideOnSchedules":false}}}]}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"charcoal-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-charcoal-2-background-color has-background" style="min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"small"} -->
-<p class="has-light-grey-2-color has-text-color has-link-color has-small-font-size"><?php _e( 'Relive WordCamp Asia 2026 — <a href="https://wordpress.org/news/2026/04/celebrating-wcasia-2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noreferrer noopener">Read the recap</a> ↗', 'wporg' ); ?></p>
+<!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"light-grey-2","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-05-14T01:00:00","end":"2026-06-03T22:00:00"}],"hideOnSchedules":false}}}]}} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|80","right":"var:preset|spacing|80"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--80)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1","fontSize":"small"} -->
+<p class="has-charcoal-1-color has-text-color has-link-color has-small-font-size"><?php _e( 'WordCamp Europe 2026 is almost here. <a href="https://europe.wordcamp.org/2026/" data-type="link" data-id="https://asia.wordcamp.org/2026/" target="_blank" rel="noopener">Discover what’s happening in Kraków this June</a>. ↗', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"92px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"color":{"background":"#856ec3"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-background" style="background-color:#856ec3;min-height:92px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":50259,"width":"52px","height":"auto","aspectRatio":"1.0307178551974043","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/WCA26-Icon-Purple-White.png" alt="" class="wp-image-50259" style="aspect-ratio:1.0307178551974043;width:52px;height:auto" /></figure>
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","orientation":"horizontal","verticalAlignment":"stretch"}} -->
+<div class="wp-block-group" style="min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":51256,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"400px"}}} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/05/dotorg_banner_wceu-6.png" alt="" class="wp-image-51256" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -294,7 +294,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth. ', 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php esc_html_e( 'Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.&nbsp;', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
