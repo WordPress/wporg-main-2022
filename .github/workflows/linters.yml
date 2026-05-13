@@ -6,9 +6,16 @@ on:
     branches: [trunk]
   pull_request:
 
+# Disable permissions for all available scopes by default.
+# Any needed permissions should be configured at the job level.
+permissions: {}
+
 jobs:
   lint:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read # Required to clone the repo.
     steps:
       - name: Checkout repository
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
