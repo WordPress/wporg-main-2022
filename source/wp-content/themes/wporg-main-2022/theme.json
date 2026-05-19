@@ -42,5 +42,47 @@
 				}
 			}
 		}
-	}
+	},
+	"customTemplates": [
+		{
+			"name": "template-default",
+			"title": "Default (header & footer)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-white",
+			"title": "White (white header & footer)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-about-home",
+			"title": "About home (with About nav)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-about",
+			"title": "About subpage (white, with About subpage nav)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-privacy",
+			"title": "Privacy (white, with Privacy nav)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-download",
+			"title": "Download (with Download nav)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-education-home",
+			"title": "Education home (white-on-black, with Education nav)",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "template-education",
+			"title": "Education subpage (white-on-black, with Education subpage nav)",
+			"postTypes": [ "page" ]
+		}
+	]
 }
