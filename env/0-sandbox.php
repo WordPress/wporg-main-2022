@@ -27,3 +27,23 @@ if ( ! defined( 'WP_CORE_STABLE_BRANCH' ) || ! defined( 'WP_CORE_LATEST_RELEASE'
 
 require_once WPMU_PLUGIN_DIR . '/pub/servehappy-config.php';
 require_once WPMU_PLUGIN_DIR . '/wporg-mu-plugins/mu-plugins/loader.php';
+
+/*
+ * Rewrite production wordpress.org URLs to the local site URL so links in
+ * imported content navigate to the local copy instead of leaving to prod.
+ * Subdomains (make.wordpress.org, developer.wordpress.org, etc.) are left
+ * intact, since those are distinct sites.
+ */
+add_action(
+	'template_redirect',
+	function () {
+		if ( is_admin() || wp_doing_ajax() || wp_is_json_request() ) {
+			return;
+		}
+		ob_start(
+			function ( $buffer ) {
+				return preg_replace( '#https?://wordpress\.org#', home_url(), $buffer );
+			}
+		);
+	}
+);
