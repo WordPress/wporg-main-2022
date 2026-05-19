@@ -148,6 +148,11 @@
 		"template": "page-6-9.html"
 	},
 	{
+		"slug": "7-0",
+		"pattern": "download-releases-7-0.php",
+		"template": "page-7-0.html"
+	},
+	{
 		"slug": "source",
 		"pattern": "download-source.php",
 		"template": "page-source.html"
