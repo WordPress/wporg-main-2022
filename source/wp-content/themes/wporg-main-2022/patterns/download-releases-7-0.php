@@ -340,7 +340,7 @@
 
 <!-- wp:details {"align":"wide","fontSize":"large"} -->
 <details class="wp-block-details alignwide has-large-font-size"><summary><?php esc_html_e( 'View all contributors', 'wporg' ); ?></summary><!-- wp:shortcode -->
-[wpcredits 6.9 class="has-small-font-size"]
+[wpcredits 7.0 class="has-small-font-size"]
 <!-- /wp:shortcode --></details>
 <!-- /wp:details --></div>
 <!-- /wp:group --></div>
