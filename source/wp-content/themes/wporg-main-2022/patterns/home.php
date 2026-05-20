@@ -44,7 +44,7 @@
 <div class="wp-block-wporg-language-suggest alignfull has-background" style="background-color:#ebebeb"></div>
 <!-- /wp:wporg/language-suggest -->
 
-<!-- wp:group {"metadata":{"name":"Core Features 7.0","blockVisibility":false},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
+<!-- wp:group {"metadata":{"name":"Core Features 7.0"},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48979,"sizeSlug":"full","linkDestination":"none"} -->
@@ -125,7 +125,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Core Features 6.9"},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-12-02T21:00:00","end":""}]}}}]}} -->
+<!-- wp:group {"metadata":{"name":"Core Features 6.9","blockVisibility":false},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2025-12-02T21:00:00","end":""}]}}}]}} -->
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48979,"sizeSlug":"full","linkDestination":"none"} -->
@@ -204,84 +204,6 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":48980,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-new.png" alt="" class="wp-image-48980" /></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Core Features 6.8","blockVisibility":false},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2025-12-02T21:00:00"}]}}}]}} -->
-<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":43512,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/design-visual-6-7.png" alt="<?php esc_attr_e( 'Illustration of various blocks, Paragraph and Cover.', 'wporg' ); ?>" class="wp-image-43512" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Design</strong>', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Create any website with flexible design tools and the power of <a href="https://wordpress.org/blocks/" data-type="page" data-id="20359">blocks</a>. Start with a blank canvas or choose a <a href="https://wordpress.org/themes/" data-type="link" data-id="https://wordpress.org/themes/">theme</a>. Customize every detail—no code needed.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":43510,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/build-visual-6-7.png" alt="<?php esc_attr_e( 'Illustration of an Image block with a block toolbar.', 'wporg' ); ?>" class="wp-image-43510" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build</strong>', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'See how your site will look in real time, even as you add, edit, and rearrange content—with intuitive editing and integrated features to manage it all.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/gutenberg/">Try the Block Editor</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:image {"id":43516,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/extend-visual-6-7.png" alt="<?php esc_attr_e( 'Screenshot of the Twenty Twenty-Five theme.', 'wporg' ); ?>" class="wp-image-43516" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Extend</strong>', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( 'Make your site do whatever you need it to. Add a store, analytics, newsletter, social media integration; you’re in control with an extensive library of <a href="https://wordpress.org/plugins/" data-type="link" data-id="https://wordpress.org/plugins/">plugins</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"60px"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'And let the newly structured Style Book help you get the best view. Easier to use in Block themes, it’s also a great way to see what you’re building in certain Classic themes. Do It all faster with improvements under the hood, and more securely than ever with stronger password hashing.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/download/releases/6-8/', 'wporg' ) ); ?>"><?php esc_html_e( 'Discover WordPress 6.8', 'wporg' ); ?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":43509,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2024/10/whats-new-visual-6-7.png" alt="" class="wp-image-43509" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
