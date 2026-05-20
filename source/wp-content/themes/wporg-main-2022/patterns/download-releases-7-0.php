@@ -323,7 +323,7 @@
 <div class="wp-block-columns alignwide" style="padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:group {"align":"wide","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"fontSize":"heading-1"} -->
-<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>N contributors</em> who made this release', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-1-font-size"><?php _e( 'Thanks to the over <em>750 contributors</em> who made this release', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"16px","selfStretch":"fixed"}}} -->
