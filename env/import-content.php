@@ -87,6 +87,13 @@ function import_rest_to_posts( $rest_url ) {
 	foreach ( $data as $post ) {
 		echo "Got {$post->type} {$post->id} {$post->slug}\n";
 
+		// The live site hides unfinished pages behind the page-in-progress template;
+		// locally we want to see the real content, so fall back to the default template.
+		$template = $post->template ?? '';
+		if ( 'page-in-progress' === $template ) {
+			$template = '';
+		}
+
 		// Surely there's a neater way to do this.
 		$new_post = array(
 			'import_id' => $post->id,
@@ -100,7 +107,7 @@ function import_rest_to_posts( $rest_url ) {
 			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
 			'post_parent' => $post->parent,
 			'comment_status' => $post->comment_status,
-			'page_template' => $post->template ?? '',
+			'page_template' => $template,
 			'meta_input' => sanitize_meta_input( $post->meta ),
 		);
 
@@ -129,7 +136,7 @@ function import_rest_to_posts( $rest_url ) {
 
 			// But we've probably got support through the older 'wporg-main' theme dynamically applied, so set it directly.
 			if ( ! is_wp_error( $new_post_id ) ) {
-				update_post_meta( $new_post_id, '_wp_page_template', $post->template ?? '' );
+				update_post_meta( $new_post_id, '_wp_page_template', $template );
 			}
 		}
 
