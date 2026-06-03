@@ -26,7 +26,7 @@ add_action( 'admin_menu', __NAMESPACE__ . '\remove_site_editor_menu', 999 );
 add_action( 'admin_bar_menu', __NAMESPACE__ . '\remove_site_editor_admin_bar', 999 );
 add_action( 'admin_init', __NAMESPACE__ . '\block_site_editor_screen' );
 add_filter( 'map_meta_cap', __NAMESPACE__ . '\block_template_editing_caps', 10, 4 );
-add_filter( 'rest_request_before_callbacks', __NAMESPACE__ . '\block_template_rest_writes', 10, 3 );
+add_filter( 'rest_pre_dispatch', __NAMESPACE__ . '\block_template_rest_writes', 10, 3 );
 
 /**
  * Remove the "Editor" (Site Editor) item from the Appearance menu.
@@ -89,22 +89,23 @@ function block_template_editing_caps( $required_caps, $cap, $user_id, $args ) {
  * Block REST writes to the templates and template-parts endpoints.
  *
  * The Site Editor saves entirely through these endpoints, so this stops template changes
- * even if the editor UI is reached some other way. It returns a `WP_Error` directly, which
+ * even if the editor UI is reached some other way. Hooked on `rest_pre_dispatch` so it runs
+ * before route matching and parameter validation, it returns a `WP_Error` directly, which
  * applies to every user including super admins. Reads (GET) are left alone.
  *
- * @param mixed            $response The current response, possibly a WP_Error from an earlier filter.
- * @param array            $handler  The matched route handler.
- * @param \WP_REST_Request $request  The request being dispatched.
+ * @param mixed            $result  Response to short-circuit with, or null to continue dispatch.
+ * @param \WP_REST_Server  $server  The REST server instance.
+ * @param \WP_REST_Request $request The request being dispatched.
  *
  * @return mixed
  */
-function block_template_rest_writes( $response, $handler, $request ) {
-	if ( is_wp_error( $response ) ) {
-		return $response;
+function block_template_rest_writes( $result, $server, $request ) {
+	if ( null !== $result ) {
+		return $result;
 	}
 
 	if ( ! in_array( $request->get_method(), array( 'POST', 'PUT', 'PATCH', 'DELETE' ), true ) ) {
-		return $response;
+		return $result;
 	}
 
 	if ( preg_match( '#/wp/v2/(templates|template-parts)(/|$)#', $request->get_route() ) ) {
@@ -115,5 +116,5 @@ function block_template_rest_writes( $response, $handler, $request ) {
 		);
 	}
 
-	return $response;
+	return $result;
 }
