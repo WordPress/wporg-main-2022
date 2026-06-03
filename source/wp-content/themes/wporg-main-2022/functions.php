@@ -7,6 +7,7 @@ use function WordPressdotorg\MU_Plugins\Global_Header_Footer\is_rosetta_site;
 require_once __DIR__ . '/inc/page-meta-descriptions.php';
 require_once __DIR__ . '/inc/hreflang.php';
 require_once __DIR__ . '/inc/capabilities.php';
+require_once __DIR__ . '/inc/disable-site-editor.php';
 require_once __DIR__ . '/inc/data-liberation-handbook.php';
 require_once __DIR__ . '/inc/recaptcha.php';
 require_once __DIR__ . '/inc/privacy-functions.php';
