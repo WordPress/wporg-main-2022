@@ -45,6 +45,7 @@ jobs:
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
+          echo '{ "testsEnvironment": false }' > .wp-env.override.json
           yarn wp-env start
           yarn setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
