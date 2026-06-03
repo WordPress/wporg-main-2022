@@ -110,7 +110,7 @@ function block_template_rest_writes( $response, $handler, $request ) {
 	if ( preg_match( '#/wp/v2/(templates|template-parts)(/|$)#', $request->get_route() ) ) {
 		return new \WP_Error(
 			'rest_forbidden',
-			__( 'Editing templates is disabled. Templates are managed in the theme files.', 'wporg' ),
+			'Editing templates is disabled. Templates are managed in the theme files.',
 			array( 'status' => rest_authorization_required_code() )
 		);
 	}
