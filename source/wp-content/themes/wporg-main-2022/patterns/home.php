@@ -7,21 +7,7 @@
 
 ?>
 <!-- wp:group {"metadata":{"name":"Content"},"align":"full","className":"alignfull","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"3 min-height columns"},"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"light-grey-2","layout":{"type":"flex","flexWrap":"nowrap"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-05-14T01:00:00","end":"2026-06-04T01:00:00"}],"hideOnSchedules":false}}}]}} -->
-<div class="wp-block-group alignfull has-light-grey-2-background-color has-background"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|80","right":"var:preset|spacing|80"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group" style="min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--80)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}}},"textColor":"charcoal-1","fontSize":"small"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color has-small-font-size"><?php _e( 'WordCamp Europe 2026 is almost here. <a href="https://europe.wordcamp.org/2026/" target="_blank" rel="noopener">Discover what’s happening in Kraków this June</a>. ↗', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","orientation":"horizontal","verticalAlignment":"stretch"}} -->
-<div class="wp-block-group" style="min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":51256,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"400px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/05/dotorg_banner_wceu-6.png" alt="" class="wp-image-51256" /></figure>
-<!-- /wp:image --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-06-04T01:00:00","end":"2026-06-29T01:00:00"}]}}}]}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-06-04T01:00:00","end":"2026-06-29T01:00:00"}]}}}]}} -->
 <div class="wp-block-group alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
@@ -52,7 +38,7 @@ https://www.youtube.com/playlist?list=PL1pJFUVKQ7ET_os7azDwYFsUDoc0Y9plA
 <!-- /wp:embed -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Watch the WordCamp Europe 2026 sessions live right here. Starting June 5-6.', 'wporg' ); ?></p>
+<p><?php _e( 'Relive all the sights and sounds from Kraków, Poland. <a href="https://wordpress.org/news/2026/06/wceu-2026-recap/" data-type="link" data-id="https://wordpress.org/news/2026/06/wceu-2026-recap/">Read the recap</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -61,7 +47,7 @@ https://www.youtube.com/playlist?list=PL1pJFUVKQ7ET_os7azDwYFsUDoc0Y9plA
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2026-06-04T01:00:00"}]}}}],"hideBlock":false}} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-06-29T01:00:00","end":""}]}}}],"hideBlock":false}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
@@ -276,7 +262,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:image -->
 
 <!-- wp:image {"id":11475,"width":"79px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php esc_attr_e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2022/08/Time-Magazine.png" alt="<?php esc_attr_e( 'Time Magazine logo', 'wporg' ); ?>" class="wp-image-11475" style="width:79px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22635,"width":"96px","height":"96px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
@@ -288,11 +274,11 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22637,"width":"64px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php esc_attr_e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/tech-crunch.png" alt="<?php esc_attr_e( 'TechCrunch logo', 'wporg' ); ?>" class="wp-image-22637" style="width:64px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":22638,"width":"160px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php esc_attr_e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/10/Harvard.png" alt="<?php esc_attr_e( 'Harvard logo', 'wporg' ); ?>" class="wp-image-22638" style="width:160px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
