@@ -39,7 +39,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<em>The program is designed so that the time and work students dedicate can be formally recognized by their institution — as academic credits, internship hours, or project work.</em>', 'wporg' ); ?></p>
+<p><?php _e( '<em>The program is designed so that the time and work students dedicate can be formally recognized by their institution — as academic credits, internship hours, or project work. </em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
