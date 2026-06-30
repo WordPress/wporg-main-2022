@@ -7,47 +7,17 @@
 
 ?>
 <!-- wp:group {"metadata":{"name":"Content"},"align":"full","className":"alignfull","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0","bottom":"0"}}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-06-04T01:00:00","end":"2026-06-29T01:00:00"}]}}}]}} -->
-<div class="wp-block-group alignfull" style="padding-top:0;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"padding":{"right":"var:preset|spacing|20"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--20);flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wcus_map.png","id":52120,"source":"file","title":"wcus_map"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"45% 54%"},"color":{"background":"#670f45"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#670f45;min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":52112,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}}} -->
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/06/WCUS-2026.png" alt="" class="wp-image-52112" /></figure>
+<!-- /wp:image -->
 
-<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
-<h1 class="wp-block-heading" style="font-size:70px"><?php esc_html_e( 'Meet WordPress', 'wporg' ); ?></h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
-<div class="wp-block-column is-vertically-aligned-center has-link-color" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);flex-basis:50%"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|70"}},"border":{"top":{"width":"0px","style":"none"},"right":{"color":"#f92203","width":"16px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"#f92203","width":"16px"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wceu-pattern_light.png","id":51865,"source":"file","title":"wceu-pattern_light"},"backgroundSize":"cover","backgroundAttachment":"scroll"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-style:none;border-top-width:0px;border-right-color:#f92203;border-right-width:16px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#f92203;border-left-width:16px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)"><!-- wp:embed {"url":"https://www.youtube.com/playlist?list=PL1pJFUVKQ7ET_os7azDwYFsUDoc0Y9plA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/playlist?list=PL1pJFUVKQ7ET_os7azDwYFsUDoc0Y9plA
-</div></figure>
-<!-- /wp:embed -->
-
-<!-- wp:paragraph -->
-<p><?php _e( 'Relive all the sights and sounds from Kraków, Poland. <a href="https://wordpress.org/news/2026/06/wceu-2026-recap/" data-type="link" data-id="https://wordpress.org/news/2026/06/wceu-2026-recap/">Read the recap</a>.', 'wporg' ); ?></p>
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
+<p class="has-white-color has-text-color has-link-color has-normal-font-size"><?php _e( 'WordCamp US 2026 is coming to Phoenix this August. <a href="https://us.wordcamp.org/2026/" data-type="link" data-id="https://us.wordcamp.org/2026/">Get your tickets↗</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-06-29T01:00:00","end":""}]}}}],"hideBlock":false}} -->
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}],"hideBlock":false}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
