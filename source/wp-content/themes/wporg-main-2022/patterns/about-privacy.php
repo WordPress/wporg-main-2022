@@ -56,6 +56,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
+<p><?php esc_html_e( 'Some WordPress.org services and workflows use AI tools to assist our team in reviewing submissions, moderating content, or supporting community programs or events. Where AI processing occurs, it is human-supervised and all final decisions are made by a human reviewer. This processing may involve sharing relevant data with third-party AI service providers. Some AI-assisted workflows also use web search tools, which may pass data to a third-party search provider as part of the review.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p><?php esc_html_e( 'If you are a registered user of a WordPress.org website and have supplied your email address, WordPress.org may occasionally send you an email to tell you about new features, solicit your feedback, or just keep you up to date with what’s going on with WordPress.org and our products. We primarily use our blog to communicate this type of information, so we expect to keep this type of email to a minimum.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -174,6 +178,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
+<p><?php esc_html_e( 'Data submitted as part of community programs or applications or similar review workflows, including any data processed by AI tools, is retained for as long as necessary to administer the relevant program. Data shared with AI service providers during processing is subject to the retention limits in the applicable Data Processing Agreement.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p><?php esc_html_e( 'On WordCamp.org sites, banking/financial data collected as part of a reimbursement request is deleted from WordCamp.org 7 days after the request is marked paid. The reason for the 7-day retention period is to prevent organizers having to re-enter their banking details if a wire fails or if a payment was marked “Paid” in error. Invoices and receipts related to WordCamp expenses are retained for 7 years after the close of the calendar year’s audit, by instruction of our financial consultants (auditors & bookkeepers).', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -238,7 +246,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e( 'Third party links', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Third-party links', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

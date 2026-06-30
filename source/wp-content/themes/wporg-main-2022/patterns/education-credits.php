@@ -31,11 +31,15 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress Credits is a contribution-based program by the .WordPress Foundation that connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'WordPress Credits is a contribution-based program by the WordPress Foundation. The program connects higher education students with the global open source community. It offers real-world experience with mentorship to help students fulfill academic requirements while contributing directly to WordPress.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p><?php esc_html_e( 'Launched with the University of Pisa and announced at WordCamp Europe 2025, the program continues to grow, fostering collaboration between students, universities, and companies across the WordPress ecosystem.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php _e( '<em>The program is designed so that the time and work students dedicate can be formally recognized by their institution — as academic credits, internship hours, or project work.</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -76,6 +80,10 @@
 
 <!-- wp:paragraph -->
 <p><?php esc_html_e( 'Through the program, students collaborate with volunteers and professionals from companies in the WordPress ecosystem.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'The program typically runs for an academic semester and is offered in two formats (50 hours and 150+ hours) to fit different academic needs. It follows three main phases: Onboarding, Project, and Wrap-Up.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -110,7 +118,27 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":3,"align":"wide"} -->
+<h3 class="wp-block-heading alignwide"><?php esc_html_e( 'Two tracks to fit your program', 'wporg' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"wide"} -->
+<p class="alignwide"><?php esc_html_e( 'WordPress Credits is offered in two formats, so institutions can match the program to their academic requirements and the time students have available.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"wide"} -->
+<p class="alignwide"><?php _e( '<strong>WordPress Credits — 50 hours.</strong> A condensed track built around a single guided contribution project. A good fit for shorter modules, electives, or a first introduction to open source.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"wide"} -->
+<p class="alignwide"><?php _e( "<strong>WordPress Credits — 150+ hours. </strong>The full program. It starts at a minimum of 150 hours and can be extended to fit an institution's needs (so far we've run it up to 400 hours). It includes everything in the condensed track plus extra onboarding courses, building a personal website with regular progress updates, mid-course feedback, and active participation in the global WordPress community and events. A good fit for internships, capstone projects, or a full-semester course.", 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"wide"} -->
+<p class="alignwide"><?php esc_html_e( 'Both tracks finish the same way: students present their work, complete a feedback form, and receive a certificate.', 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Why participate"},"align":"full","className":"is-style-two-column-display","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"backgroundColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -191,29 +219,35 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
+<!-- wp:paragraph -->
+<p><?php _e( '<strong>Flexible ways to integrate WordPress Credits</strong>', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Each institution decides how the program fits its academic structure. The most common approaches are:', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Access to a complete, ready-to-implement educational program at no cost', 'wporg' ); ?></li>
+<li><?php _e( '<strong>As an internship</strong> — students complete supervised hours that count toward an internship or work-placement requirement.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
+<li><?php _e( '<strong>As an embedded module</strong> — integrate the program, or selected courses from it, into an existing subject.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Increased student engagement through practical project work', 'wporg' ); ?></li>
+<li><?php _e( '<strong>As a pre-graduation project</strong> — use it as the practical or capstone project students complete before finishing their studies.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php esc_html_e( 'Opportunity for teachers to be trained as future mentors, strengthening internal capabilities', 'wporg' ); ?></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><?php esc_html_e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
+<li><?php _e( '<strong>As an elective or extracurricular credit</strong> — offer it as a standalone elective.', 'wporg' ); ?></li>
 <!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
-<!-- /wp:group -->
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( "These are the most common models, not the only ones. We're happy to discuss any arrangement that works for your institution — our goal is for the time and work students invest to be formally recognized by their school or university.", 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
@@ -255,7 +289,33 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php esc_html_e( 'What Your Institution Gains', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><?php esc_html_e( 'Access to a complete, ready-to-implement educational program at no cost', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Ability to integrate real-world open source experience directly into the curriculum', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Increased student engagement through practical project work', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Opportunity for teachers to be trained as future mentors, strengthening internal capabilities', 'wporg' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'An official partnership with the WordPress Foundation, reinforcing the institution’s commitment to high-quality digital education and global open source collaboration', 'wporg' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -273,7 +333,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10061,"width":"50px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"blockVisibility":false},"align":"center","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
@@ -295,7 +355,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10061,"width":"50px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"blockVisibility":false},"align":"center","className":"is-style-rounded","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
@@ -317,7 +377,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10061,"width":"50px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"blockVisibility":false},"align":"center","className":"is-style-rounded","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
@@ -339,7 +399,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10061,"width":"50px","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","metadata":{"blockVisibility":false},"align":"center","className":"is-style-rounded","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="https://wordpress.org/main-test/files/2025/12/image-placeholder-2.png" alt="" class="wp-image-10061" style="aspect-ratio:1;object-fit:cover;width:50px;height:auto" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"is-style-two-column-display","style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
@@ -381,7 +441,7 @@
 <div class="wp-block-group alignwide is-style-default" style="padding-right:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"150px","aspectRatio":"2.2829912023460412","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"109px"},"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/fidelitas-logo.png" alt="" style="aspect-ratio:2.2829912023460412;object-fit:cover;width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/fidelitas-logo.png" alt="" style="aspect-ratio:2.2829912023460412;object-fit:cover;width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -401,7 +461,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"150px","aspectRatio":"3.4074255007327796","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/riga-nordic-logo.png" alt="" style="aspect-ratio:3.4074255007327796;object-fit:cover;width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/riga-nordic-logo.png" alt="" style="aspect-ratio:3.4074255007327796;object-fit:cover;width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -421,7 +481,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10074,"width":"150px","aspectRatio":"2.314271749755621","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/unifranz-logo.png" alt="" class="wp-image-10074" style="aspect-ratio:2.314271749755621;object-fit:cover;width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/unifranz-logo.png" alt="" class="wp-image-10074" style="aspect-ratio:2.314271749755621;object-fit:cover;width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -441,7 +501,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10075,"width":"150px","aspectRatio":"3.6661931818181817","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"109px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/piza-logo.png" alt="" class="wp-image-10075" style="aspect-ratio:3.6661931818181817;object-fit:cover;width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/piza-logo.png" alt="" class="wp-image-10075" style="aspect-ratio:3.6661931818181817;object-fit:cover;width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -461,7 +521,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10056,"width":"150px","aspectRatio":"3.6661931818181817","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"109px"},"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/logos-wpc02.png" alt="" class="wp-image-10056" style="aspect-ratio:3.6661931818181817;object-fit:cover;width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/logos-wpc02.png" alt="" class="wp-image-10056" style="aspect-ratio:3.6661931818181817;object-fit:cover;width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -481,7 +541,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":49242,"width":"150px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2025/12/krakow-university-of-economics-modified-1024x474.jpg" alt="" class="wp-image-49242" style="width:150px" /></figure>
+<figure class="wp-block-image size-large is-resized"><img src="https://wordpress.org/files/2025/12/krakow-university-of-economics-modified-1024x474.jpg" alt="" class="wp-image-49242" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -501,7 +561,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":49243,"width":"150px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cracow-University-of-Technology-modified.png" alt="" class="wp-image-49243" style="width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cracow-University-of-Technology-modified.png" alt="" class="wp-image-49243" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -521,7 +581,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50314,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/logoiesfseif.jpg" alt="" class="wp-image-50314" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/logoiesfseif.jpg" alt="" class="wp-image-50314" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -541,7 +601,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50315,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ue_creative_campus_logo_rgb_positive.original.png" alt="" class="wp-image-50315" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ue_creative_campus_logo_rgb_positive.original.png" alt="" class="wp-image-50315" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -561,7 +621,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50323,"width":"150px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/images.png" alt="" class="wp-image-50323" style="width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/images.png" alt="" class="wp-image-50323" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -581,7 +641,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50316,"width":"150px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/drew.png" alt="" class="wp-image-50316" style="width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/drew.png" alt="" class="wp-image-50316" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -601,7 +661,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50317,"width":"115px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/cropped-logoEAThorizontal-2.png" alt="" class="wp-image-50317" style="width:115px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/cropped-logoEAThorizontal-2.png" alt="" class="wp-image-50317" style="width:115px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -621,7 +681,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50318,"width":"170px","sizeSlug":"full","linkDestination":"none","className":"is-style-default","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.org/files/2026/03/Screenshot-2026-03-23-at-20.33.26.png" alt="" class="wp-image-50318" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.org/files/2026/03/Screenshot-2026-03-23-at-20.33.26.png" alt="" class="wp-image-50318" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -641,7 +701,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50319,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ERAP.png" alt="" class="wp-image-50319" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/ERAP.png" alt="" class="wp-image-50319" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -661,7 +721,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50320,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/default_en.png" alt="" class="wp-image-50320" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/default_en.png" alt="" class="wp-image-50320" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -681,7 +741,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50371,"width":"150px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/escuela_arte_zaragoza_logo.jpg" alt="" class="wp-image-50371" style="width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/escuela_arte_zaragoza_logo.jpg" alt="" class="wp-image-50371" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -701,7 +761,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50370,"width":"170px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/IES-Venancio-Blanco.png" alt="" class="wp-image-50370" style="width:170px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/IES-Venancio-Blanco.png" alt="" class="wp-image-50370" style="width:170px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -721,7 +781,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|black-opacity-15","width":"1px"},"top":[],"right":[],"left":[]}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
 <div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--black-opacity-15);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"48%"}},"layout":{"type":"constrained","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":50369,"width":"150px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/Zaragoza-dinamica.jpeg" alt="" class="wp-image-50369" style="width:150px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/03/Zaragoza-dinamica.jpeg" alt="" class="wp-image-50369" style="width:150px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -766,37 +826,37 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"230px","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/partner-4.png" alt="" style="width:230px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/partner-4.png" alt="" style="width:230px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:0px"><!-- wp:image {"width":"100px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"},"layout":{"selfStretch":"fixed","flexSize":"100px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/image-166-2.png" alt="" style="width:100px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/image-166-2.png" alt="" style="width:100px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:0px"><!-- wp:image {"width":"190px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"},"layout":{"selfStretch":"fixed","flexSize":"100px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/Elementor-Logo-1-5.png" alt="" style="width:190px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/Elementor-Logo-1-5.png" alt="" style="width:190px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:0px"><!-- wp:image {"id":10090,"width":"160px","aspectRatio":"4.9471410708195975","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/Elementor-Logo-2.png" alt="" class="wp-image-10090" style="aspect-ratio:4.9471410708195975;object-fit:cover;width:160px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/Elementor-Logo-2.png" alt="" class="wp-image-10090" style="aspect-ratio:4.9471410708195975;object-fit:cover;width:160px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"minHeight":"0px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="min-height:0px"><!-- wp:image {"id":49215,"width":"190px","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"},"layout":{"selfStretch":"fixed","flexSize":"100px"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/wpb-logo-wordcamp-white.png" alt="" class="wp-image-49215" style="width:190px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/12/wpb-logo-wordcamp-white.png" alt="" class="wp-image-49215" style="width:190px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":49214,"width":"120px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cloud86-Logo-wit.png" alt="" class="wp-image-49214" style="width:120px" /></figure>
+<figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2025/12/Cloud86-Logo-wit.png" alt="" class="wp-image-49214" style="width:120px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -812,7 +872,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":10087,"width":"250px","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"150px"},"color":{"duotone":"unset"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/partner-4.png" alt="" class="wp-image-10087" style="width:250px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/partner-4.png" alt="" class="wp-image-10087" style="width:250px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -825,7 +885,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":10088,"width":"88px","aspectRatio":"2.567901234567901","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/image-166-2.png" alt="" class="wp-image-10088" style="aspect-ratio:2.567901234567901;object-fit:cover;width:88px" /></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/main-test/files/2025/12/image-166-2.png" alt="" class="wp-image-10088" style="aspect-ratio:2.567901234567901;object-fit:cover;width:88px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -935,5 +995,5 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
-<!-- /wp:group --></main>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
