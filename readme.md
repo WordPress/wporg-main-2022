@@ -65,6 +65,20 @@ The "theme-switcher" in `mu-plugins` here should control which theme is used, ba
 
 1. Log in with username `admin` and password `password`.
 
+### WordPress Playground
+
+To run the environment without Docker, use WordPress Playground:
+
+```bash
+yarn
+composer install
+yarn setup:tools
+yarn build:theme
+yarn playground
+```
+
+Run the dependency setup first so Composer-installed plugins, parent themes, and theme build files are available. The Playground setup mounts the same WordPress.org sandbox bootstrap used by `wp-env`, activates the local plugins and theme, and creates the starter pages. If those dependencies are missing, `yarn playground` will stop before booting WordPress instead of falling back to a bundled default theme.
+
 ### Environment management
 
 These must be run in the project's root folder, _not_ in theme/plugin subfolders.
