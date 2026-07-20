@@ -6,12 +6,15 @@
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "11.1.0",
-		"@wordpress/eslint-plugin": "24.3.0",
-		"@wordpress/scripts": "31.6.0",
+		"@wordpress/env": "11.11.0",
+		"@wordpress/eslint-plugin": "25.7.0",
+		"@wordpress/scripts": "33.0.0",
 		"backstopjs": "^6.1.4",
 		"lighthouse-ci": "^1.13.1",
 		"puppeteer": "^24.38.0"
+	},
+	"overrides": {
+		"prettier": "npm:wp-prettier@^3.0.3"
 	},
 	"scripts": {
 		"playground": "node ./env/playground-start.mjs",
