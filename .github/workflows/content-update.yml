@@ -40,21 +40,22 @@ jobs:
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          packageManager: npm
 
       - name: Run the content update
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
           echo '{ "testsEnvironment": false }' > .wp-env.override.json
-          yarn wp-env start
-          yarn setup:wp
+          npx wp-env start
+          npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
-          yarn build:patterns
+          npm run build:patterns
           CHANGED_FILES=$(git diff --name-only source/wp-content/themes/wporg-main-2022/**/*.php)
           echo "$CHANGED_FILES"
           {
             echo 'changelist<<EOF'
-            echo "$CHANGED_FILES" | xargs yarn --silent screenshot-changes
+            echo "$CHANGED_FILES" | xargs npm run --silent screenshot-changes --
             echo EOF
           } >> "$GITHUB_OUTPUT"
 
