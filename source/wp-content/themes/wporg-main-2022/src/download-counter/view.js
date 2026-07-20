@@ -23,7 +23,7 @@ const init = () => {
 				try {
 					const count = await apiFetch( { path: `/wporg/v1/core-downloads/${ branch }?_locale=site` } );
 					element.textContent = decodeEntities( count );
-				} catch ( error ) {}
+				} catch {}
 			}, 5000 );
 		} );
 	}
