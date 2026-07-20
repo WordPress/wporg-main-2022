@@ -6,6 +6,12 @@ on:
     - cron: '17 3 * * *'  # Runs daily at 3:17 AM UTC
   push:
     branches: [trunk]
+    # Only the manifest and the export/parser code change what build:patterns
+    # produces from the live site; regenerate patterns when those change.
+    paths:
+      - 'env/page-manifest.json'
+      - 'env/export-content/**'
+      - 'env/build-patterns.sh'
   pull_request:
     paths:
       - '.github/workflows/content-update.yml'
@@ -31,7 +37,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
         with:
-          ref: ${{ github.event_name == 'pull_request' && github.head_ref || 'trunk' }}
+          # PRs check out the PR branch; a manual run uses the branch selected in the
+          # UI; scheduled/push runs always operate on trunk (the content-sync target).
+          ref: ${{ (github.event_name == 'pull_request' && github.head_ref) || (github.event_name == 'workflow_dispatch' && github.ref_name) || 'trunk' }}
 
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
@@ -61,6 +69,9 @@ jobs:
 
       - name: Push screenshots to storage branch
         id: push-screenshots
+        # Only write to the shared storage branch from trunk, so branch/PR runs
+        # exercise the sync without mutating shared refs.
+        if: github.ref_name == 'trunk'
         run: |
           REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           BRANCH="content-update-screenshots"
@@ -111,6 +122,8 @@ jobs:
 
       - name: Create Pull Request
         id: create-pr
+        # Only open the content-update PR from trunk; branch/PR runs stop after diffing.
+        if: github.ref_name == 'trunk'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: automated/content-update
