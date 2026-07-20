@@ -11,7 +11,7 @@ use Exception;
  *
  * This needs to be run in a wp-env, for example:
  *
- * yarn run wp-env run cli "php bin/import-test-content.php"
+ * npx wp-env run cli "php bin/import-test-content.php"
  */
 
 // This script should only be called in a CLI environment.

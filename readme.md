@@ -12,7 +12,6 @@ The "theme-switcher" in `mu-plugins` here should control which theme is used, ba
 
 * Docker
 * Node/npm
-* Yarn
 * Composer
 * SVN
 
@@ -21,27 +20,27 @@ The "theme-switcher" in `mu-plugins` here should control which theme is used, ba
 1. Set up repo dependencies.
 
     ```bash
-    yarn
+    npm install
     composer install
-    yarn setup:tools
+    npm run setup:tools
     ```
 
 1. Start the local environment.
 
     ```bash
-    yarn wp-env start
+    npx wp-env start
     ```
 
 1. Run the setup script.
 
     ```bash
-    yarn setup:wp
+    npm run setup:wp
     ```
 
 1. Build the theme.
 
     ```bash
-    yarn workspaces run build
+    npm run build --workspaces --if-present
     ```
 
 1. (Optional) There may be times when you want to make changes to the Parent theme and test them with the Main them. To do that:
@@ -70,14 +69,14 @@ The "theme-switcher" in `mu-plugins` here should control which theme is used, ba
 To run the environment without Docker, use WordPress Playground:
 
 ```bash
-yarn
+npm install
 composer install
-yarn setup:tools
-yarn build:theme
-yarn playground
+npm run setup:tools
+npm run build:theme
+npm run playground
 ```
 
-Run the dependency setup first so Composer-installed plugins, parent themes, and theme build files are available. The Playground setup mounts the same WordPress.org sandbox bootstrap used by `wp-env`, activates the local plugins and theme, and creates the starter pages. If those dependencies are missing, `yarn playground` will stop before booting WordPress instead of falling back to a bundled default theme.
+Run the dependency setup first so Composer-installed plugins, parent themes, and theme build files are available. The Playground setup mounts the same WordPress.org sandbox bootstrap used by `wp-env`, activates the local plugins and theme, and creates the starter pages. If those dependencies are missing, `npm run playground` will stop before booting WordPress instead of falling back to a bundled default theme.
 
 ### Environment management
 
@@ -86,63 +85,63 @@ These must be run in the project's root folder, _not_ in theme/plugin subfolders
 * Stop the environment.
 
     ```bash
-    yarn wp-env stop
+    npx wp-env stop
     ```
 
 * Restart the environment.
 
     ```bash
-    yarn wp-env start
+    npx wp-env start
     ```
 
 * Build the theme's JavaScript
 
     ```bash
-    yarn workspace wporg-main-2022-theme build
+    npm run build --workspace=wporg-main-2022-theme
     ```
 
     or, automatically build on changes:
 
     ```bash
-    yarn workspace wporg-main-2022-theme start
+    npm run start --workspace=wporg-main-2022-theme
     ```
 
 
 * Refresh local WordPress content with a current copy from the staging site.
 
     ```bash
-    yarn setup:refresh
+    npm run setup:refresh
     ```
 
 * Reset WordPress to a clean install, and reconfigure. This will nuke all local WordPress content!
 
     ```bash
-    yarn wp-env clean all
-    yarn setup:wp
+    npx wp-env clean all
+    npm run setup:wp
     ```
 
 * SSH into docker container.
 
     ```bash
-    yarn wp-env run wordpress bash
+    npx wp-env run wordpress bash
     ```
 
 * Run wp-cli commands. Keep the wp-cli command in quotes so that the flags are passed correctly.
 
     ```bash
-    yarn wp-env run cli "post list --post_status=publish"
+    npx wp-env run cli "post list --post_status=publish"
     ```
 
 * Update composer dependencies and sync any `repo-tools` changes.
 
     ```bash
-    yarn update:tools
+    npm run update:tools
     ```
 
 * Run a lighthouse test.
 
     ```bash
-    yarn lighthouse
+    npm run lighthouse
     ```
 
 * Check visual diffs.
@@ -150,9 +149,9 @@ These must be run in the project's root folder, _not_ in theme/plugin subfolders
 Backstopjs can be manually run to create reference snapshots and then check for visual differences.
 
     ```bash
-    yarn backstop:reference
+    npm run backstop:reference
     # change something in the code or content
-    yarn backstop:test
+    npm run backstop:test
     ```
 
 ## Working on non-English sites
@@ -174,7 +173,7 @@ If you want to test how the site looks with non-English content, you can do that
 	    }
 	}
 	```
-1. Restart the environment `yarn wp-env start --update`
+1. Restart the environment `npx wp-env start --update`
 1. Go to your site settings to update the language, if it's not set already http://localhost:8888/wp-admin/options-general.php
 1. View the frontend, it should now use the locale you've selected.
 
@@ -208,12 +207,12 @@ Add the new page to `./env/page-manifest.json`. Use the following format, where 
 },
 ```
 
-If you're using the Docker environment, start it with `yarn wp-env start`.
+If you're using the Docker environment, start it with `npx wp-env start`.
 
 Create the page in your local environment.
 
 Run the script to sync the pattern content. This syncs from the remote page content on wordpress.org, and creates the page template which references the new pattern.
-	If you're using Docker, the command is `yarn build:patterns`.
+	If you're using Docker, the command is `npm run build:patterns`.
 	In other environments the command is `wp eval-file env/export-content/index.php env/page-manifest.json`. Run that from the `public_html` directory.
 
 View the new page, it should contain the synced content.
@@ -246,9 +245,9 @@ You can use the “Preview in new tab” to see your changes. Update the page to
 
 If you don't already have it, check out this repo. Follow the instructions above to set everything up.
 
-Start up the local environment using `yarn wp-env start`.
+Start up the local environment using `npx wp-env start`.
 
-Run `yarn build:patterns`. This updates the pattern code with the latest page content. View the new page, it should use the new content.
+Run `npm run build:patterns`. This updates the pattern code with the latest page content. View the new page, it should use the new content.
 
 Verify that the changes look correct, and commit the changes to github. Wait for the actions to finish.
 

@@ -6,34 +6,34 @@ This file provides guidance to coding agents when working with code in this repo
 
 `wporg-main-2022` is the block-based **child theme** for the main WordPress.org site, plus the local dev environment that runs it. Its parent is `wporg-parent-2021` (installed via Composer from GitHub). This repo replaces the older `wporg` (parent) / `wporg-main` (child) theme pair, which are still checked out alongside for the pages not yet migrated.
 
-The theme lives at `source/wp-content/themes/wporg-main-2022/` and is the single Yarn workspace (`wporg-main-2022-theme`).
+The theme lives at `source/wp-content/themes/wporg-main-2022/` and is the single npm workspace (`wporg-main-2022-theme`).
 
 ## Environment setup
 
-Requires Docker, Node (see `.nvmrc`), Yarn, Composer, and SVN. Composer pulls parent/old themes and several plugins from GitHub + `meta.svn.wordpress.org`, so those must resolve.
+Requires Docker, Node (see `.nvmrc`), Composer, and SVN. Composer pulls parent/old themes and several plugins from GitHub + `meta.svn.wordpress.org`, so those must resolve.
 
 ```bash
-yarn && composer install && yarn setup:tools   # dependencies + config generation
-yarn wp-env start                               # Docker environment
-yarn setup:wp                                   # provision WP, create starter pages
-yarn build:theme                                # build the theme's JS/CSS
+npm install && composer install && npm run setup:tools   # dependencies + config generation
+npx wp-env start                                         # Docker environment
+npm run setup:wp                                         # provision WP, create starter pages
+npm run build:theme                                      # build the theme's JS/CSS
 ```
 
-Site runs at http://localhost:8888 (admin / password). To run without Docker, use `yarn playground` (WordPress Playground) — run the dependency + `yarn build:theme` steps first or it will refuse to boot.
+Site runs at http://localhost:8888 (admin / password). To run without Docker, use `npm run playground` (WordPress Playground) — run the dependency + `npm run build:theme` steps first or it will refuse to boot.
 
 ## Common commands
 
 Run all of these from the repo root, not from theme/plugin subfolders.
 
-- Build theme assets: `yarn build:theme` — watch mode: `yarn start:theme`
-- Lint PHP: `yarn lint:php` (phpcs) — autofix: `composer run format` in root
-- Lint front-end: `yarn lint:frontend` (stylelint + eslint via `@wordpress/scripts`)
-- PHP tests: `yarn test:php` (PHPUnit, requires the running Docker env)
-- Run one test: `yarn wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml --filter <TestName>`
-- WP-CLI: `yarn wp-env run cli "post list --post_status=publish"` (keep the command quoted)
-- Sync pattern content from page editor: `yarn build:patterns`
-- Refresh local content from staging: `yarn setup:refresh` · reset clean: `yarn wp-env clean all && yarn setup:wp`
-- Visual regression: `yarn backstop:reference` then `yarn backstop:test` · Lighthouse: `yarn lighthouse`
+- Build theme assets: `npm run build:theme` — watch mode: `npm run start:theme`
+- Lint PHP: `npm run lint:php` (phpcs) — autofix: `composer run format` in root
+- Lint front-end: `npm run lint:frontend` (stylelint + eslint via `@wordpress/scripts`)
+- PHP tests: `npm run test:php` (PHPUnit, requires the running Docker env)
+- Run one test: `npx wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml --filter <TestName>`
+- WP-CLI: `npx wp-env run cli "post list --post_status=publish"` (keep the command quoted)
+- Sync pattern content from page editor: `npm run build:patterns`
+- Refresh local content from staging: `npm run setup:refresh` · reset clean: `npx wp-env clean all && npm run setup:wp`
+- Visual regression: `npm run backstop:reference` then `npm run backstop:test` · Lighthouse: `npm run lighthouse`
 
 ## Architecture
 
@@ -45,10 +45,10 @@ Front-end pages on wordpress.org render through PHP **patterns** in the theme's 
 
 1. An editor writes/edits the page in the WP admin (draft, then published).
 2. `env/page-manifest.json` maps each page: `slug` → `template` (`page-<slug>.html` in `templates/`) → `pattern` (`.php` in `patterns/`).
-3. `yarn build:patterns` (`env/build-patterns.sh` → `env/export-content/index.php`) pulls the live page content from wordpress.org and regenerates the pattern file + page template.
+3. `npm run build:patterns` (`env/build-patterns.sh` → `env/export-content/index.php`) pulls the live page content from wordpress.org and regenerates the pattern file + page template.
 4. Commit the regenerated files; a meta-team member deploys via `bin/sync/main.sh` on the sandbox.
 
-Adding a new page = create it in the editor, add an entry to `page-manifest.json`, run `yarn build:patterns`. See `readme.md` for the full publishing runbook, including header/footer style overrides (`wp:wporg/global-header` / `global-footer`).
+Adding a new page = create it in the editor, add an entry to `page-manifest.json`, run `npm run build:patterns`. See `readme.md` for the full publishing runbook, including header/footer style overrides (`wp:wporg/global-header` / `global-footer`).
 
 ### The content parser (`env/export-content/`)
 The block/HTML parser that `build:patterns` uses to convert page content into pattern markup. Parsers live in `includes/parsers/`. **This is the only code covered by the PHPUnit suite** (`env/export-content/tests/`, wired up in `source/wp-content/tests/phpunit/phpunit.xml`).

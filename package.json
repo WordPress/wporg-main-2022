@@ -27,10 +27,10 @@
 		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html",
 		"build:patterns": "./env/build-patterns.sh",
 		"screenshot-changes": "node ./env/screenshot-changes.js",
-		"build:theme": "yarn workspace wporg-main-2022-theme build",
-		"lint:frontend": "yarn workspace wporg-main-2022-theme lint:css && yarn workspace wporg-main-2022-theme lint:js",
+		"build:theme": "npm run build --workspace=wporg-main-2022-theme",
+		"lint:frontend": "npm run lint:css --workspace=wporg-main-2022-theme && npm run lint:js --workspace=wporg-main-2022-theme",
 		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
-		"start:theme": "yarn workspace wporg-main-2022-theme start",
+		"start:theme": "npm run start --workspace=wporg-main-2022-theme",
 		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
 	},
 	"workspaces": [

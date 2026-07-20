@@ -28,6 +28,7 @@ jobs:
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          packageManager: npm
 
       - name: Trim the repo down to just the theme
         run: |

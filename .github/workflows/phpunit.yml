@@ -27,6 +27,7 @@ jobs:
         uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          packageManager: npm
 
       - name: Test
         uses: WordPress/wporg-repo-tools/.github/actions/test-php@trunk
