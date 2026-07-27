@@ -304,9 +304,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : st
 			$decoded = str_replace( array_keys( $html_entities ), array_values( $html_entities ), $decoded );
 		}
 
-		// Phase 3: Texturize. On the front end the i18n functions entity-encode quotes
-		// before `wptexturize` runs on the template output, so it never curls them —
-		// apply the same transformations at export time instead.
+		// Phase 3: Texturize at export time — on the front end `wptexturize` never curls quotes, since the i18n functions entity-encode them first.
 		$decoded = texturize( $decoded );
 
 		$func = $has_html ? '_e' : 'esc_html_e';
