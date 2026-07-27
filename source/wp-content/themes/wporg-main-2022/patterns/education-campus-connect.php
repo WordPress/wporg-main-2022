@@ -63,7 +63,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|0"}},"typography":{"textAlign":"center"},"layout":{"selfStretch":"fill","flexSize":null}}} -->
-<p class="has-text-align-center alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--0)"><?php esc_html_e( "WordPress Campus Connect is growing, here's a snapshot of what's been achieved so far.", 'wporg' ); ?></p>
+<p class="has-text-align-center alignwide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--0)"><?php esc_html_e( 'WordPress Campus Connect is growing, here’s a snapshot of what’s been achieved so far.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -253,7 +253,7 @@
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|40"}},"textColor":"charcoal-3","layout":{"type":"grid","minimumColumnWidth":"20rem","columnCount":null}} -->
 <div class="wp-block-group alignwide has-charcoal-3-color has-text-color has-link-color" style="padding-top:0;padding-bottom:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '"The program not only gave students valuable exposure and practical skills but also offered an opportunity for working professionals like me to grow as mentors, leaders, and tutors."', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '“The program not only gave students valuable exposure and practical skills but also offered an opportunity for working professionals like me to grow as mentors, leaders, and tutors.”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -275,7 +275,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( "\"I believe these are once-in-a-lifetime opportunities, and I'm going to make the most of it.\"", 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '“I believe these are once-in-a-lifetime opportunities, and I’m going to make the most of it.”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -297,7 +297,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '"Watching students gain real, practical skills in just a few hours was truly inspiring."', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '“Watching students gain real, practical skills in just a few hours was truly inspiring.”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -319,7 +319,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '"We are in twenty first century, this is the time to up-skill our knowledge, and I thank the team for up-skilling all our students to talents."', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '“We are in twenty first century, this is the time to up-skill our knowledge, and I thank the team for up-skilling all our students to talents.”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -341,7 +341,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"fontStyle":"italic","fontWeight":"400"}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '"A truly valuable experience focused on real-world skills, building confidence and delivering practical knowledge that makes a real impact."', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size" style="font-style:italic;font-weight:400"><?php esc_html_e( '“A truly valuable experience focused on real-world skills, building confidence and delivering practical knowledge that makes a real impact.”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->

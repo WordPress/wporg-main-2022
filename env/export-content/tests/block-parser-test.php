@@ -167,7 +167,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			],
 			[
 				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p>I'm interested in running the open-source WordPress &lt;https://wordpress.org/&gt; web software and I was wondering if my account supported the following:</p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
-				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p><?php esc_html_e( \"I'm interested in running the open-source WordPress <https://wordpress.org/> web software and I was wondering if my account supported the following:\", 'wporg' ); ?></p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
+				"<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><!-- wp:paragraph -->\m<p><?php esc_html_e( 'I’m interested in running the open-source WordPress <https://wordpress.org/> web software and I was wondering if my account supported the following:', 'wporg' ); ?></p>\n<!-- /wp:paragraph --></blockquote>\n<!-- /wp:quote -->",
 			],
 			[
 				// Block with repeated strings.
@@ -190,9 +190,24 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:heading -->\n<h1><?php esc_html_e( 'Graphics & Logos', 'wporg' ); ?></h1>\n<!-- /wp:heading -->",
 			],
 			[
-				// Paragraph with &#039; entity — decoded to apostrophe, uses double-quoted string.
+				// Paragraph with &#039; entity — decoded and texturized to a curly apostrophe.
 				"<!-- wp:paragraph -->\n<p>It&#039;s easy to get started.</p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><?php esc_html_e( \"It's easy to get started.\", 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( 'It’s easy to get started.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Paragraph wrapped in straight double quotes — texturized to curly quotes.
+				"<!-- wp:paragraph -->\n<p>\"Watching students gain real, practical skills in just a few hours was truly inspiring.\"</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( '“Watching students gain real, practical skills in just a few hours was truly inspiring.”', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Straight quotes and an apostrophe — all texturized, so single-quoted PHP string.
+				"<!-- wp:paragraph -->\n<p>\"I believe these are once-in-a-lifetime opportunities, and I'm going to make the most of it.\"</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php esc_html_e( '“I believe these are once-in-a-lifetime opportunities, and I’m going to make the most of it.”', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Quotes around nested HTML — text is texturized, attribute quotes are untouched.
+				"<!-- wp:paragraph -->\n<p>Read \"the <a href=\"#\">docs</a>\" now.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( 'Read “the <a href=\"#\">docs</a>” now.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			],
 			[
 				// Paragraph with HTML and &amp; — _e with decoded ampersand.

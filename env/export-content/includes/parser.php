@@ -247,6 +247,28 @@ class BlockParser {
 }
 
 /**
+ * Texturize a string, returning literal UTF-8 characters instead of HTML entities.
+ *
+ * `wptexturize()` outputs numeric entities (e.g. `&#8220;`), which `esc_html_e()`
+ * would double-encode on output, so they are decoded back to literal characters.
+ * `<` and `>` stay encoded to preserve the HTML-context handling in
+ * `replace_with_i18n()`.
+ *
+ * @param string $string The string to texturize.
+ * @return string The texturized string.
+ */
+function texturize( string $string ) : string {
+	return preg_replace_callback(
+		'/&#\d+;/',
+		function ( $matches ) {
+			$decoded = html_entity_decode( $matches[0], ENT_QUOTES | ENT_HTML5, 'UTF-8' );
+			return in_array( $decoded, [ '<', '>' ], true ) ? $matches[0] : $decoded;
+		},
+		wptexturize( $string )
+	);
+}
+
+/**
  * Helper function to replace all strings in content with i18n-wrapped strings.
  */
 function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : string {
@@ -281,6 +303,11 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : st
 		} else {
 			$decoded = str_replace( array_keys( $html_entities ), array_values( $html_entities ), $decoded );
 		}
+
+		// Phase 3: Texturize. On the front end the i18n functions entity-encode quotes
+		// before `wptexturize` runs on the template output, so it never curls them —
+		// apply the same transformations at export time instead.
+		$decoded = texturize( $decoded );
 
 		$func = $has_html ? '_e' : 'esc_html_e';
 
