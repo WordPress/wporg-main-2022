@@ -30,7 +30,7 @@ Run all of these from the repo root, not from theme/plugin subfolders.
 - Lint front-end: `npm run lint:frontend` (stylelint + eslint via `@wordpress/scripts`)
 - PHP tests: `npm run test:php` (PHPUnit, requires the running Docker env)
 - Run one test: `npx wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml --filter <TestName>`
-- WP-CLI: `npx wp-env run cli "post list --post_status=publish"` (keep the command quoted)
+- WP-CLI: `npx wp-env run cli wp post list --post_status=publish`
 - Sync pattern content from page editor: `npm run build:patterns`
 - Refresh local content from staging: `npm run setup:refresh` · reset clean: `npx wp-env clean all && npm run setup:wp`
 - Visual regression: `npm run backstop:reference` then `npm run backstop:test` · Lighthouse: `npm run lighthouse`
@@ -46,9 +46,18 @@ Front-end pages on wordpress.org render through PHP **patterns** in the theme's 
 1. An editor writes/edits the page in the WP admin (draft, then published).
 2. `env/page-manifest.json` maps each page: `slug` → `template` (`page-<slug>.html` in `templates/`) → `pattern` (`.php` in `patterns/`).
 3. `npm run build:patterns` (`env/build-patterns.sh` → `env/export-content/index.php`) pulls the live page content from wordpress.org and regenerates the pattern file + page template.
-4. Commit the regenerated files; a meta-team member deploys via `bin/sync/main.sh` on the sandbox.
+4. Commit the regenerated files; a meta-team member deploys via `bin/sync/main.sh` (lives in the meta sandbox environment, not this repo).
 
 Adding a new page = create it in the editor, add an entry to `page-manifest.json`, run `npm run build:patterns`. See `readme.md` for the full publishing runbook, including header/footer style overrides (`wp:wporg/global-header` / `global-footer`).
+
+#### Gotchas
+
+- **Pattern strings are GlotPress translation sources.** The export wraps them in `esc_html_e()`/`_e()`, so any change to a string's wording or punctuation creates a new msgid and existing translations are lost until re-translated.
+- **The data flow is one-way: page content in the wordpress.org DB → pattern file.** The pattern file is what visitors see; the DB page is only the authoring source. Never edit a `patterns/*.php` file's content without also getting the same change into the page in the wp-admin editor — otherwise the next content sync silently reverts it.
+- **The "Update existing content" GitHub Action (`content-update.yml`, `workflow_dispatch`) runs the same export as `npm run build:patterns` in CI** and maintains a PR on the `automated/content-update` branch. For content updates it's usually easier than running wp-env locally. Local `build:patterns` also pulls content from the *live* wordpress.org REST API, not the local DB.
+- **Merging to trunk deploys nothing.** `build.yml` pushes the compiled theme to the `build` branch; a meta-team member must then run `bin/sync/main.sh` on their sandbox (SVN commit + deploy) before wordpress.org serves the change. If the live site doesn't reflect merged trunk, the deploy is the missing step — check the `build` branch content first to rule out CI.
+- **Templates reference patterns by the `Slug:` header in the pattern's file docblock** (e.g. `wporg-main-2022/campus-connect`), which often drops the parent-page prefix from the filename (`education-campus-connect.php`). Grep for the slug, not the filename, when tracing template → pattern links.
+- **Corrupted page content can be rebuilt from the pattern.** If a page's `post_content` gets mangled (e.g. a failed editor save writes wpautop'd rendered template output into it — symptom: block comments wrapped in `<p>` tags, orphan `<!-- /wp:post-content -->`), render the trunk pattern back to plain block markup in wp-env (`include` the pattern file with output buffering via `wp eval-file`), validate with `parse_blocks()`/`serialize_blocks()` round-trip, and paste it into the page's code editor.
 
 ### The content parser (`env/export-content/`)
 The block/HTML parser that `build:patterns` uses to convert page content into pattern markup. Parsers live in `includes/parsers/`. **This is the only code covered by the PHPUnit suite** (`env/export-content/tests/`, wired up in `source/wp-content/tests/phpunit/phpunit.xml`).
