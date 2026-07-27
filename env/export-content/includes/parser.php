@@ -249,20 +249,22 @@ class BlockParser {
 /**
  * Texturize a string, returning literal UTF-8 characters instead of HTML entities.
  *
- * `wptexturize()` outputs numeric entities (e.g. `&#8220;`), which `esc_html_e()`
- * would double-encode on output, so they are decoded back to literal characters.
- * `<` and `>` stay encoded to preserve the HTML-context handling in
- * `replace_with_i18n()`.
+ * `wptexturize()` outputs numeric entities (e.g. `&#8220;`), which are decoded back
+ * to literal characters so translators see readable msgids on translate.wordpress.org.
+ * Only the typographic entities `wptexturize()` itself can emit are decoded, leaving
+ * pre-existing entities (e.g. in `<code>` samples or attribute values) untouched.
  *
  * @param string $string The string to texturize.
  * @return string The texturized string.
  */
 function texturize( string $string ) : string {
+	// A trailing quote after a closing tag is always a closing quote, but wptexturize() would curl it open.
+	$string = preg_replace( '/(<\/[^<>]+>\s*)"\z/', '$1&#8221;', $string );
+
 	return preg_replace_callback(
-		'/&#\d+;/',
+		'/&#(?:038|8211|8212|8216|8217|8220|8221|8230|8242|8243|8482);/',
 		function ( $matches ) {
-			$decoded = html_entity_decode( $matches[0], ENT_QUOTES | ENT_HTML5, 'UTF-8' );
-			return in_array( $decoded, [ '<', '>' ], true ) ? $matches[0] : $decoded;
+			return html_entity_decode( $matches[0], ENT_QUOTES | ENT_HTML5, 'UTF-8' );
 		},
 		wptexturize( $string )
 	);

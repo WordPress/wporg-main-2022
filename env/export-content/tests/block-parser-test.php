@@ -210,6 +210,21 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:paragraph -->\n<p><?php _e( 'Read “the <a href=\"#\">docs</a>” now.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			],
 			[
+				// Closing quote directly after a closing tag at end of string.
+				"<!-- wp:paragraph -->\n<p>\"<em>Nested quote.</em>\"</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( '“<em>Nested quote.</em>”', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Closing quote after a closing tag and a space at end of string.
+				"<!-- wp:paragraph -->\n<p>\"<em>This is it.</em> \"</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( '“<em>This is it.</em> ”', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
+				// Entity that wptexturize() cannot emit stays encoded.
+				"<!-- wp:paragraph -->\n<p>Use <code>&#034;</code> to quote.</p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( 'Use <code>&#034;</code> to quote.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			],
+			[
 				// Paragraph with HTML and &amp; — _e with decoded ampersand.
 				"<!-- wp:paragraph -->\n<p>Read the <a href=\"https://example.com\">Terms &amp; Conditions</a>.</p>\n<!-- /wp:paragraph -->",
 				"<!-- wp:paragraph -->\n<p><?php _e( 'Read the <a href=\"https://example.com\">Terms & Conditions</a>.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
