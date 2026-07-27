@@ -37,7 +37,7 @@ if ( ! isset( $args[0] ) || ! file_exists( $args[0] ) ) {
 $manifest_data = file_get_contents( $args[0] );
 $manifest_items = json_decode( $manifest_data );
 if ( ! $manifest_data || ! $manifest_items ) {
-	throw new Exception( "Unable to read manifest from $args[0]\n" );
+	throw new Exception( esc_html( "Unable to read manifest from $args[0]\n" ) );
 }
 
 $encountered_problems = false;

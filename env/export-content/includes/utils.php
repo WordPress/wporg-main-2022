@@ -38,14 +38,14 @@ function generate_pattern( $url, $output_path ) {
 	$data = wp_remote_retrieve_body( $response );
 
 	if ( ! $data ) {
-		throw new Exception( "Unable to fetch {$url}\n" );
+		throw new Exception( esc_html( "Unable to fetch {$url}\n" ) );
 	}
 
 	$posts = json_decode( $data );
 	$post = $posts[0] ?? null;
 	if ( ! isset( $post->content_raw ) ) {
 		var_dump( $post );
-		throw new Exception( "No content_raw available at {$url}\n" );
+		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
 	}
 
 	$content = replace_with_i18n( $post->content_raw );
@@ -65,7 +65,7 @@ EOF;
 	$bytes = file_put_contents( $output_path, $header . $content . "\n" );
 
 	if ( false === $bytes ) {
-		throw new Exception( 'Unable to write to ' . $output_path );
+		throw new Exception( esc_html( 'Unable to write to ' . $output_path ) );
 	} else {
 		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
 	}

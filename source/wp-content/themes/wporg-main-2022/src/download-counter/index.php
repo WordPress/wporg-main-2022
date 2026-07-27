@@ -59,7 +59,7 @@ function render( $attributes, $content, $block ) {
 		$style = 'text-align:center;';
 	}
 
-	$wrapper_attributes = get_block_wrapper_attributes( [ 'style' => $style ] );
+	$wrapper_attributes = get_block_wrapper_attributes( array( 'style' => $style ) );
 	return sprintf(
 		'<div %1$s data-branch="%2$s">%3$s</div>',
 		$wrapper_attributes,
@@ -92,7 +92,7 @@ function add_counter_endpoint() {
 		'/core-downloads/',
 		array(
 			'methods' => 'GET',
-			'callback' => function( WP_REST_Request $request ) {
+			'callback' => function ( WP_REST_Request $request ) {
 				return get_download_count( WP_CORE_STABLE_BRANCH );
 			},
 			'permission_callback' => '__return_true',
@@ -103,14 +103,14 @@ function add_counter_endpoint() {
 		'/core-downloads/(?P<branch>[0-9.]+)',
 		array(
 			'methods' => 'GET',
-			'callback' => function( WP_REST_Request $request ) {
+			'callback' => function ( WP_REST_Request $request ) {
 				$branch = $request->get_param( 'branch' );
 				return get_download_count( $branch ?? WP_CORE_STABLE_BRANCH );
 			},
 			'permission_callback' => '__return_true',
 			'args' => array(
 				'branch' => array(
-					'validate_callback' => function( $param, $request, $key ) {
+					'validate_callback' => function ( $param, $request, $key ) {
 						return validate_branch( $param );
 					},
 				),

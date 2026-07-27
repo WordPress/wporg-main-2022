@@ -13,24 +13,24 @@ require_once __DIR__ . '/parsers/TextNode.php';
 
 class BlockParser {
 	public $content;
-	public $parsers = [];
+	public $parsers = array();
 	public $fallback;
 
 	public function __construct( string $content = '' ) {
 		$this->content  = $content;
 		$this->fallback = new Parsers\BasicText();
-		$this->parsers  = [
+		$this->parsers  = array(
 			// Blocks that have custom parsers.
-			'core/paragraph'   => new Parsers\HTMLParser( 'p', [], 2 /* minimum length of 2 characters. */ ),
-			'core/image'       => new Parsers\HTMLParser( 'figcaption', [ 'alt', 'title' ] ),
+			'core/paragraph'   => new Parsers\HTMLParser( 'p', array(), 2 /* minimum length of 2 characters. */ ),
+			'core/image'       => new Parsers\HTMLParser( 'figcaption', array( 'alt', 'title' ) ),
 			'core/heading'     => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
 
 			'core/list-item'   => new Parsers\ListItem(),
-			'core/button'      => new Parsers\HTMLParser( 'a', [ 'title', 'href' ] ),
+			'core/button'      => new Parsers\HTMLParser( 'a', array( 'title', 'href' ) ),
 
 			// Attributes handler.
-			'core/navigation-link' => new Parsers\AttributeParser( [ 'label' ] ),
-			'core/social-link'     => new Parsers\AttributeParser( [ 'label' ] ),
+			'core/navigation-link' => new Parsers\AttributeParser( array( 'label' ) ),
+			'core/social-link'     => new Parsers\AttributeParser( array( 'label' ) ),
 
 			// Generic shortcode handler.
 			'core/shortcode'   => new Parsers\ShortcodeBlock(),
@@ -53,9 +53,9 @@ class BlockParser {
 			'core/media-text'  => new Parsers\BasicText(),
 
 			// Shared custom blocks.
-			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', [ 'href' ] ),
-			'wporg/modal' => new Parsers\AttributeParser( [ 'label' ] ),
-		];
+			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', array( 'href' ) ),
+			'wporg/modal' => new Parsers\AttributeParser( array( 'label' ) ),
+		);
 	}
 
 	public static function post_to_strings( $post ) {
@@ -70,7 +70,7 @@ class BlockParser {
 			$strings[] = $post->post_excerpt;
 		}
 
-		$post_meta_to_include = apply_filters( 'translatable_post_meta', [] );
+		$post_meta_to_include = apply_filters( 'translatable_post_meta', array() );
 		foreach ( $post_meta_to_include as $meta_key ) {
 			$strings[] = get_post_meta( $post->ID, $meta_key, true );
 		}
@@ -89,7 +89,7 @@ class BlockParser {
 	public static function translate_blocks( string $content, callable $callback_translate ) /*: bool|string*/ {
 		$self         = new self( $content );
 
-		$translations = [];
+		$translations = array();
 		$translated   = false;
 		$strings      = $self->to_strings();
 
@@ -116,7 +116,7 @@ class BlockParser {
 			return $content;
 		}
 
-		$replacements = [];
+		$replacements = array();
 		foreach ( $strings as $string ) {
 			$replacements[ $string ] = $callback_translate( $string ) ?: $string;
 		}
@@ -126,10 +126,10 @@ class BlockParser {
 		return $block['innerContent'][0] ?: $content;
 	}
 
-	public function block_parser_to_strings( array $block ) : array {
+	public function block_parser_to_strings( array $block ): array {
 		// Skip blocks marked with 'notranslate' class — their content stays as plain HTML.
 		if ( ! empty( $block['attrs']['className'] ) && preg_match( '/\bnotranslate\b/', $block['attrs']['className'] ) ) {
-			return [];
+			return array();
 		}
 
 		$parser = $this->parsers[ $block['blockName'] ] ?? $this->fallback;
@@ -143,7 +143,7 @@ class BlockParser {
 		return array_unique( $strings );
 	}
 
-	public function block_parser_replace_strings( array &$block, array $replacements ) : array {
+	public function block_parser_replace_strings( array &$block, array $replacements ): array {
 		$parser = $this->parsers[ $block['blockName'] ] ?? $this->fallback;
 		$block = $parser->replace_strings( $block, $replacements );
 
@@ -154,8 +154,8 @@ class BlockParser {
 		return $block;
 	}
 
-	public function to_strings() : array {
-		$strings = [];
+	public function to_strings(): array {
+		$strings = array();
 
 		$blocks = parse_blocks( $this->content );
 
@@ -169,11 +169,11 @@ class BlockParser {
 		return $strings;
 	}
 
-	public function filter_out_shortcodes( string $string ) : bool {
+	public function filter_out_shortcodes( string $string ): bool {
 		return ! preg_match( '#^\[[a-z_-]{5,}\]$#', $string );
 	}
 
-	public function replace_strings_with_kses( array $replacements ) : string {
+	public function replace_strings_with_kses( array $replacements ): string {
 		// Sanitize replacement strings before injecting them into blocks and block attributes.
 		$sanitized_replacements = $replacements;
 		foreach ( $sanitized_replacements as &$replacement ) {
@@ -182,7 +182,7 @@ class BlockParser {
 		return $this->replace_strings( $sanitized_replacements );
 	}
 
-	public function replace_strings( array $replacements ) : string {
+	public function replace_strings( array $replacements ): string {
 		$translated = $this->content;
 
 		$blocks = parse_blocks( $translated );
@@ -215,13 +215,13 @@ class BlockParser {
 		// in the placeholder attribute: <!-- wp:paragraph {"placeholder":"dangerous characters go here"} -->
 		// Reference: https://github.com/WordPress/WordPress/blob/HEAD/wp-includes/blocks.php#L367
 
-		$excluded_characters = [
+		$excluded_characters = array(
 			'\\u002d\\u002d', // '--'
 			'\\u003c',        // '<'
 			'\\u003e',        // '>'
 			'\\u0026',        // '&'
 			'\\u0022',        // '"'
-		];
+		);
 
 		// Match any uninterrupted sequence of \u escaped unicode characters.
 		$decoded_string = preg_replace_callback(
@@ -240,7 +240,7 @@ class BlockParser {
 		);
 
 		// Decode < & > if they're part of a PHP tag.
-		$decoded_string = str_replace( [ '\\u003c?', '?\\u003e' ], [ '<?', '?>' ], $decoded_string );
+		$decoded_string = str_replace( array( '\\u003c?', '?\\u003e' ), array( '<?', '?>' ), $decoded_string );
 
 		return $decoded_string;
 	}
@@ -249,24 +249,24 @@ class BlockParser {
 /**
  * Helper function to replace all strings in content with i18n-wrapped strings.
  */
-function replace_with_i18n( string $content, string $textdomain = 'wporg' ) : string {
+function replace_with_i18n( string $content, string $textdomain = 'wporg' ): string {
 	$parser  = new BlockParser( $content );
 	$strings = $parser->to_strings();
 
 	// Entities that are always safe to decode regardless of HTML context.
-	$safe_entities = [
+	$safe_entities = array(
 		'&#039;' => "'",
 		'&quot;' => '"',
-	];
+	);
 
 	// Entities that are only safe to decode when using esc_html_e() (which re-encodes them).
-	$html_entities = [
+	$html_entities = array(
 		'&amp;' => '&',
 		'&lt;'  => '<',
 		'&gt;'  => '>',
-	];
+	);
 
-	$i18n_strings = [];
+	$i18n_strings = array();
 	foreach ( $strings as $string ) {
 		// Phase 1: Decode entities that are safe in any context.
 		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );

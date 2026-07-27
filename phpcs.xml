@@ -56,4 +56,16 @@
         <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
         <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
     </rule>
+
+    <!-- Don't enforce WPCS 3.x style and file-structure rules on forked files; short ternaries there
+         wrap translation callbacks, and expanding them would call the callback twice. -->
+    <rule ref="Universal.Operators.DisallowShortTernary">
+        <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
+    </rule>
+    <rule ref="Universal.Files.SeparateFunctionsFromOO">
+        <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Files.OneObjectStructurePerFile">
+        <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
+    </rule>
 </ruleset>

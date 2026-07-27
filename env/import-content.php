@@ -1,11 +1,5 @@
 #!/usr/bin/php
 <?php
-// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
-
-namespace WordPress_org\Main_2022\ImportTestContent;
-
-use Exception;
-
 /**
  * CLI script for generating local test content, fetched from the live wordpress.org site.
  *
@@ -13,6 +7,12 @@ use Exception;
  *
  * npx wp-env run cli "php bin/import-test-content.php"
  */
+
+// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
+
+namespace WordPress_org\Main_2022\ImportTestContent;
+
+use Exception;
 
 // This script should only be called in a CLI environment.
 if ( 'cli' != php_sapi_name() ) {
@@ -22,13 +22,13 @@ if ( 'cli' != php_sapi_name() ) {
 
 $opts = getopt( '', array( 'url:' ) );
 
-require dirname( dirname( __FILE__ ) ) . '/wp-load.php';
+require dirname( __DIR__ ) . '/wp-load.php';
 
 if ( 'local' !== wp_get_environment_type() ) {
 	throw new Exception( 'Not safe to run on ' . esc_html( get_site_url() ) );
 }
 
-if ( empty( $opts['url'] ) || esc_url_raw( $opts['url'], [ 'https' ] ) !== $opts['url'] ) {
+if ( empty( $opts['url'] ) || esc_url_raw( $opts['url'], array( 'https' ) ) !== $opts['url'] ) {
 	throw new Exception( 'Invalid url parameter ' . esc_html( $opts['url'] ) );
 }
 
@@ -99,7 +99,6 @@ function import_rest_to_posts( $rest_url ) {
 			'import_id' => $post->id,
 			'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( $post->date ) ),
 			'post_name' => $post->slug,
-			'post_title' => $post->title,
 			'post_status' => $post->status,
 			'post_type' => $post->type,
 			'post_title' => $post->title->rendered,

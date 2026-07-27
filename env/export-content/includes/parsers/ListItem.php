@@ -3,10 +3,10 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class ListItem implements BlockParser {
-	public function to_strings( array $block ) : array {
-		$strings = [];
+	public function to_strings( array $block ): array {
+		$strings = array();
 
-		$matches = [];
+		$matches = array();
 
 		if ( preg_match( '/<li[^>]*>(.+)<\/li>/is', $block['innerHTML'], $matches ) ) {
 			if ( ! empty( $matches[1] ) ) {
@@ -32,7 +32,7 @@ class ListItem implements BlockParser {
 		return $html;
 	}
 
-	public function replace_strings( array $block, array $replacements ) : array {
+	public function replace_strings( array $block, array $replacements ): array {
 
 		foreach ( $block['innerContent'] as $i => $html ) {
 			$block['innerContent'][ $i ] = $this->_do_replacement( $block, $replacements, $html );
