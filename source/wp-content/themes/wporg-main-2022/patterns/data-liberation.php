@@ -36,7 +36,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Many people don't realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it's hard to get out. <a href=\"https://github.com/WordPress/data-liberation/discussions/82\" data-type=\"page\" data-id=\"24221\" target=\"_blank\" rel=\"noreferrer noopener\">Read more</a>.", 'wporg' ); ?></p>
+<p><?php _e( 'Many people don’t realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it’s hard to get out. <a href="https://github.com/WordPress/data-liberation/discussions/82" data-type="page" data-id="24221" target="_blank" rel="noreferrer noopener">Read more</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -119,7 +119,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Phase 3 is a <a href=\"https://github.com/WordPress/try-wordpress/\" target=\"_blank\" rel=\"noreferrer noopener\">browser extension</a> that liberates your data from any website, including social media, closed page builders, and design tools like Figma. It's extendable by developers and can even double as a personal web scratchboard.", 'wporg' ); ?></p>
+<p><?php _e( 'Phase 3 is a <a href="https://github.com/WordPress/try-wordpress/" target="_blank" rel="noreferrer noopener">browser extension</a> that liberates your data from any website, including social media, closed page builders, and design tools like Figma. It’s extendable by developers and can even double as a personal web scratchboard.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -224,7 +224,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'As web hosts, agencies, and individual contributors - we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'As web hosts, agencies, and individual contributors – we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

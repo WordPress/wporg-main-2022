@@ -55,7 +55,7 @@
 
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'December 2, 2025 at 11:00 a.m. - 5:00 p.m. PST<br>Keynote and livestream begin at 12:00&nbsp;p.m. PST', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'December 2, 2025 at 11:00 a.m. – 5:00 p.m. PST<br>Keynote and livestream begin at 12:00&nbsp;p.m. PST', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -113,7 +113,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php _e( "State of the Word is the annual keynote address delivered by WordPress cofounder Matt Mullenweg, together with special guests. It is the moment to celebrate how far the open source project has come, share the roadmap that is taking shape, and see what is possible when people build the web together.<br><br>In 2025, State of the Word comes to San Francisco. This year's event will be a special one for WordPress. For the first time, we are celebrating SOTW alongside the official release of WordPress 6.9 on the same day. Expect demos, and even get an early preview of the future beyond for WordPress.<br><br>Join us live in the room or on the live stream to experience the energy of the community, the clarity of the vision, and a first look at what is next for WordPress. The 2025 event will feature a keynote presentation, as well as a live Q&A with <a href=\"https://ma.tt/\">Matt Mullenweg</a>.", 'wporg' ); ?></p>
+<p class="has-medium-font-size"><?php _e( 'State of the Word is the annual keynote address delivered by WordPress cofounder Matt Mullenweg, together with special guests. It is the moment to celebrate how far the open source project has come, share the roadmap that is taking shape, and see what is possible when people build the web together.<br><br>In 2025, State of the Word comes to San Francisco. This year’s event will be a special one for WordPress. For the first time, we are celebrating SOTW alongside the official release of WordPress 6.9 on the same day. Expect demos, and even get an early preview of the future beyond for WordPress.<br><br>Join us live in the room or on the live stream to experience the energy of the community, the clarity of the vision, and a first look at what is next for WordPress. The 2025 event will feature a keynote presentation, as well as a live Q&A with <a href="https://ma.tt/">Matt Mullenweg</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "Forever in our hearts, their legacy endures through every line of code and every user they've impacted.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Forever in our hearts, their legacy endures through every line of code and every user they’ve impacted.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

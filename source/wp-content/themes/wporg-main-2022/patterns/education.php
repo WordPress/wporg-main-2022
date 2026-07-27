@@ -61,7 +61,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( "We aim to bring WordPress education directly to students on campus, empowering them to discover the platform's potential for their studies and future careers. We strive to bridge the gap between the classroom and the global WordPress community, fostering connections that inspire growth and opportunity.", 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'We aim to bring WordPress education directly to students on campus, empowering them to discover the platform’s potential for their studies and future careers. We strive to bridge the gap between the classroom and the global WordPress community, fostering connections that inspire growth and opportunity.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

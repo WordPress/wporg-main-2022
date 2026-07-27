@@ -150,7 +150,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They're also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. For inspiration, check out what others have done with WordPress in the Showcase.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Blocks are the visual foundation of WordPress, and can be used to create and manage every part of your site. They’re also easier than you think. Learn how to edit a block and you learn how to use all of WordPress—without having to write code. For inspiration, check out what others have done with WordPress in the Showcase.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -234,7 +234,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php _e( "If you can't find a block that suits your needs, create your own. Creating a block is as simple as building a React component. Use the &nbsp;<code>@wordpress/create-block</code>&nbsp;package&nbsp;to jumpstart your creation.", 'wporg' ); ?></p>
+<p class="is-style-short-text"><?php _e( 'If you can’t find a block that suits your needs, create your own. Creating a block is as simple as building a React component. Use the &nbsp;<code>@wordpress/create-block</code>&nbsp;package&nbsp;to jumpstart your creation.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -258,7 +258,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new with blocks", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'See what’s new with blocks', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->
@@ -313,7 +313,7 @@ esc_html_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they're easily understood by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'While blocks are powerful on their own, they’re also part of something bigger and can be combined or deployed in various ways. As a unified and open syntax, they’re easily understood by editors, browsers, and even AI. So whoever is editing will find it easy to make vibrant, personalized designs and experiences happen, fast.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->

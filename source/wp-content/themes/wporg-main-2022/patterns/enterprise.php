@@ -15,7 +15,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-columns alignwide" style="margin-top:var(--wp--preset--spacing--30)"><!-- wp:column {"width":"55%"} -->
 <div class="wp-block-column" style="flex-basis:55%"><!-- wp:paragraph -->
-<p><?php esc_html_e( "The WordPress platform has grown to become the dominant market leader for content management. Discover how today's biggest brands use WordPress, and how WordPress can work for your enterprise.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'The WordPress platform has grown to become the dominant market leader for content management. Discover how today’s biggest brands use WordPress, and how WordPress can work for your enterprise.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -38,7 +38,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"id":15780,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"196px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/RD.webp" alt="<?php esc_attr_e( "Reader's Digest logo", 'wporg' ); ?>" class="wp-image-15780" style="object-fit:cover" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/01/RD.webp" alt="<?php esc_attr_e( 'Reader’s Digest logo', 'wporg' ); ?>" class="wp-image-15780" style="object-fit:cover" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"id":15783,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"88px"}}} -->
@@ -79,7 +79,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"}}}} -->
-<p style="padding-bottom:var(--wp--preset--spacing--60)"><?php esc_html_e( "Whether as a primary or secondary content management system (CMS), you'll find WordPress being used by enterprises at scale wherever there's a requirement for flexible, cost-effective, and secure creation and distribution of content. Explore some of the platform's most popular use cases for enterprises:", 'wporg' ); ?></p>
+<p style="padding-bottom:var(--wp--preset--spacing--60)"><?php esc_html_e( 'Whether as a primary or secondary content management system (CMS), you’ll find WordPress being used by enterprises at scale wherever there’s a requirement for flexible, cost-effective, and secure creation and distribution of content. Explore some of the platform’s most popular use cases for enterprises:', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|40"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
@@ -111,7 +111,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"spacing":{"padding":{"top":"var:preset|spacing|10"}}}} -->
-<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php esc_html_e( "WordPress will help you get your brand's story in front of your potential customers quickly and easily.", 'wporg' ); ?></p>
+<p class="is-style-short-text" style="padding-top:var(--wp--preset--spacing--10)"><?php esc_html_e( 'WordPress will help you get your brand’s story in front of your potential customers quickly and easily.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

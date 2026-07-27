@@ -249,7 +249,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":23067,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/commandpalette-1.png" alt="<?php esc_attr_e( 'Screenshot of the refreshed UI of the Command Palette with a decorative background image. It displays a search bar with the words "Search for commands" and a variety of shortcuts listed below, including "Add new page," "Toggle code editor," "Editor preferences," and more.', 'wporg' ); ?>" class="wp-image-23067" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/11/commandpalette-1.png" alt="<?php esc_attr_e( 'Screenshot of the refreshed UI of the Command Palette with a decorative background image. It displays a search bar with the words “Search for commands” and a variety of shortcuts listed below, including “Add new page,” “Toggle code editor,” “Editor preferences,” and more.', 'wporg' ); ?>" class="wp-image-23067" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -380,7 +380,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( "Incorporate buttons into your navigation menu to guide visitors to a call-to-action. Now it's possible without a line of code.", 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'Incorporate buttons into your navigation menu to guide visitors to a call-to-action. Now it’s possible without a line of code.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -422,7 +422,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
-<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( "Need to use your custom patterns on another site? It's simple. Import and export them as JSON files from the Site Editor’s patterns view.", 'wporg' ); ?></p>
+<p class="has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'Need to use your custom patterns on another site? It’s simple. Import and export them as JSON files from the Site Editor’s patterns view.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

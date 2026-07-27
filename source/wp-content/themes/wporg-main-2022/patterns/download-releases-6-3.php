@@ -255,7 +255,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "Get a sense of how all your site's patterns feel together.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Get a sense of how all your site’s patterns feel together.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -401,7 +401,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20581,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php esc_attr_e( 'Screenshot of the block editor, with the text, "Hello, WordPress", and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2023/08/image-5.png" alt="<?php esc_attr_e( 'Screenshot of the block editor, with the text, “Hello, WordPress”, and the new Top Toolbar option enabled.', 'wporg' ); ?>" class="wp-image-20581" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -471,7 +471,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20622,"width":"135px","height":"37px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php esc_attr_e( 'Screenshot of a "Start typing..." prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-11.png" alt="<?php esc_attr_e( 'Screenshot of a “Start typing…” prompt.', 'wporg' ); ?>" class="wp-image-20622" style="width:135px;height:37px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -504,7 +504,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<em>*Synced patterns were previously referred to as "reusable blocks."</em>', 'wporg' ); ?></p>
+<p><?php _e( '<em>*Synced patterns were previously referred to as “reusable blocks.”</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

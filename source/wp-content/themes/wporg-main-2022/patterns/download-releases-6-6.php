@@ -119,7 +119,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Auto-update your plugins with peace of mind.</strong><br>Enjoy the ease of plugin auto-updates with the safety of rollbacks if anything goes wrong, improving your site's security while minimizing potential downtime.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Auto-update your plugins with peace of mind.</strong><br>Enjoy the ease of plugin auto-updates with the safety of rollbacks if anything goes wrong, improving your site’s security while minimizing potential downtime.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

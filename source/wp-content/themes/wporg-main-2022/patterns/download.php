@@ -42,7 +42,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"className":"is-style-default"} -->
-<p class="is-style-default"><?php esc_html_e( "You're an important part of the global community that has used, built, and transformed the platform into what it is today. Find out more ways you can contribute and make an impact on the future of the web.", 'wporg' ); ?></p>
+<p class="is-style-default"><?php esc_html_e( 'You’re an important part of the global community that has used, built, and transformed the platform into what it is today. Find out more ways you can contribute and make an impact on the future of the web.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"is-style-default","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -155,7 +155,7 @@ esc_html_e( 'Recommend PHP [recommended_php] or greater and MySQL version [recom
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="resources" style="padding-top:160px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:160px;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"120px"}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"fontSize":"heading-2"} -->
-<h2 class="wp-block-heading has-heading-2-font-size"><?php esc_html_e( "You've got WordPress. What's next?", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-2-font-size"><?php esc_html_e( 'You’ve got WordPress. What’s next?', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->

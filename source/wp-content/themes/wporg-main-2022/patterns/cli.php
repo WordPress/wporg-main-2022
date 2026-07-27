@@ -307,7 +307,7 @@ wp cache flush</code></pre>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%","style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|default","bottom":"0","left":"var:preset|spacing|default"}}}} -->
 <div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--default);padding-bottom:0;padding-left:var(--wp--preset--spacing--default);flex-basis:66.66%"><!-- wp:heading {"align":"wide","fontSize":"heading-3"} -->
-<h2 class="wp-block-heading alignwide has-heading-3-font-size"><?php esc_html_e( "Built for what's next", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-heading-3-font-size"><?php esc_html_e( 'Built for what’s next', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10","style":{"layout":[]}} -->

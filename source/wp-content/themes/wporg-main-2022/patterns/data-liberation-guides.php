@@ -131,7 +131,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'As web hosts, agencies, and individual contributors - we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'As web hosts, agencies, and individual contributors – we can work together to make Data Liberation a reality.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

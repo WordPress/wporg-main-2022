@@ -133,7 +133,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"wide"} -->
-<p class="alignwide"><?php _e( "<strong>WordPress Credits — 150+ hours. </strong>The full program. It starts at a minimum of 150 hours and can be extended to fit an institution's needs (so far we've run it up to 400 hours). It includes everything in the condensed track plus extra onboarding courses, building a personal website with regular progress updates, mid-course feedback, and active participation in the global WordPress community and events. A good fit for internships, capstone projects, or a full-semester course.", 'wporg' ); ?></p>
+<p class="alignwide"><?php _e( '<strong>WordPress Credits — 150+ hours. </strong>The full program. It starts at a minimum of 150 hours and can be extended to fit an institution’s needs (so far we’ve run it up to 400 hours). It includes everything in the condensed track plus extra onboarding courses, building a personal website with regular progress updates, mid-course feedback, and active participation in the global WordPress community and events. A good fit for internships, capstone projects, or a full-semester course.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"wide"} -->
@@ -246,7 +246,7 @@
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "These are the most common models, not the only ones. We're happy to discuss any arrangement that works for your institution — our goal is for the time and work students invest to be formally recognized by their school or university.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'These are the most common models, not the only ones. We’re happy to discuss any arrangement that works for your institution — our goal is for the time and work students invest to be formally recognized by their school or university.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
@@ -328,7 +328,7 @@
 <!-- wp:group {"align":"full","className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","minimumColumnWidth":"30rem","columnCount":2}} -->
 <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--0);padding-right:0;padding-bottom:var(--wp--preset--spacing--0);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '"<em>My experience within the WordPress Credits project has been truly enriching. From the very beginning, I have felt supported and motivated to learn more each day. On a personal level, my supervisor has been exceptional, always attentive to my questions, responding quickly, and showing a strong willingness to help.</em>"', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '“<em>My experience within the WordPress Credits project has been truly enriching. From the very beginning, I have felt supported and motivated to learn more each day. On a personal level, my supervisor has been exceptional, always attentive to my questions, responding quickly, and showing a strong willingness to help.</em>“', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -350,7 +350,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--0);padding-right:0;padding-bottom:var(--wp--preset--spacing--0);padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '"I <em>consider this project interesting and useful for my academic path. I had the opportunity to develop digital skills and put my communication abilities into practice. Moreover, I had the chance to participate in an active, dynamic, and highly collaborative community, with in-person meetings that were helpful in improving my journey.</em>"', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '“I <em>consider this project interesting and useful for my academic path. I had the opportunity to develop digital skills and put my communication abilities into practice. Moreover, I had the chance to participate in an active, dynamic, and highly collaborative community, with in-person meetings that were helpful in improving my journey.</em>“', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -372,7 +372,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|10"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
 <div class="wp-block-group" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--0);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '"<em>This project felt like being part of a big creative community, always ready to help each other to create something that matters, something ever changing and ever evolving. Thanks to this program I had the opportunity to contribute in a tangible way to a much bigger project to help other students like me to participate as well.</em>"', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '“<em>This project felt like being part of a big creative community, always ready to help each other to create something that matters, something ever changing and ever evolving. Thanks to this program I had the opportunity to contribute in a tangible way to a much bigger project to help other students like me to participate as well.</em>“', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -394,7 +394,7 @@
 
 <!-- wp:group {"className":"is-style-four-columns","style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|10"},"layout":{"columnSpan":1,"rowSpan":1},"dimensions":{"minHeight":"0px"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
 <div class="wp-block-group is-style-four-columns" style="min-height:0px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--0);padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph {"className":"is-style-short-text","style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"normal"} -->
-<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '"<em>This project gave me a truly positive experience: I felt supported throughout the journey, and I had the opportunity to grow, develop my skills, and learn things I didn’t know before. If you’re looking for a place where you’ll be welcomed with open arms, this is it.</em> "', 'wporg' ); ?></p>
+<p class="is-style-short-text has-charcoal-0-color has-text-color has-link-color has-normal-font-size"><?php _e( '“<em>This project gave me a truly positive experience: I felt supported throughout the journey, and I had the opportunity to grow, develop my skills, and learn things I didn’t know before. If you’re looking for a place where you’ll be welcomed with open arms, this is it.</em> “', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -527,7 +527,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( "Ahmad's Education", 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Ahmad’s Education', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -607,7 +607,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Creative Campus - Universidad Europea', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'Creative Campus – Universidad Europea', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -873,7 +873,7 @@
 
 <!-- wp:group {"layout":{"type":"constrained","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"has-charcoal-0-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}},"typography":{"textAlign":"right"}},"textColor":"charcoal-0"} -->
-<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( "L'Hospitalet de Llobregat, Spain", 'wporg' ); ?></p>
+<p class="has-text-align-right has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'L’Hospitalet de Llobregat, Spain', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -947,7 +947,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'CUNY - New York City College of Technology', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'CUNY – New York City College of Technology', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

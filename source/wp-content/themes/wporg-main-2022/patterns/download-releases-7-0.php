@@ -15,7 +15,7 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"typography":{"textAlign":"center"}}} -->
-<p class="has-text-align-center" style="padding-top:var(--wp--preset--spacing--20)"><?php esc_html_e( "Build the navigation you've always wanted. Drop in a pattern, adjust it like a single block. Show the right content to the right screen. Connect the AI tools you already use. WordPress 7.0 hands you more of the controls, and trusts you to use them.", 'wporg' ); ?></p>
+<p class="has-text-align-center" style="padding-top:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Build the navigation you’ve always wanted. Drop in a pattern, adjust it like a single block. Show the right content to the right screen. Connect the AI tools you already use. WordPress 7.0 hands you more of the controls, and trusts you to use them.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -42,7 +42,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Work together, directly in the editor.</strong><br>If your host has it enabled, you can preview the next generation of collaborative editing, with early access to real-time editing with multiple people at once. No more \"someone else is editing this\" warnings. Whether you're co-writing a post, reviewing a layout, or making last-minute edits before publishing, everyone stays in sync without leaving the editor.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Work together, directly in the editor.</strong><br>If your host has it enabled, you can preview the next generation of collaborative editing, with early access to real-time editing with multiple people at once. No more “someone else is editing this” warnings. Whether you’re co-writing a post, reviewing a layout, or making last-minute edits before publishing, everyone stays in sync without leaving the editor.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -120,7 +120,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Scrub through every version of your page.</strong><br>Review your post's revision history with a timeline slider and see exactly what changed in the document with visual markers, block by block. Find the version you want and restore it in one click.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Scrub through every version of your page.</strong><br>Review your post’s revision history with a timeline slider and see exactly what changed in the document with visual markers, block by block. Find the version you want and restore it in one click.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -154,7 +154,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>Patterns as single blocks.</strong><br>Drop a pattern onto your page and it behaves like one block, so you don’t have to hunt through nested blocks for the element you want to change. Swap the text and images, adjust styles from the inspector, and keep moving. For any advanced edits, a single click to "edit pattern" gives you access to all available tools.', 'wporg' ); ?></p>
+<p><?php _e( '<strong>Patterns as single blocks.</strong><br>Drop a pattern onto your page and it behaves like one block, so you don’t have to hunt through nested blocks for the element you want to change. Swap the text and images, adjust styles from the inspector, and keep moving. For any advanced edits, a single click to “edit pattern” gives you access to all available tools.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -214,7 +214,7 @@
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"0","right":"0"},"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top has-charcoal-3-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0"><!-- wp:column {"verticalAlignment":"top","width":"50%","metadata":{"name":"Font library"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:image {"id":50467,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":{"topLeft":"16px","topRight":"16px","bottomLeft":"16px","bottomRight":"16px"}}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2026/03/7-0-secondary-fonts.png" alt="<?php esc_attr_e( 'Illustration of 5 different weights of the font "Manrope".', 'wporg' ); ?>" class="wp-image-50467" style="border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-left-radius:16px;border-bottom-right-radius:16px" /></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="https://wordpress.org/files/2026/03/7-0-secondary-fonts.png" alt="<?php esc_attr_e( 'Illustration of 5 different weights of the font “Manrope”.', 'wporg' ); ?>" class="wp-image-50467" style="border-top-left-radius:16px;border-top-right-radius:16px;border-bottom-left-radius:16px;border-bottom-right-radius:16px" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"large","fontFamily":"inter"} -->
@@ -222,7 +222,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "The font library, previously only available in block themes, now works across all WordPress themes. Browse, install, and manage fonts directly from the editor, whatever theme you're using.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'The font library, previously only available in block themes, now works across all WordPress themes. Browse, install, and manage fonts directly from the editor, whatever theme you’re using.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -280,7 +280,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "Scrub through your page's edit history and see exactly what changed, highlighted in green. When you find the version you want, restore it in one click.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'Scrub through your page’s edit history and see exactly what changed, highlighted in green. When you find the version you want, restore it in one click.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

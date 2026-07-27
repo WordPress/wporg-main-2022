@@ -14,7 +14,7 @@
 <!-- wp:paragraph -->
 <p><?php
 /* translators: [market_share] is a shortcode and should not be translated. */
-_e( "We take the security of the WordPress project and the ecosystem seriously. With <a href=\"https://wordpress.org/about/history/\">over 20 years of history</a> and powering more than [market_share] of the web, we're committed to ensuring security for all, from solo bloggers to enterprise organizations.", 'wporg' );
+_e( 'We take the security of the WordPress project and the ecosystem seriously. With <a href="https://wordpress.org/about/history/">over 20 years of history</a> and powering more than [market_share] of the web, we’re committed to ensuring security for all, from solo bloggers to enterprise organizations.', 'wporg' );
 ?></p>
 <!-- /wp:paragraph -->
 
@@ -70,7 +70,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"backgroundColor":"blueberry-4"} -->
-<p class="has-blueberry-4-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><?php _e( "Learn more about the <a href=\"https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true\">WordPress project's security stance in our whitepaper</a>.", 'wporg' ); ?></p>
+<p class="has-blueberry-4-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><?php _e( 'Learn more about the <a href="https://github.com/WordPress/Security-White-Paper/blob/master/WordPressSecurityWhitePaper.pdf?raw=true">WordPress project’s security stance in our whitepaper</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
@@ -84,7 +84,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "If you believe you've identified a security problem in your own plugin, the WordPress plugins team is here to support you.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'If you believe you’ve identified a security problem in your own plugin, the WordPress plugins team is here to support you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -102,7 +102,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( "If you believe you've identified a security problem in your own theme, the WordPress theme review team is here to support you.", 'wporg' ); ?></p>
+<p><?php esc_html_e( 'If you believe you’ve identified a security problem in your own theme, the WordPress theme review team is here to support you.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

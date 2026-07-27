@@ -36,7 +36,7 @@
 
 <!-- wp:column {"verticalAlignment":"center","width":""} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":48526,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/6-9-hero-spot.png" alt="<?php esc_attr_e( 'Collage of images, one being lifted off the page with a hand cursor. A commenter notes, "I love how this gallery looks like".', 'wporg' ); ?>" class="wp-image-48526" style="object-fit:cover" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/6-9-hero-spot.png" alt="<?php esc_attr_e( 'Collage of images, one being lifted off the page with a hand cursor. A commenter notes, “I love how this gallery looks like”.', 'wporg' ); ?>" class="wp-image-48526" style="object-fit:cover" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -54,7 +54,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Leave feedback right where you're working.</strong><br>With notes attached directly to blocks, your team can stay aligned, track changes, and turn feedback into action all in one place. Whether you're working on copy or refining design, collaboration happens seamlessly on the canvas itself.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Leave feedback right where you’re working.</strong><br>With notes attached directly to blocks, your team can stay aligned, track changes, and turn feedback into action all in one place. Whether you’re working on copy or refining design, collaboration happens seamlessly on the canvas itself.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -88,7 +88,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Design flows naturally.</strong><br>Building layouts is now more intuitive and flexible with clear drag handles and a live preview that shows exactly what you're moving—a faster way to build pages.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Design flows naturally.</strong><br>Building layouts is now more intuitive and flexible with clear drag handles and a live preview that shows exactly what you’re moving—a faster way to build pages.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -106,7 +106,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<strong>Your tools, always at hand.</strong><br>Access the Command Palette from any part of your site, whether you're writing your latest post, deep in design in the Site Editor, or browsing your plugins. Everything you need, just a few keystrokes away.", 'wporg' ); ?></p>
+<p><?php _e( '<strong>Your tools, always at hand.</strong><br>Access the Command Palette from any part of your site, whether you’re writing your latest post, deep in design in the Site Editor, or browsing your plugins. Everything you need, just a few keystrokes away.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

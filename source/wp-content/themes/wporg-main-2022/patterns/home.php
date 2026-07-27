@@ -97,7 +97,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'See what’s new', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -178,7 +178,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'See what’s new', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->

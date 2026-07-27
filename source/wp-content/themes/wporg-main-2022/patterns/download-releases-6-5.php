@@ -364,7 +364,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "There's now an easier way to manage plugin dependencies. Plugin authors can supply a new <code>Requires Plugins</code> header with a comma-separated list of required plugin slugs, presenting users with links to install and activate those plugins first.", 'wporg' ); ?></p>
+<p><?php _e( 'There’s now an easier way to manage plugin dependencies. Plugin authors can supply a new <code>Requires Plugins</code> header with a comma-separated list of required plugin slugs, presenting users with links to install and activate those plugins first.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
