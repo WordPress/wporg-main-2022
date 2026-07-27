@@ -30,7 +30,7 @@ Run all of these from the repo root, not from theme/plugin subfolders.
 - Lint front-end: `npm run lint:frontend` (stylelint + eslint via `@wordpress/scripts`)
 - PHP tests: `npm run test:php` (PHPUnit, requires the running Docker env)
 - Run one test: `npx wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml --filter <TestName>`
-- WP-CLI: `npx wp-env run cli wp post list --post_status=publish` (do NOT quote the command as one string — current wp-env exec's it as a single binary name and fails)
+- WP-CLI: `npx wp-env run cli wp post list --post_status=publish`
 - Sync pattern content from page editor: `npm run build:patterns`
 - Refresh local content from staging: `npm run setup:refresh` · reset clean: `npx wp-env clean all && npm run setup:wp`
 - Visual regression: `npm run backstop:reference` then `npm run backstop:test` · Lighthouse: `npm run lighthouse`
