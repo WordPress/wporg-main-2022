@@ -23,7 +23,7 @@ function privacy_process_request( $type ) {
 	$success       = false;
 	$nonce_action  = 'request_' . $type;
 
-	if ( empty( $_POST['email'] ) || ! is_string( $_POST['email'] ) || ! $type || ! in_array( $type, [ 'erase', 'export' ], true ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+	if ( empty( $_POST['email'] ) || ! is_string( $_POST['email'] ) || ! $type || ! in_array( $type, array( 'erase', 'export' ), true ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		return compact( 'email', 'error_message', 'success', 'nonce_action' );
 	}
 
@@ -72,10 +72,10 @@ function privacy_process_request( $type ) {
 
 		$api_request = GDPR_Main::instance()->call_api_for_site(
 			'wordpress.org/',
-			[
+			array(
 				'email'           => $email,
 				'requesting_user' => $requesting_user,
-			],
+			),
 			$api_method,
 			'POST'
 		);

@@ -52,22 +52,22 @@ function enqueue_assets() {
 		wp_enqueue_script(
 			'chartjs',
 			get_theme_file_uri( '/js/vendor/chart.umd.min.js' ),
-			[],
+			array(),
 			'4.4.1',
 			true
 		);
-		wp_enqueue_script( 'wporg-page-stats', get_theme_file_uri( '/js/page-stats.js' ), [ 'jquery', 'chartjs' ], filemtime( __DIR__ . '/js/page-stats.js' ), true );
+		wp_enqueue_script( 'wporg-page-stats', get_theme_file_uri( '/js/page-stats.js' ), array( 'jquery', 'chartjs' ), filemtime( __DIR__ . '/js/page-stats.js' ), true );
 		wp_localize_script(
 			'wporg-page-stats',
 			'wporgPageStats',
-			[
+			array(
 				'viewAsTable' => __( 'View as table', 'wporg' ),
 				'hideTable'   => __( 'Hide table', 'wporg' ),
 				'version'     => __( 'Version', 'wporg' ),
 				'locale'      => __( 'Locale', 'wporg' ),
 				'usage'       => __( 'Usage', 'wporg' ),
 				'older'       => __( 'Older', 'wporg' ),
-			]
+			)
 		);
 	}
 
@@ -304,7 +304,7 @@ function use_parent_page_title( $block_content, $block, $instance ) {
  */
 add_action(
 	'after_setup_theme',
-	function() {
+	function () {
 		register_nav_menus(
 			array(
 				'rosetta_main' => 'Rosetta',
@@ -396,7 +396,7 @@ function inject_podcast_social_icons( $block_content, $block ) {
  */
 add_action(
 	'admin_menu',
-	function() {
+	function () {
 		remove_submenu_page( 'themes.php', 'site-editor.php' );
 	}
 );

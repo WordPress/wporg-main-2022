@@ -1,4 +1,8 @@
 <?php
+/**
+ * Shortcodes for the wordpress.org theme.
+ */
+
 namespace WordPressdotorg\Theme\Main_2022;
 
 /**
@@ -6,7 +10,7 @@ namespace WordPressdotorg\Theme\Main_2022;
  */
 add_shortcode(
 	'market_share',
-	function() {
+	function () {
 		return number_format_i18n( defined( 'WP_MARKET_SHARE' ) ? WP_MARKET_SHARE : 43 ) . '%';
 	}
 );
@@ -16,7 +20,7 @@ add_shortcode(
  */
 add_shortcode(
 	'plugin_count',
-	function() {
+	function () {
 		return number_format_i18n( defined( 'WP_PLUGIN_COUNT' ) ? WP_PLUGIN_COUNT : 55000 );
 	}
 );
@@ -26,7 +30,7 @@ add_shortcode(
  */
 add_shortcode(
 	'recommended_php',
-	function() {
+	function () {
 		return defined( 'RECOMMENDED_PHP' ) ? RECOMMENDED_PHP : substr( phpversion(), 0, 3 );
 	}
 );
@@ -36,7 +40,7 @@ add_shortcode(
  */
 add_shortcode(
 	'minimum_php',
-	function() {
+	function () {
 		return defined( 'MINIMUM_PHP' ) ? MINIMUM_PHP : '7.2.24';
 	}
 );
@@ -46,7 +50,7 @@ add_shortcode(
  */
 add_shortcode(
 	'recommended_mysql',
-	function() {
+	function () {
 		return '8.0';
 	}
 );
@@ -56,7 +60,7 @@ add_shortcode(
  */
 add_shortcode(
 	'recommended_mariadb',
-	function() {
+	function () {
 		return '10.11';
 	}
 );
@@ -66,7 +70,7 @@ add_shortcode(
  */
 add_shortcode(
 	'latest_version',
-	function() {
+	function () {
 		global $wp_version;
 		$latest_release = $wp_version;
 
@@ -90,18 +94,16 @@ add_shortcode(
  */
 add_shortcode(
 	'stable_branch',
-	function() {
+	function () {
 		global $wp_version;
 		$stable_branch = '';
 
 		if ( defined( 'WP_CORE_STABLE_BRANCH' ) ) {
 			$stable_branch = WP_CORE_STABLE_BRANCH;
-		} else {
+		} elseif ( preg_match( '/[0-9]+\.[0-9]/', $wp_version, $matches ) ) {
 			// Fallback if the constant is undefined. This isn't exactly correct,
 			// but displays something for testing purposes.
-			if ( preg_match( '/[0-9]+\.[0-9]/', $wp_version, $matches ) ) {
-				$stable_branch = $matches[0];
-			}
+			$stable_branch = $matches[0];
 		}
 
 		return $stable_branch;
@@ -113,7 +115,7 @@ add_shortcode(
  */
 add_shortcode(
 	'download_link',
-	function( $attrs = array() ) {
+	function ( $attrs = array() ) {
 		$ext = ( ! empty( $attrs['type'] ) && 'tar.gz' === $attrs['type'] ) ? 'tar.gz' : 'zip';
 
 		$link = "https://wordpress.org/latest.{$ext}";
@@ -134,7 +136,7 @@ add_shortcode(
  */
 add_shortcode(
 	'latest_version_date',
-	function( $attrs = array() ) {
+	function ( $attrs = array() ) {
 		$format = $attrs['format'] ?? 'Y-m-d\TH:i:s\+00:00';
 
 		$timestamp = defined( 'WPORG_WP_RELEASES_PATH' ) ? filemtime( WPORG_WP_RELEASES_PATH . 'wordpress-' . WP_CORE_LATEST_RELEASE . '.zip' ) : time();

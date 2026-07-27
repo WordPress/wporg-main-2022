@@ -57,7 +57,7 @@ function render( $attributes, $content, $block ) {
 	if ( isset( $releases['latest'] ) ) {
 		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
 		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
-		$block_content .= render_table( [ $releases['latest'] ] );
+		$block_content .= render_table( array( $releases['latest'] ) );
 		$block_content .= '</div>';
 	}
 

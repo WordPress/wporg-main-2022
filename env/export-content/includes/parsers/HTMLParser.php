@@ -3,8 +3,8 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class HTMLParser implements BlockParser {
-	public $tags = [];
-	public $attributes = [];
+	public $tags = array();
+	public $attributes = array();
 	public $min_string_length = 0;
 
 	public function __construct( $tags = array(), $attributes = array(), $min_string_length = 0 ) {
@@ -13,8 +13,8 @@ class HTMLParser implements BlockParser {
 		$this->min_string_length = (int) $min_string_length;
 	}
 
-	public function to_strings( array $block ) : array {
-		$strings = [];
+	public function to_strings( array $block ): array {
+		$strings = array();
 
 		foreach ( $this->tags as $tag ) {
 			$tag = $this->escape_tag( $tag, '#' );
@@ -26,7 +26,7 @@ class HTMLParser implements BlockParser {
 
 		foreach ( $this->attributes as $attr ) {
 			$attr = $this->escape_attr( $attr, '#' );
-			$found_strings = [];
+			$found_strings = array();
 
 			if (
 				str_contains( $block['innerHTML'], "='" ) &&
@@ -46,7 +46,7 @@ class HTMLParser implements BlockParser {
 			if ( 'href' === $attr ) {
 				$found_strings = array_filter(
 					$found_strings,
-					function( $value ) {
+					function ( $value ) {
 						// Anchors.
 						if ( str_starts_with( $value, '#' ) ) {
 							return false;
@@ -77,7 +77,7 @@ class HTMLParser implements BlockParser {
 		if ( $this->min_string_length ) {
 			$strings = array_filter(
 				$strings,
-				function( $string ) {
+				function ( $string ) {
 					if ( function_exists( 'mb_strlen' ) ) {
 						return mb_strlen( $string ) >= $this->min_string_length;
 					}
@@ -93,12 +93,12 @@ class HTMLParser implements BlockParser {
 	/**
 	 * URL attributes that should use esc_url( __() ) instead of esc_attr_e().
 	 */
-	private $url_attributes = [ 'href', 'src', 'action' ];
+	private $url_attributes = array( 'href', 'src', 'action' );
 
 	/**
 	 * Convert a _e() replacement to use esc_attr_e() for attribute contexts.
 	 */
-	private function escape_for_attribute( string $replacement ) : string {
+	private function escape_for_attribute( string $replacement ): string {
 		$replacement = str_replace( ' esc_html_e(', ' esc_attr_e(', $replacement );
 		$replacement = str_replace( ' _e(', ' esc_attr_e(', $replacement );
 
@@ -108,7 +108,7 @@ class HTMLParser implements BlockParser {
 	/**
 	 * Convert a _e() / esc_html_e() replacement to use echo esc_url( __() ) for URL attribute contexts.
 	 */
-	private function escape_for_url_attribute( string $replacement ) : string {
+	private function escape_for_url_attribute( string $replacement ): string {
 		$replacement = str_replace( ' esc_html_e(', ' echo esc_url( __(', $replacement );
 		$replacement = str_replace( ' _e(', ' echo esc_url( __(', $replacement );
 		$replacement = str_replace( '); ?>', ') ); ?>', $replacement );
@@ -117,7 +117,7 @@ class HTMLParser implements BlockParser {
 	}
 
 	// todo: this needs a fix to properly rebuild innerContent - see ParagraphParserTest
-	public function replace_strings( array $block, array $replacements ) : array {
+	public function replace_strings( array $block, array $replacements ): array {
 
 		$html = $block['innerHTML'];
 		$content = $block['innerContent'];

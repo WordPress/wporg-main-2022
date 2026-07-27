@@ -42,7 +42,7 @@ function init() {
 function render( $attributes, $content, $block ) {
 	$type = $attributes['type'] ?? 'export';
 
-	if ( ! in_array( $type, [ 'export', 'erase' ], true ) ) {
+	if ( ! in_array( $type, array( 'export', 'erase' ), true ) ) {
 		return '';
 	}
 

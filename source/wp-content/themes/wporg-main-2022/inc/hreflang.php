@@ -157,7 +157,7 @@ function hreflang_link_attributes() {
 
 		uasort(
 			$sites,
-			function( $a, $b ) {
+			function ( $a, $b ) {
 				return strcasecmp( $a->hreflang, $b->hreflang );
 			}
 		);

@@ -104,7 +104,6 @@
 			]
 		}
 	],
-	"require": {},
 	"require-dev": {
 		"composer/installers": "~1.0",
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -115,7 +114,7 @@
 		"wordpress-meta/wporg-main": "1",
 		"wordpress-meta/handbook": "1",
 		"wordpress-meta/wporg-markdown": "1",
-		"wp-coding-standards/wpcs": "2.*",
+		"wp-coding-standards/wpcs": "^3.4.1",
 		"wp-phpunit/wp-phpunit": "6.*",
 		"wpackagist-plugin/block-visibility": "*",
 		"wpackagist-plugin/gutenberg": "*",

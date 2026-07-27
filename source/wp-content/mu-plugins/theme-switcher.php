@@ -50,12 +50,28 @@ if ( 'wporg-main-2022' === get_option( 'stylesheet' ) ) {
 	if ( ! should_use_new_theme() ) {
 		if ( 'local' === wp_get_environment_type() ) {
 			// Enable the old parent & child themes.
-			add_filter( 'template', function() { return 'wporg'; } );
-			add_filter( 'stylesheet', function() { return 'wporg-main'; } );
+			add_filter(
+				'template',
+				function () {
+					return 'wporg'; }
+			);
+			add_filter(
+				'stylesheet',
+				function () {
+					return 'wporg-main'; }
+			);
 		} else {
 			// Slightly different paths for old themes on sandbox/producton
-			add_filter( 'template', function() { return 'pub/wporg'; } );
-			add_filter( 'stylesheet', function() { return 'pub/wporg-main'; } );
+			add_filter(
+				'template',
+				function () {
+					return 'pub/wporg'; }
+			);
+			add_filter(
+				'stylesheet',
+				function () {
+					return 'pub/wporg-main'; }
+			);
 		}
 	}
 }
@@ -67,14 +83,14 @@ function admin_bar_preview_indicator( $wp_admin_bar ) {
 	$text = 'Previewing post content';
 
 	$wp_admin_bar->add_node(
-		[
+		array(
 			'id'    => 'preview-indicator',
 			'title' => '<span class="ab-icon dashicons-admin-appearance"></span> ' . $text,
 			'href'  => get_permalink( get_queried_object_id() ),
-			'meta'  => [
+			'meta'  => array(
 				'class' => 'preview-indicator',
-			],
-		]
+			),
+		)
 	);
 }
 
@@ -95,7 +111,7 @@ function replace_template_content_for_preview( $template ) {
 		);
 
 		if ( $count > 0 ) {
-			$_wp_current_template_content = str_replace( [ '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ], '', $_wp_current_template_content );
+			$_wp_current_template_content = str_replace( array( '"layout":{"inherit":true},"className":"entry-content",', ' entry-content' ), '', $_wp_current_template_content );
 		}
 
 		if ( false !== strpos( $_wp_current_template_content, '<!-- wp:post-content ' ) ) {
@@ -111,7 +127,7 @@ function replace_template_content_for_preview( $template ) {
 // This is so that content and design can be edited or created in-place.
 add_action(
 	'init',
-	function() {
+	function () {
 		if ( current_user_can( 'edit_posts' ) ) {
 			add_filter( 'template_include', __NAMESPACE__ . '\replace_template_content_for_preview' );
 		}

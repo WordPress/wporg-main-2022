@@ -17,14 +17,14 @@ use WordPressdotorg\API\Serve_Happy\RECOMMENDED_PHP;
  * @param array $tags Optional. Open Graph tags.
  * @return array Filtered Open Graph tags.
  */
-function custom_open_graph_tags( $tags = [] ) {
+function custom_open_graph_tags( $tags = array() ) {
 	$site_title = function_exists( '\WordPressdotorg\site_brand' ) ? \WordPressdotorg\site_brand() : 'WordPress.org';
 
 	// Use `name=""` for description.
 	// See Jetpacks Twitter Card for where it happens for the twitter:* fields.
 	add_filter(
 		'jetpack_open_graph_output',
-		function( $html ) {
+		function ( $html ) {
 			return str_replace( '<meta property="description"', '<meta name="description"', $html );
 		}
 	);
@@ -54,7 +54,7 @@ function custom_open_graph_tags( $tags = [] ) {
 
 	// Prevent content from "leaking" in embeds on pages in progress.
 	if ( 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
-		return [];
+		return array();
 	}
 
 	// These values are not correct for our page templates.
@@ -80,7 +80,7 @@ add_filter( 'jetpack_enable_open_graph', '__return_true' );
  */
 add_filter(
 	'jetpack_images_pre_get_images',
-	function( $media, $post_id ) {
+	function ( $media, $post_id ) {
 		if ( ! $post_id || ! has_post_thumbnail( $post_id ) ) {
 			return new \WP_Error();
 		}
@@ -213,7 +213,7 @@ add_filter( 'document_title_parts', __NAMESPACE__ . '\document_title_parts' );
  */
 add_action(
 	'init',
-	function() {
+	function () {
 		add_post_type_support( 'page', 'excerpt' );
 	}
 );
@@ -225,7 +225,7 @@ add_action(
  */
 add_filter(
 	'pre_option_blog_public',
-	function( $pre ) {
+	function ( $pre ) {
 		global $post;
 		if ( $post && 'page-in-progress' === get_post_meta( $post->ID, '_wp_page_template', true ) ) {
 			return 0;

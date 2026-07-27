@@ -67,7 +67,7 @@ function render( $attributes, $content, $block ) {
 	);
 
 	$refinement = wp_unslash( $_REQUEST['in'] ?? '' ); // phpcs:ignore
-	if ( in_array( $refinement, [ 'support_forums', 'support_docs', 'developer_documentation' ], true ) ) {
+	if ( in_array( $refinement, array( 'support_forums', 'support_docs', 'developer_documentation' ), true ) ) {
 		$search_config['attributes']['defaultToRefinement'] = $refinement;
 	}
 

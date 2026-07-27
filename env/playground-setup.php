@@ -32,7 +32,7 @@ update_option( 'permalink_structure', '/%year%/%monthnum%/%postname%/' );
 
 $manifest = json_decode( file_get_contents( '/wordpress/env/page-manifest.json' ), true );
 $known_slugs = array_column( $manifest, 'slug' );
-$prefix_to_path = function( $prefix ) use ( $known_slugs ) {
+$prefix_to_path = function ( $prefix ) use ( $known_slugs ) {
 	$prefix_path = array();
 
 	while ( $prefix ) {
