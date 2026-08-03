@@ -177,7 +177,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ) ); ?>"><?php esc_html_e( 'Join as a Student', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/student-guide/', 'wporg' ) ); ?>"><?php esc_html_e( 'Join as a Student', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -207,7 +207,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/call-for-mentors/', 'wporg' ) ); ?>"><?php esc_html_e( 'Apply as a Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/how-to-participate/call-for-mentors/', 'wporg' ) ); ?>"><?php esc_html_e( 'Apply as a Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -251,7 +251,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ) ); ?>"><?php esc_html_e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/how-to-participate/institutions/', 'wporg' ) ); ?>"><?php esc_html_e( 'Become a Partner Institution', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -285,7 +285,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/get-involved-company-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Become a Sponsor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/how-to-participate/sponsors/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Become a Sponsor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -1072,7 +1072,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"full","style":{"typography":{"textDecoration":"none"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1"} -->
-<p class="alignfull has-blueberry-1-color has-text-color has-link-color" style="text-decoration:none"><?php _e( '<a href="https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#sponsored-mentors" target="_blank" rel="noreferrer noopener"><mark class="has-inline-color has-blueberry-1-color">See all mentors and admins</mark></a>', 'wporg' ); ?></p>
+<p class="alignfull has-blueberry-1-color has-text-color has-link-color" style="text-decoration:none"><?php _e( '<mark class="has-inline-color has-blueberry-1-color"><a href="https://make.wordpress.org/community/handbook/education/credits/#mentors" target="_blank" rel="noopener">See all mentors and admins</a></mark>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -1085,7 +1085,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":52293,"width":"230px","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<div class="wp-block-group"><!-- wp:image {"id":52293,"width":"230px","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null},"color":{"duotone":["rgb(255, 255, 255)","#ffffff"]}}} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/07/automattic_logo_icon_169529-300x150-1.webp" alt="" class="wp-image-52293" style="width:230px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -1115,13 +1115,13 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":52300,"width":"120px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<div class="wp-block-group"><!-- wp:image {"id":52300,"width":"120px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null},"color":{"duotone":["rgb(255, 255, 255)","#ffffff"]}}} -->
 <figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2026/07/hosting-com-300w.webp" alt="" class="wp-image-52300" style="width:120px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":52298,"width":"176px","height":"auto","aspectRatio":"5.663716814159292","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<div class="wp-block-group"><!-- wp:image {"id":52298,"width":"176px","height":"auto","aspectRatio":"5.663716814159292","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null},"color":{"duotone":["rgb(255, 255, 255)","#ffffff"]}}} -->
 <figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2026/07/raiola-networks-300w.webp" alt="" class="wp-image-52298" style="aspect-ratio:5.663716814159292;width:176px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
@@ -1138,18 +1138,18 @@
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"id":52306,"width":"120px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-<figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2026/07/SRK-JPEG-LOGO.webp" alt="" class="wp-image-52306" style="width:120px;height:auto" /></figure>
+<!-- wp:image {"id":52306,"width":"120px","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null},"color":{"duotone":["rgb(255, 255, 255)","rgba(255, 255, 255, 0)"]}}} -->
+<figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2026/07/SRK-JPEG-LOGO.webp" alt="" class="wp-image-52306" style="width:120px;height:auto" title="<?php esc_attr_e( 'SRK-JPEG-LOGO', 'wporg' ); ?>" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":52302,"width":"153px","height":"auto","aspectRatio":"1.9142572283150547","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<div class="wp-block-group"><!-- wp:image {"id":52302,"width":"153px","height":"auto","aspectRatio":"1.9142572283150547","sizeSlug":"full","linkDestination":"none","align":"left","style":{"layout":{"selfStretch":"fit","flexSize":null},"color":{"duotone":["rgb(255, 255, 255)","#ffffff"]}}} -->
 <figure class="wp-block-image alignleft size-full is-resized"><img src="https://wordpress.org/files/2026/07/dreamhost.webp" alt="" class="wp-image-52302" style="aspect-ratio:1.9142572283150547;width:153px;height:auto" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":52308,"width":"auto","height":"130px","sizeSlug":"full"} -->
+<div class="wp-block-group"><!-- wp:image {"id":52308,"width":"auto","height":"130px","sizeSlug":"full","style":{"color":{"duotone":["#ffffff","#ffffff"]}}} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/07/villa-sostaga-300w.webp" alt="" class="wp-image-52308" style="width:auto;height:130px" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
@@ -1207,7 +1207,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/student-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Participate', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/student-guide/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Participate', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -1225,7 +1225,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/a-guide-for-wp-credits-mentors/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Mentor', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/how-to-participate/call-for-mentors/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Mentor', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -1245,7 +1245,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/#get-involved', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Partner', 'wporg' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/how-to-participate/institutions/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Apply to Partner', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -1285,7 +1285,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-3"}}}}} -->
-<p class="alignwide has-link-color"><?php _e( 'If you still have questions or want more details, you can find everything in this <a href="https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/"><mark class="has-inline-color has-blueberry-2-color">handbook.</mark></a>', 'wporg' ); ?></p>
+<p class="alignwide has-link-color"><?php _e( 'If you still have questions or want more details, you can find everything in this <mark class="has-inline-color has-blueberry-2-color"><a href="https://make.wordpress.org/community/handbook/education/credits/">handbook.</a></mark>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
