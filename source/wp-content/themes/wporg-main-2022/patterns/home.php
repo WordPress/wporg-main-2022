@@ -45,7 +45,7 @@
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48979,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-design.png" alt="" class="wp-image-48979" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-design.png" alt="<?php esc_attr_e( 'The WordPress block inserter, showing a grid of blocks including paragraph, quote, and image.', 'wporg' ); ?>" class="wp-image-48979" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -59,7 +59,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48978,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-build.png" alt="" class="wp-image-48978" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-build.png" alt="<?php esc_attr_e( 'An image block selected in the WordPress editor, with its toolbar showing alignment, crop, and replace options.', 'wporg' ); ?>" class="wp-image-48978" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -77,7 +77,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48981,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-publish.png" alt="" class="wp-image-48981" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-publish.png" alt="<?php esc_attr_e( 'A published website with a full-width mountain photograph and large display type.', 'wporg' ); ?>" class="wp-image-48981" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -116,7 +116,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":51400,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/05/wporg-70-new.png" alt="" class="wp-image-51400" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/05/wporg-70-new.png" alt="<?php esc_attr_e( 'A collage of WordPress 7.0 features: an AI Connectors toggle, a revision history slider, and pattern editing controls.', 'wporg' ); ?>" class="wp-image-51400" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -126,7 +126,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48979,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-design.png" alt="" class="wp-image-48979" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-design.png" alt="<?php esc_attr_e( 'The WordPress block inserter, showing a grid of blocks including paragraph, quote, and image.', 'wporg' ); ?>" class="wp-image-48979" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -140,7 +140,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48978,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-build.png" alt="" class="wp-image-48978" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-build.png" alt="<?php esc_attr_e( 'An image block selected in the WordPress editor, with its toolbar showing alignment, crop, and replace options.', 'wporg' ); ?>" class="wp-image-48978" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -158,7 +158,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48981,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-publish.png" alt="" class="wp-image-48981" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-publish.png" alt="<?php esc_attr_e( 'A published website with a full-width mountain photograph and large display type.', 'wporg' ); ?>" class="wp-image-48981" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
@@ -200,7 +200,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":48980,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-new.png" alt="" class="wp-image-48980" /></figure>
+<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/wporg-69-new.png" alt="<?php esc_attr_e( 'A collage of WordPress 6.9 features: a comment left on a photo, a MathML equation block, and an image being dragged into place.', 'wporg' ); ?>" class="wp-image-48980" /></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
