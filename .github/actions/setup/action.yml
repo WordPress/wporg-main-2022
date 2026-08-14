@@ -1,0 +1,84 @@
+name: "Setup dependencies"
+description: "Install Node, PHP, Composer and npm dependencies, with caching."
+
+inputs:
+  skip-composer:
+    description: "Skip PHP/Composer setup entirely, for jobs that only build JS/CSS."
+    required: false
+    default: "false"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install NodeJS
+      id: node
+      uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      with:
+        node-version-file: ".nvmrc"
+
+    - name: Setup PHP
+      if: inputs.skip-composer != 'true'
+      uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # v2.37.0
+      with:
+        php-version: "8.4"
+
+    - name: Get cache day
+      if: inputs.skip-composer != 'true'
+      id: cache-day
+      shell: bash
+      run: echo "day=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+    # There is deliberately no committed composer.lock (#562): dependencies
+    # track moving branches, so every CI run re-resolved them from scratch
+    # (~50s). Instead, cache the installed tree under a key that rotates
+    # daily — an exact hit skips Composer entirely, and after a rotation the
+    # restored tree just seeds an incremental `composer update`, so CI
+    # dependencies are never more than a day stale.
+    - name: Cache Composer packages
+      if: inputs.skip-composer != 'true'
+      id: composer-cache
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          composer.lock
+          vendor
+          source/wp-content/plugins
+          source/wp-content/mu-plugins/pub
+          source/wp-content/mu-plugins/wporg-mu-plugins
+          source/wp-content/themes/wporg
+          source/wp-content/themes/wporg-main
+          source/wp-content/themes/wporg-parent-2021
+        key: composer-${{ runner.os }}-${{ steps.cache-day.outputs.day }}-${{ hashFiles('composer.json') }}
+        restore-keys: |
+          composer-${{ runner.os }}-
+
+    - name: Install Composer dependencies
+      if: inputs.skip-composer != 'true' && steps.composer-cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        # Subversion is only needed to fetch the meta.svn.wordpress.org packages.
+        sudo apt-get install -y subversion
+        composer update
+
+    # Skips `npm ci` on a hit. Deliberately no `restore-keys` — a stale
+    # node_modules is only safe on an exact lockfile + Node match.
+    - name: Cache node_modules
+      id: node-modules-cache
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          node_modules
+          source/wp-content/themes/wporg-main-2022/node_modules
+        key: node-modules-${{ runner.os }}-${{ steps.node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+    - name: Install npm dependencies
+      if: steps.node-modules-cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: npm ci --no-audit --no-fund
+
+    # Generates the gitignored lint configs (phpcs.xml.dist, eslint.config.js,
+    # .stylelintrc, …) from wporg-repo-tools, so it needs the Composer deps.
+    - name: Generate tool configs
+      if: inputs.skip-composer != 'true'
+      shell: bash
+      run: npm run setup:tools
