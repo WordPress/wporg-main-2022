@@ -9,7 +9,7 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
-__( '7.1', 'wporg' );
+__( 'WordPress 7.1', 'wporg' );
 __( 'WordPress 7.0', 'wporg' );
 __( 'WP-CLI', 'wporg' );
 __( 'WordPress 6.9', 'wporg' );
