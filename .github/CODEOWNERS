@@ -1,0 +1,3 @@
+# Content-sync PRs (and any other PR touching page patterns) automatically
+# request a review from the meta team.
+/source/wp-content/themes/wporg-main-2022/patterns/ @WordPress/wordpress-org-meta-team
