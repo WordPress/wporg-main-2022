@@ -57,15 +57,14 @@ jobs:
           restore-keys: |
             wp-env-${{ runner.os }}-
 
-      # Docker creates mountpoint artifacts for the .wp-env.json file mappings
-      # inside the core checkouts (wp-content/mu-plugins/0-sandbox.php); restored
-      # from cache on a fresh runner they break container startup with a "file
-      # exists" mount error. Core ships no mu-plugins, so the directory is safe
-      # to scrub — Docker recreates the mountpoints, as on a cold run.
-      - name: Scrub Docker mountpoint artifacts from the restored cache
-        run: |
-          rm -rf ~/wp-env/*/WordPress/wp-content/mu-plugins ~/wp-env/*/tests-WordPress/wp-content/mu-plugins \
-            ~/.wp-env/*/WordPress/wp-content/mu-plugins ~/.wp-env/*/tests-WordPress/wp-content/mu-plugins
+      # The 0-sandbox.php file mapping's mountpoint resolves into the repo's
+      # mu-plugins directory, which all of the environment's containers bind.
+      # Containers starting concurrently race to create the missing placeholder
+      # (runc uses O_EXCL) and the loser fails with a "file exists" mount error.
+      # Pre-creating it removes the race; inside the containers the bind mount
+      # covers it with env/0-sandbox.php. The path is gitignored.
+      - name: Pre-create the 0-sandbox.php mountpoint
+        run: touch source/wp-content/mu-plugins/0-sandbox.php
 
       # `--update` is required with the cache: a restored config would otherwise
       # skip the WordPress setup on a pristine runner. The environment starts in
