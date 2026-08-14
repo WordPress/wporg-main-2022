@@ -45,17 +45,37 @@ jobs:
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
       - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
+        uses: ./.github/actions/setup
+
+      - name: Get cache week
+        id: cache-week
+        run: echo "week=$(date +%Y-%U)" >> "$GITHUB_OUTPUT"
+
+      # Caches the WordPress/WordPress#master checkout wp-env downloads.
+      # Cache entries are immutable, so the key rotates weekly; `restore-keys`
+      # seeds from the newest snapshot and `--update` fetches only the delta.
+      - name: Cache WordPress source
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          packageManager: npm
+          # wp-env uses `~/wp-env` on hosts with Snap (like Ubuntu runners)
+          # and `~/.wp-env` elsewhere.
+          path: |
+            ~/wp-env
+            ~/.wp-env
+          key: wp-env-${{ runner.os }}-${{ steps.cache-week.outputs.week }}-${{ hashFiles('.wp-env.json') }}
+          restore-keys: |
+            wp-env-${{ runner.os }}-
+
+      # The screenshots need built theme assets.
+      - name: Build the theme
+        run: npm run build:theme
 
       - name: Run the content update
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
           echo '{ "testsEnvironment": false }' > .wp-env.override.json
-          npx wp-env start
+          npx wp-env start --update
           npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
           npm run build:patterns

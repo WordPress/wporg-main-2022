@@ -24,15 +24,21 @@ jobs:
         with:
           ref: trunk
 
+      # The webpack build is self-contained, so PHP/Composer are not needed.
       - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
+        uses: ./.github/actions/setup
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          packageManager: npm
+          skip-composer: true
 
+      - name: Build the theme
+        run: npm run build:theme
+
+      # node_modules is parked in $RUNNER_TEMP and restored after the push, so
+      # the setup action's cache can still be saved at the end of the job.
       - name: Trim the repo down to just the theme
         run: |
           rm -rf source/wp-content/themes/wporg-main-2022/node_modules
+          mv node_modules "$RUNNER_TEMP"
           mv source/wp-content/themes/wporg-main-2022 $RUNNER_TEMP
           git rm -rfq .
           rm -rf *
@@ -55,3 +61,6 @@ jobs:
           branch: build
           force: true
           message: 'Build: ${{ github.sha }}'
+
+      - name: Restore node_modules for the cache save
+        run: mv "$RUNNER_TEMP/node_modules" node_modules

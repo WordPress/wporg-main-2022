@@ -6,6 +6,11 @@ on:
     branches: [trunk]
   pull_request:
 
+# Pushing a fixup cancels the superseded PR run.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 # Disable permissions for all available scopes by default.
 # Any needed permissions should be configured at the job level.
 permissions: {}
@@ -21,10 +26,10 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup
-        uses: WordPress/wporg-repo-tools/.github/actions/setup@trunk
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          packageManager: npm
+        uses: ./.github/actions/setup
 
-      - name: Lint
-        uses: WordPress/wporg-repo-tools/.github/actions/lint@trunk
+      - name: Lint front-end
+        run: npm run lint:frontend
+
+      - name: Lint PHP
+        run: npm run lint:php
