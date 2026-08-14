@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: 7.1
+ * Title: WordPress 7.1
  * Slug: wporg-main-2022/7-1
  * Inserter: no
  */
