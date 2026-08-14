@@ -33,12 +33,14 @@ jobs:
       - name: Build the theme
         run: npm run build:theme
 
-      # node_modules is parked in $RUNNER_TEMP and restored after the push, so
-      # the setup action's cache can still be saved at the end of the job.
+      # node_modules and .github are parked in $RUNNER_TEMP and restored after
+      # the push: the setup action's post steps need .github/actions/setup to
+      # save the caches at the end of the job.
       - name: Trim the repo down to just the theme
         run: |
           rm -rf source/wp-content/themes/wporg-main-2022/node_modules
           mv node_modules "$RUNNER_TEMP"
+          cp -r .github "$RUNNER_TEMP"
           mv source/wp-content/themes/wporg-main-2022 $RUNNER_TEMP
           git rm -rfq .
           rm -rf *
@@ -62,5 +64,8 @@ jobs:
           force: true
           message: 'Build: ${{ github.sha }}'
 
-      - name: Restore node_modules for the cache save
-        run: mv "$RUNNER_TEMP/node_modules" node_modules
+      - name: Restore action files and node_modules for the cache save
+        run: |
+          mv "$RUNNER_TEMP/node_modules" node_modules
+          rm -rf .github
+          mv "$RUNNER_TEMP/.github" .github
