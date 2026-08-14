@@ -76,6 +76,18 @@ jobs:
           rm -rf ~/wp-env/*/WordPress/wp-content/mu-plugins ~/wp-env/*/tests-WordPress/wp-content/mu-plugins \
             ~/.wp-env/*/WordPress/wp-content/mu-plugins ~/.wp-env/*/tests-WordPress/wp-content/mu-plugins
 
+      # Puppeteer downloads Chrome in its npm postinstall script, which is
+      # skipped when node_modules is restored from cache, so the browser is
+      # cached and ensured separately. The install is a no-op when present.
+      - name: Cache Puppeteer Chrome
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Ensure Chrome for Puppeteer
+        run: npx puppeteer browsers install chrome
+
       # The screenshots need built theme assets.
       - name: Build the theme
         run: npm run build:theme
