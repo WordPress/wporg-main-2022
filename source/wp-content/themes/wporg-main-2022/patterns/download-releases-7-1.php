@@ -123,7 +123,7 @@
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":""}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 <div class="wp-block-group"><!-- wp:video {"id":51317,"muted":true,"poster":"https://wordpress.org/files/2026/08/7-1-feature-3-v2.png","className":"has-1-1-aspect-ratio has-16px-radius has-custom-controls"} -->
-<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2026/08/7-1-feature-3-v2.png" src="https://videos.files.wordpress.com/9SoYgjsh/7-1-admin-bar.mp4"></video></figure>
+<figure class="wp-block-video has-1-1-aspect-ratio has-16px-radius has-custom-controls"><video controls muted poster="https://wordpress.org/files/2026/08/7-1-feature-3-v2.png" src="https://videos.files.wordpress.com/olWtwqJX/7-1-admin-bar-i1.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
