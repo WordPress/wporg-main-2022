@@ -12,9 +12,11 @@
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:image {"id":48645,"sizeSlug":"full","linkDestination":"none","align":"full"} -->
-<figure class="wp-block-image alignfull size-full"><img src="https://wordpress.org/files/2025/11/sotw_2025_banner-landing_finalone-scaled.png" alt="" class="wp-image-48645" /></figure>
-<!-- /wp:image -->
+<!-- wp:cover {"url":"https://wordpress.org/files/2026/08/sotw-2026-hero-image-2-scaled.png","id":53011,"dimRatio":50,"customOverlayColor":"#010104","isUserOverlayColor":false,"minHeight":208,"minHeightUnit":"px","sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="min-height:208px"><img class="wp-block-cover__image-background wp-image-53011 size-full" alt="" src="https://wordpress.org/files/2026/08/sotw-2026-hero-image-2-scaled.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#010104"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":53012,"width":"140px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2026/08/WordPress-Logo.png" alt="" class="wp-image-53012" style="width:140px;height:auto" /></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:cover -->
 
 <!-- wp:group {"align":"full","className":"entry-content has-newsreader-font-family","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"},"margin":{"top":"var:preset|spacing|30"}},"typography":{"lineHeight":1.4}},"layout":{"inherit":true,"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group alignfull entry-content has-newsreader-font-family" style="margin-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space);line-height:1.4"><!-- wp:group {"metadata":{"name":"Recap","blockVisibility":false},"style":{"border":{"top":{"width":"1px"}},"spacing":{"padding":{"top":"40px"}}},"fontFamily":"eb-garamond","layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false,"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
@@ -29,9 +31,19 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"metadata":{"name":"Details"},"style":{"border":{"width":"0px","style":"none"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-eb-garamond-font-family" style="border-style:none;border-width:0px"><!-- wp:heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"0px","style":"none"}}},"fontFamily":"eb-garamond"} -->
+<h2 class="wp-block-heading has-eb-garamond-font-family" style="border-top-style:none;border-top-width:0px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'State of the Word 2026', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( "State of the Word is the annual keynote address delivered by WordPress cofounder Matt Mullenweg, together with special guests. It is a moment to celebrate how far the open source project has come, share the roadmap taking shape, and see what is possible when people build the web together. Expect demos and an early preview of what's next for WordPress.", 'wporg' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"metadata":{"name":"Brief"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"padding":{"top":"48px","bottom":"48px"},"blockGap":{"left":"var:preset|spacing|10"}}}} -->
-<div class="wp-block-columns is-not-stacked-on-mobile" style="padding-top:48px;padding-bottom:48px"><!-- wp:column {"style":{"typography":{"lineHeight":"1.5"}},"fontFamily":"inter"} -->
+<div class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"padding":{"top":"20px","bottom":"20px"},"blockGap":{"left":"var:preset|spacing|10"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile" style="padding-top:20px;padding-bottom:20px"><!-- wp:column {"style":{"typography":{"lineHeight":"1.5"}},"fontFamily":"inter"} -->
 <div class="wp-block-column has-inter-font-family" style="line-height:1.5"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}}} -->
 <div class="wp-block-columns is-not-stacked-on-mobile" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"80px"} -->
 <div class="wp-block-column" style="flex-basis:80px"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
@@ -131,16 +143,6 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Details"},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-eb-garamond-font-family"><!-- wp:heading {"style":{"border":{"top":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontFamily":"eb-garamond"} -->
-<h2 class="wp-block-heading has-eb-garamond-font-family" style="border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'State of the Word 2026', 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( "State of the Word is the annual keynote address delivered by WordPress cofounder Matt Mullenweg, together with special guests. It is a moment to celebrate how far the open source project has come, share the roadmap taking shape, and see what is possible when people build the web together. Expect demos and an early preview of what's next for WordPress.", 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
 <!-- wp:group {"metadata":{"name":"Gallery"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:jetpack/tiled-gallery {"columns":3,"columnWidths":[["66.76647","33.23353"],["17.37286","25.97500","30.71484","25.93729"]],"ids":[48161,48160,48163,48159,52968,52967,52969]} -->
 <div class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class=""><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:66.76647%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48161" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-202835-8841-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:33.23353%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48160" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-142237-0135-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48163" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-163201-7815-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:17.37286%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48159" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193131-0170_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:25.97500%"><figure class="tiled-gallery__item"><img alt="" data-height="682" data-id="52968" data-link="https://wordpress.org/state-of-the-word/image-2023-12-11-13_35_53-1024x682/" data-url="https://wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:30.71484%"><figure class="tiled-gallery__item"><img alt="" data-height="576" data-id="52967" data-link="https://wordpress.org/state-of-the-word/release-leads-1024x576/" data-url="https://wordpress.org/files/2026/08/release-leads-1024x576-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/release-leads-1024x576-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:25.93729%"><figure class="tiled-gallery__item"><img alt="" data-height="683" data-id="52969" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193636-0177_web2k-1024x683/" data-url="https://wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div></div></div></div></div>
@@ -183,11 +185,7 @@
 
 <!-- wp:cover {"dimRatio":0,"overlayColor":"blueberry-4","isUserOverlayColor":true,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"sizeSlug":"full","metadata":{"name":"Quote"},"align":"wide","style":{"color":{"duotone":"unset"},"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|10"}}} -->
 <div class="wp-block-cover alignwide is-light" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"><span aria-hidden="true" class="wp-block-cover__background has-blueberry-4-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|30"}}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-eb-garamond-font-family" style="margin-top:var(--wp--preset--spacing--90);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:image {"id":48625,"width":"80px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/w_sotw.png" alt="" class="wp-image-48625" style="width:80px;height:auto" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"fontSize":"58px","lineHeight":"1.1","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"charcoal-1"} -->
+<div class="wp-block-group has-eb-garamond-font-family" style="margin-top:var(--wp--preset--spacing--90);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"fontSize":"58px","lineHeight":"1.1","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"charcoal-1"} -->
 <p class="is-style-serif has-charcoal-1-color has-text-color has-link-color" style="margin-bottom:var(--wp--preset--spacing--30);font-size:58px;font-style:italic;font-weight:400;line-height:1.1"><?php _e( '“<em>WordPress belongs to all of us, but really we’re taking care of it for the next generation.</em>”', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -195,19 +193,15 @@
 <p class="is-style-serif has-charcoal-1-color has-text-color has-link-color has-newsreader-font-family" style="font-size:30px"><?php _e( '<em>— Matt Mullenweg</em>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer -->
-<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"var:preset|spacing|40"} -->
+<div style="height:var(--wp--preset--spacing--40)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:group {"metadata":{"name":"Watch Parties"},"style":{"spacing":{"blockGap":"40px"}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-eb-garamond-font-family"><!-- wp:image {"id":48626,"width":"80px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/watchparty_sotw.png" alt="" class="wp-image-48626" style="width:80px;height:auto" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"fontFamily":"eb-garamond"} -->
+<div class="wp-block-group has-eb-garamond-font-family"><!-- wp:heading {"fontFamily":"eb-garamond"} -->
 <h2 class="wp-block-heading has-eb-garamond-font-family"><?php esc_html_e( 'Join or host a State of the Word watch party', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
@@ -387,7 +381,3 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 <div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
-
-<!-- wp:image {"id":48635,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/11/landing-sotw_bottom-graphic-1.png" alt="" class="wp-image-48635" /></figure>
-<!-- /wp:image -->
