@@ -21,7 +21,7 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php _e( '<strong>Core Development & WordPress 7.1</strong> — Deliver <a href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/">three major releases in 2026</a> with WordPress 7.1 advancing <a href="https://make.wordpress.org/core/tag/phase-3/">Phase 3</a> collaboration features, client-side media handling, responsive styling controls, and expanded block tools to boost creativity and performance.', 'wporg' ); ?></li>
+<li><?php _e( '<strong>Core Development & WordPress 7.0</strong> — Deliver <a href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/">three major releases in 2026</a> with WordPress 7.0 advancing <a href="https://make.wordpress.org/core/tag/phase-3/">Phase 3</a> collaboration features, client-side media handling, responsive styling controls, and expanded block tools to boost creativity and performance.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
