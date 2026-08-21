@@ -7,23 +7,13 @@
 
 ?>
 <!-- wp:group {"metadata":{"name":"Content"},"align":"full","className":"alignfull","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wcus_map.png","id":52120,"source":"file","title":"wcus_map"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"45% 54%"},"color":{"background":"#670f45"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2026-08-16T15:00:00"}]}}}]}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#670f45;min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":52112,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/06/WCUS-2026.png" alt="" class="wp-image-52112" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-<p class="has-white-color has-text-color has-link-color has-normal-font-size"><?php _e( 'WordCamp US 2026 is coming to Phoenix this August. <a href="https://us.wordcamp.org/2026/" data-type="link" data-id="https://us.wordcamp.org/2026/">Get your tickets↗</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wcus_map.png","id":52120,"source":"file","title":"wcus_map"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"97% 98%"},"color":{"background":"#38194b"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-08-16T15:00:00","end":""}]}}}]}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wcus_map.png","id":52120,"source":"file","title":"wcus_map"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"34% 41%"},"color":{"background":"#38194b"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#38194b;min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":52112,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}}} -->
 <figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/06/WCUS-2026.png" alt="" class="wp-image-52112" /></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-<p class="has-white-color has-text-color has-link-color has-normal-font-size"><?php _e( 'WordCamp US 2026 is here! <a href="https://www.youtube.com/playlist?list=PLLoEEVBDa-ik" data-type="link" data-id="https://www.youtube.com/playlist?list=PLLoEEVBDa-ik">Watch daily recordings on YouTube↗</a>', 'wporg' ); ?></p>
+<p class="has-white-color has-text-color has-link-color has-normal-font-size"><?php _e( 'Relive WordCamp US 2026 — <a href="https://wordpress.org/news/2026/08/wcus-2026-recap/" data-type="link" data-id="https://www.youtube.com/playlist?list=PLLoEEVBDa-ik" target="_blank" rel="noopener">Read the recap↗</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -51,7 +41,7 @@
 <div class="wp-block-wporg-language-suggest alignfull has-background" style="background-color:#ebebeb"></div>
 <!-- /wp:wporg/language-suggest -->
 
-<!-- wp:group {"metadata":{"name":"Core Features 7.0"},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
+<!-- wp:group {"metadata":{"name":"Core Features 7.1"},"align":"full","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"},"blockGap":"80px"}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
 <div class="wp-block-group alignfull has-light-grey-2-background-color has-background" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"40px"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":48979,"sizeSlug":"full","linkDestination":"none"} -->
@@ -100,38 +90,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"60px"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":"2026-08-20T00:00:00"}]}}}]}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
-<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:heading {"fontSize":"heading-3"} -->
-<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( "See what's new", 'wporg' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className":"is-style-short-text"} -->
-<p class="is-style-short-text"><?php esc_html_e( 'WordPress 7.0 lets you make it your own: connect your preferred AI providers and put them to work across your site. Drop in patterns that behave like a single block, design a navigation overlay with full block freedom, and restore changes quickly with visual revision history.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php
-/* translators: [stable_branch] is a shortcode and should not be translated. */
-esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' );
-?>"><?php esc_html_e( 'Explore WordPress 7.0', 'wporg' ); ?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":51400,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/05/wporg-70-new.png" alt="" class="wp-image-51400" /></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"60px"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"2026-08-20T00:00:00","end":""}]}}}]}} -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"40px","left":"60px"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:spacer {"height":"var:preset|spacing|20"} -->
 <div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
