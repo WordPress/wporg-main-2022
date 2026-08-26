@@ -26,7 +26,7 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 	// It's probably sufficient for the purpose of this plugin, which is a safety measure, not a security check.
 	$user = wp_get_current_user();
 	if ( $user && in_array( 'designer', $user->roles ) ) {
-		if ( 'PUT' === $request->get_method() && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
+		if ( in_array( $request->get_method(), array( 'POST', 'PUT', 'PATCH' ), true ) && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
 			if ( 'page' === get_post_type( $request->get_param( 'id' ) ) ) {
 				$page = get_post( $request->get_param( 'id' ) );
 				if ( $request->has_param( 'status' ) && 'publish' !== $request->get_param( 'status' ) && 'publish' === get_post_status( $page->ID ) ) {
