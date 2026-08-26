@@ -148,6 +148,6 @@ add_shortcode(
 			}
 		}
 
-		return gmdate( $format, $timestamp );
+		return esc_html( gmdate( $format, $timestamp ) );
 	}
 );
