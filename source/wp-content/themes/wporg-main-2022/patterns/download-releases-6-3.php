@@ -493,7 +493,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":20629,"sizeSlug":"full","linkDestination":"media"} -->
-<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php esc_attr_e( 'Cropped screenshot of a a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://wordpress.org/files/2023/08/image-13.png"><img src="https://wordpress.org/files/2023/08/image-13.png" alt="<?php esc_attr_e( 'Cropped screenshot of a block theme, Twenty Twenty-Three, dark text on white background.', 'wporg' ); ?>" class="wp-image-20629" /></a></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
