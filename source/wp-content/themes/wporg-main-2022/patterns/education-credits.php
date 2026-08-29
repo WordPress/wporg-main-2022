@@ -927,7 +927,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'D Y. Patil Agriculture and Technical University', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'D. Y. Patil Agriculture and Technical University', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
