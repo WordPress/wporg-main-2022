@@ -366,6 +366,28 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
+<!-- wp:group {"metadata":{"name":"Store"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"0px","bottom":"0px"},"blockGap":"var:preset|spacing|50"},"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}}},"backgroundColor":"light-grey-2","layout":{"type":"constrained"},"anchor":"news"} -->
+<div class="wp-block-group alignfull has-light-grey-2-background-color has-background" id="news" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:0px;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:0px;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"bottom","align":"wide","style":{"@mobile":{"spacing":{"blockGap":{"top":"var:preset|spacing|0"}}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-bottom"><!-- wp:column {"verticalAlignment":"bottom","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);flex-basis:50%"><!-- wp:heading {"fontSize":"heading-3"} -->
+<h2 class="wp-block-heading has-heading-3-font-size"><?php esc_html_e( 'Wear the internet you make', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://mercantile.wordpress.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Shop new arrivals', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0","left":"var:preset|spacing|0","right":"var:preset|spacing|0"}}}} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="padding-top:var(--wp--preset--spacing--0);padding-right:var(--wp--preset--spacing--0);padding-bottom:var(--wp--preset--spacing--0);padding-left:var(--wp--preset--spacing--0);flex-basis:50%"><!-- wp:image {"id":53226,"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"right":"var:preset|spacing|0","left":"var:preset|spacing|0","top":"var:preset|spacing|0","bottom":"var:preset|spacing|0"}}}} -->
+<figure class="wp-block-image size-full" style="margin-top:var(--wp--preset--spacing--0);margin-right:var(--wp--preset--spacing--0);margin-bottom:var(--wp--preset--spacing--0);margin-left:var(--wp--preset--spacing--0)"><img src="https://wordpress.org/files/2026/08/merch-items-03.png" alt="<?php esc_attr_e( 'Green "Gone Coding" hat between "Better Web" and "Gone Coding" patches', 'wporg' ); ?>" class="wp-image-53226" /></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"},"anchor":"get-started"} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","className":"is-style-with-arrow","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"fontSize":"heading-cta","fontFamily":"inter"} -->
