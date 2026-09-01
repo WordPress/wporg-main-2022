@@ -432,7 +432,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"charcoal-1"} -->
-<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'If your institution would like to join this growing network, please <a href="https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre">register your interest</a> so we can connect and explore the next steps together.', 'wporg' ); ?></p>
+<p class="has-charcoal-1-color has-text-color has-link-color" style="line-height:1.7"><?php _e( 'If your institution would like to join this growing network, please&nbsp;<a href="https://airtable.com/appIzQKfwTn5dyPVp/shrYvY0CDNIkILIre">register your interest</a>&nbsp;so we can connect and explore the next steps together.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -927,7 +927,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","wideSize":"200px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'D Y. Patil Agriculture and Technical University', 'wporg' ); ?></p>
+<p class="has-charcoal-0-color has-text-color has-link-color"><?php esc_html_e( 'D. Y. Patil Agriculture and Technical University', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
