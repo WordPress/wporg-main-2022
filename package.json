@@ -1,42 +1,26 @@
 {
-	"name": "wporg-main-2022",
+	"name": "wporg-main-2022-theme",
 	"version": "1.0.0",
-	"description": "The codebase and development environment for the main wordpress.org site.",
+	"description": "",
 	"author": "WordPress.org",
 	"license": "GPL-2.0-or-later",
 	"private": true,
 	"devDependencies": {
-		"@wordpress/env": "11.11.0",
-		"@wordpress/eslint-plugin": "25.7.0",
-		"@wordpress/scripts": "33.0.0",
-		"backstopjs": "^6.1.4",
-		"lighthouse-ci": "^1.13.1",
-		"puppeteer": "^24.38.0"
+		"@wordpress/element": "^8.3.0",
+		"@wordpress/i18n": "^6.24.0",
+		"@wordpress/scripts": "33.0.0"
 	},
-	"overrides": {
-		"prettier": "npm:wp-prettier@^3.0.3"
+	"eslintConfig": {
+		"extends": "../../../../.eslintrc.js"
+	},
+	"stylelint": {
+		"extends": "../../../../.stylelintrc"
 	},
 	"scripts": {
-		"playground": "node ./env/playground-start.mjs",
-		"setup:tools": "TEXTDOMAIN=wporg composer exec update-configs",
-		"setup:wp": "wp-env run cli bash env/setup.sh",
-		"setup:refresh": "./env/refresh.sh",
-		"update:tools": "composer update && TEXTDOMAIN=wporg composer exec update-configs",
-		"wp-env": "wp-env",
-		"backstop:reference": "npm exec backstop reference",
-		"backstop:test": "npm exec backstop test",
-		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100 --seo=100",
-		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
-		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html",
-		"build:patterns": "./env/build-patterns.sh",
-		"screenshot-changes": "node ./env/screenshot-changes.js",
-		"build:theme": "npm run build --workspace=wporg-main-2022-theme",
-		"lint:frontend": "npm run lint:css --workspace=wporg-main-2022-theme && npm run lint:js --workspace=wporg-main-2022-theme",
-		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
-		"start:theme": "npm run start --workspace=wporg-main-2022-theme",
-		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
-	},
-	"workspaces": [
-		"source/wp-content/themes/wporg-main-2022"
-	]
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js src --config ../../../../eslint.config.js",
+		"lint:css": "wp-scripts lint-style *.css src/**/*.scss",
+		"format": "wp-scripts format src"
+	}
 }
