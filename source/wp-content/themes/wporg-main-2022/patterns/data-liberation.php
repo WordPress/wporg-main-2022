@@ -55,12 +55,14 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Data Liberation kicked off with what’s available at hand: clear, practical guides. Migrating your site from platforms like Wix, Figma, or even static HTML can be challenging, but the <a href="https://w.org/data-liberation">step-by-step migration guides</a> make it much more achievable.', 'wporg' ); ?></p>
+<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/77">Phase 1</a> of Data Liberation kicked off with what’s available at hand: clear, practical guides. Migrating your site from platforms like Wix, Figma, or even static HTML can be challenging, but the <a href="https://w.org/data-liberation">step-by-step migration guides</a> make it much more achievable.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/77">Learn more about Phase 1</a>, and read <a href="/data-liberation/guides">the migration guides</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://wordpress.org/data-liberation/guides', 'wporg' ) ); ?>"><?php esc_html_e( 'View the migration guides', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":""} -->
@@ -87,11 +89,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Phase 2 solves the largest data migration problems: updating links, copying media, recovering from errors, and supporting for large sites. It is built for developers to extend and support any content format.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/78">Learn more about Phase 2</a>.', 'wporg' ); ?></p>
+<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/78">Phase 2</a> solves the largest structural data migration problems: updating links, copying media, recovering from errors, and supporting large sites. It is built for developers to extend and support any content format.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -119,12 +117,18 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Phase 3 is a <a href=\"https://github.com/WordPress/try-wordpress/\" target=\"_blank\" rel=\"noreferrer noopener\">browser extension</a> that liberates your data from any website, including social media, closed page builders, and design tools like Figma. It's extendable by developers and can even double as a personal web scratchboard.", 'wporg' ); ?></p>
+<p><?php _e( "<a href=\"https://github.com/WordPress/data-liberation/discussions/79\">Phase 3</a> covers user-facing tools for extracting media, content, and design from closed platforms. AI coding tools like Claude Code, Codex, and Grok can handle the media and content well enough to rebuild a site inspired by the source. Design is harder. <a href=\"https://developer.wordpress.com/studio/\" target=\"_blank\" rel=\"noopener\">Studio by WordPress.com</a>'s open source <a href=\"https://github.com/Automattic/studio/tree/trunk/packages/data-liberation-agent\" target=\"_blank\" rel=\"noopener\">data liberation agent plugin</a> pairs AI with purpose-built tooling, and it replicates a design much more closely than prompting a model on its own. It works with many platforms and has specialized tools for GoDaddy Websites & Marketing, Hostinger Website Builder, HubSpot, Shopify, Squarespace, Webflow, Weebly, and Wix.", 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/79">Learn more about Phase 3</a>.', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://developer.wordpress.com/studio/', 'wporg' ) ); ?>"><?php esc_html_e( 'Download WordPress Studio', 'wporg' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://github.com/Automattic/studio/tree/trunk/packages/data-liberation-agent', 'wporg' ) ); ?>"><?php esc_html_e( 'Get the agent plugin', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":""} -->
@@ -151,11 +155,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( 'Phase 4 enables keeping two WordPress sites in sync, letting you mirror your data with a few taps on your phone. Syncing your data between all your devices, backups, publishing your content, and cloning an existing WordPress site in <a href="https://w.org/playground">Playground</a> are just a few reasons to use it.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/80">Learn more about Phase 4</a>.', 'wporg' ); ?></p>
+<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/80">Phase 4</a> enables keeping two WordPress sites in sync, letting you mirror your data with a few taps on your phone. Syncing your data between all your devices, backups, publishing your content, and cloning an existing WordPress site in <a href="https://w.org/playground">Playground</a> are just a few reasons to use it.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -183,11 +183,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php _e( '<a href="https://github.com/WordPress/data-liberation/discussions/81">Learn more about Phase 5</a>.', 'wporg' ); ?></p>
+<p><?php _e( 'In <a href="https://github.com/WordPress/data-liberation/discussions/81">Phase 5</a> WordPress will become your central content hub for everything from personal notes, to ebooks, to social posts—all stored locally and synced across your devices. Phase 5 is the final step in reclaiming your digital world.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -212,7 +208,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"CTA"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"blueberry-1","textColor":"white","layout":{"inherit":true,"type":"constrained"},"anchor":"get-started"} -->
 <div class="wp-block-group alignfull has-white-color has-blueberry-1-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-4"} -->
