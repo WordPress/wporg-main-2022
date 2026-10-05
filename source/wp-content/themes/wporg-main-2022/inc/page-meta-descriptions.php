@@ -187,7 +187,8 @@ function sites_attributes_schema() {
 	}
 ]
 </script>
-	<?php endif;
+		<?php
+		endif;
 }
 add_action( 'wp_head', __NAMESPACE__ . '\sites_attributes_schema' );
 

@@ -8,6 +8,9 @@ use function WordPress_org\Main_2022\ExportToPatterns\replace_with_i18n;
 
 require dirname( __DIR__ ) . '/includes/parser.php';
 
+/**
+ * Tests for the block parser used to export page content to patterns.
+ */
 class BlockParser_Test extends WP_UnitTestCase {
 	/**
 	 * Data provider for valid block content, and the expected strings when parsed.
