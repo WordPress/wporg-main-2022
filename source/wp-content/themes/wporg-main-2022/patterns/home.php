@@ -7,17 +7,7 @@
 
 ?>
 <!-- wp:group {"metadata":{"name":"Content"},"align":"full","className":"alignfull","style":{"spacing":{"blockGap":"var:preset|spacing|0"}},"layout":{"type":"constrained","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"align":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"dimensions":{"minHeight":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2026/06/wcus_map.png","id":52120,"source":"file","title":"wcus_map"},"backgroundSize":"cover","backgroundAttachment":"scroll","backgroundPosition":"34% 41%"},"color":{"background":"#38194b"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}]}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#38194b;min-height:0px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:image {"id":52112,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2026/06/WCUS-2026.png" alt="" class="wp-image-52112" /></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"normal"} -->
-<p class="has-white-color has-text-color has-link-color has-normal-font-size"><?php _e( 'Relive WordCamp US 2026 — <a href="https://wordpress.org/news/2026/08/wcus-2026-recap/" data-type="link" data-id="https://www.youtube.com/playlist?list=PLLoEEVBDa-ik" target="_blank" rel="noopener">Read the recap↗</a>', 'wporg' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}],"hideBlock":false}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"},"anchor":"intro","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"dateTime":{"schedules":[{"enable":true,"start":"","end":""}]}}}],"hideBlock":false}} -->
 <div class="wp-block-group alignfull" id="intro" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"30px","left":"var:preset|spacing|40"}}},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":[]}]}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"70px"}}} -->
