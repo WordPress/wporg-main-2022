@@ -14,11 +14,18 @@ const init = () => {
 	containers.forEach( ( element ) => {
 		const { branch } = element.dataset;
 
-		// Update the version string, only when the previous element is a heading 1
-		// and the branch is a plain version number. Writing it as a text node (not
-		// innerHTML) keeps the value as text and can never introduce markup.
+		// Ignore anything whose branch is not a plain version number. This skips
+		// the heading update and the download-count request alike, so a value the
+		// server would reject drives no behaviour here either.
+		if ( ! BRANCH.test( branch ) ) {
+			return;
+		}
+
+		// Update the version string, only when the previous element is a heading 1.
+		// Writing it as a text node (not innerHTML) keeps the value as text and
+		// can never introduce markup.
 		const heading = element.previousElementSibling;
-		if ( heading && 'H1' === heading.tagName.toUpperCase() && BRANCH.test( branch ) ) {
+		if ( heading && 'H1' === heading.tagName.toUpperCase() ) {
 			const [ version ] = heading.textContent.match( /[0-9]+\.[0-9]/ ) || [];
 			if ( version ) {
 				const walker = document.createTreeWalker( heading, NodeFilter.SHOW_TEXT );
