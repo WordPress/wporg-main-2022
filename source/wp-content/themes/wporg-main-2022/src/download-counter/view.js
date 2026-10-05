@@ -28,7 +28,7 @@ const init = () => {
 		if ( heading && 'H1' === heading.tagName.toUpperCase() ) {
 			const [ version ] = heading.textContent.match( /[0-9]+\.[0-9]/ ) || [];
 			if ( version ) {
-				const walker = document.createTreeWalker( heading, NodeFilter.SHOW_TEXT );
+				const walker = document.createTreeWalker( heading, window.NodeFilter.SHOW_TEXT );
 				let node;
 				while ( ( node = walker.nextNode() ) ) {
 					const index = node.nodeValue.indexOf( version );
