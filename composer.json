@@ -6,6 +6,8 @@
 	"support": {
 		"issues": "https://github.com/WordPress/wporg-main-2022/issues"
 	},
+	"minimum-stability": "alpha",
+	"prefer-stable": true,
 	"config": {
 		"platform": {
 			"php": "8.4"
@@ -106,8 +108,8 @@
 	],
 	"require-dev": {
 		"composer/installers": "~1.0",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-		"phpcompatibility/phpcompatibility-wp": "*",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"phpcompatibility/phpcompatibility-wp": "^3.0@alpha",
 		"phpunit/phpunit": "9.6.*",
 		"wordpress-meta/pub": "1",
 		"wordpress-meta/wporg": "1",

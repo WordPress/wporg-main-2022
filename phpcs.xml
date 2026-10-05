@@ -9,6 +9,10 @@
     <!-- Import the shared PHPCS settings. -->
     <rule ref="./phpcs.xml.dist" />
 
+    <!-- Report warnings, but only fail on errors. Many warnings are in generated pattern files,
+         whose strings are translation sources and can't be changed by hand. -->
+    <config name="ignore_warnings_on_exit" value="1" />
+
     <!-- Allow unescaped content in patterns. -->
     <rule ref="WordPress.Security.EscapeOutput.UnsafePrintingFunction">
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
@@ -37,6 +41,18 @@
         <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
     </rule>
     <rule ref="Squiz.Commenting.FunctionComment.WrongStyle">
+        <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
+        <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.ClassComment.Missing">
+        <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
+        <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.VariableComment.Missing">
+        <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
+        <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.VariableComment.MissingVar">
         <exclude-pattern>env/export-content/includes/parser.php</exclude-pattern>
         <exclude-pattern>env/export-content/includes/parsers/*</exclude-pattern>
     </rule>
