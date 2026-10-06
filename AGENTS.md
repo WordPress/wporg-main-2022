@@ -48,7 +48,7 @@ Front-end pages on wordpress.org render through PHP **patterns** in the theme's 
 3. `npm run build:patterns` (`env/build-patterns.sh` → `env/export-content/index.php`) pulls the live page content from wordpress.org and regenerates the pattern file + page template.
 4. Commit the regenerated files; a meta-team member deploys via `bin/sync/main.sh` (lives in the meta sandbox environment, not this repo).
 
-Adding a new page = create it in the editor from the "WordPress.org page" starter pattern (`patterns/_page-layout.php`), then run the content-update workflow with the page's slug (or locally: `npm run add:page -- <slug>` + `npm run build:patterns`). Until a page has its own template, `inc/page-layout.php` renders content shaped like that pattern through `page-content-only.html` instead of `page.html`, so the title and padding aren't doubled. See `readme.md` for the full publishing runbook, including header/footer style overrides (`wp:wporg/global-header` / `global-footer`).
+Adding a new page = publish it in the editor; the content-update workflow's `npm run add:page -- --new` step adds every published page that the new theme renders but the manifest lacks, and `build:patterns` generates its pattern + template (a template with post title + padding when the content has no H1, matching `page.html`). Locally: `npm run add:page -- <slug>` + `npm run build:patterns`. See `readme.md` for the full publishing runbook, including header/footer style overrides (`wp:wporg/global-header` / `global-footer`).
 
 #### Gotchas
 

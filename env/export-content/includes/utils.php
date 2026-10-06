@@ -23,6 +23,7 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
  *
  * @param string $url The REST API endpoint URL for the post.
  * @param string $output_path The local file path to write the pattern to.
+ * @return string The page's raw block content.
  */
 function generate_pattern( $url, $output_path ) {
 	$response = wp_remote_get( $url );
@@ -74,15 +75,20 @@ EOF;
 	} else {
 		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
 	}
+
+	return $post->content_raw;
 }
 
 /**
  * Create a page template to use this pattern.
  *
+ * Content without its own H1 gets the title and padding page.html gives it, so the page looks the same before and after it's synced.
+ *
  * @param string $slug The slug of the pattern to include.
  * @param string $output_path The local file path to write the template to.
+ * @param string $content The page's raw block content.
  */
-function generate_template( $slug, $output_path ) {
+function generate_template( $slug, $output_path, $content ) {
 	$template = <<<EOF
 <!-- wp:wporg/global-header /-->
 
@@ -95,6 +101,23 @@ function generate_template( $slug, $output_path ) {
 <!-- wp:wporg/global-footer /-->
 
 EOF;
+
+	if ( ! preg_match( '/<h1[\s>]/i', $content ) ) {
+		$template = <<<EOF
+<!-- wp:wporg/global-header /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)">
+	<!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} /-->
+
+	<!-- wp:pattern {"slug":"wporg-main-2022/{$slug}"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:wporg/global-footer /-->
+
+EOF;
+	}
 
 	// 'x' mode so we don't overwrite an existing file
 	if ( $fp = @fopen( $output_path, 'x' ) ) { // phpcs:ignore

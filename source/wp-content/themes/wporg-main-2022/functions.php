@@ -11,7 +11,6 @@ require_once __DIR__ . '/inc/disable-site-editor.php';
 require_once __DIR__ . '/inc/data-liberation-handbook.php';
 require_once __DIR__ . '/inc/recaptcha.php';
 require_once __DIR__ . '/inc/privacy-functions.php';
-require_once __DIR__ . '/inc/page-layout.php';
 
 // Block files
 require_once __DIR__ . '/src/download-counter/index.php';

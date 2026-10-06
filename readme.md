@@ -185,25 +185,15 @@ To add or update a page using the new redesign, you need someone with at least �
 
 ### Adding a new page
 
-1. Write the content
+1. Write and publish the content
 
-Ask someone with at least "editor" access to create a new page. When the editor asks you to choose a pattern, pick **WordPress.org page**: it adds the page's H1 and spacing to the content, which is the layout synced pages need. Pages built this way render correctly in previews and once published, before they're synced.
+Ask someone with at least "editor" access to create a new page. Write your content, you can upload media and use blocks like any other site. Use the “Preview in new tab” to see your changes. Make sure the page has a title, then publish it.
 
-Write your content, you can upload media and use blocks like any other site. Use the “Preview in new tab” to see your changes. Make sure the page has a title, the sync fails without one. When you're done, publish the page.
+2. Review the pull request
 
-2. Sync the page into a pattern
+The [Update existing content](https://github.com/WordPress/wporg-main-2022/actions/workflows/content-update.yml) action runs daily, and picks up every published page that isn't in `./env/page-manifest.json` yet (pages the theme switcher keeps on the old theme are skipped). It adds the page to the manifest, generates its pattern and page template, and opens (or updates) the "Content updates from Page Editor" pull request with a screenshot of the page. To get it sooner, run the action manually from `trunk`.
 
-Run the [Update existing content](https://github.com/WordPress/wporg-main-2022/actions/workflows/content-update.yml) action from `trunk`, with the page's slug in the "Slug" field. It adds the page to `./env/page-manifest.json`, generates its pattern and page template, and opens (or updates) the "Content updates from Page Editor" pull request with a screenshot of the page.
-
-<details>
-<summary>Doing it locally instead</summary>
-
-With the environment set up and running (see above), run `npm run add:page -- [slug]`. It adds the page to `./env/page-manifest.json`, naming the pattern after the page and its parents (for example, `about-privacy-cookies.php`).
-
-Run `npm run build:patterns` to sync the pattern content from wordpress.org and create the page template that references it. In environments without Docker, the command is `wp eval-file env/export-content/index.php env/page-manifest.json`, run from the `public_html` directory.
-
-Create the page in your local environment, view it, and commit the changes.
-</details>
+The generated template keeps the page looking as it did before the sync: if the content has no H1 of its own, the template adds the page title and padding around it.
 
 If the page needs a different header or footer style, update its template in the pull request. You can pass custom styles like
 
@@ -214,6 +204,16 @@ Or preset style variations:
 - White on black (default): `<!-- wp:wporg/global-header /-->`
 - Black on white: `<!-- wp:wporg/global-header {"style":"black-on-white"} /-->`
 - White on blue: `<!-- wp:wporg/global-footer {"style":"white-on-blue"} /-->`
+
+<details>
+<summary>Doing it locally instead</summary>
+
+With the environment set up and running (see above), run `npm run add:page -- [slug]` (or `npm run add:page -- --new` for every new page). It adds the page to `./env/page-manifest.json`, naming the pattern after the page and its parents (for example, `about-privacy-cookies.php`).
+
+Run `npm run build:patterns` to sync the pattern content from wordpress.org and create the page template that references it. In environments without Docker, the command is `wp eval-file env/export-content/index.php env/page-manifest.json`, run from the `public_html` directory.
+
+Create the page in your local environment, view it, and commit the changes.
+</details>
 
 3. Deploy
 

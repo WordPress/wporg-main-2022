@@ -2,11 +2,6 @@ name: Update existing content
 
 on:
   workflow_dispatch:
-    inputs:
-      slug:
-        description: 'Slug of a published page to add to the manifest (optional)'
-        required: false
-        type: string
   schedule:
     - cron: '17 3 * * *'  # Runs daily at 3:17 AM UTC
   push:
@@ -96,11 +91,9 @@ jobs:
       - name: Build the theme
         run: npm run build:theme
 
-      - name: Add the page to the manifest
-        if: inputs.slug
-        run: npm run add:page -- "$SLUG"
-        env:
-          SLUG: ${{ inputs.slug }}
+      # Newly published pages get a manifest entry, pattern, and template in the same PR.
+      - name: Add new pages to the manifest
+        run: npm run add:page -- --new
 
       - name: Run the content update
         id: build-patterns
