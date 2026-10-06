@@ -28,8 +28,7 @@ concurrency:
 permissions: {}
 
 jobs:
-  # Generates the patterns from live page content and screenshots them. Read-only:
-  # the files it produces are handed to the publish job as an artifact.
+  # Read-only: generates patterns and screenshots and hands the files to the publish job.
   sync:
     if: github.repository_owner == 'WordPress'
     runs-on: ubuntu-latest
@@ -47,7 +46,7 @@ jobs:
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
-      # Other workflows save the shared dependency caches; this job only reads them.
+      # Restore only: caches are saved by workflows that don't process page content.
       - name: Setup
         uses: ./.github/actions/setup
         with:
@@ -87,7 +86,6 @@ jobs:
       - name: Build the theme
         run: npm run build:theme
 
-      # Newly published pages get a manifest entry, pattern, and template in the same PR.
       - name: Add new pages to the manifest
         run: npm run add:page -- --new
 
@@ -95,7 +93,7 @@ jobs:
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
-          # The nightly zip is the same build as WordPress/WordPress#master, without the git clone of every branch and tag.
+          # Same build as WordPress/WordPress#master, without wp-env cloning every branch and tag.
           echo '{ "testsEnvironment": false, "core": "https://wordpress.org/nightly-builds/wordpress-latest.zip" }' > .wp-env.override.json
           npx wp-env start --update
           npm run setup:wp
@@ -126,8 +124,7 @@ jobs:
           name: screenshot-artifacts
           path: "${{ github.workspace }}/artifacts/"
 
-  # Opens or updates the content-update PR from the sync job's files. Runs no code
-  # from the repo or the synced content, only git and the GitHub API.
+  # Has write access, so it only runs git and the GitHub API, never code from the repo or the synced content.
   publish:
     needs: sync
     # Only from trunk; branch and pull request runs stop after the sync.
@@ -175,8 +172,7 @@ jobs:
 
             Please review, merge, and deploy.
 
-      # Screenshots are only pushed and posted when the PR got new content, so hourly
-      # runs without changes don't repeat the comment.
+      # Only when the PR got a new commit, so hourly runs don't repeat the comment.
       - name: Push screenshots to storage branch
         id: push-screenshots
         if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'

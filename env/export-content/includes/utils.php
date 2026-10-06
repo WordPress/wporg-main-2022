@@ -80,7 +80,7 @@ function generate_pattern( $url, $output_path, $add_title = null ) {
  * @return string PHP header.
  */
 function get_pattern_header( string $title, string $slug ): string {
-	// Keep the title to a single header line inside the docblock. Splitting `*/` can't form a new one, unlike removing it.
+	// One line inside the docblock; unlike removing `*/`, splitting it can't form a new one.
 	$title = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), $title );
 
 	return <<<EOF
@@ -112,7 +112,7 @@ function validate_pattern_code( string $code ): void {
 			$allowed = T_STRING === $token[0] ? in_array( $token[1], $functions, true ) : in_array( $token[0], $tokens, true );
 			$text    = $token[1];
 
-			// With short_open_tag off, `<?` is tokenized as HTML, but a server with it on would run what follows.
+			// `<?` is HTML to the tokenizer with short_open_tag off, but code on a server with it on.
 			if ( ( T_INLINE_HTML === $token[0] && str_contains( $text, '<?' ) ) || ( T_OPEN_TAG === $token[0] && '<?php' !== rtrim( $text ) ) ) {
 				$allowed = false;
 			}
