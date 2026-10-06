@@ -53,25 +53,6 @@ jobs:
         with:
           save-cache: 'false'
 
-      - name: Get cache week
-        id: cache-week
-        run: echo "week=$(date +%Y-%U)" >> "$GITHUB_OUTPUT"
-
-      # The WordPress/WordPress#master checkout wp-env downloads, saved by the PHPUnit workflow.
-      # Cache entries are immutable, so the key rotates weekly; `restore-keys`
-      # seeds from the newest snapshot and `--update` fetches only the delta.
-      - name: Restore WordPress source
-        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          # wp-env uses `~/wp-env` on hosts with Snap (like Ubuntu runners)
-          # and `~/.wp-env` elsewhere.
-          path: |
-            ~/wp-env
-            ~/.wp-env
-          key: wp-env-${{ runner.os }}-${{ steps.cache-week.outputs.week }}-${{ hashFiles('.wp-env.json') }}
-          restore-keys: |
-            wp-env-${{ runner.os }}-
-
       # The 0-sandbox.php file mapping's mountpoint resolves into the repo's
       # mu-plugins directory, which all of the environment's containers bind.
       # Containers starting concurrently race to create the missing placeholder
@@ -114,7 +95,8 @@ jobs:
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
-          echo '{ "testsEnvironment": false }' > .wp-env.override.json
+          # The nightly zip is the same build as WordPress/WordPress#master, without the git clone of every branch and tag.
+          echo '{ "testsEnvironment": false, "core": "https://wordpress.org/nightly-builds/wordpress-latest.zip" }' > .wp-env.override.json
           npx wp-env start --update
           npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
