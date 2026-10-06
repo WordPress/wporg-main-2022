@@ -48,8 +48,9 @@ foreach ( $manifest_items as $item ) {
 		$template = $item->template ?? $item->slug . '.html';
 
 		try {
-			$content = generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
-			generate_template( $item->slug, sprintf( $template_path, $template ), $content );
+			// Designed pages without a visible title opt out with `"title": false`.
+			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ), $item->title ?? true );
+			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		} catch ( Exception $e ) {
 			echo '!! Error: ' . $e->getMessage() . "\n";
 			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";

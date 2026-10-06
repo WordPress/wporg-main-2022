@@ -193,7 +193,7 @@ Ask someone with at least "editor" access to create a new page. Write your conte
 
 The [Update existing content](https://github.com/WordPress/wporg-main-2022/actions/workflows/content-update.yml) action runs daily, and picks up every published page that isn't in `./env/page-manifest.json` yet (pages the theme switcher keeps on the old theme are skipped). It adds the page to the manifest, generates its pattern and page template, and opens (or updates) the "Content updates from Page Editor" pull request with a screenshot of the page. To get it sooner, run the action manually from `trunk`.
 
-The generated template keeps the page looking as it did before the sync: if the content has no H1 of its own, the template adds the page title and padding around it.
+The page looks the same before and after the sync: if the content has no H1 of its own, the sync adds the page title and padding to the pattern, like the default page template shows them. Designed pages that shouldn't show a title (like the release microsites) opt out with `"title": false` in their manifest entry.
 
 If the page needs a different header or footer style, update its template in the pull request. You can pass custom styles like
 

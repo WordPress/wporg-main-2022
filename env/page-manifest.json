@@ -150,12 +150,14 @@
 	{
 		"slug": "7-0",
 		"pattern": "download-releases-7-0.php",
-		"template": "page-7-0.html"
+		"template": "page-7-0.html",
+		"title": false
 	},
 	{
 		"slug": "7-1",
 		"pattern": "download-releases-7-1.php",
-		"template": "page-7-1.html"
+		"template": "page-7-1.html",
+		"title": false
 	},
 	{
 		"slug": "source",
@@ -198,11 +200,13 @@
 	},
 	{
 		"slug": "search",
-		"template": "page-search.html"
+		"template": "page-search.html",
+		"title": false
 	},
 	{
 		"slug": "state-of-the-word",
-		"template": "page-state-of-the-word.html"
+		"template": "page-state-of-the-word.html",
+		"title": false
 	},
 	{
 		"slug": "data-liberation",
