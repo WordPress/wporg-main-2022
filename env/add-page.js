@@ -4,7 +4,7 @@
  * Adds published wordpress.org pages to the page manifest.
  *
  * The pattern name is the page's ancestor slugs plus its own slug (e.g. `about-privacy-cookies.php`),
- * and the template is the one assigned to the page, or `page-{slug}.html` when none is.
+ * and the template is the block template assigned to the page, or `page-{slug}.html` when none is.
  *
  * Usage:
  *   node ./env/add-page.js <slug>  Add one page.
@@ -14,10 +14,11 @@
 /**
  * External dependencies.
  */
-const { readFileSync, writeFileSync } = require( 'fs' );
+const { existsSync, readFileSync, writeFileSync } = require( 'fs' );
 const path = require( 'path' );
 
 const MANIFEST_PATH = path.join( __dirname, 'page-manifest.json' );
+const TEMPLATES_DIR = path.join( __dirname, '../source/wp-content/themes/wporg-main-2022/templates' );
 const API_URL =
 	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link';
 
@@ -55,9 +56,15 @@ async function fetchAllPages() {
  * @return {Promise<boolean>} True if the page uses the new theme.
  */
 async function usesNewTheme( page ) {
-	const response = await fetch( page.link );
-	const html = await response.text();
-	return /<body[^>]+wp-child-theme-wporg-main-2022/.test( html );
+	// Following a redirect would report the theme of the page it lands on.
+	const response = await fetch( page.link, { redirect: 'manual' } );
+	if ( response.status >= 300 && response.status < 400 ) {
+		throw new Error( `it redirects to ${ response.headers.get( 'location' ) }` );
+	}
+	if ( ! response.ok ) {
+		throw new Error( `HTTP ${ response.status }` );
+	}
+	return /<body[^>]+wp-child-theme-wporg-main-2022/.test( await response.text() );
 }
 
 /**
@@ -65,13 +72,20 @@ async function usesNewTheme( page ) {
  *
  * @param {Object} page     Page from the REST API.
  * @param {Array}  allPages All published pages, to resolve ancestors.
+ * @param {Array}  manifest Manifest entries.
  * @return {Object} Manifest entry.
  */
-function getEntry( page, allPages ) {
-	if ( ! page.title.rendered ) {
+function getEntry( page, allPages, manifest ) {
+	if ( ! page.title.rendered.trim() ) {
 		throw new Error(
-			`"${ page.slug }" has no title. Set one in the editor first; patterns without a title don't register.`
+			"it has no title. Set one in the editor first; patterns without a title don't register."
 		);
+	}
+
+	// The template hierarchy and pattern slugs go by slug, so a shared one needs a template picked by hand.
+	const others = [ ...allPages, ...manifest ];
+	if ( others.some( ( other ) => other.slug === page.slug && other.id !== page.id ) ) {
+		throw new Error( `another page uses the slug "${ page.slug }". Add it to the manifest by hand.` );
 	}
 
 	const slugs = [ page.slug ];
@@ -79,22 +93,84 @@ function getEntry( page, allPages ) {
 	while ( parentId ) {
 		const ancestor = allPages.find( ( { id } ) => id === parentId );
 		if ( ! ancestor ) {
-			throw new Error( `Parent page ${ parentId } of "${ page.slug }" is not published.` );
+			throw new Error( `its parent page ${ parentId } is not published.` );
 		}
 		slugs.unshift( ancestor.slug );
 		parentId = ancestor.parent;
 	}
 
-	const template = page.template || `page-${ page.slug }`;
+	// Old-theme templates (`page-*.php`) aren't block templates; those pages fall back to the template hierarchy.
+	const isBlockTemplate = page.template && existsSync( path.join( TEMPLATES_DIR, `${ page.template }.html` ) );
+	const template = isBlockTemplate ? page.template : `page-${ page.slug }`;
 	if ( ! [ ...slugs, template ].every( ( name ) => NAME_PATTERN.test( name ) ) ) {
-		throw new Error( `"${ page.slug }" has an unexpected slug or template name.` );
+		throw new Error( 'it has an unexpected slug or template name.' );
 	}
 
 	return {
+		id: page.id,
 		slug: page.slug,
 		pattern: `${ slugs.join( '-' ) }.php`,
 		template: `${ template }.html`,
 	};
+}
+
+/**
+ * Find the published pages the new theme renders but the manifest lacks.
+ *
+ * Problems are reported as workflow warnings, so they don't hold up the content sync.
+ *
+ * @param {Array} manifest Manifest entries.
+ * @return {Promise<Array>} Manifest entries to add.
+ */
+async function findNewPages( manifest ) {
+	let allPages;
+	try {
+		allPages = await fetchAllPages();
+	} catch ( error ) {
+		console.log( `::warning::Couldn't look for new pages: ${ error.message }` );
+		return [];
+	}
+
+	const candidates = allPages.filter(
+		( page ) => IN_PROGRESS_TEMPLATE !== page.template && ! manifest.some( ( entry ) => entry.id === page.id )
+	);
+
+	const entries = await Promise.all(
+		candidates.map( async ( page ) => {
+			try {
+				return ( await usesNewTheme( page ) ) ? getEntry( page, allPages, manifest ) : null;
+			} catch ( error ) {
+				console.log( `::warning::Skipped ${ page.link }: ${ error.message }` );
+				return null;
+			}
+		} )
+	);
+
+	return entries.filter( Boolean );
+}
+
+/**
+ * Build the manifest entry for the published page with the given slug.
+ *
+ * @param {string} slug     Page slug.
+ * @param {Array}  manifest Manifest entries.
+ * @return {Promise<Array>} Manifest entries to add.
+ */
+async function findPage( slug, manifest ) {
+	const allPages = await fetchAllPages();
+	const matches = allPages.filter( ( page ) => page.slug === slug );
+	if ( matches.length !== 1 ) {
+		throw new Error( `Expected one published page with the slug "${ slug }", found ${ matches.length }.` );
+	}
+	if ( manifest.some( ( entry ) => entry.id === matches[ 0 ].id ) ) {
+		console.log( `"${ slug }" is already in the manifest.` );
+		return [];
+	}
+	try {
+		return [ getEntry( matches[ 0 ], allPages, manifest ) ];
+	} catch ( error ) {
+		throw new Error( `Can't add "${ slug }": ${ error.message }` );
+	}
 }
 
 ( async () => {
@@ -103,33 +179,7 @@ function getEntry( page, allPages ) {
 	}
 
 	const manifest = JSON.parse( readFileSync( MANIFEST_PATH, 'utf8' ) );
-	const inManifest = ( page ) => manifest.some( ( entry ) => entry.slug === page.slug );
-	const allPages = await fetchAllPages();
-	const entries = [];
-
-	if ( '--new' === arg ) {
-		for ( const page of allPages.filter( ( candidate ) => ! inManifest( candidate ) ) ) {
-			if ( IN_PROGRESS_TEMPLATE === page.template || ! ( await usesNewTheme( page ) ) ) {
-				continue;
-			}
-			try {
-				entries.push( getEntry( page, allPages ) );
-			} catch ( error ) {
-				// Annotates the workflow run without blocking other pages' content updates.
-				console.log( `::warning::Skipped ${ page.link }: ${ error.message }` );
-			}
-		}
-	} else {
-		const matches = allPages.filter( ( page ) => page.slug === arg );
-		if ( matches.length !== 1 ) {
-			throw new Error( `Expected one published page with the slug "${ arg }", found ${ matches.length }.` );
-		}
-		if ( inManifest( matches[ 0 ] ) ) {
-			console.log( `"${ arg }" is already in the manifest.` );
-			return;
-		}
-		entries.push( getEntry( matches[ 0 ], allPages ) );
-	}
+	const entries = '--new' === arg ? await findNewPages( manifest ) : await findPage( arg, manifest );
 
 	if ( ! entries.length ) {
 		console.log( 'No pages to add.' );

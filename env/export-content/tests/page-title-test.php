@@ -44,6 +44,14 @@ class Page_Title_Test extends WP_UnitTestCase {
 				true,
 			),
 			'HTML block'                => array( "<!-- wp:html -->\n<h1>Title</h1>\n<!-- /wp:html -->", true ),
+			'H1 post title'             => array( '<!-- wp:post-title {"level":1} /-->', true ),
+			'default post title'        => array( '<!-- wp:post-title /-->', false ),
+			'random heading'            => array( '<!-- wp:wporg/random-heading /-->', true ),
+			'nested synced pattern'     => array(
+				"<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:block {\"ref\":1} /--></div>\n<!-- /wp:group -->",
+				true,
+			),
+			'pattern reference'         => array( '<!-- wp:pattern {"slug":"wporg-main-2022/x"} /-->', true ),
 		);
 	}
 

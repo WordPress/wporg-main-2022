@@ -73,6 +73,8 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			'variable'             => array( '<?php echo $x; ?>' ),
 			'interpolated string'  => array( "<?php esc_html_e( \"{\$x}\", 'wporg' ); ?>" ),
 			'short echo tag'       => array( "<?= 'x' ?>" ),
+			'short open tag'       => array( "<p><? echo 'x'; ?></p>" ),
+			'short tag in HTML'    => array( "<?php esc_html_e( 'x', 'wporg' ); ?><p><?</p>" ),
 			'constant'             => array( '<?php echo PHP_VERSION; ?>' ),
 		);
 	}
@@ -91,13 +93,33 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	}
 
 	/**
-	 * Test that the title stays on its own header line inside the docblock.
+	 * Data provider for titles, and how they appear in the header.
+	 *
+	 * @return array
 	 */
-	public function test_header_title_is_one_line(): void {
-		$header = get_pattern_header( "First */ line\nSecond line", 'test' );
+	public function data_header_titles(): array {
+		return array(
+			'plain'          => array( 'About WordPress', 'About WordPress' ),
+			'line break'     => array( "First line\nSecond line", 'First line Second line' ),
+			'comment end'    => array( 'A */ B', 'A * / B' ),
+			'nested'         => array( 'A **// B', 'A ** // B' ),
+		);
+	}
 
-		$this->assertStringContainsString( " * Title: First  lineSecond line\n", $header );
+	/**
+	 * Test that the title stays on its own header line inside the docblock.
+	 *
+	 * @dataProvider data_header_titles
+	 *
+	 * @param string $title    Page title.
+	 * @param string $expected Title in the header.
+	 */
+	public function test_header_title_is_one_line( string $title, string $expected ): void {
+		$header = get_pattern_header( $title, 'test' );
+
+		$this->assertStringContainsString( " * Title: {$expected}\n * Slug:", $header );
 		$this->assertSame( 1, substr_count( $header, '*/' ) );
+		validate_pattern_code( $header );
 	}
 
 	/**

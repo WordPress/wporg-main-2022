@@ -21,11 +21,11 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
  *
  * @throws Exception If the request fails, the generated code is unexpected, or writing the file fails.
  *
- * @param string $url The REST API endpoint URL for the post.
- * @param string $output_path The local file path to write the pattern to.
- * @param bool   $add_title Whether to add the page title when the content has no H1, as page.html does.
+ * @param string    $url The REST API endpoint URL for the post.
+ * @param string    $output_path The local file path to write the pattern to.
+ * @param bool|null $add_title Whether to add the page title above the content, as page.html does. Null adds it when the content has no H1.
  */
-function generate_pattern( $url, $output_path, $add_title = true ) {
+function generate_pattern( $url, $output_path, $add_title = null ) {
 	$response = wp_remote_get( $url );
 
 	$status_code = wp_remote_retrieve_response_code( $response );
@@ -56,7 +56,7 @@ function generate_pattern( $url, $output_path, $add_title = true ) {
 
 	// Pattern files are PHP; only the export's own translation calls should open PHP in them.
 	$content = str_replace( '<?', '&lt;?', $post->content_raw );
-	if ( $add_title && ! has_h1( $content ) ) {
+	if ( $add_title ?? ! has_h1( $content ) ) {
 		$content = add_page_title( $content, html_entity_decode( $post->title->rendered, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
 	}
 
@@ -80,8 +80,8 @@ function generate_pattern( $url, $output_path, $add_title = true ) {
  * @return string PHP header.
  */
 function get_pattern_header( string $title, string $slug ): string {
-	// Keep the title to a single header line inside the docblock.
-	$title = str_replace( array( '*/', "\r", "\n" ), '', $title );
+	// Keep the title to a single header line inside the docblock. Splitting `*/` can't form a new one, unlike removing it.
+	$title = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), $title );
 
 	return <<<EOF
 <?php
@@ -111,6 +111,11 @@ function validate_pattern_code( string $code ): void {
 		if ( is_array( $token ) ) {
 			$allowed = T_STRING === $token[0] ? in_array( $token[1], $functions, true ) : in_array( $token[0], $tokens, true );
 			$text    = $token[1];
+
+			// With short_open_tag off, `<?` is tokenized as HTML, but a server with it on would run what follows.
+			if ( ( T_INLINE_HTML === $token[0] && str_contains( $text, '<?' ) ) || ( T_OPEN_TAG === $token[0] && '<?php' !== rtrim( $text ) ) ) {
+				$allowed = false;
+			}
 		} else {
 			$allowed = in_array( $token, array( '(', ')', ',', ';' ), true );
 			$text    = $token;
@@ -153,13 +158,37 @@ EOF;
 }
 
 /**
- * Whether content has its own H1.
+ * Whether content renders its own H1.
  *
  * @param string $content Raw block content.
  * @return bool
  */
 function has_h1( string $content ): bool {
-	return (bool) preg_match( '/<h1[\s>]/i', $content );
+	return preg_match( '/<h1[\s>]/i', $content ) || blocks_render_h1( parse_blocks( $content ) );
+}
+
+/**
+ * Whether any of the blocks renders an H1 dynamically.
+ *
+ * Synced patterns and pattern references count too: their content isn't in the page, so it may hold one.
+ *
+ * @param array[] $blocks Parsed blocks.
+ * @return bool
+ */
+function blocks_render_h1( array $blocks ): bool {
+	foreach ( $blocks as $block ) {
+		$is_h1_title = 'core/post-title' === $block['blockName'] && 1 === ( $block['attrs']['level'] ?? 2 );
+
+		if (
+			$is_h1_title ||
+			in_array( $block['blockName'], array( 'wporg/random-heading', 'core/block', 'core/pattern' ), true ) ||
+			blocks_render_h1( $block['innerBlocks'] )
+		) {
+			return true;
+		}
+	}
+
+	return false;
 }
 
 /**

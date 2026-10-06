@@ -22,8 +22,10 @@ const SCREENSHOTS_COMMIT = process.env.SCREENSHOTS_COMMIT || 'content-update-scr
 // node ./env/screenshot-changes.js [...files]
 const [ , , ...files ] = process.argv;
 
-async function getPageDetails( slug ) {
-	const apiUrl = `https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=${ slug }`;
+async function getPageDetails( entry ) {
+	// Slugs aren't unique across parent pages, IDs are.
+	const query = entry.id ? `include=${ entry.id }` : `slug=${ entry.slug }`;
+	const apiUrl = `https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&${ query }`;
 	let post = false;
 	try {
 		const response = await fetch( apiUrl );
@@ -45,7 +47,7 @@ function isTracked( file ) {
 	try {
 		execFileSync( 'git', [ 'cat-file', '-e', `HEAD:${ file }` ], { stdio: 'ignore' } );
 		return true;
-	} catch ( error ) {
+	} catch {
 		return false;
 	}
 }
@@ -331,13 +333,14 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			( entry ) => entry.pattern === path.basename( file ) || `${ entry.slug }.php` === path.basename( file )
 		);
 		if ( found ) {
-			entries.push( { file, isNew: ! isTracked( file ), ...found } );
+			const isNew = ! isTracked( file );
+			entries.push( { file, isNew, ...found } );
 		}
 	}
 
 	// Step 1: Take "after" screenshots (current state has new patterns).
 	for ( const entry of entries ) {
-		const post = await getPageDetails( entry.slug );
+		const post = await getPageDetails( entry );
 		if ( ! post ) {
 			continue;
 		}
@@ -347,7 +350,9 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 	}
 
 	// Step 2: Revert changed files to take "before" screenshots. New pages have no "before".
-	const filesToRevert = entries.filter( ( e ) => e.post && ! e.isNew ).map( ( e ) => e.file );
+	const filesToRevert = entries
+		.filter( ( entry ) => entry.post && ! entry.isNew )
+		.map( ( entry ) => entry.file );
 	if ( filesToRevert.length > 0 ) {
 		// Save new patterns to temp, revert to old, screenshot, then restore.
 		const tmpDir = path.join( ARTIFACTS_PATH, '.tmp' );

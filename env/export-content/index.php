@@ -26,7 +26,7 @@ if ( ! is_dir( $theme_dir ) ) {
 	$theme_dir = dirname( __DIR__, 2 ) . '/source/wp-content/themes/wporg-main-2022'; // Local env.
 }
 
-$rest_url = 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
+$rest_url = 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&%s';
 $pattern_path = $theme_dir . '/patterns/%s';
 $template_path = $theme_dir . '/templates/%s';
 
@@ -47,9 +47,12 @@ foreach ( $manifest_items as $item ) {
 		$pattern = $item->pattern ?? $item->slug . '.php';
 		$template = $item->template ?? $item->slug . '.html';
 
+		// Slugs aren't unique across parent pages, IDs are.
+		$query = isset( $item->id ) ? 'include=' . (int) $item->id : 'slug=' . rawurlencode( $item->slug );
+
 		try {
-			// Designed pages without a visible title opt out with `"title": false`.
-			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ), $item->title ?? true );
+			// `"title": false` keeps designed pages without a visible title; `true` adds it where it can't be detected.
+			generate_pattern( sprintf( $rest_url, $query ), sprintf( $pattern_path, $pattern ), $item->title ?? null );
 			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		} catch ( Exception $e ) {
 			echo '!! Error: ' . $e->getMessage() . "\n";
