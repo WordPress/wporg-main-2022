@@ -21,6 +21,9 @@ const MANIFEST_PATH = path.join( __dirname, 'page-manifest.json' );
 const API_URL =
 	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link';
 
+// Slugs and template names become file names.
+const NAME_PATTERN = /^[a-z0-9%_-]+$/i;
+
 // Unfinished pages are published with this template, which hides their content.
 const IN_PROGRESS_TEMPLATE = 'page-in-progress';
 
@@ -82,10 +85,15 @@ function getEntry( page, allPages ) {
 		parentId = ancestor.parent;
 	}
 
+	const template = page.template || `page-${ page.slug }`;
+	if ( ! [ ...slugs, template ].every( ( name ) => NAME_PATTERN.test( name ) ) ) {
+		throw new Error( `"${ page.slug }" has an unexpected slug or template name.` );
+	}
+
 	return {
 		slug: page.slug,
 		pattern: `${ slugs.join( '-' ) }.php`,
-		template: `${ page.template || `page-${ page.slug }` }.html`,
+		template: `${ template }.html`,
 	};
 }
 

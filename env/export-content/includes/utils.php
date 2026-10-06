@@ -19,7 +19,7 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 /**
  * Generate the pattern content from a URL.
  *
- * @throws Exception If the request fails or writing the file fails.
+ * @throws Exception If the request fails, the generated code is unexpected, or writing the file fails.
  *
  * @param string $url The REST API endpoint URL for the post.
  * @param string $output_path The local file path to write the pattern to.
@@ -54,31 +54,71 @@ function generate_pattern( $url, $output_path, $add_title = true ) {
 		throw new Exception( esc_html( "The page at {$url} has no title. Set one in the editor.\n" ) );
 	}
 
-	$content = $post->content_raw;
+	// Pattern files are PHP; only the export's own translation calls should open PHP in them.
+	$content = str_replace( '<?', '&lt;?', $post->content_raw );
 	if ( $add_title && ! has_h1( $content ) ) {
 		$content = add_page_title( $content, html_entity_decode( $post->title->rendered, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
 	}
 
-	$content = replace_with_i18n( $content );
+	$code = get_pattern_header( $post->title->rendered, $post->slug ) . replace_with_i18n( $content ) . "\n";
+	validate_pattern_code( $code );
 
-	$header = <<<EOF
+	$bytes = file_put_contents( $output_path, $code );
+
+	if ( false === $bytes ) {
+		throw new Exception( esc_html( 'Unable to write to ' . $output_path ) );
+	} else {
+		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
+	}
+}
+
+/**
+ * Build the docblock header of a pattern file.
+ *
+ * @param string $title Pattern title.
+ * @param string $slug  Page slug.
+ * @return string PHP header.
+ */
+function get_pattern_header( string $title, string $slug ): string {
+	// Keep the title to a single header line inside the docblock.
+	$title = str_replace( array( '*/', "\r", "\n" ), '', $title );
+
+	return <<<EOF
 <?php
 /**
- * Title: {$post->title->rendered}
- * Slug: wporg-main-2022/{$post->slug}
+ * Title: {$title}
+ * Slug: wporg-main-2022/{$slug}
  * Inserter: no
  */
 
 ?>
 
 EOF;
+}
 
-	$bytes = file_put_contents( $output_path, $header . $content . "\n" );
+/**
+ * Make sure generated pattern code only contains the PHP the export writes: string literals passed to translation functions, and translator comments.
+ *
+ * @throws Exception If the code contains any other PHP.
+ *
+ * @param string $code Pattern file contents.
+ */
+function validate_pattern_code( string $code ): void {
+	$functions = array( '__', '_e', 'esc_attr_e', 'esc_html_e', 'esc_url' );
+	$tokens    = array( T_OPEN_TAG, T_CLOSE_TAG, T_INLINE_HTML, T_WHITESPACE, T_COMMENT, T_DOC_COMMENT, T_ECHO, T_CONSTANT_ENCAPSED_STRING );
 
-	if ( false === $bytes ) {
-		throw new Exception( esc_html( 'Unable to write to ' . $output_path ) );
-	} else {
-		echo 'Wrote ' . size_format( $bytes ) . ' to ' . $output_path . "\n";
+	foreach ( token_get_all( $code ) as $token ) {
+		if ( is_array( $token ) ) {
+			$allowed = T_STRING === $token[0] ? in_array( $token[1], $functions, true ) : in_array( $token[0], $tokens, true );
+			$text    = $token[1];
+		} else {
+			$allowed = in_array( $token, array( '(', ')', ',', ';' ), true );
+			$text    = $token;
+		}
+
+		if ( ! $allowed ) {
+			throw new Exception( esc_html( "Unexpected PHP in the generated pattern: {$text}\n" ) );
+		}
 	}
 }
 

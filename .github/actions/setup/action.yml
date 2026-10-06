@@ -6,6 +6,10 @@ inputs:
     description: "Skip PHP/Composer setup entirely, for jobs that only build JS/CSS."
     required: false
     default: "false"
+  save-cache:
+    description: "Save the dependency caches; jobs that run code from outside the repo only restore them."
+    required: false
+    default: "true"
 
 runs:
   using: "composite"
@@ -35,7 +39,7 @@ runs:
     # restored tree just seeds an incremental `composer update`, so CI
     # dependencies are never more than a day stale.
     - name: Cache Composer packages
-      if: inputs.skip-composer != 'true'
+      if: inputs.skip-composer != 'true' && inputs.save-cache == 'true'
       id: composer-cache
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
@@ -52,8 +56,26 @@ runs:
         restore-keys: |
           composer-${{ runner.os }}-
 
+    - name: Restore Composer packages
+      if: inputs.skip-composer != 'true' && inputs.save-cache != 'true'
+      id: composer-cache-restore
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          composer.lock
+          vendor
+          source/wp-content/plugins
+          source/wp-content/mu-plugins/pub
+          source/wp-content/mu-plugins/wporg-mu-plugins
+          source/wp-content/themes/wporg
+          source/wp-content/themes/wporg-main
+          source/wp-content/themes/wporg-parent-2021
+        key: composer-${{ runner.os }}-${{ steps.cache-day.outputs.day }}-${{ hashFiles('composer.json') }}
+        restore-keys: |
+          composer-${{ runner.os }}-
+
     - name: Install Composer dependencies
-      if: inputs.skip-composer != 'true' && steps.composer-cache.outputs.cache-hit != 'true'
+      if: inputs.skip-composer != 'true' && steps.composer-cache.outputs.cache-hit != 'true' && steps.composer-cache-restore.outputs.cache-hit != 'true'
       shell: bash
       run: |
         # Subversion is only needed to fetch the meta.svn.wordpress.org packages.
@@ -63,6 +85,7 @@ runs:
     # Skips `npm ci` on a hit. Deliberately no `restore-keys` — a stale
     # node_modules is only safe on an exact lockfile + Node match.
     - name: Cache node_modules
+      if: inputs.save-cache == 'true'
       id: node-modules-cache
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
@@ -71,8 +94,18 @@ runs:
           source/wp-content/themes/wporg-main-2022/node_modules
         key: node-modules-${{ runner.os }}-${{ steps.node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
 
+    - name: Restore node_modules
+      if: inputs.save-cache != 'true'
+      id: node-modules-cache-restore
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          node_modules
+          source/wp-content/themes/wporg-main-2022/node_modules
+        key: node-modules-${{ runner.os }}-${{ steps.node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
     - name: Install npm dependencies
-      if: steps.node-modules-cache.outputs.cache-hit != 'true'
+      if: steps.node-modules-cache.outputs.cache-hit != 'true' && steps.node-modules-cache-restore.outputs.cache-hit != 'true'
       shell: bash
       run: npm ci --no-audit --no-fund
 
