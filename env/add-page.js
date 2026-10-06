@@ -4,7 +4,7 @@
  * Adds published wordpress.org pages to the page manifest.
  *
  * The pattern name is the page's ancestor slugs plus its own slug (e.g. `about-privacy-cookies.php`),
- * and the template is the block template assigned to the page, or `page-{slug}.html` when none is.
+ * and the template is `page-{slug}.html`.
  *
  * Usage:
  *   node ./env/add-page.js <slug>  Add one page.
@@ -18,7 +18,9 @@ const { existsSync, readFileSync, writeFileSync } = require( 'fs' );
 const path = require( 'path' );
 
 const MANIFEST_PATH = path.join( __dirname, 'page-manifest.json' );
-const TEMPLATES_DIR = path.join( __dirname, '../source/wp-content/themes/wporg-main-2022/templates' );
+const THEME_DIR = path.join( __dirname, '../source/wp-content/themes/wporg-main-2022' );
+const PATTERNS_DIR = path.join( THEME_DIR, 'patterns' );
+const TEMPLATES_DIR = path.join( THEME_DIR, 'templates' );
 const API_URL =
 	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link';
 
@@ -99,19 +101,35 @@ function getEntry( page, allPages, manifest ) {
 		parentId = ancestor.parent;
 	}
 
-	// Old-theme templates (`page-*.php`) aren't block templates; those pages fall back to the template hierarchy.
-	const isBlockTemplate = page.template && existsSync( path.join( TEMPLATES_DIR, `${ page.template }.html` ) );
-	const template = isBlockTemplate ? page.template : `page-${ page.slug }`;
-	if ( ! [ ...slugs, template ].every( ( name ) => NAME_PATTERN.test( name ) ) ) {
-		throw new Error( 'it has an unexpected slug or template name.' );
+	// An assigned block template already shows another page's pattern; old-theme ones (`page-*.php`) are ignored.
+	if ( page.template && existsSync( path.join( TEMPLATES_DIR, `${ page.template }.html` ) ) ) {
+		throw new Error( `it's assigned the "${ page.template }" template. Add it to the manifest by hand.` );
 	}
 
-	return {
+	const entry = {
 		id: page.id,
 		slug: page.slug,
 		pattern: `${ slugs.join( '-' ) }.php`,
-		template: `${ template }.html`,
+		template: `page-${ page.slug }.html`,
 	};
+
+	if ( ! slugs.every( ( name ) => NAME_PATTERN.test( name ) ) ) {
+		throw new Error( 'it has an unexpected slug.' );
+	}
+
+	// Pattern names join ancestor slugs, so `about/privacy-cookies` would take `about/privacy/cookies`' pattern.
+	const taken = [
+		[ PATTERNS_DIR, entry.pattern, 'pattern' ],
+		[ TEMPLATES_DIR, entry.template, 'template' ],
+	].find(
+		( [ dir, file, key ] ) =>
+			existsSync( path.join( dir, file ) ) || manifest.some( ( other ) => other[ key ] === file )
+	);
+	if ( taken ) {
+		throw new Error( `${ taken[ 1 ] } already exists. Add it to the manifest by hand.` );
+	}
+
+	return entry;
 }
 
 /**

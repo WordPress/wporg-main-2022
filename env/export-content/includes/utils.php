@@ -54,8 +54,8 @@ function generate_pattern( $url, $output_path, $add_title = null ) {
 		throw new Exception( esc_html( "The page at {$url} has no title. Set one in the editor.\n" ) );
 	}
 
-	// Pattern files are PHP; only the export's own translation calls should open PHP in them.
-	$content = str_replace( '<?', '&lt;?', $post->content_raw );
+	// Pattern files are PHP, so `<?` in content becomes the comment browsers parse it as (e.g. XML prologs).
+	$content = str_replace( '<?', '&lt;?', preg_replace( '/<\?([^<>]*)>/', '<!--?$1-->', $post->content_raw ) );
 	if ( $add_title ?? ! has_h1( $content ) ) {
 		$content = add_page_title( $content, html_entity_decode( $post->title->rendered, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
 	}

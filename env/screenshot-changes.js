@@ -334,7 +334,9 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		);
 		if ( found ) {
 			const isNew = ! isTracked( file );
-			entries.push( { file, isNew, ...found } );
+			// Pattern file names are unique, slugs aren't.
+			const name = path.basename( file, '.php' );
+			entries.push( { file, isNew, name, ...found } );
 		}
 	}
 
@@ -346,7 +348,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		}
 		console.log( `${ post.title.rendered } [${ post.link }]` );
 		entry.post = post;
-		await takeScreenshot( page, post.localLink, path.join( afterDir, `${ entry.slug }.png` ) );
+		await takeScreenshot( page, post.localLink, path.join( afterDir, `${ entry.name }.png` ) );
 	}
 
 	// Step 2: Revert changed files to take "before" screenshots. New pages have no "before".
@@ -367,7 +369,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			if ( ! entry.post || entry.isNew ) {
 				continue;
 			}
-			await takeScreenshot( page, entry.post.localLink, path.join( beforeDir, `${ entry.slug }.png` ) );
+			await takeScreenshot( page, entry.post.localLink, path.join( beforeDir, `${ entry.name }.png` ) );
 		}
 
 		// Restore new patterns from temp.
@@ -386,21 +388,21 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			continue;
 		}
 
-		const afterFile = path.join( afterDir, `${ entry.slug }.png` );
-		const beforeFile = path.join( beforeDir, `${ entry.slug }.png` );
+		const afterFile = path.join( afterDir, `${ entry.name }.png` );
+		const beforeFile = path.join( beforeDir, `${ entry.name }.png` );
 
 		if ( ! fs.existsSync( beforeFile ) ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered }</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.slug }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ entry.name }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
 
-		const diffPixels = generateDiff( beforeFile, afterFile, path.join( diffDir, `${ entry.slug }.png` ) );
+		const diffPixels = generateDiff( beforeFile, afterFile, path.join( diffDir, `${ entry.name }.png` ) );
 
 		if ( diffPixels === 0 ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (no visual changes)</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.slug }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ entry.name }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
@@ -408,9 +410,9 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (${ diffPixels.toLocaleString() } pixels changed)</summary>\n\n`;
 		markdown += `| Before | Changes | After |\n`;
 		markdown += `| --- | --- | --- |\n`;
-		markdown += `| ![Before](${ baseUrl }/before/${ entry.slug }.png) `;
-		markdown += `| ![Changes](${ baseUrl }/diff/${ entry.slug }.png) `;
-		markdown += `| ![After](${ baseUrl }/after/${ entry.slug }.png) |\n\n`;
+		markdown += `| ![Before](${ baseUrl }/before/${ entry.name }.png) `;
+		markdown += `| ![Changes](${ baseUrl }/diff/${ entry.name }.png) `;
+		markdown += `| ![After](${ baseUrl }/after/${ entry.name }.png) |\n\n`;
 		markdown += `</details>\n`;
 	}
 

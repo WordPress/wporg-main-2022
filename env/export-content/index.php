@@ -55,7 +55,8 @@ foreach ( $manifest_items as $item ) {
 			generate_pattern( sprintf( $rest_url, $query ), sprintf( $pattern_path, $pattern ), $item->title ?? null );
 			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		} catch ( Exception $e ) {
-			echo '!! Error: ' . $e->getMessage() . "\n";
+			// The `::warning::` prefix annotates the content sync's workflow run.
+			echo '::warning::' . $item->slug . ': ' . trim( $e->getMessage() ) . "\n";
 			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";
 			$encountered_problems = true;
 		}

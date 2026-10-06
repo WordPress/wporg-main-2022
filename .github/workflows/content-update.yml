@@ -37,6 +37,7 @@ jobs:
       contents: read
     outputs:
       changelist: ${{ steps.build-patterns.outputs.changelist }}
+      content-hash: ${{ steps.content-hash.outputs.hash }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -46,11 +47,8 @@ jobs:
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
-      # Restore only: caches are saved by workflows that don't process page content.
       - name: Setup
         uses: ./.github/actions/setup
-        with:
-          save-cache: 'false'
 
       # The 0-sandbox.php file mapping's mountpoint resolves into the repo's
       # mu-plugins directory, which all of the environment's containers bind.
@@ -98,7 +96,8 @@ jobs:
           npx wp-env start --update
           npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
-          npm run build:patterns
+          # Pages that fail keep their previous pattern and are reported as warnings.
+          npm run build:patterns || echo "::warning::Some pages weren't synced."
           # Lists new patterns too, so pages added to the manifest get screenshots.
           CHANGED_FILES=$(git ls-files --modified --others --exclude-standard -- 'source/wp-content/themes/wporg-main-2022/patterns/*.php')
           echo "$CHANGED_FILES"
@@ -107,6 +106,13 @@ jobs:
             echo "$CHANGED_FILES" | xargs npm run --silent screenshot-changes --
             echo EOF
           } >> "$GITHUB_OUTPUT"
+
+      # Identifies the screenshot comment for this content, independent of the PR branch's commits.
+      - name: Hash the synced content
+        id: content-hash
+        run: |
+          git add --all -- env/page-manifest.json 'source/wp-content/themes/wporg-main-2022/patterns/*.php' 'source/wp-content/themes/wporg-main-2022/templates/*.html'
+          echo "hash=$(git diff --cached | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
 
       - name: Upload synced files
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -172,10 +178,22 @@ jobs:
 
             Please review, merge, and deploy.
 
-      # Only when the PR got a new commit, so hourly runs don't repeat the comment.
+      # Posts once per content: not again after unrelated trunk merges, and still after a cancelled run.
+      - name: Check for screenshots of this content
+        id: screenshots
+        run: |
+          PR_NUMBER=$(gh pr list --repo "$GITHUB_REPOSITORY" --head automated/content-update --state open --json number --jq '.[0].number')
+          if [ -n "$PR_NUMBER" ] && [ -s artifacts/screenshots.md ] && ! gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json comments --jq '.comments[].body' | grep -qF "<!-- content-hash: $CONTENT_HASH -->"; then
+            echo "pr=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          CONTENT_HASH: ${{ needs.sync.outputs.content-hash }}
+
       - name: Push screenshots to storage branch
         id: push-screenshots
-        if: steps.create-pr.outputs.pull-request-operation == 'created' || steps.create-pr.outputs.pull-request-operation == 'updated'
+        if: steps.screenshots.outputs.pr
         run: |
           REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           BRANCH="content-update-screenshots"
@@ -212,12 +230,12 @@ jobs:
       - name: Post screenshot comment
         if: steps.push-screenshots.outcome == 'success'
         run: |
-          if [ -s artifacts/screenshots.md ]; then
-            sed -i "s|/${SCREENSHOTS_PLACEHOLDER}/|/${SCREENSHOTS_SHA}/|g" artifacts/screenshots.md
-            gh pr comment "$PR_NUMBER" --body-file artifacts/screenshots.md
-          fi
+          sed -i "s|/${SCREENSHOTS_PLACEHOLDER}/|/${SCREENSHOTS_SHA}/|g" artifacts/screenshots.md
+          printf '\n<!-- content-hash: %s -->\n' "$CONTENT_HASH" >> artifacts/screenshots.md
+          gh pr comment "$PR_NUMBER" --body-file artifacts/screenshots.md
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ steps.create-pr.outputs.pull-request-number }}
+          PR_NUMBER: ${{ steps.screenshots.outputs.pr }}
+          CONTENT_HASH: ${{ needs.sync.outputs.content-hash }}
           SCREENSHOTS_PLACEHOLDER: content-update-screenshots
           SCREENSHOTS_SHA: ${{ steps.push-screenshots.outputs.sha }}
