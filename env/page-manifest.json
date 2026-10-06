@@ -217,5 +217,10 @@
 		"slug": "cli",
 		"pattern": "cli.php",
 		"template": "page-cli.html"
+	},
+	{
+		"slug": "om",
+		"pattern": "om.php",
+		"template": "page-om.html"
 	}
 ]
