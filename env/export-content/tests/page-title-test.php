@@ -47,6 +47,9 @@ class Page_Title_Test extends WP_UnitTestCase {
 			'H1 post title'             => array( '<!-- wp:post-title {"level":1} /-->', true ),
 			'default post title'        => array( '<!-- wp:post-title /-->', false ),
 			'random heading'            => array( '<!-- wp:wporg/random-heading /-->', true ),
+			'site title'                => array( '<!-- wp:site-title /-->', true ),
+			'H2 site title'             => array( '<!-- wp:site-title {"level":2} /-->', false ),
+			'query title'               => array( '<!-- wp:query-title {"type":"archive"} /-->', true ),
 			'nested synced pattern'     => array(
 				"<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:block {\"ref\":1} /--></div>\n<!-- /wp:group -->",
 				true,

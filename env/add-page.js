@@ -17,17 +17,40 @@
 const { existsSync, readFileSync, writeFileSync } = require( 'fs' );
 const path = require( 'path' );
 
+/**
+ * Path to the page manifest.
+ */
 const MANIFEST_PATH = path.join( __dirname, 'page-manifest.json' );
+
+/**
+ * Path to the theme.
+ */
 const THEME_DIR = path.join( __dirname, '../source/wp-content/themes/wporg-main-2022' );
+
+/**
+ * Path to the theme's patterns.
+ */
 const PATTERNS_DIR = path.join( THEME_DIR, 'patterns' );
+
+/**
+ * Path to the theme's templates.
+ */
 const TEMPLATES_DIR = path.join( THEME_DIR, 'templates' );
+
+/**
+ * REST API endpoint for published pages.
+ */
 const API_URL =
 	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link';
 
-// Slugs and template names become file names.
+/**
+ * Slugs that can safely become file names.
+ */
 const NAME_PATTERN = /^[a-z0-9%_-]+$/i;
 
-// Unfinished pages are published with this template, which hides their content.
+/**
+ * Template unfinished pages are published with, which hides their content.
+ */
 const IN_PROGRESS_TEMPLATE = 'page-in-progress';
 
 const [ , , arg ] = process.argv;
@@ -118,15 +141,17 @@ function getEntry( page, allPages, manifest ) {
 	}
 
 	// Pattern names join ancestor slugs, so `about/privacy-cookies` would take `about/privacy/cookies`' pattern.
-	const taken = [
-		[ PATTERNS_DIR, entry.pattern, 'pattern' ],
-		[ TEMPLATES_DIR, entry.template, 'template' ],
-	].find(
-		( [ dir, file, key ] ) =>
-			existsSync( path.join( dir, file ) ) || manifest.some( ( other ) => other[ key ] === file )
-	);
-	if ( taken ) {
-		throw new Error( `${ taken[ 1 ] } already exists. Add it to the manifest by hand.` );
+	if (
+		existsSync( path.join( PATTERNS_DIR, entry.pattern ) ) ||
+		manifest.some( ( other ) => other.pattern === entry.pattern )
+	) {
+		throw new Error( `${ entry.pattern } already exists. Add it to the manifest by hand.` );
+	}
+	if (
+		existsSync( path.join( TEMPLATES_DIR, entry.template ) ) ||
+		manifest.some( ( other ) => other.template === entry.template )
+	) {
+		throw new Error( `${ entry.template } already exists. Add it to the manifest by hand.` );
 	}
 
 	return entry;
@@ -153,18 +178,29 @@ async function findNewPages( manifest ) {
 		( page ) => IN_PROGRESS_TEMPLATE !== page.template && ! manifest.some( ( entry ) => entry.id === page.id )
 	);
 
-	const entries = await Promise.all(
-		candidates.map( async ( page ) => {
-			try {
-				return ( await usesNewTheme( page ) ) ? getEntry( page, allPages, manifest ) : null;
-			} catch ( error ) {
+	const usesNew = await Promise.all(
+		candidates.map( ( page ) =>
+			usesNewTheme( page ).catch( ( error ) => {
 				console.log( `::warning::Skipped ${ page.link }: ${ error.message }` );
-				return null;
-			}
-		} )
+				return false;
+			} )
+		)
 	);
 
-	return entries.filter( Boolean );
+	// One at a time, so each new entry is checked against the ones added before it.
+	const entries = [];
+	candidates.forEach( ( page, index ) => {
+		if ( ! usesNew[ index ] ) {
+			return;
+		}
+		try {
+			entries.push( getEntry( page, allPages, [ ...manifest, ...entries ] ) );
+		} catch ( error ) {
+			console.log( `::warning::Skipped ${ page.link }: ${ error.message }` );
+		}
+	} );
+
+	return entries;
 }
 
 /**

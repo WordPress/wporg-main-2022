@@ -205,14 +205,50 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 
 		add_filter( 'pre_http_request', $response );
 		ob_start();
-		generate_pattern( 'https://example.org/', $file );
-		ob_end_clean();
-		remove_filter( 'pre_http_request', $response );
+		try {
+			generate_pattern( 'https://example.org/', $file );
+		} finally {
+			ob_end_clean();
+			remove_filter( 'pre_http_request', $response );
+		}
 
 		$code = (string) file_get_contents( $file );
 		unlink( $file );
 
 		$this->assertStringContainsString( $expected, $code );
 		validate_pattern_code( $code );
+	}
+
+	/**
+	 * Test that a page whose slug no longer matches its manifest entry fails instead of writing an orphaned pattern.
+	 */
+	public function test_generate_pattern_rejects_renamed_page(): void {
+		$response = static function (): array {
+			$post = array(
+				'slug'        => 'new-slug',
+				'title'       => array( 'rendered' => 'Test' ),
+				'content_raw' => "<!-- wp:paragraph -->\n<p>Text.</p>\n<!-- /wp:paragraph -->",
+			);
+
+			return array(
+				'headers'  => array(),
+				'body'     => wp_json_encode( array( $post ) ),
+				'response' => array(
+					'code'    => 200,
+					'message' => 'OK',
+				),
+				'cookies'  => array(),
+			);
+		};
+		$file     = wp_tempnam( 'pattern' );
+
+		add_filter( 'pre_http_request', $response );
+		try {
+			$this->expectExceptionMessage( 'slug changed from old-slug to new-slug' );
+			generate_pattern( 'https://example.org/', $file, null, 'old-slug' );
+		} finally {
+			remove_filter( 'pre_http_request', $response );
+			unlink( $file );
+		}
 	}
 }

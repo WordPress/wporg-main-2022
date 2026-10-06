@@ -78,7 +78,7 @@ jobs:
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.cache/puppeteer
-          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          key: ${{ steps.puppeteer-cache.outputs.cache-primary-key }}
 
       # The screenshots need built theme assets.
       - name: Build the theme
@@ -96,8 +96,7 @@ jobs:
           npx wp-env start --update
           npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
-          # Pages that fail keep their previous pattern and are reported as warnings.
-          npm run build:patterns || echo "::warning::Some pages weren't synced."
+          npm run build:patterns
           # Lists new patterns too, so pages added to the manifest get screenshots.
           CHANGED_FILES=$(git ls-files --modified --others --exclude-standard -- 'source/wp-content/themes/wporg-main-2022/patterns/*.php')
           echo "$CHANGED_FILES"

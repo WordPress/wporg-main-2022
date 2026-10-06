@@ -74,7 +74,7 @@ runs:
           source/wp-content/themes/wporg
           source/wp-content/themes/wporg-main
           source/wp-content/themes/wporg-parent-2021
-        key: composer-${{ runner.os }}-${{ steps.cache-day.outputs.day }}-${{ hashFiles('composer.json') }}
+        key: ${{ steps.composer-cache.outputs.cache-primary-key }}
 
     # Skips `npm ci` on a hit. Deliberately no `restore-keys` — a stale
     # node_modules is only safe on an exact lockfile + Node match.
@@ -99,7 +99,7 @@ runs:
         path: |
           node_modules
           source/wp-content/themes/wporg-main-2022/node_modules
-        key: node-modules-${{ runner.os }}-${{ steps.node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+        key: ${{ steps.node-modules-cache.outputs.cache-primary-key }}
 
     # Generates the gitignored lint configs (phpcs.xml.dist, eslint.config.js,
     # .stylelintrc, …) from wporg-repo-tools, so it needs the Composer deps.

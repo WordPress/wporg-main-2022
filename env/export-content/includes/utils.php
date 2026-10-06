@@ -24,8 +24,9 @@ add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
  * @param string    $url The REST API endpoint URL for the post.
  * @param string    $output_path The local file path to write the pattern to.
  * @param bool|null $add_title Whether to add the page title above the content, as page.html does. Null adds it when the content has no H1.
+ * @param string    $slug The slug the page's template includes the pattern by.
  */
-function generate_pattern( $url, $output_path, $add_title = null ) {
+function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 	$response = wp_remote_get( $url );
 
 	$status_code = wp_remote_retrieve_response_code( $response );
@@ -47,6 +48,11 @@ function generate_pattern( $url, $output_path, $add_title = null ) {
 	if ( ! isset( $post->content_raw ) ) {
 		var_dump( $post );
 		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
+	}
+
+	// The pattern's Slug header comes from the page; a renamed page would no longer match its template.
+	if ( $slug && $slug !== $post->slug ) {
+		throw new Exception( esc_html( "The page's slug changed from {$slug} to {$post->slug}. Update its manifest entry and template.\n" ) );
 	}
 
 	// WordPress won't register a pattern with an empty Title header, which leaves the page blank.
@@ -177,7 +183,8 @@ function has_h1( string $content ): bool {
  */
 function blocks_render_h1( array $blocks ): bool {
 	foreach ( $blocks as $block ) {
-		$is_h1_title = 'core/post-title' === $block['blockName'] && 1 === ( $block['attrs']['level'] ?? 2 );
+		$level       = $block['attrs']['level'] ?? ( 'core/post-title' === $block['blockName'] ? 2 : 1 );
+		$is_h1_title = in_array( $block['blockName'], array( 'core/post-title', 'core/site-title', 'core/query-title' ), true ) && 1 === $level;
 
 		if (
 			$is_h1_title ||

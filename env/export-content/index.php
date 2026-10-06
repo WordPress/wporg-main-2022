@@ -52,12 +52,11 @@ foreach ( $manifest_items as $item ) {
 
 		try {
 			// `"title": false` keeps designed pages without a visible title; `true` adds it where it can't be detected.
-			generate_pattern( sprintf( $rest_url, $query ), sprintf( $pattern_path, $pattern ), $item->title ?? null );
+			generate_pattern( sprintf( $rest_url, $query ), sprintf( $pattern_path, $pattern ), $item->title ?? null, $item->slug );
 			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		} catch ( Exception $e ) {
-			// The `::warning::` prefix annotates the content sync's workflow run.
-			echo '::warning::' . $item->slug . ': ' . trim( $e->getMessage() ) . "\n";
-			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";
+			// The `::error::` prefix annotates the content sync's workflow run, which only shows one line.
+			echo '::error::' . $item->slug . ': ' . preg_replace( '/\s+/', ' ', trim( $e->getMessage() ) ) . "\n";
 			$encountered_problems = true;
 		}
 	}
