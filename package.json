@@ -28,6 +28,7 @@
 		"lighthouse": "lighthouse-ci http://localhost:8888/ --accessibility=100 --best-practices=100 --seo=100",
 		"lighthouse:desktop": "lighthouse http://localhost:8888/ --view --preset=desktop --output-path=lighthouse.html",
 		"lighthouse:mobile": "lighthouse http://localhost:8888/ --view --screenEmulation.mobile --output-path=lighthouse.html",
+		"add:page": "node ./env/add-page.js",
 		"build:patterns": "./env/build-patterns.sh",
 		"screenshot-changes": "node ./env/screenshot-changes.js",
 		"build:theme": "npm run build --workspace=wporg-main-2022-theme",

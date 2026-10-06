@@ -48,6 +48,11 @@ function generate_pattern( $url, $output_path ) {
 		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
 	}
 
+	// WordPress won't register a pattern with an empty Title header, which leaves the page blank.
+	if ( '' === trim( $post->title->rendered ) ) {
+		throw new Exception( esc_html( "The page at {$url} has no title. Set one in the editor.\n" ) );
+	}
+
 	$content = replace_with_i18n( $post->content_raw );
 
 	$header = <<<EOF
@@ -79,7 +84,7 @@ EOF;
  */
 function generate_template( $slug, $output_path ) {
 	$template = <<<EOF
-<!-- wp:wporg/global-header {"style":"black-on-white"} /-->
+<!-- wp:wporg/global-header /-->
 
 <!-- wp:group {"tagName":"main","layout":{"inherit":true},"className":"entry-content","style":{"spacing":{"blockGap":"0px"}}} -->
 <main class="wp-block-group entry-content">
@@ -87,7 +92,7 @@ function generate_template( $slug, $output_path ) {
 </main>
 <!-- /wp:group -->
 
-<!-- wp:wporg/global-footer {"style":"black-on-white"} /-->
+<!-- wp:wporg/global-footer /-->
 
 EOF;
 

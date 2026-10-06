@@ -5,7 +5,7 @@
  */
 const path = require( 'path' );
 const fs = require( 'fs' );
-const { execSync } = require( 'child_process' );
+const { execFileSync, execSync } = require( 'child_process' );
 const puppeteer = require( 'puppeteer' );
 const { PNG } = require( 'pngjs' );
 const pixelmatch = require( 'pixelmatch' );
@@ -33,6 +33,21 @@ async function getPageDetails( slug ) {
 		console.error( error.message );
 	}
 	return post;
+}
+
+/**
+ * Whether a file exists in HEAD, i.e. isn't a pattern for a newly added page.
+ *
+ * @param {string} file Repo-relative file path.
+ * @return {boolean} True if the file is tracked.
+ */
+function isTracked( file ) {
+	try {
+		execFileSync( 'git', [ 'cat-file', '-e', `HEAD:${ file }` ], { stdio: 'ignore' } );
+		return true;
+	} catch ( error ) {
+		return false;
+	}
 }
 
 async function takeScreenshot( page, url, outputPath ) {
@@ -316,7 +331,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			( entry ) => entry.pattern === path.basename( file ) || `${ entry.slug }.php` === path.basename( file )
 		);
 		if ( found ) {
-			entries.push( { file, ...found } );
+			entries.push( { file, isNew: ! isTracked( file ), ...found } );
 		}
 	}
 
@@ -331,8 +346,8 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		await takeScreenshot( page, post.localLink, path.join( afterDir, `${ entry.slug }.png` ) );
 	}
 
-	// Step 2: Revert changed files to take "before" screenshots.
-	const filesToRevert = entries.filter( ( e ) => e.post ).map( ( e ) => e.file );
+	// Step 2: Revert changed files to take "before" screenshots. New pages have no "before".
+	const filesToRevert = entries.filter( ( e ) => e.post && ! e.isNew ).map( ( e ) => e.file );
 	if ( filesToRevert.length > 0 ) {
 		// Save new patterns to temp, revert to old, screenshot, then restore.
 		const tmpDir = path.join( ARTIFACTS_PATH, '.tmp' );
@@ -344,7 +359,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		execSync( `git checkout HEAD -- ${ filesToRevert.join( ' ' ) }`, { stdio: 'inherit' } );
 
 		for ( const entry of entries ) {
-			if ( ! entry.post ) {
+			if ( ! entry.post || entry.isNew ) {
 				continue;
 			}
 			await takeScreenshot( page, entry.post.localLink, path.join( beforeDir, `${ entry.slug }.png` ) );
