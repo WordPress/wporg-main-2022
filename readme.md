@@ -195,7 +195,7 @@ The [Sync page content](https://github.com/WordPress/wporg-main-2022/actions/wor
 
 The page looks the same before and after the sync: if the content has no H1 of its own, the sync adds the page title and padding to the pattern, like the default page template shows them. Designed pages that shouldn't show a title (like the release microsites) opt out with `"title": false` in their manifest entry. Content that embeds synced patterns doesn't get a title automatically, since the pattern may hold the H1; add `"title": true` if it needs one.
 
-If the page needs a different header or footer style, update its template in the pull request. You can pass custom styles like
+The action rebuilds that pull request from `trunk` on every run, so don't commit to it. Changes like a different header or footer style for the page's template, or `"title": false` in its manifest entry, go to `trunk` in a separate pull request after the content one is merged. You can pass custom header and footer styles like
 
 `<!-- wp:wporg/global-header {"style":{"border":{"bottom":{"color":"var:preset|color|light-grey-1","style":"solid","width":"1px"},"top":{},"right":{},"left":{}}},"backgroundColor":"white","textColor":"charcoal-2"} /-->`
 

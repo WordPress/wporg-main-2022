@@ -87,6 +87,13 @@ jobs:
       - name: Add new pages to the manifest
         run: npm run add:page -- --new
 
+      # Pages that fail to sync keep the open content PR's version. After discovery, which refuses existing files.
+      - name: Start from the open content PR
+        run: |
+          if git fetch --depth=1 origin automated/content-update; then
+            git checkout FETCH_HEAD -- 'source/wp-content/themes/wporg-main-2022/patterns/*.php' 'source/wp-content/themes/wporg-main-2022/templates/*.html'
+          fi
+
       - name: Run the content update
         id: build-patterns
         run: |
@@ -96,7 +103,7 @@ jobs:
           npx wp-env start --update
           npm run setup:wp
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
-          npm run build:patterns
+          npm run build:patterns || echo "::warning::Some pages weren't synced, see the errors above."
           # Lists new patterns too, so pages added to the manifest get screenshots.
           CHANGED_FILES=$(git ls-files --modified --others --exclude-standard -- 'source/wp-content/themes/wporg-main-2022/patterns/*.php')
           echo "$CHANGED_FILES"
