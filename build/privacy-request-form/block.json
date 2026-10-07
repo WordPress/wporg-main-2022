@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wporg/privacy-request-form",
+  "version": "0.1.0",
+  "title": "Privacy Request Form",
+  "category": "widgets",
+  "icon": "",
+  "description": "Display a GDPR data export or erasure request form.",
+  "textdomain": "wporg",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "export",
+        "erase"
+      ],
+      "default": "export"
+    }
+  },
+  "supports": {
+    "html": false,
+    "multiple": false
+  },
+  "editorScript": "file:./index.js"
+}
