@@ -53,6 +53,9 @@ const NAME_PATTERN = /^[a-z0-9%_-]+$/i;
  */
 const IN_PROGRESS_TEMPLATE = 'page-in-progress';
 
+/**
+ * The page slug, or `--new`.
+ */
 const [ , , arg ] = process.argv;
 
 /**

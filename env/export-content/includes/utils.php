@@ -113,6 +113,7 @@ function validate_pattern_code( string $code ): void {
 	$functions = array( '__', '_e', 'esc_attr_e', 'esc_html_e', 'esc_url' );
 	$tokens    = array( T_OPEN_TAG, T_CLOSE_TAG, T_INLINE_HTML, T_WHITESPACE, T_COMMENT, T_DOC_COMMENT, T_ECHO, T_CONSTANT_ENCAPSED_STRING );
 
+	$previous = null;
 	foreach ( token_get_all( $code ) as $token ) {
 		if ( is_array( $token ) ) {
 			$allowed = T_STRING === $token[0] ? in_array( $token[1], $functions, true ) : in_array( $token[0], $tokens, true );
@@ -123,12 +124,17 @@ function validate_pattern_code( string $code ): void {
 				$allowed = false;
 			}
 		} else {
-			$allowed = in_array( $token, array( '(', ')', ',', ';' ), true );
+			// Only the allowed functions are called, not strings or return values: `'system'( 'id' )`, `__( 'x' )( 'y' )`.
+			$allowed = in_array( $token, array( ')', ',', ';' ), true ) || ( '(' === $token && is_array( $previous ) && T_STRING === $previous[0] );
 			$text    = $token;
 		}
 
 		if ( ! $allowed ) {
 			throw new Exception( esc_html( "Unexpected PHP in the generated pattern: {$text}\n" ) );
+		}
+
+		if ( ! is_array( $token ) || ! in_array( $token[0], array( T_WHITESPACE, T_COMMENT, T_DOC_COMMENT ), true ) ) {
+			$previous = $token;
 		}
 	}
 }
