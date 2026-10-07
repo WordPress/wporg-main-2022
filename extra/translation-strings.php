@@ -9,6 +9,7 @@
  * ⚠️ Do not require or include this file anywhere.
  */
 
+__( 'Remembering Om Malik', 'wporg' );
 __( 'WordPress 7.1', 'wporg' );
 __( 'WordPress 7.0', 'wporg' );
 __( 'WP-CLI', 'wporg' );
