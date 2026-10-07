@@ -50,9 +50,9 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
 	}
 
-	// Patterns are public and render without the password prompt.
-	if ( ! empty( $post->content->protected ) ) {
-		throw new Exception( esc_html( "The page at {$url} is password-protected.\n" ) );
+	// Patterns are public and render without the password prompt. Refuses the page if the response doesn't say.
+	if ( ! isset( $post->content->protected ) || $post->content->protected ) {
+		throw new Exception( esc_html( "The page at {$url} is password-protected, or the response doesn't say.\n" ) );
 	}
 
 	// The pattern's Slug header comes from the page; a renamed page would no longer match its template.

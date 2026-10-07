@@ -393,7 +393,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 
 		if ( ! fs.existsSync( beforeFile ) ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered }</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.name }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
@@ -402,7 +402,7 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 
 		if ( diffPixels === 0 ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (no visual changes)</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.name }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
@@ -410,9 +410,9 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (${ diffPixels.toLocaleString() } pixels changed)</summary>\n\n`;
 		markdown += `| Before | Changes | After |\n`;
 		markdown += `| --- | --- | --- |\n`;
-		markdown += `| ![Before](${ baseUrl }/before/${ entry.name }.png) `;
-		markdown += `| ![Changes](${ baseUrl }/diff/${ entry.name }.png) `;
-		markdown += `| ![After](${ baseUrl }/after/${ entry.name }.png) |\n\n`;
+		markdown += `| ![Before](${ baseUrl }/before/${ encodeURIComponent( entry.name ) }.png) `;
+		markdown += `| ![Changes](${ baseUrl }/diff/${ encodeURIComponent( entry.name ) }.png) `;
+		markdown += `| ![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png) |\n\n`;
 		markdown += `</details>\n`;
 	}
 

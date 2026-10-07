@@ -106,12 +106,12 @@ jobs:
           if [ -s env/export-failures.txt ]; then
             echo "::warning::Some pages weren't synced, see the errors above."
             if [ -n "$(gh pr list --repo "$GITHUB_REPOSITORY" --head automated/content-update --state open --json number --jq '.[0].number')" ] &&
-              git fetch --depth=1 origin automated/content-update; then
+              git fetch --depth=2 origin automated/content-update; then
               while read -r FILE || [ -n "$FILE" ]; do
                 FILE="source/wp-content/themes/wporg-main-2022/$FILE"
-                # Templates only when missing: an existing one may have newer changes from trunk.
-                if [[ "$FILE" == */patterns/* || ! -e "$FILE" ]]; then
-                  git restore --source=FETCH_HEAD --worktree -- "$FILE" 2>/dev/null || true
+                # Only files the PR changes (its branch is one commit on trunk), so newer trunk versions stay.
+                if ! git diff --quiet FETCH_HEAD~1 FETCH_HEAD -- "$FILE" && [[ "$FILE" == */patterns/* || ! -e "$FILE" ]]; then
+                  git restore --source=FETCH_HEAD --worktree -- "$FILE"
                 fi
               done < env/export-failures.txt
             fi
@@ -219,7 +219,7 @@ jobs:
         id: screenshots
         run: |
           PR_NUMBER=$(gh pr list --repo "$GITHUB_REPOSITORY" --head automated/content-update --state open --json number --jq '.[0].number')
-          if [ -n "$PR_NUMBER" ] && [ -s artifacts/screenshots.md ] && ! gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json comments --jq '.comments[].body' | grep -qF "<!-- content-hash: $CONTENT_HASH -->"; then
+          if [ -n "$PR_NUMBER" ] && [ -s artifacts/screenshots.md ] && ! gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --jq '.[].body' | grep -qF "<!-- content-hash: $CONTENT_HASH -->"; then
             echo "pr=$PR_NUMBER" >> "$GITHUB_OUTPUT"
           fi
         env:

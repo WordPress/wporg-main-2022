@@ -202,6 +202,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			$post = array(
 				'slug'        => 'test',
 				'title'       => array( 'rendered' => 'Test' ),
+				'content'     => array( 'protected' => false ),
 				'content_raw' => "<!-- wp:html -->\n{$markup}\n<!-- /wp:html -->",
 			);
 
@@ -241,6 +242,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			$post = array(
 				'slug'        => 'new-slug',
 				'title'       => array( 'rendered' => 'Test' ),
+				'content'     => array( 'protected' => false ),
 				'content_raw' => "<!-- wp:paragraph -->\n<p>Text.</p>\n<!-- /wp:paragraph -->",
 			);
 
@@ -267,14 +269,30 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	}
 
 	/**
-	 * Test that password-protected pages aren't exported, since patterns are public.
+	 * Data provider for responses that don't confirm a page is public.
+	 *
+	 * @return array
 	 */
-	public function test_generate_pattern_rejects_protected_page(): void {
-		$response = static function (): array {
+	public function data_protected_content(): array {
+		return array(
+			'protected'      => array( array( 'protected' => true ) ),
+			'status missing' => array( array() ),
+		);
+	}
+
+	/**
+	 * Test that password-protected pages aren't exported, since patterns are public.
+	 *
+	 * @dataProvider data_protected_content
+	 *
+	 * @param array $content The response's content field.
+	 */
+	public function test_generate_pattern_rejects_protected_page( array $content ): void {
+		$response = static function () use ( $content ): array {
 			$post = array(
 				'slug'        => 'secret',
 				'title'       => array( 'rendered' => 'Secret' ),
-				'content'     => array( 'protected' => true ),
+				'content'     => $content,
 				'content_raw' => "<!-- wp:paragraph -->\n<p>Members only.</p>\n<!-- /wp:paragraph -->",
 			);
 
