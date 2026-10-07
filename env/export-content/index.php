@@ -40,7 +40,7 @@ if ( ! $manifest_data || ! $manifest_items ) {
 	throw new Exception( esc_html( "Unable to read manifest from $args[0]\n" ) );
 }
 
-$encountered_problems = false;
+$failed_files = array();
 
 foreach ( $manifest_items as $item ) {
 	if ( $item->slug ) {
@@ -57,12 +57,15 @@ foreach ( $manifest_items as $item ) {
 		} catch ( Exception $e ) {
 			// The `::error::` prefix annotates the content sync's workflow run, which only shows one line.
 			echo '::error::' . $item->slug . ': ' . preg_replace( '/\s+/', ' ', trim( $e->getMessage() ) ) . "\n";
-			$encountered_problems = true;
+			array_push( $failed_files, "patterns/{$pattern}", "templates/{$template}" );
 		}
 	}
 }
 
-if ( $encountered_problems ) {
+// Theme-relative files of the pages that failed, for the content sync to keep their previous version. Its absence means the export didn't finish.
+file_put_contents( dirname( __DIR__ ) . '/export-failures.txt', implode( "\n", $failed_files ) );
+
+if ( $failed_files ) {
 	echo "\nOne or more errors encountered.\n";
 
 	// Signal that this process kinda failed.

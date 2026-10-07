@@ -41,7 +41,7 @@ const TEMPLATES_DIR = path.join( THEME_DIR, 'templates' );
  * REST API endpoint for published pages.
  */
 const API_URL =
-	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link';
+	'https://wordpress.org/wp-json/wp/v2/pages?per_page=100&_fields=id,slug,parent,template,title,link,content.protected';
 
 /**
  * Slugs that can safely become file names.
@@ -104,6 +104,11 @@ async function usesNewTheme( page ) {
  * @return {Object} Manifest entry.
  */
 function getEntry( page, allPages, manifest ) {
+	// Patterns are public and render without the password prompt.
+	if ( page.content?.protected ) {
+		throw new Error( 'it is password-protected.' );
+	}
+
 	if ( ! page.title.rendered.trim() ) {
 		throw new Error(
 			"it has no title. Set one in the editor first; patterns without a title don't register."

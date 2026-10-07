@@ -50,6 +50,11 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
 	}
 
+	// Patterns are public and render without the password prompt.
+	if ( ! empty( $post->content->protected ) ) {
+		throw new Exception( esc_html( "The page at {$url} is password-protected.\n" ) );
+	}
+
 	// The pattern's Slug header comes from the page; a renamed page would no longer match its template.
 	if ( $slug && $slug !== $post->slug ) {
 		throw new Exception( esc_html( "The page's slug changed from {$slug} to {$post->slug}. Update its manifest entry and template.\n" ) );
@@ -115,6 +120,13 @@ function validate_pattern_code( string $code ): void {
 
 	$previous = null;
 	foreach ( token_get_all( $code ) as $token ) {
+		$significant = ! is_array( $token ) || ! in_array( $token[0], array( T_WHITESPACE, T_COMMENT, T_DOC_COMMENT ), true );
+
+		// A function name must be called, or PHP reads it as an undefined constant.
+		if ( $significant && is_array( $previous ) && T_STRING === $previous[0] && '(' !== $token ) {
+			throw new Exception( esc_html( "Unexpected PHP in the generated pattern: {$previous[1]}\n" ) );
+		}
+
 		if ( is_array( $token ) ) {
 			$allowed = T_STRING === $token[0] ? in_array( $token[1], $functions, true ) : in_array( $token[0], $tokens, true );
 			$text    = $token[1];
@@ -133,9 +145,13 @@ function validate_pattern_code( string $code ): void {
 			throw new Exception( esc_html( "Unexpected PHP in the generated pattern: {$text}\n" ) );
 		}
 
-		if ( ! is_array( $token ) || ! in_array( $token[0], array( T_WHITESPACE, T_COMMENT, T_DOC_COMMENT ), true ) ) {
+		if ( $significant ) {
 			$previous = $token;
 		}
+	}
+
+	if ( is_array( $previous ) && T_STRING === $previous[0] ) {
+		throw new Exception( esc_html( "Unexpected PHP in the generated pattern: {$previous[1]}\n" ) );
 	}
 }
 

@@ -76,6 +76,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			'braces with apostrophe'   => array( "It's {\$x}" ),
 			'dollar'                   => array( 'It costs $price' ),
 			'trailing backslash'       => array( 'C:\\' ),
+			'backreference'            => array( 'Costs $1' ),
 			'backslash and apostrophe' => array( "It's C:\\" ),
 		);
 	}
@@ -88,17 +89,25 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	 * @param string $text Paragraph text.
 	 */
 	public function test_text_with_php_syntax( string $text ): void {
-		$code = replace_with_i18n( "<!-- wp:paragraph -->\n<p>{$text}</p>\n<!-- /wp:paragraph -->" );
-		validate_pattern_code( $code );
+		// A paragraph, and a block the fallback parser handles.
+		$blocks = array(
+			"<!-- wp:paragraph -->\n<p>{$text}</p>\n<!-- /wp:paragraph -->",
+			"<!-- wp:test/box -->\n<div><p>{$text}</p></div>\n<!-- /wp:test/box -->",
+		);
 
-		$file = wp_tempnam( 'pattern' );
-		file_put_contents( $file, $code );
-		ob_start();
-		include $file;
-		$output = (string) ob_get_clean();
-		unlink( $file );
+		foreach ( $blocks as $block ) {
+			$code = replace_with_i18n( $block );
+			validate_pattern_code( $code );
 
-		$this->assertStringContainsString( '<p>' . esc_html( $text ) . '</p>', $output );
+			$file = wp_tempnam( 'pattern' );
+			file_put_contents( $file, $code );
+			ob_start();
+			include $file;
+			$output = (string) ob_get_clean();
+			unlink( $file );
+
+			$this->assertStringContainsString( '<p>' . esc_html( $text ) . '</p>', $output );
+		}
 	}
 
 	/**
@@ -115,6 +124,8 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			'called string'        => array( "<?php 'system'( 'id' ); ?>" ),
 			'called return value'  => array( "<?php __( 'system' )( 'id' ); ?>" ),
 			'parenthesized string' => array( "<?php ( 'x' ); ?>" ),
+			'uncalled function'    => array( '<?php echo __; ?>' ),
+			'trailing function'    => array( '<?php esc_html_e' ),
 			'short open tag'       => array( "<p><? echo 'x'; ?></p>" ),
 			'short tag in HTML'    => array( "<?php esc_html_e( 'x', 'wporg' ); ?><p><?</p>" ),
 			'constant'             => array( '<?php echo PHP_VERSION; ?>' ),
@@ -249,6 +260,40 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 		try {
 			$this->expectExceptionMessage( 'slug changed from old-slug to new-slug' );
 			generate_pattern( 'https://example.org/', $file, null, 'old-slug' );
+		} finally {
+			remove_filter( 'pre_http_request', $response );
+			unlink( $file );
+		}
+	}
+
+	/**
+	 * Test that password-protected pages aren't exported, since patterns are public.
+	 */
+	public function test_generate_pattern_rejects_protected_page(): void {
+		$response = static function (): array {
+			$post = array(
+				'slug'        => 'secret',
+				'title'       => array( 'rendered' => 'Secret' ),
+				'content'     => array( 'protected' => true ),
+				'content_raw' => "<!-- wp:paragraph -->\n<p>Members only.</p>\n<!-- /wp:paragraph -->",
+			);
+
+			return array(
+				'headers'  => array(),
+				'body'     => wp_json_encode( array( $post ) ),
+				'response' => array(
+					'code'    => 200,
+					'message' => 'OK',
+				),
+				'cookies'  => array(),
+			);
+		};
+		$file     = wp_tempnam( 'pattern' );
+
+		add_filter( 'pre_http_request', $response );
+		try {
+			$this->expectExceptionMessage( 'password-protected' );
+			generate_pattern( 'https://example.org/', $file );
 		} finally {
 			remove_filter( 'pre_http_request', $response );
 			unlink( $file );
