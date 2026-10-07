@@ -92,8 +92,6 @@ jobs:
         id: build-patterns
         run: |
           chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
-          # Same build as WordPress/WordPress#master, without wp-env cloning every branch and tag.
-          echo '{ "testsEnvironment": false, "core": "https://wordpress.org/nightly-builds/wordpress-latest.zip" }' > .wp-env.override.json
           npx wp-env start --update
           npm run setup:wp
           rm -f env/export-failures.txt
