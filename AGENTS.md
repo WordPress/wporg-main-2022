@@ -28,8 +28,8 @@ Run all of these from the repo root, not from theme/plugin subfolders.
 - Build theme assets: `npm run build:theme` — watch mode: `npm run start:theme`
 - Lint PHP: `npm run lint:php` (phpcs) — autofix: `composer run format` in root
 - Lint front-end: `npm run lint:frontend` (stylelint + eslint via `@wordpress/scripts`)
-- PHP tests: `npm run test:php` (PHPUnit, requires the running Docker env)
-- Run one test: `npx wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml --filter <TestName>`
+- PHP tests: `npm run test:php` (PHPUnit, runs in a separate test environment on port 8889: start it with `npx wp-env --config=.wp-env.test.json start`)
+- Run one test: `npm run test:php -- --filter <TestName>`
 - WP-CLI: `npx wp-env run cli wp post list --post_status=publish`
 - Sync pattern content from page editor: `npm run build:patterns`
 - Refresh local content from staging: `npm run setup:refresh` · reset clean: `npx wp-env clean all && npm run setup:wp`

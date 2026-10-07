@@ -35,7 +35,7 @@
 		"lint:frontend": "npm run lint:css --workspace=wporg-main-2022-theme && npm run lint:js --workspace=wporg-main-2022-theme",
 		"lint:php": "composer run lint source/wp-content/themes/wporg-main-2022 source/wp-content/mu-plugins/theme-switcher.php env",
 		"start:theme": "npm run start --workspace=wporg-main-2022-theme",
-		"test:php": "wp-env run tests-cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
+		"test:php": "wp-env --config=.wp-env.test.json run cli ./vendor/bin/phpunit -c ./wp-content/tests/phpunit/phpunit.xml"
 	},
 	"workspaces": [
 		"source/wp-content/themes/wporg-main-2022"

@@ -9,7 +9,8 @@
 		"WPORG_SANDBOXED": true,
 		"WP_MARKET_SHARE": 43
 	},
-	"core": "WordPress/WordPress#master",
+	"core": "https://wordpress.org/nightly-builds/wordpress-latest.zip",
+	"testsEnvironment": false,
 	"plugins": [
 		"./source/wp-content/plugins/block-visibility",
 		"./source/wp-content/plugins/gutenberg",
@@ -29,16 +30,5 @@
 		"wp-content/mu-plugins": "./source/wp-content/mu-plugins",
 		"wp-content/mu-plugins/0-sandbox.php": "./env/0-sandbox.php",
 		"wp-cli.yml": "./wp-cli.yml"
-	},
-	"env": {
-		"tests": {
-			"config": {
-				"WP_ENVIRONMENT_TYPE": false
-			},
-			"mappings": {
-				"wp-content/tests": "./source/wp-content/tests",
-				"vendor": "./vendor"
-			}
-		}
 	}
 }
