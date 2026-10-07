@@ -57,7 +57,7 @@ class BasicText implements BlockParser {
 						// There might be edge cases where the string is not wrapped in tags/quotes, but I
 						// haven't seen one in testing.
 						$regex = '#(<([^>]*)>|=")' . preg_quote( $string, '#' ) . '(<([^>]*)>|")#s';
-						$inner_content = preg_replace( $regex, '${1}' . $replacements[ $string ] . '${3}', $inner_content );
+						$inner_content = preg_replace( $regex, '${1}' . addcslashes( $replacements[ $string ], '\\$' ) . '${3}', $inner_content );
 					}
 				}
 			}

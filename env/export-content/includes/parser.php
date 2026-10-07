@@ -287,7 +287,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 		// Use double quotes when the string contains apostrophes, single quotes otherwise.
 		$has_apostrophe = str_contains( $decoded, "'" );
 		$quote          = $has_apostrophe ? '"' : "'";
-		$escaped        = $has_apostrophe ? addcslashes( $decoded, '"\\' ) : $decoded;
+		$escaped        = $has_apostrophe ? addcslashes( $decoded, '"\\$' ) : addcslashes( $decoded, '\\' );
 
 		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $string, $matches ) ) {
 			if ( count( $matches[0] ) > 1 ) {

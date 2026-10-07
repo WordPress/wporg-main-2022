@@ -5,7 +5,7 @@
  */
 const path = require( 'path' );
 const fs = require( 'fs' );
-const { execSync } = require( 'child_process' );
+const { execFileSync, execSync } = require( 'child_process' );
 const puppeteer = require( 'puppeteer' );
 const { PNG } = require( 'pngjs' );
 const pixelmatch = require( 'pixelmatch' );
@@ -22,8 +22,10 @@ const SCREENSHOTS_COMMIT = process.env.SCREENSHOTS_COMMIT || 'content-update-scr
 // node ./env/screenshot-changes.js [...files]
 const [ , , ...files ] = process.argv;
 
-async function getPageDetails( slug ) {
-	const apiUrl = `https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=${ slug }`;
+async function getPageDetails( entry ) {
+	// Slugs aren't unique across parent pages, IDs are.
+	const query = entry.id ? `include=${ entry.id }` : `slug=${ entry.slug }`;
+	const apiUrl = `https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&${ query }`;
 	let post = false;
 	try {
 		const response = await fetch( apiUrl );
@@ -33,6 +35,21 @@ async function getPageDetails( slug ) {
 		console.error( error.message );
 	}
 	return post;
+}
+
+/**
+ * Whether a file exists in HEAD, i.e. isn't a pattern for a newly added page.
+ *
+ * @param {string} file Repo-relative file path.
+ * @return {boolean} True if the file is tracked.
+ */
+function isTracked( file ) {
+	try {
+		execFileSync( 'git', [ 'cat-file', '-e', `HEAD:${ file }` ], { stdio: 'ignore' } );
+		return true;
+	} catch {
+		return false;
+	}
 }
 
 async function takeScreenshot( page, url, outputPath ) {
@@ -316,23 +333,28 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			( entry ) => entry.pattern === path.basename( file ) || `${ entry.slug }.php` === path.basename( file )
 		);
 		if ( found ) {
-			entries.push( { file, ...found } );
+			const isNew = ! isTracked( file );
+			// Pattern file names are unique, slugs aren't.
+			const name = path.basename( file, '.php' );
+			entries.push( { file, isNew, name, ...found } );
 		}
 	}
 
 	// Step 1: Take "after" screenshots (current state has new patterns).
 	for ( const entry of entries ) {
-		const post = await getPageDetails( entry.slug );
+		const post = await getPageDetails( entry );
 		if ( ! post ) {
 			continue;
 		}
 		console.log( `${ post.title.rendered } [${ post.link }]` );
 		entry.post = post;
-		await takeScreenshot( page, post.localLink, path.join( afterDir, `${ entry.slug }.png` ) );
+		await takeScreenshot( page, post.localLink, path.join( afterDir, `${ entry.name }.png` ) );
 	}
 
-	// Step 2: Revert changed files to take "before" screenshots.
-	const filesToRevert = entries.filter( ( e ) => e.post ).map( ( e ) => e.file );
+	// Step 2: Revert changed files to take "before" screenshots. New pages have no "before".
+	const filesToRevert = entries
+		.filter( ( entry ) => entry.post && ! entry.isNew )
+		.map( ( entry ) => entry.file );
 	if ( filesToRevert.length > 0 ) {
 		// Save new patterns to temp, revert to old, screenshot, then restore.
 		const tmpDir = path.join( ARTIFACTS_PATH, '.tmp' );
@@ -344,10 +366,10 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		execSync( `git checkout HEAD -- ${ filesToRevert.join( ' ' ) }`, { stdio: 'inherit' } );
 
 		for ( const entry of entries ) {
-			if ( ! entry.post ) {
+			if ( ! entry.post || entry.isNew ) {
 				continue;
 			}
-			await takeScreenshot( page, entry.post.localLink, path.join( beforeDir, `${ entry.slug }.png` ) );
+			await takeScreenshot( page, entry.post.localLink, path.join( beforeDir, `${ entry.name }.png` ) );
 		}
 
 		// Restore new patterns from temp.
@@ -366,21 +388,21 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 			continue;
 		}
 
-		const afterFile = path.join( afterDir, `${ entry.slug }.png` );
-		const beforeFile = path.join( beforeDir, `${ entry.slug }.png` );
+		const afterFile = path.join( afterDir, `${ entry.name }.png` );
+		const beforeFile = path.join( beforeDir, `${ entry.name }.png` );
 
 		if ( ! fs.existsSync( beforeFile ) ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered }</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.slug }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
 
-		const diffPixels = generateDiff( beforeFile, afterFile, path.join( diffDir, `${ entry.slug }.png` ) );
+		const diffPixels = generateDiff( beforeFile, afterFile, path.join( diffDir, `${ entry.name }.png` ) );
 
 		if ( diffPixels === 0 ) {
 			markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (no visual changes)</summary>\n\n`;
-			markdown += `![After](${ baseUrl }/after/${ entry.slug }.png)\n\n`;
+			markdown += `![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png)\n\n`;
 			markdown += `</details>\n`;
 			continue;
 		}
@@ -388,9 +410,9 @@ function generateDiff( beforePath, afterPath, diffPath ) {
 		markdown += `\n<details>\n<summary>${ entry.post.title.rendered } (${ diffPixels.toLocaleString() } pixels changed)</summary>\n\n`;
 		markdown += `| Before | Changes | After |\n`;
 		markdown += `| --- | --- | --- |\n`;
-		markdown += `| ![Before](${ baseUrl }/before/${ entry.slug }.png) `;
-		markdown += `| ![Changes](${ baseUrl }/diff/${ entry.slug }.png) `;
-		markdown += `| ![After](${ baseUrl }/after/${ entry.slug }.png) |\n\n`;
+		markdown += `| ![Before](${ baseUrl }/before/${ encodeURIComponent( entry.name ) }.png) `;
+		markdown += `| ![Changes](${ baseUrl }/diff/${ encodeURIComponent( entry.name ) }.png) `;
+		markdown += `| ![After](${ baseUrl }/after/${ encodeURIComponent( entry.name ) }.png) |\n\n`;
 		markdown += `</details>\n`;
 	}
 

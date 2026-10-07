@@ -26,7 +26,7 @@ if ( ! is_dir( $theme_dir ) ) {
 	$theme_dir = dirname( __DIR__, 2 ) . '/source/wp-content/themes/wporg-main-2022'; // Local env.
 }
 
-$rest_url = 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&slug=%s';
+$rest_url = 'https://wordpress.org/wp-json/wp/v2/pages?context=wporg_export&%s';
 $pattern_path = $theme_dir . '/patterns/%s';
 $template_path = $theme_dir . '/templates/%s';
 
@@ -40,25 +40,32 @@ if ( ! $manifest_data || ! $manifest_items ) {
 	throw new Exception( esc_html( "Unable to read manifest from $args[0]\n" ) );
 }
 
-$encountered_problems = false;
+$failed_files = array();
 
 foreach ( $manifest_items as $item ) {
 	if ( $item->slug ) {
 		$pattern = $item->pattern ?? $item->slug . '.php';
 		$template = $item->template ?? $item->slug . '.html';
 
+		// Slugs aren't unique across parent pages, IDs are.
+		$query = isset( $item->id ) ? 'include=' . (int) $item->id : 'slug=' . rawurlencode( $item->slug );
+
 		try {
-			generate_pattern( sprintf( $rest_url, $item->slug ), sprintf( $pattern_path, $pattern ) );
+			// `"title": false` keeps designed pages without a visible title; `true` adds it where it can't be detected.
+			generate_pattern( sprintf( $rest_url, $query ), sprintf( $pattern_path, $pattern ), $item->title ?? null, $item->slug );
 			generate_template( $item->slug, sprintf( $template_path, $template ) );
 		} catch ( Exception $e ) {
-			echo '!! Error: ' . $e->getMessage() . "\n";
-			echo "\tDoes the page still exist? Has it been unpublished? Update the Manifest or retry.\n\n";
-			$encountered_problems = true;
+			// The `::error::` prefix annotates the content sync's workflow run, which only shows one line.
+			echo '::error::' . $item->slug . ': ' . preg_replace( '/\s+/', ' ', trim( $e->getMessage() ) ) . "\n";
+			array_push( $failed_files, "patterns/{$pattern}", "templates/{$template}" );
 		}
 	}
 }
 
-if ( $encountered_problems ) {
+// Theme-relative files of the pages that failed, for the content sync to keep their previous version. Its absence means the export didn't finish.
+file_put_contents( dirname( __DIR__ ) . '/export-failures.txt', implode( "\n", $failed_files ) );
+
+if ( $failed_files ) {
 	echo "\nOne or more errors encountered.\n";
 
 	// Signal that this process kinda failed.

@@ -34,10 +34,10 @@ runs:
     # daily — an exact hit skips Composer entirely, and after a rotation the
     # restored tree just seeds an incremental `composer update`, so CI
     # dependencies are never more than a day stale.
-    - name: Cache Composer packages
+    - name: Restore Composer packages
       if: inputs.skip-composer != 'true'
       id: composer-cache
-      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: |
           composer.lock
@@ -60,11 +60,27 @@ runs:
         sudo apt-get install -y subversion
         composer update
 
+    # Saved right after installing, so nothing a job runs later can end up in the cache.
+    - name: Save Composer packages
+      if: inputs.skip-composer != 'true' && steps.composer-cache.outputs.cache-hit != 'true'
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          composer.lock
+          vendor
+          source/wp-content/plugins
+          source/wp-content/mu-plugins/pub
+          source/wp-content/mu-plugins/wporg-mu-plugins
+          source/wp-content/themes/wporg
+          source/wp-content/themes/wporg-main
+          source/wp-content/themes/wporg-parent-2021
+        key: ${{ steps.composer-cache.outputs.cache-primary-key }}
+
     # Skips `npm ci` on a hit. Deliberately no `restore-keys` — a stale
     # node_modules is only safe on an exact lockfile + Node match.
-    - name: Cache node_modules
+    - name: Restore node_modules
       id: node-modules-cache
-      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: |
           node_modules
@@ -75,6 +91,15 @@ runs:
       if: steps.node-modules-cache.outputs.cache-hit != 'true'
       shell: bash
       run: npm ci --no-audit --no-fund
+
+    - name: Save node_modules
+      if: steps.node-modules-cache.outputs.cache-hit != 'true'
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          node_modules
+          source/wp-content/themes/wporg-main-2022/node_modules
+        key: ${{ steps.node-modules-cache.outputs.cache-primary-key }}
 
     # Generates the gitignored lint configs (phpcs.xml.dist, eslint.config.js,
     # .stylelintrc, …) from wporg-repo-tools, so it needs the Composer deps.

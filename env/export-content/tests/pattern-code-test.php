@@ -1,0 +1,320 @@
+<?php
+/**
+ * Test the code of generated pattern files.
+ */
+
+declare( strict_types = 1 );
+
+use function WordPress_org\Main_2022\ExportToPatterns\generate_pattern;
+use function WordPress_org\Main_2022\ExportToPatterns\get_pattern_header;
+use function WordPress_org\Main_2022\ExportToPatterns\replace_with_i18n;
+use function WordPress_org\Main_2022\ExportToPatterns\validate_pattern_code;
+
+require_once dirname( __DIR__ ) . '/includes/utils.php';
+
+/**
+ * Tests for the PHP in generated pattern files.
+ */
+class Pattern_Code_Test extends WP_UnitTestCase {
+	/**
+	 * Data provider for code the export writes.
+	 *
+	 * @return array
+	 */
+	public function data_valid_code(): array {
+		return array(
+			'header'          => array( get_pattern_header( 'About', 'about' ) ),
+			'text'            => array( "<p><?php esc_html_e( 'It\\'s here.', 'wporg' ); ?></p>" ),
+			'markup in text'  => array( "<p><?php _e( 'A <a href=\"#\">link</a>.', 'wporg' ); ?></p>" ),
+			'double quotes'   => array( "<p><?php esc_html_e( \"It's here.\", 'wporg' ); ?></p>" ),
+			'attribute'       => array( "<img alt=\"<?php esc_attr_e( 'Logo', 'wporg' ); ?>\" />" ),
+			'URL'             => array( "<a href=\"<?php echo esc_url( __( 'https://wordpress.org/', 'wporg' ) ); ?>\">x</a>" ),
+			'translator note' => array( "<?php /* translators: x */ esc_html_e( 'x', 'wporg' ); ?>" ),
+		);
+	}
+
+	/**
+	 * Test that the code the export writes passes validation.
+	 *
+	 * @dataProvider data_valid_code
+	 *
+	 * @param string $code Pattern code.
+	 */
+	public function test_valid_code( string $code ): void {
+		validate_pattern_code( $code );
+
+		$this->addToAssertionCount( 1 );
+	}
+
+	/**
+	 * Test that all patterns synced so far pass validation.
+	 */
+	public function test_synced_patterns_are_valid(): void {
+		$theme_dir = dirname( __DIR__, 3 ) . '/wp-content/themes/wporg-main-2022';
+		$manifest  = json_decode( (string) file_get_contents( dirname( __DIR__, 2 ) . '/page-manifest.json' ) );
+
+		$validated = 0;
+		foreach ( $manifest as $item ) {
+			$file = $theme_dir . '/patterns/' . ( $item->pattern ?? $item->slug . '.php' );
+			if ( file_exists( $file ) ) {
+				validate_pattern_code( (string) file_get_contents( $file ) );
+				++$validated;
+			}
+		}
+
+		$this->assertGreaterThan( count( $manifest ) / 2, $validated, 'Most manifest patterns should be found.' );
+	}
+
+	/**
+	 * Data provider for text containing PHP string syntax.
+	 *
+	 * @return array
+	 */
+	public function data_strings_with_php_syntax(): array {
+		return array(
+			'dollar with apostrophe'   => array( "It's \$price" ),
+			'braces with apostrophe'   => array( "It's {\$x}" ),
+			'dollar'                   => array( 'It costs $price' ),
+			'trailing backslash'       => array( 'C:\\' ),
+			'backreference'            => array( 'Costs $1' ),
+			'backslash and apostrophe' => array( "It's C:\\" ),
+		);
+	}
+
+	/**
+	 * Test that text with PHP string syntax becomes valid code that outputs the text unchanged.
+	 *
+	 * @dataProvider data_strings_with_php_syntax
+	 *
+	 * @param string $text Paragraph text.
+	 */
+	public function test_text_with_php_syntax( string $text ): void {
+		// A paragraph, and a block the fallback parser handles.
+		$blocks = array(
+			"<!-- wp:paragraph -->\n<p>{$text}</p>\n<!-- /wp:paragraph -->",
+			"<!-- wp:test/box -->\n<div><p>{$text}</p></div>\n<!-- /wp:test/box -->",
+		);
+
+		foreach ( $blocks as $block ) {
+			$code = replace_with_i18n( $block );
+			validate_pattern_code( $code );
+
+			$file = wp_tempnam( 'pattern' );
+			file_put_contents( $file, $code );
+			ob_start();
+			include $file;
+			$output = (string) ob_get_clean();
+			unlink( $file );
+
+			$this->assertStringContainsString( '<p>' . esc_html( $text ) . '</p>', $output );
+		}
+	}
+
+	/**
+	 * Data provider for code the export doesn't write.
+	 *
+	 * @return array
+	 */
+	public function data_invalid_code(): array {
+		return array(
+			'other function'       => array( "<?php printf( 'x' ); ?>" ),
+			'variable'             => array( '<?php echo $x; ?>' ),
+			'interpolated string'  => array( "<?php esc_html_e( \"{\$x}\", 'wporg' ); ?>" ),
+			'short echo tag'       => array( "<?= 'x' ?>" ),
+			'called string'        => array( "<?php 'system'( 'id' ); ?>" ),
+			'called return value'  => array( "<?php __( 'system' )( 'id' ); ?>" ),
+			'parenthesized string' => array( "<?php ( 'x' ); ?>" ),
+			'uncalled function'    => array( '<?php echo __; ?>' ),
+			'trailing function'    => array( '<?php esc_html_e' ),
+			'short open tag'       => array( "<p><? echo 'x'; ?></p>" ),
+			'short tag in HTML'    => array( "<?php esc_html_e( 'x', 'wporg' ); ?><p><?</p>" ),
+			'constant'             => array( '<?php echo PHP_VERSION; ?>' ),
+		);
+	}
+
+	/**
+	 * Test that code the export doesn't write fails validation.
+	 *
+	 * @dataProvider data_invalid_code
+	 *
+	 * @param string $code Pattern code.
+	 */
+	public function test_invalid_code( string $code ): void {
+		$this->expectException( Exception::class );
+
+		validate_pattern_code( $code );
+	}
+
+	/**
+	 * Data provider for titles, and how they appear in the header.
+	 *
+	 * @return array
+	 */
+	public function data_header_titles(): array {
+		return array(
+			'plain'          => array( 'About WordPress', 'About WordPress' ),
+			'line break'     => array( "First line\nSecond line", 'First line Second line' ),
+			'comment end'    => array( 'A */ B', 'A * / B' ),
+			'nested'         => array( 'A **// B', 'A ** // B' ),
+		);
+	}
+
+	/**
+	 * Test that the title stays on its own header line inside the docblock.
+	 *
+	 * @dataProvider data_header_titles
+	 *
+	 * @param string $title    Page title.
+	 * @param string $expected Title in the header.
+	 */
+	public function test_header_title_is_one_line( string $title, string $expected ): void {
+		$header = get_pattern_header( $title, 'test' );
+
+		$this->assertStringContainsString( " * Title: {$expected}\n * Slug:", $header );
+		$this->assertSame( 1, substr_count( $header, '*/' ) );
+		validate_pattern_code( $header );
+	}
+
+	/**
+	 * Data provider for content with markup that looks like PHP, and how it is written to the pattern.
+	 *
+	 * @return array
+	 */
+	public function data_php_like_markup(): array {
+		return array(
+			'PHP'         => array( "<div><?php echo 'x'; ?></div>", "<div><!--?php echo 'x'; ?--></div>" ),
+			'XML prolog'  => array( '<svg><?xml version="1.0"?><g/></svg>', '<svg><!--?xml version="1.0"?--><g/></svg>' ),
+			'unclosed'    => array( '<div><?php echo 1;</div>', '<div>&lt;?php echo 1;</div>' ),
+			'no closing >' => array( 'a <? b', 'a &lt;? b' ),
+		);
+	}
+
+	/**
+	 * Test that markup looking like PHP in page content is written as the comment browsers parse it as.
+	 *
+	 * @dataProvider data_php_like_markup
+	 *
+	 * @param string $markup   Markup in the page content.
+	 * @param string $expected Markup in the pattern.
+	 */
+	public function test_generate_pattern_writes_php_like_markup_as_comments( string $markup, string $expected ): void {
+		$response = static function () use ( $markup ): array {
+			$post = array(
+				'slug'        => 'test',
+				'title'       => array( 'rendered' => 'Test' ),
+				'content'     => array( 'protected' => false ),
+				'content_raw' => "<!-- wp:html -->\n{$markup}\n<!-- /wp:html -->",
+			);
+
+			return array(
+				'headers'  => array(),
+				'body'     => wp_json_encode( array( $post ) ),
+				'response' => array(
+					'code'    => 200,
+					'message' => 'OK',
+				),
+				'cookies'  => array(),
+			);
+		};
+		$file     = wp_tempnam( 'pattern' );
+
+		add_filter( 'pre_http_request', $response );
+		ob_start();
+		try {
+			generate_pattern( 'https://example.org/', $file );
+		} finally {
+			ob_end_clean();
+			remove_filter( 'pre_http_request', $response );
+		}
+
+		$code = (string) file_get_contents( $file );
+		unlink( $file );
+
+		$this->assertStringContainsString( $expected, $code );
+		validate_pattern_code( $code );
+	}
+
+	/**
+	 * Test that a page whose slug no longer matches its manifest entry fails instead of writing an orphaned pattern.
+	 */
+	public function test_generate_pattern_rejects_renamed_page(): void {
+		$response = static function (): array {
+			$post = array(
+				'slug'        => 'new-slug',
+				'title'       => array( 'rendered' => 'Test' ),
+				'content'     => array( 'protected' => false ),
+				'content_raw' => "<!-- wp:paragraph -->\n<p>Text.</p>\n<!-- /wp:paragraph -->",
+			);
+
+			return array(
+				'headers'  => array(),
+				'body'     => wp_json_encode( array( $post ) ),
+				'response' => array(
+					'code'    => 200,
+					'message' => 'OK',
+				),
+				'cookies'  => array(),
+			);
+		};
+		$file     = wp_tempnam( 'pattern' );
+
+		add_filter( 'pre_http_request', $response );
+		try {
+			$this->expectExceptionMessage( 'slug changed from old-slug to new-slug' );
+			generate_pattern( 'https://example.org/', $file, null, 'old-slug' );
+		} finally {
+			remove_filter( 'pre_http_request', $response );
+			unlink( $file );
+		}
+	}
+
+	/**
+	 * Data provider for responses that don't confirm a page is public.
+	 *
+	 * @return array
+	 */
+	public function data_protected_content(): array {
+		return array(
+			'protected'      => array( array( 'protected' => true ) ),
+			'status missing' => array( array() ),
+		);
+	}
+
+	/**
+	 * Test that password-protected pages aren't exported, since patterns are public.
+	 *
+	 * @dataProvider data_protected_content
+	 *
+	 * @param array $content The response's content field.
+	 */
+	public function test_generate_pattern_rejects_protected_page( array $content ): void {
+		$response = static function () use ( $content ): array {
+			$post = array(
+				'slug'        => 'secret',
+				'title'       => array( 'rendered' => 'Secret' ),
+				'content'     => $content,
+				'content_raw' => "<!-- wp:paragraph -->\n<p>Members only.</p>\n<!-- /wp:paragraph -->",
+			);
+
+			return array(
+				'headers'  => array(),
+				'body'     => wp_json_encode( array( $post ) ),
+				'response' => array(
+					'code'    => 200,
+					'message' => 'OK',
+				),
+				'cookies'  => array(),
+			);
+		};
+		$file     = wp_tempnam( 'pattern' );
+
+		add_filter( 'pre_http_request', $response );
+		try {
+			$this->expectExceptionMessage( 'password-protected' );
+			generate_pattern( 'https://example.org/', $file );
+		} finally {
+			remove_filter( 'pre_http_request', $response );
+			unlink( $file );
+		}
+	}
+}
