@@ -9,8 +9,6 @@ declare( strict_types = 1 );
 
 namespace WordPressdotorg\Theme\Main_2022;
 
-use WP_Post;
-
 add_filter( 'page_template_hierarchy', __NAMESPACE__ . '\add_content_only_template' );
 
 /**
@@ -27,7 +25,7 @@ function add_content_only_template( array $templates ): array {
 	$index = array_search( 'page.php', $templates, true );
 	$post  = get_queried_object();
 
-	if ( false === $index || ! $post instanceof WP_Post || ! has_h1( $post->post_content ) ) {
+	if ( false === $index || ! $post instanceof \WP_Post || ! has_h1( $post->post_content ) ) {
 		return $templates;
 	}
 
