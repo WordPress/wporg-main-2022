@@ -12,6 +12,7 @@ on:
       - 'env/page-manifest.json'
       - 'env/export-content/**'
       - 'env/build-patterns.sh'
+      - 'source/wp-content/themes/wporg-main-2022/inc/page-title.php'
   pull_request:
     paths:
       - '.github/workflows/content-update.yml'

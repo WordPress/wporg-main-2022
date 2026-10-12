@@ -9,61 +9,30 @@ declare( strict_types = 1 );
 
 namespace WordPressdotorg\Theme\Main_2022;
 
-/**
- * Prefer the content-only template over page.html for content that has its own H1.
- *
- * The default page.html adds a title and padding, and keeps content to the content width. Content with its own H1
- * gets neither when the content sync turns it into a pattern, so this keeps previews and the live page the same
- * before and after the sync.
- *
- * @param string[] $templates Template candidates, most specific first.
- * @return string[] Filtered template candidates.
- */
-function add_content_only_template( array $templates ): array {
-	$index = array_search( 'page.php', $templates, true );
-	$post  = get_queried_object();
-
-	if ( false === $index || ! $post instanceof \WP_Post || ! has_h1( $post->post_content ) ) {
-		return $templates;
-	}
-
-	array_splice( $templates, $index, 0, 'page-content-only.php' );
-
-	return $templates;
-}
-add_filter( 'page_template_hierarchy', __NAMESPACE__ . '\add_content_only_template' );
+require_once __DIR__ . '/page-title.php';
 
 /**
- * Whether content renders its own H1.
+ * Add the page title and padding to content without its own H1, in the default page template.
+ *
+ * Until the content sync gives a page its own template, it renders and previews through page.html, which lays content
+ * out like the sync does. The sync adds the title the same way, so the page looks the same before and after.
  *
  * @param string $content Raw block content.
- * @return bool
+ * @return string Block content.
  */
-function has_h1( string $content ): bool {
-	return preg_match( '/<h1[\s>]/i', $content ) || blocks_render_h1( parse_blocks( $content ) );
-}
+function add_title_to_content( string $content ): string {
+	global $_wp_current_template_id;
 
-/**
- * Whether any of the blocks renders an H1 dynamically.
- *
- * Synced patterns and pattern references count too: their content isn't in the page, so it may hold one.
- *
- * @param array[] $blocks Parsed blocks.
- * @return bool
- */
-function blocks_render_h1( array $blocks ): bool {
-	foreach ( $blocks as $block ) {
-		$level       = $block['attrs']['level'] ?? ( 'core/post-title' === $block['blockName'] ? 2 : 1 );
-		$is_h1_title = in_array( $block['blockName'], array( 'core/post-title', 'core/site-title', 'core/query-title' ), true ) && 1 === $level;
-
-		if (
-			$is_h1_title ||
-			in_array( $block['blockName'], array( 'wporg/random-heading', 'core/block', 'core/pattern' ), true ) ||
-			blocks_render_h1( $block['innerBlocks'] )
-		) {
-			return true;
-		}
+	if (
+		! is_page() ||
+		! in_the_loop() ||
+		! is_main_query() ||
+		get_stylesheet() . '//page' !== $_wp_current_template_id ||
+		has_h1( $content )
+	) {
+		return $content;
 	}
 
-	return false;
+	return add_page_title( $content, html_entity_decode( get_the_title(), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
 }
+add_filter( 'the_content', __NAMESPACE__ . '\add_title_to_content', 8 ); // Before do_blocks().

@@ -4,13 +4,13 @@
 namespace WordPress_org\Main_2022\ExportToPatterns;
 
 use Exception;
+use function WordPressdotorg\Theme\Main_2022\add_page_title;
 use function WordPressdotorg\Theme\Main_2022\has_h1;
 
 require_once __DIR__ . '/parser.php';
 
-// The theme picks the template for pages without their own by the same rule, so both must share it.
-$page_layout = dirname( __DIR__, 3 ) . '/wp-content/themes/wporg-main-2022/inc/page-layout.php'; // Docker env.
-require_once is_file( $page_layout ) ? $page_layout : dirname( __DIR__, 3 ) . '/source/wp-content/themes/wporg-main-2022/inc/page-layout.php';
+// The theme adds the title to unsynced pages by the same rule, so both must share it.
+require_once get_theme_root() . '/wporg-main-2022/inc/page-title.php';
 
 /**
  * Filter CURL requests to bypass sandboxes and always hit a production server.
@@ -188,29 +188,4 @@ EOF;
 	} else {
 		echo "Skipping $output_path\n";
 	}
-}
-
-/**
- * Wrap content in page.html's padding, below an H1 with the page title.
- *
- * The inner group mirrors page.html's post-content block, which keeps wide and full-width blocks to the content width.
- *
- * @param string $content Raw block content.
- * @param string $title   Page title, as plain text.
- * @return string Block content.
- */
-function add_page_title( string $content, string $title ): string {
-	$title = esc_html( $title );
-
-	return <<<EOF
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)">{$title}</h1>
-<!-- /wp:heading -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">{$content}</div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-EOF;
 }
