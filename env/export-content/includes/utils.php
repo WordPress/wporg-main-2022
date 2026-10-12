@@ -4,8 +4,13 @@
 namespace WordPress_org\Main_2022\ExportToPatterns;
 
 use Exception;
+use function WordPressdotorg\Theme\Main_2022\add_page_title;
+use function WordPressdotorg\Theme\Main_2022\has_h1;
 
 require_once __DIR__ . '/parser.php';
+
+// The theme adds the title to unsynced pages by the same rule, so both must share it.
+require_once get_theme_root() . '/wporg-main-2022/inc/page-title.php';
 
 /**
  * Filter CURL requests to bypass sandboxes and always hit a production server.
@@ -68,7 +73,7 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 	// Pattern files are PHP, so `<?` in content becomes the comment browsers parse it as (e.g. XML prologs).
 	$content = str_replace( '<?', '&lt;?', preg_replace( '/<\?([^<>]*)>/', '<!--?$1-->', $post->content_raw ) );
 	if ( $add_title ?? ! has_h1( $content ) ) {
-		$content = add_page_title( $content, html_entity_decode( $post->title->rendered, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
+		$content = add_page_title( $content, $post->title->rendered );
 	}
 
 	$code = get_pattern_header( $post->title->rendered, $post->slug ) . replace_with_i18n( $content ) . "\n";
@@ -183,64 +188,4 @@ EOF;
 	} else {
 		echo "Skipping $output_path\n";
 	}
-}
-
-/**
- * Whether content renders its own H1.
- *
- * @param string $content Raw block content.
- * @return bool
- */
-function has_h1( string $content ): bool {
-	return preg_match( '/<h1[\s>]/i', $content ) || blocks_render_h1( parse_blocks( $content ) );
-}
-
-/**
- * Whether any of the blocks renders an H1 dynamically.
- *
- * Synced patterns and pattern references count too: their content isn't in the page, so it may hold one.
- *
- * @param array[] $blocks Parsed blocks.
- * @return bool
- */
-function blocks_render_h1( array $blocks ): bool {
-	foreach ( $blocks as $block ) {
-		$level       = $block['attrs']['level'] ?? ( 'core/post-title' === $block['blockName'] ? 2 : 1 );
-		$is_h1_title = in_array( $block['blockName'], array( 'core/post-title', 'core/site-title', 'core/query-title' ), true ) && 1 === $level;
-
-		if (
-			$is_h1_title ||
-			in_array( $block['blockName'], array( 'wporg/random-heading', 'core/block', 'core/pattern' ), true ) ||
-			blocks_render_h1( $block['innerBlocks'] )
-		) {
-			return true;
-		}
-	}
-
-	return false;
-}
-
-/**
- * Wrap content in page.html's padding, below an H1 with the page title.
- *
- * The inner group mirrors page.html's post-content block, which keeps wide and full-width blocks to the content width.
- *
- * @param string $content Raw block content.
- * @param string $title   Page title, as plain text.
- * @return string Block content.
- */
-function add_page_title( string $content, string $title ): string {
-	$title = esc_html( $title );
-
-	return <<<EOF
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<h1 class="wp-block-heading" style="margin-bottom:var(--wp--preset--spacing--30)">{$title}</h1>
-<!-- /wp:heading -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">{$content}</div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-EOF;
 }

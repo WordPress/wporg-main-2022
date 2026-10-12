@@ -1,17 +1,17 @@
 <?php
 /**
- * Test adding the page title to exported page content.
+ * Test the page title that content without its own H1 gets.
  */
 
 declare( strict_types = 1 );
 
-use function WordPress_org\Main_2022\ExportToPatterns\add_page_title;
-use function WordPress_org\Main_2022\ExportToPatterns\has_h1;
+use function WordPressdotorg\Theme\Main_2022\add_page_title;
+use function WordPressdotorg\Theme\Main_2022\has_h1;
 
-require_once dirname( __DIR__ ) . '/includes/utils.php';
+require_once dirname( __DIR__, 3 ) . '/themes/wporg-main-2022/inc/page-title.php';
 
 /**
- * Tests for the page title that pages without their own H1 get in their pattern.
+ * Tests for detecting content's own H1, and adding the page title to content without one.
  */
 class Page_Title_Test extends WP_UnitTestCase {
 	/**
@@ -71,7 +71,7 @@ class Page_Title_Test extends WP_UnitTestCase {
 	}
 
 	/**
-	 * Test that the title is added as an escaped H1 above the content, nested like page.html.
+	 * Test that the title is added as an escaped H1 above the content, in padding.
 	 */
 	public function test_add_page_title(): void {
 		$content = "<!-- wp:paragraph -->\n<p>One.</p>\n<!-- /wp:paragraph -->";
@@ -97,5 +97,14 @@ class Page_Title_Test extends WP_UnitTestCase {
 		$this->assertSame( 'core/paragraph', $inner['innerBlocks'][0]['blockName'] );
 		$this->assertSame( $result, serialize_blocks( parse_blocks( $result ) ) );
 		$this->assertTrue( has_h1( $result ) );
+	}
+
+	/**
+	 * Test that a rendered title's entities are decoded before escaping, so they aren't double-encoded.
+	 */
+	public function test_add_page_title_decodes_rendered_title(): void {
+		$result = add_page_title( '', '&#8220;Q&#038;A&#8221; &lt;draft&gt;' );
+
+		$this->assertStringContainsString( '>“Q&amp;A” &lt;draft&gt;</h1>', $result );
 	}
 }

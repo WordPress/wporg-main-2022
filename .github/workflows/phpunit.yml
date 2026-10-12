@@ -5,7 +5,7 @@ on:
   push:
     branches: [trunk]
   pull_request:
-    # The suite only covers PHP code (the export-content parsers), so
+    # The suite only covers PHP code (the export-content parsers and theme helpers), so
     # content-only PRs — pattern/template syncs from the Page Editor — skip it.
     paths-ignore:
       - 'source/wp-content/themes/wporg-main-2022/patterns/**'
