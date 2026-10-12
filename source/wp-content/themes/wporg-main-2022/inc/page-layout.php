@@ -9,8 +9,6 @@ declare( strict_types = 1 );
 
 namespace WordPressdotorg\Theme\Main_2022;
 
-add_filter( 'page_template_hierarchy', __NAMESPACE__ . '\add_content_only_template' );
-
 /**
  * Prefer the content-only template over page.html for content that has its own H1.
  *
@@ -33,6 +31,7 @@ function add_content_only_template( array $templates ): array {
 
 	return $templates;
 }
+add_filter( 'page_template_hierarchy', __NAMESPACE__ . '\add_content_only_template' );
 
 /**
  * Whether content renders its own H1.
