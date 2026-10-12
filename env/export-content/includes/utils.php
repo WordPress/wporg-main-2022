@@ -73,7 +73,7 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 	// Pattern files are PHP, so `<?` in content becomes the comment browsers parse it as (e.g. XML prologs).
 	$content = str_replace( '<?', '&lt;?', preg_replace( '/<\?([^<>]*)>/', '<!--?$1-->', $post->content_raw ) );
 	if ( $add_title ?? ! has_h1( $content ) ) {
-		$content = add_page_title( $content, html_entity_decode( $post->title->rendered, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
+		$content = add_page_title( $content, $post->title->rendered );
 	}
 
 	$code = get_pattern_header( $post->title->rendered, $post->slug ) . replace_with_i18n( $content ) . "\n";

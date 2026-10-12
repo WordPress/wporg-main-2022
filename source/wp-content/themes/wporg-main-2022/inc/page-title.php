@@ -53,11 +53,11 @@ function blocks_render_h1( array $blocks ): bool {
  * The inner group keeps wide and full-width blocks to the content width.
  *
  * @param string $content Raw block content.
- * @param string $title   Page title, as plain text.
+ * @param string $title   Page title, as rendered (HTML entities allowed).
  * @return string Block content.
  */
 function add_page_title( string $content, string $title ): string {
-	$title = esc_html( $title );
+	$title = esc_html( html_entity_decode( $title, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
 
 	return <<<EOF
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->

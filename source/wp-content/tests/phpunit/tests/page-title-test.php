@@ -98,4 +98,13 @@ class Page_Title_Test extends WP_UnitTestCase {
 		$this->assertSame( $result, serialize_blocks( parse_blocks( $result ) ) );
 		$this->assertTrue( has_h1( $result ) );
 	}
+
+	/**
+	 * Test that a rendered title's entities are decoded before escaping, so they aren't double-encoded.
+	 */
+	public function test_add_page_title_decodes_rendered_title(): void {
+		$result = add_page_title( '', '&#8220;Q&#038;A&#8221; &lt;draft&gt;' );
+
+		$this->assertStringContainsString( '>“Q&amp;A” &lt;draft&gt;</h1>', $result );
+	}
 }

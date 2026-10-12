@@ -80,6 +80,26 @@ class Page_Layout_Test extends WP_UnitTestCase {
 	}
 
 	/**
+	 * Test that other posts' content rendered in the page, like in a query loop, is left alone.
+	 */
+	public function test_keeps_nested_post_content(): void {
+		$this->render_page( self::PLAIN, 'page' );
+		$GLOBALS['post'] = self::factory()->post->create_and_get();
+		setup_postdata( $GLOBALS['post'] );
+
+		$this->assertSame( self::PLAIN, add_title_to_content( self::PLAIN ) );
+	}
+
+	/**
+	 * Test that null content passes through.
+	 */
+	public function test_passes_null_through(): void {
+		$this->render_page( self::PLAIN, 'page' );
+
+		$this->assertNull( add_title_to_content( null ) );
+	}
+
+	/**
 	 * Query a published page and enter the main loop, as rendering a block template does.
 	 *
 	 * @param string $content  Raw block content.
