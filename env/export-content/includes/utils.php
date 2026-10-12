@@ -4,8 +4,13 @@
 namespace WordPress_org\Main_2022\ExportToPatterns;
 
 use Exception;
+use function WordPressdotorg\Theme\Main_2022\has_h1;
 
 require_once __DIR__ . '/parser.php';
+
+// The theme picks the template for pages without their own by the same rule, so both must share it.
+$page_layout = dirname( __DIR__, 3 ) . '/wp-content/themes/wporg-main-2022/inc/page-layout.php'; // Docker env.
+require_once is_file( $page_layout ) ? $page_layout : dirname( __DIR__, 3 ) . '/source/wp-content/themes/wporg-main-2022/inc/page-layout.php';
 
 /**
  * Filter CURL requests to bypass sandboxes and always hit a production server.
@@ -183,41 +188,6 @@ EOF;
 	} else {
 		echo "Skipping $output_path\n";
 	}
-}
-
-/**
- * Whether content renders its own H1.
- *
- * @param string $content Raw block content.
- * @return bool
- */
-function has_h1( string $content ): bool {
-	return preg_match( '/<h1[\s>]/i', $content ) || blocks_render_h1( parse_blocks( $content ) );
-}
-
-/**
- * Whether any of the blocks renders an H1 dynamically.
- *
- * Synced patterns and pattern references count too: their content isn't in the page, so it may hold one.
- *
- * @param array[] $blocks Parsed blocks.
- * @return bool
- */
-function blocks_render_h1( array $blocks ): bool {
-	foreach ( $blocks as $block ) {
-		$level       = $block['attrs']['level'] ?? ( 'core/post-title' === $block['blockName'] ? 2 : 1 );
-		$is_h1_title = in_array( $block['blockName'], array( 'core/post-title', 'core/site-title', 'core/query-title' ), true ) && 1 === $level;
-
-		if (
-			$is_h1_title ||
-			in_array( $block['blockName'], array( 'wporg/random-heading', 'core/block', 'core/pattern' ), true ) ||
-			blocks_render_h1( $block['innerBlocks'] )
-		) {
-			return true;
-		}
-	}
-
-	return false;
 }
 
 /**

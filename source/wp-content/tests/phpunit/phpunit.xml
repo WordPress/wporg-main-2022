@@ -10,5 +10,8 @@
 		<testsuite name="export-content">
 			<directory suffix="-test.php">../../../env/export-content/tests</directory>
 		</testsuite>
+		<testsuite name="theme">
+			<directory suffix="-test.php">./tests</directory>
+		</testsuite>
 	</testsuites>
 </phpunit>
