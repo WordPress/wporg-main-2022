@@ -36,7 +36,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "Many people don't realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it's hard to get out. <a href=\"https://github.com/WordPress/data-liberation/discussions/82\" data-type=\"page\" data-id=\"24221\" target=\"_blank\" rel=\"noreferrer noopener\">Read more</a>.", 'wporg' ); ?></p>
+<p><?php _e( "Many people don't realize what they are getting into when joining a website or web service. At first, it might be easy to get up and running. But from that point on, if you are in a non-open system, your data is locked inside the system, and it's hard to get out. <a data-id=\"24221\" data-type=\"page\" href=\"https://github.com/WordPress/data-liberation/discussions/82\" rel=\"noreferrer noopener\" target=\"_blank\">Read more</a>.", 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -73,13 +73,13 @@
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--60)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50","style":{"layout":[]}} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
@@ -101,13 +101,13 @@
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--60)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50","style":{"layout":[]}} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
@@ -117,7 +117,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( "<a href=\"https://github.com/WordPress/data-liberation/discussions/79\">Phase 3</a> covers user-facing tools for extracting media, content, and design from closed platforms. AI coding tools like Claude Code, Codex, and Grok can handle the media and content well enough to rebuild a site inspired by the source. Design is harder. <a href=\"https://developer.wordpress.com/studio/\" target=\"_blank\" rel=\"noopener\">Studio by WordPress.com</a>'s open source <a href=\"https://github.com/Automattic/studio/tree/trunk/packages/data-liberation-agent\" target=\"_blank\" rel=\"noopener\">data liberation agent plugin</a> pairs AI with purpose-built tooling, and it replicates a design much more closely than prompting a model on its own. It works with many platforms and has specialized tools for GoDaddy Websites & Marketing, Hostinger Website Builder, HubSpot, Shopify, Squarespace, Webflow, Weebly, and Wix.", 'wporg' ); ?></p>
+<p><?php _e( "<a href=\"https://github.com/WordPress/data-liberation/discussions/79\">Phase 3</a> covers user-facing tools for extracting media, content, and design from closed platforms. AI coding tools like Claude Code, Codex, and Grok can handle the media and content well enough to rebuild a site inspired by the source. Design is harder. <a href=\"https://developer.wordpress.com/studio/\" rel=\"noopener\" target=\"_blank\">Studio by WordPress.com</a>'s open source <a href=\"https://github.com/Automattic/data-liberation-agent\" rel=\"noopener\" target=\"_blank\">data liberation agent plugin</a> pairs AI with purpose-built tooling, and it replicates a design much more closely than prompting a model on its own. It works with many platforms and has specialized tools for GoDaddy Websites & Marketing, Hostinger Website Builder, HubSpot, Shopify, Squarespace, Webflow, Weebly, and Wix.", 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -126,7 +126,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://github.com/Automattic/studio/tree/trunk/packages/data-liberation-agent', 'wporg' ) ); ?>"><?php esc_html_e( 'Get the agent plugin', 'wporg' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( __( 'https://github.com/Automattic/data-liberation-agent', 'wporg' ) ); ?>"><?php esc_html_e( 'Get the agent plugin', 'wporg' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -139,13 +139,13 @@
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--60)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50","style":{"layout":[]}} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
@@ -167,13 +167,13 @@
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--60)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50","style":{"layout":[]}} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
@@ -195,7 +195,7 @@
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->
-<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--60)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -203,7 +203,7 @@
 
 <!-- wp:group {"metadata":{"name":"Separator"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:image {"id":22690,"sizeSlug":"full","linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide size-full"><img src="https://wordpress.org/files/2023/10/image-5.png" alt="" class="wp-image-22690" /></figure>
+<figure class="wp-block-image alignwide size-full"><img alt="" class="wp-image-22690" src="https://wordpress.org/files/2023/10/image-5.png"></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
