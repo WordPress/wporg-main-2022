@@ -40,7 +40,7 @@
 
 <!-- wp:column {"width":"60%","textColor":"charcoal-1","fontFamily":"courier-prime"} -->
 <div class="wp-block-column has-charcoal-1-color has-text-color has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:paragraph -->
-<p><?php esc_html_e( 'WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MariaDB, and licensed under the GPLv2. It is also the platform of choice for over 43% of all sites across the web.', 'wporg' ); ?></p>
+<p><?php esc_html_e( 'WordPress started in 2003 when Mike Little and Matt Mullenweg created a fork of b2/cafelog. The need for an elegant, well-architected personal publishing system was clear even then. Today, WordPress is built on PHP and MariaDB, and licensed under the GPLv2. It is also the platform of choice for millions of sites across the web.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -102,7 +102,7 @@
 
 <!-- wp:column {"width":"60%","fontFamily":"courier-prime"} -->
 <div class="wp-block-column has-courier-prime-font-family" style="flex-basis:60%"><!-- wp:paragraph -->
-<p><?php _e( 'WordPress is licensed under the <a href="https://wordpress.org/about/license/" target="_blank" rel="noreferrer noopener">General Public License</a> (GPLv2 or later) which provides four core freedoms:', 'wporg' ); ?></p>
+<p><?php _e( 'WordPress is licensed under the <a href="https://wordpress.org/about/license/" rel="noreferrer noopener" target="_blank">General Public License</a> (GPLv2 or later) which provides four core freedoms:', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
