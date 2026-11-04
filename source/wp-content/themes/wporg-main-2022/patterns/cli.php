@@ -320,15 +320,15 @@ wp cache flush</code></pre>
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:30px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org/cli/commands/#global-parameters">Explore output formats</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/cli/commands/#global-parameters', 'wporg' ) ); ?>"><?php esc_html_e( 'Explore output formats', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org/cli/commands/">Read the handbook</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/cli/commands/', 'wporg' ) ); ?>"><?php esc_html_e( 'Read the handbook', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://github.com/wp-cli/wp-cli">Star on GitHub</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://github.com/wp-cli/wp-cli', 'wporg' ) ); ?>"><?php esc_html_e( 'Star on GitHub', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

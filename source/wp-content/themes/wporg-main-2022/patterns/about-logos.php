@@ -38,7 +38,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-all.ai_.zip">Adobe Illustrator CS5+ Sketch 3</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-all.ai_.zip', 'wporg' ) ); ?>"><?php esc_html_e( 'Adobe Illustrator CS5+ Sketch 3', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -56,15 +56,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-standard.pdf">PDF&nbsp;(Vector)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-standard.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'PDF&nbsp;(Vector)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-standard.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-standard.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(BaseGray/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-standard-white.png">PNG&nbsp;(White/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-standard-white.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(White/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -82,15 +82,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-alternative.pdf">PDF&nbsp;(Vector)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-alternative.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'PDF&nbsp;(Vector)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-alternative.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-alternative.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(BaseGray/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-alternative-white.png">PNG&nbsp;(White/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-alternative-white.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(White/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -110,15 +110,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wordmark.pdf">PDF&nbsp;(Vector)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wordmark.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'PDF&nbsp;(Vector)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wordmark.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wordmark.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(BaseGray/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wordmark-white.png">PNG&nbsp;(White/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wordmark-white.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(White/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -136,15 +136,15 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.pdf">PDF&nbsp;(Vector)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wmark.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'PDF&nbsp;(Vector)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark.png?0">PNG (BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wmark.png?0', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG (BaseGray/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-wmark-white.png">PNG&nbsp;(White/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-wmark-white.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(White/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -162,11 +162,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-simplified.pdf?1">PDF&nbsp;(Vector)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-simplified.pdf?1', 'wporg' ) ); ?>"><?php esc_html_e( 'PDF&nbsp;(Vector)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
-<p class="is-style-short-text has-small-font-size"><?php _e( '<a href="https://s.w.org/style/images/about/WordPress-logotype-simplified.png">PNG&nbsp;(BaseGray/transparent)</a>', 'wporg' ); ?></p>
+<p class="is-style-short-text has-small-font-size"><a href="<?php echo esc_url( __( 'https://s.w.org/style/images/about/WordPress-logotype-simplified.png', 'wporg' ) ); ?>"><?php esc_html_e( 'PNG&nbsp;(BaseGray/transparent)', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

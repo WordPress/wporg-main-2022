@@ -85,11 +85,11 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p><?php _e( '<a href="https://om.co/">Read Om’s writing ↗</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://om.co/', 'wporg' ) ); ?>"><?php esc_html_e( 'Read Om’s writing ↗', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-default"} -->
-<p class="is-style-default"><?php _e( '<a href="https://ma.tt/2026/06/om-forever/">Read Matt’s remembrance ↗</a>', 'wporg' ); ?></p>
+<p class="is-style-default"><a href="<?php echo esc_url( __( 'https://ma.tt/2026/06/om-forever/', 'wporg' ) ); ?>"><?php esc_html_e( 'Read Matt’s remembrance ↗', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

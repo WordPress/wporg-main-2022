@@ -460,7 +460,7 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"grid","minimumColumnWidth":"15rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.unipi.it/" rel="noreferrer noopener" target="_blank">Università di Pisa<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.unipi.it/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Università di Pisa<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -470,7 +470,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.ufidelitas.ac.cr/" rel="noreferrer noopener" target="_blank">Universidad Fidélitas<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.ufidelitas.ac.cr/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universidad Fidélitas<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -480,7 +480,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://rnu.lv" rel="noreferrer noopener" target="_blank">Riga Nordic University<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://rnu.lv', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Riga Nordic University<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -490,7 +490,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://unifranz.edu.bo/" rel="noreferrer noopener" target="_blank">Universidad Privada Franz Tamayo<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://unifranz.edu.bo/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universidad Privada Franz Tamayo<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -500,7 +500,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( "<a href=\"https://www.madrasatuahmad.com/\" rel=\"noreferrer noopener\" target=\"_blank\">Ahmad's Education<span class=\"screen-reader-text\"> (opens in a new tab)</span></a>", 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.madrasatuahmad.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( "Ahmad's Education<span class=\"screen-reader-text\"> (opens in a new tab)</span>", 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -510,7 +510,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.pk.edu.pl/" rel="noreferrer noopener" target="_blank">Cracow University of Technology<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.pk.edu.pl/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Cracow University of Technology<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -520,7 +520,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.cnm.edu/" rel="noreferrer noopener" target="_blank">Central New Mexico Community College<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.cnm.edu/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Central New Mexico Community College<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -530,7 +530,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="http://www.ies-azarquiel.es/" rel="noreferrer noopener" target="_blank">IES Azarquiel<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'http://www.ies-azarquiel.es/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'IES Azarquiel<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -540,7 +540,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://creativecampus.universidadeuropea.com/" rel="noreferrer noopener" target="_blank">Creative Campus - Universidad Europea<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://creativecampus.universidadeuropea.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Creative Campus - Universidad Europea<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -550,7 +550,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://uek.krakow.pl" rel="noreferrer noopener" target="_blank">Krakow University of Economics<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://uek.krakow.pl', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Krakow University of Economics<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -560,7 +560,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://drew.edu" rel="noreferrer noopener" target="_blank">Drew University<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://drew.edu', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Drew University<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -570,7 +570,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.rapeducation.com" rel="noreferrer noopener" target="_blank">ERAP Research and Learning LLP<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.rapeducation.com', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'ERAP Research and Learning LLP<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -583,7 +583,7 @@
 <details class="wp-block-details"><summary><?php esc_html_e( 'See all 50 institutions', 'wporg' ); ?></summary><!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"grid","minimumColumnWidth":"15rem"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://escueladeartetoledo.com/" rel="noreferrer noopener" target="_blank">Escuela de Arte Toledo<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://escueladeartetoledo.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Escuela de Arte Toledo<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -593,7 +593,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://zaragozadinamica.es" rel="noreferrer noopener" target="_blank">Zaragoza Dinámica<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://zaragozadinamica.es', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Zaragoza Dinámica<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -603,7 +603,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://iesvenancioblanco.es/" rel="noreferrer noopener" target="_blank">IES Venancio Blanco<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://iesvenancioblanco.es/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'IES Venancio Blanco<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -613,7 +613,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.escueladeartedezaragoza.com/" rel="noreferrer noopener" target="_blank">Escuela de Arte de Zaragoza<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.escueladeartedezaragoza.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Escuela de Arte de Zaragoza<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -623,7 +623,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://dyp-atu.edu.in/" rel="noreferrer noopener" target="_blank">D. Y. Patil Agriculture and Technical University<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://dyp-atu.edu.in/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'D. Y. Patil Agriculture and Technical University<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -633,7 +633,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://ezoneschool.ac.ug/" rel="noreferrer noopener" target="_blank">E-zone School of Computing<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://ezoneschool.ac.ug/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'E-zone School of Computing<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -643,7 +643,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://maralboran.eu/" rel="noreferrer noopener" target="_blank">Instituto de Educación Secundaria Mar de Alborán<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://maralboran.eu/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Instituto de Educación Secundaria Mar de Alborán<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -653,7 +653,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://escueladeartedehuesca.org" rel="noreferrer noopener" target="_blank">Escuela de Arte de Huesca<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://escueladeartedehuesca.org', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Escuela de Arte de Huesca<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -663,7 +663,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.liceolapaz.com/" rel="noreferrer noopener" target="_blank">CPR Liceo La Paz<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.liceolapaz.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'CPR Liceo La Paz<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -673,7 +673,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.liceofigueres.org/" rel="noreferrer noopener" target="_blank">Liceo HHC Experimental Bilingue José Figueres Ferrer<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.liceofigueres.org/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Liceo HHC Experimental Bilingue José Figueres Ferrer<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -683,7 +683,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.udit.es/" rel="noreferrer noopener" target="_blank">Universidad de Diseño Innovación y Tecnología<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.udit.es/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universidad de Diseño Innovación y Tecnología<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -693,7 +693,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.haaga-helia.fi/en" rel="noreferrer noopener" target="_blank">Haaga-Helia University of Applied Sciences<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.haaga-helia.fi/en', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Haaga-Helia University of Applied Sciences<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -703,7 +703,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.cnmingenuity.org/" rel="noreferrer noopener" target="_blank">CNM Ingenuity<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.cnmingenuity.org/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'CNM Ingenuity<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -713,7 +713,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://wans.edu.pl/" rel="noreferrer noopener" target="_blank">Wschodnioeuropejska Akademia Nauk Stosowanych w Białymstoku<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://wans.edu.pl/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Wschodnioeuropejska Akademia Nauk Stosowanych w Białymstoku<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -723,7 +723,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://texasintl.edu.np/" rel="noreferrer noopener" target="_blank">Texas International College<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://texasintl.edu.np/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Texas International College<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -733,7 +733,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://sem.dypatilunikop.org" rel="noreferrer noopener" target="_blank">D. Y. Patil School of Engineering and Management<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://sem.dypatilunikop.org', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'D. Y. Patil School of Engineering and Management<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -743,7 +743,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.proven.cat" rel="noreferrer noopener" target="_blank">Institut Provençana<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.proven.cat', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Institut Provençana<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -753,7 +753,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://citytech.cuny.edu/" rel="noreferrer noopener" target="_blank">CUNY - New York City College of Technology<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://citytech.cuny.edu/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'CUNY - New York City College of Technology<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -763,7 +763,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.itts.ac.id" rel="noreferrer noopener" target="_blank">Institut Teknologi Tangerang Selatan<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.itts.ac.id', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Institut Teknologi Tangerang Selatan<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -773,7 +773,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.foc.es" rel="noreferrer noopener" target="_blank">Instituto Fomento Ocupacional FOC<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.foc.es', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Instituto Fomento Ocupacional FOC<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -783,7 +783,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.utm.ro/en/" rel="noreferrer noopener" target="_blank">Titu Maiorescu University<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.utm.ro/en/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Titu Maiorescu University<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -793,7 +793,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.sae.edu/grc/sae-home/" rel="noreferrer noopener" target="_blank">SAE Athens<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.sae.edu/grc/sae-home/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'SAE Athens<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -803,7 +803,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://kishoreganj.polytech.gov.bd/" rel="noreferrer noopener" target="_blank">Kishoreganj Polytechnic Institute<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://kishoreganj.polytech.gov.bd/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Kishoreganj Polytechnic Institute<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -813,7 +813,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.mitkundapura.com/" rel="noreferrer noopener" target="_blank">Moodlakatte Institute of Technology<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.mitkundapura.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Moodlakatte Institute of Technology<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -823,7 +823,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://imjihub.com/" rel="noreferrer noopener" target="_blank">IMJ Innovation iHUB Foundation<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://imjihub.com/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'IMJ Innovation iHUB Foundation<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -833,7 +833,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://pundrauniversity.ac.bd/" rel="noreferrer noopener" target="_blank">Pundra University of Science & Technology<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://pundrauniversity.ac.bd/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Pundra University of Science & Technology<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -843,7 +843,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://univalle.edu.ni/" rel="noreferrer noopener" target="_blank">Universidad del Valle<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://univalle.edu.ni/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universidad del Valle<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -853,7 +853,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.cuc.ac.cr/" rel="noreferrer noopener" target="_blank">Colegio Universitario de Cartago<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.cuc.ac.cr/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Colegio Universitario de Cartago<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -863,7 +863,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.unibo.it/" rel="noreferrer noopener" target="_blank">Università di Bologna<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.unibo.it/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Università di Bologna<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -873,7 +873,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://kiu.ac.bd/clubs/cpc/" rel="noreferrer noopener" target="_blank">Kishoreganj University<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://kiu.ac.bd/clubs/cpc/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Kishoreganj University<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -883,7 +883,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://coc.phinma.edu.ph/" rel="noreferrer noopener" target="_blank">PHINMA Cagayan de Oro College<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://coc.phinma.edu.ph/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'PHINMA Cagayan de Oro College<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -893,7 +893,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://uinbanten.ac.id/" rel="noreferrer noopener" target="_blank">Universitas Islam Negeri Sultan Maulana Hasanuddin Banten<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://uinbanten.ac.id/', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universitas Islam Negeri Sultan Maulana Hasanuddin Banten<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -903,7 +903,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.unitn.it" rel="noreferrer noopener" target="_blank">Università di Trento<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.unitn.it', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Università di Trento<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -913,7 +913,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://ump.ac.id" rel="noreferrer noopener" target="_blank">Universitas Muhammadiyah Purwokerto<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://ump.ac.id', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Universitas Muhammadiyah Purwokerto<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -933,7 +933,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://www.unife.it" rel="noreferrer noopener" target="_blank">Università di Ferrara<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://www.unife.it', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'Università di Ferrara<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -953,7 +953,7 @@
 
 <!-- wp:group {"style":{"border":{"width":"1px","color":"var:preset|color|black-opacity-15","radius":"2px"},"spacing":{"padding":{"top":"16px","right":"18px","bottom":"16px","left":"18px"},"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--black-opacity-15);border-width:1px;border-radius:2px;padding-top:16px;padding-right:18px;padding-bottom:16px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.35"}}} -->
-<p style="font-weight:600;line-height:1.35"><?php _e( '<a href="https://ausiasmarch.net" rel="noreferrer noopener" target="_blank">CIPFP Ausiàs March<span class="screen-reader-text"> (opens in a new tab)</span></a>', 'wporg' ); ?></p>
+<p style="font-weight:600;line-height:1.35"><a href="<?php echo esc_url( __( 'https://ausiasmarch.net', 'wporg' ) ); ?>" rel="noreferrer noopener" target="_blank"><?php _e( 'CIPFP Ausiàs March<span class="screen-reader-text"> (opens in a new tab)</span>', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.4"}},"textColor":"charcoal-4","fontSize":"small"} -->
@@ -978,7 +978,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"full","style":{"typography":{"textDecoration":"none"},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1"} -->
-<p class="alignfull has-blueberry-1-color has-text-color has-link-color" style="text-decoration:none"><mark class="has-inline-color has-blueberry-1-color"><?php _e( '<a href="https://make.wordpress.org/community/handbook/education/credits/#mentors" rel="noopener" target="_blank">See all mentors and admins</a>', 'wporg' ); ?></mark></p>
+<p class="alignfull has-blueberry-1-color has-text-color has-link-color" style="text-decoration:none"><mark class="has-inline-color has-blueberry-1-color"><a href="<?php echo esc_url( __( 'https://make.wordpress.org/community/handbook/education/credits/#mentors', 'wporg' ) ); ?>" rel="noopener" target="_blank"><?php esc_html_e( 'See all mentors and admins', 'wporg' ); ?></a></mark></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

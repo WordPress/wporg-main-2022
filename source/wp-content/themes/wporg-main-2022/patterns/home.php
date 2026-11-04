@@ -61,7 +61,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/gutenberg/">Try the Block Editor</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://wordpress.org/gutenberg/', 'wporg' ) ); ?>"><?php esc_html_e( 'Try the Block Editor', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -142,7 +142,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/gutenberg/">Try the Block Editor</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://wordpress.org/gutenberg/', 'wporg' ) ); ?>"><?php esc_html_e( 'Try the Block Editor', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -292,7 +292,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}},"spacing":{"margin":{"top":"30px"}}}} -->
-<p class="has-link-color" style="margin-top:30px"><?php _e( '<a href="https://events.wordpress.org/">Find an event near you</a>', 'wporg' ); ?></p>
+<p class="has-link-color" style="margin-top:30px"><a href="<?php echo esc_url( __( 'https://events.wordpress.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Find an event near you', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -315,19 +315,19 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:30px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://learn.wordpress.org/" data-type="link" data-id="https://learn.wordpress.org/">Learn how to use WordPress</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://learn.wordpress.org/', 'wporg' ) ); ?>" data-type="link" data-id="https://learn.wordpress.org/"><?php esc_html_e( 'Learn how to use WordPress', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://wordpress.org/playground/" data-type="link" data-id="https://wordpress.org/playground/">Test WordPress out in your browser</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://wordpress.org/playground/', 'wporg' ) ); ?>" data-type="link" data-id="https://wordpress.org/playground/"><?php esc_html_e( 'Test WordPress out in your browser', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://wordpress.org/documentation/" data-type="link" data-id="https://wordpress.org/documentation/">Search documentation</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://wordpress.org/documentation/', 'wporg' ) ); ?>" data-type="link" data-id="https://wordpress.org/documentation/"><?php esc_html_e( 'Search documentation', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org">Dig into the code</a>', 'wporg' ); ?></p>
+<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org', 'wporg' ) ); ?>"><?php esc_html_e( 'Dig into the code', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -346,7 +346,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/news/">More news</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://wordpress.org/news/', 'wporg' ) ); ?>"><?php esc_html_e( 'More news', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -381,7 +381,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"backgroundColor":"charcoal-2","textColor":"white","layout":{"inherit":true,"type":"constrained"},"anchor":"get-started"} -->
 <div class="wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color" id="get-started" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"60px"}}} -->
 <div class="wp-block-group alignwide"><!-- wp:heading {"align":"wide","className":"is-style-with-arrow","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px"}},"fontSize":"heading-cta","fontFamily":"inter"} -->
-<h2 class="wp-block-heading alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="/download/">Get started</a>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignwide is-style-with-arrow has-inter-font-family has-heading-cta-font-size" style="font-style:normal;font-weight:300;letter-spacing:-2px"><a href="/download/"><?php esc_html_e( 'Get started', 'wporg' ); ?></a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"0px"}}} -->

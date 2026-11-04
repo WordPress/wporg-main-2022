@@ -249,13 +249,14 @@ class BlockParser {
 /**
  * Split off the HTML elements that wrap a whole string, so only the text inside is translated.
  *
- * Links stay in the string, since translators may localize their URL. So do elements with
- * attributes other than class, style, id, and data-*, which may hold text like a title.
+ * A link's absolute URL becomes its own string, so translators can still localize it. Elements
+ * with attributes that may hold text, like a title, stay in the string.
  *
- * @param string $text A string from the content.
+ * @param string $text       A string from the content.
+ * @param string $textdomain The text domain for link URLs.
  * @return string[] The opening markup, the text inside it, and the closing markup.
  */
-function split_html_wrappers( string $text ): array {
+function split_html_wrappers( string $text, string $textdomain = 'wporg' ): array {
 	$before    = '';
 	$after     = '';
 	$attribute = '\s+[^\s"\'>/=]+(?:\s*=\s*(?:"[^"]*"|\'[^\']*\'|[^\s"\'=<>`]+))?';
@@ -266,7 +267,8 @@ function split_html_wrappers( string $text ): array {
 		$element = new \WP_HTML_Tag_Processor( $open );
 		$element->next_tag();
 		foreach ( $element->get_attribute_names_with_prefix( '' ) ?? array() as $name ) {
-			if ( ! in_array( $name, array( 'class', 'style', 'id' ), true ) && ! str_starts_with( $name, 'data-' ) ) {
+			$is_link = 'href' === $name && 'A' === $element->get_tag();
+			if ( ! $is_link && ! in_array( $name, array( 'class', 'style', 'id', 'rel', 'target' ), true ) && ! str_starts_with( $name, 'data-' ) ) {
 				break 2;
 			}
 		}
@@ -285,12 +287,33 @@ function split_html_wrappers( string $text ): array {
 			break;
 		}
 
+		$url = $element->get_attribute( 'href' );
+		if ( is_string( $url ) && Parsers\HTMLParser::is_translatable_url( $url ) ) {
+			$open = preg_replace_callback(
+				'#(\shref\s*=\s*)(?:"[^"]*"|\'[^\']*\'|[^\s"\'=<>`]+)#i',
+				static fn ( array $href ): string => $href[1] . '"<?php echo esc_url( __( ' . php_string( $url ) . ", '{$textdomain}' ) ); ?>\"",
+				$open,
+				1
+			);
+		}
+
 		$before .= $open;
 		$after   = $close . $after;
 		$text    = $inner;
 	}
 
 	return array( $before, $text, $after );
+}
+
+/**
+ * Quote a string as a PHP string literal that evaluates to it unchanged.
+ *
+ * @param string $text The string.
+ * @return string The PHP string literal.
+ */
+function php_string( string $text ): string {
+	// Double quotes when the string contains apostrophes, single quotes otherwise.
+	return str_contains( $text, "'" ) ? '"' . addcslashes( $text, '"\\$' ) . '"' : "'" . addcslashes( $text, '\\' ) . "'";
 }
 
 /**
@@ -315,7 +338,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 
 	$i18n_strings = array();
 	foreach ( $strings as $string ) {
-		list( $before, $text, $after ) = split_html_wrappers( $string );
+		list( $before, $text, $after ) = split_html_wrappers( $string, $textdomain );
 
 		// A shortcode on its own isn't translated, also when it's wrapped.
 		if ( ! $parser->filter_out_shortcodes( $text ) ) {
@@ -338,11 +361,6 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 
 		$func = $has_html ? '_e' : 'esc_html_e';
 
-		// Use double quotes when the string contains apostrophes, single quotes otherwise.
-		$has_apostrophe = str_contains( $decoded, "'" );
-		$quote          = $has_apostrophe ? '"' : "'";
-		$escaped        = $has_apostrophe ? addcslashes( $decoded, '"\\$' ) : addcslashes( $decoded, '\\' );
-
 		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $text, $matches ) ) {
 			if ( count( $matches[0] ) > 1 ) {
 				$translator_comment = sprintf( '/* translators: %s are shortcodes and should not be translated. */', implode( ', ', $matches[0] ) );
@@ -350,21 +368,17 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 				$translator_comment = sprintf( '/* translators: %s is a shortcode and should not be translated. */', implode( ', ', $matches[0] ) );
 			}
 			$i18n_strings[ $string ] = $before . sprintf(
-				"<?php\n%s\n%s( %s%s%s, '%s' );\n?>",
+				"<?php\n%s\n%s( %s, '%s' );\n?>",
 				$translator_comment,
 				$func,
-				$quote,
-				$escaped,
-				$quote,
+				php_string( $decoded ),
 				$textdomain
 			) . $after;
 		} else {
 			$i18n_strings[ $string ] = $before . sprintf(
-				"<?php %s( %s%s%s, '%s' ); ?>",
+				"<?php %s( %s, '%s' ); ?>",
 				$func,
-				$quote,
-				$escaped,
-				$quote,
+				php_string( $decoded ),
 				$textdomain
 			) . $after;
 		}

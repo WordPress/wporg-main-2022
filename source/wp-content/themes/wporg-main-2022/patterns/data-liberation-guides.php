@@ -73,7 +73,7 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"left","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"small"} -->
-<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( '<a href="https://github.com/WordPress/move-to-wp/tree/trunk/guides">View all guides</a>', 'wporg' ); ?></p>
+<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><a href="<?php echo esc_url( __( 'https://github.com/WordPress/move-to-wp/tree/trunk/guides', 'wporg' ) ); ?>"><?php esc_html_e( 'View all guides', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|30"} -->
@@ -109,7 +109,7 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"left","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"small"} -->
-<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><?php _e( '<a href="https://github.com/WordPress/move-to-wp/tree/trunk/tools">View all tools</a>', 'wporg' ); ?></p>
+<p class="has-text-align-left has-small-font-size" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><a href="<?php echo esc_url( __( 'https://github.com/WordPress/move-to-wp/tree/trunk/tools', 'wporg' ) ); ?>"><?php esc_html_e( 'View all tools', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|60"} -->

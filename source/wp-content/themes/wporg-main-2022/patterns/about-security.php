@@ -88,7 +88,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-security/">Find out more about how to address security issues in your plugin.</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/plugins/wordpress-org/plugin-security/', 'wporg' ) ); ?>"><?php esc_html_e( 'Find out more about how to address security issues in your plugin.', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -106,7 +106,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://developer.wordpress.org/themes/theme-security/theme-security-issues/">Find out more about how to address security issues in your theme.</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/themes/theme-security/theme-security-issues/', 'wporg' ) ); ?>"><?php esc_html_e( 'Find out more about how to address security issues in your theme.', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

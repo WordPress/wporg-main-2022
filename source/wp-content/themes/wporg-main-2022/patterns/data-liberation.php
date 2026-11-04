@@ -227,15 +227,15 @@
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:list {"className":"is-style-links-list","fontSize":"large"} -->
 <ul class="wp-block-list is-style-links-list has-large-font-size"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.slack.com/archives/C069AKUBPHB">Join the Slack community</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.slack.com/archives/C069AKUBPHB', 'wporg' ) ); ?>"><?php esc_html_e( 'Join the Slack community', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://github.com/WordPress/data-liberation">Participate in the GitHub repository</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://github.com/WordPress/data-liberation', 'wporg' ) ); ?>"><?php esc_html_e( 'Participate in the GitHub repository', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="/data-liberation/guides">Migration guides</a>', 'wporg' ); ?></li>
+<li><a href="/data-liberation/guides"><?php esc_html_e( 'Migration guides', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

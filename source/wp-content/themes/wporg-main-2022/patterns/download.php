@@ -47,19 +47,19 @@
 
 <!-- wp:group {"className":"is-style-default","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group is-style-default"><!-- wp:paragraph -->
-<p><?php _e( '<a href="https://make.wordpress.org/">Get involved in WordPress ↗︎</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://make.wordpress.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get involved in WordPress ↗︎', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://www.meetup.com/pro/wordpress/">Join a local WordPress meetup ↗︎</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://www.meetup.com/pro/wordpress/', 'wporg' ) ); ?>"><?php esc_html_e( 'Join a local WordPress meetup ↗︎', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://central.wordcamp.org/">Attend a WordCamp ↗︎</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://central.wordcamp.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Attend a WordCamp ↗︎', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpressfoundation.org/donate/">Support WordPress and open source education ↗︎</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://wordpressfoundation.org/donate/', 'wporg' ) ); ?>"><?php esc_html_e( 'Support WordPress and open source education ↗︎', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -145,7 +145,7 @@ esc_html_e( 'Recommend PHP [recommended_php] or greater and MySQL version [recom
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://wordpress.org/about/features/">See all WordPress features ↗</a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://wordpress.org/about/features/', 'wporg' ) ); ?>"><?php esc_html_e( 'See all WordPress features ↗', 'wporg' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -166,23 +166,23 @@ esc_html_e( 'Recommend PHP [recommended_php] or greater and MySQL version [recom
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:list {"className":"is-style-links-list"} -->
 <ul class="wp-block-list is-style-links-list"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/">WordPress courses ↗</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://learn.wordpress.org/course/getting-started-with-wordpress-get-setup/', 'wporg' ) ); ?>"><?php esc_html_e( 'WordPress courses ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://developer.wordpress.org/">Developer resources ↗</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Developer resources ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/documentation/">Documentation ↗</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/documentation/', 'wporg' ) ); ?>"><?php esc_html_e( 'Documentation ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/support/forum/installation/">User forums ↗</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/support/forum/installation/', 'wporg' ) ); ?>"><?php esc_html_e( 'User forums ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://events.wordpress.org/">Local community ↗</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://events.wordpress.org/', 'wporg' ) ); ?>"><?php esc_html_e( 'Local community ↗', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

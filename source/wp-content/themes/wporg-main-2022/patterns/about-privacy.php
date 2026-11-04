@@ -296,11 +296,11 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://href.li/?https://lookup.icann.org">https://lookup.icann.org</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://href.li/?https://lookup.icann.org', 'wporg' ) ); ?>"><?php esc_html_e( 'https://lookup.icann.org', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://href.li/?https://www.whoishostingthis.com/">https://www.whoishostingthis.com/</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://href.li/?https://www.whoishostingthis.com/', 'wporg' ) ); ?>"><?php esc_html_e( 'https://www.whoishostingthis.com/', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->

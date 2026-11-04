@@ -94,7 +94,7 @@
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-image-fill-element has-border-color" style="border-color:#00000026;border-width:1px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:auto 45%"><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--10)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|blueberry-2"}},"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1","fontSize":"large"} -->
-<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size"><strong><?php _e( '<a href="/education/campus-connect/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color">WordPress                                 Campus Connect</mark></a>', 'wporg' ); ?></strong></p>
+<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size"><strong><a href="/education/campus-connect/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color"><?php esc_html_e( 'WordPress                                 Campus Connect', 'wporg' ); ?></mark></a></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -108,7 +108,7 @@
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-image-fill-element has-border-color" style="border-color:#00000026;border-width:1px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:auto 45%"><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|10"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--10)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"},":hover":{"color":{"text":"var:preset|color|blueberry-2"}}}},"typography":{"textDecoration":"none"}},"textColor":"light-grey-2","fontSize":"large"} -->
-<p class="is-style-default has-light-grey-2-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><?php _e( '<a href="/education/student-clubs/"><mark class="has-inline-color has-blueberry-1-color">Student Clubs</mark></a>', 'wporg' ); ?></strong></p>
+<p class="is-style-default has-light-grey-2-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><a href="/education/student-clubs/"><mark class="has-inline-color has-blueberry-1-color"><?php esc_html_e( 'Student Clubs', 'wporg' ); ?></mark></a></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -124,7 +124,7 @@
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-image-fill-element has-border-color" style="border-color:#00000026;border-width:1px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:auto 45%"><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|10"},"blockGap":"0"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--10)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"},":hover":{"color":{"text":"var:preset|color|blueberry-2"}}}},"typography":{"textDecoration":"none"}},"textColor":"blueberry-1","fontSize":"large"} -->
-<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><?php _e( '<a href="/education/credits/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color">WordPress Credits</mark></a>', 'wporg' ); ?></strong></p>
+<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><a href="/education/credits/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color"><?php esc_html_e( 'WordPress Credits', 'wporg' ); ?></mark></a></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -148,7 +148,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
-<p><?php _e( '<a href="https://make.wordpress.org/community/category/education/" data-type="link" data-id="https://make.wordpress.org/community/"><mark class="has-inline-color has-blueberry-1-color">More news</mark></a>', 'wporg' ); ?></p>
+<p><a href="<?php echo esc_url( __( 'https://make.wordpress.org/community/category/education/', 'wporg' ) ); ?>" data-type="link" data-id="https://make.wordpress.org/community/"><mark class="has-inline-color has-blueberry-1-color"><?php esc_html_e( 'More news', 'wporg' ); ?></mark></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

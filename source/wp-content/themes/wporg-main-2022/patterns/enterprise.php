@@ -183,7 +183,7 @@
 <!-- wp:group {"align":"full","className":"wporg-enterprise-get-wordpress","style":{"border":{"top":{"color":"var:preset|color|light-grey-1","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}},"backgroundColor":"light-grey-2","textColor":"charcoal-1","layout":{"inherit":true,"type":"constrained","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull wporg-enterprise-get-wordpress has-charcoal-1-color has-light-grey-2-background-color has-text-color has-background has-link-color" style="border-top-color:var(--wp--preset--color--light-grey-1);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"5rem","right":"var:preset|spacing|edge-space","bottom":"5rem","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:5rem;padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:5rem;padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:heading {"align":"full","className":"wp-block-heading is-style-with-arrow","style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"-2px","fontSize":"98px"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading alignfull is-style-with-arrow has-inter-font-family" style="font-size:98px;font-style:normal;font-weight:300;letter-spacing:-2px"><?php _e( '<a href="https://wordpress.org/download/">Get WordPress</a>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull is-style-with-arrow has-inter-font-family" style="font-size:98px;font-style:normal;font-weight:300;letter-spacing:-2px"><a href="<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>"><?php esc_html_e( 'Get WordPress', 'wporg' ); ?></a></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"full","style":{"border":{"radius":"0px"},"spacing":{"padding":{"top":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
@@ -194,15 +194,15 @@
 
 <!-- wp:list {"className":"is-style-default","fontSize":"small"} -->
 <ul class="wp-block-list is-style-default has-small-font-size"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf">Abril (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-grupo-abril.pdf"><?php esc_html_e( 'Abril (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-kff.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf">KFF (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/case-studies-kff.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-kff.pdf"><?php esc_html_e( 'KFF (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf">NewsCorp Australia (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/case-studies-newscorp-australia.pdf"><?php esc_html_e( 'NewsCorp Australia (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -214,15 +214,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="wp-block-list has-small-font-size"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf">IDC Report (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/IDC-Report-Choosing-a-CMS-to-Meet-Todays-Digital-Experience-Challenges.pdf"><?php esc_html_e( 'IDC Report (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf">WP as a Content Hub (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/wordpress-as-a-content-hub-whitepaper.pdf"><?php esc_html_e( 'WP as a Content Hub (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf">Personalization (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf', 'wporg' ) ); ?>" data-type="URL" data-id="https://wordpress.org/files/2020/11/Personalization-whitepaper.pdf"><?php esc_html_e( 'Personalization (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -234,15 +234,15 @@
 
 <!-- wp:list {"fontSize":"small"} -->
 <ul class="wp-block-list has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a rel="noreferrer noopener" href="https://vimeo.com/443114625/c2f798174f" target="_blank">Drive Digital Commerce</a>', 'wporg' ); ?></li>
+<li class="external-link"><a rel="noreferrer noopener" href="<?php echo esc_url( __( 'https://vimeo.com/443114625/c2f798174f', 'wporg' ) ); ?>" target="_blank"><?php esc_html_e( 'Drive Digital Commerce', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a href="https://vimeo.com/374961815/040fe06be7" target="_blank" rel="noreferrer noopener">Gutenberg for Enterprise</a>', 'wporg' ); ?></li>
+<li class="external-link"><a href="<?php echo esc_url( __( 'https://vimeo.com/374961815/040fe06be7', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Gutenberg for Enterprise', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a rel="noreferrer noopener" href="https://vimeo.com/425968597/80d24a1bf4" target="_blank">Lead a Successful Digital Transformation</a>', 'wporg' ); ?></li>
+<li class="external-link"><a rel="noreferrer noopener" href="<?php echo esc_url( __( 'https://vimeo.com/425968597/80d24a1bf4', 'wporg' ) ); ?>" target="_blank"><?php esc_html_e( 'Lead a Successful Digital Transformation', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>
@@ -256,15 +256,15 @@
 <div class="wp-block-columns alignfull are-vertically-aligned-top has-link-color" style="border-radius:0px"><!-- wp:column {"verticalAlignment":"top","className":"wp-block-navigation"} -->
 <div class="wp-block-column is-vertically-aligned-top wp-block-navigation"><!-- wp:list {"className":"is-style-default","fontSize":"small"} -->
 <ul class="wp-block-list is-style-default has-small-font-size"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Penske-Media-Corporation-Case-Study.pdf">Unified WordPress with PMC (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/Penske-Media-Corporation-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Unified WordPress with PMC (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/SAP-News-Case-Study.pdf">Massive Multisite with SAP News (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/SAP-News-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Massive Multisite with SAP News (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/ArtsHub-Case-Study.pdf">.NET to WordPress with ArtsHub (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/ArtsHub-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( '.NET to WordPress with ArtsHub (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -272,15 +272,15 @@
 <!-- wp:column {"verticalAlignment":"top","className":"wp-block-navigation"} -->
 <div class="wp-block-column is-vertically-aligned-top wp-block-navigation"><!-- wp:list {"fontSize":"small"} -->
 <ul class="wp-block-list has-small-font-size"><!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Capgemini-Case-Study.pdf">Drupal to WordPress with Capgemini (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/Capgemini-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Drupal to WordPress with Capgemini (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/Academic-Partnerships-Case-Study.pdf">Academic Partnerships (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/Academic-Partnerships-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Academic Partnerships (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><?php _e( '<a href="https://wordpress.org/files/2023/10/News-Corp-Australia-Case-Study.pdf">Revolutionizing Performance and Editorial (PDF)</a>', 'wporg' ); ?></li>
+<li><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/News-Corp-Australia-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Revolutionizing Performance and Editorial (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -288,15 +288,15 @@
 <!-- wp:column {"verticalAlignment":"top","className":"wp-block-navigation"} -->
 <div class="wp-block-column is-vertically-aligned-top wp-block-navigation"><!-- wp:list {"fontSize":"small"} -->
 <ul class="wp-block-list has-small-font-size"><!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a href="https://wordpress.org/files/2023/10/Enterprise-Pharmacy-Case-Study.pdf">Moving a Pharmacy Leader to WordPress (PDF)</a>', 'wporg' ); ?></li>
+<li class="external-link"><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/Enterprise-Pharmacy-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Moving a Pharmacy Leader to WordPress (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a href="https://wordpress.org/files/2023/10/Siemens-Case-Study.pdf">AEM to WordPress with Siemens (PDF)</a>', 'wporg' ); ?></li>
+<li class="external-link"><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/Siemens-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'AEM to WordPress with Siemens (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"external-link"} -->
-<li class="external-link"><?php _e( '<a href="https://wordpress.org/files/2023/10/DisneyABCPress-Case-Study.pdf">Ten Years of DisneyABCPress Success (PDF)</a>', 'wporg' ); ?></li>
+<li class="external-link"><a href="<?php echo esc_url( __( 'https://wordpress.org/files/2023/10/DisneyABCPress-Case-Study.pdf', 'wporg' ) ); ?>"><?php esc_html_e( 'Ten Years of DisneyABCPress Success (PDF)', 'wporg' ); ?></a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column --></div>

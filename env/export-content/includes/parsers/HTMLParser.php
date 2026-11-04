@@ -42,33 +42,8 @@ class HTMLParser implements BlockParser {
 				$found_strings = $matches['string'];
 			}
 
-			// Don't translate certain types of links, they correspond to other points on the page.
 			if ( 'href' === $attr ) {
-				$found_strings = array_filter(
-					$found_strings,
-					function ( $value ) {
-						// Anchors.
-						if ( str_starts_with( $value, '#' ) ) {
-							return false;
-						}
-
-						// root relative URLs, which are not protocol-relative.
-						if ( str_starts_with( $value, '/' ) && ! str_starts_with( $value, '//' ) ) {
-							return false;
-						}
-
-						// relative to current page urls.
-						if (
-							! str_starts_with( $value, 'https://' ) &&
-							! str_starts_with( $value, 'http://' ) &&
-							! str_starts_with( $value, '//' )
-						) {
-							return false;
-						}
-
-						return true;
-					}
-				);
+				$found_strings = array_filter( $found_strings, array( self::class, 'is_translatable_url' ) );
 			}
 
 			$strings = array_merge( $strings, $found_strings );
@@ -88,6 +63,18 @@ class HTMLParser implements BlockParser {
 		}
 
 		return $strings;
+	}
+
+	/**
+	 * Whether a link's URL is translated.
+	 *
+	 * Anchors and relative URLs aren't, since they point to other places on the same site.
+	 *
+	 * @param string $url The link's URL.
+	 * @return bool True if the URL is absolute.
+	 */
+	public static function is_translatable_url( string $url ): bool {
+		return str_starts_with( $url, 'https://' ) || str_starts_with( $url, 'http://' ) || str_starts_with( $url, '//' );
 	}
 
 	/**
