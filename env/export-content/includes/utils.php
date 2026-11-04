@@ -17,7 +17,7 @@ require_once get_theme_root() . '/wporg-main-2022/inc/page-title.php';
  * Docker doesn't use the proxy, so those requests will fail when wordpress.org is sandboxed.
  */
 function filter_curl_options( $ch ) {
-	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
+	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt -- Runs inside the http_api_curl hook.
 }
 add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 

@@ -42,8 +42,17 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
-    <!-- The env scripts and tests run on the command line, where the WordPress wrappers for files, requests, and cURL don't apply. -->
-    <rule ref="WordPress.WP.AlternativeFunctions">
+    <!-- The env scripts read and write local files, where WP_Filesystem adds nothing. -->
+    <rule ref="WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_fwrite">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_fclose">
         <exclude-pattern>env/*</exclude-pattern>
     </rule>
 

@@ -93,7 +93,7 @@ function hreflang_link_attributes() {
 		if ( 'local' === wp_get_environment_type() ) {
 			$sites = array();
 		} else {
-			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- Cached in `local-sites` above.
+			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- The result is cached in `local-sites`.
 			$sites = $wpdb->get_results( 'SELECT locale, subdomain FROM wporg_locales', OBJECT_K );
 			if ( ! $sites ) {
 				return;

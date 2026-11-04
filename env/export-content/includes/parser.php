@@ -86,7 +86,7 @@ class BlockParser {
 		return $post;
 	}
 
-	public static function translate_blocks( string $content, callable $callback_translate ) /*: bool|string*/ {
+	public static function translate_blocks( string $content, callable $callback_translate ): string|false {
 		$self = new self( $content );
 
 		$translations = array();
@@ -272,7 +272,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );
 
 		// Determine if the string contains HTML tags.
-		$has_html = strip_tags( $decoded ) !== $decoded;
+		$has_html = strip_tags( $decoded ) !== $decoded; // phpcs:ignore WordPress.WP.AlternativeFunctions.strip_tags_strip_tags -- wp_strip_all_tags() trims, which would count whitespace as HTML.
 
 		// Phase 2: For strings without HTML, also decode &amp; &lt; &gt; (esc_html_e will re-encode them).
 		// For strings with HTML, also decode &amp; (browsers handle bare & fine), but keep &lt; &gt;.

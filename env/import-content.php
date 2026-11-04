@@ -53,7 +53,7 @@ function sanitize_meta_input( $meta ) {
  * Docker doesn't use the proxy, so those requests will fail when wordpress.org is sandboxed.
  */
 function filter_curl_options( $ch ) {
-	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) );
+	curl_setopt( $ch, CURLOPT_CONNECT_TO, array( 'wordpress.org::w.org:' ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.curl_curl_setopt -- Runs inside the http_api_curl hook.
 }
 
 /**
