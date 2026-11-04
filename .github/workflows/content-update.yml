@@ -6,18 +6,22 @@ on:
     - cron: '17 * * * *'  # Runs hourly
   push:
     branches: [trunk]
-    # Only the manifest and the export/parser code change what build:patterns
+    # Only the manifest and the export code change what the export
     # produces from the live site; regenerate patterns when those change.
     paths:
       - 'env/page-manifest.json'
       - 'env/export-content/**'
       - 'env/build-patterns.sh'
+      - 'env/playground-start.mjs'
       - 'source/wp-content/themes/wporg-main-2022/inc/page-title.php'
   pull_request:
     paths:
       - '.github/workflows/content-update.yml'
       - 'env/add-page.js'
       - 'env/screenshot-changes.js'
+      - 'env/playground-start.mjs'
+      - 'env/playground-setup.php'
+      - 'blueprint.json'
 
 # Per ref, so pull request runs and trunk syncs don't cancel each other.
 concurrency:
@@ -52,15 +56,6 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      # The 0-sandbox.php file mapping's mountpoint resolves into the repo's
-      # mu-plugins directory, which all of the environment's containers bind.
-      # Containers starting concurrently race to create the missing placeholder
-      # (runc uses O_EXCL) and the loser fails with a "file exists" mount error.
-      # Pre-creating it removes the race; inside the containers the bind mount
-      # covers it with env/0-sandbox.php. The path is gitignored.
-      - name: Pre-create the 0-sandbox.php mountpoint
-        run: touch source/wp-content/mu-plugins/0-sandbox.php
-
       # Puppeteer downloads Chrome in its npm postinstall script, which is
       # skipped when node_modules is restored from cache, so the browser is
       # cached and ensured separately. The install is a no-op when present.
@@ -92,9 +87,6 @@ jobs:
       - name: Run the content update
         id: build-patterns
         run: |
-          chmod -R ugo+w source/wp-content/themes/wporg-main-2022/
-          npx wp-env start --update
-          npm run setup:wp
           rm -f env/export-failures.txt
           npm run build:patterns || true
           if [ ! -f env/export-failures.txt ]; then
@@ -149,6 +141,21 @@ jobs:
         continue-on-error: true
         run: |
           mkdir -p "$GITHUB_WORKSPACE/artifacts/"
+          if [ -n "$CHANGED_FILES" ]; then
+            # Logged out, like visitors. Pages 404 until the blueprint has created them and the server reports ready.
+            jq '.login = false' blueprint.json > "$RUNNER_TEMP/blueprint.json"
+            npm run playground -- server --port=8888 --site-url=http://localhost:8888 --blueprint="$RUNNER_TEMP/blueprint.json" > "$RUNNER_TEMP/playground.log" 2>&1 &
+            SERVER_PID=$!
+            for _ in $(seq 180); do
+              grep -q "Ready!" "$RUNNER_TEMP/playground.log" && break
+              kill -0 "$SERVER_PID" 2>/dev/null || break
+              sleep 1
+            done
+            if ! grep -q "Ready!" "$RUNNER_TEMP/playground.log"; then
+              cat "$RUNNER_TEMP/playground.log"
+              exit 1
+            fi
+          fi
           {
             echo 'changelist<<EOF'
             echo "$CHANGED_FILES" | xargs npm run --silent screenshot-changes --

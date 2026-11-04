@@ -5,4 +5,4 @@
 #php env/export-content.php --url 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=front-page' --output 'source/wp-content/themes/wporg-main-2022/patterns/front-page.php'
 #php env/export-content.php --url 'http://wordpress.org/main-test/wp-json/wp/v2/pages?context=wporg_export&slug=download' --output 'source/wp-content/themes/wporg-main-2022/patterns/download.php'
 
-npx wp-env run cli wp eval-file ./env/export-content/index.php ./env/page-manifest.json
+npm run playground -- php -- /wordpress/env/export-content/playground.php

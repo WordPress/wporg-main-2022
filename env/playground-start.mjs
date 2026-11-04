@@ -4,14 +4,21 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const cwd = process.cwd();
+// An optional Playground CLI command (`start`, `server`, `php`), followed by its options.
+const cliArgs = process.argv.slice( 2 );
+const command = cliArgs[ 0 ] && ! cliArgs[ 0 ].startsWith( '-' ) ? cliArgs.shift() : 'start';
 const scriptDir = dirname( fileURLToPath( import.meta.url ) );
 const wpEnv = JSON.parse( readFileSync( join( cwd, '.wp-env.json' ), 'utf8' ) );
+const blueprintPath = join( scriptDir, '../blueprint.json' );
+const { preferredVersions } = JSON.parse( readFileSync( blueprintPath, 'utf8' ) );
 const themeDir = './source/wp-content/themes/wporg-main-2022';
 const sourceDir = join( cwd, themeDir, 'src' );
 
-const requiredPaths = [
-	'./source/wp-content/mu-plugins/pub',
-	'./source/wp-content/mu-plugins/wporg-mu-plugins',
+// 0-sandbox.php loads these on every request.
+const muPluginPaths = [ './source/wp-content/mu-plugins/pub', './source/wp-content/mu-plugins/wporg-mu-plugins' ];
+
+// What the site activates and renders, which scripts don't need.
+const sitePaths = [
 	...wpEnv.plugins,
 	...wpEnv.themes,
 	...readdirSync( sourceDir, { withFileTypes: true } )
@@ -20,7 +27,11 @@ const requiredPaths = [
 		.map( ( entry ) => `${ themeDir }/build/${ entry.name }/block.json` ),
 	`${ themeDir }/build/rosetta/style-index.css`,
 	`${ themeDir }/build/style/style-index.css`,
-].map( ( path ) => path.replace( /^\.\//, './' ) );
+];
+
+const requiredPaths = [ ...muPluginPaths, ...( 'php' === command ? [] : sitePaths ) ].map( ( path ) =>
+	path.replace( /^\.\//, './' )
+);
 
 const missingPaths = requiredPaths.filter( ( path ) => ! existsSync( join( cwd, path ) ) );
 
@@ -51,11 +62,11 @@ const mountIfExists = ( hostPath, runtimePath, args ) => {
 	return false;
 };
 
-const args = [
-	'@wp-playground/cli',
-	'start',
-	'--noAutoMount',
-];
+const args = [ '@wp-playground/cli', command ];
+
+if ( 'start' === command ) {
+	args.push( '--noAutoMount' );
+}
 
 Object.entries( wpEnv.mappings ).forEach( ( [ runtimePath, hostPath ] ) => {
 	mountIfExists( hostPath, `/wordpress/${ runtimePath }`, args );
@@ -63,10 +74,14 @@ Object.entries( wpEnv.mappings ).forEach( ( [ runtimePath, hostPath ] ) => {
 mountIfExists( './source/wp-content/plugins', '/wordpress/wp-content/plugins', args );
 mountIfExists( './source/wp-content/themes', '/wordpress/wp-content/themes', args );
 
-args.push(
-	`--blueprint=${ join( scriptDir, '../blueprint.json' ) }`,
-	...process.argv.slice( 2 )
-);
+// Scripts skip the blueprint's site setup, but use its versions.
+if ( 'php' === command ) {
+	args.push( `--php=${ preferredVersions.php }`, `--wp=${ preferredVersions.wp }` );
+} else if ( ! cliArgs.some( ( arg ) => arg.startsWith( '--blueprint' ) ) ) {
+	args.push( `--blueprint=${ blueprintPath }` );
+}
+
+args.push( ...cliArgs );
 
 const child = spawn( 'npx', args, {
 	cwd,
