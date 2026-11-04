@@ -249,8 +249,8 @@ class BlockParser {
 /**
  * Split off the HTML elements that wrap a whole string, so only the text inside is translated.
  *
- * Links stay in the string, since translators may localize their URL. This matches what
- * WordPress.WP.I18n.NoHtmlWrappedStrings flags.
+ * Links stay in the string, since translators may localize their URL. So do elements with
+ * attributes other than class, style, id, and data-*, which may hold text like a title.
  *
  * @param string $text A string from the content.
  * @return string[] The opening markup, the text inside it, and the closing markup.
@@ -263,8 +263,12 @@ function split_html_wrappers( string $text ): array {
 	while ( preg_match( "#^(\s*<([a-z][a-z0-9-]*)(?:{$attribute})*\s*>)(.*)(</\\2\s*>\s*)$#is", $text, $matches ) ) {
 		list( , $open, $tag, $inner, $close ) = $matches;
 
-		if ( 'a' === strtolower( $tag ) && preg_match( '#\shref\s*=#i', $open ) ) {
-			break;
+		$element = new \WP_HTML_Tag_Processor( $open );
+		$element->next_tag();
+		foreach ( $element->get_attribute_names_with_prefix( '' ) ?? array() as $name ) {
+			if ( ! in_array( $name, array( 'class', 'style', 'id' ), true ) && ! str_starts_with( $name, 'data-' ) ) {
+				break 2;
+			}
 		}
 
 		// The outer tags must be one element: `<b>A</b> and <b>B</b>` isn't wrapped.
@@ -277,7 +281,7 @@ function split_html_wrappers( string $text ): array {
 			}
 		}
 
-		if ( 0 !== $depth || '' === trim( wp_strip_all_tags( $inner ) ) ) {
+		if ( 0 !== $depth || '' === wp_strip_all_tags( $inner ) ) {
 			break;
 		}
 
@@ -312,6 +316,11 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 	$i18n_strings = array();
 	foreach ( $strings as $string ) {
 		list( $before, $text, $after ) = split_html_wrappers( $string );
+
+		// A shortcode on its own isn't translated, also when it's wrapped.
+		if ( ! $parser->filter_out_shortcodes( $text ) ) {
+			continue;
+		}
 
 		// Phase 1: Decode entities that are safe in any context.
 		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $text );
