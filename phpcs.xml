@@ -34,10 +34,7 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
-    <!-- Pattern strings are generated from page content and are translation sources, so they're fixed in the editor, not here. -->
-    <rule ref="WordPress.WP.I18n.NoHtmlWrappedStrings">
-        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
-    </rule>
+    <!-- Pattern strings are generated from page content, so a lowercase `wordpress` in a domain name can't be changed here. -->
     <rule ref="WordPress.WP.CapitalPDangit">
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>

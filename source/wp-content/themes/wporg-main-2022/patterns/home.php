@@ -39,7 +39,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Design</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Design', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -53,7 +53,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Build', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -71,7 +71,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Extend</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Extend', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -120,7 +120,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Design</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Design', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -134,7 +134,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Build', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -152,7 +152,7 @@ esc_html_e( 'https://wordpress.org/download/releases/[stable_branch]/', 'wporg' 
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Extend</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Extend', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->
@@ -306,7 +306,7 @@ esc_html_e( 'Discover WordPress [stable_branch]', 'wporg' );
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|edge-space","left":"80px"},"margin":{"top":"5rem"}}}} -->
 <div class="wp-block-columns alignwide" style="margin-top:5rem"><!-- wp:column {"width":"50%","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
 <div class="wp-block-column has-charcoal-0-color has-text-color has-link-color" style="flex-basis:50%"><!-- wp:heading {"style":{"typography":{"fontSize":"18px","lineHeight":"1.88"}},"fontFamily":"inter"} -->
-<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><?php _e( '<strong>Build for yourself, not by yourself</strong>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading has-inter-font-family" style="font-size:18px;line-height:1.88"><strong><?php esc_html_e( 'Build for yourself, not by yourself', 'wporg' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text"} -->

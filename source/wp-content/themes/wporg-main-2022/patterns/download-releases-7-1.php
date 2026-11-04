@@ -50,7 +50,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>Style content your way, on every screen.</strong>', 'wporg' ); ?></p>
+<p><strong><?php esc_html_e( 'Style content your way, on every screen.', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -88,7 +88,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>One dedicated workflow for editing your images.</strong>', 'wporg' ); ?></p>
+<p><strong><?php esc_html_e( 'One dedicated workflow for editing your images.', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -110,7 +110,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>Consistent navigation, from dashboard to editor.</strong>', 'wporg' ); ?></p>
+<p><strong><?php esc_html_e( 'Consistent navigation, from dashboard to editor.', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -148,7 +148,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<strong>More ways to leave feedback.</strong>', 'wporg' ); ?></p>
+<p><strong><?php esc_html_e( 'More ways to leave feedback.', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

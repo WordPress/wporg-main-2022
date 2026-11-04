@@ -194,7 +194,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0"} -->
-<h2 class="wp-block-heading alignfull has-text-align-center has-charcoal-0-color has-text-color has-link-color"><?php _e( '<em>Enhanced details and new blocks</em>', 'wporg' ); ?></h2>
+<h2 class="wp-block-heading alignfull has-text-align-center has-charcoal-0-color has-text-color has-link-color"><em><?php esc_html_e( 'Enhanced details and new blocks', 'wporg' ); ?></em></h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"0","right":"0"},"blockGap":{"left":"var:preset|spacing|70"}},"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
