@@ -4,6 +4,9 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const cwd = process.cwd();
+// An optional Playground CLI command (`start`, `server`, `php`), followed by its options.
+const cliArgs = process.argv.slice( 2 );
+const command = cliArgs[ 0 ] && ! cliArgs[ 0 ].startsWith( '-' ) ? cliArgs.shift() : 'start';
 const scriptDir = dirname( fileURLToPath( import.meta.url ) );
 const wpEnv = JSON.parse( readFileSync( join( cwd, '.wp-env.json' ), 'utf8' ) );
 const themeDir = './source/wp-content/themes/wporg-main-2022';
@@ -51,11 +54,11 @@ const mountIfExists = ( hostPath, runtimePath, args ) => {
 	return false;
 };
 
-const args = [
-	'@wp-playground/cli',
-	'start',
-	'--noAutoMount',
-];
+const args = [ '@wp-playground/cli', command ];
+
+if ( 'start' === command ) {
+	args.push( '--noAutoMount' );
+}
 
 Object.entries( wpEnv.mappings ).forEach( ( [ runtimePath, hostPath ] ) => {
 	mountIfExists( hostPath, `/wordpress/${ runtimePath }`, args );
@@ -63,10 +66,12 @@ Object.entries( wpEnv.mappings ).forEach( ( [ runtimePath, hostPath ] ) => {
 mountIfExists( './source/wp-content/plugins', '/wordpress/wp-content/plugins', args );
 mountIfExists( './source/wp-content/themes', '/wordpress/wp-content/themes', args );
 
-args.push(
-	`--blueprint=${ join( scriptDir, '../blueprint.json' ) }`,
-	...process.argv.slice( 2 )
-);
+// The local site's blueprint, unless the command brings its own or runs a script.
+if ( 'php' !== command && ! cliArgs.some( ( arg ) => arg.startsWith( '--blueprint' ) ) ) {
+	args.push( `--blueprint=${ join( scriptDir, '../blueprint.json' ) }` );
+}
+
+args.push( ...cliArgs );
 
 const child = spawn( 'npx', args, {
 	cwd,

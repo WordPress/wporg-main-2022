@@ -22,6 +22,7 @@
 				"SCRIPT_DEBUG": true,
 				"WP_DEBUG_LOG": true,
 				"FS_METHOD": "direct",
+				"WP_DEVELOPMENT_MODE": "theme",
 				"WP_ENVIRONMENT_TYPE": "local",
 				"JETPACK_DEV_DEBUG": true,
 				"WPORG_SANDBOXED": true,
