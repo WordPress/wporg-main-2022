@@ -78,6 +78,8 @@ npm run playground
 
 Run the dependency setup first so Composer-installed plugins, parent themes, and theme build files are available. The Playground setup mounts the same WordPress.org sandbox bootstrap used by `wp-env`, activates the local plugins and theme, and creates the starter pages. If those dependencies are missing, `npm run playground` will stop before booting WordPress instead of falling back to a bundled default theme.
 
+To run another Playground CLI command with the same mounts, pass it first, for example `npm run playground -- php -- /wordpress/env/export-content/playground.php` to export the patterns without Docker.
+
 ### Environment management
 
 These must be run in the project's root folder, _not_ in theme/plugin subfolders.
