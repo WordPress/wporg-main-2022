@@ -26,6 +26,14 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
+    <!-- Pattern strings never reach printf, so `%` in them (like URL-encoded links) isn't a placeholder. -->
+    <rule ref="WordPress.WP.I18n.MissingTranslatorsComment">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.I18n.UnorderedPlaceholdersText">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+
     <!-- Ignore whitespace issues in patterns. -->
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed">
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
