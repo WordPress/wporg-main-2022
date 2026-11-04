@@ -156,7 +156,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 			array(
 				// List with links
 				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><a href=\"#\">Fonts API</a></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li>Interactivity <a href=\"#\">Link</a> API</li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><a href=\"\">Block API</a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
-				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><a href=\"#\"><?php esc_html_e( 'Fonts API', 'wporg' ); ?></a></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity <a href=\"#\">Link</a> API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><a href=\"\"><?php esc_html_e( 'Block API', 'wporg' ); ?></a></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
+				"<!-- wp:list -->\n<ul>\n<!-- wp:list-item -->\n<li><?php _e( '<a href=\"#\">Fonts API</a>', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( 'Interactivity <a href=\"#\">Link</a> API', 'wporg' ); ?></li>\n<!-- /wp:list-item -->\n<!-- wp:list-item -->\n<li><?php _e( '<a href=\"\">Block API</a>', 'wporg' ); ?></li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->",
 			),
 			array(
 				// List of lists
@@ -213,9 +213,9 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:paragraph -->\n<p><?php _e( '<strong>Themes</strong> and <strong>plugins</strong>', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			),
 			array(
-				// A link's absolute URL becomes its own string, so it can be localized.
-				"<!-- wp:paragraph -->\n<p><strong><a href=\"https://wordpress.org/download/\" target=\"_blank\">Download</a></strong></p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><strong><a href=\"<?php echo esc_url( __( 'https://wordpress.org/download/', 'wporg' ) ); ?>\" target=\"_blank\"><?php esc_html_e( 'Download', 'wporg' ); ?></a></strong></p>\n<!-- /wp:paragraph -->",
+				// Links stay in the string, so their URL can be localized.
+				"<!-- wp:paragraph -->\n<p><strong><a href=\"https://wordpress.org/download/\">Download</a></strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><strong><?php _e( '<a href=\"https://wordpress.org/download/\">Download</a>', 'wporg' ); ?></strong></p>\n<!-- /wp:paragraph -->",
 			),
 			array(
 				// Elements with other attributes stay in the string, since those can hold text.

@@ -318,19 +318,19 @@ esc_html_e( 'https://wordpress.org/[stable_branch]', 'wporg' );
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"30px"},"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:30px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/block-editor/getting-started/create-block/', 'wporg' ) ); ?>"><?php esc_html_e( 'Create custom blocks', 'wporg' ); ?></a></p>
+<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org/block-editor/getting-started/create-block/">Create custom blocks</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><a href="/patterns/" data-type="link" data-id="https://wordpress.org/playground/"><?php esc_html_e( 'Design block patterns', 'wporg' ); ?></a></p>
+<p class="has-link-color"><?php _e( '<a href="/patterns/" data-type="link" data-id="https://wordpress.org/playground/">Design block patterns</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/themes/block-themes/', 'wporg' ) ); ?>" data-type="link" data-id="https://wordpress.org/documentation/"><?php esc_html_e( 'Build block themes', 'wporg' ); ?></a></p>
+<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org/themes/block-themes/" data-type="link" data-id="https://wordpress.org/documentation/">Build block themes</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"}}}}} -->
-<p class="has-link-color"><a href="<?php echo esc_url( __( 'https://developer.wordpress.org/block-editor/how-to-guides/platform/custom-block-editor/', 'wporg' ) ); ?>"><?php esc_html_e( 'Deploy blocks', 'wporg' ); ?></a></p>
+<p class="has-link-color"><?php _e( '<a href="https://developer.wordpress.org/block-editor/how-to-guides/platform/custom-block-editor/">Deploy blocks</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

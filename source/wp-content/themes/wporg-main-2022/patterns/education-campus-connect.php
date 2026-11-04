@@ -380,7 +380,7 @@
 <!-- wp:column {"verticalAlignment":"center","width":"50%","style":{"spacing":{"blockGap":"0"}}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|white-opacity-15","width":"1px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"0px","style":"none"},"left":{"width":"0px","style":"none"}},"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-light-grey-2-color has-text-color has-link-color" style="border-top-color:var(--wp--preset--color--white-opacity-15);border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}}},"textColor":"light-grey-2","fontSize":"heading-6"} -->
-<p class="has-light-grey-2-color has-text-color has-link-color has-heading-6-font-size"><a href="<?php echo esc_url( __( 'http://ritmoribera.com/', 'wporg' ) ); ?>" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Ritmo Ribera ↗', 'wporg' ); ?></a></p>
+<p class="has-light-grey-2-color has-text-color has-link-color has-heading-6-font-size"><?php _e( '<a href="http://ritmoribera.com/" target="_blank" rel="noreferrer noopener">Ritmo Ribera ↗</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

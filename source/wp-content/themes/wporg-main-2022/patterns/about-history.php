@@ -67,7 +67,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link"} -->
-<p class="external-link"><a href="<?php echo esc_url( __( 'https://wordpress.org/book/', 'wporg' ) ); ?>" rel="noopener" target="_blank"><?php esc_html_e( 'Read the books', 'wporg' ); ?></a></p>
+<p class="external-link"><?php _e( '<a href="https://wordpress.org/book/" rel="noopener" target="_blank">Read the books</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -87,7 +87,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link"} -->
-<p class="external-link"><a href="<?php echo esc_url( __( 'https://wordpress.github.io/museum/3d/', 'wporg' ) ); ?>" rel="noopener" target="_blank"><?php esc_html_e( 'Experience the Museum', 'wporg' ); ?></a></p>
+<p class="external-link"><?php _e( '<a href="https://wordpress.github.io/museum/3d/" rel="noopener" target="_blank">Experience the Museum</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -107,7 +107,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link"} -->
-<p class="external-link"><a data-id="https://www.youtube.com/playlist?list=PL1pJFUVKQ7ES1piZxljCvMTJCYpVBnwYU" data-type="link" href="<?php echo esc_url( __( 'https://www.youtube.com/playlist?list=PL1pJFUVKQ7ES1piZxljCvMTJCYpVBnwYU', 'wporg' ) ); ?>" rel="noopener" target="_blank"><?php esc_html_e( 'Relive SotW Keynotes', 'wporg' ); ?></a></p>
+<p class="external-link"><?php _e( '<a data-id="https://www.youtube.com/playlist?list=PL1pJFUVKQ7ES1piZxljCvMTJCYpVBnwYU" data-type="link" href="https://www.youtube.com/playlist?list=PL1pJFUVKQ7ES1piZxljCvMTJCYpVBnwYU" rel="noopener" target="_blank">Relive SotW Keynotes</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -138,7 +138,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2026/08/mary-lou/', 'wporg' ) ); ?>"><?php esc_html_e( 'Mary Lou', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2026/08/mary-lou/">Mary Lou</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -164,7 +164,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=7.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 7.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=7.1">Launch 7.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -190,7 +190,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2026/05/armstrong/', 'wporg' ) ); ?>"><?php esc_html_e( 'Armstrong', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2026/05/armstrong/">Armstrong</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -216,7 +216,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=7.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 7.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=7.0">Launch 7.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -242,7 +242,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2025/12/gene/', 'wporg' ) ); ?>"><?php esc_html_e( 'Gene', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2025/12/gene/">Gene</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -268,7 +268,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.9', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.9', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.9">Launch 6.9</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -294,7 +294,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2025/04/cecil/', 'wporg' ) ); ?>"><?php esc_html_e( 'Cecil', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2025/04/cecil/">Cecil</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -320,7 +320,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.8', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.8', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.8">Launch 6.8</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -346,7 +346,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2024/11/rollins/', 'wporg' ) ); ?>"><?php esc_html_e( 'Rollins', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2024/11/rollins/">Rollins</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -372,7 +372,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.7', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.7', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.7">Launch 6.7</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -398,7 +398,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2024/07/dorsey/', 'wporg' ) ); ?>"><?php esc_html_e( 'Dorsey', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2024/07/dorsey/">Dorsey</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -424,7 +424,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.6', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.6', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.6">Launch 6.6</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -450,7 +450,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2024/04/regina/', 'wporg' ) ); ?>"><?php esc_html_e( 'Regina', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2024/04/regina/">Regina</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -476,7 +476,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.5">Launch 6.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -502,7 +502,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2023/11/shirley/', 'wporg' ) ); ?>"><?php esc_html_e( 'Shirley', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2023/11/shirley/">Shirley</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -528,7 +528,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.4', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.4', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.4">Launch 6.4</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -554,7 +554,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2023/08/lionel/', 'wporg' ) ); ?>"><?php esc_html_e( 'Lionel', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2023/08/lionel/">Lionel</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -580,7 +580,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.3', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.3', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.3">Launch 6.3</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -606,7 +606,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2023/03/dolphy/', 'wporg' ) ); ?>"><?php esc_html_e( 'Dolphy', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2023/03/dolphy/">Dolphy</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -632,7 +632,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.2">Launch 6.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -658,7 +658,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2022/11/misha/', 'wporg' ) ); ?>"><?php esc_html_e( 'Misha', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2022/11/misha/">Misha</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -684,7 +684,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.1">Launch 6.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -710,7 +710,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2022/05/arturo/', 'wporg' ) ); ?>"><?php esc_html_e( 'Arturo', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2022/05/arturo/">Arturo</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -736,7 +736,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=6.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 6.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=6.0">Launch 6.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -762,7 +762,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2022/01/josephine/', 'wporg' ) ); ?>"><?php esc_html_e( 'Joséphine', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2022/01/josephine/">Joséphine</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -788,7 +788,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.9', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.9', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.9">Launch 5.9</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -814,7 +814,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2021/07/tatum/', 'wporg' ) ); ?>"><?php esc_html_e( 'Tatum', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2021/07/tatum/">Tatum</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -840,7 +840,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.8', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.8', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.8">Launch 5.8</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -866,7 +866,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2021/03/esperanza/', 'wporg' ) ); ?>"><?php esc_html_e( 'Esperanza', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2021/03/esperanza/">Esperanza</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -892,7 +892,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.7', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.7', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.7">Launch 5.7</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -918,7 +918,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2020/12/simone/', 'wporg' ) ); ?>"><?php esc_html_e( 'Simone', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2020/12/simone/">Simone</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -944,7 +944,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.6', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.6', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.6">Launch 5.6</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -970,7 +970,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2020/08/eckstine/', 'wporg' ) ); ?>"><?php esc_html_e( 'Eckstine', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2020/08/eckstine/">Eckstine</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -996,7 +996,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.5">Launch 5.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1022,7 +1022,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2020/03/adderley/', 'wporg' ) ); ?>"><?php esc_html_e( 'Adderley', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2020/03/adderley/">Adderley</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1048,7 +1048,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.4', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.4', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.4">Launch 5.4</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1074,7 +1074,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2019/11/kirk/', 'wporg' ) ); ?>"><?php esc_html_e( 'Kirk', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2019/11/kirk/">Kirk</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1100,7 +1100,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.3', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.3', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.3">Launch 5.3</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1126,7 +1126,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2019/05/jaco/', 'wporg' ) ); ?>"><?php esc_html_e( 'Jaco', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2019/05/jaco/">Jaco</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1152,7 +1152,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.2">Launch 5.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1178,7 +1178,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2019/02/betty/', 'wporg' ) ); ?>"><?php esc_html_e( 'Betty', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2019/02/betty/">Betty</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1204,7 +1204,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.1">Launch 5.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1230,7 +1230,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2018/12/bebo/', 'wporg' ) ); ?>"><?php esc_html_e( 'Bebo', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2018/12/bebo/">Bebo</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1256,7 +1256,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=5.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 5.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=5.0">Launch 5.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1282,7 +1282,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2017/11/tipton/', 'wporg' ) ); ?>"><?php esc_html_e( 'Tipton', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2017/11/tipton/">Tipton</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1308,7 +1308,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.9', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.9', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.9">Launch 4.9</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1334,7 +1334,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2017/06/evans/', 'wporg' ) ); ?>"><?php esc_html_e( 'Evans', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2017/06/evans/">Evans</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1360,7 +1360,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.8', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.8', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.8">Launch 4.8</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1386,7 +1386,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2016/12/vaughan/', 'wporg' ) ); ?>"><?php esc_html_e( 'Vaughan', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2016/12/vaughan/">Vaughan</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1412,7 +1412,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.7', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.7', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.7">Launch 4.7</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1438,7 +1438,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2016/08/pepper/', 'wporg' ) ); ?>"><?php esc_html_e( 'Pepper', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2016/08/pepper/">Pepper</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1464,7 +1464,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.6', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.6', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.6">Launch 4.6</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1490,7 +1490,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2016/04/coleman/', 'wporg' ) ); ?>"><?php esc_html_e( 'Coleman', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2016/04/coleman/">Coleman</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1516,7 +1516,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.5">Launch 4.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1542,7 +1542,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2015/12/clifford/', 'wporg' ) ); ?>"><?php esc_html_e( 'Clifford', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2015/12/clifford/">Clifford</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1568,7 +1568,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.4', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.4', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.4">Launch 4.4</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1594,7 +1594,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2015/08/billie/', 'wporg' ) ); ?>"><?php esc_html_e( 'Billie', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2015/08/billie/">Billie</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1620,7 +1620,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.3', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.3', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.3">Launch 4.3</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1646,7 +1646,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2015/04/powell/', 'wporg' ) ); ?>"><?php esc_html_e( 'Powell', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2015/04/powell/">Powell</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1672,7 +1672,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.2">Launch 4.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1698,7 +1698,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2014/12/dinah/', 'wporg' ) ); ?>"><?php esc_html_e( 'Dinah', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2014/12/dinah/">Dinah</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1724,7 +1724,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.1">Launch 4.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1750,7 +1750,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2014/09/benny/', 'wporg' ) ); ?>"><?php esc_html_e( 'Benny', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2014/09/benny/">Benny</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1776,7 +1776,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=4.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 4.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=4.0">Launch 4.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1802,7 +1802,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2014/04/smith/', 'wporg' ) ); ?>"><?php esc_html_e( 'Smith', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2014/04/smith/">Smith</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1828,7 +1828,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.9', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.9', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.9">Launch 3.9</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1854,7 +1854,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2013/12/parker/', 'wporg' ) ); ?>"><?php esc_html_e( 'Parker', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2013/12/parker/">Parker</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1880,7 +1880,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.8', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.8', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.8">Launch 3.8</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1906,7 +1906,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2013/10/basie/', 'wporg' ) ); ?>"><?php esc_html_e( 'Basie', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2013/10/basie/">Basie</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1932,7 +1932,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.7', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.7', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.7">Launch 3.7</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -1958,7 +1958,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2013/08/oscar/', 'wporg' ) ); ?>"><?php esc_html_e( 'Oscar', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2013/08/oscar/">Oscar</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -1984,7 +1984,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.6', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.6', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.6">Launch 3.6</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2010,7 +2010,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2012/12/elvin/', 'wporg' ) ); ?>"><?php esc_html_e( 'Elvin', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2012/12/elvin/">Elvin</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2036,7 +2036,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.5">Launch 3.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2062,7 +2062,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2012/06/green/', 'wporg' ) ); ?>"><?php esc_html_e( 'Green', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2012/06/green/">Green</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2088,7 +2088,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.4', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.4', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.4">Launch 3.4</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2114,7 +2114,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2011/12/sonny/', 'wporg' ) ); ?>"><?php esc_html_e( 'Sonny', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2011/12/sonny/">Sonny</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2140,7 +2140,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.3', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.3', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.3">Launch 3.3</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2166,7 +2166,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2011/07/gershwin/', 'wporg' ) ); ?>"><?php esc_html_e( 'Gershwin', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2011/07/gershwin/">Gershwin</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2192,7 +2192,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.2">Launch 3.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2218,7 +2218,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2011/02/threeone/', 'wporg' ) ); ?>"><?php esc_html_e( 'Reinhardt', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2011/02/threeone/">Reinhardt</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2244,7 +2244,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.1">Launch 3.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2270,7 +2270,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2010/06/thelonious/', 'wporg' ) ); ?>"><?php esc_html_e( 'Thelonious', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2010/06/thelonious/">Thelonious</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2296,7 +2296,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=3.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 3.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=3.0">Launch 3.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2322,7 +2322,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2009/12/wordpress-2-9/', 'wporg' ) ); ?>"><?php esc_html_e( 'Carmen', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2009/12/wordpress-2-9/">Carmen</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2348,7 +2348,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.9', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.9', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.9">Launch 2.9</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2374,7 +2374,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2009/06/wordpress-28/', 'wporg' ) ); ?>"><?php esc_html_e( 'Baker', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2009/06/wordpress-28/">Baker</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2400,7 +2400,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.8', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.8', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.8">Launch 2.8</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2426,7 +2426,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2008/12/coltrane/', 'wporg' ) ); ?>"><?php esc_html_e( 'Coltrane', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2008/12/coltrane/">Coltrane</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2452,7 +2452,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.7', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.7', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.7">Launch 2.7</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2478,7 +2478,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2008/07/wordpress-26-tyner/', 'wporg' ) ); ?>"><?php esc_html_e( 'Tyner', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2008/07/wordpress-26-tyner/">Tyner</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2504,7 +2504,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.6', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.6', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.6">Launch 2.6</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2530,7 +2530,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2008/03/wordpress-25-brecker/', 'wporg' ) ); ?>"><?php esc_html_e( 'Brecker', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2008/03/wordpress-25-brecker/">Brecker</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2556,7 +2556,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.5">Launch 2.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2582,7 +2582,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2007/09/wordpress-23/', 'wporg' ) ); ?>"><?php esc_html_e( 'Dexter', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2007/09/wordpress-23/">Dexter</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2608,7 +2608,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.3', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.3', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.3">Launch 2.3</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2634,7 +2634,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2007/05/wordpress-22/', 'wporg' ) ); ?>"><?php esc_html_e( 'Getz', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2007/05/wordpress-22/">Getz</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2660,7 +2660,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.2">Launch 2.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2686,7 +2686,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2007/01/ella-21/', 'wporg' ) ); ?>"><?php esc_html_e( 'Ella', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2007/01/ella-21/">Ella</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2712,7 +2712,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.1', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.1', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.1">Launch 2.1</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2738,7 +2738,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2005/12/wp2/', 'wporg' ) ); ?>"><?php esc_html_e( 'Duke', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2005/12/wp2/">Duke</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2764,7 +2764,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=2.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 2.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=2.0">Launch 2.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2790,7 +2790,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2005/02/strayhorn/', 'wporg' ) ); ?>"><?php esc_html_e( 'Strayhorn', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2005/02/strayhorn/">Strayhorn</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2816,7 +2816,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=1.5', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 1.5', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=1.5">Launch 1.5</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2842,7 +2842,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2004/05/heres-the-beef/', 'wporg' ) ); ?>"><?php esc_html_e( 'Mingus', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2004/05/heres-the-beef/">Mingus</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2868,7 +2868,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=1.2', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 1.2', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=1.2">Launch 1.2</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2894,7 +2894,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2004/01/wordpress-10/', 'wporg' ) ); ?>"><?php esc_html_e( 'Miles', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2004/01/wordpress-10/">Miles</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2920,7 +2920,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=1.0', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch 1.0', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=1.0">Launch 1.0</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -2946,7 +2946,7 @@
 
 <!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-1"},"typography":{"textDecoration":"none"},":hover":{"typography":{"textDecoration":"underline"}}}},"spacing":{"margin":{"top":"0"}},"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"charcoal-1","fontSize":"extra-large","fontFamily":"inter"} -->
-<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><a href="<?php echo esc_url( __( 'https://wordpress.org/news/2003/05/wordpress-now-available/', 'wporg' ) ); ?>"><?php esc_html_e( 'WordPress', 'wporg' ); ?></a></h3>
+<h3 class="wp-block-heading has-charcoal-1-color has-text-color has-link-color has-inter-font-family has-extra-large-font-size" style="margin-top:0;font-style:normal;font-weight:400"><?php _e( '<a href="https://wordpress.org/news/2003/05/wordpress-now-available/">WordPress</a>', 'wporg' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -2972,7 +2972,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"external-link","fontSize":"small"} -->
-<p class="external-link has-small-font-size"><a href="<?php echo esc_url( __( 'https://playground.wordpress.net/?wp=.70', 'wporg' ) ); ?>"><?php esc_html_e( 'Launch .70', 'wporg' ); ?></a></p>
+<p class="external-link has-small-font-size"><?php _e( '<a href="https://playground.wordpress.net/?wp=.70">Launch .70</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
