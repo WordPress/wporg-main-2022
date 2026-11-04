@@ -30,7 +30,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotypes</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotypes', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -48,7 +48,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotype</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotype', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -74,7 +74,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotype</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotype', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -102,7 +102,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotypes</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotypes', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -128,7 +128,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotype</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotype', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->
@@ -154,7 +154,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php _e( '<strong>WordPress Logotype</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'WordPress Logotype', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","fontSize":"small"} -->

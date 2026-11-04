@@ -203,6 +203,21 @@ class BlockParser_Test extends WP_UnitTestCase {
 				"<!-- wp:paragraph -->\n<p><?php _e( 'Read the <a href=\"https://example.com\">Terms & Conditions</a>.', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
 			),
 			array(
+				// Elements wrapping the whole text stay out of the string.
+				"<!-- wp:paragraph -->\n<p><strong><em>WordPress Logotypes</em></strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><strong><em><?php esc_html_e( 'WordPress Logotypes', 'wporg' ); ?></em></strong></p>\n<!-- /wp:paragraph -->",
+			),
+			array(
+				// Separate elements at the start and end don't wrap the text.
+				"<!-- wp:paragraph -->\n<p><strong>Themes</strong> and <strong>plugins</strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><?php _e( '<strong>Themes</strong> and <strong>plugins</strong>', 'wporg' ); ?></p>\n<!-- /wp:paragraph -->",
+			),
+			array(
+				// Links stay in the string, so their URL can be localized.
+				"<!-- wp:paragraph -->\n<p><strong><a href=\"https://wordpress.org/download/\">Download</a></strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><strong><?php _e( '<a href=\"https://wordpress.org/download/\">Download</a>', 'wporg' ); ?></strong></p>\n<!-- /wp:paragraph -->",
+			),
+			array(
 				// Paragraph with notranslate class — content stays as plain HTML.
 				"<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",
 				"<!-- wp:paragraph {\"className\":\"notranslate\"} -->\n<p>31</p>\n<!-- /wp:paragraph -->",

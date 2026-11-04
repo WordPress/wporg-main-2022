@@ -51,7 +51,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( '<strong>Phase 1: Migration Guides</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><strong><?php esc_html_e( 'Phase 1: Migration Guides', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -85,7 +85,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( '<strong>Phase 2: Importing and Exporting Structured Data</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><strong><?php esc_html_e( 'Phase 2: Importing and Exporting Structured Data', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -113,7 +113,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( '<strong>Phase 3: Liberating Data From Closed Platforms</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><strong><?php esc_html_e( 'Phase 3: Liberating Data From Closed Platforms', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -151,7 +151,7 @@
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"600"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"ibm-plex-sans"} -->
-<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><?php _e( '<strong>Phase 4: Direct WordPress-to-WordPress Synchronization</strong>', 'wporg' ); ?></h3>
+<h3 class="wp-block-heading has-ibm-plex-sans-font-family has-large-font-size" style="font-style:normal;font-weight:600;line-height:1.7"><strong><?php esc_html_e( 'Phase 4: Direct WordPress-to-WordPress Synchronization', 'wporg' ); ?></strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -37,7 +37,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>See your theme come to life before your eyes</em>', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><em><?php esc_html_e( 'See your theme come to life before your eyes', 'wporg' ); ?></em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"normal"} -->
@@ -69,7 +69,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>Smoother building with Data Views, the Query Loop, and everything you touch</em>', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><em><?php esc_html_e( 'Smoother building with Data Views, the Query Loop, and everything you touch', 'wporg' ); ?></em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -89,7 +89,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>Hover, click, and go. Fast!</em>', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><em><?php esc_html_e( 'Hover, click, and go. Fast!', 'wporg' ); ?></em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -121,7 +121,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"extra-large","fontFamily":"eb-garamond"} -->
-<p class="has-eb-garamond-font-family has-extra-large-font-size"><?php _e( '<em>Stronger password security means stronger site security</em>', 'wporg' ); ?></p>
+<p class="has-eb-garamond-font-family has-extra-large-font-size"><em><?php esc_html_e( 'Stronger password security means stronger site security', 'wporg' ); ?></em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

@@ -340,7 +340,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:image {"id":20591,"width":"674px","height":"33px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-6.png" alt="" class="wp-image-20591" style="width:674px;height:33px" /><figcaption class="wp-element-caption"><?php _e( '<mark class="has-inline-color has-light-grey-2-color">6.3 is 24% faster than 6.2.2 in LCP times</mark>', 'wporg' ); ?></figcaption></figure>
+<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2023/08/image-6.png" alt="" class="wp-image-20591" style="width:674px;height:33px" /><figcaption class="wp-element-caption"><mark class="has-inline-color has-light-grey-2-color"><?php esc_html_e( '6.3 is 24% faster than 6.2.2 in LCP times', 'wporg' ); ?></mark></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"33px"} -->
@@ -504,7 +504,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<em>*Synced patterns were previously referred to as "reusable blocks."</em>', 'wporg' ); ?></p>
+<p><em><?php esc_html_e( '*Synced patterns were previously referred to as "reusable blocks."', 'wporg' ); ?></em></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

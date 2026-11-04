@@ -247,6 +247,49 @@ class BlockParser {
 }
 
 /**
+ * Split off the HTML elements that wrap a whole string, so only the text inside is translated.
+ *
+ * Links stay in the string, since translators may localize their URL. This matches what
+ * WordPress.WP.I18n.NoHtmlWrappedStrings flags.
+ *
+ * @param string $text A string from the content.
+ * @return string[] The opening markup, the text inside it, and the closing markup.
+ */
+function split_html_wrappers( string $text ): array {
+	$before    = '';
+	$after     = '';
+	$attribute = '\s+[^\s"\'>/=]+(?:\s*=\s*(?:"[^"]*"|\'[^\']*\'|[^\s"\'=<>`]+))?';
+
+	while ( preg_match( "#^(\s*<([a-z][a-z0-9-]*)(?:{$attribute})*\s*>)(.*)(</\\2\s*>\s*)$#is", $text, $matches ) ) {
+		list( , $open, $tag, $inner, $close ) = $matches;
+
+		if ( 'a' === strtolower( $tag ) && preg_match( '#\shref\s*=#i', $open ) ) {
+			break;
+		}
+
+		// The outer tags must be one element: `<b>A</b> and <b>B</b>` isn't wrapped.
+		preg_match_all( '#<(/?)' . preg_quote( $tag, '#' ) . '(?=[\s/>])#i', $inner, $tags );
+		$depth = 0;
+		foreach ( $tags[1] as $slash ) {
+			$depth += $slash ? -1 : 1;
+			if ( $depth < 0 ) {
+				break 2;
+			}
+		}
+
+		if ( 0 !== $depth || '' === trim( wp_strip_all_tags( $inner ) ) ) {
+			break;
+		}
+
+		$before .= $open;
+		$after   = $close . $after;
+		$text    = $inner;
+	}
+
+	return array( $before, $text, $after );
+}
+
+/**
  * Helper function to replace all strings in content with i18n-wrapped strings.
  */
 function replace_with_i18n( string $content, string $textdomain = 'wporg' ): string {
@@ -268,8 +311,10 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 
 	$i18n_strings = array();
 	foreach ( $strings as $string ) {
+		list( $before, $text, $after ) = split_html_wrappers( $string );
+
 		// Phase 1: Decode entities that are safe in any context.
-		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );
+		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $text );
 
 		// Determine if the string contains HTML tags.
 		$has_html = strip_tags( $decoded ) !== $decoded; // phpcs:ignore WordPress.WP.AlternativeFunctions.strip_tags_strip_tags -- wp_strip_all_tags() trims, which would count whitespace as HTML.
@@ -289,13 +334,13 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 		$quote          = $has_apostrophe ? '"' : "'";
 		$escaped        = $has_apostrophe ? addcslashes( $decoded, '"\\$' ) : addcslashes( $decoded, '\\' );
 
-		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $string, $matches ) ) {
+		if ( preg_match_all( '#\[[a-z_-]{5,}\]#', $text, $matches ) ) {
 			if ( count( $matches[0] ) > 1 ) {
 				$translator_comment = sprintf( '/* translators: %s are shortcodes and should not be translated. */', implode( ', ', $matches[0] ) );
 			} else {
 				$translator_comment = sprintf( '/* translators: %s is a shortcode and should not be translated. */', implode( ', ', $matches[0] ) );
 			}
-			$i18n_strings[ $string ] = sprintf(
+			$i18n_strings[ $string ] = $before . sprintf(
 				"<?php\n%s\n%s( %s%s%s, '%s' );\n?>",
 				$translator_comment,
 				$func,
@@ -303,16 +348,16 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 				$escaped,
 				$quote,
 				$textdomain
-			);
+			) . $after;
 		} else {
-			$i18n_strings[ $string ] = sprintf(
+			$i18n_strings[ $string ] = $before . sprintf(
 				"<?php %s( %s%s%s, '%s' ); ?>",
 				$func,
 				$quote,
 				$escaped,
 				$quote,
 				$textdomain
-			);
+			) . $after;
 		}
 	}
 

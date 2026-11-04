@@ -71,7 +71,7 @@
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"heading-5"} -->
-<p class="has-heading-5-font-size"><?php _e( '<strong>Learn and Grow</strong>', 'wporg' ); ?></p>
+<p class="has-heading-5-font-size"><strong><?php esc_html_e( 'Learn and Grow', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -81,7 +81,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"heading-5"} -->
-<p class="has-heading-5-font-size"><?php _e( '<strong>Lead and Organize</strong>', 'wporg' ); ?></p>
+<p class="has-heading-5-font-size"><strong><?php esc_html_e( 'Lead and Organize', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -91,7 +91,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"heading-5"} -->
-<p class="has-heading-5-font-size"><?php _e( '<strong>Engage and Connect</strong>', 'wporg' ); ?></p>
+<p class="has-heading-5-font-size"><strong><?php esc_html_e( 'Engage and Connect', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -147,7 +147,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"fontSize":"heading-5"} -->
-<p class="has-heading-5-font-size"><?php _e( '<strong>Request Student Club creation</strong>', 'wporg' ); ?></p>
+<p class="has-heading-5-font-size"><strong><?php esc_html_e( 'Request Student Club creation', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
