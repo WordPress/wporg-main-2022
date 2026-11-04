@@ -272,5 +272,11 @@
 		"slug": "om",
 		"pattern": "om.php",
 		"template": "page-om.html"
+	},
+	{
+		"id": 54144,
+		"slug": "reprint",
+		"pattern": "reprint.php",
+		"template": "page-reprint.html"
 	}
 ]
