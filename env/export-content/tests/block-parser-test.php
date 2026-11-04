@@ -224,8 +224,8 @@ class BlockParser_Test extends WP_UnitTestCase {
 			),
 			array(
 				// A wrapped shortcode on its own isn't translated.
-				"<!-- wp:paragraph -->\n<p><strong>[latest_version]</strong></p>\n<!-- /wp:paragraph -->",
-				"<!-- wp:paragraph -->\n<p><strong>[latest_version]</strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><strong> [latest_version] </strong></p>\n<!-- /wp:paragraph -->",
+				"<!-- wp:paragraph -->\n<p><strong> [latest_version] </strong></p>\n<!-- /wp:paragraph -->",
 			),
 			array(
 				// Paragraph with notranslate class — content stays as plain HTML.

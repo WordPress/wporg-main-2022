@@ -318,7 +318,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 		list( $before, $text, $after ) = split_html_wrappers( $string );
 
 		// A shortcode on its own isn't translated, also when it's wrapped.
-		if ( ! $parser->filter_out_shortcodes( $text ) ) {
+		if ( ! $parser->filter_out_shortcodes( trim( $text ) ) ) {
 			continue;
 		}
 
