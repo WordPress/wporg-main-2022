@@ -2,13 +2,13 @@
 /**
  * Runs the pattern export in WordPress Playground, which has no WP-CLI for `wp eval-file`.
  *
- * Usage: npm run playground -- php -- /wordpress/env/export-content/playground.php
+ * Usage: npm run build:patterns
  */
 
 declare( strict_types = 1 );
 
-require '/wordpress/wp-load.php';
+require dirname( __DIR__, 2 ) . '/wp-load.php';
 
-$args = array( '/wordpress/env/page-manifest.json' );
+$args = array( dirname( __DIR__ ) . '/page-manifest.json' );
 
 require __DIR__ . '/index.php';

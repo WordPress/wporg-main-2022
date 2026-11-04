@@ -3,7 +3,7 @@
 	"landingPage": "/",
 	"preferredVersions": {
 		"php": "8.4",
-		"wp": "latest"
+		"wp": "nightly"
 	},
 	"features": {
 		"intl": true,
