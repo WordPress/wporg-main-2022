@@ -6,18 +6,20 @@ on:
     - cron: '17 * * * *'  # Runs hourly
   push:
     branches: [trunk]
-    # Only the manifest and the export/parser code change what build:patterns
+    # Only the manifest and the export/parser code change what the export
     # produces from the live site; regenerate patterns when those change.
     paths:
       - 'env/page-manifest.json'
       - 'env/export-content/**'
-      - 'env/build-patterns.sh'
       - 'source/wp-content/themes/wporg-main-2022/inc/page-title.php'
   pull_request:
     paths:
       - '.github/workflows/content-update.yml'
       - 'env/add-page.js'
       - 'env/screenshot-changes.js'
+      - 'env/playground-start.mjs'
+      - 'env/playground-setup.php'
+      - 'blueprint.json'
 
 # Per ref, so pull request runs and trunk syncs don't cancel each other.
 concurrency:
