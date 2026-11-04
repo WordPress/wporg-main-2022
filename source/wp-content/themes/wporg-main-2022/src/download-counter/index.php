@@ -110,9 +110,7 @@ function add_counter_endpoint() {
 			'permission_callback' => '__return_true',
 			'args'                => array(
 				'branch' => array(
-					'validate_callback' => function ( $param ) {
-						return validate_branch( $param );
-					},
+					'validate_callback' => __NAMESPACE__ . '\validate_branch',
 				),
 			),
 		)
