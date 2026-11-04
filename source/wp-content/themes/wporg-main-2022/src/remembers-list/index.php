@@ -29,13 +29,11 @@ function init() {
 /**
  * Render the block content.
  *
- * @param array    $attributes Block attributes.
- * @param string   $content    Block default content.
- * @param WP_Block $block      Block instance.
+ * @param array $attributes Block attributes.
  *
  * @return string Returns the block markup.
  */
-function render( $attributes, $content, $block ) {
+function render( $attributes ) {
 
 	if ( ! function_exists( '\WordPressdotorg\MemorialProfiles\get_profiles' ) ) {
 		return __( 'Memorial Profiles mu-plugin is missing.', 'wporg' );

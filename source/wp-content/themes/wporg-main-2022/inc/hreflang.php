@@ -93,7 +93,7 @@ function hreflang_link_attributes() {
 		if ( 'local' === wp_get_environment_type() ) {
 			$sites = array();
 		} else {
-			// phpcs:ignore WordPress.VIP.DirectDatabaseQuery.DirectQuery
+			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- The result is cached in `local-sites`.
 			$sites = $wpdb->get_results( 'SELECT locale, subdomain FROM wporg_locales', OBJECT_K );
 			if ( ! $sites ) {
 				return;
@@ -115,7 +115,7 @@ function hreflang_link_attributes() {
 				}
 
 				// Skip unsupported locales.
-				if ( in_array( $gp_locale->slug, $unsupported_languages ) ) {
+				if ( in_array( $gp_locale->slug, $unsupported_languages, true ) ) {
 					unset( $sites[ $key ] );
 					continue;
 				}
@@ -166,7 +166,7 @@ function hreflang_link_attributes() {
 	}
 
 	if ( is_singular() ) {
-		$path = parse_url( get_permalink(), PHP_URL_PATH );
+		$path = wp_parse_url( get_permalink(), PHP_URL_PATH );
 	} else {
 		// WordPress doesn't have a good way to get the canonical version of non-singular urls.
 		$path = $_SERVER['REQUEST_URI']; // phpcs:ignore

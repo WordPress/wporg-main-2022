@@ -47,9 +47,9 @@ function render( $attributes, $content, $block ) {
 
 	$branch = WP_CORE_STABLE_BRANCH;
 	// If set, use the URL query string parameter for the branch.
-	// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+	// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
 	if ( isset( $_GET['branch'] ) && validate_branch( wp_unslash( $_GET['branch'] ) ) ) {
-		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
 		$branch = wp_unslash( $_GET['branch'] );
 	}
 
@@ -91,8 +91,8 @@ function add_counter_endpoint() {
 		'wporg/v1',
 		'/core-downloads/',
 		array(
-			'methods' => 'GET',
-			'callback' => function ( WP_REST_Request $request ) {
+			'methods'             => 'GET',
+			'callback'            => function () {
 				return get_download_count( WP_CORE_STABLE_BRANCH );
 			},
 			'permission_callback' => '__return_true',
@@ -102,17 +102,15 @@ function add_counter_endpoint() {
 		'wporg/v1',
 		'/core-downloads/(?P<branch>[0-9.]+)',
 		array(
-			'methods' => 'GET',
-			'callback' => function ( WP_REST_Request $request ) {
+			'methods'             => 'GET',
+			'callback'            => function ( WP_REST_Request $request ) {
 				$branch = $request->get_param( 'branch' );
 				return get_download_count( $branch ?? WP_CORE_STABLE_BRANCH );
 			},
 			'permission_callback' => '__return_true',
-			'args' => array(
+			'args'                => array(
 				'branch' => array(
-					'validate_callback' => function ( $param, $request, $key ) {
-						return validate_branch( $param );
-					},
+					'validate_callback' => __NAMESPACE__ . '\validate_branch',
 				),
 			),
 		)
@@ -133,8 +131,9 @@ function get_download_count( $branch ) {
 		// Generate a semi-random number like a download count.
 		// 8 digits to have a suitably long number, based on the current time so it generally trends upward.
 		// Add a random offset so the number changes more every 5 seconds.
-		$num = substr( time(), -9 ) + rand( 10, 100 );
+		$num = substr( time(), -9 ) + wp_rand( 10, 100 );
 	} else {
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- The counter is live.
 		$num = $wpdb->get_var(
 			$wpdb->prepare(
 				'SELECT SUM(downloads) FROM download_counts WHERE `release` LIKE %s AND `release` NOT LIKE %s',

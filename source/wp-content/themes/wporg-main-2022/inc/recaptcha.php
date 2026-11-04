@@ -17,7 +17,7 @@ function enqueue_script( $form_id ) {
 		return;
 	}
 
-	wp_enqueue_script( 'recaptcha-api', 'https://www.google.com/recaptcha/api.js', array(), '2' );
+	wp_enqueue_script( 'recaptcha-api', 'https://www.google.com/recaptcha/api.js', array(), '2', false );
 	wp_add_inline_script( 'recaptcha-api', 'function reCAPTCHAPostSubmit(token) { document.getElementById(' . wp_json_encode( (string) $form_id ) . ').submit(); }' );
 }
 

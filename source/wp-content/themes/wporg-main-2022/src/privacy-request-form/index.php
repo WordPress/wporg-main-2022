@@ -33,13 +33,11 @@ function init() {
 /**
  * Render the block content.
  *
- * @param array    $attributes Block attributes.
- * @param string   $content    Block default content.
- * @param WP_Block $block      Block instance.
+ * @param array $attributes Block attributes.
  *
  * @return string Returns the block markup.
  */
-function render( $attributes, $content, $block ) {
+function render( $attributes ) {
 	$type = $attributes['type'] ?? 'export';
 
 	if ( ! in_array( $type, array( 'export', 'erase' ), true ) ) {

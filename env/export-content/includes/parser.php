@@ -21,40 +21,40 @@ class BlockParser {
 		$this->fallback = new Parsers\BasicText();
 		$this->parsers  = array(
 			// Blocks that have custom parsers.
-			'core/paragraph'   => new Parsers\HTMLParser( 'p', array(), 2 /* minimum length of 2 characters. */ ),
-			'core/image'       => new Parsers\HTMLParser( 'figcaption', array( 'alt', 'title' ) ),
-			'core/heading'     => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
+			'core/paragraph'       => new Parsers\HTMLParser( 'p', array(), 2 /* minimum length of 2 characters. */ ),
+			'core/image'           => new Parsers\HTMLParser( 'figcaption', array( 'alt', 'title' ) ),
+			'core/heading'         => new Parsers\HTMLRegexParser( '/h[1-6]/' ),
 
-			'core/list-item'   => new Parsers\ListItem(),
-			'core/button'      => new Parsers\HTMLParser( 'a', array( 'title', 'href' ) ),
+			'core/list-item'       => new Parsers\ListItem(),
+			'core/button'          => new Parsers\HTMLParser( 'a', array( 'title', 'href' ) ),
 
 			// Attributes handler.
 			'core/navigation-link' => new Parsers\AttributeParser( array( 'label' ) ),
 			'core/social-link'     => new Parsers\AttributeParser( array( 'label' ) ),
 
 			// Generic shortcode handler.
-			'core/shortcode'   => new Parsers\ShortcodeBlock(),
+			'core/shortcode'       => new Parsers\ShortcodeBlock(),
 
 			// These contain other blocks to be parsed.
-			'core/column'      => new Parsers\Noop(),
-			'core/columns'     => new Parsers\Noop(),
-			'core/group'       => new Parsers\Noop(),
-			'core/list'        => new Parsers\Noop(),
-			'core/quote'       => new Parsers\Noop(),
+			'core/column'          => new Parsers\Noop(),
+			'core/columns'         => new Parsers\Noop(),
+			'core/group'           => new Parsers\Noop(),
+			'core/list'            => new Parsers\Noop(),
+			'core/quote'           => new Parsers\Noop(),
 
 			// Don't translate content.
-			'core/code'  => new Parsers\Noop(),
-			'core/embed' => new Parsers\Noop(),
+			'core/code'            => new Parsers\Noop(),
+			'core/embed'           => new Parsers\Noop(),
 
 			// No content.
-			'core/spacer' => new Parsers\Noop(),
+			'core/spacer'          => new Parsers\Noop(),
 
 			// Common core blocks that use the default parser.
-			'core/media-text'  => new Parsers\BasicText(),
+			'core/media-text'      => new Parsers\BasicText(),
 
 			// Shared custom blocks.
-			'wporg/link-wrapper' => new Parsers\HTMLParser( 'a', array( 'href' ) ),
-			'wporg/modal' => new Parsers\AttributeParser( array( 'label' ) ),
+			'wporg/link-wrapper'   => new Parsers\HTMLParser( 'a', array( 'href' ) ),
+			'wporg/modal'          => new Parsers\AttributeParser( array( 'label' ) ),
 		);
 	}
 
@@ -86,8 +86,8 @@ class BlockParser {
 		return $post;
 	}
 
-	public static function translate_blocks( string $content, callable $callback_translate ) /*: bool|string*/ {
-		$self         = new self( $content );
+	public static function translate_blocks( string $content, callable $callback_translate ): string|false {
+		$self = new self( $content );
 
 		$translations = array();
 		$translated   = false;
@@ -107,7 +107,7 @@ class BlockParser {
 		return $self->replace_strings_with_kses( $translations );
 	}
 
-	public static function translate_block( string $content, $block, callable $callback_translate ) /* :bool|string */ {
+	public static function translate_block( string $content, $block, callable $callback_translate ): string {
 		$self    = new self();
 		$parser  = $self->parsers[ $block['blockName'] ] ?? $self->fallback;
 		$strings = $parser->to_strings( $block ); // does not do innerBlocks, intentionally.
@@ -145,7 +145,7 @@ class BlockParser {
 
 	public function block_parser_replace_strings( array &$block, array $replacements ): array {
 		$parser = $this->parsers[ $block['blockName'] ] ?? $this->fallback;
-		$block = $parser->replace_strings( $block, $replacements );
+		$block  = $parser->replace_strings( $block, $replacements );
 
 		foreach ( $block['innerBlocks'] as &$inner_block ) {
 			$inner_block = $this->block_parser_replace_strings( $inner_block, $replacements );
@@ -169,8 +169,8 @@ class BlockParser {
 		return $strings;
 	}
 
-	public function filter_out_shortcodes( string $string ): bool {
-		return ! preg_match( '#^\[[a-z_-]{5,}\]$#', $string );
+	public function filter_out_shortcodes( string $text ): bool {
+		return ! preg_match( '#^\[[a-z_-]{5,}\]$#', $text );
 	}
 
 	public function replace_strings_with_kses( array $replacements ): string {
@@ -204,10 +204,10 @@ class BlockParser {
 	 * Decode a string containing unicode escape sequences.
 	 * Excludes decoding characters not allowed within block attributes.
 	 *
-	 * @param string $string A string containing serialized blocks.
+	 * @param string $serialized A string containing serialized blocks.
 	 * @return string A string containing decoded unicode characters.
 	 */
-	public function decode_unicode_characters( string $string ): string {
+	public function decode_unicode_characters( string $serialized ): string {
 
 		// In WordPress core, `serialize_block_attributes` intentionally leaves some characters
 		// in the block attributes encoded in their unicode form. These are characters that would
@@ -236,7 +236,7 @@ class BlockParser {
 				// If we didn't encounter excluded characters, use json_decode to do the heavy lifting.
 				return json_decode( '"' . $matches[0] . '"' );
 			},
-			$string
+			$serialized
 		);
 
 		// Decode < & > if they're part of a PHP tag.
@@ -272,7 +272,7 @@ function replace_with_i18n( string $content, string $textdomain = 'wporg' ): str
 		$decoded = str_replace( array_keys( $safe_entities ), array_values( $safe_entities ), $string );
 
 		// Determine if the string contains HTML tags.
-		$has_html = strip_tags( $decoded ) !== $decoded;
+		$has_html = strip_tags( $decoded ) !== $decoded; // phpcs:ignore WordPress.WP.AlternativeFunctions.strip_tags_strip_tags -- wp_strip_all_tags() trims, which would count whitespace as HTML.
 
 		// Phase 2: For strings without HTML, also decode &amp; &lt; &gt; (esc_html_e will re-encode them).
 		// For strings with HTML, also decode &amp; (browsers handle bare & fine), but keep &lt; &gt;.

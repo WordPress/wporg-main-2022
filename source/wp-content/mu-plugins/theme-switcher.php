@@ -21,6 +21,7 @@ function should_use_new_theme() {
 	}
 
 	// Preview. Can't call is_preview() this early in the process.
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only checks for a preview link.
 	if ( isset( $_GET['preview'] ) && isset( $_GET['preview_id'] ) ) {
 		return true;
 	}
@@ -37,7 +38,7 @@ function should_use_new_theme() {
 		'/enterprise/media/',
 		'/hosting/',
 	);
-	if ( in_array( strtolower( $request_uri ), $old_theme_pages ) ) {
+	if ( in_array( strtolower( $request_uri ), $old_theme_pages, true ) ) {
 		return false;
 	}
 
@@ -101,7 +102,7 @@ function replace_template_content_for_preview( $template ) {
 	global $_wp_current_template_content;
 
 	if ( is_preview() ) {
-		$count = 0;
+		$count                        = 0;
 		$_wp_current_template_content = preg_replace(
 			'#<!-- wp:pattern {"slug":"wporg-main-2022/[\w-]+"} /-->#',
 			'<!-- wp:post-content {"layout":{"inherit":true},"style":{"spacing":{"blockGap":"0px"}}} /-->',

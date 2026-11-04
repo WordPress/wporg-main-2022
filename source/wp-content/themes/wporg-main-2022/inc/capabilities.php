@@ -7,7 +7,7 @@ defined( 'WPINC' ) || die();
 /**
  * Actions and filters.
  */
-add_filter( 'map_meta_cap', __NAMESPACE__ . '\map_meta_caps', 20, 4 ); // Needs to fire after meta caps in wporg-internal-notes.
+add_filter( 'map_meta_cap', __NAMESPACE__ . '\map_meta_caps', 20, 3 ); // Needs to fire after meta caps in wporg-internal-notes.
 add_action( 'admin_init', __NAMESPACE__ . '\add_or_update_designer_role' );
 add_filter( 'rest_request_before_callbacks', __NAMESPACE__ . '\check_caps_for_page_update', 10, 3 );
 
@@ -25,8 +25,8 @@ function check_caps_for_page_update( $response, $handler, $request ) {
 	// Note: this is specific to the post edit API route. It won't affect other methods of updating a page, such as other endpoints or direct PHP calls.
 	// It's probably sufficient for the purpose of this plugin, which is a safety measure, not a security check.
 	$user = wp_get_current_user();
-	if ( $user && in_array( 'designer', $user->roles ) ) {
-		if ( in_array( $request->get_method(), array( 'POST', 'PUT', 'PATCH' ), true ) && $request->has_param( 'id' ) && $request->get_route() == rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
+	if ( $user && in_array( 'designer', $user->roles, true ) ) {
+		if ( in_array( $request->get_method(), array( 'POST', 'PUT', 'PATCH' ), true ) && $request->has_param( 'id' ) && $request->get_route() === rest_get_route_for_post( $request->get_param( 'id' ) ) ) {
 			if ( 'page' === get_post_type( $request->get_param( 'id' ) ) ) {
 				$page = get_post( $request->get_param( 'id' ) );
 				if ( $request->has_param( 'status' ) && 'publish' !== $request->get_param( 'status' ) && 'publish' === get_post_status( $page->ID ) ) {
@@ -78,16 +78,15 @@ function check_caps_for_page_update( $response, $handler, $request ) {
  * @param array  $required_caps
  * @param string $current_cap
  * @param int    $user_id
- * @param mixed  $args
  *
  * @return mixed
  */
-function map_meta_caps( $required_caps, $current_cap, $user_id, $args ) {
+function map_meta_caps( $required_caps, $current_cap, $user_id ) {
 	if ( 'edit_page' === $current_cap || 'edit_post' === $current_cap ) {
 		// Special safety limits for Designer role when editing pages
 		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		$user = get_user_by( 'id', $user_id );
-		if ( $user && in_array( 'designer', $user->roles ) ) {
+		if ( $user && in_array( 'designer', $user->roles, true ) ) {
 			if ( isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD']
 				&& isset( $_POST['action'] ) && 'inline-save' === $_POST['action']
 				&& isset( $_POST['post_type'] ) && 'page' === $_POST['post_type'] ) {

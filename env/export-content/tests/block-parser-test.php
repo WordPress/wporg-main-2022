@@ -126,7 +126,7 @@ class BlockParser_Test extends WP_UnitTestCase {
 	 * @dataProvider data_block_content_strings
 	 */
 	public function test_strings_parser( $block_content, $expected ) {
-		$parser = new BlockParser( $block_content );
+		$parser  = new BlockParser( $block_content );
 		$strings = $parser->to_strings();
 		$this->assertSame( $expected, $strings );
 	}

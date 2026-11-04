@@ -104,7 +104,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			ob_start();
 			include $file;
 			$output = (string) ob_get_clean();
-			unlink( $file );
+			wp_delete_file( $file );
 
 			$this->assertStringContainsString( '<p>' . esc_html( $text ) . '</p>', $output );
 		}
@@ -152,10 +152,10 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	 */
 	public function data_header_titles(): array {
 		return array(
-			'plain'          => array( 'About WordPress', 'About WordPress' ),
-			'line break'     => array( "First line\nSecond line", 'First line Second line' ),
-			'comment end'    => array( 'A */ B', 'A * / B' ),
-			'nested'         => array( 'A **// B', 'A ** // B' ),
+			'plain'       => array( 'About WordPress', 'About WordPress' ),
+			'line break'  => array( "First line\nSecond line", 'First line Second line' ),
+			'comment end' => array( 'A */ B', 'A * / B' ),
+			'nested'      => array( 'A **// B', 'A ** // B' ),
 		);
 	}
 
@@ -182,9 +182,9 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	 */
 	public function data_php_like_markup(): array {
 		return array(
-			'PHP'         => array( "<div><?php echo 'x'; ?></div>", "<div><!--?php echo 'x'; ?--></div>" ),
-			'XML prolog'  => array( '<svg><?xml version="1.0"?><g/></svg>', '<svg><!--?xml version="1.0"?--><g/></svg>' ),
-			'unclosed'    => array( '<div><?php echo 1;</div>', '<div>&lt;?php echo 1;</div>' ),
+			'PHP'          => array( "<div><?php echo 'x'; ?></div>", "<div><!--?php echo 'x'; ?--></div>" ),
+			'XML prolog'   => array( '<svg><?xml version="1.0"?><g/></svg>', '<svg><!--?xml version="1.0"?--><g/></svg>' ),
+			'unclosed'     => array( '<div><?php echo 1;</div>', '<div>&lt;?php echo 1;</div>' ),
 			'no closing >' => array( 'a <? b', 'a &lt;? b' ),
 		);
 	}
@@ -228,7 +228,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 		}
 
 		$code = (string) file_get_contents( $file );
-		unlink( $file );
+		wp_delete_file( $file );
 
 		$this->assertStringContainsString( $expected, $code );
 		validate_pattern_code( $code );
@@ -264,7 +264,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			generate_pattern( 'https://example.org/', $file, null, 'old-slug' );
 		} finally {
 			remove_filter( 'pre_http_request', $response );
-			unlink( $file );
+			wp_delete_file( $file );
 		}
 	}
 
@@ -314,7 +314,7 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 			generate_pattern( 'https://example.org/', $file );
 		} finally {
 			remove_filter( 'pre_http_request', $response );
-			unlink( $file );
+			wp_delete_file( $file );
 		}
 	}
 }

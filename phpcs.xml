@@ -34,6 +34,28 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
+    <!-- Pattern strings are generated from page content and are translation sources, so they're fixed in the editor, not here. -->
+    <rule ref="WordPress.WP.I18n.NoHtmlWrappedStrings">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.CapitalPDangit">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+
+    <!-- The env scripts read and write local files, where WP_Filesystem adds nothing. -->
+    <rule ref="WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_fwrite">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.AlternativeFunctions.file_system_operations_fclose">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+
     <!-- Ignore whitespace issues in patterns. -->
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed">
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
