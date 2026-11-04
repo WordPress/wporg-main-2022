@@ -15,7 +15,7 @@ namespace WordPress_org\Main_2022\ImportTestContent;
 use Exception;
 
 // This script should only be called in a CLI environment.
-if ( 'cli' != php_sapi_name() ) {
+if ( 'cli' !== php_sapi_name() ) {
 	die();
 }
 
@@ -67,7 +67,7 @@ function import_rest_to_posts( $rest_url ) {
 
 	add_action( 'http_api_curl', __NAMESPACE__ . '\filter_curl_options' );
 
-	$response = wp_remote_get(
+	$response    = wp_remote_get(
 		$rest_url,
 		array(
 			'timeout' => 60,
@@ -96,18 +96,18 @@ function import_rest_to_posts( $rest_url ) {
 
 		// Surely there's a neater way to do this.
 		$new_post = array(
-			'import_id' => $post->id,
-			'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( $post->date ) ),
-			'post_name' => $post->slug,
-			'post_status' => $post->status,
-			'post_type' => $post->type,
-			'post_title' => $post->title->rendered,
-			'post_content' => ( $post->content_raw ?? $post->content->rendered ),
-			'post_excerpt' => wp_strip_all_tags( $post->excerpt->rendered ),
-			'post_parent' => $post->parent,
+			'import_id'      => $post->id,
+			'post_date'      => gmdate( 'Y-m-d H:i:s', strtotime( $post->date ) ),
+			'post_name'      => $post->slug,
+			'post_status'    => $post->status,
+			'post_type'      => $post->type,
+			'post_title'     => $post->title->rendered,
+			'post_content'   => ( $post->content_raw ?? $post->content->rendered ),
+			'post_excerpt'   => wp_strip_all_tags( $post->excerpt->rendered ),
+			'post_parent'    => $post->parent,
 			'comment_status' => $post->comment_status,
-			'page_template' => $template,
-			'meta_input' => sanitize_meta_input( $post->meta ),
+			'page_template'  => $template,
+			'meta_input'     => sanitize_meta_input( $post->meta ),
 		);
 
 		$existing_post = get_post( $post->id, ARRAY_A );

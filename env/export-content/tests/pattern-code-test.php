@@ -152,10 +152,10 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	 */
 	public function data_header_titles(): array {
 		return array(
-			'plain'          => array( 'About WordPress', 'About WordPress' ),
-			'line break'     => array( "First line\nSecond line", 'First line Second line' ),
-			'comment end'    => array( 'A */ B', 'A * / B' ),
-			'nested'         => array( 'A **// B', 'A ** // B' ),
+			'plain'       => array( 'About WordPress', 'About WordPress' ),
+			'line break'  => array( "First line\nSecond line", 'First line Second line' ),
+			'comment end' => array( 'A */ B', 'A * / B' ),
+			'nested'      => array( 'A **// B', 'A ** // B' ),
 		);
 	}
 
@@ -182,9 +182,9 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	 */
 	public function data_php_like_markup(): array {
 		return array(
-			'PHP'         => array( "<div><?php echo 'x'; ?></div>", "<div><!--?php echo 'x'; ?--></div>" ),
-			'XML prolog'  => array( '<svg><?xml version="1.0"?><g/></svg>', '<svg><!--?xml version="1.0"?--><g/></svg>' ),
-			'unclosed'    => array( '<div><?php echo 1;</div>', '<div>&lt;?php echo 1;</div>' ),
+			'PHP'          => array( "<div><?php echo 'x'; ?></div>", "<div><!--?php echo 'x'; ?--></div>" ),
+			'XML prolog'   => array( '<svg><?xml version="1.0"?><g/></svg>', '<svg><!--?xml version="1.0"?--><g/></svg>' ),
+			'unclosed'     => array( '<div><?php echo 1;</div>', '<div>&lt;?php echo 1;</div>' ),
 			'no closing >' => array( 'a <? b', 'a &lt;? b' ),
 		);
 	}

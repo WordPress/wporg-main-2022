@@ -49,9 +49,8 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 	}
 
 	$posts = json_decode( $data );
-	$post = $posts[0] ?? null;
+	$post  = $posts[0] ?? null;
 	if ( ! isset( $post->content_raw ) ) {
-		var_dump( $post );
 		throw new Exception( esc_html( "No content_raw available at {$url}\n" ) );
 	}
 

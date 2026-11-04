@@ -17,7 +17,7 @@ class ListItem implements BlockParser {
 		return $strings;
 	}
 
-	public function _do_replacement( array $block, array $replacements, $html ) {
+	private function do_replacement( array $block, array $replacements, $html ) {
 		if ( ! $html ) {
 			return $html;
 		}
@@ -35,10 +35,10 @@ class ListItem implements BlockParser {
 	public function replace_strings( array $block, array $replacements ): array {
 
 		foreach ( $block['innerContent'] as $i => $html ) {
-			$block['innerContent'][ $i ] = $this->_do_replacement( $block, $replacements, $html );
+			$block['innerContent'][ $i ] = $this->do_replacement( $block, $replacements, $html );
 		}
 
-		$block['innerHTML'] = $this->_do_replacement( $block, $replacements, $block['innerHTML'] );
+		$block['innerHTML'] = $this->do_replacement( $block, $replacements, $block['innerHTML'] );
 
 		return $block;
 	}

@@ -80,7 +80,7 @@ function render( $attributes, $content, $block ) {
 
 			$block_content .= '<ul role="tablist">';
 			foreach ( $more_branches as $branch => $branch_releases ) {
-				$tab_string = '<li role="presentation"><a role="tab" href="#%1$s" aria-controls="%1$s" aria-selected="false">%2$s</a></li>';
+				$tab_string     = '<li role="presentation"><a role="tab" href="#%1$s" aria-controls="%1$s" aria-selected="false">%2$s</a></li>';
 				$block_content .= sprintf(
 					$tab_string,
 					sprintf( 'branch-%s', sanitize_key( $branch ) ),
@@ -176,7 +176,7 @@ function render_heading( $text, int $level = 2 ) {
  * @return string Returns the table markup.
  */
 function render_table( $releases ) {
-	$table = '<!-- wp:table {"className":"is-style-stripes","style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} --><figure class="wp-block-table is-style-stripes" style="margin-top:var(--wp--preset--spacing--20)">';
+	$table  = '<!-- wp:table {"className":"is-style-stripes","style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} --><figure class="wp-block-table is-style-stripes" style="margin-top:var(--wp--preset--spacing--20)">';
 	$table .= '<table>';
 	$table .= '<thead>';
 	$table .= '<tr>';
@@ -213,7 +213,7 @@ function find_microsite_url_for_version( $version ) {
 		return null;
 	}
 
-	$child_pages = get_pages( array( 'child_of' => $post->ID ) );
+	$child_pages        = get_pages( array( 'child_of' => $post->ID ) );
 	$version_hyphenated = str_replace( '.', '-', $version );
 
 	foreach ( $child_pages as $child_page ) {
@@ -234,9 +234,9 @@ function find_microsite_url_for_version( $version ) {
  */
 function render_table_row( $version ) {
 	$version_number = $version['version'];
-	$microsite_url = find_microsite_url_for_version( $version_number );
+	$microsite_url  = find_microsite_url_for_version( $version_number );
 
-	$row = '<tr>';
+	$row  = '<tr>';
 	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">';
 	$row .= isset( $microsite_url )
 		? sprintf(

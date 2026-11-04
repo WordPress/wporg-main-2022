@@ -61,7 +61,7 @@ function custom_open_graph_tags( $tags = array() ) {
 	unset( $tags['article:published_time'], $tags['article:modified_time'] );
 
 	$title = get_the_title();
-	$desc = get_the_excerpt();
+	$desc  = get_the_excerpt();
 
 	$tags['og:title']            = $title;
 	$tags['twitter:text:title']  = $title;

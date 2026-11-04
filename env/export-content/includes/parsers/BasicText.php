@@ -36,15 +36,15 @@ class BasicText implements BlockParser {
 
 		foreach ( $block['innerContent'] as &$inner_content ) {
 			if ( is_string( $inner_content ) ) {
-				$dom = $this->get_dom( $inner_content );
+				$dom   = $this->get_dom( $inner_content );
 				$xpath = new \DOMXPath( $dom );
 
 				$text_nodes = $xpath->query( $xpath_query );
-				$strings = array();
+				$strings    = array();
 
 				// Get a unique list of things to replace.
 				foreach ( $text_nodes as $text ) {
-					if ( ! in_array( $text->nodeValue, $strings ) ) {
+					if ( ! in_array( $text->nodeValue, $strings, true ) ) {
 						$strings[] = $text->nodeValue;
 					}
 				}
@@ -56,7 +56,7 @@ class BasicText implements BlockParser {
 						// string from becoming `<?php _e( 'Use <?php _e( 'Jetpack', 'wporg' );!', 'wporg' ).
 						// There might be edge cases where the string is not wrapped in tags/quotes, but I
 						// haven't seen one in testing.
-						$regex = '#(<([^>]*)>|=")' . preg_quote( $string, '#' ) . '(<([^>]*)>|")#s';
+						$regex         = '#(<([^>]*)>|=")' . preg_quote( $string, '#' ) . '(<([^>]*)>|")#s';
 						$inner_content = preg_replace( $regex, '${1}' . addcslashes( $replacements[ $string ], '\\$' ) . '${3}', $inner_content );
 					}
 				}

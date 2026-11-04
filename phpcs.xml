@@ -34,6 +34,19 @@
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
     </rule>
 
+    <!-- Pattern strings are generated from page content and are translation sources, so they're fixed in the editor, not here. -->
+    <rule ref="WordPress.WP.I18n.NoHtmlWrappedStrings">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WP.CapitalPDangit">
+        <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>
+    </rule>
+
+    <!-- The env scripts and tests run on the command line, where the WordPress wrappers for files, requests, and cURL don't apply. -->
+    <rule ref="WordPress.WP.AlternativeFunctions">
+        <exclude-pattern>env/*</exclude-pattern>
+    </rule>
+
     <!-- Ignore whitespace issues in patterns. -->
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed">
         <exclude-pattern>source/wp-content/themes/wporg-main-2022/patterns/*</exclude-pattern>

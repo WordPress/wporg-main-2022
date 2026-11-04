@@ -3,8 +3,8 @@
 namespace WordPress_org\Main_2022\ExportToPatterns\Parsers;
 
 class HTMLParser implements BlockParser {
-	public $tags = array();
-	public $attributes = array();
+	public $tags              = array();
+	public $attributes        = array();
 	public $min_string_length = 0;
 
 	public function __construct( $tags = array(), $attributes = array(), $min_string_length = 0 ) {
@@ -25,7 +25,7 @@ class HTMLParser implements BlockParser {
 		}
 
 		foreach ( $this->attributes as $attr ) {
-			$attr = $this->escape_attr( $attr, '#' );
+			$attr          = $this->escape_attr( $attr, '#' );
 			$found_strings = array();
 
 			if (
@@ -77,12 +77,12 @@ class HTMLParser implements BlockParser {
 		if ( $this->min_string_length ) {
 			$strings = array_filter(
 				$strings,
-				function ( $string ) {
+				function ( $text ) {
 					if ( function_exists( 'mb_strlen' ) ) {
-						return mb_strlen( $string ) >= $this->min_string_length;
+						return mb_strlen( $text ) >= $this->min_string_length;
 					}
 
-					return strlen( $string ) >= $this->min_string_length;
+					return strlen( $text ) >= $this->min_string_length;
 				}
 			);
 		}
@@ -119,7 +119,7 @@ class HTMLParser implements BlockParser {
 	// todo: this needs a fix to properly rebuild innerContent - see ParagraphParserTest
 	public function replace_strings( array $block, array $replacements ): array {
 
-		$html = $block['innerHTML'];
+		$html    = $block['innerHTML'];
 		$content = $block['innerContent'];
 
 		foreach ( $this->to_strings( $block ) as $original ) {
@@ -129,9 +129,9 @@ class HTMLParser implements BlockParser {
 
 			// Replace content in specific HTML attributes with appropriate escaping.
 			foreach ( $this->attributes as $attr ) {
-				$is_url    = in_array( $attr, $this->url_attributes, true );
-				$escaped   = $is_url ? $this->escape_for_url_attribute( $replacements[ $original ] ) : $this->escape_for_attribute( $replacements[ $original ] );
-				$esc_attr  = $this->escape_attr( $attr, '#' );
+				$is_url     = in_array( $attr, $this->url_attributes, true );
+				$escaped    = $is_url ? $this->escape_for_url_attribute( $replacements[ $original ] ) : $this->escape_for_attribute( $replacements[ $original ] );
+				$esc_attr   = $this->escape_attr( $attr, '#' );
 				$attr_regex = '#(' . $esc_attr . '=["\'])\s*' . preg_quote( $original, '#' ) . '\s*(["\'])#s';
 
 				$html = preg_replace( $attr_regex, '$1' . addcslashes( $escaped, '\\$' ) . '$2', $html );
@@ -163,14 +163,14 @@ class HTMLParser implements BlockParser {
 	/**
 	 * Escape a tag/attribute to use in a regex.
 	 */
-	protected function escape_tag( $string, $delim ) {
-		return $this->escape( $string, $delim );
+	protected function escape_tag( $text, $delim ) {
+		return $this->escape( $text, $delim );
 	}
-	protected function escape_attr( $string, $delim ) {
-		return $this->escape( $string, $delim );
+	protected function escape_attr( $text, $delim ) {
+		return $this->escape( $text, $delim );
 	}
-	protected function escape( $string, $delim ) {
-		return preg_quote( $string, $delim );
+	protected function escape( $text, $delim ) {
+		return preg_quote( $text, $delim );
 	}
 }
 
@@ -178,11 +178,11 @@ class HTMLRegexParser extends HTMLParser {
 	/**
 	 * Maybe escape a string for a regex match, unless it looks like regex (ie. /..../) then use as-is.
 	 */
-	protected function escape_tag( $string, $delim ) {
-		if ( str_starts_with( $string, '/' ) && str_ends_with( $string, '/' ) ) {
-			return trim( $string, '/' );
+	protected function escape_tag( $text, $delim ) {
+		if ( str_starts_with( $text, '/' ) && str_ends_with( $text, '/' ) ) {
+			return trim( $text, '/' );
 		}
 
-		return parent::escape_tag( $string, $delim );
+		return parent::escape_tag( $text, $delim );
 	}
 }

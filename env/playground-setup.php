@@ -30,9 +30,9 @@ update_option( 'blogname', 'WordPress.org Local' );
 update_option( 'blogdescription', 'Blog Tool, Publishing Platform, and CMS' );
 update_option( 'permalink_structure', '/%year%/%monthnum%/%postname%/' );
 
-$manifest = json_decode( file_get_contents( '/wordpress/env/page-manifest.json' ), true );
-$known_slugs = array_column( $manifest, 'slug' );
-$prefix_to_path = function ( $prefix ) use ( $known_slugs ) {
+$manifest         = json_decode( file_get_contents( '/wordpress/env/page-manifest.json' ), true );
+$known_slugs      = array_column( $manifest, 'slug' );
+$prefix_to_path   = function ( $prefix ) use ( $known_slugs ) {
 	$prefix_path = array();
 
 	while ( $prefix ) {
@@ -51,7 +51,7 @@ $prefix_to_path = function ( $prefix ) use ( $known_slugs ) {
 		}
 
 		$prefix_path[] = $matched_slug;
-		$prefix = ltrim( substr( $prefix, strlen( $matched_slug ) ), '-' );
+		$prefix        = ltrim( substr( $prefix, strlen( $matched_slug ) ), '-' );
 	}
 
 	return implode( '/', $prefix_path );

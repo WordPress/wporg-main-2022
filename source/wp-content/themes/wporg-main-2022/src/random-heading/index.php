@@ -29,19 +29,15 @@ function init() {
 /**
  * Render the block content.
  *
- * @param array    $attributes Block attributes.
- * @param string   $content    Block default content.
- * @param WP_Block $block      Block instance.
- *
  * @return string Returns the block markup.
  */
-function render( $attributes, $content, $block ) {
+function render() {
 	$headings = array(
 		__( 'WordPress: Publish your <em>passion</em>', 'wporg' ),
 		__( 'WordPress: Grow your <em>business</em>', 'wporg' ),
 		__( 'WordPress: Flex your <em>freedom</em>', 'wporg' ),
 	);
-	$heading = array_rand( array_flip( $headings ) );
+	$heading  = array_rand( array_flip( $headings ) );
 
 	$wrapper_attributes = get_block_wrapper_attributes();
 	return sprintf(
