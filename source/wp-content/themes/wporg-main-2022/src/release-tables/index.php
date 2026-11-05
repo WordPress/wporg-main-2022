@@ -8,6 +8,8 @@
 
 namespace WordPressdotorg\Theme\Main_2022\Release_Tables_Block;
 
+use function WordPressdotorg\Theme\Main_2022\get_newer_english_release;
+
 add_action( 'init', __NAMESPACE__ . '\init' );
 
 /**
@@ -65,7 +67,7 @@ function render( $attributes, $content, $block ) {
 			$block_content .= esc_html(
 				sprintf(
 					/* translators: Version number. */
-					__( 'WordPress %s is not available in your language yet. This download is in English.', 'wporg' ),
+					__( 'WordPress %s is not available in this language. The download is in English.', 'wporg' ),
 					$english_latest['version']
 				)
 			);
@@ -73,6 +75,18 @@ function render( $attributes, $content, $block ) {
 		}
 		$block_content .= render_table( array( $latest ) );
 		$block_content .= '</div>';
+	}
+
+	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $releases['branches'] ) ) {
+		$block_content .= '<!-- wp:paragraph --><p>';
+		$block_content .= wp_kses_post(
+			sprintf(
+				/* translators: URL to the list of all WordPress releases. */
+				__( 'These are the releases built in this language. See <a href="%s">all WordPress releases</a> on WordPress.org.', 'wporg' ),
+				'https://wordpress.org/download/releases/'
+			)
+		);
+		$block_content .= '</p><!-- /wp:paragraph -->';
 	}
 
 	if ( isset( $releases['branches'] ) ) {
@@ -158,35 +172,6 @@ function render( $attributes, $content, $block ) {
 		'<div %1$s>%2$s</div>',
 		$wrapper_attributes,
 		do_blocks( $block_content )
-	);
-}
-
-/**
- * Get the English latest release, if the locale hasn't built the current branch.
- *
- * Point releases aren't compared, so a locale doesn't switch to English in the hours before it builds one.
- *
- * @param array|null $locale_latest The locale's latest release, if it has one.
- *
- * @return array|null The English release in the format of a locale release, or null if the locale has the current branch.
- */
-function get_newer_english_release( $locale_latest ) {
-	if ( ! defined( 'WP_CORE_LATEST_RELEASE' ) || ! defined( 'WP_CORE_STABLE_BRANCH' ) ) {
-		return null;
-	}
-
-	if ( $locale_latest && preg_match( '/^\d+\.\d+/', $locale_latest['version'], $branch ) && version_compare( $branch[0], WP_CORE_STABLE_BRANCH, '>=' ) ) {
-		return null;
-	}
-
-	$version = WP_CORE_LATEST_RELEASE;
-	$zip     = defined( 'WPORG_WP_RELEASES_PATH' ) ? WPORG_WP_RELEASES_PATH . "wordpress-{$version}.zip" : '';
-
-	return array(
-		'version'   => $version,
-		'builton'   => $zip && file_exists( $zip ) ? filemtime( $zip ) : null,
-		'zip_url'   => "https://wordpress.org/wordpress-{$version}.zip",
-		'targz_url' => "https://wordpress.org/wordpress-{$version}.tar.gz",
 	);
 }
 
@@ -278,6 +263,7 @@ function find_microsite_url_for_version( $version ) {
 function render_table_row( $version ) {
 	$version_number = $version['version'];
 	$microsite_url  = find_microsite_url_for_version( $version_number );
+	$language       = empty( $version['english'] ) ? '' : ' (' . esc_html__( 'English', 'wporg' ) . ')';
 
 	$row  = '<tr>';
 	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">';
@@ -290,11 +276,11 @@ function render_table_row( $version ) {
 		: esc_html( $version_number );
 	$row .= '</th>';
 	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . ( $version['builton'] ? esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) : '' ) . '</td>';
-	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
+	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip%2$s</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ), $language );
 
 	// Some releases don't have tar.gz builds.
 	if ( $version['targz_url'] ) {
-		$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-targz"><a href="%1$s">tar.gz</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ) );
+		$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-targz"><a href="%1$s">tar.gz%2$s</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ), $language );
 	} else {
 		$row .= '<td class="wp-block-wporg-release-tables__cell-targz"></td>';
 	}

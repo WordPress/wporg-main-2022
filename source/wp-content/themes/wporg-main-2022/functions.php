@@ -4,6 +4,7 @@ namespace WordPressdotorg\Theme\Main_2022;
 
 use function WordPressdotorg\MU_Plugins\Global_Header_Footer\is_rosetta_site;
 
+require_once __DIR__ . '/inc/latest-release.php';
 require_once __DIR__ . '/inc/page-meta-descriptions.php';
 require_once __DIR__ . '/inc/hreflang.php';
 require_once __DIR__ . '/inc/capabilities.php';

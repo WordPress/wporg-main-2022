@@ -78,11 +78,9 @@ add_shortcode(
 			$latest_release = WP_CORE_LATEST_RELEASE;
 		}
 
-		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
-			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
-			if ( $rosetta_release ) {
-				$latest_release = $rosetta_release['version'];
-			}
+		$rosetta_release = get_locale_latest_release();
+		if ( $rosetta_release ) {
+			$latest_release = $rosetta_release['version'];
 		}
 
 		return $latest_release;
@@ -120,11 +118,8 @@ add_shortcode(
 
 		$link = "https://wordpress.org/latest.{$ext}";
 
-		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
-			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
-			if ( $rosetta_release ) {
-				$link = home_url( 'latest-' . get_locale() . ".{$ext}" );
-			}
+		if ( get_locale_latest_release() ) {
+			$link = home_url( 'latest-' . get_locale() . ".{$ext}" );
 		}
 
 		return $link;
@@ -139,14 +134,8 @@ add_shortcode(
 	function ( $attrs = array() ) {
 		$format = $attrs['format'] ?? 'Y-m-d\TH:i:s\+00:00';
 
-		$timestamp = defined( 'WPORG_WP_RELEASES_PATH' ) ? filemtime( WPORG_WP_RELEASES_PATH . 'wordpress-' . WP_CORE_LATEST_RELEASE . '.zip' ) : time();
-
-		if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $GLOBALS['rosetta'] ) ) {
-			$rosetta_release = $GLOBALS['rosetta']->rosetta->get_latest_public_release();
-			if ( $rosetta_release ) {
-				$timestamp = $rosetta_release['builton'];
-			}
-		}
+		$rosetta_release = get_locale_latest_release();
+		$timestamp       = $rosetta_release ? $rosetta_release['builton'] : ( ( defined( 'WP_CORE_LATEST_RELEASE' ) ? get_english_release_date( WP_CORE_LATEST_RELEASE ) : null ) ?? time() );
 
 		return esc_html( gmdate( $format, $timestamp ) );
 	}
