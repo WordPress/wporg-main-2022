@@ -33,7 +33,7 @@ _e( "We take the security of the WordPress project and the ecosystem seriously. 
 
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
-<li><?php _e( 'For plugin vulnerabilities, <a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-security/reporting-plugin-security-issues/">report it to the plugin developer and the plugins team</a>.', 'wporg' ); ?></li>
+<li><?php _e( 'For plugin vulnerabilities, <a href="https://developer.wordpress.org/plugins/wordpress-org/reporting-plugin-security-issues/">report it to the plugin developer and the plugins team</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -88,7 +88,7 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><?php _e( '<a href="https://developer.wordpress.org/plugins/wordpress-org/plugin-security/">Find out more about how to address security issues in your plugin.</a>', 'wporg' ); ?></p>
+<p><?php _e( '<a href="https://developer.wordpress.org/plugins/wordpress-org/reporting-plugin-security-issues/">Find out more about how to address security issues in your plugin.</a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
