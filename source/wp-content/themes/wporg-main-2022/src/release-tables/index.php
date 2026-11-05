@@ -42,19 +42,35 @@ function render( $attributes, $content, $block ) {
 		wp_script_add_data( $block->block_type->view_script, 'group', 1 );
 	}
 
+	$english_latest = null;
 	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK ) {
-		$releases = $GLOBALS['rosetta']->rosetta->get_releases_breakdown();
+		$releases       = $GLOBALS['rosetta']->rosetta->get_releases_breakdown();
+		$english_latest = get_newer_english_release( $releases['latest'] ?? null );
 	} else {
 		$releases = \WordPressdotorg\Releases\get_breakdown();
 	}
 
-	if ( empty( $releases ) ) {
+	if ( empty( $releases ) && ! $english_latest ) {
 		return '';
 	}
 
 	$block_content = '';
 
-	if ( isset( $releases['latest'] ) ) {
+	if ( $english_latest ) {
+		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
+		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
+		$block_content .= '<!-- wp:paragraph --><p>';
+		$block_content .= esc_html(
+			sprintf(
+				/* translators: Version number. */
+				__( 'WordPress %s is not available in your language yet. This download is in English.', 'wporg' ),
+				$english_latest['version']
+			)
+		);
+		$block_content .= '</p><!-- /wp:paragraph -->';
+		$block_content .= render_table( array( $english_latest ) );
+		$block_content .= '</div>';
+	} elseif ( isset( $releases['latest'] ) ) {
 		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
 		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
 		$block_content .= render_table( array( $releases['latest'] ) );
@@ -144,6 +160,31 @@ function render( $attributes, $content, $block ) {
 		'<div %1$s>%2$s</div>',
 		$wrapper_attributes,
 		do_blocks( $block_content )
+	);
+}
+
+/**
+ * Get the English latest release, if the locale hasn't built it yet.
+ *
+ * @param array|null $locale_latest The locale's latest release, if it has one.
+ *
+ * @return array|null The English release in the format of a locale release, or null if the locale is up to date.
+ */
+function get_newer_english_release( $locale_latest ) {
+	if ( ! defined( 'WP_CORE_LATEST_RELEASE' ) ) {
+		return null;
+	}
+
+	$version = WP_CORE_LATEST_RELEASE;
+	if ( $locale_latest && version_compare( $locale_latest['version'], $version, '>=' ) ) {
+		return null;
+	}
+
+	return array(
+		'version'   => $version,
+		'builton'   => defined( 'WPORG_WP_RELEASES_PATH' ) ? filemtime( WPORG_WP_RELEASES_PATH . "wordpress-{$version}.zip" ) : time(),
+		'zip_url'   => "https://wordpress.org/wordpress-{$version}.zip",
+		'targz_url' => "https://wordpress.org/wordpress-{$version}.tar.gz",
 	);
 }
 
