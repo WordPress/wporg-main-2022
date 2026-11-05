@@ -97,8 +97,11 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
  */
 function get_pattern_header( string $title, string $slug, string $description = '' ): string {
 	// One line inside the docblock; unlike removing `*/`, splitting it can't form a new one.
-	list( $title, $description ) = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), array( $title, trim( $description ) ) );
-	$description                 = '' === $description ? '' : "\n * Description: {$description}";
+	$title = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), $title );
+
+	// Whitespace collapsed as in the translation strings the i18n workflow extracts, so the theme finds the translation.
+	$description = str_replace( '*/', '* /', trim( preg_replace( '/\s+/', ' ', $description ) ) );
+	$description = '' === $description ? '' : "\n * Description: {$description}";
 
 	return <<<EOF
 <?php

@@ -76,8 +76,8 @@ add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags'
 /**
  * Get the description of the pattern that renders the current page, translated.
  *
- * The content sync writes the page's meta description into its pattern header, which WordPress translates when it
- * registers the pattern. Locale sites' copies of a page don't carry the description themselves.
+ * The content sync writes the page's meta description into its pattern header, since locale sites' copies of a page
+ * don't carry it. Like page titles, it's translated from the strings the i18n workflow extracts from the page.
  *
  * @return string The description, or an empty string if the page's template has no pattern with one.
  */
@@ -98,7 +98,7 @@ function get_page_pattern_description() {
 			$pattern = $registry->get_registered( $block['attrs']['slug'] );
 
 			if ( ! empty( $pattern['description'] ) ) {
-				return $pattern['description'];
+				return translate( $pattern['description'], 'wporg' ); // phpcs:ignore WordPress.WP.I18n -- Extracted by the i18n workflow.
 			}
 		}
 
