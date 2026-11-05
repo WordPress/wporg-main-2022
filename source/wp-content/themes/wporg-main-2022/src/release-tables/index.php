@@ -62,17 +62,6 @@ function render( $attributes, $content, $block ) {
 	if ( $latest ) {
 		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
 		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
-		if ( $english_latest ) {
-			$block_content .= '<!-- wp:paragraph --><p>';
-			$block_content .= esc_html(
-				sprintf(
-					/* translators: Version number. */
-					__( 'WordPress %s is not available in this language. The download is in English.', 'wporg' ),
-					$english_latest['version']
-				)
-			);
-			$block_content .= '</p><!-- /wp:paragraph -->';
-		}
 		$block_content .= render_table( array( $latest ) );
 		$block_content .= '</div>';
 	}
