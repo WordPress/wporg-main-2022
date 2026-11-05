@@ -8,6 +8,8 @@
 
 namespace WordPressdotorg\Theme\Main_2022\Release_Tables_Block;
 
+use function WordPressdotorg\Theme\Main_2022\get_newer_english_release;
+
 add_action( 'init', __NAMESPACE__ . '\init' );
 
 /**
@@ -42,23 +44,38 @@ function render( $attributes, $content, $block ) {
 		wp_script_add_data( $block->block_type->view_script, 'group', 1 );
 	}
 
+	$english_latest = null;
 	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK ) {
-		$releases = $GLOBALS['rosetta']->rosetta->get_releases_breakdown();
+		$releases       = $GLOBALS['rosetta']->rosetta->get_releases_breakdown();
+		$english_latest = get_newer_english_release( $releases['latest'] ?? null );
 	} else {
 		$releases = \WordPressdotorg\Releases\get_breakdown();
 	}
 
-	if ( empty( $releases ) ) {
+	if ( empty( $releases ) && ! $english_latest ) {
 		return '';
 	}
 
 	$block_content = '';
 
-	if ( isset( $releases['latest'] ) ) {
+	$latest = $english_latest ?? $releases['latest'] ?? null;
+	if ( $latest ) {
 		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
 		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
-		$block_content .= render_table( array( $releases['latest'] ) );
+		$block_content .= render_table( array( $latest ) );
 		$block_content .= '</div>';
+	}
+
+	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK && ! empty( $releases['branches'] ) ) {
+		$block_content .= '<!-- wp:paragraph --><p>';
+		$block_content .= wp_kses_post(
+			sprintf(
+				/* translators: URL to the list of all WordPress releases. */
+				__( 'These are the releases built in this language. See <a href="%s">all WordPress releases</a> on WordPress.org.', 'wporg' ),
+				'https://wordpress.org/download/releases/'
+			)
+		);
+		$block_content .= '</p><!-- /wp:paragraph -->';
 	}
 
 	if ( isset( $releases['branches'] ) ) {
@@ -235,6 +252,7 @@ function find_microsite_url_for_version( $version ) {
 function render_table_row( $version ) {
 	$version_number = $version['version'];
 	$microsite_url  = find_microsite_url_for_version( $version_number );
+	$language       = empty( $version['english'] ) ? '' : ' (' . esc_html__( 'English', 'wporg' ) . ')';
 
 	$row  = '<tr>';
 	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">';
@@ -246,12 +264,12 @@ function render_table_row( $version ) {
 		)
 		: esc_html( $version_number );
 	$row .= '</th>';
-	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
-	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
+	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . ( $version['builton'] ? esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) : '' ) . '</td>';
+	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip%2$s</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ), $language );
 
 	// Some releases don't have tar.gz builds.
 	if ( $version['targz_url'] ) {
-		$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-targz"><a href="%1$s">tar.gz</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ) );
+		$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-targz"><a href="%1$s">tar.gz%2$s</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['targz_url'] ), $language );
 	} else {
 		$row .= '<td class="wp-block-wporg-release-tables__cell-targz"></td>';
 	}
