@@ -61,7 +61,7 @@ function custom_open_graph_tags( $tags = array() ) {
 	unset( $tags['article:published_time'], $tags['article:modified_time'] );
 
 	$title = get_the_title();
-	$desc  = get_the_excerpt();
+	$desc  = get_page_pattern_description() ?: get_the_excerpt();
 
 	$tags['og:title']            = $title;
 	$tags['twitter:text:title']  = $title;
@@ -72,6 +72,42 @@ function custom_open_graph_tags( $tags = array() ) {
 	return $tags;
 }
 add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags', 11 );
+
+/**
+ * Get the description of the pattern that renders the current page, translated.
+ *
+ * The content sync writes the page's meta description into its pattern header, which WordPress translates when it
+ * registers the pattern. Locale sites' copies of a page don't carry the description themselves.
+ *
+ * @return string The description, or an empty string if the page's template has no pattern with one.
+ */
+function get_page_pattern_description() {
+	global $_wp_current_template_content;
+
+	if ( empty( $_wp_current_template_content ) ) {
+		return '';
+	}
+
+	$registry = \WP_Block_Patterns_Registry::get_instance();
+	$blocks   = parse_blocks( $_wp_current_template_content );
+
+	while ( $blocks ) {
+		$block = array_shift( $blocks );
+
+		if ( 'core/pattern' === $block['blockName'] && ! empty( $block['attrs']['slug'] ) ) {
+			$pattern = $registry->get_registered( $block['attrs']['slug'] );
+
+			if ( ! empty( $pattern['description'] ) ) {
+				return $pattern['description'];
+			}
+		}
+
+		array_push( $blocks, ...$block['innerBlocks'] );
+	}
+
+	return '';
+}
+
 // Enable Jetpack opengraph by default
 add_filter( 'jetpack_enable_open_graph', '__return_true' );
 

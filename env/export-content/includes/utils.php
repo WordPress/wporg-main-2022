@@ -75,7 +75,7 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 		$content = add_page_title( $content, $post->title->rendered );
 	}
 
-	$code = get_pattern_header( $post->title->rendered, $post->slug ) . replace_with_i18n( $content ) . "\n";
+	$code = get_pattern_header( $post->title->rendered, $post->slug, $post->meta->advanced_seo_description ?? '' ) . replace_with_i18n( $content ) . "\n";
 	validate_pattern_code( $code );
 
 	$bytes = file_put_contents( $output_path, $code );
@@ -90,19 +90,21 @@ function generate_pattern( $url, $output_path, $add_title = null, $slug = '' ) {
 /**
  * Build the docblock header of a pattern file.
  *
- * @param string $title Pattern title.
- * @param string $slug  Page slug.
+ * @param string $title       Pattern title.
+ * @param string $slug        Page slug.
+ * @param string $description Optional. The page's meta description, which the theme uses translated.
  * @return string PHP header.
  */
-function get_pattern_header( string $title, string $slug ): string {
+function get_pattern_header( string $title, string $slug, string $description = '' ): string {
 	// One line inside the docblock; unlike removing `*/`, splitting it can't form a new one.
-	$title = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), $title );
+	list( $title, $description ) = str_replace( array( '*/', "\r", "\n" ), array( '* /', ' ', ' ' ), array( $title, trim( $description ) ) );
+	$description                 = '' === $description ? '' : "\n * Description: {$description}";
 
 	return <<<EOF
 <?php
 /**
  * Title: {$title}
- * Slug: wporg-main-2022/{$slug}
+ * Slug: wporg-main-2022/{$slug}{$description}
  * Inserter: no
  */
 

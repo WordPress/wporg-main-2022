@@ -176,6 +176,46 @@ class Pattern_Code_Test extends WP_UnitTestCase {
 	}
 
 	/**
+	 * Data provider for page meta descriptions, and the pattern description WordPress reads from the header.
+	 *
+	 * @return array
+	 */
+	public function data_header_descriptions(): array {
+		return array(
+			'plain'                   => array( 'Download WordPress today.', 'Download WordPress today.' ),
+			'line break, comment end' => array( "First */ line\nSecond line ", 'First * / line Second line' ),
+			'none'                    => array( '', '' ),
+		);
+	}
+
+	/**
+	 * Test that WordPress reads the page's meta description as the pattern description, without breaking the docblock.
+	 *
+	 * @dataProvider data_header_descriptions
+	 *
+	 * @param string $description Page meta description.
+	 * @param string $expected    Description WordPress reads from the header.
+	 */
+	public function test_header_description_is_read_by_wordpress( string $description, string $expected ): void {
+		$header = get_pattern_header( 'Download', 'download', $description );
+		$file   = wp_tempnam( 'pattern' );
+		file_put_contents( $file, $header ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
+
+		$data = get_file_data(
+			$file,
+			array(
+				'description' => 'Description',
+				'slug'        => 'Slug',
+			)
+		);
+		wp_delete_file( $file );
+
+		$this->assertSame( $expected, $data['description'] );
+		$this->assertSame( 'wporg-main-2022/download', $data['slug'] );
+		validate_pattern_code( $header );
+	}
+
+	/**
 	 * Data provider for content with markup that looks like PHP, and how it is written to the pattern.
 	 *
 	 * @return array

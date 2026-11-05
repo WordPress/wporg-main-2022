@@ -191,6 +191,8 @@ To add or update a page using the new redesign, you need someone with at least �
 
 Ask someone with at least "editor" access to create a new page. Write your content, you can upload media and use blocks like any other site. Use the “Preview in new tab” to see your changes. Make sure the page has a title, then publish it.
 
+Fill in the page's SEO description in the Jetpack sidebar. The sync writes it into the page's pattern, and search results and link previews show it, translated, on every locale site. Without one, they show the start of the page's English text.
+
 2. Review the pull request
 
 The [Sync page content](https://github.com/WordPress/wporg-main-2022/actions/workflows/content-update.yml) action runs hourly, and picks up every published page that isn't in `./env/page-manifest.json` yet (pages the theme switcher keeps on the old theme are skipped). It adds the page to the manifest, generates its pattern and page template, and opens (or updates) the "Content updates from Page Editor" pull request with a screenshot of the page. To get it sooner, run the action manually from `trunk`.
