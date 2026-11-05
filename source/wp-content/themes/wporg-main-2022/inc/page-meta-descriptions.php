@@ -33,7 +33,10 @@ function custom_open_graph_tags( $tags = array() ) {
 
 	// Override the Front-page tags.
 	if ( is_front_page() ) {
-		$desc = ! empty( $post->post_excerpt ) ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
+		$desc = get_page_pattern_description();
+		if ( ! $desc ) {
+			$desc = ! empty( $post->post_excerpt ) ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
+		}
 		return array(
 			'og:type'         => 'website',
 			'og:title'        => __( 'Blog Tool, Publishing Platform, and CMS', 'wporg' ) . " - {$site_title}",
@@ -61,7 +64,7 @@ function custom_open_graph_tags( $tags = array() ) {
 	unset( $tags['article:published_time'], $tags['article:modified_time'] );
 
 	$title = get_the_title();
-	$desc  = get_the_excerpt();
+	$desc  = get_page_pattern_description() ?: get_the_excerpt();
 
 	$tags['og:title']            = $title;
 	$tags['twitter:text:title']  = $title;
@@ -72,6 +75,54 @@ function custom_open_graph_tags( $tags = array() ) {
 	return $tags;
 }
 add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags', 11 );
+
+/**
+ * Get the description of the pattern that renders the current page, translated.
+ *
+ * The content sync writes the page's meta description into its pattern header, since locale sites' copies of a page
+ * don't carry it. Like page titles, it's translated from the strings the i18n workflow extracts from the page.
+ *
+ * @return string The description, or an empty string if the page's template has no pattern with one in its main element.
+ */
+function get_page_pattern_description() {
+	global $_wp_current_template_content;
+	static $descriptions = array();
+
+	if ( empty( $_wp_current_template_content ) ) {
+		return '';
+	}
+
+	if ( isset( $descriptions[ $_wp_current_template_content ] ) ) {
+		return $descriptions[ $_wp_current_template_content ];
+	}
+
+	// The page's pattern is in the template's main element, other patterns like the navigation are outside it.
+	$blocks = parse_blocks( $_wp_current_template_content );
+	$main   = null;
+	while ( $blocks && ! $main ) {
+		$block = array_shift( $blocks );
+		if ( 'core/group' === $block['blockName'] && 'main' === ( $block['attrs']['tagName'] ?? '' ) ) {
+			$main = $block;
+		}
+		array_push( $blocks, ...$block['innerBlocks'] );
+	}
+
+	$description = '';
+	$blocks      = $main ? $main['innerBlocks'] : array();
+	while ( $blocks && ! $description ) {
+		$block = array_shift( $blocks );
+		if ( 'core/pattern' === $block['blockName'] && ! empty( $block['attrs']['slug'] ) ) {
+			$pattern     = \WP_Block_Patterns_Registry::get_instance()->get_registered( $block['attrs']['slug'] );
+			$description = empty( $pattern['description'] ) ? '' : translate( $pattern['description'], 'wporg' ); // phpcs:ignore WordPress.WP.I18n -- Extracted by the i18n workflow.
+		}
+		array_push( $blocks, ...$block['innerBlocks'] );
+	}
+
+	$descriptions[ $_wp_current_template_content ] = $description;
+
+	return $description;
+}
+
 // Enable Jetpack opengraph by default
 add_filter( 'jetpack_enable_open_graph', '__return_true' );
 

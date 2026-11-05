@@ -28,11 +28,12 @@ jobs:
         uses: WordPress/wporg-repo-tools/.github/actions/i18n@trunk
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          args: --no_taxonomies --post_types=page --url=https://wordpress.org/wp-json/wp/v2/ --textdomain=wporg
+          args: --no_taxonomies --post_types=page --post_meta=advanced_seo_description --url=https://wordpress.org/wp-json/wp/v2/ --textdomain=wporg
 
       - name: Remove the translation context
         run: |
           sed -i "s/, 'page title'//" extra/translation-strings.php
+          sed -i "s/, 'page advanced_seo_description'//" extra/translation-strings.php
           sed -i "s/_x(/__(/" extra/translation-strings.php
 
       - name: Commit and push
