@@ -56,24 +56,22 @@ function render( $attributes, $content, $block ) {
 
 	$block_content = '';
 
-	if ( $english_latest ) {
+	$latest = $english_latest ?? $releases['latest'] ?? null;
+	if ( $latest ) {
 		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
 		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
-		$block_content .= '<!-- wp:paragraph --><p>';
-		$block_content .= esc_html(
-			sprintf(
-				/* translators: Version number. */
-				__( 'WordPress %s is not available in your language yet. This download is in English.', 'wporg' ),
-				$english_latest['version']
-			)
-		);
-		$block_content .= '</p><!-- /wp:paragraph -->';
-		$block_content .= render_table( array( $english_latest ) );
-		$block_content .= '</div>';
-	} elseif ( isset( $releases['latest'] ) ) {
-		$block_content .= '<div class="wp-block-wporg-release-tables__section" id="latest">';
-		$block_content .= render_heading( __( 'Latest release', 'wporg' ) );
-		$block_content .= render_table( array( $releases['latest'] ) );
+		if ( $english_latest ) {
+			$block_content .= '<!-- wp:paragraph --><p>';
+			$block_content .= esc_html(
+				sprintf(
+					/* translators: Version number. */
+					__( 'WordPress %s is not available in your language yet. This download is in English.', 'wporg' ),
+					$english_latest['version']
+				)
+			);
+			$block_content .= '</p><!-- /wp:paragraph -->';
+		}
+		$block_content .= render_table( array( $latest ) );
 		$block_content .= '</div>';
 	}
 
@@ -164,25 +162,29 @@ function render( $attributes, $content, $block ) {
 }
 
 /**
- * Get the English latest release, if the locale hasn't built it yet.
+ * Get the English latest release, if the locale hasn't built the current branch.
+ *
+ * Point releases aren't compared, so a locale doesn't switch to English in the hours before it builds one.
  *
  * @param array|null $locale_latest The locale's latest release, if it has one.
  *
- * @return array|null The English release in the format of a locale release, or null if the locale is up to date.
+ * @return array|null The English release in the format of a locale release, or null if the locale has the current branch.
  */
 function get_newer_english_release( $locale_latest ) {
-	if ( ! defined( 'WP_CORE_LATEST_RELEASE' ) ) {
+	if ( ! defined( 'WP_CORE_LATEST_RELEASE' ) || ! defined( 'WP_CORE_STABLE_BRANCH' ) ) {
+		return null;
+	}
+
+	if ( $locale_latest && preg_match( '/^\d+\.\d+/', $locale_latest['version'], $branch ) && version_compare( $branch[0], WP_CORE_STABLE_BRANCH, '>=' ) ) {
 		return null;
 	}
 
 	$version = WP_CORE_LATEST_RELEASE;
-	if ( $locale_latest && version_compare( $locale_latest['version'], $version, '>=' ) ) {
-		return null;
-	}
+	$zip     = defined( 'WPORG_WP_RELEASES_PATH' ) ? WPORG_WP_RELEASES_PATH . "wordpress-{$version}.zip" : '';
 
 	return array(
 		'version'   => $version,
-		'builton'   => defined( 'WPORG_WP_RELEASES_PATH' ) ? filemtime( WPORG_WP_RELEASES_PATH . "wordpress-{$version}.zip" ) : time(),
+		'builton'   => $zip && file_exists( $zip ) ? filemtime( $zip ) : null,
 		'zip_url'   => "https://wordpress.org/wordpress-{$version}.zip",
 		'targz_url' => "https://wordpress.org/wordpress-{$version}.tar.gz",
 	);
@@ -287,7 +289,7 @@ function render_table_row( $version ) {
 		)
 		: esc_html( $version_number );
 	$row .= '</th>';
-	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) . '</td>';
+	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . ( $version['builton'] ? esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) : '' ) . '</td>';
 	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ) );
 
 	// Some releases don't have tar.gz builds.
