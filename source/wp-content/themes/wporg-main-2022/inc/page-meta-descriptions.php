@@ -79,33 +79,45 @@ add_filter( 'jetpack_open_graph_tags', __NAMESPACE__ . '\custom_open_graph_tags'
  * The content sync writes the page's meta description into its pattern header, since locale sites' copies of a page
  * don't carry it. Like page titles, it's translated from the strings the i18n workflow extracts from the page.
  *
- * @return string The description, or an empty string if the page's template has no pattern with one.
+ * @return string The description, or an empty string if the page's template has no pattern with one in its main element.
  */
 function get_page_pattern_description() {
 	global $_wp_current_template_content;
+	static $descriptions = array();
 
 	if ( empty( $_wp_current_template_content ) ) {
 		return '';
 	}
 
-	$registry = \WP_Block_Patterns_Registry::get_instance();
-	$blocks   = parse_blocks( $_wp_current_template_content );
+	if ( isset( $descriptions[ $_wp_current_template_content ] ) ) {
+		return $descriptions[ $_wp_current_template_content ];
+	}
 
-	while ( $blocks ) {
+	// The page's pattern is in the template's main element, other patterns like the navigation are outside it.
+	$blocks = parse_blocks( $_wp_current_template_content );
+	$main   = null;
+	while ( $blocks && ! $main ) {
 		$block = array_shift( $blocks );
-
-		if ( 'core/pattern' === $block['blockName'] && ! empty( $block['attrs']['slug'] ) ) {
-			$pattern = $registry->get_registered( $block['attrs']['slug'] );
-
-			if ( ! empty( $pattern['description'] ) ) {
-				return translate( $pattern['description'], 'wporg' ); // phpcs:ignore WordPress.WP.I18n -- Extracted by the i18n workflow.
-			}
+		if ( 'core/group' === $block['blockName'] && 'main' === ( $block['attrs']['tagName'] ?? '' ) ) {
+			$main = $block;
 		}
-
 		array_push( $blocks, ...$block['innerBlocks'] );
 	}
 
-	return '';
+	$description = '';
+	$blocks      = $main ? $main['innerBlocks'] : array();
+	while ( $blocks && ! $description ) {
+		$block = array_shift( $blocks );
+		if ( 'core/pattern' === $block['blockName'] && ! empty( $block['attrs']['slug'] ) ) {
+			$pattern     = \WP_Block_Patterns_Registry::get_instance()->get_registered( $block['attrs']['slug'] );
+			$description = empty( $pattern['description'] ) ? '' : translate( $pattern['description'], 'wporg' ); // phpcs:ignore WordPress.WP.I18n -- Extracted by the i18n workflow.
+		}
+		array_push( $blocks, ...$block['innerBlocks'] );
+	}
+
+	$descriptions[ $_wp_current_template_content ] = $description;
+
+	return $description;
 }
 
 // Enable Jetpack opengraph by default

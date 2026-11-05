@@ -28,14 +28,15 @@ class Page_Meta_Descriptions_Test extends WP_UnitTestCase {
 	}
 
 	/**
-	 * Test that the description comes from the page's pattern, nested in the template, not the navigation before it.
+	 * Test that the description comes from the page's pattern in the main element, not the navigation pattern before it.
 	 */
 	public function test_description_comes_from_the_page_pattern(): void {
 		register_block_pattern(
 			'test/nav',
 			array(
-				'title'   => 'Navigation',
-				'content' => '',
+				'title'       => 'Navigation',
+				'description' => 'Navigation description.',
+				'content'     => '',
 			)
 		);
 		register_block_pattern(
