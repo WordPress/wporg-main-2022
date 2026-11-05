@@ -33,7 +33,10 @@ function custom_open_graph_tags( $tags = array() ) {
 
 	// Override the Front-page tags.
 	if ( is_front_page() ) {
-		$desc = ! empty( $post->post_excerpt ) ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
+		$desc = get_page_pattern_description();
+		if ( ! $desc ) {
+			$desc = ! empty( $post->post_excerpt ) ? get_the_excerpt() : __( 'Open source software which you can use to easily create a beautiful website, blog, or app.', 'wporg' );
+		}
 		return array(
 			'og:type'         => 'website',
 			'og:title'        => __( 'Blog Tool, Publishing Platform, and CMS', 'wporg' ) . " - {$site_title}",
