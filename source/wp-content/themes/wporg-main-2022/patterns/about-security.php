@@ -32,7 +32,7 @@ _e( "We take the security of the WordPress project and the ecosystem seriously. 
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+<ul class="wp-block-list"><!-- wp:list-item -->
 <li><?php _e( 'For plugin vulnerabilities, <a href="https://developer.wordpress.org/plugins/wordpress-org/reporting-plugin-security-issues/">report it to the plugin developer and the plugins team</a>.', 'wporg' ); ?></li>
 <!-- /wp:list-item -->
 
@@ -113,15 +113,15 @@ _e( 'The WordPress project is committed to providing a stable, secure, trusted p
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"100%","layout":{"type":"default"}} -->
-<div class="wp-block-column" style="flex-basis:100%"><!-- wp:heading {"textAlign":"left"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:heading {"style":{"typography":{"textAlign":"left"}}} -->
 <h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Web Hosts', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left"} -->
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"left"}}} -->
 <p class="has-text-align-left"><?php _e( 'The <a href="https://developer.wordpress.org/advanced-administration/security/">Security guide in the Advanced Administration handbook</a> contains key information on how to secure your hosting environment.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"left"} -->
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"left"}}} -->
 <p class="has-text-align-left"><?php _e( 'We also strongly recommend <a href="https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html#receiving-vulnerability-reports">publishing a responsible disclosure policy</a> of your own.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
