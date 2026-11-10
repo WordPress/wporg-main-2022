@@ -51,7 +51,7 @@ add_shortcode(
 add_shortcode(
 	'recommended_mysql',
 	function () {
-		return '8.0';
+		return '8.4';
 	}
 );
 
