@@ -14,6 +14,11 @@ function hreflang_link_attributes() {
 		return;
 	}
 
+	// Each locale writes its own blog, so its posts and archives have no copies on other locales.
+	if ( is_singular( 'post' ) || ( is_home() && ! is_front_page() ) || is_category() || is_tag() || is_date() || is_author() ) {
+		return;
+	}
+
 	if ( ! defined( 'GLOTPRESS_LOCALES_PATH' ) && 'local' !== wp_get_environment_type() ) {
 		return;
 	}
