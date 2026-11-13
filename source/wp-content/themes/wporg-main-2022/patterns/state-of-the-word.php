@@ -7,14 +7,14 @@
 
 ?>
 <!-- wp:cover {"url":"https://wordpress.org/files/2025/10/Main-Banner-_-temporary-1.png","id":48127,"dimRatio":0,"isUserOverlayColor":true,"minHeight":430,"minHeightUnit":"px","sizeSlug":"full","metadata":{"blockVisibility":false},"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="min-height:430px"><img class="wp-block-cover__image-background wp-image-48127 size-full" alt="" src="https://wordpress.org/files/2025/10/Main-Banner-_-temporary-1.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":48121,"width":"300px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2025/10/logo-outline.png" alt="" class="wp-image-48121" style="width:300px;height:auto" /></figure>
+<div class="wp-block-cover alignfull" style="min-height:430px"><img alt="" class="wp-block-cover__image-background wp-image-48127 size-full" data-object-fit="cover" src="https://wordpress.org/files/2025/10/Main-Banner-_-temporary-1.png"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":48121,"width":"300px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img alt="" class="wp-image-48121" src="https://wordpress.org/files/2025/10/logo-outline.png" style="width:300px;height:auto"></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
 
 <!-- wp:cover {"url":"https://wordpress.org/files/2026/08/sotw-2026-hero-image-2-scaled.png","id":53011,"dimRatio":50,"customOverlayColor":"#010104","isUserOverlayColor":false,"minHeight":220,"minHeightUnit":"px","sizeSlug":"full","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="min-height:220px"><img class="wp-block-cover__image-background wp-image-53011 size-full" alt="" src="https://wordpress.org/files/2026/08/sotw-2026-hero-image-2-scaled.png" data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#010104"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":53012,"width":"140px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.org/files/2026/08/WordPress-Logo.png" alt="" class="wp-image-53012" style="width:140px;height:auto" /></figure>
+<div class="wp-block-cover alignfull" style="min-height:220px"><img alt="" class="wp-block-cover__image-background wp-image-53011 size-full" data-object-fit="cover" src="https://wordpress.org/files/2026/08/sotw-2026-hero-image-2-scaled.png"><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#010104"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":53012,"width":"140px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img alt="" class="wp-image-53012" src="https://wordpress.org/files/2026/08/WordPress-Logo.png" style="width:140px;height:auto"></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
 
@@ -31,7 +31,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Details"},"style":{"border":{"width":"0px","style":"none"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Details"},"style":{"border":{"width":"0px","style":"none"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group has-eb-garamond-font-family" style="border-style:none;border-width:0px"><!-- wp:heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"width":"0px","style":"none"}}},"fontFamily":"eb-garamond"} -->
 <h2 class="wp-block-heading has-eb-garamond-font-family" style="border-top-style:none;border-top-width:0px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'State of the Word 2026', 'wporg' ); ?></h2>
 <!-- /wp:heading -->
@@ -72,7 +72,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}}} -->
+<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}},"blockVisibility":{"hideBlock":true}} -->
 <div class="wp-block-columns is-not-stacked-on-mobile" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"80px"} -->
 <div class="wp-block-column" style="flex-basis:80px"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
 <p style="margin-top:8px;margin-bottom:8px"><strong><?php esc_html_e( 'Where', 'wporg' ); ?></strong></p>
@@ -95,10 +95,10 @@
 
 <!-- wp:column {"width":""} -->
 <div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"8px"}}}} -->
-<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the <a href="https://www.youtube.com/wordpress">WordPress YouTube channel</a> or be part of a local watch party. Limited in-person tickets will be available by request.', 'wporg' ); ?></p>
+<p style="margin-top:8px;margin-bottom:8px"><?php _e( 'Watch the live stream on the <a href="https://www.youtube.com/wordpress">WordPress YouTube channel</a> or be part of a local <a href="#watch-parties">watch party</a>.', 'wporg' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","openInNewTab":true,"className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}}} -->
+<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","openInNewTab":true,"className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0px"}}},"blockVisibility":{"hideBlock":true}} -->
 <ul class="wp-block-social-links has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:0px"><!-- wp:social-link {"url":"https://www.youtube.com/wordpress","service":"youtube"} /-->
 
 <!-- wp:social-link {"url":"https://twitter.com/WordPress","service":"x"} /-->
@@ -115,7 +115,7 @@
 <!-- /wp:social-links -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--10)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -135,7 +135,7 @@
 <!-- wp:jetpack/subscriptions /-->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--10)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -145,7 +145,7 @@
 
 <!-- wp:group {"metadata":{"name":"Gallery"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:jetpack/tiled-gallery {"columns":3,"columnWidths":[["66.76647","33.23353"],["17.37286","25.97500","30.71484","25.93729"]],"ids":[48161,48160,48163,48159,52968,52967,52969]} -->
-<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class=""><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:66.76647%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48161" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-202835-8841-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:33.23353%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48160" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-142237-0135-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48163" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-163201-7815-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:17.37286%"><figure class="tiled-gallery__item"><img alt="" data-height="1334" data-id="48159" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193131-0170_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:25.97500%"><figure class="tiled-gallery__item"><img alt="" data-height="682" data-id="52968" data-link="https://wordpress.org/state-of-the-word/image-2023-12-11-13_35_53-1024x682/" data-url="https://wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:30.71484%"><figure class="tiled-gallery__item"><img alt="" data-height="576" data-id="52967" data-link="https://wordpress.org/state-of-the-word/release-leads-1024x576/" data-url="https://wordpress.org/files/2026/08/release-leads-1024x576-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/release-leads-1024x576-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div><div class="tiled-gallery__col" style="flex-basis:25.93729%"><figure class="tiled-gallery__item"><img alt="" data-height="683" data-id="52969" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193636-0177_web2k-1024x683/" data-url="https://wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg?ssl=1" data-amp-layout="responsive" /></figure></div></div></div></div></div>
+<div class="wp-block-jetpack-tiled-gallery aligncenter is-style-rectangular"><div class=""><div class="tiled-gallery__gallery"><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:66.76647%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="1334" data-id="48161" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-202835-8841-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-202835-8841-_web2k-1024x683.jpg?ssl=1"></figure></div><div class="tiled-gallery__col" style="flex-basis:33.23353%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="1334" data-id="48160" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-142237-0135-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-142237-0135-_web2k-1024x683.jpg?ssl=1"></figure><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="1334" data-id="48163" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-163201-7815-_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-163201-7815-_web2k-1024x683.jpg?ssl=1"></figure></div></div><div class="tiled-gallery__row"><div class="tiled-gallery__col" style="flex-basis:17.37286%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="1334" data-id="48159" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193131-0170_web2k/" data-url="https://wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg" data-width="2000" src="https://i0.wp.com/wordpress.org/files/2025/10/20241216-Automattic-193131-0170_web2k-1024x683.jpg?ssl=1"></figure></div><div class="tiled-gallery__col" style="flex-basis:25.97500%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="682" data-id="52968" data-link="https://wordpress.org/state-of-the-word/image-2023-12-11-13_35_53-1024x682/" data-url="https://wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/IMAGE-2023-12-11-13_35_53-1024x682-1.jpg?ssl=1"></figure></div><div class="tiled-gallery__col" style="flex-basis:30.71484%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="576" data-id="52967" data-link="https://wordpress.org/state-of-the-word/release-leads-1024x576/" data-url="https://wordpress.org/files/2026/08/release-leads-1024x576-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/release-leads-1024x576-1.jpg?ssl=1"></figure></div><div class="tiled-gallery__col" style="flex-basis:25.93729%"><figure class="tiled-gallery__item"><img alt="" data-amp-layout="responsive" data-height="683" data-id="52969" data-link="https://wordpress.org/state-of-the-word/20241216-automattic-193636-0177_web2k-1024x683/" data-url="https://wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg" data-width="1024" src="https://i0.wp.com/wordpress.org/files/2026/08/20241216-Automattic-193636-0177_web2k-1024x683-1.jpg?ssl=1"></figure></div></div></div></div></div>
 <!-- /wp:jetpack/tiled-gallery -->
 
 <!-- wp:paragraph {"className":"is-style-default","style":{"typography":{"textAlign":"center"}},"fontSize":"normal","fontFamily":"eb-garamond"} -->
@@ -186,7 +186,7 @@
 <!-- wp:cover {"dimRatio":0,"isUserOverlayColor":true,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"sizeSlug":"full","metadata":{"name":"Quote"},"align":"full","style":{"color":{"duotone":"unset"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"blockGap":"var:preset|spacing|10"},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"},"width":"0px","style":"none"}}} -->
 <div class="wp-block-cover alignfull is-light" style="border-style:none;border-width:0px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|30"}}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family" style="margin-top:var(--wp--preset--spacing--90);margin-bottom:var(--wp--preset--spacing--30)"><!-- wp:image {"id":53038,"width":"60px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2026/08/quotemarks.png" alt="" class="wp-image-53038" style="width:60px;height:auto" /></figure>
+<figure class="wp-block-image size-full is-resized"><img alt="" class="wp-image-53038" src="https://wordpress.org/files/2026/08/quotemarks.png" style="width:60px;height:auto"></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"className":"is-style-serif","style":{"typography":{"fontSize":"68px","lineHeight":"1.1","fontStyle":"normal","fontWeight":"400"},"elements":{"link":{"color":{"text":"var:preset|color|deep-blueberry"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"textColor":"deep-blueberry"} -->
@@ -198,13 +198,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"60px"} -->
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:60px"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:group {"metadata":{"name":"Watch Parties"},"style":{"spacing":{"blockGap":"40px"}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Watch Parties"},"style":{"spacing":{"blockGap":"40px"}},"layout":{"type":"constrained"},"anchor":"watch-parties","blockVisibility":{"hideBlock":false}} -->
+<div class="wp-block-group" id="watch-parties"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family"><!-- wp:heading {"level":3,"fontFamily":"eb-garamond"} -->
 <h3 class="wp-block-heading has-eb-garamond-font-family"><?php esc_html_e( 'Join or host a State of the Word watch party', 'wporg' ); ?></h3>
 <!-- /wp:heading -->
@@ -240,7 +240,7 @@
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|10"} -->
-<div style="height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--10)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:buttons -->
@@ -278,7 +278,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"id":48171,"sizeSlug":"full","linkDestination":"none","metadata":{"name":"Divider"}} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/10/dots_a.png" alt="" class="wp-image-48171" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-48171" src="https://wordpress.org/files/2025/10/dots_a.png"></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"metadata":{"name":"Media"},"layout":{"type":"default"},"blockVisibility":{"hideBlock":true}} -->
@@ -310,7 +310,7 @@
 <!-- wp:group {"metadata":{"name":"Additional Information","blockVisibility":false},"style":{"spacing":{"blockGap":"40px"}},"layout":{"type":"constrained"},"blockVisibility":{"hideBlock":false}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontFamily":"eb-garamond","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-eb-garamond-font-family"><!-- wp:image {"id":48627,"width":"80px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="https://wordpress.org/files/2025/11/info_sotw.png" alt="" class="wp-image-48627" style="width:80px;height:auto" /></figure>
+<figure class="wp-block-image size-full is-resized"><img alt="" class="wp-image-48627" src="https://wordpress.org/files/2025/11/info_sotw.png" style="width:80px;height:auto"></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontFamily":"eb-garamond"} -->
@@ -406,7 +406,7 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <!-- /wp:embed -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50"} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -429,9 +429,9 @@ https://www.youtube.com/watch?v=OpiH_P9aGhQ
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|30"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--30)"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:spacer {"height":"var:preset|spacing|50"} -->
-<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:var(--wp--preset--spacing--50)"></div>
 <!-- /wp:spacer -->
