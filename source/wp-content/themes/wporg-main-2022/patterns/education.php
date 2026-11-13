@@ -21,7 +21,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"id":48859,"sizeSlug":"large","linkDestination":"none","align":"full","style":{"color":[]}} -->
-<figure class="wp-block-image alignfull size-large"><img src="https://wordpress.org/files/2025/12/education-header-1024x216.png" alt="" class="wp-image-48859" /></figure>
+<figure class="wp-block-image alignfull size-large"><img alt="" class="wp-image-48859" src="https://wordpress.org/files/2025/12/education-header-1024x216.png"></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}},"background":{"backgroundImage":{"url":"https://wordpress.org/files/2025/12/education-main-section.png","id":48865,"source":"file","title":"education-main-section"},"backgroundSize":"cover"}},"layout":{"type":"constrained"}} -->
@@ -45,8 +45,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"570px"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:570px"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"padding":{"right":"var:preset|spacing|70","left":"174px"}},"typography":{"textAlign":"left"}},"textColor":"light-grey-2","fontSize":"heading-2"} -->
-<p class="has-text-align-left has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--70);padding-left:174px"><?php _e( 'Learn.<br>Build.<br>Connect.', 'wporg' ); ?></p>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:570px"><!-- wp:paragraph {"className":"has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|light-grey-2"}}},"spacing":{"padding":{"right":"var:preset|spacing|40","left":"clamp(24px, 13.6vw, 174px)"}},"typography":{"textAlign":"left"}},"textColor":"light-grey-2","fontSize":"heading-2"} -->
+<p class="has-text-align-left has-light-grey-2-color has-text-color has-link-color has-eb-garamond-font-family has-heading-2-font-size" style="padding-right:var(--wp--preset--spacing--40);padding-left:clamp(24px, 13.6vw, 174px)"><?php _e( 'Learn.<br>Build.<br>Connect.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -67,16 +67,16 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":48860,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://wordpress.org/files/2025/12/education-col2.png" alt="" class="wp-image-48860" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-48860" src="https://wordpress.org/files/2025/12/education-col2.png"></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"0","right":"0"}},"dimensions":{"minHeight":"0px"}},"backgroundColor":"white","textColor":"charcoal-3","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="min-height:0px;padding-top:var(--wp--preset--spacing--70);padding-right:0;padding-bottom:var(--wp--preset--spacing--70);padding-left:0"><!-- wp:columns {"verticalAlignment":"top","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|edge-space","left":"0","right":"0"}}},"backgroundColor":"white","textColor":"charcoal-3"} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-top has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-right:0;padding-bottom:var(--wp--preset--spacing--edge-space);padding-left:0"><!-- wp:column {"verticalAlignment":"top"} -->
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}},"dimensions":{"minHeight":"0px"}},"backgroundColor":"white","textColor":"charcoal-3","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="min-height:0px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}},"spacing":{"padding":{"bottom":"var:preset|spacing|edge-space","left":"0","right":"0"}}},"backgroundColor":"white","textColor":"charcoal-3"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-top has-charcoal-3-color has-white-background-color has-text-color has-background has-link-color" style="padding-right:0;padding-bottom:var(--wp--preset--spacing--edge-space);padding-left:0"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-0"}}}},"textColor":"charcoal-0","fontSize":"heading-3"} -->
 <h2 class="wp-block-heading is-style-default has-charcoal-0-color has-text-color has-link-color has-heading-3-font-size"><?php esc_html_e( 'The Initiatives', 'wporg' ); ?></h2>
 <!-- /wp:heading --></div>
@@ -89,19 +89,19 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:group {"align":"full","className":"is-style-cards-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
-<div class="wp-block-group alignfull is-style-cards-grid" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:media-text {"mediaPosition":"right","mediaId":48862,"mediaLink":"https://wordpress.org/?attachment_id=48862","linkDestination":"custom","mediaType":"image","mediaWidth":45,"mediaSizeSlug":"full","verticalAlignment":"top","imageFill":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"layout":{"selfStretch":"fit","flexSize":null},"border":{"width":"1px","color":"#00000026","radius":{"topLeft":"2px","topRight":"2px","bottomLeft":"2px","bottomRight":"2px"}}}} -->
+<!-- wp:group {"align":"wide","className":"is-style-cards-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
+<div class="wp-block-group alignwide is-style-cards-grid" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:media-text {"mediaPosition":"right","mediaId":48862,"mediaLink":"https://wordpress.org/?attachment_id=48862","linkDestination":"custom","mediaType":"image","mediaWidth":45,"mediaSizeSlug":"full","verticalAlignment":"top","imageFill":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"layout":{"selfStretch":"fit","flexSize":null},"border":{"width":"1px","color":"#00000026","radius":{"topLeft":"2px","topRight":"2px","bottomLeft":"2px","bottomRight":"2px"}}}} -->
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top is-image-fill-element has-border-color" style="border-color:#00000026;border-width:1px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:auto 45%"><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|10"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--10)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|blueberry-2"}},"color":{"text":"var:preset|color|blueberry-1"}}}},"textColor":"blueberry-1","fontSize":"large"} -->
-<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size"><strong><?php _e( '<a href="/education/campus-connect/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color">WordPress                                 Campus Connect</mark></a>', 'wporg' ); ?></strong></p>
+<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size"><strong><?php _e( '<a data-id="9431" data-type="page" href="/education/campus-connect/"><mark class="has-inline-color has-blueberry-1-color">WordPress                                 Campus Connect</mark></a>', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <p class="is-style-short-text has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'The initiative brings WordPress to universities through hands-on events that connect students with professionals and introduce them to open source collaboration.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/campus-connect"><img src="https://wordpress.org/files/2025/12/education-right-2-1.png" alt="" class="wp-image-48862 size-full" style="object-position:50% 50%" /></a></figure></div>
+<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/campus-connect"><img alt="" class="wp-image-48862 size-full" src="https://wordpress.org/files/2025/12/education-right-2-1.png" style="object-position:50% 50%"></a></figure></div>
 <!-- /wp:media-text -->
 
 <!-- wp:media-text {"mediaPosition":"right","mediaId":48863,"mediaLink":"https://wordpress.org/?attachment_id=48863","linkDestination":"custom","mediaType":"image","mediaWidth":45,"mediaSizeSlug":"full","verticalAlignment":"top","imageFill":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"width":"1px","color":"#00000026","radius":{"topLeft":"2px","topRight":"2px","bottomLeft":"2px","bottomRight":"2px"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
@@ -115,23 +115,23 @@
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <p class="is-style-short-text has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'Student Clubs expand the other initiatives by building on-campus WordPress communities that keep students learning, collaborating, and growing continuously.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/student-clubs/"><img src="https://wordpress.org/files/2025/12/education-right-3.png" alt="" class="wp-image-48863 size-full" style="object-position:50% 50%" /></a></figure></div>
+<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/student-clubs/"><img alt="" class="wp-image-48863 size-full" src="https://wordpress.org/files/2025/12/education-right-3.png" style="object-position:50% 50%"></a></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"is-style-cards-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
-<div class="wp-block-group alignfull is-style-cards-grid" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:media-text {"mediaPosition":"right","mediaId":48864,"mediaLink":"https://wordpress.org/?attachment_id=48864","linkDestination":"custom","mediaType":"image","mediaWidth":45,"mediaSizeSlug":"full","imageFill":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"width":"1px","color":"#00000026","radius":{"topLeft":"2px","topRight":"2px","bottomLeft":"2px","bottomRight":"2px"}}}} -->
+<!-- wp:group {"align":"wide","className":"is-style-cards-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
+<div class="wp-block-group alignwide is-style-cards-grid" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:media-text {"mediaPosition":"right","mediaId":48864,"mediaLink":"https://wordpress.org/?attachment_id=48864","linkDestination":"custom","mediaType":"image","mediaWidth":45,"mediaSizeSlug":"full","imageFill":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"width":"1px","color":"#00000026","radius":{"topLeft":"2px","topRight":"2px","bottomLeft":"2px","bottomRight":"2px"}}}} -->
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-image-fill-element has-border-color" style="border-color:#00000026;border-width:1px;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-left-radius:2px;border-bottom-right-radius:2px;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;grid-template-columns:auto 45%"><div class="wp-block-media-text__content"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|10"},"blockGap":"0"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--10)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:paragraph {"placeholder":"Content…","className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|blueberry-1"},":hover":{"color":{"text":"var:preset|color|blueberry-2"}}}},"typography":{"textDecoration":"none"}},"textColor":"blueberry-1","fontSize":"large"} -->
-<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><?php _e( '<a href="/education/credits/" data-type="page" data-id="9431"><mark class="has-inline-color has-blueberry-1-color">WordPress Credits</mark></a>', 'wporg' ); ?></strong></p>
+<p class="is-style-default has-blueberry-1-color has-text-color has-link-color has-large-font-size" style="text-decoration:none"><strong><?php _e( '<a data-id="9431" data-type="page" href="/education/credits/"><mark class="has-inline-color has-blueberry-1-color">WordPress Credits</mark></a>', 'wporg' ); ?></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className":"is-style-short-text","style":{"elements":{"link":{"color":{"text":"var:preset|color|charcoal-3"}}}},"textColor":"charcoal-3"} -->
 <p class="is-style-short-text has-charcoal-3-color has-text-color has-link-color"><?php esc_html_e( 'WordPress Credits partners with educational institutions to integrate WordPress into their curriculum, giving students resources, training, and recognition for contributing to real-world nonprofit projects.', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/credits/"><img src="https://wordpress.org/files/2025/12/education-right-1-1.png" alt="" class="wp-image-48864 size-full" style="object-position:50% 50%" /></a></figure></div>
+<!-- /wp:group --></div><figure class="wp-block-media-text__media"><a href="/education/credits/"><img alt="" class="wp-image-48864 size-full" src="https://wordpress.org/files/2025/12/education-right-1-1.png" style="object-position:50% 50%"></a></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -148,7 +148,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20)"><!-- wp:paragraph -->
-<p><?php _e( '<a href="https://make.wordpress.org/community/category/education/" data-type="link" data-id="https://make.wordpress.org/community/"><mark class="has-inline-color has-blueberry-1-color">More news</mark></a>', 'wporg' ); ?></p>
+<p><?php _e( '<a data-id="https://make.wordpress.org/community/" data-type="link" href="https://make.wordpress.org/community/category/education/"><mark class="has-inline-color has-blueberry-1-color">More news</mark></a>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
