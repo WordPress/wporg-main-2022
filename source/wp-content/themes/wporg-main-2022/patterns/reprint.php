@@ -7,7 +7,79 @@
 
 ?>
 <!-- wp:group {"metadata":{"name":"Page"},"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|60","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":54366,"width":"40px","sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}}} -->
+<figure class="wp-block-image size-full is-resized" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)"><img alt="" class="wp-image-54366" src="https://wordpress.org/files/2026/11/reprint-icon.webp" style="width:40px;height:auto"></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"heading-1"} -->
+<h1 class="wp-block-heading has-heading-1-font-size" style="margin-top:0"><?php _e( 'Copy a site with<br><em><mark class="has-inline-color has-blueberry-1-color">one command</mark></em>', 'wporg' ); ?></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( 'Reprint copies a live site to another computer, rewrites links, and recovers from errors without losing progress. It’s a tiny plugin written in PHP, free under the GPL.', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#try-it-now"><?php esc_html_e( 'Try it now', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":54365,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-54365" src="https://wordpress.org/files/2026/11/reprint-hero.webp"></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Try it now"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","bottom":"var:preset|spacing|80","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"backgroundColor":"light-grey-2","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide has-light-grey-2-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"heading-2","anchor":"try-it-now"} -->
+<h2 class="wp-block-heading has-heading-2-font-size" id="try-it-now" style="margin-top:0"><?php esc_html_e( 'Try it now', 'wporg' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( 'Open directly in your browser with WordPress Playground, or follow the instructions to download it locally (Requires PHP 7.4 or newer).', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Open in browser ↗', 'wporg' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|10"}},"backgroundColor":"charcoal-1","textColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group has-white-color has-charcoal-1-background-color has-text-color has-background" style="border-radius:16px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}},"textColor":"charcoal-5","fontSize":"small"} -->
+<p class="has-charcoal-5-color has-text-color has-small-font-size" style="font-style:normal;font-weight:600;text-transform:uppercase"><?php esc_html_e( '# Download Reprint', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0"}},"typography":{"lineHeight":"1.4"}},"backgroundColor":"charcoal-1","textColor":"white","fontSize":"small","fontFamily":"monospace"} -->
+<pre class="wp-block-code has-white-color has-charcoal-1-background-color has-text-color has-background has-monospace-font-family has-small-font-size" style="margin-top:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:1.4"><code>curl -fL https://plugins.svn.wordpress.org/reprint/downloads/reprint.phar -o reprint.phar</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"textColor":"charcoal-5","fontSize":"small"} -->
+<p class="has-charcoal-5-color has-text-color has-small-font-size" style="margin-top:var(--wp--preset--spacing--30);font-style:normal;font-weight:600;text-transform:uppercase"><?php esc_html_e( '# Copy the demo site', 'wporg' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0"}},"typography":{"lineHeight":"1.4"}},"backgroundColor":"charcoal-1","textColor":"white","fontSize":"small","fontFamily":"monospace"} -->
+<pre class="wp-block-code has-white-color has-charcoal-1-background-color has-text-color has-background has-monospace-font-family has-small-font-size" style="margin-top:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;line-height:1.4"><code>php reprint.phar pull https://reprint-demo.wordpress.net \ --state-dir=./state --fs-root=./files \ --port=8881 --new-site-url=http://localhost:8881 \ --secret=public-demo</code></pre>
+<!-- /wp:code --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Hero"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|edge-space","right":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--edge-space);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--edge-space)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:image {"id":54270,"width":"180px","sizeSlug":"full","linkDestination":"none"} -->
