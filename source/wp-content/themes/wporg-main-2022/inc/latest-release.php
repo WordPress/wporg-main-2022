@@ -68,3 +68,18 @@ function get_locale_latest_release(): ?array {
 
 	return $release;
 }
+
+/**
+ * Whether the locale's translation of WordPress is inactive: it has releases, but none recent enough to offer.
+ *
+ * @return bool True on a Rosetta site whose latest release is too old to offer.
+ */
+function is_inactive_locale(): bool {
+	if ( ! defined( 'IS_ROSETTA_NETWORK' ) || ! IS_ROSETTA_NETWORK || empty( $GLOBALS['rosetta'] ) ) {
+		return false;
+	}
+
+	$rosetta = $GLOBALS['rosetta']->rosetta;
+
+	return ! $rosetta->get_latest_public_release() && (bool) $rosetta->get_latest_release();
+}
