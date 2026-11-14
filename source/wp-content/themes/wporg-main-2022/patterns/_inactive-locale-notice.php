@@ -21,8 +21,8 @@ $locale_name = $GLOBALS['rosetta']->rosetta->get_glotpress_locale()->english_nam
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|edge-space","left":"var:preset|spacing|edge-space"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)">
-	<!-- wp:wporg/notice {"type":"warning","align":"wide"} -->
-	<div class="wp-block-wporg-notice alignwide is-warning-notice">
+	<!-- wp:wporg/notice {"type":"alert","align":"wide"} -->
+	<div class="wp-block-wporg-notice alignwide is-alert-notice">
 		<div class="wp-block-wporg-notice__icon"></div>
 		<div class="wp-block-wporg-notice__content">
 			<p>
