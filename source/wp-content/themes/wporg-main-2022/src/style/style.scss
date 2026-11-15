@@ -864,6 +864,18 @@ $wporg-about-breakpoint-max: 1920px;
 	}
 }
 
+/*
+ * Keep full-width blocks inside the padding of their constrained parent group.
+ * Core pulls them into the parent's padding with negative margins, which puts
+ * their content against the viewport edge on small screens (e.g. Enterprise,
+ * Education, 6.3 release pages).
+ */
+
+body .is-layout-constrained > .alignfull {
+	margin-left: unset !important;
+	margin-right: unset !important;
+}
+
 /**
  * Privacy request forms (data export & erasure).
  */
