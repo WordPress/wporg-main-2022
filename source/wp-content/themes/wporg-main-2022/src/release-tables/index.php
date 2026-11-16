@@ -8,6 +8,7 @@
 
 namespace WordPressdotorg\Theme\Main_2022\Release_Tables_Block;
 
+use function WordPressdotorg\Theme\Main_2022\get_english_release_date;
 use function WordPressdotorg\Theme\Main_2022\get_newer_english_release;
 
 add_action( 'init', __NAMESPACE__ . '\init' );
@@ -253,6 +254,12 @@ function render_table_row( $version ) {
 	$version_number = $version['version'];
 	$microsite_url  = find_microsite_url_for_version( $version_number );
 	$language       = empty( $version['english'] ) ? '' : ' (' . esc_html__( 'English', 'wporg' ) . ')';
+	$release_date   = $version['builton'];
+
+	// Locale packages are rebuilt when translations change, so their build time isn't the release date.
+	if ( defined( 'IS_ROSETTA_NETWORK' ) && IS_ROSETTA_NETWORK ) {
+		$release_date = get_english_release_date( $version_number ) ?? $release_date;
+	}
 
 	$row  = '<tr>';
 	$row .= '<th class="wp-block-wporg-release-tables__cell-version" scope="row">';
@@ -264,7 +271,7 @@ function render_table_row( $version ) {
 		)
 		: esc_html( $version_number );
 	$row .= '</th>';
-	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . ( $version['builton'] ? esc_html( date_i18n( get_option( 'date_format' ), $version['builton'] ) ) : '' ) . '</td>';
+	$row .= '<td class="wp-block-wporg-release-tables__cell-date">' . ( $release_date ? esc_html( date_i18n( get_option( 'date_format' ), $release_date ) ) : '' ) . '</td>';
 	$row .= sprintf( '<td class="wp-block-wporg-release-tables__cell-zip"><a href="%1$s">zip%2$s</a><br /><small>(<a href="%1$s.md5">md5</a> &#183; <a href="%1$s.sha1">sha1</a>)</small></td>', esc_url( $version['zip_url'] ), $language );
 
 	// Some releases don't have tar.gz builds.
