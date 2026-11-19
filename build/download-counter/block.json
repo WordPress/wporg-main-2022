@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wporg/download-counter",
+  "version": "0.1.0",
+  "title": "Download Counter",
+  "category": "design",
+  "icon": "",
+  "description": "Display the download counter for a given WordPress version.",
+  "textdomain": "wporg",
+  "attributes": {},
+  "supports": {
+    "align": true,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "html": false,
+    "multiple": false,
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true,
+      "blockGap": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js"
+}
